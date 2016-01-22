@@ -1,0 +1,40 @@
+<project name="dulishuo" default="compile" basedir=".">
+	<description>"dulishuo"</description>
+	<property name="src" location="src" />
+	<property name="jar" location="dulishuo.jar" />
+	<property name="build" location="build" />
+	<property name="javalib" location="./lib" />
+	<target name="init">
+		<tstamp />
+		<mkdir dir="${build}" />
+	</target>
+	
+	<target name="clearBuild">
+		<delete dir="${build}" />
+	</target>
+	
+	<target name="compileonly">
+		<javac debug="true" srcdir="${src}" source="1.6" target="1.6"  encoding="utf-8" destdir="${build}" >
+			<classpath>
+				<fileset dir="${javalib}">
+					<include name="**/*.jar"/>
+				</fileset>
+			</classpath>
+		</javac>	
+	</target>
+	
+	<target name="compile" depends="clearBuild,init,compileonly">
+		<copy todir="${build}">
+			<fileset dir="${src}">
+				<include name="config.properties" />
+				<include name="log4j.properties" />
+			</fileset>
+		</copy>
+		<!-- basedir is class file dir for jar command-->
+		<jar jarfile="${jar}" basedir="${build}" >
+			<manifest> 
+	            <attribute name= "Main-class"   value= ""/> 
+	        </manifest>
+		</jar>	
+	</target>
+</project>
