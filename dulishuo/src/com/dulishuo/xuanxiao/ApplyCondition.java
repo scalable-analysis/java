@@ -60,10 +60,12 @@ public class ApplyCondition {
 		pgmType.put("accounting", "7");
 		pgmType.put("mis", "52");
 		pgmType.put("materials", "10");
-		pgmType.put("ce", "12");
+		pgmType.put("ce", "54");
+		pgmType.put("ee", "40");
 		pgmType.put("me", "6");
 		pgmType.put("environment", "45");
-		pgmType.put("civil", "14");
+		pgmType.put("biology", "14");
+		pgmType.put("civil", "51");
 	}
 
 	public static void main(String[] args) {
@@ -71,8 +73,8 @@ public class ApplyCondition {
 		System.out.println("start . . . \n");
 		long start = System.currentTimeMillis();
 
-		String fac = "economics";
-		String path = "C:/Users/强胜/Desktop/数据补全/选校系统/学校评论/美硕学校难度系数分级-点评（economics）-V1.0.xls";
+		String fac = "journalism";
+		String path = "C:/Users/强胜/Desktop/数据补全/选校系统/学校评论/美硕申请难度系统分级-点评(journalis)-V1.0.xls";
 		 //readHot(fac, path);
 		readComment(fac, path);
 		 //readApplyDiff(fac, path);
@@ -81,7 +83,7 @@ public class ApplyCondition {
 		// 更新数据库
 		 //update(fac);
 		// hotChange();
-		// addPgmRank();
+		 //addPgmRank();
 		// addLanguage();
 		//addLanguageRequirement();
 
@@ -151,7 +153,7 @@ public class ApplyCondition {
 	private static void addPgmRank() {
 		// TODO Auto-generated method stub
 
-		List<String> rank = FileUtil.FileToList("C:/Users/强胜/rank1123.csv");
+		List<String> rank = FileUtil.FileToList("C:/Users/强胜/rank0201.csv");
 		Map<String, Map<String, String>> rankMap = new HashMap<String, Map<String, String>>();
 		for (String xx : rank) {
 			String insid = xx.split(",")[0].toString();
@@ -180,7 +182,7 @@ public class ApplyCondition {
 		 * pgmType.put("marketing","47"); pgmType.put("finance","61");
 		 * pgmType.put("accounting","7"); pgmType.put("mis","52");
 		 */
-		pgmType.put("cs", "65");
+		/*pgmType.put("cs", "65");
 		pgmType.put("pr", "63");
 		pgmType.put("tesol", "68");
 		pgmType.put("law", "86");
@@ -189,11 +191,17 @@ public class ApplyCondition {
 		pgmType.put("marketing", "89");
 		pgmType.put("finance", "75");
 		pgmType.put("accounting", "50");
-		pgmType.put("mis", "83");
-		pgmType.put("biology", "14");
+		pgmType.put("mis", "83");*/
+		pgmType.put("ee", "69");
+		pgmType.put("ce", "59");
+		pgmType.put("me", "93");
+		pgmType.put("environment", "72");
+		pgmType.put("materials", "90");
+		pgmType.put("civil", "62");
+		pgmType.put("biology", "58");
 
 		Map<String, String> pgmRankCount = new HashMap<String, String>();
-		pgmRankCount.put("cs", "99");
+		/*pgmRankCount.put("cs", "99");
 		pgmRankCount.put("pr", "58");
 		pgmRankCount.put("tesol", "103");
 		pgmRankCount.put("law", "74");
@@ -202,10 +210,16 @@ public class ApplyCondition {
 		pgmRankCount.put("marketing", "24");
 		pgmRankCount.put("finance", "27");
 		pgmRankCount.put("accounting", "27");
-		pgmRankCount.put("mis", "20");
+		pgmRankCount.put("mis", "20");*/
+		pgmRankCount.put("materials", "10");
+		pgmRankCount.put("ce", "54");
+		pgmRankCount.put("ee", "40");
+		pgmRankCount.put("me", "6");
+		pgmRankCount.put("environment", "45");
 		pgmRankCount.put("biology", "14");
+		pgmRankCount.put("civil", "51");
 
-		// String url = "localhost";
+		//String url = "localhost";
 		String url = "123.57.250.189";
 		int port = 27017;
 		String dbName = "dulishuo";
@@ -254,15 +268,15 @@ public class ApplyCondition {
 								apply.remove(key);
 								tmpJson.put(
 										"rank",
-										rankMap.get(tmpInsId).get(
-												pgmType.get(key)));
+										Integer.parseInt(rankMap.get(tmpInsId).get(
+												pgmType.get(key))));
 
 								apply.put(key, tmpJson);
 							} else {
 								JSONObject tmpJson = apply.getJSONObject(key);
 								apply.remove(key);
 								// tmpJson.put("rank",pgmRankCount.get(key)+"+");
-								tmpJson.put("rank", "N/A");
+								tmpJson.put("rank", 999);
 								apply.put(key, tmpJson);
 							}
 
@@ -272,7 +286,7 @@ public class ApplyCondition {
 							JSONObject tmpJson = apply.getJSONObject(key);
 							apply.remove(key);
 							// tmpJson.put("rank",pgmRankCount.get(key)+"+");
-							tmpJson.put("rank", "N/A");
+							tmpJson.put("rank", 999);
 
 							apply.put(key, tmpJson);
 
@@ -436,7 +450,7 @@ public class ApplyCondition {
 	private static void readComment(String fac, String path) {
 		// TODO Auto-generated method stub
 		Sheet insSheet = FileUtil.getExcelSht(
-				"C:/Users/强胜/Desktop/数据补全/选校系统/理工文商/选校专业.xls", 5);
+				"C:/Users/强胜/Desktop/数据补全/选校系统/理工文商/选校专业.xls", 18);
 		Row row;
 
 		Map<String, Integer> idsMap = new HashMap<String, Integer>();
@@ -451,6 +465,10 @@ public class ApplyCondition {
 				System.out.println(row.getCell(0));
 			}
 		}
+		/*for(String xx : idsMap.keySet())
+			System.out.println(xx+"\t"+idsMap.get(xx));*/
+		/*System.out.println("contain 891:"+idsMap.containsKey(891));
+		System.out.println("contain 906:"+idsMap.containsKey(906));*/
 		System.out.println("end : read institute to map :   " + idsMap.size());
 		Sheet sheet = FileUtil.getExcelSht(path, 0);
 
@@ -459,10 +477,14 @@ public class ApplyCondition {
 
 		for (int i = 1; i < sheet.getLastRowNum()+1; i++) {
 			// 初始化
-
+			cmt = "";
 			row = sheet.getRow(i);
-			if (row.getCell(6) != null && row.getCell(6).toString().length() > 2) {
-				cmt = row.getCell(6).toString().trim();
+			
+			//为分隔的空白行，则跳过
+			if(row.getCell(1) == null || row.getCell(1).toString().trim().length()<1)
+				continue;
+			if (row.getCell(5) != null && row.getCell(5).toString().length() > 2) {
+				cmt = row.getCell(5).toString().trim();
 			}
 
 			// 为学校匹配institute_id
@@ -483,7 +505,9 @@ public class ApplyCondition {
 		System.out.println();
 
 		System.out.println("start insert to mongo . . .");
+		
 		addComment(cmtMap, fac);
+		
 		System.out.println("end insert to mongo . . . \n");
 	}
 	// 提取出hot
@@ -530,7 +554,7 @@ public class ApplyCondition {
 			int instid = -1; // 默认值为-1，即未配到到institute库
 
 			// 要配置的地方，学校英文名的列
-			String name = row.getCell(0).toString();
+			String name = row.getCell(1).toString();
 
 			if (idsMap.containsKey(name)) {
 				hotMap.put(idsMap.get(name), hot);
@@ -573,11 +597,9 @@ public class ApplyCondition {
 
 						JSONObject hotJson = apply.getJSONObject(fac);
 						hotJson.put("comment", map.get(id));
-						apply.remove(fac);
+						if(apply.containsKey(fac))
+						    apply.remove(fac);
 						apply.put(fac, hotJson);
-
-						System.out.println("add hot  " + fac + " id : " + id
-								+ "  record line  :  " + flag++ + "\n" + apply);
 
 						BasicDBObject newDocument = new BasicDBObject();
 						newDocument.put("$set", new BasicDBObject().append(
@@ -585,7 +607,7 @@ public class ApplyCondition {
 
 						if (institute.update(obj, newDocument, false, true)
 								.getN() >= 1)
-							System.out.println("result :   success");
+							System.out.println("id :"+id+" - result :   success");
 						else
 							System.out.println("result :   fail");
 
@@ -1039,7 +1061,7 @@ public class ApplyCondition {
 						/ y.get(xx).get("amount"));
 			}
 		}
-		FileUtil.ListToFile(res, "C:/Users/强胜/Desktop/我是你爹/三围offer成绩统计.txt");
+		FileUtil.ListToFile(res, "C:/Users/强胜/Desktop/我是你爹/三围offer成绩统计20160131.txt");
 		 
 		System.out.println("---------------ruku-----------------");
 

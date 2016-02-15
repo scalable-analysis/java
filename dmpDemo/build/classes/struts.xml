@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<!-- 配置Action -->
+	<!-- <constant name="struts.i18n.encoding" value="UTF-8"></constant> -->
+	<package name="common" namespace="/common" extends="struts-default">
+		<!-- <interceptors> <interceptor name="MyInterceptor" class="com.st.dataSrcManage.Util.MyInterceptor"></interceptor> 
+			<interceptor-stack name="MyInterceptor-stack"> <interceptor-ref name="MyInterceptor"></interceptor-ref> 
+			<interceptor-ref name="defaultStack"></interceptor-ref> </interceptor-stack> 
+			</interceptors> -->
+
+		<action name="login" method="checkLogin" class="com.st.dmp.action.LoginAction">
+			<result name="success">/business/showFrame.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+	</package>
+	<package name="default" namespace="/" extends="struts-default">
+		<!-- offer -->
+		<action name="offer_add" method="add" class="com.st.dmp.action.OfferAction">
+		</action>
+		<action name="offer_addAll" method="addAll" class="com.st.dmp.action.OfferAction">
+		</action>
+		<action name="offer_get" method="get" class="com.st.dmp.action.OfferAction">
+		</action>
+		<action name="offer_modify" method="modify" class="com.st.dmp.action.OfferAction">
+		</action>
+		<action name="offer_tag" method="tag" class="com.st.dmp.action.OfferAction">
+		</action>
+		<action name="offer_tagGet" method="tagGet" class="com.st.dmp.action.OfferAction">
+		</action>
+		
+		<!-- 翻译录入 -->
+		<action name="tran_add" method="add" class="com.st.dmp.action.TranAction">
+		</action>
+		
+		<!-- 机会产品录入 -->
+		<action name="opportunity_add" method="add" class="com.st.dmp.action.OppoAction">
+		</action>
+		<action name="opportunity_tran" method="tran" class="com.st.dmp.action.OppoAction">
+		</action>
+		<action name="opportunity_get" method="get" class="com.st.dmp.action.OppoAction">
+		</action>
+	</package>
+
+</struts>    

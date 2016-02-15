@@ -368,7 +368,7 @@ public class Util {
 			getMethod = new GetMethod(url);
 			// 请求配置
 			// getMethod.addRequestHeader("Host","www.ratemyprofessors.com");
-			getMethod.addRequestHeader("Host", "forum.chasedream.com");
+			//getMethod.addRequestHeader("Host", "forum.chasedream.com");
 			getMethod
 					.addRequestHeader("User-Agent",
 							"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0");

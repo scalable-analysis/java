@@ -39,6 +39,12 @@ public class Institute {
 		pgmType.put("accounting", "7");
 		pgmType.put("mis", "52");
 		pgmType.put("ee", "40");
+		pgmType.put("me", "6");
+		pgmType.put("ce", "54");
+		pgmType.put("environment", "45");
+		pgmType.put("biology", "14");
+		pgmType.put("civil", "51");
+		pgmType.put("materials", "10");
 	}
 	static Map<String, String> repgmType = new HashMap<String, String>();
 	static {
@@ -53,6 +59,12 @@ public class Institute {
 		repgmType.put("7", "accounting");
 		repgmType.put("52", "mis");
 		repgmType.put("40", "ee");
+		repgmType.put("6", "me");
+		repgmType.put("54", "ce");
+		repgmType.put("45", "environment");
+		repgmType.put("14", "biology");
+		repgmType.put("51", "civil");
+		repgmType.put("10", "materials");
 	}
 	static Map<Integer, Integer> gre = new HashMap<Integer, Integer>();
 	static {
@@ -104,7 +116,7 @@ public class Institute {
 		// buquanLanguage();
 		// haha();
 		// test0109();
-		// test0110();
+		 //test0110();
 		//test1011();
 		test0113();
 
@@ -126,8 +138,35 @@ public class Institute {
 		while(find.hasNext()){
 			DBObject obj = find.next();
 			int id = Util.id(obj.get("id").toString());
-			if(id > 908){
-				System.out.println(id+"\t"+obj.get("title")+"\t"+obj.get("ttitle"));
+			
+			if (obj.containsField("application_difficulty")) {
+				JSONObject apply = JSONObject.fromObject(obj
+						.get("application_difficulty"));
+				Iterator itt = apply.keys();
+				String key;
+				while (itt.hasNext()) {
+					key = itt.next().toString();
+					JSONObject tmpJ = apply.getJSONObject(key);
+					try{
+						/*if(tmpJ.getDouble("gpa") < 1.0f){
+							System.out.println("gpa:"+tmpJ.getDouble("gpa"));
+							System.out.println(id+"\t"+key);
+							}
+						if(tmpJ.getInt("gre") < 200){
+							System.out.println("gre"+tmpJ.getInt("gre"));
+							System.out.println(id+"\t"+key);
+							}
+						if(tmpJ.getInt("toefl") < 70){
+							System.out.println("toefl"+tmpJ.getInt("toefl"));
+							System.out.println(id+"\t"+key);
+						}*/
+						if(tmpJ.get("rank").toString().equals("N/A")){
+							System.out.println("rank"+tmpJ.get("rank"));
+							System.out.println(id+"\t"+key);
+						}
+							
+					}catch(Exception e){}
+				}
 			}
 		}
 	}
@@ -292,6 +331,7 @@ public class Institute {
 
 		// update institute
 		db = MongoUtil.getConnection("123.57.250.189", "dulishuo");
+		//db = MongoUtil.getConnection("url", "dulishuo");
 		DBCollection institute = db.getCollection("institute");
 		DBCursor update = institute.find();
 
@@ -462,7 +502,7 @@ public class Institute {
 
 	static void haha() {
 		// TODO Auto-generated method stub
-		// String url = "localhost";
+		//String url = "localhost";
 		String url = "123.57.250.189";
 		int port = 27017;
 
@@ -519,7 +559,7 @@ public class Institute {
 								facTmpObj.put("toefl", toefl.get(level));
 							}
 
-							if (gpaTmp.contains("-")) {
+							if (gpaTmp.contains("-") || Float.parseFloat(gpaTmp) < 1.0f) {
 
 								facTmpObj.put("gpa", gpa.get(level));
 							}
