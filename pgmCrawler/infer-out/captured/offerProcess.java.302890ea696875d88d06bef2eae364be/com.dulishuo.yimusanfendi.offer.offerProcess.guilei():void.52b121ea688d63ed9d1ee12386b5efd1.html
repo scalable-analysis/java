@@ -1,0 +1,250 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.dulishuo.yimusanfendi.offer.offerProcess.guilei():void.52b121ea688d63ed9d1ee12386b5efd1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../offerProcess.java.302890ea696875d88d06bef2eae364be.html#LINE414">void offerProcess.guilei()</a></h1></center>
+<a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:31 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;offer); [line 430];
+NULLIFY(&amp;$irvar3); [line 430];
+NULLIFY(&amp;$bcvar3); [line 430];
+NULLIFY(&amp;$bcvar2); [line 430];
+NULLIFY(&amp;$irvar5); [line 430];
+NULLIFY(&amp;json); [line 430];
+NULLIFY(&amp;res); [line 430];
+NULLIFY(&amp;set); [line 430];
+NULLIFY(&amp;$irvar6); [line 430];
+NULLIFY(&amp;$irvar0); [line 430];
+NULLIFY(&amp;$irvar1); [line 430];
+NULLIFY(&amp;$irvar2); [line 430];
+NULLIFY(&amp;xx); [line 430];
+EXIT_SCOPE(offer,$irvar3,$bcvar3,$bcvar2,$irvar5,json,res,set,$irvar6,$irvar0,$irvar1,$irvar2,xx); [line 430];
+APPLY_ABSTRACTION; [line 430];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun_List FileUtil.FileToJsonList(String,String)("C:/Users/\\229\\188\\186\\232\\131\\156/Desktop/dataCrawler/\\228\\184\\128\\228\\186\\169\\228\\184\\137\\229\\136\\134\\229\\156\\176/data/offer/offer55.json":java.lang.Object*,"utf-8":java.lang.Object*) [line 416];
+*&amp;offer:java.util.List*=n$0 [line 416];
+EXIT_SCOPE(n$0); [line 416];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$1=_fun___new(sizeof(t=java.util.HashSet):java.util.HashSet*) [line 417];
+n$2=_fun_HashSet.&lt;init&gt;()(n$1:java.util.HashSet*) [line 417];
+*&amp;set:java.util.HashSet*=n$1 [line 417];
+EXIT_SCOPE(n$1,n$2); [line 417];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$3=*&amp;offer:java.util.List* [line 419];
+_=*n$3:java.util.List*(root java.util.List) [line 419];
+n$5=_fun_Iterator List.iterator()(n$3:java.util.List*) interface virtual [line 419];
+*&amp;$bcvar2:java.util.Iterator*=n$5 [line 419];
+NULLIFY(&amp;offer); [line 419];
+EXIT_SCOPE(_,n$3,n$5,offer); [line 419];
+APPLY_ABSTRACTION; [line 419];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:18 15 6 succs:10 exn:3 Instructions
+n$6=*&amp;$bcvar2:java.util.Iterator* [line 419];
+_=*n$6:java.util.Iterator*(root java.util.Iterator) [line 419];
+n$8=_fun_boolean Iterator.hasNext()(n$6:java.util.Iterator*) interface virtual [line 419];
+*&amp;$irvar0:_Bool=n$8 [line 419];
+EXIT_SCOPE(_,n$6,n$8); [line 419];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node8.html"><span class='visited with_tooltip'>C_8<span class='tooltip'>node8 preds:10 succs:11 exn:3 Conditional method_body
+n$9=*&amp;$irvar0:_Bool [line 419];
+PRUNE(!(n$9 == 0), true); [line 419];
+NULLIFY(&amp;$irvar0); [line 419];
+EXIT_SCOPE(n$9,$irvar0); [line 419];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node9.html"><span class='visited with_tooltip'>C_9<span class='tooltip'>node9 preds:10 succs:19 exn:3 Conditional method_body
+n$9=*&amp;$irvar0:_Bool [line 419];
+PRUNE((n$9 == 0), false); [line 419];
+NULLIFY(&amp;$bcvar2); [line 419];
+NULLIFY(&amp;$irvar0); [line 419];
+EXIT_SCOPE(n$9,$bcvar2,$irvar0); [line 419];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node10.html"><span class='visited with_tooltip'>J_10<span class='tooltip'>node10 preds:7 succs:8 9 exn: Join
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:8 succs:12 exn:3 Instructions
+n$10=*&amp;$bcvar2:java.util.Iterator* [line 419];
+_=*n$10:java.util.Iterator*(root java.util.Iterator) [line 419];
+n$12=_fun_Object Iterator.next()(n$10:java.util.Iterator*) interface virtual [line 419];
+*&amp;$irvar1:java.lang.Object*=n$12 [line 419];
+EXIT_SCOPE(_,n$10,n$12); [line 419];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$13=*&amp;$irvar1:java.lang.Object* [line 419];
+n$14=_fun___cast(n$13:java.lang.Object*,sizeof(t=net.sf.json.JSONObject;sub_t=( sub )(cast)):void) [line 419];
+*&amp;json:net.sf.json.JSONObject*=n$14 [line 419];
+NULLIFY(&amp;$irvar1); [line 419];
+EXIT_SCOPE(n$13,n$14,$irvar1); [line 419];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:16 exn:3 Instructions
+n$15=*&amp;json:net.sf.json.JSONObject* [line 420];
+_=*n$15:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 420];
+n$17=_fun_boolean JSONObject.containsKey(Object)(n$15:net.sf.json.JSONObject*,"uni":java.lang.Object*) virtual [line 420];
+*&amp;$irvar2:_Bool=n$17 [line 420];
+EXIT_SCOPE(_,n$15,n$17); [line 420];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node14.html"><span class='visited with_tooltip'>C_14<span class='tooltip'>node14 preds:16 succs:17 exn:3 Conditional method_body
+n$18=*&amp;$irvar2:_Bool [line 420];
+PRUNE(!(n$18 == 0), true); [line 420];
+NULLIFY(&amp;$irvar2); [line 420];
+EXIT_SCOPE(n$18,$irvar2); [line 420];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node15.html"><span class='visited with_tooltip'>C_15<span class='tooltip'>node15 preds:16 succs:7 exn:3 Conditional method_body
+n$18=*&amp;$irvar2:_Bool [line 420];
+PRUNE((n$18 == 0), false); [line 420];
+NULLIFY(&amp;json); [line 420];
+NULLIFY(&amp;$irvar2); [line 420];
+EXIT_SCOPE(n$18,json,$irvar2); [line 420];
+APPLY_ABSTRACTION; [line 420];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node16.html"><span class='visited with_tooltip'>J_16<span class='tooltip'>node16 preds:13 succs:14 15 exn: Join
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:14 succs:18 exn:3 Instructions
+n$19=*&amp;json:net.sf.json.JSONObject* [line 421];
+_=*n$19:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 421];
+n$21=_fun_String JSONObject.getString(String)(n$19:net.sf.json.JSONObject*,"uni":java.lang.Object*) virtual [line 421];
+*&amp;$irvar3:java.lang.String*=n$21 [line 421];
+NULLIFY(&amp;json); [line 421];
+EXIT_SCOPE(_,n$19,n$21,json); [line 421];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:7 exn:3 Instructions
+n$22=*&amp;set:java.util.HashSet* [line 421];
+_=*n$22:java.util.HashSet*(root java.util.HashSet) [line 421];
+n$24=*&amp;$irvar3:java.lang.String* [line 421];
+n$25=_fun_boolean HashSet.add(Object)(n$22:java.util.HashSet*,n$24:java.lang.String*) interface virtual [line 421];
+*&amp;$irvar4:_Bool=n$25 [line 421];
+NULLIFY(&amp;$irvar3); [line 421];
+NULLIFY(&amp;$irvar4); [line 421];
+EXIT_SCOPE(_,n$22,n$24,n$25,$irvar3,$irvar4); [line 421];
+APPLY_ABSTRACTION; [line 421];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:9 succs:20 exn:3 Instructions
+n$26=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 423];
+_=*n$26:java.io.PrintStream*(root java.io.PrintStream) [line 423];
+n$28=_fun_void PrintStream.println(String)(n$26:java.io.PrintStream*,"______start":java.lang.Object*) virtual [line 423];
+EXIT_SCOPE(_,n$26,n$28); [line 423];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:3 Instructions
+n$29=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 424];
+n$30=_fun_ArrayList.&lt;init&gt;()(n$29:java.util.ArrayList*) [line 424];
+*&amp;res:java.util.ArrayList*=n$29 [line 424];
+EXIT_SCOPE(n$29,n$30); [line 424];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:22 exn:3 Instructions
+n$31=*&amp;set:java.util.HashSet* [line 425];
+_=*n$31:java.util.HashSet*(root java.util.HashSet) [line 425];
+n$33=_fun_Iterator HashSet.iterator()(n$31:java.util.HashSet*) interface virtual [line 425];
+*&amp;$bcvar3:java.util.Iterator*=n$33 [line 425];
+NULLIFY(&amp;set); [line 425];
+EXIT_SCOPE(_,n$31,n$33,set); [line 425];
+APPLY_ABSTRACTION; [line 425];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:28 21 succs:25 exn:3 Instructions
+n$34=*&amp;$bcvar3:java.util.Iterator* [line 425];
+_=*n$34:java.util.Iterator*(root java.util.Iterator) [line 425];
+n$36=_fun_boolean Iterator.hasNext()(n$34:java.util.Iterator*) interface virtual [line 425];
+*&amp;$irvar5:_Bool=n$36 [line 425];
+EXIT_SCOPE(_,n$34,n$36); [line 425];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node23.html"><span class='visited with_tooltip'>C_23<span class='tooltip'>node23 preds:25 succs:26 exn:3 Conditional method_body
+n$37=*&amp;$irvar5:_Bool [line 425];
+PRUNE(!(n$37 == 0), true); [line 425];
+NULLIFY(&amp;$irvar5); [line 425];
+EXIT_SCOPE(n$37,$irvar5); [line 425];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node24.html"><span class='visited with_tooltip'>C_24<span class='tooltip'>node24 preds:25 succs:29 exn:3 Conditional method_body
+n$37=*&amp;$irvar5:_Bool [line 425];
+PRUNE((n$37 == 0), false); [line 425];
+NULLIFY(&amp;$bcvar3); [line 425];
+NULLIFY(&amp;$irvar5); [line 425];
+EXIT_SCOPE(n$37,$bcvar3,$irvar5); [line 425];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node25.html"><span class='visited with_tooltip'>J_25<span class='tooltip'>node25 preds:22 succs:23 24 exn: Join
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:23 succs:27 exn:3 Instructions
+n$38=*&amp;$bcvar3:java.util.Iterator* [line 425];
+_=*n$38:java.util.Iterator*(root java.util.Iterator) [line 425];
+n$40=_fun_Object Iterator.next()(n$38:java.util.Iterator*) interface virtual [line 425];
+*&amp;$irvar6:java.lang.Object*=n$40 [line 425];
+EXIT_SCOPE(_,n$38,n$40); [line 425];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:26 succs:28 exn:3 Instructions
+n$41=*&amp;$irvar6:java.lang.Object* [line 425];
+n$42=_fun___cast(n$41:java.lang.Object*,sizeof(t=java.lang.String;sub_t=( sub )(cast)):void) [line 425];
+*&amp;xx:java.lang.String*=n$42 [line 425];
+NULLIFY(&amp;$irvar6); [line 425];
+EXIT_SCOPE(n$41,n$42,$irvar6); [line 425];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:27 succs:22 exn:3 Instructions
+n$43=*&amp;res:java.util.ArrayList* [line 426];
+_=*n$43:java.util.ArrayList*(root java.util.ArrayList) [line 426];
+n$45=*&amp;xx:java.lang.String* [line 426];
+n$46=_fun_boolean ArrayList.add(Object)(n$43:java.util.ArrayList*,n$45:java.lang.String*) interface virtual [line 426];
+*&amp;$irvar7:_Bool=n$46 [line 426];
+NULLIFY(&amp;$irvar7); [line 426];
+NULLIFY(&amp;xx); [line 426];
+EXIT_SCOPE(_,n$43,n$45,n$46,$irvar7,xx); [line 426];
+APPLY_ABSTRACTION; [line 426];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:24 succs:30 exn:3 Instructions
+n$47=*&amp;res:java.util.ArrayList* [line 428];
+n$48=_fun_void FileUtil.ListToFile(List,String)(n$47:java.util.ArrayList*,"C:/Users/\\229\\188\\186\\232\\131\\156/Desktop/dataCrawler/\\228\\184\\128\\228\\186\\169\\228\\184\\137\\229\\136\\134\\229\\156\\176/data/offer/uni.txt":java.lang.Object*) [line 428];
+NULLIFY(&amp;res); [line 428];
+EXIT_SCOPE(n$47,n$48,res); [line 428];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:29 succs:31 exn:3 Instructions
+n$49=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 429];
+_=*n$49:java.io.PrintStream*(root java.io.PrintStream) [line 429];
+n$51=_fun_void PrintStream.println(String)(n$49:java.io.PrintStream*,"_________end":java.lang.Object*) virtual [line 429];
+EXIT_SCOPE(_,n$49,n$51); [line 429];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.offer.offerProcess.guilei%28%29%3Avoid.52b121ea688d63ed9d1ee12386b5efd1_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:30 succs:2 exn:3 Instructions
+APPLY_ABSTRACTION; [line 430];
+</span></span></a><br />@
+
+<span class='color_black'>void void offerProcess.guilei()()
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= void offerProcess.guilei()
+; translation_unit= src/com/dulishuo/yimusanfendi/offer/offerProcess.java
+; access= Private
+; formals= []
+; is_defined= true
+; loc= src/com/dulishuo/yimusanfendi/offer/offerProcess.java:414
+; locals= [{ name= $irvar7; typ= void; modify_in_block= false }; 
+           { name= $irvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $bcvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= $bcvar2; typ= void; modify_in_block= false }; 
+           { name= res; typ= java.util.List*; modify_in_block= false }; 
+           { name= set; typ= java.util.Set*; modify_in_block= false }; 
+           { name= offer; typ= java.util.List*; modify_in_block= false }; 
+           { name= xx; typ= java.lang.String*; modify_in_block= false }; 
+           { name= json; typ= net.sf.json.JSONObject*; modify_in_block= false }]
+; ret_type= void 
+; proc_id= com.dulishuo.yimusanfendi.offer.offerProcess.guilei():void }</pre>
+</body>
+</html>

@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.test.JsoupNotTest.<init>().ddd4231f441fb25ed9c3291049ce2044_1" [label="1: Start JsoupNotTest.<init>()\nFormals:  this:com.dulishuo.test.JsoupNotTest*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.test.JsoupNotTest.<init>().ddd4231f441fb25ed9c3291049ce2044_1" -> "com.dulishuo.test.JsoupNotTest.<init>().ddd4231f441fb25ed9c3291049ce2044_4" ;
+"com.dulishuo.test.JsoupNotTest.<init>().ddd4231f441fb25ed9c3291049ce2044_2" [label="2: Exit JsoupNotTest.<init>() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.test.JsoupNotTest.<init>().ddd4231f441fb25ed9c3291049ce2044_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 17]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.JsoupNotTest.<init>().ddd4231f441fb25ed9c3291049ce2044_3" -> "com.dulishuo.test.JsoupNotTest.<init>().ddd4231f441fb25ed9c3291049ce2044_2" ;
+"com.dulishuo.test.JsoupNotTest.<init>().ddd4231f441fb25ed9c3291049ce2044_4" [label="4:  Call Object.<init>() \n   n$0=*&this:com.dulishuo.test.JsoupNotTest* [line 17]\n  n$1=_fun_Object.<init>()(n$0:com.dulishuo.test.JsoupNotTest*) [line 17]\n  NULLIFY(&this); [line 17]\n  EXIT_SCOPE(n$0,n$1,this); [line 17]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.JsoupNotTest.<init>().ddd4231f441fb25ed9c3291049ce2044_4" -> "com.dulishuo.test.JsoupNotTest.<init>().ddd4231f441fb25ed9c3291049ce2044_5" ;
+	 "com.dulishuo.test.JsoupNotTest.<init>().ddd4231f441fb25ed9c3291049ce2044_4" -> "com.dulishuo.test.JsoupNotTest.<init>().ddd4231f441fb25ed9c3291049ce2044_3" [color="red" ];
+"com.dulishuo.test.JsoupNotTest.<init>().ddd4231f441fb25ed9c3291049ce2044_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 17]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.JsoupNotTest.<init>().ddd4231f441fb25ed9c3291049ce2044_5" -> "com.dulishuo.test.JsoupNotTest.<init>().ddd4231f441fb25ed9c3291049ce2044_2" ;
+	 "com.dulishuo.test.JsoupNotTest.<init>().ddd4231f441fb25ed9c3291049ce2044_5" -> "com.dulishuo.test.JsoupNotTest.<init>().ddd4231f441fb25ed9c3291049ce2044_3" [color="red" ];
+}

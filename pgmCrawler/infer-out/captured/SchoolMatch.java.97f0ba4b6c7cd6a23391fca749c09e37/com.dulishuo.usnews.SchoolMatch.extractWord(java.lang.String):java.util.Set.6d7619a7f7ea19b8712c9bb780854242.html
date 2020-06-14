@@ -1,0 +1,192 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.dulishuo.usnews.SchoolMatch.extractWord(java.lang.String):java.util.Set.6d7619a7f7ea19b8712c9bb780854242</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../SchoolMatch.java.97f0ba4b6c7cd6a23391fca749c09e37.html#LINE77">Set SchoolMatch.extractWord(String)</a></h1></center>
+<a href="./nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:21 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;$irvar3); [line 88];
+NULLIFY(&amp;ptn); [line 88];
+NULLIFY(&amp;$irvar5); [line 88];
+NULLIFY(&amp;reg); [line 88];
+NULLIFY(&amp;$irvar4); [line 88];
+NULLIFY(&amp;rst); [line 88];
+NULLIFY(&amp;matcher); [line 88];
+NULLIFY(&amp;$irvar0); [line 88];
+NULLIFY(&amp;$irvar1); [line 88];
+NULLIFY(&amp;$irvar2); [line 88];
+EXIT_SCOPE($irvar3,ptn,$irvar5,reg,$irvar4,rst,matcher,$irvar0,$irvar1,$irvar2); [line 88];
+APPLY_ABSTRACTION; [line 88];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun___new(sizeof(t=java.util.HashSet):java.util.HashSet*) [line 78];
+n$1=_fun_HashSet.&lt;init&gt;()(n$0:java.util.HashSet*) [line 78];
+*&amp;rst:java.util.HashSet*=n$0 [line 78];
+EXIT_SCOPE(n$0,n$1); [line 78];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+*&amp;reg:java.lang.Object*="\\\\w+" [line 79];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$2=*&amp;reg:java.lang.Object* [line 80];
+n$3=_fun_Pattern Pattern.compile(String)(n$2:java.lang.Object*) [line 80];
+*&amp;ptn:java.util.regex.Pattern*=n$3 [line 80];
+NULLIFY(&amp;reg); [line 80];
+EXIT_SCOPE(n$2,n$3,reg); [line 80];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$4=*&amp;src:java.lang.String* [line 81];
+_=*n$4:java.lang.String*(root java.lang.String) [line 81];
+n$6=_fun_String String.toLowerCase()(n$4:java.lang.String*) virtual [line 81];
+*&amp;$irvar0:java.lang.String*=n$6 [line 81];
+NULLIFY(&amp;src); [line 81];
+EXIT_SCOPE(_,n$4,n$6,src); [line 81];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$7=*&amp;ptn:java.util.regex.Pattern* [line 81];
+_=*n$7:java.util.regex.Pattern*(root java.util.regex.Pattern) [line 81];
+n$9=*&amp;$irvar0:java.lang.String* [line 81];
+n$10=_fun_Matcher Pattern.matcher(CharSequence)(n$7:java.util.regex.Pattern*,n$9:java.lang.String*) virtual [line 81];
+*&amp;matcher:java.util.regex.Matcher*=n$10 [line 81];
+NULLIFY(&amp;ptn); [line 81];
+NULLIFY(&amp;$irvar0); [line 81];
+EXIT_SCOPE(_,n$7,n$9,n$10,ptn,$irvar0); [line 81];
+APPLY_ABSTRACTION; [line 81];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:20 17 8 succs:12 exn:3 Instructions
+n$11=*&amp;matcher:java.util.regex.Matcher* [line 83];
+_=*n$11:java.util.regex.Matcher*(root java.util.regex.Matcher) [line 83];
+n$13=_fun_boolean Matcher.find()(n$11:java.util.regex.Matcher*) virtual [line 83];
+*&amp;$irvar1:_Bool=n$13 [line 83];
+EXIT_SCOPE(_,n$11,n$13); [line 83];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node10.html"><span class='visited with_tooltip'>C_10<span class='tooltip'>node10 preds:12 succs:13 exn:3 Conditional method_body
+n$14=*&amp;$irvar1:_Bool [line 83];
+PRUNE(!(n$14 == 0), true); [line 83];
+NULLIFY(&amp;$irvar1); [line 83];
+EXIT_SCOPE(n$14,$irvar1); [line 83];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node11.html"><span class='visited with_tooltip'>C_11<span class='tooltip'>node11 preds:12 succs:21 exn:3 Conditional method_body
+n$14=*&amp;$irvar1:_Bool [line 83];
+PRUNE((n$14 == 0), false); [line 83];
+NULLIFY(&amp;matcher); [line 83];
+NULLIFY(&amp;$irvar1); [line 83];
+EXIT_SCOPE(n$14,matcher,$irvar1); [line 83];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node12.html"><span class='visited with_tooltip'>J_12<span class='tooltip'>node12 preds:9 succs:10 11 exn: Join
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:10 succs:14 exn:3 Instructions
+n$15=*&amp;#GB<>$com.dulishuo.usnews.SchoolMatch.setStop:java.util.Set*(root com.dulishuo.usnews.SchoolMatch) [line 84];
+*&amp;$irvar3:java.util.Set*=n$15 [line 84];
+EXIT_SCOPE(n$15); [line 84];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:3 Instructions
+n$16=*&amp;matcher:java.util.regex.Matcher* [line 84];
+_=*n$16:java.util.regex.Matcher*(root java.util.regex.Matcher) [line 84];
+n$18=_fun_String Matcher.group()(n$16:java.util.regex.Matcher*) virtual [line 84];
+*&amp;$irvar2:java.lang.String*=n$18 [line 84];
+EXIT_SCOPE(_,n$16,n$18); [line 84];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:18 exn:3 Instructions
+n$19=*&amp;$irvar3:java.util.Set* [line 84];
+_=*n$19:java.util.Set*(root java.util.Set) [line 84];
+n$21=*&amp;$irvar2:java.lang.String* [line 84];
+n$22=_fun_boolean Set.contains(Object)(n$19:java.util.Set*,n$21:java.lang.String*) interface virtual [line 84];
+*&amp;$irvar4:_Bool=n$22 [line 84];
+NULLIFY(&amp;$irvar3); [line 84];
+NULLIFY(&amp;$irvar2); [line 84];
+EXIT_SCOPE(_,n$19,n$21,n$22,$irvar3,$irvar2); [line 84];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node16.html"><span class='visited with_tooltip'>C_16<span class='tooltip'>node16 preds:18 succs:19 exn:3 Conditional method_body
+n$23=*&amp;$irvar4:_Bool [line 84];
+PRUNE(!(n$23 != 0), true); [line 84];
+NULLIFY(&amp;$irvar4); [line 84];
+EXIT_SCOPE(n$23,$irvar4); [line 84];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node17.html"><span class='visited with_tooltip'>C_17<span class='tooltip'>node17 preds:18 succs:9 exn:3 Conditional method_body
+n$23=*&amp;$irvar4:_Bool [line 84];
+PRUNE((n$23 != 0), false); [line 84];
+NULLIFY(&amp;$irvar4); [line 84];
+EXIT_SCOPE(n$23,$irvar4); [line 84];
+APPLY_ABSTRACTION; [line 84];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node18.html"><span class='visited with_tooltip'>J_18<span class='tooltip'>node18 preds:15 succs:16 17 exn: Join
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:16 succs:20 exn:3 Instructions
+n$24=*&amp;matcher:java.util.regex.Matcher* [line 85];
+_=*n$24:java.util.regex.Matcher*(root java.util.regex.Matcher) [line 85];
+n$26=_fun_String Matcher.group()(n$24:java.util.regex.Matcher*) virtual [line 85];
+*&amp;$irvar5:java.lang.String*=n$26 [line 85];
+EXIT_SCOPE(_,n$24,n$26); [line 85];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:9 exn:3 Instructions
+n$27=*&amp;rst:java.util.HashSet* [line 85];
+_=*n$27:java.util.HashSet*(root java.util.HashSet) [line 85];
+n$29=*&amp;$irvar5:java.lang.String* [line 85];
+n$30=_fun_boolean HashSet.add(Object)(n$27:java.util.HashSet*,n$29:java.lang.String*) interface virtual [line 85];
+*&amp;$irvar6:_Bool=n$30 [line 85];
+NULLIFY(&amp;$irvar5); [line 85];
+NULLIFY(&amp;$irvar6); [line 85];
+EXIT_SCOPE(_,n$27,n$29,n$30,$irvar5,$irvar6); [line 85];
+APPLY_ABSTRACTION; [line 85];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:11 succs:2 exn:3 Instructions
+n$31=*&amp;rst:java.util.HashSet* [line 88];
+*&amp;return:java.util.Set*=n$31 [line 88];
+NULLIFY(&amp;rst); [line 88];
+EXIT_SCOPE(n$31,rst); [line 88];
+APPLY_ABSTRACTION; [line 88];
+</span></span></a><br />@
+
+<span class='color_black'>java.util.Set* Set SchoolMatch.extractWord(String)(java.lang.String* src)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { usnews.SchoolMatch -> { setStop -> (Footprint({ @val$0* }) ~> ?, *) },
+            return -> (Footprint({ @val$0* }) ~> ?, *) }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= Set SchoolMatch.extractWord(String)
+; translation_unit= src/com/dulishuo/usnews/SchoolMatch.java
+; access= Public
+; formals= [(src,java.lang.String*)]
+; is_defined= true
+; loc= src/com/dulishuo/usnews/SchoolMatch.java:77
+; locals= [{ name= $irvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= matcher; typ= java.util.regex.Matcher*; modify_in_block= false }; 
+           { name= ptn; typ= java.util.regex.Pattern*; modify_in_block= false }; 
+           { name= reg; typ= java.lang.String*; modify_in_block= false }; 
+           { name= rst; typ= java.util.Set*; modify_in_block= false }]
+; ret_type= java.util.Set* 
+; proc_id= com.dulishuo.usnews.SchoolMatch.extractWord(java.lang.String):java.util.Set }</pre>
+</body>
+</html>

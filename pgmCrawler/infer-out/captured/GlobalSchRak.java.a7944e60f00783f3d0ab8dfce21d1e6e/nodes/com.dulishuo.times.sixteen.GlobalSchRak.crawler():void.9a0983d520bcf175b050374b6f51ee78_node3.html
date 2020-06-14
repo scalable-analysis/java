@@ -1,0 +1,416 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.dulishuo.times.sixteen.GlobalSchRak.crawler():void.9a0983d520bcf175b050374b6f51ee78_node3</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../GlobalSchRak.java.a7944e60f00783f3d0ab8dfce21d1e6e.html#LINE30">3</a></h1></center>PROC: <a href="./../com.dulishuo.times.sixteen.GlobalSchRak.crawler%28%29%3Avoid.9a0983d520bcf175b050374b6f51ee78.html">void GlobalSchRak.crawler()</a> LINE: <a href="./../../GlobalSchRak.java.a7944e60f00783f3d0ab8dfce21d1e6e.html#LINE30">30</a>
+<br>PREDS:
+<br>SUCCS:
+<a href="./../nodes/com.dulishuo.times.sixteen.GlobalSchRak.crawler%28%29%3Avoid.9a0983d520bcf175b050374b6f51ee78_node2.html"><span class='visited with_tooltip'>N_2<span class='tooltip'>node2 preds:15 3 succs: exn: </span></span></a><br>EXN:
+<a href="./../nodes/com.dulishuo.times.sixteen.GlobalSchRak.crawler%28%29%3Avoid.9a0983d520bcf175b050374b6f51ee78_node2.html"><span class='visited with_tooltip'>N_2<span class='tooltip'>node2 preds:15 3 succs: exn: </span></span></a><br>
+<LISTING class='color_green'></LISTING>
+<hr width="100%">
+<a name="session2" href="./../nodes/com.dulishuo.times.sixteen.GlobalSchRak.crawler%28%29%3Avoid.9a0983d520bcf175b050374b6f51ee78_node3.html#session2">node3#session2</a>(<a href="./../../GlobalSchRak.java.a7944e60f00783f3d0ab8dfce21d1e6e.html#LINE30">30</a>) [compute pre] liveness 3
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session3" href="./../nodes/com.dulishuo.times.sixteen.GlobalSchRak.crawler%28%29%3Avoid.9a0983d520bcf175b050374b6f51ee78_node3.html#session3">node3#session3</a>(<a href="./../../GlobalSchRak.java.a7944e60f00783f3d0ab8dfce21d1e6e.html#LINE30">30</a>) [exec] liveness 3
+<LISTING class='color_black'>PRE STATE:
+{ }
+
+INSTR=  SKIP; 
+
+STATE UNCHANGED
+
+</LISTING>
+<hr width="100%">
+<a name="session55" href="./../nodes/com.dulishuo.times.sixteen.GlobalSchRak.crawler%28%29%3Avoid.9a0983d520bcf175b050374b6f51ee78_node3.html#session55">node3#session55</a>(<a href="./../../GlobalSchRak.java.a7944e60f00783f3d0ab8dfce21d1e6e.html#LINE30">30</a>) [compute pre] nullify
+<LISTING class='color_black'>JOIN
+
+LEFT:   ({ },{ url })
+RIGHT:  ({ },{ response })
+RESULT: ({ },
+{ url, response })
+
+JOIN
+
+LEFT:   ({ },{ url, response })
+RIGHT:  ({ },{ n$0, n$1, res })
+RESULT: ({ },
+{ n$0, n$1, url, res, response })
+
+JOIN
+
+LEFT:   ({ },{ n$0, n$1, url, res, response })
+RIGHT:  ({ url },{ })
+RESULT: ({ url },
+{ n$0, n$1, url, res, response })
+
+JOIN
+
+LEFT:   ({ url },{ n$0, n$1, url, res, response })
+RIGHT:  ({ response },{ n$2, n$3, url })
+RESULT: ({ url, response },
+{ n$0, n$1, n$2, n$3, url, res, response })
+
+JOIN
+
+LEFT:   ({ url, response },
+{ n$0, n$1, n$2, n$3, url, res, response })
+RIGHT:  ({ json },{ n$4, n$5, response })
+RESULT: ({ url, json, response },
+{ n$0, n$1, n$2, n$3, n$4, n$5, url, res, response })
+
+JOIN
+
+LEFT:   ({ url, json, response },
+{ n$0, n$1, n$2, n$3, n$4, n$5, url, res, response })
+RIGHT:  ({ json, $irvar1 },{ n$6 })
+RESULT: ({ url, json, $irvar1, response },
+{ n$0, n$1, n$2, n$3, n$4, n$5, n$6, url, res, response })
+
+JOIN
+
+LEFT:   ({ url, json, $irvar1, response },
+{ n$0, n$1, n$2, n$3, n$4, n$5, n$6, url, res, response })
+RIGHT:  ({ $irvar0, $irvar1 },
+{ _, n$7, n$9, json })
+RESULT: ({ url, json, $irvar0, $irvar1, response },
+{ _, n$0, n$1, n$2, n$3, n$4, n$5, n$6, n$7, n$9, url, json, res, response })
+
+JOIN
+
+LEFT:   ({ url, json, $irvar0, $irvar1, response },
+{ _, n$0, n$1, n$2, n$3, n$4, n$5, n$6, n$7, n$9, url, json, res, response })
+RIGHT:  ({ $irvar1, $irvar2 },
+{ _, n$10, n$12, $irvar0 })
+RESULT: ({ url, json, $irvar0, $irvar1, $irvar2, response },
+{ _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$5,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$12,
+  url,
+  json,
+  res,
+  $irvar0,
+  response })
+
+JOIN
+
+LEFT:   ({ url, json, $irvar0, $irvar1, $irvar2, response },
+{ _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$5,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$12,
+  url,
+  json,
+  res,
+  $irvar0,
+  response })
+RIGHT:  ({ },
+{ _, n$13, n$15, n$16, $irvar1, $irvar2 })
+RESULT: ({ url, json, $irvar0, $irvar1, $irvar2, response },
+{ _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$5,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$12,
+  n$13,
+  n$15,
+  n$16,
+  url,
+  json,
+  res,
+  $irvar0,
+  $irvar1,
+  $irvar2,
+  response })
+
+JOIN
+
+LEFT:   ({ url, json, $irvar0, $irvar1, $irvar2, response },
+{ _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$5,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$12,
+  n$13,
+  n$15,
+  n$16,
+  url,
+  json,
+  res,
+  $irvar0,
+  $irvar1,
+  $irvar2,
+  response })
+RIGHT:  ({ },
+{ _, n$17, n$19, lang.System })
+RESULT: ({ url, json, $irvar0, $irvar1, $irvar2, response },
+{ _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$5,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$12,
+  n$13,
+  n$15,
+  n$16,
+  n$17,
+  n$19,
+  url,
+  json,
+  lang.System,
+  res,
+  $irvar0,
+  $irvar1,
+  $irvar2,
+  response })
+
+JOIN
+
+LEFT:   ({ url, json, $irvar0, $irvar1, $irvar2, response },
+{ _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$5,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$12,
+  n$13,
+  n$15,
+  n$16,
+  n$17,
+  n$19,
+  url,
+  json,
+  lang.System,
+  res,
+  $irvar0,
+  $irvar1,
+  $irvar2,
+  response })
+RIGHT:  ({ },
+{ })
+RESULT: = LEFT
+
+</LISTING>
+<hr width="100%">
+<a name="session56" href="./../nodes/com.dulishuo.times.sixteen.GlobalSchRak.crawler%28%29%3Avoid.9a0983d520bcf175b050374b6f51ee78_node3.html#session56">node3#session56</a>(<a href="./../../GlobalSchRak.java.a7944e60f00783f3d0ab8dfce21d1e6e.html#LINE30">30</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ url, json, $irvar0, $irvar1, $irvar2, response },
+{ _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$5,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$12,
+  n$13,
+  n$15,
+  n$16,
+  n$17,
+  n$19,
+  url,
+  json,
+  lang.System,
+  res,
+  $irvar0,
+  $irvar1,
+  $irvar2,
+  response })
+
+INSTR=  SKIP; 
+
+STATE:
+({ },{ url, json, $irvar0, $irvar1, $irvar2, response })
+
+</LISTING>
+<hr width="100%">
+<a name="session26" href="./../nodes/com.dulishuo.times.sixteen.GlobalSchRak.crawler%28%29%3Avoid.9a0983d520bcf175b050374b6f51ee78_node3.html#session26">node3#session26</a>(<a href="./../../GlobalSchRak.java.a7944e60f00783f3d0ab8dfce21d1e6e.html#LINE30">30</a>) [compute pre] quandary(java)
+<LISTING class='color_black'>JOIN
+
+LEFT:   { url -&gt; { } }
+RIGHT:  { url -&gt; { }, response -&gt; { } }
+RESULT: { url -&gt; { }, response -&gt; { } }
+
+JOIN
+
+LEFT:   { url -&gt; { }, response -&gt; { } }
+RIGHT:  { url -&gt; { }, res -&gt; { }, response -&gt; { } }
+RESULT: { url -&gt; { }, res -&gt; { }, response -&gt; { } }
+
+JOIN
+
+LEFT:   { url -&gt; { }, res -&gt; { }, response -&gt; { } }
+RIGHT:  { url -&gt; { }, res -&gt; { }, response -&gt; { } }
+RESULT: { url -&gt; { }, res -&gt; { }, response -&gt; { } }
+
+JOIN
+
+LEFT:   { url -&gt; { }, res -&gt; { }, response -&gt; { } }
+RIGHT:  { n$3 -&gt; { }, url -&gt; { }, res -&gt; { }, response -&gt; { } }
+RESULT: { n$3 -&gt; { }, url -&gt; { }, res -&gt; { }, response -&gt; { } }
+
+JOIN
+
+LEFT:   { n$3 -&gt; { }, url -&gt; { }, res -&gt; { }, response -&gt; { } }
+RIGHT:  { n$3 -&gt; { }, url -&gt; { }, json -&gt; { }, res -&gt; { }, response -&gt; { } }
+RESULT: { n$3 -&gt; { }, url -&gt; { }, json -&gt; { }, res -&gt; { }, response -&gt; { } }
+
+JOIN
+
+LEFT:   { n$3 -&gt; { }, url -&gt; { }, json -&gt; { }, res -&gt; { }, response -&gt; { } }
+RIGHT:  { n$3 -&gt; { }, url -&gt; { }, json -&gt; { }, res -&gt; { }, response -&gt; { } }
+RESULT: { n$3 -&gt; { }, url -&gt; { }, json -&gt; { }, res -&gt; { }, response -&gt; { } }
+
+JOIN
+
+LEFT:   { n$3 -&gt; { }, url -&gt; { }, json -&gt; { }, res -&gt; { }, response -&gt; { } }
+RIGHT:  { n$3 -&gt; { }, url -&gt; { }, json -&gt; { }, res -&gt; { }, response -&gt; { } }
+RESULT: { n$3 -&gt; { }, url -&gt; { }, json -&gt; { }, res -&gt; { }, response -&gt; { } }
+
+JOIN
+
+LEFT:   { n$3 -&gt; { }, url -&gt; { }, json -&gt; { }, res -&gt; { }, response -&gt; { } }
+RIGHT:  { n$3 -&gt; { }, url -&gt; { }, json -&gt; { }, res -&gt; { }, response -&gt; { } }
+RESULT: { n$3 -&gt; { }, url -&gt; { }, json -&gt; { }, res -&gt; { }, response -&gt; { } }
+
+JOIN
+
+LEFT:   { n$3 -&gt; { }, url -&gt; { }, json -&gt; { }, res -&gt; { }, response -&gt; { } }
+RIGHT:  { n$3 -&gt; { }, url -&gt; { }, json -&gt; { }, res -&gt; { }, response -&gt; { } }
+RESULT: { n$3 -&gt; { }, url -&gt; { }, json -&gt; { }, res -&gt; { }, response -&gt; { } }
+
+JOIN
+
+LEFT:   { n$3 -&gt; { }, url -&gt; { }, json -&gt; { }, res -&gt; { }, response -&gt; { } }
+RIGHT:  { n$3 -&gt; { }, url -&gt; { }, json -&gt; { }, res -&gt; { }, response -&gt; { } }
+RESULT: { n$3 -&gt; { }, url -&gt; { }, json -&gt; { }, res -&gt; { }, response -&gt; { } }
+
+JOIN
+
+LEFT:   { n$3 -&gt; { }, url -&gt; { }, json -&gt; { }, res -&gt; { }, response -&gt; { } }
+RIGHT:  { n$3 -&gt; { }, url -&gt; { }, json -&gt; { }, res -&gt; { }, response -&gt; { } }
+RESULT: { n$3 -&gt; { }, url -&gt; { }, json -&gt; { }, res -&gt; { }, response -&gt; { } }
+
+</LISTING>
+<hr width="100%">
+<a name="session27" href="./../nodes/com.dulishuo.times.sixteen.GlobalSchRak.crawler%28%29%3Avoid.9a0983d520bcf175b050374b6f51ee78_node3.html#session27">node3#session27</a>(<a href="./../../GlobalSchRak.java.a7944e60f00783f3d0ab8dfce21d1e6e.html#LINE30">30</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$3 -&gt; { }, url -&gt; { }, json -&gt; { }, res -&gt; { }, response -&gt; { } }
+
+INSTR=  NULLIFY(&amp;url); [line 30]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;json); [line 30]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;$irvar0); [line 30]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;$irvar1); [line 30]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;$irvar2); [line 30]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;response); [line 30]; 
+
+STATE UNCHANGED
+
+INSTR=  EXIT_SCOPE(url,json,n$9,n$12,response); [line 30]; 
+
+STATE:
+{ n$3 -&gt; { }, url -&gt; { }, json -&gt; { }, res -&gt; { }, response -&gt; { } }
+
+INSTR=  APPLY_ABSTRACTION; [line 30]; 
+
+STATE UNCHANGED
+
+</LISTING>

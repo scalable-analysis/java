@@ -1,0 +1,384 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22.html#LINE34">List CrawlerUtil.getUrl(String)</a></h1></center>
+<a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:41 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:46 43 succs:2 exn:2 Instructions
+NULLIFY(&amp;result); [line 77];
+NULLIFY(&amp;client); [line 77];
+NULLIFY(&amp;CatchVar132); [line 77];
+NULLIFY(&amp;$irvar3); [line 77];
+NULLIFY(&amp;CatchVar116); [line 77];
+NULLIFY(&amp;tbodys); [line 77];
+NULLIFY(&amp;ck); [line 77];
+NULLIFY(&amp;$irvar5); [line 77];
+NULLIFY(&amp;$irvar4); [line 77];
+NULLIFY(&amp;html); [line 77];
+NULLIFY(&amp;i); [line 77];
+NULLIFY(&amp;size); [line 77];
+NULLIFY(&amp;$irvar6); [line 77];
+NULLIFY(&amp;getMethod); [line 77];
+NULLIFY(&amp;ele); [line 77];
+NULLIFY(&amp;$irvar1); [line 77];
+NULLIFY(&amp;href); [line 77];
+NULLIFY(&amp;CatchVar106); [line 77];
+NULLIFY(&amp;$irvar2); [line 77];
+NULLIFY(&amp;response); [line 77];
+NULLIFY(&amp;e); [line 77];
+EXIT_SCOPE(n$90,result,client,CatchVar132,$irvar3,CatchVar116,tbodys,ck,$irvar5,$irvar4,html,i,size,$irvar6,getMethod,ele,$irvar1,href,CatchVar106,$irvar2,response,e); [line 77];
+APPLY_ABSTRACTION; [line 77];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 35];
+n$1=_fun_ArrayList.&lt;init&gt;()(n$0:java.util.ArrayList*) [line 35];
+*&amp;result:java.util.ArrayList*=n$0 [line 35];
+EXIT_SCOPE(n$0,n$1); [line 35];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+*&amp;response:java.lang.Object*="" [line 36];
+NULLIFY(&amp;response); [line 36];
+EXIT_SCOPE(response); [line 36];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$2=_fun___new(sizeof(t=org.apache.commons.httpclient.HttpClient):org.apache.commons.httpclient.HttpClient*) [line 38];
+n$3=_fun_HttpClient.&lt;init&gt;()(n$2:org.apache.commons.httpclient.HttpClient*) [line 38];
+*&amp;client:org.apache.commons.httpclient.HttpClient*=n$2 [line 38];
+EXIT_SCOPE(n$2,n$3); [line 38];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$4=_fun___new(sizeof(t=org.apache.commons.httpclient.methods.GetMethod):org.apache.commons.httpclient.methods.GetMethod*) [line 39];
+n$5=*&amp;url:java.lang.String* [line 39];
+n$6=_fun_GetMethod.&lt;init&gt;(String)(n$4:org.apache.commons.httpclient.methods.GetMethod*,n$5:java.lang.String*) [line 39];
+*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod*=n$4 [line 39];
+NULLIFY(&amp;url); [line 39];
+EXIT_SCOPE(n$4,n$5,n$6,url); [line 39];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+*&amp;ck:java.lang.Object*="tjpctrl=1439455956083; __utma=142000562.1509796625.1436709690.1438412213.1439453720.13; __utmz=142000562.1439453720.13.9.utmcsr=mail.qq.com|utmccn=(referral)|utmcmd=referral|utmcct=/cgi-bin/readtemplate; pgv_pvi=3811975168; 4Oaf_61d6_saltkey=nnmfbob3; 4Oaf_61d6_lastvisit=1437378911; 4Oaf_61d6_atarget=1; 4Oaf_61d6_visitedfid=27; 4Oaf_61d6_sid=Q89d9W; 4Oaf_61d6_lastact=1439454242%09home.php%09spacecp; 4Oaf_61d6_sendmail=1; __utmb=142000562.12.10.1439453720; __utmc=142000562; __utmt=1; 4Oaf_61d6_nofocus_member=1; 4Oaf_61d6_nofocus_forum=1; 4Oaf_61d6_ulastactivity=b1ccszmakCkkoWTaybWumhPQy0hx1PDIt6FDBQ5WElNhsEaEot6p; 4Oaf_61d6_auth=5808WxQ6wi8Gf9YPAp2asvku33LiM5xIWqdR67gpl8HOZTL87ISKHL5cTtUOFQR8V%2Be4wSyU5Taa4q9Va33Bq9v%2FlRM; 4Oaf_61d6_lastcheckfeed=175519%7C1439454242; 4Oaf_61d6_lip=118.187.68.34%2C1439453999; 4Oaf_61d6_nofavfid=1; 4Oaf_61d6_onlineusernum=258; 4Oaf_61d6_forum_lastvisit=D_27_1439454207; 4Oaf_61d6_smile=4D1; 4Oaf_61d6_viewid=tid_72476; 4Oaf_61d6_checkpm=1; 4Oaf_61d6_checkfollow=1" [line 41];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$7=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 44];
+_=*n$7:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 44];
+n$9=*&amp;ck:java.lang.Object* [line 44];
+n$10=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$7:org.apache.commons.httpclient.methods.GetMethod*,"Cookie":java.lang.Object*,n$9:java.lang.Object*) virtual [line 44];
+NULLIFY(&amp;ck); [line 44];
+EXIT_SCOPE(_,n$7,n$9,n$10,ck); [line 44];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+n$11=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 45];
+_=*n$11:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 45];
+n$13=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$11:org.apache.commons.httpclient.methods.GetMethod*,"Host":java.lang.Object*,"www.1point3acres.com":java.lang.Object*) virtual [line 45];
+EXIT_SCOPE(_,n$11,n$13); [line 45];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+n$14=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 46];
+_=*n$14:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 46];
+n$16=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$14:org.apache.commons.httpclient.methods.GetMethod*,"User-Agent":java.lang.Object*,"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.111 Safari/537.36":java.lang.Object*) virtual [line 46];
+EXIT_SCOPE(_,n$14,n$16); [line 46];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$17=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 47];
+_=*n$17:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 47];
+n$19=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$17:org.apache.commons.httpclient.methods.GetMethod*,"Accept":java.lang.Object*,"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8":java.lang.Object*) virtual [line 47];
+EXIT_SCOPE(_,n$17,n$19); [line 47];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:3 Instructions
+n$20=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 48];
+_=*n$20:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 48];
+n$22=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$20:org.apache.commons.httpclient.methods.GetMethod*,"Accept-Language":java.lang.Object*,"zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3":java.lang.Object*) virtual [line 48];
+EXIT_SCOPE(_,n$20,n$22); [line 48];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:3 Instructions
+n$23=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 50];
+_=*n$23:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 50];
+n$25=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$23:org.apache.commons.httpclient.methods.GetMethod*,"DNT":java.lang.Object*,"1":java.lang.Object*) virtual [line 50];
+EXIT_SCOPE(_,n$23,n$25); [line 50];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:3 Instructions
+n$26=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 51];
+_=*n$26:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 51];
+n$28=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$26:org.apache.commons.httpclient.methods.GetMethod*,"Referer":java.lang.Object*,"http://www.1point3acres.com/bbs/":java.lang.Object*) virtual [line 51];
+EXIT_SCOPE(_,n$26,n$28); [line 51];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:21 exn:49 Instructions
+n$29=*&amp;client:org.apache.commons.httpclient.HttpClient* [line 54];
+_=*n$29:org.apache.commons.httpclient.HttpClient*(root org.apache.commons.httpclient.HttpClient) [line 54];
+n$31=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 54];
+n$32=_fun_int HttpClient.executeMethod(HttpMethod)(n$29:org.apache.commons.httpclient.HttpClient*,n$31:org.apache.commons.httpclient.methods.GetMethod*) virtual [line 54];
+*&amp;$irvar0:int=n$32 [line 54];
+NULLIFY(&amp;client); [line 54];
+NULLIFY(&amp;$irvar0); [line 54];
+EXIT_SCOPE(_,n$29,n$31,n$32,client,$irvar0); [line 54];
+APPLY_ABSTRACTION; [line 54];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:47 succs:18 exn:3 Instructions
+n$33=*&amp;CatchVar106:java.lang.Object* [line 55];
+*&amp;e:java.lang.Object*=n$33 [line 55];
+NULLIFY(&amp;CatchVar106); [line 55];
+EXIT_SCOPE(n$33,CatchVar106); [line 55];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:21 exn:3 Instructions
+n$34=*&amp;e:java.lang.Object* [line 57];
+_=*n$34:java.lang.Object*(root java.lang.Object) [line 57];
+n$36=_fun_void HttpException.printStackTrace()(n$34:java.lang.Object*) virtual [line 57];
+NULLIFY(&amp;e); [line 57];
+EXIT_SCOPE(_,n$34,n$36,e); [line 57];
+APPLY_ABSTRACTION; [line 57];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:45 succs:20 exn:3 Instructions
+n$37=*&amp;CatchVar116:java.lang.Object* [line 58];
+*&amp;e:java.lang.Object*=n$37 [line 58];
+NULLIFY(&amp;CatchVar116); [line 58];
+EXIT_SCOPE(n$37,CatchVar116); [line 58];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:3 Instructions
+n$38=*&amp;e:java.lang.Object* [line 60];
+_=*n$38:java.lang.Object*(root java.lang.Object) [line 60];
+n$40=_fun_void Throwable.printStackTrace()(n$38:java.lang.Object*) virtual [line 60];
+NULLIFY(&amp;e); [line 60];
+EXIT_SCOPE(_,n$38,n$40,e); [line 60];
+APPLY_ABSTRACTION; [line 60];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 18 16 succs:24 exn:44 Instructions
+n$41=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 63];
+_=*n$41:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 63];
+n$43=_fun_String HttpMethodBase.getResponseBodyAsString()(n$41:org.apache.commons.httpclient.methods.GetMethod*) virtual [line 63];
+*&amp;response:java.lang.String*=n$43 [line 63];
+NULLIFY(&amp;getMethod); [line 63];
+EXIT_SCOPE(_,n$41,n$43,getMethod); [line 63];
+APPLY_ABSTRACTION; [line 63];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:42 succs:23 exn:3 Instructions
+n$44=*&amp;CatchVar132:java.lang.Object* [line 65];
+*&amp;e:java.lang.Object*=n$44 [line 65];
+NULLIFY(&amp;CatchVar132); [line 65];
+EXIT_SCOPE(n$44,CatchVar132); [line 65];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:3 Instructions
+n$45=*&amp;e:java.lang.Object* [line 67];
+_=*n$45:java.lang.Object*(root java.lang.Object) [line 67];
+n$47=_fun_void Throwable.printStackTrace()(n$45:java.lang.Object*) virtual [line 67];
+NULLIFY(&amp;e); [line 67];
+EXIT_SCOPE(_,n$45,n$47,e); [line 67];
+APPLY_ABSTRACTION; [line 67];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 21 succs:25 exn:3 Instructions
+n$48=*&amp;response:java.lang.String* [line 69];
+n$49=_fun_Document Jsoup.parse(String)(n$48:java.lang.String*) [line 69];
+*&amp;html:org.jsoup.nodes.Document*=n$49 [line 69];
+NULLIFY(&amp;response); [line 69];
+EXIT_SCOPE(n$48,n$49,response); [line 69];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:26 exn:3 Instructions
+n$50=*&amp;html:org.jsoup.nodes.Document* [line 70];
+_=*n$50:org.jsoup.nodes.Document*(root org.jsoup.nodes.Document) [line 70];
+n$52=_fun_Element Element.getElementById(String)(n$50:org.jsoup.nodes.Document*,"threadlisttableid":java.lang.Object*) virtual [line 70];
+*&amp;ele:org.jsoup.nodes.Element*=n$52 [line 70];
+NULLIFY(&amp;html); [line 70];
+EXIT_SCOPE(_,n$50,n$52,html); [line 70];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:25 succs:27 exn:3 Instructions
+n$53=*&amp;ele:org.jsoup.nodes.Element* [line 71];
+_=*n$53:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 71];
+n$55=_fun_Elements Element.children()(n$53:org.jsoup.nodes.Element*) virtual [line 71];
+*&amp;tbodys:org.jsoup.select.Elements*=n$55 [line 71];
+NULLIFY(&amp;ele); [line 71];
+EXIT_SCOPE(_,n$53,n$55,ele); [line 71];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:26 succs:28 exn:3 Instructions
+n$56=*&amp;tbodys:org.jsoup.select.Elements* [line 72];
+_=*n$56:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 72];
+n$58=_fun_int Elements.size()(n$56:org.jsoup.select.Elements*) virtual [line 72];
+*&amp;size:int=n$58 [line 72];
+EXIT_SCOPE(_,n$56,n$58); [line 72];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:27 succs:31 exn:3 Instructions
+*&amp;i:int=1 [line 73];
+APPLY_ABSTRACTION; [line 73];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node29.html"><span class='visited with_tooltip'>C_29<span class='tooltip'>node29 preds:31 succs:32 exn:3 Conditional method_body
+n$59=*&amp;i:int [line 73];
+n$60=*&amp;size:int [line 73];
+PRUNE(!(n$59  &gt;=  n$60), true); [line 73];
+EXIT_SCOPE(n$59,n$60); [line 73];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node30.html"><span class='visited with_tooltip'>C_30<span class='tooltip'>node30 preds:31 succs:41 exn:3 Conditional method_body
+n$59=*&amp;i:int [line 73];
+n$60=*&amp;size:int [line 73];
+PRUNE((n$59  &gt;=  n$60), false); [line 73];
+NULLIFY(&amp;tbodys); [line 73];
+NULLIFY(&amp;i); [line 73];
+NULLIFY(&amp;size); [line 73];
+EXIT_SCOPE(n$59,n$60,tbodys,i,size); [line 73];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node31.html"><span class='visited with_tooltip'>J_31<span class='tooltip'>node31 preds:40 28 succs:29 30 exn: Join
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node32.html"><span class='visited with_tooltip'>I_32<span class='tooltip'>node32 preds:29 succs:33 exn:3 Instructions
+n$61=*&amp;tbodys:org.jsoup.select.Elements* [line 74];
+_=*n$61:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 74];
+n$63=*&amp;i:int [line 74];
+n$64=_fun_Element Elements.get(int)(n$61:org.jsoup.select.Elements*,n$63:int) virtual [line 74];
+*&amp;$irvar1:org.jsoup.nodes.Element*=n$64 [line 74];
+EXIT_SCOPE(_,n$61,n$63,n$64); [line 74];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds:32 succs:34 exn:3 Instructions
+n$65=*&amp;$irvar1:org.jsoup.nodes.Element* [line 74];
+_=*n$65:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 74];
+n$67=_fun_Elements Element.getElementsByClass(String)(n$65:org.jsoup.nodes.Element*,"icn":java.lang.Object*) virtual [line 74];
+*&amp;$irvar2:org.jsoup.select.Elements*=n$67 [line 74];
+NULLIFY(&amp;$irvar1); [line 74];
+EXIT_SCOPE(_,n$65,n$67,$irvar1); [line 74];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds:33 succs:35 exn:3 Instructions
+n$68=*&amp;$irvar2:org.jsoup.select.Elements* [line 74];
+_=*n$68:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 74];
+n$70=_fun_Element Elements.get(int)(n$68:org.jsoup.select.Elements*,0:int) virtual [line 74];
+*&amp;$irvar3:org.jsoup.nodes.Element*=n$70 [line 74];
+NULLIFY(&amp;$irvar2); [line 74];
+EXIT_SCOPE(_,n$68,n$70,$irvar2); [line 74];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node35.html"><span class='visited with_tooltip'>I_35<span class='tooltip'>node35 preds:34 succs:36 exn:3 Instructions
+n$71=*&amp;$irvar3:org.jsoup.nodes.Element* [line 74];
+_=*n$71:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 74];
+n$73=_fun_Elements Element.select(String)(n$71:org.jsoup.nodes.Element*,"a":java.lang.Object*) virtual [line 74];
+*&amp;$irvar4:org.jsoup.select.Elements*=n$73 [line 74];
+NULLIFY(&amp;$irvar3); [line 74];
+EXIT_SCOPE(_,n$71,n$73,$irvar3); [line 74];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node36.html"><span class='visited with_tooltip'>I_36<span class='tooltip'>node36 preds:35 succs:37 exn:3 Instructions
+n$74=*&amp;$irvar4:org.jsoup.select.Elements* [line 74];
+_=*n$74:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 74];
+n$76=_fun_Element Elements.first()(n$74:org.jsoup.select.Elements*) virtual [line 74];
+*&amp;$irvar5:org.jsoup.nodes.Element*=n$76 [line 74];
+NULLIFY(&amp;$irvar4); [line 74];
+EXIT_SCOPE(_,n$74,n$76,$irvar4); [line 74];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node37.html"><span class='visited with_tooltip'>I_37<span class='tooltip'>node37 preds:36 succs:38 exn:3 Instructions
+n$77=*&amp;$irvar5:org.jsoup.nodes.Element* [line 74];
+_=*n$77:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 74];
+n$79=_fun_String Node.attr(String)(n$77:org.jsoup.nodes.Element*,"href":java.lang.Object*) virtual [line 74];
+*&amp;$irvar6:java.lang.String*=n$79 [line 74];
+NULLIFY(&amp;$irvar5); [line 74];
+EXIT_SCOPE(_,n$77,n$79,$irvar5); [line 74];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node38.html"><span class='visited with_tooltip'>I_38<span class='tooltip'>node38 preds:37 succs:39 exn:3 Instructions
+n$80=*&amp;$irvar6:java.lang.String* [line 74];
+_=*n$80:java.lang.String*(root java.lang.String) [line 74];
+n$82=_fun_String String.toString()(n$80:java.lang.String*) virtual [line 74];
+*&amp;href:java.lang.String*=n$82 [line 74];
+NULLIFY(&amp;$irvar6); [line 74];
+EXIT_SCOPE(_,n$80,n$82,$irvar6); [line 74];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node39.html"><span class='visited with_tooltip'>I_39<span class='tooltip'>node39 preds:38 succs:40 exn:3 Instructions
+n$83=*&amp;result:java.util.ArrayList* [line 75];
+_=*n$83:java.util.ArrayList*(root java.util.ArrayList) [line 75];
+n$85=*&amp;href:java.lang.String* [line 75];
+n$86=_fun_boolean ArrayList.add(Object)(n$83:java.util.ArrayList*,n$85:java.lang.String*) interface virtual [line 75];
+*&amp;$irvar7:_Bool=n$86 [line 75];
+NULLIFY(&amp;$irvar7); [line 75];
+NULLIFY(&amp;href); [line 75];
+EXIT_SCOPE(_,n$83,n$85,n$86,$irvar7,href); [line 75];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node40.html"><span class='visited with_tooltip'>I_40<span class='tooltip'>node40 preds:39 succs:31 exn:3 Instructions
+n$87=*&amp;i:int [line 73];
+*&amp;i:int=(n$87 + 1) [line 73];
+EXIT_SCOPE(n$87); [line 73];
+APPLY_ABSTRACTION; [line 73];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node41.html"><span class='visited with_tooltip'>I_41<span class='tooltip'>node41 preds:30 succs:2 exn:3 Instructions
+n$88=*&amp;result:java.util.ArrayList* [line 77];
+*&amp;return:java.util.List*=n$88 [line 77];
+NULLIFY(&amp;result); [line 77];
+EXIT_SCOPE(n$88,result); [line 77];
+APPLY_ABSTRACTION; [line 77];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node42.html"><span class='visited with_tooltip'>C_42<span class='tooltip'>node42 preds:44 succs:22 exn:3 Conditional exception handler
+n$91=_fun___instanceof(n$90:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 65];
+PRUNE(n$91, true); [line 65];
+*&amp;CatchVar132:java.util.List*=n$90 [line 65];
+EXIT_SCOPE(n$90,n$91); [line 65];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node43.html"><span class='visited with_tooltip'>C_43<span class='tooltip'>node43 preds:44 succs:3 exn:3 Conditional exception handler
+n$91=_fun___instanceof(n$90:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 65];
+PRUNE(!n$91, false); [line 65];
+*&amp;return:java.util.List*=EXN n$90 [line 65];
+NULLIFY(&amp;result); [line 65];
+NULLIFY(&amp;response); [line 65];
+EXIT_SCOPE(n$90,n$91,result,response); [line 65];
+APPLY_ABSTRACTION; [line 65];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node44.html"><span class='visited with_tooltip'>I_44<span class='tooltip'>node44 preds: succs:42 43 exn:3 Instructions
+n$89=*&amp;return:java.util.List* [line 65];
+*&amp;return:java.util.List*=null [line 65];
+n$90=_fun___unwrap_exception(n$89:java.util.List*) [line 65];
+EXIT_SCOPE(n$89); [line 65];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node45.html"><span class='visited with_tooltip'>C_45<span class='tooltip'>node45 preds:48 succs:19 exn:3 Conditional exception handler
+n$92=_fun___instanceof(n$90:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 58];
+PRUNE(n$92, true); [line 58];
+*&amp;CatchVar116:java.util.List*=n$90 [line 58];
+EXIT_SCOPE(n$90,n$92); [line 58];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node46.html"><span class='visited with_tooltip'>C_46<span class='tooltip'>node46 preds:48 succs:3 exn:3 Conditional exception handler
+n$92=_fun___instanceof(n$90:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 58];
+PRUNE(!n$92, false); [line 58];
+*&amp;return:java.util.List*=EXN n$90 [line 58];
+NULLIFY(&amp;result); [line 58];
+NULLIFY(&amp;getMethod); [line 58];
+EXIT_SCOPE(n$90,n$92,result,getMethod); [line 58];
+APPLY_ABSTRACTION; [line 58];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node47.html"><span class='visited with_tooltip'>C_47<span class='tooltip'>node47 preds:49 succs:17 exn:3 Conditional exception handler
+n$93=_fun___instanceof(n$90:org.apache.commons.httpclient.HttpException*,sizeof(t=org.apache.commons.httpclient.HttpException):void) [line 55];
+PRUNE(n$93, true); [line 55];
+*&amp;CatchVar106:java.util.List*=n$90 [line 55];
+EXIT_SCOPE(n$90,n$93); [line 55];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node48.html"><span class='visited with_tooltip'>C_48<span class='tooltip'>node48 preds:49 succs:45 46 exn:3 Conditional exception handler
+n$93=_fun___instanceof(n$90:org.apache.commons.httpclient.HttpException*,sizeof(t=org.apache.commons.httpclient.HttpException):void) [line 55];
+PRUNE(!n$93, false); [line 55];
+EXIT_SCOPE(n$93); [line 55];
+</span></span></a> <a href="./nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node49.html"><span class='visited with_tooltip'>I_49<span class='tooltip'>node49 preds: succs:47 48 exn:3 Instructions
+n$89=*&amp;return:java.util.List* [line 55];
+*&amp;return:java.util.List*=null [line 55];
+n$90=_fun___unwrap_exception(n$89:java.util.List*) [line 55];
+EXIT_SCOPE(n$89); [line 55];
+</span></span></a><br />@
+
+<span class='color_black'>java.util.List* List CrawlerUtil.getUrl(String)(java.lang.String* url)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { return -> (Footprint({ @val$0* }) ~> ?, *) }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= List CrawlerUtil.getUrl(String)
+; translation_unit= src/com/dulishuo/util/CrawlerUtil.java
+; access= Public
+; formals= [(url,java.lang.String*)]
+; is_defined= true
+; loc= src/com/dulishuo/util/CrawlerUtil.java:34
+; locals= [{ name= $irvar7; typ= void; modify_in_block= false }; 
+           { name= $irvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= CatchVar132; typ= void; modify_in_block= false }; 
+           { name= CatchVar116; typ= void; modify_in_block= false }; 
+           { name= CatchVar106; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= size; typ= int; modify_in_block= false }; 
+           { name= tbodys; typ= org.jsoup.select.Elements*; modify_in_block= false }; 
+           { name= ele; typ= org.jsoup.nodes.Element*; modify_in_block= false }; 
+           { name= html; typ= org.jsoup.nodes.Document*; modify_in_block= false }; 
+           { name= ck; typ= java.lang.String*; modify_in_block= false }; 
+           { name= getMethod; typ= org.apache.commons.httpclient.methods.GetMethod*; modify_in_block= false }; 
+           { name= client; typ= org.apache.commons.httpclient.HttpClient*; modify_in_block= false }; 
+           { name= response; typ= java.lang.String*; modify_in_block= false }; 
+           { name= result; typ= java.util.List*; modify_in_block= false }; 
+           { name= i; typ= int; modify_in_block= false }; 
+           { name= href; typ= java.lang.String*; modify_in_block= false }; 
+           { name= e; typ= org.apache.commons.httpclient.HttpException*; modify_in_block= false }]
+; ret_type= java.util.List* 
+; proc_id= com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List }</pre>
+</body>
+</html>

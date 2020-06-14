@@ -1,0 +1,907 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.dulishuo.shenqingfang.offer.UrlGet.getPages(java.lang.String):int.69ffb04aa6b9c108dde4a00373460cdb_node3</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../UrlGet.java.c204b17a8327fc6f46fb79a5849e82a7.html#LINE329">3</a></h1></center>PROC: <a href="./../com.dulishuo.shenqingfang.offer.UrlGet.getPages%28java.lang.String%29%3Aint.69ffb04aa6b9c108dde4a00373460cdb.html">int UrlGet.getPages(String)</a> LINE: <a href="./../../UrlGet.java.c204b17a8327fc6f46fb79a5849e82a7.html#LINE329">329</a>
+<br>PREDS:
+<br>SUCCS:
+<a href="./../nodes/com.dulishuo.shenqingfang.offer.UrlGet.getPages%28java.lang.String%29%3Aint.69ffb04aa6b9c108dde4a00373460cdb_node2.html"><span class='visited with_tooltip'>N_2<span class='tooltip'>node2 preds:17 3 succs: exn: </span></span></a><br>EXN:
+<a href="./../nodes/com.dulishuo.shenqingfang.offer.UrlGet.getPages%28java.lang.String%29%3Aint.69ffb04aa6b9c108dde4a00373460cdb_node2.html"><span class='visited with_tooltip'>N_2<span class='tooltip'>node2 preds:17 3 succs: exn: </span></span></a><br>
+<LISTING class='color_green'></LISTING>
+<hr width="100%">
+<a name="session2" href="./../nodes/com.dulishuo.shenqingfang.offer.UrlGet.getPages%28java.lang.String%29%3Aint.69ffb04aa6b9c108dde4a00373460cdb_node3.html#session2">node3#session2</a>(<a href="./../../UrlGet.java.c204b17a8327fc6f46fb79a5849e82a7.html#LINE329">329</a>) [compute pre] liveness 3
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session3" href="./../nodes/com.dulishuo.shenqingfang.offer.UrlGet.getPages%28java.lang.String%29%3Aint.69ffb04aa6b9c108dde4a00373460cdb_node3.html#session3">node3#session3</a>(<a href="./../../UrlGet.java.c204b17a8327fc6f46fb79a5849e82a7.html#LINE329">329</a>) [exec] liveness 3
+<LISTING class='color_black'>PRE STATE:
+{ }
+
+INSTR=  SKIP; 
+
+STATE UNCHANGED
+
+</LISTING>
+<hr width="100%">
+<a name="session63" href="./../nodes/com.dulishuo.shenqingfang.offer.UrlGet.getPages%28java.lang.String%29%3Aint.69ffb04aa6b9c108dde4a00373460cdb_node3.html#session63">node3#session63</a>(<a href="./../../UrlGet.java.c204b17a8327fc6f46fb79a5849e82a7.html#LINE329">329</a>) [compute pre] nullify
+<LISTING class='color_black'>JOIN
+
+LEFT:   ({ },{ ires })
+RIGHT:  ({ },{ response })
+RESULT: ({ },
+{ ires, response })
+
+JOIN
+
+LEFT:   ({ },{ ires, response })
+RIGHT:  ({ response },{ n$0, n$1, url })
+RESULT: ({ response },
+{ n$0, n$1, url, ires, response })
+
+JOIN
+
+LEFT:   ({ response },{ n$0, n$1, url, ires, response })
+RIGHT:  ({ doc },{ n$2, n$3, response })
+RESULT: ({ doc, response },
+{ n$0, n$1, n$2, n$3, url, ires, response })
+
+JOIN
+
+LEFT:   ({ doc, response },
+{ n$0, n$1, n$2, n$3, url, ires, response })
+RIGHT:  ({ ele },{ _, n$4, n$6, doc })
+RESULT: ({ doc, ele, response },
+{ _, n$0, n$1, n$2, n$3, n$4, n$6, doc, url, ires, response })
+
+JOIN
+
+LEFT:   ({ doc, ele, response },
+{ _, n$0, n$1, n$2, n$3, n$4, n$6, doc, url, ires, response })
+RIGHT:  ({ $irvar0, ele },
+{ _, n$7, n$9 })
+RESULT: ({ doc, $irvar0, ele, response },
+{ _, _, n$0, n$1, n$2, n$3, n$4, n$6, n$7, n$9, doc, url, ires, response })
+
+JOIN
+
+LEFT:   ({ doc, $irvar0, ele, response },
+{ _, _, n$0, n$1, n$2, n$3, n$4, n$6, n$7, n$9, doc, url, ires, response })
+RIGHT:  ({ ele },
+{ _, n$10, n$12, $irvar0, $irvar1 })
+RESULT: ({ doc, $irvar0, ele, response },
+{ _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$12,
+  doc,
+  url,
+  $irvar0,
+  ires,
+  $irvar1,
+  response })
+
+JOIN
+
+LEFT:   ({ doc, $irvar0, ele, response },
+{ _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$12,
+  doc,
+  url,
+  $irvar0,
+  ires,
+  $irvar1,
+  response })
+RIGHT:  ({ $irvar2 },
+{ _, n$13, n$15, ele })
+RESULT: ({ doc, $irvar0, ele, $irvar2, response },
+{ _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$12,
+  n$13,
+  n$15,
+  doc,
+  url,
+  $irvar0,
+  ele,
+  ires,
+  $irvar1,
+  response })
+
+JOIN
+
+LEFT:   ({ doc, $irvar0, ele, $irvar2, response },
+{ _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$12,
+  n$13,
+  n$15,
+  doc,
+  url,
+  $irvar0,
+  ele,
+  ires,
+  $irvar1,
+  response })
+RIGHT:  ({ $irvar3 },
+{ _, n$16, n$18, $irvar2 })
+RESULT: ({ doc, $irvar3, $irvar0, ele, $irvar2, response },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$12,
+  n$13,
+  n$15,
+  n$16,
+  n$18,
+  doc,
+  url,
+  $irvar0,
+  ele,
+  ires,
+  $irvar1,
+  $irvar2,
+  response })
+
+JOIN
+
+LEFT:   ({ doc, $irvar3, $irvar0, ele, $irvar2, response },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$12,
+  n$13,
+  n$15,
+  n$16,
+  n$18,
+  doc,
+  url,
+  $irvar0,
+  ele,
+  ires,
+  $irvar1,
+  $irvar2,
+  response })
+RIGHT:  ({ $irvar4 },
+{ _, n$19, n$21, $irvar3 })
+RESULT: ({ doc, $irvar3, $irvar4, $irvar0, ele, $irvar2, response },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$12,
+  n$13,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  doc,
+  $irvar3,
+  url,
+  $irvar0,
+  ele,
+  ires,
+  $irvar1,
+  $irvar2,
+  response })
+
+JOIN
+
+LEFT:   ({ doc, $irvar3, $irvar4, $irvar0, ele, $irvar2, response },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$12,
+  n$13,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  doc,
+  $irvar3,
+  url,
+  $irvar0,
+  ele,
+  ires,
+  $irvar1,
+  $irvar2,
+  response })
+RIGHT:  ({ $irvar5 },
+{ _, _, n$22, n$24, n$26, $irvar4 })
+RESULT: ({ doc, $irvar3, $irvar5, $irvar4, $irvar0, ele, $irvar2, response },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$12,
+  n$13,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  n$24,
+  n$26,
+  doc,
+  $irvar3,
+  url,
+  $irvar4,
+  $irvar0,
+  ele,
+  ires,
+  $irvar1,
+  $irvar2,
+  response })
+
+JOIN
+
+LEFT:   ({ doc, $irvar3, $irvar5, $irvar4, $irvar0, ele, $irvar2, response },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$12,
+  n$13,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  n$24,
+  n$26,
+  doc,
+  $irvar3,
+  url,
+  $irvar4,
+  $irvar0,
+  ele,
+  ires,
+  $irvar1,
+  $irvar2,
+  response })
+RIGHT:  ({ $irvar6 },
+{ _, n$27, n$29, $irvar5 })
+RESULT: ({ doc,
+           $irvar3,
+           $irvar5,
+           $irvar4,
+           $irvar6,
+           $irvar0,
+           ele,
+           $irvar2,
+           response },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$12,
+  n$13,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  n$24,
+  n$26,
+  n$27,
+  n$29,
+  doc,
+  $irvar3,
+  url,
+  $irvar5,
+  $irvar4,
+  $irvar0,
+  ele,
+  ires,
+  $irvar1,
+  $irvar2,
+  response })
+
+JOIN
+
+LEFT:   ({ doc,
+           $irvar3,
+           $irvar5,
+           $irvar4,
+           $irvar6,
+           $irvar0,
+           ele,
+           $irvar2,
+           response },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$12,
+  n$13,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  n$24,
+  n$26,
+  n$27,
+  n$29,
+  doc,
+  $irvar3,
+  url,
+  $irvar5,
+  $irvar4,
+  $irvar0,
+  ele,
+  ires,
+  $irvar1,
+  $irvar2,
+  response })
+RIGHT:  ({ ires },
+{ n$30, n$31, $irvar6 })
+RESULT: ({ doc,
+           $irvar3,
+           $irvar5,
+           $irvar4,
+           $irvar6,
+           $irvar0,
+           ele,
+           ires,
+           $irvar2,
+           response },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$12,
+  n$13,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  n$24,
+  n$26,
+  n$27,
+  n$29,
+  n$30,
+  n$31,
+  doc,
+  $irvar3,
+  url,
+  $irvar5,
+  $irvar4,
+  $irvar6,
+  $irvar0,
+  ele,
+  ires,
+  $irvar1,
+  $irvar2,
+  response })
+
+JOIN
+
+LEFT:   ({ doc,
+           $irvar3,
+           $irvar5,
+           $irvar4,
+           $irvar6,
+           $irvar0,
+           ele,
+           ires,
+           $irvar2,
+           response },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$12,
+  n$13,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  n$24,
+  n$26,
+  n$27,
+  n$29,
+  n$30,
+  n$31,
+  doc,
+  $irvar3,
+  url,
+  $irvar5,
+  $irvar4,
+  $irvar6,
+  $irvar0,
+  ele,
+  ires,
+  $irvar1,
+  $irvar2,
+  response })
+RIGHT:  ({ },
+{ n$32, return, ires })
+RESULT: ({ doc,
+           $irvar3,
+           $irvar5,
+           $irvar4,
+           $irvar6,
+           $irvar0,
+           ele,
+           ires,
+           $irvar2,
+           response },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$12,
+  n$13,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  n$24,
+  n$26,
+  n$27,
+  n$29,
+  n$30,
+  n$31,
+  n$32,
+  doc,
+  $irvar3,
+  url,
+  $irvar5,
+  $irvar4,
+  $irvar6,
+  $irvar0,
+  ele,
+  return,
+  ires,
+  $irvar1,
+  $irvar2,
+  response })
+
+</LISTING>
+<hr width="100%">
+<a name="session64" href="./../nodes/com.dulishuo.shenqingfang.offer.UrlGet.getPages%28java.lang.String%29%3Aint.69ffb04aa6b9c108dde4a00373460cdb_node3.html#session64">node3#session64</a>(<a href="./../../UrlGet.java.c204b17a8327fc6f46fb79a5849e82a7.html#LINE329">329</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ doc,
+   $irvar3,
+   $irvar5,
+   $irvar4,
+   $irvar6,
+   $irvar0,
+   ele,
+   ires,
+   $irvar2,
+   response },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$12,
+  n$13,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  n$24,
+  n$26,
+  n$27,
+  n$29,
+  n$30,
+  n$31,
+  n$32,
+  doc,
+  $irvar3,
+  url,
+  $irvar5,
+  $irvar4,
+  $irvar6,
+  $irvar0,
+  ele,
+  return,
+  ires,
+  $irvar1,
+  $irvar2,
+  response })
+
+INSTR=  SKIP; 
+
+STATE:
+({ },
+{ doc,
+  $irvar3,
+  $irvar5,
+  $irvar4,
+  $irvar6,
+  $irvar0,
+  ele,
+  ires,
+  $irvar2,
+  response })
+
+</LISTING>
+<hr width="100%">
+<a name="session30" href="./../nodes/com.dulishuo.shenqingfang.offer.UrlGet.getPages%28java.lang.String%29%3Aint.69ffb04aa6b9c108dde4a00373460cdb_node3.html#session30">node3#session30</a>(<a href="./../../UrlGet.java.c204b17a8327fc6f46fb79a5849e82a7.html#LINE329">329</a>) [compute pre] quandary(java)
+<LISTING class='color_black'>JOIN
+
+LEFT:   { ires -&gt; { } }
+RIGHT:  { ires -&gt; { }, response -&gt; { } }
+RESULT: { ires -&gt; { }, response -&gt; { } }
+
+JOIN
+
+LEFT:   { ires -&gt; { }, response -&gt; { } }
+RIGHT:  { n$1 -&gt; { }, ires -&gt; { }, response -&gt; { } }
+RESULT: { n$1 -&gt; { }, ires -&gt; { }, response -&gt; { } }
+
+JOIN
+
+LEFT:   { n$1 -&gt; { }, ires -&gt; { }, response -&gt; { } }
+RIGHT:  { n$1 -&gt; { }, doc -&gt; { }, ires -&gt; { }, response -&gt; { } }
+RESULT: { n$1 -&gt; { }, doc -&gt; { }, ires -&gt; { }, response -&gt; { } }
+
+JOIN
+
+LEFT:   { n$1 -&gt; { }, doc -&gt; { }, ires -&gt; { }, response -&gt; { } }
+RIGHT:  { n$1 -&gt; { }, doc -&gt; { }, ele -&gt; { }, ires -&gt; { }, response -&gt; { } }
+RESULT: { n$1 -&gt; { }, doc -&gt; { }, ele -&gt; { }, ires -&gt; { }, response -&gt; { } }
+
+JOIN
+
+LEFT:   { n$1 -&gt; { }, doc -&gt; { }, ele -&gt; { }, ires -&gt; { }, response -&gt; { } }
+RIGHT:  { n$1 -&gt; { }, doc -&gt; { }, ele -&gt; { }, ires -&gt; { }, response -&gt; { } }
+RESULT: { n$1 -&gt; { }, doc -&gt; { }, ele -&gt; { }, ires -&gt; { }, response -&gt; { } }
+
+JOIN
+
+LEFT:   { n$1 -&gt; { }, doc -&gt; { }, ele -&gt; { }, ires -&gt; { }, response -&gt; { } }
+RIGHT:  { n$1 -&gt; { }, doc -&gt; { }, ele -&gt; { }, ires -&gt; { }, response -&gt; { } }
+RESULT: { n$1 -&gt; { }, doc -&gt; { }, ele -&gt; { }, ires -&gt; { }, response -&gt; { } }
+
+JOIN
+
+LEFT:   { n$1 -&gt; { }, doc -&gt; { }, ele -&gt; { }, ires -&gt; { }, response -&gt; { } }
+RIGHT:  { n$1 -&gt; { }, doc -&gt; { }, ele -&gt; { }, ires -&gt; { }, response -&gt; { } }
+RESULT: { n$1 -&gt; { }, doc -&gt; { }, ele -&gt; { }, ires -&gt; { }, response -&gt; { } }
+
+JOIN
+
+LEFT:   { n$1 -&gt; { }, doc -&gt; { }, ele -&gt; { }, ires -&gt; { }, response -&gt; { } }
+RIGHT:  { n$1 -&gt; { }, doc -&gt; { }, ele -&gt; { }, ires -&gt; { }, response -&gt; { } }
+RESULT: { n$1 -&gt; { }, doc -&gt; { }, ele -&gt; { }, ires -&gt; { }, response -&gt; { } }
+
+JOIN
+
+LEFT:   { n$1 -&gt; { }, doc -&gt; { }, ele -&gt; { }, ires -&gt; { }, response -&gt; { } }
+RIGHT:  { n$1 -&gt; { }, doc -&gt; { }, ele -&gt; { }, ires -&gt; { }, response -&gt; { } }
+RESULT: { n$1 -&gt; { }, doc -&gt; { }, ele -&gt; { }, ires -&gt; { }, response -&gt; { } }
+
+JOIN
+
+LEFT:   { n$1 -&gt; { }, doc -&gt; { }, ele -&gt; { }, ires -&gt; { }, response -&gt; { } }
+RIGHT:  { n$1 -&gt; { }, doc -&gt; { }, ele -&gt; { }, ires -&gt; { }, response -&gt; { } }
+RESULT: { n$1 -&gt; { }, doc -&gt; { }, ele -&gt; { }, ires -&gt; { }, response -&gt; { } }
+
+JOIN
+
+LEFT:   { n$1 -&gt; { }, doc -&gt; { }, ele -&gt; { }, ires -&gt; { }, response -&gt; { } }
+RIGHT:  { n$1 -&gt; { }, doc -&gt; { }, ele -&gt; { }, ires -&gt; { }, response -&gt; { } }
+RESULT: { n$1 -&gt; { }, doc -&gt; { }, ele -&gt; { }, ires -&gt; { }, response -&gt; { } }
+
+JOIN
+
+LEFT:   { n$1 -&gt; { }, doc -&gt; { }, ele -&gt; { }, ires -&gt; { }, response -&gt; { } }
+RIGHT:  { n$1 -&gt; { }, doc -&gt; { }, ele -&gt; { }, ires -&gt; { }, response -&gt; { } }
+RESULT: { n$1 -&gt; { }, doc -&gt; { }, ele -&gt; { }, ires -&gt; { }, response -&gt; { } }
+
+JOIN
+
+LEFT:   { n$1 -&gt; { }, doc -&gt; { }, ele -&gt; { }, ires -&gt; { }, response -&gt; { } }
+RIGHT:  { n$1 -&gt; { },
+          doc -&gt; { },
+          ele -&gt; { },
+          return -&gt; { },
+          ires -&gt; { },
+          response -&gt; { } }
+RESULT: { n$1 -&gt; { },
+          doc -&gt; { },
+          ele -&gt; { },
+          return -&gt; { },
+          ires -&gt; { },
+          response -&gt; { } }
+
+</LISTING>
+<hr width="100%">
+<a name="session31" href="./../nodes/com.dulishuo.shenqingfang.offer.UrlGet.getPages%28java.lang.String%29%3Aint.69ffb04aa6b9c108dde4a00373460cdb_node3.html#session31">node3#session31</a>(<a href="./../../UrlGet.java.c204b17a8327fc6f46fb79a5849e82a7.html#LINE329">329</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$1 -&gt; { },
+  doc -&gt; { },
+  ele -&gt; { },
+  return -&gt; { },
+  ires -&gt; { },
+  response -&gt; { } }
+
+INSTR=  NULLIFY(&amp;doc); [line 329]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;$irvar3); [line 329]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;$irvar5); [line 329]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;$irvar4); [line 329]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;$irvar6); [line 329]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;$irvar0); [line 329]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;ele); [line 329]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;ires); [line 329]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;$irvar2); [line 329]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;response); [line 329]; 
+
+STATE UNCHANGED
+
+INSTR=  EXIT_SCOPE(doc,n$18,n$26,n$21,n$29,n$9,ele,ires,n$15,response); [line 329]; 
+
+STATE:
+{ n$1 -&gt; { },
+  doc -&gt; { },
+  ele -&gt; { },
+  return -&gt; { },
+  ires -&gt; { },
+  response -&gt; { } }
+
+INSTR=  APPLY_ABSTRACTION; [line 329]; 
+
+STATE UNCHANGED
+
+</LISTING>

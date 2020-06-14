@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.usnews.UrlGet.<init>().bc6968967650b773baaeabef6955fa6b_1" [label="1: Start UrlGet.<init>()\nFormals:  this:com.dulishuo.usnews.UrlGet*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.usnews.UrlGet.<init>().bc6968967650b773baaeabef6955fa6b_1" -> "com.dulishuo.usnews.UrlGet.<init>().bc6968967650b773baaeabef6955fa6b_4" ;
+"com.dulishuo.usnews.UrlGet.<init>().bc6968967650b773baaeabef6955fa6b_2" [label="2: Exit UrlGet.<init>() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.usnews.UrlGet.<init>().bc6968967650b773baaeabef6955fa6b_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 29]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.UrlGet.<init>().bc6968967650b773baaeabef6955fa6b_3" -> "com.dulishuo.usnews.UrlGet.<init>().bc6968967650b773baaeabef6955fa6b_2" ;
+"com.dulishuo.usnews.UrlGet.<init>().bc6968967650b773baaeabef6955fa6b_4" [label="4:  Call Object.<init>() \n   n$0=*&this:com.dulishuo.usnews.UrlGet* [line 29]\n  n$1=_fun_Object.<init>()(n$0:com.dulishuo.usnews.UrlGet*) [line 29]\n  NULLIFY(&this); [line 29]\n  EXIT_SCOPE(n$0,n$1,this); [line 29]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.UrlGet.<init>().bc6968967650b773baaeabef6955fa6b_4" -> "com.dulishuo.usnews.UrlGet.<init>().bc6968967650b773baaeabef6955fa6b_5" ;
+	 "com.dulishuo.usnews.UrlGet.<init>().bc6968967650b773baaeabef6955fa6b_4" -> "com.dulishuo.usnews.UrlGet.<init>().bc6968967650b773baaeabef6955fa6b_3" [color="red" ];
+"com.dulishuo.usnews.UrlGet.<init>().bc6968967650b773baaeabef6955fa6b_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 29]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.UrlGet.<init>().bc6968967650b773baaeabef6955fa6b_5" -> "com.dulishuo.usnews.UrlGet.<init>().bc6968967650b773baaeabef6955fa6b_2" ;
+	 "com.dulishuo.usnews.UrlGet.<init>().bc6968967650b773baaeabef6955fa6b_5" -> "com.dulishuo.usnews.UrlGet.<init>().bc6968967650b773baaeabef6955fa6b_3" [color="red" ];
+}

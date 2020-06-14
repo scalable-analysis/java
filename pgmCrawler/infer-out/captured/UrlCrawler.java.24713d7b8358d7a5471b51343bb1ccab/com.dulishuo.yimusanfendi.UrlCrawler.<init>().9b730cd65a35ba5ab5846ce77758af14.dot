@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.yimusanfendi.UrlCrawler.<init>().9b730cd65a35ba5ab5846ce77758af14_1" [label="1: Start UrlCrawler.<init>()\nFormals:  this:com.dulishuo.yimusanfendi.UrlCrawler*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.<init>().9b730cd65a35ba5ab5846ce77758af14_1" -> "com.dulishuo.yimusanfendi.UrlCrawler.<init>().9b730cd65a35ba5ab5846ce77758af14_4" ;
+"com.dulishuo.yimusanfendi.UrlCrawler.<init>().9b730cd65a35ba5ab5846ce77758af14_2" [label="2: Exit UrlCrawler.<init>() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.yimusanfendi.UrlCrawler.<init>().9b730cd65a35ba5ab5846ce77758af14_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 20]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.<init>().9b730cd65a35ba5ab5846ce77758af14_3" -> "com.dulishuo.yimusanfendi.UrlCrawler.<init>().9b730cd65a35ba5ab5846ce77758af14_2" ;
+"com.dulishuo.yimusanfendi.UrlCrawler.<init>().9b730cd65a35ba5ab5846ce77758af14_4" [label="4:  Call Object.<init>() \n   n$0=*&this:com.dulishuo.yimusanfendi.UrlCrawler* [line 20]\n  n$1=_fun_Object.<init>()(n$0:com.dulishuo.yimusanfendi.UrlCrawler*) [line 20]\n  NULLIFY(&this); [line 20]\n  EXIT_SCOPE(n$0,n$1,this); [line 20]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.<init>().9b730cd65a35ba5ab5846ce77758af14_4" -> "com.dulishuo.yimusanfendi.UrlCrawler.<init>().9b730cd65a35ba5ab5846ce77758af14_5" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.<init>().9b730cd65a35ba5ab5846ce77758af14_4" -> "com.dulishuo.yimusanfendi.UrlCrawler.<init>().9b730cd65a35ba5ab5846ce77758af14_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.<init>().9b730cd65a35ba5ab5846ce77758af14_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 20]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.<init>().9b730cd65a35ba5ab5846ce77758af14_5" -> "com.dulishuo.yimusanfendi.UrlCrawler.<init>().9b730cd65a35ba5ab5846ce77758af14_2" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.<init>().9b730cd65a35ba5ab5846ce77758af14_5" -> "com.dulishuo.yimusanfendi.UrlCrawler.<init>().9b730cd65a35ba5ab5846ce77758af14_3" [color="red" ];
+}

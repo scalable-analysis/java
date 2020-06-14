@@ -1,0 +1,914 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.dulishuo.usnews.UrlGet.getUrl(java.lang.String,int):java.util.List.156ec4a196c75367b1c200d3ac5e8ae2</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../UrlGet.java.b1d7c4f0b9d272313300aa97ae6a1265.html#LINE85">List UrlGet.getUrl(String,int)</a></h1></center>
+<a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:106 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:108 succs:2 exn:2 Instructions
+NULLIFY(&amp;CatchVar533); [line 127];
+NULLIFY(&amp;rs); [line 127];
+NULLIFY(&amp;e); [line 127];
+EXIT_SCOPE(n$267,CatchVar533,rs,e); [line 127];
+APPLY_ABSTRACTION; [line 127];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 86];
+n$1=_fun_ArrayList.&lt;init&gt;()(n$0:java.util.ArrayList*) [line 86];
+*&amp;rs:java.util.ArrayList*=n$0 [line 86];
+EXIT_SCOPE(n$0,n$1); [line 86];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+*&amp;html:java.lang.Object*=null [line 87];
+NULLIFY(&amp;html); [line 87];
+EXIT_SCOPE(html); [line 87];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:109 Instructions
+n$2=*&amp;url:java.lang.String* [line 89];
+n$3=_fun_String UrlGet.getHttp(String)(n$2:java.lang.String*) [line 89];
+*&amp;$irvar0:java.lang.String*=n$3 [line 89];
+NULLIFY(&amp;url); [line 89];
+EXIT_SCOPE(n$2,n$3,url); [line 89];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:109 Instructions
+n$4=*&amp;$irvar0:java.lang.String* [line 89];
+n$5=_fun_Document Jsoup.parse(String)(n$4:java.lang.String*) [line 89];
+*&amp;html:org.jsoup.nodes.Document*=n$5 [line 89];
+NULLIFY(&amp;$irvar0); [line 89];
+EXIT_SCOPE(n$4,n$5,$irvar0); [line 89];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:109 Instructions
+n$6=*&amp;html:org.jsoup.nodes.Document* [line 90];
+_=*n$6:org.jsoup.nodes.Document*(root org.jsoup.nodes.Document) [line 90];
+n$8=_fun_Element Element.getElementById(String)(n$6:org.jsoup.nodes.Document*,"article":java.lang.Object*) virtual [line 90];
+*&amp;$irvar1:org.jsoup.nodes.Element*=n$8 [line 90];
+NULLIFY(&amp;html); [line 90];
+EXIT_SCOPE(_,n$6,n$8,html); [line 90];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:109 Instructions
+n$9=*&amp;$irvar1:org.jsoup.nodes.Element* [line 90];
+_=*n$9:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 90];
+n$11=_fun_Elements Element.getElementsByTag(String)(n$9:org.jsoup.nodes.Element*,"table":java.lang.Object*) virtual [line 90];
+*&amp;$irvar2:org.jsoup.select.Elements*=n$11 [line 90];
+NULLIFY(&amp;$irvar1); [line 90];
+EXIT_SCOPE(_,n$9,n$11,$irvar1); [line 90];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:109 Instructions
+n$12=*&amp;$irvar2:org.jsoup.select.Elements* [line 90];
+_=*n$12:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 90];
+n$14=_fun_Element Elements.get(int)(n$12:org.jsoup.select.Elements*,0:int) virtual [line 90];
+*&amp;$irvar3:org.jsoup.nodes.Element*=n$14 [line 90];
+NULLIFY(&amp;$irvar2); [line 90];
+EXIT_SCOPE(_,n$12,n$14,$irvar2); [line 90];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:109 Instructions
+n$15=*&amp;$irvar3:org.jsoup.nodes.Element* [line 90];
+_=*n$15:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 90];
+n$17=_fun_Elements Element.getElementsByTag(String)(n$15:org.jsoup.nodes.Element*,"tbody":java.lang.Object*) virtual [line 90];
+*&amp;$irvar4:org.jsoup.select.Elements*=n$17 [line 90];
+NULLIFY(&amp;$irvar3); [line 90];
+EXIT_SCOPE(_,n$15,n$17,$irvar3); [line 90];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:109 Instructions
+n$18=*&amp;$irvar4:org.jsoup.select.Elements* [line 90];
+_=*n$18:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 90];
+n$20=_fun_Element Elements.get(int)(n$18:org.jsoup.select.Elements*,0:int) virtual [line 90];
+*&amp;table:org.jsoup.nodes.Element*=n$20 [line 90];
+NULLIFY(&amp;$irvar4); [line 90];
+EXIT_SCOPE(_,n$18,n$20,$irvar4); [line 90];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:109 Instructions
+*&amp;flag:int=1 [line 91];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:109 Instructions
+n$21=*&amp;table:org.jsoup.nodes.Element* [line 92];
+_=*n$21:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 92];
+n$23=_fun_Elements Element.children()(n$21:org.jsoup.nodes.Element*) virtual [line 92];
+*&amp;$irvar5:org.jsoup.select.Elements*=n$23 [line 92];
+NULLIFY(&amp;table); [line 92];
+EXIT_SCOPE(_,n$21,n$23,table); [line 92];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:109 Instructions
+n$24=*&amp;$irvar5:org.jsoup.select.Elements* [line 92];
+_=*n$24:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 92];
+n$26=_fun_Iterator Elements.iterator()(n$24:org.jsoup.select.Elements*) virtual [line 92];
+*&amp;$bcvar6:java.util.Iterator*=n$26 [line 92];
+NULLIFY(&amp;$irvar5); [line 92];
+EXIT_SCOPE(_,n$24,n$26,$irvar5); [line 92];
+APPLY_ABSTRACTION; [line 92];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:103 24 15 succs:19 exn:109 Instructions
+n$27=*&amp;$bcvar6:java.util.Iterator* [line 92];
+_=*n$27:java.util.Iterator*(root java.util.Iterator) [line 92];
+n$29=_fun_boolean Iterator.hasNext()(n$27:java.util.Iterator*) interface virtual [line 92];
+*&amp;$irvar6:_Bool=n$29 [line 92];
+EXIT_SCOPE(_,n$27,n$29); [line 92];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node17.html"><span class='visited with_tooltip'>C_17<span class='tooltip'>node17 preds:19 succs:20 exn:109 Conditional method_body
+n$30=*&amp;$irvar6:_Bool [line 92];
+PRUNE(!(n$30 == 0), true); [line 92];
+NULLIFY(&amp;$irvar6); [line 92];
+EXIT_SCOPE(n$30,$irvar6); [line 92];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node18.html"><span class='visited with_tooltip'>C_18<span class='tooltip'>node18 preds:19 succs:106 exn:109 Conditional method_body
+n$30=*&amp;$irvar6:_Bool [line 92];
+PRUNE((n$30 == 0), false); [line 92];
+NULLIFY(&amp;$bcvar6); [line 92];
+NULLIFY(&amp;$irvar6); [line 92];
+NULLIFY(&amp;flag); [line 92];
+EXIT_SCOPE(n$30,$bcvar6,$irvar6,flag); [line 92];
+APPLY_ABSTRACTION; [line 92];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node19.html"><span class='visited with_tooltip'>J_19<span class='tooltip'>node19 preds:16 succs:17 18 exn: Join
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:17 succs:21 exn:109 Instructions
+n$31=*&amp;$bcvar6:java.util.Iterator* [line 92];
+_=*n$31:java.util.Iterator*(root java.util.Iterator) [line 92];
+n$33=_fun_Object Iterator.next()(n$31:java.util.Iterator*) interface virtual [line 92];
+*&amp;$irvar7:java.lang.Object*=n$33 [line 92];
+EXIT_SCOPE(_,n$31,n$33); [line 92];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:22 exn:109 Instructions
+n$34=*&amp;$irvar7:java.lang.Object* [line 92];
+n$35=_fun___cast(n$34:java.lang.Object*,sizeof(t=org.jsoup.nodes.Element;sub_t=( sub )(cast)):void) [line 92];
+*&amp;e:org.jsoup.nodes.Element*=n$35 [line 92];
+NULLIFY(&amp;$irvar7); [line 92];
+EXIT_SCOPE(n$34,n$35,$irvar7); [line 92];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:25 exn:109 Instructions
+n$36=*&amp;e:org.jsoup.nodes.Element* [line 93];
+_=*n$36:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 93];
+n$38=_fun_boolean Node.hasAttr(String)(n$36:org.jsoup.nodes.Element*,"valign":java.lang.Object*) virtual [line 93];
+*&amp;$irvar8:_Bool=n$38 [line 93];
+EXIT_SCOPE(_,n$36,n$38); [line 93];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node23.html"><span class='visited with_tooltip'>C_23<span class='tooltip'>node23 preds:25 succs:26 exn:109 Conditional method_body
+n$39=*&amp;$irvar8:_Bool [line 93];
+PRUNE(!(n$39 == 0), true); [line 93];
+NULLIFY(&amp;$irvar8); [line 93];
+EXIT_SCOPE(n$39,$irvar8); [line 93];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node24.html"><span class='visited with_tooltip'>C_24<span class='tooltip'>node24 preds:25 succs:16 exn:109 Conditional method_body
+n$39=*&amp;$irvar8:_Bool [line 93];
+PRUNE((n$39 == 0), false); [line 93];
+NULLIFY(&amp;$irvar8); [line 93];
+NULLIFY(&amp;e); [line 93];
+EXIT_SCOPE(n$39,$irvar8,e); [line 93];
+APPLY_ABSTRACTION; [line 93];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node25.html"><span class='visited with_tooltip'>J_25<span class='tooltip'>node25 preds:22 succs:23 24 exn: Join
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:23 succs:29 exn:109 Instructions
+n$40=_fun___new(sizeof(t=java.util.HashMap):java.util.HashMap*) [line 94];
+n$41=_fun_HashMap.&lt;init&gt;()(n$40:java.util.HashMap*) [line 94];
+*&amp;map:java.util.HashMap*=n$40 [line 94];
+EXIT_SCOPE(n$40,n$41); [line 94];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node27.html"><span class='visited with_tooltip'>C_27<span class='tooltip'>node27 preds:29 succs:30 31 exn:109 Conditional method_body
+n$42=*&amp;page:int [line 95];
+PRUNE(!(n$42 != 8), true); [line 95];
+EXIT_SCOPE(n$42); [line 95];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node28.html"><span class='visited with_tooltip'>C_28<span class='tooltip'>node28 preds:29 succs:32 exn:109 Conditional method_body
+n$42=*&amp;page:int [line 95];
+PRUNE((n$42 != 8), false); [line 95];
+EXIT_SCOPE(n$42); [line 95];
+APPLY_ABSTRACTION; [line 95];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node29.html"><span class='visited with_tooltip'>J_29<span class='tooltip'>node29 preds:26 succs:27 28 exn: Join
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node30.html"><span class='visited with_tooltip'>C_30<span class='tooltip'>node30 preds:27 succs:106 exn:109 Conditional method_body
+n$43=*&amp;flag:int [line 95];
+PRUNE(!(n$43  &lt;=  9), true); [line 95];
+NULLIFY(&amp;$bcvar6); [line 95];
+NULLIFY(&amp;map); [line 95];
+NULLIFY(&amp;flag); [line 95];
+NULLIFY(&amp;e); [line 95];
+EXIT_SCOPE(n$43,$bcvar6,map,flag,e); [line 95];
+APPLY_ABSTRACTION; [line 95];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node31.html"><span class='visited with_tooltip'>C_31<span class='tooltip'>node31 preds:27 succs:32 exn:109 Conditional method_body
+n$43=*&amp;flag:int [line 95];
+PRUNE((n$43  &lt;=  9), false); [line 95];
+EXIT_SCOPE(n$43); [line 95];
+APPLY_ABSTRACTION; [line 95];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node32.html"><span class='visited with_tooltip'>I_32<span class='tooltip'>node32 preds:31 28 succs:33 exn:109 Instructions
+n$44=*&amp;e:org.jsoup.nodes.Element* [line 97];
+_=*n$44:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 97];
+n$46=_fun_Elements Element.getElementsByTag(String)(n$44:org.jsoup.nodes.Element*,"td":java.lang.Object*) virtual [line 97];
+*&amp;$irvar9:org.jsoup.select.Elements*=n$46 [line 97];
+EXIT_SCOPE(_,n$44,n$46); [line 97];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds:32 succs:34 exn:109 Instructions
+n$47=*&amp;$irvar9:org.jsoup.select.Elements* [line 97];
+_=*n$47:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 97];
+n$49=_fun_Element Elements.get(int)(n$47:org.jsoup.select.Elements*,2:int) virtual [line 97];
+*&amp;$irvar10:org.jsoup.nodes.Element*=n$49 [line 97];
+NULLIFY(&amp;$irvar9); [line 97];
+EXIT_SCOPE(_,n$47,n$49,$irvar9); [line 97];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds:33 succs:35 exn:109 Instructions
+n$50=*&amp;$irvar10:org.jsoup.nodes.Element* [line 97];
+_=*n$50:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 97];
+n$52=_fun_Elements Element.select(String)(n$50:org.jsoup.nodes.Element*,"a":java.lang.Object*) virtual [line 97];
+*&amp;$irvar11:org.jsoup.select.Elements*=n$52 [line 97];
+NULLIFY(&amp;$irvar10); [line 97];
+EXIT_SCOPE(_,n$50,n$52,$irvar10); [line 97];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node35.html"><span class='visited with_tooltip'>I_35<span class='tooltip'>node35 preds:34 succs:36 exn:109 Instructions
+n$53=*&amp;$irvar11:org.jsoup.select.Elements* [line 97];
+_=*n$53:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 97];
+n$55=_fun_Element Elements.first()(n$53:org.jsoup.select.Elements*) virtual [line 97];
+*&amp;$irvar12:org.jsoup.nodes.Element*=n$55 [line 97];
+NULLIFY(&amp;$irvar11); [line 97];
+EXIT_SCOPE(_,n$53,n$55,$irvar11); [line 97];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node36.html"><span class='visited with_tooltip'>I_36<span class='tooltip'>node36 preds:35 succs:37 exn:109 Instructions
+n$56=*&amp;$irvar12:org.jsoup.nodes.Element* [line 97];
+_=*n$56:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 97];
+n$58=_fun_String Node.attr(String)(n$56:org.jsoup.nodes.Element*,"href":java.lang.Object*) virtual [line 97];
+*&amp;$irvar13:java.lang.String*=n$58 [line 97];
+NULLIFY(&amp;$irvar12); [line 97];
+EXIT_SCOPE(_,n$56,n$58,$irvar12); [line 97];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node37.html"><span class='visited with_tooltip'>I_37<span class='tooltip'>node37 preds:36 succs:38 exn:109 Instructions
+n$59=*&amp;$irvar13:java.lang.String* [line 97];
+_=*n$59:java.lang.String*(root java.lang.String) [line 97];
+n$61=_fun_String String.toString()(n$59:java.lang.String*) virtual [line 97];
+*&amp;xx:java.lang.String*=n$61 [line 97];
+NULLIFY(&amp;$irvar13); [line 97];
+EXIT_SCOPE(_,n$59,n$61,$irvar13); [line 97];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node38.html"><span class='visited with_tooltip'>I_38<span class='tooltip'>node38 preds:37 succs:39 exn:109 Instructions
+n$62=*&amp;e:org.jsoup.nodes.Element* [line 98];
+_=*n$62:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 98];
+n$64=_fun_Elements Element.getElementsByTag(String)(n$62:org.jsoup.nodes.Element*,"td":java.lang.Object*) virtual [line 98];
+*&amp;$irvar14:org.jsoup.select.Elements*=n$64 [line 98];
+EXIT_SCOPE(_,n$62,n$64); [line 98];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node39.html"><span class='visited with_tooltip'>I_39<span class='tooltip'>node39 preds:38 succs:40 exn:109 Instructions
+n$65=*&amp;$irvar14:org.jsoup.select.Elements* [line 98];
+_=*n$65:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 98];
+n$67=_fun_Element Elements.get(int)(n$65:org.jsoup.select.Elements*,1:int) virtual [line 98];
+*&amp;$irvar15:org.jsoup.nodes.Element*=n$67 [line 98];
+NULLIFY(&amp;$irvar14); [line 98];
+EXIT_SCOPE(_,n$65,n$67,$irvar14); [line 98];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node40.html"><span class='visited with_tooltip'>I_40<span class='tooltip'>node40 preds:39 succs:41 exn:109 Instructions
+n$68=*&amp;$irvar15:org.jsoup.nodes.Element* [line 98];
+_=*n$68:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 98];
+n$70=_fun_Elements Element.getElementsByTag(String)(n$68:org.jsoup.nodes.Element*,"div":java.lang.Object*) virtual [line 98];
+*&amp;$irvar16:org.jsoup.select.Elements*=n$70 [line 98];
+NULLIFY(&amp;$irvar15); [line 98];
+EXIT_SCOPE(_,n$68,n$70,$irvar15); [line 98];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node41.html"><span class='visited with_tooltip'>I_41<span class='tooltip'>node41 preds:40 succs:42 exn:109 Instructions
+n$71=*&amp;$irvar16:org.jsoup.select.Elements* [line 98];
+_=*n$71:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 98];
+n$73=_fun_Element Elements.get(int)(n$71:org.jsoup.select.Elements*,0:int) virtual [line 98];
+*&amp;$irvar17:org.jsoup.nodes.Element*=n$73 [line 98];
+NULLIFY(&amp;$irvar16); [line 98];
+EXIT_SCOPE(_,n$71,n$73,$irvar16); [line 98];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node42.html"><span class='visited with_tooltip'>I_42<span class='tooltip'>node42 preds:41 succs:43 exn:109 Instructions
+n$74=*&amp;$irvar17:org.jsoup.nodes.Element* [line 98];
+_=*n$74:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 98];
+n$76=_fun_Elements Element.getElementsByTag(String)(n$74:org.jsoup.nodes.Element*,"span":java.lang.Object*) virtual [line 98];
+*&amp;$irvar18:org.jsoup.select.Elements*=n$76 [line 98];
+NULLIFY(&amp;$irvar17); [line 98];
+EXIT_SCOPE(_,n$74,n$76,$irvar17); [line 98];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node43.html"><span class='visited with_tooltip'>I_43<span class='tooltip'>node43 preds:42 succs:44 exn:109 Instructions
+n$77=*&amp;$irvar18:org.jsoup.select.Elements* [line 98];
+_=*n$77:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 98];
+n$79=_fun_Element Elements.get(int)(n$77:org.jsoup.select.Elements*,0:int) virtual [line 98];
+*&amp;$irvar19:org.jsoup.nodes.Element*=n$79 [line 98];
+NULLIFY(&amp;$irvar18); [line 98];
+EXIT_SCOPE(_,n$77,n$79,$irvar18); [line 98];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node44.html"><span class='visited with_tooltip'>I_44<span class='tooltip'>node44 preds:43 succs:45 exn:109 Instructions
+n$80=*&amp;$irvar19:org.jsoup.nodes.Element* [line 98];
+_=*n$80:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 98];
+n$82=_fun_String Element.text()(n$80:org.jsoup.nodes.Element*) virtual [line 98];
+*&amp;$irvar20:java.lang.String*=n$82 [line 98];
+NULLIFY(&amp;$irvar19); [line 98];
+EXIT_SCOPE(_,n$80,n$82,$irvar19); [line 98];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node45.html"><span class='visited with_tooltip'>I_45<span class='tooltip'>node45 preds:44 succs:46 exn:109 Instructions
+n$83=*&amp;$irvar20:java.lang.String* [line 98];
+_=*n$83:java.lang.String*(root java.lang.String) [line 98];
+n$85=_fun_String String.replaceFirst(String,String)(n$83:java.lang.String*,"#":java.lang.Object*,"":java.lang.Object*) virtual [line 98];
+*&amp;$irvar21:java.lang.String*=n$85 [line 98];
+NULLIFY(&amp;$irvar20); [line 98];
+EXIT_SCOPE(_,n$83,n$85,$irvar20); [line 98];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node46.html"><span class='visited with_tooltip'>I_46<span class='tooltip'>node46 preds:45 succs:47 exn:109 Instructions
+n$86=*&amp;$irvar21:java.lang.String* [line 98];
+_=*n$86:java.lang.String*(root java.lang.String) [line 98];
+n$88=_fun_String String.replaceFirst(String,String)(n$86:java.lang.String*,"Tie":java.lang.Object*,"":java.lang.Object*) virtual [line 98];
+*&amp;$irvar22:java.lang.String*=n$88 [line 98];
+NULLIFY(&amp;$irvar21); [line 98];
+EXIT_SCOPE(_,n$86,n$88,$irvar21); [line 98];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node47.html"><span class='visited with_tooltip'>I_47<span class='tooltip'>node47 preds:46 succs:48 exn:109 Instructions
+n$89=*&amp;$irvar22:java.lang.String* [line 98];
+_=*n$89:java.lang.String*(root java.lang.String) [line 98];
+n$91=_fun_String String.replaceFirst(String,String)(n$89:java.lang.String*,"tie":java.lang.Object*,"":java.lang.Object*) virtual [line 98];
+*&amp;id:java.lang.String*=n$91 [line 98];
+NULLIFY(&amp;$irvar22); [line 98];
+EXIT_SCOPE(_,n$89,n$91,$irvar22); [line 98];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node48.html"><span class='visited with_tooltip'>I_48<span class='tooltip'>node48 preds:47 succs:49 exn:109 Instructions
+n$92=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 99];
+_=*n$92:java.io.PrintStream*(root java.io.PrintStream) [line 99];
+n$94=*&amp;id:java.lang.String* [line 99];
+n$95=_fun_void PrintStream.println(String)(n$92:java.io.PrintStream*,n$94:java.lang.String*) virtual [line 99];
+EXIT_SCOPE(_,n$92,n$94,n$95); [line 99];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node49.html"><span class='visited with_tooltip'>I_49<span class='tooltip'>node49 preds:48 succs:50 exn:109 Instructions
+n$96=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 100];
+n$97=_fun_StringBuilder.&lt;init&gt;()(n$96:java.lang.StringBuilder*) [line 100];
+*&amp;$irvar23:java.lang.StringBuilder*=n$96 [line 100];
+EXIT_SCOPE(n$96,n$97); [line 100];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node50.html"><span class='visited with_tooltip'>I_50<span class='tooltip'>node50 preds:49 succs:51 exn:109 Instructions
+n$98=*&amp;$irvar23:java.lang.StringBuilder* [line 100];
+_=*n$98:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 100];
+n$100=*&amp;id:java.lang.String* [line 100];
+n$101=_fun_StringBuilder StringBuilder.append(String)(n$98:java.lang.StringBuilder*,n$100:java.lang.String*) virtual [line 100];
+*&amp;$irvar24:java.lang.StringBuilder*=n$101 [line 100];
+NULLIFY(&amp;$irvar23); [line 100];
+EXIT_SCOPE(_,n$98,n$100,n$101,$irvar23); [line 100];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node51.html"><span class='visited with_tooltip'>I_51<span class='tooltip'>node51 preds:50 succs:52 exn:109 Instructions
+n$102=*&amp;$irvar24:java.lang.StringBuilder* [line 100];
+_=*n$102:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 100];
+n$104=_fun_StringBuilder StringBuilder.append(String)(n$102:java.lang.StringBuilder*,"____http://premium.usnews.com":java.lang.Object*) virtual [line 100];
+*&amp;$irvar25:java.lang.StringBuilder*=n$104 [line 100];
+NULLIFY(&amp;$irvar24); [line 100];
+EXIT_SCOPE(_,n$102,n$104,$irvar24); [line 100];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node52.html"><span class='visited with_tooltip'>I_52<span class='tooltip'>node52 preds:51 succs:53 exn:109 Instructions
+n$105=*&amp;$irvar25:java.lang.StringBuilder* [line 100];
+_=*n$105:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 100];
+n$107=*&amp;xx:java.lang.String* [line 100];
+n$108=_fun_StringBuilder StringBuilder.append(String)(n$105:java.lang.StringBuilder*,n$107:java.lang.String*) virtual [line 100];
+*&amp;$irvar26:java.lang.StringBuilder*=n$108 [line 100];
+NULLIFY(&amp;$irvar25); [line 100];
+EXIT_SCOPE(_,n$105,n$107,n$108,$irvar25); [line 100];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node53.html"><span class='visited with_tooltip'>I_53<span class='tooltip'>node53 preds:52 succs:54 exn:109 Instructions
+n$109=*&amp;$irvar26:java.lang.StringBuilder* [line 100];
+_=*n$109:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 100];
+n$111=_fun_String StringBuilder.toString()(n$109:java.lang.StringBuilder*) virtual [line 100];
+*&amp;$irvar27:java.lang.String*=n$111 [line 100];
+NULLIFY(&amp;$irvar26); [line 100];
+EXIT_SCOPE(_,n$109,n$111,$irvar26); [line 100];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node54.html"><span class='visited with_tooltip'>I_54<span class='tooltip'>node54 preds:53 succs:55 exn:109 Instructions
+n$112=*&amp;rs:java.util.ArrayList* [line 100];
+_=*n$112:java.util.ArrayList*(root java.util.ArrayList) [line 100];
+n$114=*&amp;$irvar27:java.lang.String* [line 100];
+n$115=_fun_boolean ArrayList.add(Object)(n$112:java.util.ArrayList*,n$114:java.lang.String*) interface virtual [line 100];
+*&amp;$irvar28:_Bool=n$115 [line 100];
+NULLIFY(&amp;$irvar28); [line 100];
+NULLIFY(&amp;$irvar27); [line 100];
+EXIT_SCOPE(_,n$112,n$114,n$115,$irvar28,$irvar27); [line 100];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node55.html"><span class='visited with_tooltip'>I_55<span class='tooltip'>node55 preds:54 succs:56 exn:109 Instructions
+n$116=*&amp;flag:int [line 101];
+*&amp;flag:int=(n$116 + 1) [line 101];
+EXIT_SCOPE(n$116); [line 101];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node56.html"><span class='visited with_tooltip'>I_56<span class='tooltip'>node56 preds:55 succs:57 exn:109 Instructions
+n$117=*&amp;map:java.util.HashMap* [line 102];
+_=*n$117:java.util.HashMap*(root java.util.HashMap) [line 102];
+n$119=*&amp;id:java.lang.String* [line 102];
+n$120=_fun_Object HashMap.put(Object,Object)(n$117:java.util.HashMap*,"rank":java.lang.Object*,n$119:java.lang.String*) interface virtual [line 102];
+*&amp;$irvar29:java.lang.Object*=n$120 [line 102];
+NULLIFY(&amp;$irvar29); [line 102];
+NULLIFY(&amp;id); [line 102];
+EXIT_SCOPE(_,n$117,n$119,n$120,$irvar29,id); [line 102];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node57.html"><span class='visited with_tooltip'>I_57<span class='tooltip'>node57 preds:56 succs:58 exn:109 Instructions
+n$121=*&amp;map:java.util.HashMap* [line 103];
+_=*n$121:java.util.HashMap*(root java.util.HashMap) [line 103];
+n$123=*&amp;xx:java.lang.String* [line 103];
+n$124=_fun_Object HashMap.put(Object,Object)(n$121:java.util.HashMap*,"school":java.lang.Object*,n$123:java.lang.String*) interface virtual [line 103];
+*&amp;$irvar30:java.lang.Object*=n$124 [line 103];
+NULLIFY(&amp;$irvar30); [line 103];
+NULLIFY(&amp;xx); [line 103];
+EXIT_SCOPE(_,n$121,n$123,n$124,$irvar30,xx); [line 103];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node58.html"><span class='visited with_tooltip'>I_58<span class='tooltip'>node58 preds:57 succs:59 exn:109 Instructions
+n$125=*&amp;e:org.jsoup.nodes.Element* [line 105];
+_=*n$125:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 105];
+n$127=_fun_Elements Element.getElementsByTag(String)(n$125:org.jsoup.nodes.Element*,"td":java.lang.Object*) virtual [line 105];
+*&amp;$irvar31:org.jsoup.select.Elements*=n$127 [line 105];
+EXIT_SCOPE(_,n$125,n$127); [line 105];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node59.html"><span class='visited with_tooltip'>I_59<span class='tooltip'>node59 preds:58 succs:60 exn:109 Instructions
+n$128=*&amp;$irvar31:org.jsoup.select.Elements* [line 105];
+_=*n$128:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 105];
+n$130=_fun_Element Elements.get(int)(n$128:org.jsoup.select.Elements*,3:int) virtual [line 105];
+*&amp;$irvar32:org.jsoup.nodes.Element*=n$130 [line 105];
+NULLIFY(&amp;$irvar31); [line 105];
+EXIT_SCOPE(_,n$128,n$130,$irvar31); [line 105];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node60.html"><span class='visited with_tooltip'>I_60<span class='tooltip'>node60 preds:59 succs:61 exn:109 Instructions
+n$131=*&amp;$irvar32:org.jsoup.nodes.Element* [line 105];
+_=*n$131:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 105];
+n$133=_fun_String Element.text()(n$131:org.jsoup.nodes.Element*) virtual [line 105];
+*&amp;$irvar33:java.lang.String*=n$133 [line 105];
+NULLIFY(&amp;$irvar32); [line 105];
+EXIT_SCOPE(_,n$131,n$133,$irvar32); [line 105];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node61.html"><span class='visited with_tooltip'>I_61<span class='tooltip'>node61 preds:60 succs:62 exn:109 Instructions
+n$134=*&amp;map:java.util.HashMap* [line 105];
+_=*n$134:java.util.HashMap*(root java.util.HashMap) [line 105];
+n$136=*&amp;$irvar33:java.lang.String* [line 105];
+n$137=_fun_Object HashMap.put(Object,Object)(n$134:java.util.HashMap*,"Tuition and Fees":java.lang.Object*,n$136:java.lang.String*) interface virtual [line 105];
+*&amp;$irvar34:java.lang.Object*=n$137 [line 105];
+NULLIFY(&amp;$irvar34); [line 105];
+NULLIFY(&amp;$irvar33); [line 105];
+EXIT_SCOPE(_,n$134,n$136,n$137,$irvar34,$irvar33); [line 105];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node62.html"><span class='visited with_tooltip'>I_62<span class='tooltip'>node62 preds:61 succs:63 exn:109 Instructions
+n$138=*&amp;e:org.jsoup.nodes.Element* [line 106];
+_=*n$138:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 106];
+n$140=_fun_Elements Element.getElementsByTag(String)(n$138:org.jsoup.nodes.Element*,"td":java.lang.Object*) virtual [line 106];
+*&amp;$irvar35:org.jsoup.select.Elements*=n$140 [line 106];
+EXIT_SCOPE(_,n$138,n$140); [line 106];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node63.html"><span class='visited with_tooltip'>I_63<span class='tooltip'>node63 preds:62 succs:64 exn:109 Instructions
+n$141=*&amp;$irvar35:org.jsoup.select.Elements* [line 106];
+_=*n$141:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 106];
+n$143=_fun_Element Elements.get(int)(n$141:org.jsoup.select.Elements*,4:int) virtual [line 106];
+*&amp;$irvar36:org.jsoup.nodes.Element*=n$143 [line 106];
+NULLIFY(&amp;$irvar35); [line 106];
+EXIT_SCOPE(_,n$141,n$143,$irvar35); [line 106];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node64.html"><span class='visited with_tooltip'>I_64<span class='tooltip'>node64 preds:63 succs:65 exn:109 Instructions
+n$144=*&amp;$irvar36:org.jsoup.nodes.Element* [line 106];
+_=*n$144:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 106];
+n$146=_fun_String Element.text()(n$144:org.jsoup.nodes.Element*) virtual [line 106];
+*&amp;$irvar37:java.lang.String*=n$146 [line 106];
+NULLIFY(&amp;$irvar36); [line 106];
+EXIT_SCOPE(_,n$144,n$146,$irvar36); [line 106];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node65.html"><span class='visited with_tooltip'>I_65<span class='tooltip'>node65 preds:64 succs:66 exn:109 Instructions
+n$147=*&amp;map:java.util.HashMap* [line 106];
+_=*n$147:java.util.HashMap*(root java.util.HashMap) [line 106];
+n$149=*&amp;$irvar37:java.lang.String* [line 106];
+n$150=_fun_Object HashMap.put(Object,Object)(n$147:java.util.HashMap*,"Total enrollment":java.lang.Object*,n$149:java.lang.String*) interface virtual [line 106];
+*&amp;$irvar38:java.lang.Object*=n$150 [line 106];
+NULLIFY(&amp;$irvar38); [line 106];
+NULLIFY(&amp;$irvar37); [line 106];
+EXIT_SCOPE(_,n$147,n$149,n$150,$irvar38,$irvar37); [line 106];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node66.html"><span class='visited with_tooltip'>I_66<span class='tooltip'>node66 preds:65 succs:67 exn:109 Instructions
+n$151=*&amp;e:org.jsoup.nodes.Element* [line 107];
+_=*n$151:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 107];
+n$153=_fun_Elements Element.getElementsByTag(String)(n$151:org.jsoup.nodes.Element*,"td":java.lang.Object*) virtual [line 107];
+*&amp;$irvar39:org.jsoup.select.Elements*=n$153 [line 107];
+EXIT_SCOPE(_,n$151,n$153); [line 107];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node67.html"><span class='visited with_tooltip'>I_67<span class='tooltip'>node67 preds:66 succs:68 exn:109 Instructions
+n$154=*&amp;$irvar39:org.jsoup.select.Elements* [line 107];
+_=*n$154:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 107];
+n$156=_fun_Element Elements.get(int)(n$154:org.jsoup.select.Elements*,5:int) virtual [line 107];
+*&amp;$irvar40:org.jsoup.nodes.Element*=n$156 [line 107];
+NULLIFY(&amp;$irvar39); [line 107];
+EXIT_SCOPE(_,n$154,n$156,$irvar39); [line 107];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node68.html"><span class='visited with_tooltip'>I_68<span class='tooltip'>node68 preds:67 succs:69 exn:109 Instructions
+n$157=*&amp;$irvar40:org.jsoup.nodes.Element* [line 107];
+_=*n$157:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 107];
+n$159=_fun_String Element.text()(n$157:org.jsoup.nodes.Element*) virtual [line 107];
+*&amp;$irvar41:java.lang.String*=n$159 [line 107];
+NULLIFY(&amp;$irvar40); [line 107];
+EXIT_SCOPE(_,n$157,n$159,$irvar40); [line 107];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node69.html"><span class='visited with_tooltip'>I_69<span class='tooltip'>node69 preds:68 succs:70 exn:109 Instructions
+n$160=*&amp;map:java.util.HashMap* [line 107];
+_=*n$160:java.util.HashMap*(root java.util.HashMap) [line 107];
+n$162=*&amp;$irvar41:java.lang.String* [line 107];
+n$163=_fun_Object HashMap.put(Object,Object)(n$160:java.util.HashMap*,"Fall 2013 acceptance rate":java.lang.Object*,n$162:java.lang.String*) interface virtual [line 107];
+*&amp;$irvar42:java.lang.Object*=n$163 [line 107];
+NULLIFY(&amp;$irvar42); [line 107];
+NULLIFY(&amp;$irvar41); [line 107];
+EXIT_SCOPE(_,n$160,n$162,n$163,$irvar42,$irvar41); [line 107];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node70.html"><span class='visited with_tooltip'>I_70<span class='tooltip'>node70 preds:69 succs:71 exn:109 Instructions
+n$164=*&amp;e:org.jsoup.nodes.Element* [line 108];
+_=*n$164:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 108];
+n$166=_fun_Elements Element.getElementsByTag(String)(n$164:org.jsoup.nodes.Element*,"td":java.lang.Object*) virtual [line 108];
+*&amp;$irvar43:org.jsoup.select.Elements*=n$166 [line 108];
+EXIT_SCOPE(_,n$164,n$166); [line 108];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node71.html"><span class='visited with_tooltip'>I_71<span class='tooltip'>node71 preds:70 succs:72 exn:109 Instructions
+n$167=*&amp;$irvar43:org.jsoup.select.Elements* [line 108];
+_=*n$167:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 108];
+n$169=_fun_Element Elements.get(int)(n$167:org.jsoup.select.Elements*,6:int) virtual [line 108];
+*&amp;$irvar44:org.jsoup.nodes.Element*=n$169 [line 108];
+NULLIFY(&amp;$irvar43); [line 108];
+EXIT_SCOPE(_,n$167,n$169,$irvar43); [line 108];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node72.html"><span class='visited with_tooltip'>I_72<span class='tooltip'>node72 preds:71 succs:73 exn:109 Instructions
+n$170=*&amp;$irvar44:org.jsoup.nodes.Element* [line 108];
+_=*n$170:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 108];
+n$172=_fun_String Element.text()(n$170:org.jsoup.nodes.Element*) virtual [line 108];
+*&amp;$irvar45:java.lang.String*=n$172 [line 108];
+NULLIFY(&amp;$irvar44); [line 108];
+EXIT_SCOPE(_,n$170,n$172,$irvar44); [line 108];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node73.html"><span class='visited with_tooltip'>I_73<span class='tooltip'>node73 preds:72 succs:74 exn:109 Instructions
+n$173=*&amp;map:java.util.HashMap* [line 108];
+_=*n$173:java.util.HashMap*(root java.util.HashMap) [line 108];
+n$175=*&amp;$irvar45:java.lang.String* [line 108];
+n$176=_fun_Object HashMap.put(Object,Object)(n$173:java.util.HashMap*,"Average freshman retention rate":java.lang.Object*,n$175:java.lang.String*) interface virtual [line 108];
+*&amp;$irvar46:java.lang.Object*=n$176 [line 108];
+NULLIFY(&amp;$irvar46); [line 108];
+NULLIFY(&amp;$irvar45); [line 108];
+EXIT_SCOPE(_,n$173,n$175,n$176,$irvar46,$irvar45); [line 108];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node74.html"><span class='visited with_tooltip'>I_74<span class='tooltip'>node74 preds:73 succs:75 exn:109 Instructions
+n$177=*&amp;e:org.jsoup.nodes.Element* [line 109];
+_=*n$177:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 109];
+n$179=_fun_Elements Element.getElementsByTag(String)(n$177:org.jsoup.nodes.Element*,"td":java.lang.Object*) virtual [line 109];
+*&amp;$irvar47:org.jsoup.select.Elements*=n$179 [line 109];
+EXIT_SCOPE(_,n$177,n$179); [line 109];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node75.html"><span class='visited with_tooltip'>I_75<span class='tooltip'>node75 preds:74 succs:76 exn:109 Instructions
+n$180=*&amp;$irvar47:org.jsoup.select.Elements* [line 109];
+_=*n$180:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 109];
+n$182=_fun_Element Elements.get(int)(n$180:org.jsoup.select.Elements*,7:int) virtual [line 109];
+*&amp;$irvar48:org.jsoup.nodes.Element*=n$182 [line 109];
+NULLIFY(&amp;$irvar47); [line 109];
+EXIT_SCOPE(_,n$180,n$182,$irvar47); [line 109];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node76.html"><span class='visited with_tooltip'>I_76<span class='tooltip'>node76 preds:75 succs:77 exn:109 Instructions
+n$183=*&amp;$irvar48:org.jsoup.nodes.Element* [line 109];
+_=*n$183:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 109];
+n$185=_fun_String Element.text()(n$183:org.jsoup.nodes.Element*) virtual [line 109];
+*&amp;$irvar49:java.lang.String*=n$185 [line 109];
+NULLIFY(&amp;$irvar48); [line 109];
+EXIT_SCOPE(_,n$183,n$185,$irvar48); [line 109];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node77.html"><span class='visited with_tooltip'>I_77<span class='tooltip'>node77 preds:76 succs:78 exn:109 Instructions
+n$186=*&amp;map:java.util.HashMap* [line 109];
+_=*n$186:java.util.HashMap*(root java.util.HashMap) [line 109];
+n$188=*&amp;$irvar49:java.lang.String* [line 109];
+n$189=_fun_Object HashMap.put(Object,Object)(n$186:java.util.HashMap*,"6-year graduation rate":java.lang.Object*,n$188:java.lang.String*) interface virtual [line 109];
+*&amp;$irvar50:java.lang.Object*=n$189 [line 109];
+NULLIFY(&amp;$irvar50); [line 109];
+NULLIFY(&amp;$irvar49); [line 109];
+EXIT_SCOPE(_,n$186,n$188,n$189,$irvar50,$irvar49); [line 109];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node78.html"><span class='visited with_tooltip'>I_78<span class='tooltip'>node78 preds:77 succs:79 exn:109 Instructions
+n$190=*&amp;e:org.jsoup.nodes.Element* [line 110];
+_=*n$190:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 110];
+n$192=_fun_Elements Element.getElementsByTag(String)(n$190:org.jsoup.nodes.Element*,"td":java.lang.Object*) virtual [line 110];
+*&amp;$irvar51:org.jsoup.select.Elements*=n$192 [line 110];
+EXIT_SCOPE(_,n$190,n$192); [line 110];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node79.html"><span class='visited with_tooltip'>I_79<span class='tooltip'>node79 preds:78 succs:80 exn:109 Instructions
+n$193=*&amp;$irvar51:org.jsoup.select.Elements* [line 110];
+_=*n$193:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 110];
+n$195=_fun_Element Elements.get(int)(n$193:org.jsoup.select.Elements*,8:int) virtual [line 110];
+*&amp;$irvar52:org.jsoup.nodes.Element*=n$195 [line 110];
+NULLIFY(&amp;$irvar51); [line 110];
+EXIT_SCOPE(_,n$193,n$195,$irvar51); [line 110];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node80.html"><span class='visited with_tooltip'>I_80<span class='tooltip'>node80 preds:79 succs:81 exn:109 Instructions
+n$196=*&amp;$irvar52:org.jsoup.nodes.Element* [line 110];
+_=*n$196:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 110];
+n$198=_fun_String Element.text()(n$196:org.jsoup.nodes.Element*) virtual [line 110];
+*&amp;$irvar53:java.lang.String*=n$198 [line 110];
+NULLIFY(&amp;$irvar52); [line 110];
+EXIT_SCOPE(_,n$196,n$198,$irvar52); [line 110];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node81.html"><span class='visited with_tooltip'>I_81<span class='tooltip'>node81 preds:80 succs:82 exn:109 Instructions
+n$199=*&amp;map:java.util.HashMap* [line 110];
+_=*n$199:java.util.HashMap*(root java.util.HashMap) [line 110];
+n$201=*&amp;$irvar53:java.lang.String* [line 110];
+n$202=_fun_Object HashMap.put(Object,Object)(n$199:java.util.HashMap*,"Classes with fewer than 20 students":java.lang.Object*,n$201:java.lang.String*) interface virtual [line 110];
+*&amp;$irvar54:java.lang.Object*=n$202 [line 110];
+NULLIFY(&amp;$irvar54); [line 110];
+NULLIFY(&amp;$irvar53); [line 110];
+EXIT_SCOPE(_,n$199,n$201,n$202,$irvar54,$irvar53); [line 110];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node82.html"><span class='visited with_tooltip'>I_82<span class='tooltip'>node82 preds:81 succs:83 exn:109 Instructions
+n$203=*&amp;e:org.jsoup.nodes.Element* [line 111];
+_=*n$203:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 111];
+n$205=_fun_Elements Element.getElementsByTag(String)(n$203:org.jsoup.nodes.Element*,"td":java.lang.Object*) virtual [line 111];
+*&amp;$irvar55:org.jsoup.select.Elements*=n$205 [line 111];
+NULLIFY(&amp;e); [line 111];
+EXIT_SCOPE(_,n$203,n$205,e); [line 111];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node83.html"><span class='visited with_tooltip'>I_83<span class='tooltip'>node83 preds:82 succs:84 exn:109 Instructions
+n$206=*&amp;$irvar55:org.jsoup.select.Elements* [line 111];
+_=*n$206:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 111];
+n$208=_fun_Element Elements.get(int)(n$206:org.jsoup.select.Elements*,9:int) virtual [line 111];
+*&amp;$irvar56:org.jsoup.nodes.Element*=n$208 [line 111];
+NULLIFY(&amp;$irvar55); [line 111];
+EXIT_SCOPE(_,n$206,n$208,$irvar55); [line 111];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node84.html"><span class='visited with_tooltip'>I_84<span class='tooltip'>node84 preds:83 succs:85 exn:109 Instructions
+n$209=*&amp;$irvar56:org.jsoup.nodes.Element* [line 111];
+_=*n$209:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 111];
+n$211=_fun_String Element.text()(n$209:org.jsoup.nodes.Element*) virtual [line 111];
+*&amp;$irvar57:java.lang.String*=n$211 [line 111];
+NULLIFY(&amp;$irvar56); [line 111];
+EXIT_SCOPE(_,n$209,n$211,$irvar56); [line 111];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node85.html"><span class='visited with_tooltip'>I_85<span class='tooltip'>node85 preds:84 succs:86 exn:109 Instructions
+n$212=*&amp;map:java.util.HashMap* [line 111];
+_=*n$212:java.util.HashMap*(root java.util.HashMap) [line 111];
+n$214=*&amp;$irvar57:java.lang.String* [line 111];
+n$215=_fun_Object HashMap.put(Object,Object)(n$212:java.util.HashMap*,"SAT/ACT 25th-75th percentile":java.lang.Object*,n$214:java.lang.String*) interface virtual [line 111];
+*&amp;$irvar58:java.lang.Object*=n$215 [line 111];
+NULLIFY(&amp;$irvar58); [line 111];
+NULLIFY(&amp;$irvar57); [line 111];
+EXIT_SCOPE(_,n$212,n$214,n$215,$irvar58,$irvar57); [line 111];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node86.html"><span class='visited with_tooltip'>I_86<span class='tooltip'>node86 preds:85 succs:87 exn:109 Instructions
+n$216=*&amp;map:java.util.HashMap* [line 113];
+_=*n$216:java.util.HashMap*(root java.util.HashMap) [line 113];
+n$218=_fun_Set HashMap.entrySet()(n$216:java.util.HashMap*) interface virtual [line 113];
+*&amp;$irvar59:java.util.Set*=n$218 [line 113];
+EXIT_SCOPE(_,n$216,n$218); [line 113];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node87.html"><span class='visited with_tooltip'>I_87<span class='tooltip'>node87 preds:86 succs:88 exn:109 Instructions
+n$219=*&amp;$irvar59:java.util.Set* [line 113];
+_=*n$219:java.util.Set*(root java.util.Set) [line 113];
+n$221=_fun_Iterator Set.iterator()(n$219:java.util.Set*) interface virtual [line 113];
+*&amp;$bcvar11:java.util.Iterator*=n$221 [line 113];
+NULLIFY(&amp;$irvar59); [line 113];
+EXIT_SCOPE(_,n$219,n$221,$irvar59); [line 113];
+APPLY_ABSTRACTION; [line 113];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node88.html"><span class='visited with_tooltip'>I_88<span class='tooltip'>node88 preds:102 87 succs:91 exn:109 Instructions
+n$222=*&amp;$bcvar11:java.util.Iterator* [line 113];
+_=*n$222:java.util.Iterator*(root java.util.Iterator) [line 113];
+n$224=_fun_boolean Iterator.hasNext()(n$222:java.util.Iterator*) interface virtual [line 113];
+*&amp;$irvar60:_Bool=n$224 [line 113];
+EXIT_SCOPE(_,n$222,n$224); [line 113];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node89.html"><span class='visited with_tooltip'>C_89<span class='tooltip'>node89 preds:91 succs:92 exn:109 Conditional method_body
+n$225=*&amp;$irvar60:_Bool [line 113];
+PRUNE(!(n$225 == 0), true); [line 113];
+NULLIFY(&amp;$irvar60); [line 113];
+EXIT_SCOPE(n$225,$irvar60); [line 113];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node90.html"><span class='visited with_tooltip'>C_90<span class='tooltip'>node90 preds:91 succs:103 exn:109 Conditional method_body
+n$225=*&amp;$irvar60:_Bool [line 113];
+PRUNE((n$225 == 0), false); [line 113];
+NULLIFY(&amp;$irvar60); [line 113];
+NULLIFY(&amp;$bcvar11); [line 113];
+EXIT_SCOPE(n$225,$irvar60,$bcvar11); [line 113];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node91.html"><span class='visited with_tooltip'>J_91<span class='tooltip'>node91 preds:88 succs:89 90 exn: Join
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node92.html"><span class='visited with_tooltip'>I_92<span class='tooltip'>node92 preds:89 succs:93 exn:109 Instructions
+n$226=*&amp;$bcvar11:java.util.Iterator* [line 113];
+_=*n$226:java.util.Iterator*(root java.util.Iterator) [line 113];
+n$228=_fun_Object Iterator.next()(n$226:java.util.Iterator*) interface virtual [line 113];
+*&amp;$irvar61:java.lang.Object*=n$228 [line 113];
+EXIT_SCOPE(_,n$226,n$228); [line 113];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node93.html"><span class='visited with_tooltip'>I_93<span class='tooltip'>node93 preds:92 succs:94 exn:109 Instructions
+n$229=*&amp;$irvar61:java.lang.Object* [line 113];
+n$230=_fun___cast(n$229:java.lang.Object*,sizeof(t=java.util.Map$Entry;sub_t=( sub )(cast)):void) [line 113];
+*&amp;entry:java.util.Map$Entry*=n$230 [line 113];
+NULLIFY(&amp;$irvar61); [line 113];
+EXIT_SCOPE(n$229,n$230,$irvar61); [line 113];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node94.html"><span class='visited with_tooltip'>I_94<span class='tooltip'>node94 preds:93 succs:95 exn:109 Instructions
+n$231=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 114];
+*&amp;$irvar62:java.io.PrintStream*=n$231 [line 114];
+EXIT_SCOPE(n$231); [line 114];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node95.html"><span class='visited with_tooltip'>I_95<span class='tooltip'>node95 preds:94 succs:96 exn:109 Instructions
+n$232=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 114];
+n$233=_fun_StringBuilder.&lt;init&gt;()(n$232:java.lang.StringBuilder*) [line 114];
+*&amp;$irvar63:java.lang.StringBuilder*=n$232 [line 114];
+EXIT_SCOPE(n$232,n$233); [line 114];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node96.html"><span class='visited with_tooltip'>I_96<span class='tooltip'>node96 preds:95 succs:97 exn:109 Instructions
+n$234=*&amp;entry:java.util.Map$Entry* [line 114];
+_=*n$234:java.util.Map$Entry*(root java.util.Map$Entry) [line 114];
+n$236=_fun_Object Map$Entry.getKey()(n$234:java.util.Map$Entry*) interface virtual [line 114];
+*&amp;$irvar64:java.lang.Object*=n$236 [line 114];
+EXIT_SCOPE(_,n$234,n$236); [line 114];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node97.html"><span class='visited with_tooltip'>I_97<span class='tooltip'>node97 preds:96 succs:98 exn:109 Instructions
+n$237=*&amp;$irvar63:java.lang.StringBuilder* [line 114];
+_=*n$237:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 114];
+n$239=*&amp;$irvar64:java.lang.Object* [line 114];
+n$240=_fun___cast(n$239:java.lang.Object*,sizeof(t=java.lang.String;sub_t=( sub )(cast)):void) [line 114];
+n$241=_fun_StringBuilder StringBuilder.append(String)(n$237:java.lang.StringBuilder*,n$240:java.lang.String*) virtual [line 114];
+*&amp;$irvar65:java.lang.StringBuilder*=n$241 [line 114];
+NULLIFY(&amp;$irvar63); [line 114];
+NULLIFY(&amp;$irvar64); [line 114];
+EXIT_SCOPE(_,n$237,n$239,n$240,n$241,$irvar63,$irvar64); [line 114];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node98.html"><span class='visited with_tooltip'>I_98<span class='tooltip'>node98 preds:97 succs:99 exn:109 Instructions
+n$242=*&amp;$irvar65:java.lang.StringBuilder* [line 114];
+_=*n$242:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 114];
+n$244=_fun_StringBuilder StringBuilder.append(String)(n$242:java.lang.StringBuilder*,"__":java.lang.Object*) virtual [line 114];
+*&amp;$irvar66:java.lang.StringBuilder*=n$244 [line 114];
+NULLIFY(&amp;$irvar65); [line 114];
+EXIT_SCOPE(_,n$242,n$244,$irvar65); [line 114];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node99.html"><span class='visited with_tooltip'>I_99<span class='tooltip'>node99 preds:98 succs:100 exn:109 Instructions
+n$245=*&amp;entry:java.util.Map$Entry* [line 114];
+_=*n$245:java.util.Map$Entry*(root java.util.Map$Entry) [line 114];
+n$247=_fun_Object Map$Entry.getValue()(n$245:java.util.Map$Entry*) interface virtual [line 114];
+*&amp;$irvar67:java.lang.Object*=n$247 [line 114];
+NULLIFY(&amp;entry); [line 114];
+EXIT_SCOPE(_,n$245,n$247,entry); [line 114];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node100.html"><span class='visited with_tooltip'>I_100<span class='tooltip'>node100 preds:99 succs:101 exn:109 Instructions
+n$248=*&amp;$irvar66:java.lang.StringBuilder* [line 114];
+_=*n$248:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 114];
+n$250=*&amp;$irvar67:java.lang.Object* [line 114];
+n$251=_fun_StringBuilder StringBuilder.append(Object)(n$248:java.lang.StringBuilder*,n$250:java.lang.Object*) virtual [line 114];
+*&amp;$irvar68:java.lang.StringBuilder*=n$251 [line 114];
+NULLIFY(&amp;$irvar66); [line 114];
+NULLIFY(&amp;$irvar67); [line 114];
+EXIT_SCOPE(_,n$248,n$250,n$251,$irvar66,$irvar67); [line 114];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node101.html"><span class='visited with_tooltip'>I_101<span class='tooltip'>node101 preds:100 succs:102 exn:109 Instructions
+n$252=*&amp;$irvar68:java.lang.StringBuilder* [line 114];
+_=*n$252:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 114];
+n$254=_fun_String StringBuilder.toString()(n$252:java.lang.StringBuilder*) virtual [line 114];
+*&amp;$irvar69:java.lang.String*=n$254 [line 114];
+NULLIFY(&amp;$irvar68); [line 114];
+EXIT_SCOPE(_,n$252,n$254,$irvar68); [line 114];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node102.html"><span class='visited with_tooltip'>I_102<span class='tooltip'>node102 preds:101 succs:88 exn:109 Instructions
+n$255=*&amp;$irvar62:java.io.PrintStream* [line 114];
+_=*n$255:java.io.PrintStream*(root java.io.PrintStream) [line 114];
+n$257=*&amp;$irvar69:java.lang.String* [line 114];
+n$258=_fun_void PrintStream.println(String)(n$255:java.io.PrintStream*,n$257:java.lang.String*) virtual [line 114];
+NULLIFY(&amp;$irvar62); [line 114];
+NULLIFY(&amp;$irvar69); [line 114];
+EXIT_SCOPE(_,n$255,n$257,n$258,$irvar62,$irvar69); [line 114];
+APPLY_ABSTRACTION; [line 114];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node103.html"><span class='visited with_tooltip'>I_103<span class='tooltip'>node103 preds:90 succs:16 exn:109 Instructions
+n$259=*&amp;map:java.util.HashMap* [line 116];
+n$260=_fun_JSONObject JSONObject.fromObject(Object)(n$259:java.util.HashMap*) [line 116];
+*&amp;$bcvar11:net.sf.json.JSONObject*=n$260 [line 116];
+NULLIFY(&amp;map); [line 116];
+NULLIFY(&amp;$bcvar11); [line 116];
+EXIT_SCOPE(n$259,n$260,map,$bcvar11); [line 116];
+APPLY_ABSTRACTION; [line 116];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node104.html"><span class='visited with_tooltip'>I_104<span class='tooltip'>node104 preds:107 succs:105 exn:3 Instructions
+n$261=*&amp;CatchVar533:java.lang.Object* [line 122];
+*&amp;e:java.lang.Object*=n$261 [line 122];
+NULLIFY(&amp;CatchVar533); [line 122];
+EXIT_SCOPE(n$261,CatchVar533); [line 122];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node105.html"><span class='visited with_tooltip'>I_105<span class='tooltip'>node105 preds:104 succs:106 exn:3 Instructions
+n$262=*&amp;e:java.lang.Object* [line 124];
+_=*n$262:java.lang.Object*(root java.lang.Object) [line 124];
+n$264=_fun_void Throwable.printStackTrace()(n$262:java.lang.Object*) virtual [line 124];
+NULLIFY(&amp;e); [line 124];
+EXIT_SCOPE(_,n$262,n$264,e); [line 124];
+APPLY_ABSTRACTION; [line 124];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node106.html"><span class='visited with_tooltip'>I_106<span class='tooltip'>node106 preds:105 30 18 succs:2 exn:3 Instructions
+n$265=*&amp;rs:java.util.ArrayList* [line 127];
+*&amp;return:java.util.List*=n$265 [line 127];
+NULLIFY(&amp;rs); [line 127];
+EXIT_SCOPE(n$265,rs); [line 127];
+APPLY_ABSTRACTION; [line 127];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node107.html"><span class='visited with_tooltip'>C_107<span class='tooltip'>node107 preds:109 succs:104 exn:3 Conditional exception handler
+n$268=_fun___instanceof(n$267:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 122];
+PRUNE(n$268, true); [line 122];
+*&amp;CatchVar533:java.util.List*=n$267 [line 122];
+EXIT_SCOPE(n$267,n$268); [line 122];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node108.html"><span class='visited with_tooltip'>C_108<span class='tooltip'>node108 preds:109 succs:3 exn:3 Conditional exception handler
+n$268=_fun___instanceof(n$267:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 122];
+PRUNE(!n$268, false); [line 122];
+*&amp;return:java.util.List*=EXN n$267 [line 122];
+NULLIFY(&amp;rs); [line 122];
+EXIT_SCOPE(n$267,n$268,rs); [line 122];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.UrlGet.getUrl%28java.lang.String%2Cint%29%3Ajava.util.List.156ec4a196c75367b1c200d3ac5e8ae2_node109.html"><span class='visited with_tooltip'>I_109<span class='tooltip'>node109 preds: succs:107 108 exn:3 Instructions
+n$266=*&amp;return:java.util.List* [line 122];
+*&amp;return:java.util.List*=null [line 122];
+n$267=_fun___unwrap_exception(n$266:java.util.List*) [line 122];
+NULLIFY(&amp;$irvar31); [line 122];
+NULLIFY(&amp;$bcvar6); [line 122];
+NULLIFY(&amp;$irvar66); [line 122];
+NULLIFY(&amp;$irvar26); [line 122];
+NULLIFY(&amp;$irvar22); [line 122];
+NULLIFY(&amp;$irvar25); [line 122];
+NULLIFY(&amp;$irvar3); [line 122];
+NULLIFY(&amp;$irvar9); [line 122];
+NULLIFY(&amp;$irvar17); [line 122];
+NULLIFY(&amp;$irvar63); [line 122];
+NULLIFY(&amp;$irvar43); [line 122];
+NULLIFY(&amp;$irvar40); [line 122];
+NULLIFY(&amp;$irvar52); [line 122];
+NULLIFY(&amp;table); [line 122];
+NULLIFY(&amp;$irvar56); [line 122];
+NULLIFY(&amp;$irvar18); [line 122];
+NULLIFY(&amp;$irvar35); [line 122];
+NULLIFY(&amp;$irvar5); [line 122];
+NULLIFY(&amp;$irvar39); [line 122];
+NULLIFY(&amp;$irvar16); [line 122];
+NULLIFY(&amp;$irvar48); [line 122];
+NULLIFY(&amp;$irvar60); [line 122];
+NULLIFY(&amp;$irvar4); [line 122];
+NULLIFY(&amp;$irvar7); [line 122];
+NULLIFY(&amp;$irvar12); [line 122];
+NULLIFY(&amp;html); [line 122];
+NULLIFY(&amp;$irvar55); [line 122];
+NULLIFY(&amp;$irvar45); [line 122];
+NULLIFY(&amp;entry); [line 122];
+NULLIFY(&amp;$irvar36); [line 122];
+NULLIFY(&amp;$irvar19); [line 122];
+NULLIFY(&amp;$irvar53); [line 122];
+NULLIFY(&amp;$irvar21); [line 122];
+NULLIFY(&amp;$irvar62); [line 122];
+NULLIFY(&amp;map); [line 122];
+NULLIFY(&amp;$irvar59); [line 122];
+NULLIFY(&amp;$irvar20); [line 122];
+NULLIFY(&amp;$irvar68); [line 122];
+NULLIFY(&amp;$irvar57); [line 122];
+NULLIFY(&amp;$irvar6); [line 122];
+NULLIFY(&amp;$irvar41); [line 122];
+NULLIFY(&amp;$irvar51); [line 122];
+NULLIFY(&amp;$irvar47); [line 122];
+NULLIFY(&amp;$irvar37); [line 122];
+NULLIFY(&amp;$irvar0); [line 122];
+NULLIFY(&amp;$irvar23); [line 122];
+NULLIFY(&amp;$irvar44); [line 122];
+NULLIFY(&amp;$irvar13); [line 122];
+NULLIFY(&amp;$irvar11); [line 122];
+NULLIFY(&amp;$irvar10); [line 122];
+NULLIFY(&amp;$irvar24); [line 122];
+NULLIFY(&amp;$irvar8); [line 122];
+NULLIFY(&amp;$irvar32); [line 122];
+NULLIFY(&amp;$irvar27); [line 122];
+NULLIFY(&amp;$irvar1); [line 122];
+NULLIFY(&amp;$irvar67); [line 122];
+NULLIFY(&amp;$irvar2); [line 122];
+NULLIFY(&amp;$bcvar11); [line 122];
+NULLIFY(&amp;id); [line 122];
+NULLIFY(&amp;$irvar33); [line 122];
+NULLIFY(&amp;$irvar15); [line 122];
+NULLIFY(&amp;$irvar69); [line 122];
+NULLIFY(&amp;$irvar64); [line 122];
+NULLIFY(&amp;$irvar65); [line 122];
+NULLIFY(&amp;$irvar61); [line 122];
+NULLIFY(&amp;flag); [line 122];
+NULLIFY(&amp;xx); [line 122];
+NULLIFY(&amp;e); [line 122];
+NULLIFY(&amp;$irvar49); [line 122];
+NULLIFY(&amp;$irvar14); [line 122];
+EXIT_SCOPE(n$266,$irvar31,$bcvar6,$irvar66,$irvar26,$irvar22,$irvar25,$irvar3,$irvar9,$irvar17,$irvar63,$irvar43,$irvar40,$irvar52,table,$irvar56,$irvar18,$irvar35,$irvar5,$irvar39,$irvar16,$irvar48,$irvar60,$irvar4,$irvar7,$irvar12,html,$irvar55,$irvar45,entry,$irvar36,$irvar19,$irvar53,$irvar21,$irvar62,map,$irvar59,$irvar20,$irvar68,$irvar57,$irvar6,$irvar41,$irvar51,$irvar47,$irvar37,$irvar0,$irvar23,$irvar44,$irvar13,$irvar11,$irvar10,$irvar24,$irvar8,$irvar32,$irvar27,$irvar1,$irvar67,$irvar2,$bcvar11,id,$irvar33,$irvar15,$irvar69,$irvar64,$irvar65,$irvar61,flag,xx,e,$irvar49,$irvar14); [line 122];
+</span></span></a><br />@
+
+<span class='color_black'>java.util.List* List UrlGet.getUrl(String,int)(java.lang.String* url, int page)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { lang.System -> { out -> (Footprint({ @val$0* }) + Sanitizers({ StringConcatenation }) ~> ?, *) },
+            return -> (Footprint({ @val$0* }) + Sanitizers({ StringConcatenation }) ~> ?, *) }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= List UrlGet.getUrl(String,int)
+; translation_unit= src/com/dulishuo/usnews/UrlGet.java
+; access= Public
+; formals= [(url,java.lang.String*);  (page,int)]
+; is_defined= true
+; loc= src/com/dulishuo/usnews/UrlGet.java:85
+; locals= [{ name= CatchVar533; typ= void; modify_in_block= false }; 
+           { name= $irvar69; typ= void; modify_in_block= false }; 
+           { name= $irvar68; typ= void; modify_in_block= false }; 
+           { name= $irvar67; typ= void; modify_in_block= false }; 
+           { name= $irvar66; typ= void; modify_in_block= false }; 
+           { name= $irvar65; typ= void; modify_in_block= false }; 
+           { name= $irvar64; typ= void; modify_in_block= false }; 
+           { name= $irvar63; typ= void; modify_in_block= false }; 
+           { name= $irvar62; typ= void; modify_in_block= false }; 
+           { name= $irvar61; typ= void; modify_in_block= false }; 
+           { name= $irvar60; typ= void; modify_in_block= false }; 
+           { name= $bcvar11; typ= void; modify_in_block= false }; 
+           { name= $irvar59; typ= void; modify_in_block= false }; 
+           { name= $irvar58; typ= void; modify_in_block= false }; 
+           { name= $irvar57; typ= void; modify_in_block= false }; 
+           { name= $irvar56; typ= void; modify_in_block= false }; 
+           { name= $irvar55; typ= void; modify_in_block= false }; 
+           { name= $irvar54; typ= void; modify_in_block= false }; 
+           { name= $irvar53; typ= void; modify_in_block= false }; 
+           { name= $irvar52; typ= void; modify_in_block= false }; 
+           { name= $irvar51; typ= void; modify_in_block= false }; 
+           { name= $irvar50; typ= void; modify_in_block= false }; 
+           { name= $irvar49; typ= void; modify_in_block= false }; 
+           { name= $irvar48; typ= void; modify_in_block= false }; 
+           { name= $irvar47; typ= void; modify_in_block= false }; 
+           { name= $irvar46; typ= void; modify_in_block= false }; 
+           { name= $irvar45; typ= void; modify_in_block= false }; 
+           { name= $irvar44; typ= void; modify_in_block= false }; 
+           { name= $irvar43; typ= void; modify_in_block= false }; 
+           { name= $irvar42; typ= void; modify_in_block= false }; 
+           { name= $irvar41; typ= void; modify_in_block= false }; 
+           { name= $irvar40; typ= void; modify_in_block= false }; 
+           { name= $irvar39; typ= void; modify_in_block= false }; 
+           { name= $irvar38; typ= void; modify_in_block= false }; 
+           { name= $irvar37; typ= void; modify_in_block= false }; 
+           { name= $irvar36; typ= void; modify_in_block= false }; 
+           { name= $irvar35; typ= void; modify_in_block= false }; 
+           { name= $irvar34; typ= void; modify_in_block= false }; 
+           { name= $irvar33; typ= void; modify_in_block= false }; 
+           { name= $irvar32; typ= void; modify_in_block= false }; 
+           { name= $irvar31; typ= void; modify_in_block= false }; 
+           { name= $irvar30; typ= void; modify_in_block= false }; 
+           { name= $irvar29; typ= void; modify_in_block= false }; 
+           { name= $irvar28; typ= void; modify_in_block= false }; 
+           { name= $irvar27; typ= void; modify_in_block= false }; 
+           { name= $irvar26; typ= void; modify_in_block= false }; 
+           { name= $irvar25; typ= void; modify_in_block= false }; 
+           { name= $irvar24; typ= void; modify_in_block= false }; 
+           { name= $irvar23; typ= void; modify_in_block= false }; 
+           { name= $irvar22; typ= void; modify_in_block= false }; 
+           { name= $irvar21; typ= void; modify_in_block= false }; 
+           { name= $irvar20; typ= void; modify_in_block= false }; 
+           { name= $irvar19; typ= void; modify_in_block= false }; 
+           { name= $irvar18; typ= void; modify_in_block= false }; 
+           { name= $irvar17; typ= void; modify_in_block= false }; 
+           { name= $irvar16; typ= void; modify_in_block= false }; 
+           { name= $irvar15; typ= void; modify_in_block= false }; 
+           { name= $irvar14; typ= void; modify_in_block= false }; 
+           { name= $irvar13; typ= void; modify_in_block= false }; 
+           { name= $irvar12; typ= void; modify_in_block= false }; 
+           { name= $irvar11; typ= void; modify_in_block= false }; 
+           { name= $irvar10; typ= void; modify_in_block= false }; 
+           { name= $irvar9; typ= void; modify_in_block= false }; 
+           { name= $irvar8; typ= void; modify_in_block= false }; 
+           { name= $irvar7; typ= void; modify_in_block= false }; 
+           { name= $irvar6; typ= void; modify_in_block= false }; 
+           { name= $bcvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= html; typ= org.jsoup.nodes.Document*; modify_in_block= false }; 
+           { name= rs; typ= java.util.List*; modify_in_block= false }; 
+           { name= flag; typ= int; modify_in_block= false }; 
+           { name= table; typ= org.jsoup.nodes.Element*; modify_in_block= false }; 
+           { name= e; typ= org.jsoup.nodes.Element*; modify_in_block= false }; 
+           { name= id; typ= java.lang.String*; modify_in_block= false }; 
+           { name= xx; typ= java.lang.String*; modify_in_block= false }; 
+           { name= map; typ= java.util.Map*; modify_in_block= false }; 
+           { name= entry; typ= java.util.Map$Entry*; modify_in_block= false }]
+; ret_type= java.util.List* 
+; proc_id= com.dulishuo.usnews.UrlGet.getUrl(java.lang.String,int):java.util.List }</pre>
+</body>
+</html>

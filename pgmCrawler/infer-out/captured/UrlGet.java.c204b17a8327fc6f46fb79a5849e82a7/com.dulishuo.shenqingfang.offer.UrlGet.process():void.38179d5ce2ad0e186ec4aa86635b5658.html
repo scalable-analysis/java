@@ -1,0 +1,261 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.dulishuo.shenqingfang.offer.UrlGet.process():void.38179d5ce2ad0e186ec4aa86635b5658</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../UrlGet.java.c204b17a8327fc6f46fb79a5849e82a7.html#LINE111">void UrlGet.process()</a></h1></center>
+<a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:32 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;$bcvar6); [line 127];
+NULLIFY(&amp;doc); [line 127];
+NULLIFY(&amp;$irvar3); [line 127];
+NULLIFY(&amp;$bcvar2); [line 127];
+NULLIFY(&amp;$irvar5); [line 127];
+NULLIFY(&amp;json); [line 127];
+NULLIFY(&amp;ps); [line 127];
+NULLIFY(&amp;list); [line 127];
+NULLIFY(&amp;$irvar4); [line 127];
+NULLIFY(&amp;$irvar7); [line 127];
+NULLIFY(&amp;$irvar6); [line 127];
+NULLIFY(&amp;$irvar0); [line 127];
+NULLIFY(&amp;ele); [line 127];
+NULLIFY(&amp;$irvar8); [line 127];
+NULLIFY(&amp;$irvar1); [line 127];
+NULLIFY(&amp;$irvar2); [line 127];
+EXIT_SCOPE($bcvar6,doc,$irvar3,$bcvar2,$irvar5,json,ps,list,$irvar4,$irvar7,$irvar6,$irvar0,ele,$irvar8,$irvar1,$irvar2); [line 127];
+APPLY_ABSTRACTION; [line 127];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun_List FileUtil.FileToJsonList(String,String)("C:/Users/\\229\\188\\186\\232\\131\\156/Desktop/dataCrawler/\\231\\148\\179\\232\\175\\183\\230\\150\\185/offer/ori_content.json":java.lang.Object*,"utf-8":java.lang.Object*) [line 113];
+*&amp;list:java.util.List*=n$0 [line 113];
+EXIT_SCOPE(n$0); [line 113];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$1=_fun___new(sizeof(t=java.util.HashSet):java.util.HashSet*) [line 116];
+n$2=_fun_HashSet.&lt;init&gt;()(n$1:java.util.HashSet*) [line 116];
+*&amp;set:java.util.HashSet*=n$1 [line 116];
+NULLIFY(&amp;set); [line 116];
+EXIT_SCOPE(n$1,n$2,set); [line 116];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$3=*&amp;list:java.util.List* [line 117];
+_=*n$3:java.util.List*(root java.util.List) [line 117];
+n$5=_fun_Iterator List.iterator()(n$3:java.util.List*) interface virtual [line 117];
+*&amp;$bcvar2:java.util.Iterator*=n$5 [line 117];
+NULLIFY(&amp;list); [line 117];
+EXIT_SCOPE(_,n$3,n$5,list); [line 117];
+APPLY_ABSTRACTION; [line 117];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:31 6 succs:10 exn:3 Instructions
+n$6=*&amp;$bcvar2:java.util.Iterator* [line 117];
+_=*n$6:java.util.Iterator*(root java.util.Iterator) [line 117];
+n$8=_fun_boolean Iterator.hasNext()(n$6:java.util.Iterator*) interface virtual [line 117];
+*&amp;$irvar0:_Bool=n$8 [line 117];
+EXIT_SCOPE(_,n$6,n$8); [line 117];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node8.html"><span class='visited with_tooltip'>C_8<span class='tooltip'>node8 preds:10 succs:11 exn:3 Conditional method_body
+n$9=*&amp;$irvar0:_Bool [line 117];
+PRUNE(!(n$9 == 0), true); [line 117];
+NULLIFY(&amp;$irvar0); [line 117];
+EXIT_SCOPE(n$9,$irvar0); [line 117];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node9.html"><span class='visited with_tooltip'>C_9<span class='tooltip'>node9 preds:10 succs:32 exn:3 Conditional method_body
+n$9=*&amp;$irvar0:_Bool [line 117];
+PRUNE((n$9 == 0), false); [line 117];
+NULLIFY(&amp;$bcvar2); [line 117];
+NULLIFY(&amp;$irvar0); [line 117];
+EXIT_SCOPE(n$9,$bcvar2,$irvar0); [line 117];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node10.html"><span class='visited with_tooltip'>J_10<span class='tooltip'>node10 preds:7 succs:8 9 exn: Join
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:8 succs:12 exn:3 Instructions
+n$10=*&amp;$bcvar2:java.util.Iterator* [line 117];
+_=*n$10:java.util.Iterator*(root java.util.Iterator) [line 117];
+n$12=_fun_Object Iterator.next()(n$10:java.util.Iterator*) interface virtual [line 117];
+*&amp;$irvar1:java.lang.Object*=n$12 [line 117];
+EXIT_SCOPE(_,n$10,n$12); [line 117];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$13=*&amp;$irvar1:java.lang.Object* [line 117];
+n$14=_fun___cast(n$13:java.lang.Object*,sizeof(t=net.sf.json.JSONObject;sub_t=( sub )(cast)):void) [line 117];
+*&amp;json:net.sf.json.JSONObject*=n$14 [line 117];
+NULLIFY(&amp;$irvar1); [line 117];
+EXIT_SCOPE(n$13,n$14,$irvar1); [line 117];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:3 Instructions
+n$15=*&amp;json:net.sf.json.JSONObject* [line 118];
+_=*n$15:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 118];
+n$17=_fun_String JSONObject.getString(String)(n$15:net.sf.json.JSONObject*,"content":java.lang.Object*) virtual [line 118];
+*&amp;$irvar2:java.lang.String*=n$17 [line 118];
+NULLIFY(&amp;json); [line 118];
+EXIT_SCOPE(_,n$15,n$17,json); [line 118];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:3 Instructions
+n$18=*&amp;$irvar2:java.lang.String* [line 118];
+n$19=_fun_Document Jsoup.parse(String)(n$18:java.lang.String*) [line 118];
+*&amp;doc:org.jsoup.nodes.Document*=n$19 [line 118];
+NULLIFY(&amp;$irvar2); [line 118];
+EXIT_SCOPE(n$18,n$19,$irvar2); [line 118];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:3 Instructions
+n$20=*&amp;doc:org.jsoup.nodes.Document* [line 119];
+_=*n$20:org.jsoup.nodes.Document*(root org.jsoup.nodes.Document) [line 119];
+n$22=_fun_Elements Element.getElementsByTag(String)(n$20:org.jsoup.nodes.Document*,"p":java.lang.Object*) virtual [line 119];
+*&amp;ps:org.jsoup.select.Elements*=n$22 [line 119];
+NULLIFY(&amp;doc); [line 119];
+EXIT_SCOPE(_,n$20,n$22,doc); [line 119];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:3 Instructions
+n$23=*&amp;ps:org.jsoup.select.Elements* [line 120];
+_=*n$23:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 120];
+n$25=_fun_Iterator Elements.iterator()(n$23:org.jsoup.select.Elements*) virtual [line 120];
+*&amp;$bcvar6:java.util.Iterator*=n$25 [line 120];
+NULLIFY(&amp;ps); [line 120];
+EXIT_SCOPE(_,n$23,n$25,ps); [line 120];
+APPLY_ABSTRACTION; [line 120];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:30 26 16 succs:20 exn:3 Instructions
+n$26=*&amp;$bcvar6:java.util.Iterator* [line 120];
+_=*n$26:java.util.Iterator*(root java.util.Iterator) [line 120];
+n$28=_fun_boolean Iterator.hasNext()(n$26:java.util.Iterator*) interface virtual [line 120];
+*&amp;$irvar3:_Bool=n$28 [line 120];
+EXIT_SCOPE(_,n$26,n$28); [line 120];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node18.html"><span class='visited with_tooltip'>C_18<span class='tooltip'>node18 preds:20 succs:21 exn:3 Conditional method_body
+n$29=*&amp;$irvar3:_Bool [line 120];
+PRUNE(!(n$29 == 0), true); [line 120];
+NULLIFY(&amp;$irvar3); [line 120];
+EXIT_SCOPE(n$29,$irvar3); [line 120];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node19.html"><span class='visited with_tooltip'>C_19<span class='tooltip'>node19 preds:20 succs:31 exn:3 Conditional method_body
+n$29=*&amp;$irvar3:_Bool [line 120];
+PRUNE((n$29 == 0), false); [line 120];
+NULLIFY(&amp;$bcvar6); [line 120];
+NULLIFY(&amp;$irvar3); [line 120];
+EXIT_SCOPE(n$29,$bcvar6,$irvar3); [line 120];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node20.html"><span class='visited with_tooltip'>J_20<span class='tooltip'>node20 preds:17 succs:18 19 exn: Join
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:18 succs:22 exn:3 Instructions
+n$30=*&amp;$bcvar6:java.util.Iterator* [line 120];
+_=*n$30:java.util.Iterator*(root java.util.Iterator) [line 120];
+n$32=_fun_Object Iterator.next()(n$30:java.util.Iterator*) interface virtual [line 120];
+*&amp;$irvar4:java.lang.Object*=n$32 [line 120];
+EXIT_SCOPE(_,n$30,n$32); [line 120];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:3 Instructions
+n$33=*&amp;$irvar4:java.lang.Object* [line 120];
+n$34=_fun___cast(n$33:java.lang.Object*,sizeof(t=org.jsoup.nodes.Element;sub_t=( sub )(cast)):void) [line 120];
+*&amp;ele:org.jsoup.nodes.Element*=n$34 [line 120];
+NULLIFY(&amp;$irvar4); [line 120];
+EXIT_SCOPE(n$33,n$34,$irvar4); [line 120];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:3 Instructions
+n$35=*&amp;ele:org.jsoup.nodes.Element* [line 121];
+_=*n$35:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 121];
+n$37=_fun_String Element.text()(n$35:org.jsoup.nodes.Element*) virtual [line 121];
+*&amp;$irvar5:java.lang.String*=n$37 [line 121];
+EXIT_SCOPE(_,n$35,n$37); [line 121];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:27 exn:3 Instructions
+n$38=*&amp;$irvar5:java.lang.String* [line 121];
+n$39=_fun_boolean UrlGet.isLanguage(String)(n$38:java.lang.String*) [line 121];
+*&amp;$irvar6:_Bool=n$39 [line 121];
+NULLIFY(&amp;$irvar5); [line 121];
+EXIT_SCOPE(n$38,n$39,$irvar5); [line 121];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node25.html"><span class='visited with_tooltip'>C_25<span class='tooltip'>node25 preds:27 succs:28 exn:3 Conditional method_body
+n$40=*&amp;$irvar6:_Bool [line 121];
+PRUNE(!(n$40 == 0), true); [line 121];
+NULLIFY(&amp;$irvar6); [line 121];
+EXIT_SCOPE(n$40,$irvar6); [line 121];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node26.html"><span class='visited with_tooltip'>C_26<span class='tooltip'>node26 preds:27 succs:17 exn:3 Conditional method_body
+n$40=*&amp;$irvar6:_Bool [line 121];
+PRUNE((n$40 == 0), false); [line 121];
+NULLIFY(&amp;$irvar6); [line 121];
+NULLIFY(&amp;ele); [line 121];
+EXIT_SCOPE(n$40,$irvar6,ele); [line 121];
+APPLY_ABSTRACTION; [line 121];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node27.html"><span class='visited with_tooltip'>J_27<span class='tooltip'>node27 preds:24 succs:25 26 exn: Join
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:25 succs:29 exn:3 Instructions
+n$41=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 122];
+*&amp;$irvar8:java.io.PrintStream*=n$41 [line 122];
+EXIT_SCOPE(n$41); [line 122];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:28 succs:30 exn:3 Instructions
+n$42=*&amp;ele:org.jsoup.nodes.Element* [line 122];
+_=*n$42:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 122];
+n$44=_fun_String Element.text()(n$42:org.jsoup.nodes.Element*) virtual [line 122];
+*&amp;$irvar7:java.lang.String*=n$44 [line 122];
+NULLIFY(&amp;ele); [line 122];
+EXIT_SCOPE(_,n$42,n$44,ele); [line 122];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:29 succs:17 exn:3 Instructions
+n$45=*&amp;$irvar8:java.io.PrintStream* [line 122];
+_=*n$45:java.io.PrintStream*(root java.io.PrintStream) [line 122];
+n$47=*&amp;$irvar7:java.lang.String* [line 122];
+n$48=_fun_void PrintStream.println(String)(n$45:java.io.PrintStream*,n$47:java.lang.String*) virtual [line 122];
+NULLIFY(&amp;$irvar7); [line 122];
+NULLIFY(&amp;$irvar8); [line 122];
+EXIT_SCOPE(_,n$45,n$47,n$48,$irvar7,$irvar8); [line 122];
+APPLY_ABSTRACTION; [line 122];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:19 succs:7 exn:3 Instructions
+n$49=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 124];
+_=*n$49:java.io.PrintStream*(root java.io.PrintStream) [line 124];
+n$51=_fun_void PrintStream.println(String)(n$49:java.io.PrintStream*,"\\n":java.lang.Object*) virtual [line 124];
+EXIT_SCOPE(_,n$49,n$51); [line 124];
+APPLY_ABSTRACTION; [line 124];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.process%28%29%3Avoid.38179d5ce2ad0e186ec4aa86635b5658_node32.html"><span class='visited with_tooltip'>I_32<span class='tooltip'>node32 preds:9 succs:2 exn:3 Instructions
+APPLY_ABSTRACTION; [line 127];
+</span></span></a><br />@
+
+<span class='color_black'>void void UrlGet.process()()
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { lang.System -> { out -> ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 113) } + Footprint({ }) ~> ?, *) } }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= void UrlGet.process()
+; translation_unit= src/com/dulishuo/shenqingfang/offer/UrlGet.java
+; access= Private
+; formals= []
+; is_defined= true
+; loc= src/com/dulishuo/shenqingfang/offer/UrlGet.java:111
+; locals= [{ name= $irvar8; typ= void; modify_in_block= false }; 
+           { name= $irvar7; typ= void; modify_in_block= false }; 
+           { name= $irvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $bcvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= $bcvar2; typ= void; modify_in_block= false }; 
+           { name= set; typ= java.util.Set*; modify_in_block= false }; 
+           { name= list; typ= java.util.List*; modify_in_block= false }; 
+           { name= json; typ= net.sf.json.JSONObject*; modify_in_block= false }; 
+           { name= ps; typ= org.jsoup.select.Elements*; modify_in_block= false }; 
+           { name= doc; typ= org.jsoup.nodes.Document*; modify_in_block= false }; 
+           { name= ele; typ= org.jsoup.nodes.Element*; modify_in_block= false }]
+; ret_type= void 
+; proc_id= com.dulishuo.shenqingfang.offer.UrlGet.process():void }</pre>
+</body>
+</html>

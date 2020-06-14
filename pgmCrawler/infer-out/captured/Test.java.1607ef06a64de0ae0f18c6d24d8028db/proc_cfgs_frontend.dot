@@ -1,0 +1,126 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_1" [label="1: Start Test.<init>()\nFormals:  this:com.dulishuo.jituo.Test*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_1" -> "com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_4" ;
+"com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_2" [label="2: Exit Test.<init>() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_3" [label="3:  exceptions sink \n  " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_3" -> "com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_2" ;
+"com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_4" [label="4:  Call Object.<init>() \n   n$0=*&this:com.dulishuo.jituo.Test* [line 8]\n  n$1=_fun_Object.<init>()(n$0:com.dulishuo.jituo.Test*) [line 8]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_4" -> "com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_5" ;
+	 "com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_4" -> "com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_3" [color="red" ];
+"com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_5" [label="5:  method_body \n  " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_5" -> "com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_2" ;
+	 "com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_5" -> "com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_3" [color="red" ];
+"com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_1" [label="1: Start void Test.main(String[])\nFormals:  args:java.lang.String*[_*_](*)\nLocals:  $irvar5:void $irvar4:void $irvar3:void $irvar2:void $irvar1:void $irvar0:void end:long start:long \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_1" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_4" ;
+"com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_2" [label="2: Exit void Test.main(String[]) \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_3" [label="3:  exceptions sink \n  " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_3" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_2" ;
+"com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_4" [label="4:  Call void PrintStream.println(String) \n   n$0=*&#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 12]\n  _=*n$0:java.io.PrintStream*(root java.io.PrintStream) [line 12]\n  n$2=_fun_void PrintStream.println(String)(n$0:java.io.PrintStream*,\"start . . . \":java.lang.Object*) virtual [line 12]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_4" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_5" ;
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_4" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_3" [color="red" ];
+"com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_5" [label="5:  Call long System.currentTimeMillis() \n   n$3=_fun_long System.currentTimeMillis()() [line 13]\n  *&start:long=n$3 [line 13]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_5" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_6" ;
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_5" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_3" [color="red" ];
+"com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_6" [label="6:  Call void Test.test() \n   n$4=_fun_void Test.test()() [line 15]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_6" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_7" ;
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_6" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_3" [color="red" ];
+"com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_7" [label="7:  Call long System.currentTimeMillis() \n   n$5=_fun_long System.currentTimeMillis()() [line 17]\n  *&end:long=n$5 [line 17]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_7" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_8" ;
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_7" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_3" [color="red" ];
+"com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_8" [label="8:  method_body \n   n$6=*&#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 18]\n  *&$irvar0:java.io.PrintStream*=n$6 [line 18]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_8" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_9" ;
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_8" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_3" [color="red" ];
+"com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_9" [label="9:  Call StringBuilder.<init>() \n   n$7=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 18]\n  n$8=_fun_StringBuilder.<init>()(n$7:java.lang.StringBuilder*) [line 18]\n  *&$irvar1:java.lang.StringBuilder*=n$7 [line 18]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_9" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_10" ;
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_9" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_3" [color="red" ];
+"com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_10" [label="10:  Call StringBuilder StringBuilder.append(String) \n   n$9=*&$irvar1:java.lang.StringBuilder* [line 18]\n  _=*n$9:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 18]\n  n$11=_fun_StringBuilder StringBuilder.append(String)(n$9:java.lang.StringBuilder*,\"end . . . , use time : \":java.lang.Object*) virtual [line 18]\n  *&$irvar2:java.lang.StringBuilder*=n$11 [line 18]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_10" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_11" ;
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_10" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_3" [color="red" ];
+"com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_11" [label="11:  Call StringBuilder StringBuilder.append(long) \n   n$12=*&$irvar2:java.lang.StringBuilder* [line 18]\n  _=*n$12:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 18]\n  n$14=*&end:long [line 18]\n  n$15=*&start:long [line 18]\n  n$16=_fun_StringBuilder StringBuilder.append(long)(n$12:java.lang.StringBuilder*,((n$14 - n$15) / 1000):long) virtual [line 18]\n  *&$irvar3:java.lang.StringBuilder*=n$16 [line 18]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_11" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_12" ;
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_11" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_3" [color="red" ];
+"com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_12" [label="12:  Call StringBuilder StringBuilder.append(String) \n   n$17=*&$irvar3:java.lang.StringBuilder* [line 18]\n  _=*n$17:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 18]\n  n$19=_fun_StringBuilder StringBuilder.append(String)(n$17:java.lang.StringBuilder*,\" ms . \":java.lang.Object*) virtual [line 18]\n  *&$irvar4:java.lang.StringBuilder*=n$19 [line 18]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_12" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_13" ;
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_12" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_3" [color="red" ];
+"com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_13" [label="13:  Call String StringBuilder.toString() \n   n$20=*&$irvar4:java.lang.StringBuilder* [line 18]\n  _=*n$20:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 18]\n  n$22=_fun_String StringBuilder.toString()(n$20:java.lang.StringBuilder*) virtual [line 18]\n  *&$irvar5:java.lang.String*=n$22 [line 18]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_13" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_14" ;
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_13" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_3" [color="red" ];
+"com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_14" [label="14:  Call void PrintStream.println(String) \n   n$23=*&$irvar0:java.io.PrintStream* [line 18]\n  _=*n$23:java.io.PrintStream*(root java.io.PrintStream) [line 18]\n  n$25=*&$irvar5:java.lang.String* [line 18]\n  n$26=_fun_void PrintStream.println(String)(n$23:java.io.PrintStream*,n$25:java.lang.String*) virtual [line 18]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_14" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_15" ;
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_14" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_3" [color="red" ];
+"com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_15" [label="15:  method_body \n  " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_15" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_2" ;
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_15" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_3" [color="red" ];
+"com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_1" [label="1: Start void Test.test()\nFormals: \nLocals:  res:java.lang.String* url:java.lang.String* \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_1" -> "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_4" ;
+"com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_2" [label="2: Exit void Test.test() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_3" [label="3:  exceptions sink \n  " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_3" -> "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_2" ;
+"com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_4" [label="4:  method_body \n   *&url:java.lang.Object*=\"http://www.gter.net/offer/index/ajax?page=1&page_num=24&kw=\" [line 23]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_4" -> "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_5" ;
+	 "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_4" -> "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_3" [color="red" ];
+"com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_5" [label="5:  Call String CrawlerUtil.httpRequest(String) \n   n$0=*&url:java.lang.Object* [line 25]\n  n$1=_fun_String CrawlerUtil.httpRequest(String)(n$0:java.lang.Object*) [line 25]\n  *&res:java.lang.String*=n$1 [line 25]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_5" -> "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_6" ;
+	 "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_5" -> "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_3" [color="red" ];
+"com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_6" [label="6:  Call void PrintStream.println(String) \n   n$2=*&#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 28]\n  _=*n$2:java.io.PrintStream*(root java.io.PrintStream) [line 28]\n  n$4=*&res:java.lang.String* [line 28]\n  n$5=_fun_void PrintStream.println(String)(n$2:java.io.PrintStream*,n$4:java.lang.String*) virtual [line 28]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_6" -> "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_7" ;
+	 "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_6" -> "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_3" [color="red" ];
+"com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_7" [label="7:  method_body \n  " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_7" -> "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_2" ;
+	 "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_7" -> "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_3" [color="red" ];
+}

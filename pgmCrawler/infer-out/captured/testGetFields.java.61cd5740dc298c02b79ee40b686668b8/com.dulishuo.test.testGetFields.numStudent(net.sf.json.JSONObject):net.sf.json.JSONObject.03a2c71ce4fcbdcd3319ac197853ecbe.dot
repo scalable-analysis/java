@@ -1,0 +1,113 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_1" [label="1: Start JSONObject testGetFields.numStudent(JSONObject)\nFormals:  json:net.sf.json.JSONObject*\nLocals:  $irvar5:void $irvar4:void $irvar3:void $irvar2:void $irvar1:void $irvar0:void flag:_Bool map:java.util.Map* aa:net.sf.json.JSONObject* \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_1" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_4" ;
+"com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_2" [label="2: Exit JSONObject testGetFields.numStudent(JSONObject) \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_3" [label="3:  exceptions sink \n   NULLIFY(&$irvar3); [line 251]\n  NULLIFY(&$irvar4); [line 251]\n  NULLIFY(&map); [line 251]\n  NULLIFY(&$irvar0); [line 251]\n  NULLIFY(&$irvar1); [line 251]\n  NULLIFY(&flag); [line 251]\n  NULLIFY(&aa); [line 251]\n  EXIT_SCOPE($irvar3,$irvar4,map,$irvar0,$irvar1,flag,aa); [line 251]\n  APPLY_ABSTRACTION; [line 251]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_3" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_2" ;
+"com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_4" [label="4:  Call HashMap.<init>() \n   n$0=_fun___new(sizeof(t=java.util.HashMap):java.util.HashMap*) [line 235]\n  n$1=_fun_HashMap.<init>()(n$0:java.util.HashMap*) [line 235]\n  *&map:java.util.HashMap*=n$0 [line 235]\n  EXIT_SCOPE(n$0,n$1); [line 235]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_4" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_5" ;
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_4" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_3" [color="red" ];
+"com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_5" [label="5:  method_body \n   *&flag:int=0 [line 236]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_5" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_6" ;
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_5" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_3" [color="red" ];
+"com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_6" [label="6:  Call boolean JSONObject.containsKey(Object) \n   n$2=*&json:net.sf.json.JSONObject* [line 237]\n  _=*n$2:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 237]\n  n$4=_fun_boolean JSONObject.containsKey(Object)(n$2:net.sf.json.JSONObject*,\"Number\\\\194\\\\160of\\\\194\\\\160new\\\\194\\\\160students\":java.lang.Object*) virtual [line 237]\n  *&$irvar0:_Bool=n$4 [line 237]\n  EXIT_SCOPE(_,n$2,n$4); [line 237]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_6" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_7" ;
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_6" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_8" ;
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_6" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_3" [color="red" ];
+"com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_7" [label="7: Prune (true branch, if) \n   n$5=*&$irvar0:_Bool [line 237]\n  PRUNE(!(n$5 == 0), true); [line 237]\n  NULLIFY(&$irvar0); [line 237]\n  NULLIFY(&flag); [line 237]\n  EXIT_SCOPE(n$5,$irvar0,flag); [line 237]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_7" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_9" ;
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_7" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_3" [color="red" ];
+"com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_8" [label="8: Prune (false branch, if) \n   n$5=*&$irvar0:_Bool [line 237]\n  PRUNE((n$5 == 0), false); [line 237]\n  NULLIFY(&$irvar0); [line 237]\n  EXIT_SCOPE(n$5,$irvar0); [line 237]\n  APPLY_ABSTRACTION; [line 237]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_8" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_12" ;
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_8" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_3" [color="red" ];
+"com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_9" [label="9:  Call String JSONObject.getString(String) \n   n$6=*&json:net.sf.json.JSONObject* [line 238]\n  _=*n$6:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 238]\n  n$8=_fun_String JSONObject.getString(String)(n$6:net.sf.json.JSONObject*,\"Number\\\\194\\\\160of\\\\194\\\\160new\\\\194\\\\160students\":java.lang.Object*) virtual [line 238]\n  *&$irvar1:java.lang.String*=n$8 [line 238]\n  EXIT_SCOPE(_,n$6,n$8); [line 238]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_9" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_10" ;
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_9" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_3" [color="red" ];
+"com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_10" [label="10:  Call Object HashMap.put(Object,Object) \n   n$9=*&map:java.util.HashMap* [line 238]\n  _=*n$9:java.util.HashMap*(root java.util.HashMap) [line 238]\n  n$11=*&$irvar1:java.lang.String* [line 238]\n  n$12=_fun_Object HashMap.put(Object,Object)(n$9:java.util.HashMap*,\"new\":java.lang.Object*,n$11:java.lang.String*) interface virtual [line 238]\n  *&$irvar2:java.lang.Object*=n$12 [line 238]\n  NULLIFY(&$irvar1); [line 238]\n  NULLIFY(&$irvar2); [line 238]\n  EXIT_SCOPE(_,n$9,n$11,n$12,$irvar1,$irvar2); [line 238]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_10" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_11" ;
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_10" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_3" [color="red" ];
+"com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_11" [label="11:  method_body \n   *&flag:int=1 [line 239]\n  APPLY_ABSTRACTION; [line 239]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_11" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_12" ;
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_11" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_3" [color="red" ];
+"com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_12" [label="12:  Call boolean JSONObject.containsKey(Object) \n   n$13=*&json:net.sf.json.JSONObject* [line 241]\n  _=*n$13:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 241]\n  n$15=_fun_boolean JSONObject.containsKey(Object)(n$13:net.sf.json.JSONObject*,\"Total\\\\194\\\\160number\\\\194\\\\160of\\\\194\\\\160students\":java.lang.Object*) virtual [line 241]\n  *&$irvar3:_Bool=n$15 [line 241]\n  EXIT_SCOPE(_,n$13,n$15); [line 241]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_12" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_13" ;
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_12" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_14" ;
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_12" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_3" [color="red" ];
+"com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_13" [label="13: Prune (true branch, if) \n   n$16=*&$irvar3:_Bool [line 241]\n  PRUNE(!(n$16 == 0), true); [line 241]\n  NULLIFY(&$irvar3); [line 241]\n  NULLIFY(&flag); [line 241]\n  EXIT_SCOPE(n$16,$irvar3,flag); [line 241]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_13" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_15" ;
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_13" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_3" [color="red" ];
+"com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_14" [label="14: Prune (false branch, if) \n   n$16=*&$irvar3:_Bool [line 241]\n  PRUNE((n$16 == 0), false); [line 241]\n  NULLIFY(&$irvar3); [line 241]\n  EXIT_SCOPE(n$16,$irvar3); [line 241]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_14" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_18" ;
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_14" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_19" ;
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_14" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_3" [color="red" ];
+"com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_15" [label="15:  Call String JSONObject.getString(String) \n   n$17=*&json:net.sf.json.JSONObject* [line 242]\n  _=*n$17:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 242]\n  n$19=_fun_String JSONObject.getString(String)(n$17:net.sf.json.JSONObject*,\"Total\\\\194\\\\160number\\\\194\\\\160of\\\\194\\\\160students\":java.lang.Object*) virtual [line 242]\n  *&$irvar4:java.lang.String*=n$19 [line 242]\n  NULLIFY(&json); [line 242]\n  EXIT_SCOPE(_,n$17,n$19,json); [line 242]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_15" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_16" ;
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_15" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_3" [color="red" ];
+"com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_16" [label="16:  Call Object HashMap.put(Object,Object) \n   n$20=*&map:java.util.HashMap* [line 242]\n  _=*n$20:java.util.HashMap*(root java.util.HashMap) [line 242]\n  n$22=*&$irvar4:java.lang.String* [line 242]\n  n$23=_fun_Object HashMap.put(Object,Object)(n$20:java.util.HashMap*,\"total\":java.lang.Object*,n$22:java.lang.String*) interface virtual [line 242]\n  *&$irvar5:java.lang.Object*=n$23 [line 242]\n  NULLIFY(&$irvar5); [line 242]\n  NULLIFY(&$irvar4); [line 242]\n  EXIT_SCOPE(_,n$20,n$22,n$23,$irvar5,$irvar4); [line 242]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_16" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_17" ;
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_16" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_3" [color="red" ];
+"com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_17" [label="17:  method_body \n   *&flag:int=1 [line 243]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_17" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_18" ;
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_17" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_19" ;
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_17" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_3" [color="red" ];
+"com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_18" [label="18: Prune (true branch, if) \n   n$24=*&flag:int [line 246]\n  PRUNE(!(n$24 == 0), true); [line 246]\n  NULLIFY(&flag); [line 246]\n  EXIT_SCOPE(n$24,flag); [line 246]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_18" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_20" ;
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_18" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_3" [color="red" ];
+"com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_19" [label="19: Prune (false branch, if) \n   n$24=*&flag:int [line 246]\n  PRUNE((n$24 == 0), false); [line 246]\n  NULLIFY(&map); [line 246]\n  NULLIFY(&flag); [line 246]\n  EXIT_SCOPE(n$24,map,flag); [line 246]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_19" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_22" ;
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_19" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_3" [color="red" ];
+"com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_20" [label="20:  Call JSONObject JSONObject.fromObject(Object) \n   n$25=*&map:java.util.HashMap* [line 247]\n  n$26=_fun_JSONObject JSONObject.fromObject(Object)(n$25:java.util.HashMap*) [line 247]\n  *&aa:net.sf.json.JSONObject*=n$26 [line 247]\n  NULLIFY(&map); [line 247]\n  EXIT_SCOPE(n$25,n$26,map); [line 247]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_20" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_21" ;
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_20" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_3" [color="red" ];
+"com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_21" [label="21:  method_body \n   n$27=*&aa:net.sf.json.JSONObject* [line 248]\n  *&return:net.sf.json.JSONObject*=n$27 [line 248]\n  NULLIFY(&aa); [line 248]\n  EXIT_SCOPE(n$27,aa); [line 248]\n  APPLY_ABSTRACTION; [line 248]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_21" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_2" ;
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_21" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_3" [color="red" ];
+"com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_22" [label="22:  method_body \n   *&return:net.sf.json.JSONObject*=null [line 251]\n  APPLY_ABSTRACTION; [line 251]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_22" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_2" ;
+	 "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_22" -> "com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_3" [color="red" ];
+}

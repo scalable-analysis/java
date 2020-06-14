@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.test.Translate0718.<init>().0a412a2aaf6060645bdc8bccd11afa3c_1" [label="1: Start Translate0718.<init>()\nFormals:  this:com.dulishuo.test.Translate0718*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.test.Translate0718.<init>().0a412a2aaf6060645bdc8bccd11afa3c_1" -> "com.dulishuo.test.Translate0718.<init>().0a412a2aaf6060645bdc8bccd11afa3c_4" ;
+"com.dulishuo.test.Translate0718.<init>().0a412a2aaf6060645bdc8bccd11afa3c_2" [label="2: Exit Translate0718.<init>() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.test.Translate0718.<init>().0a412a2aaf6060645bdc8bccd11afa3c_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 20]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.<init>().0a412a2aaf6060645bdc8bccd11afa3c_3" -> "com.dulishuo.test.Translate0718.<init>().0a412a2aaf6060645bdc8bccd11afa3c_2" ;
+"com.dulishuo.test.Translate0718.<init>().0a412a2aaf6060645bdc8bccd11afa3c_4" [label="4:  Call Object.<init>() \n   n$0=*&this:com.dulishuo.test.Translate0718* [line 20]\n  n$1=_fun_Object.<init>()(n$0:com.dulishuo.test.Translate0718*) [line 20]\n  NULLIFY(&this); [line 20]\n  EXIT_SCOPE(n$0,n$1,this); [line 20]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.<init>().0a412a2aaf6060645bdc8bccd11afa3c_4" -> "com.dulishuo.test.Translate0718.<init>().0a412a2aaf6060645bdc8bccd11afa3c_5" ;
+	 "com.dulishuo.test.Translate0718.<init>().0a412a2aaf6060645bdc8bccd11afa3c_4" -> "com.dulishuo.test.Translate0718.<init>().0a412a2aaf6060645bdc8bccd11afa3c_3" [color="red" ];
+"com.dulishuo.test.Translate0718.<init>().0a412a2aaf6060645bdc8bccd11afa3c_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 20]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.<init>().0a412a2aaf6060645bdc8bccd11afa3c_5" -> "com.dulishuo.test.Translate0718.<init>().0a412a2aaf6060645bdc8bccd11afa3c_2" ;
+	 "com.dulishuo.test.Translate0718.<init>().0a412a2aaf6060645bdc8bccd11afa3c_5" -> "com.dulishuo.test.Translate0718.<init>().0a412a2aaf6060645bdc8bccd11afa3c_3" [color="red" ];
+}

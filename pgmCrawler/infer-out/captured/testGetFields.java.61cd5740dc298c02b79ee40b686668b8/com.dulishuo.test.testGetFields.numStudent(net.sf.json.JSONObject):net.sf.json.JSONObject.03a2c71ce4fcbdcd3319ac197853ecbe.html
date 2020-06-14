@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../testGetFields.java.61cd5740dc298c02b79ee40b686668b8.html#LINE234">JSONObject testGetFields.numStudent(JSONObject)</a></h1></center>
+<a href="./nodes/com.dulishuo.test.testGetFields.numStudent%28net.sf.json.JSONObject%29%3Anet.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.dulishuo.test.testGetFields.numStudent%28net.sf.json.JSONObject%29%3Anet.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:22 21 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.dulishuo.test.testGetFields.numStudent%28net.sf.json.JSONObject%29%3Anet.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;$irvar3); [line 251];
+NULLIFY(&amp;$irvar4); [line 251];
+NULLIFY(&amp;map); [line 251];
+NULLIFY(&amp;$irvar0); [line 251];
+NULLIFY(&amp;$irvar1); [line 251];
+NULLIFY(&amp;flag); [line 251];
+NULLIFY(&amp;aa); [line 251];
+EXIT_SCOPE($irvar3,$irvar4,map,$irvar0,$irvar1,flag,aa); [line 251];
+APPLY_ABSTRACTION; [line 251];
+</span></span></a> <a href="./nodes/com.dulishuo.test.testGetFields.numStudent%28net.sf.json.JSONObject%29%3Anet.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun___new(sizeof(t=java.util.HashMap):java.util.HashMap*) [line 235];
+n$1=_fun_HashMap.&lt;init&gt;()(n$0:java.util.HashMap*) [line 235];
+*&amp;map:java.util.HashMap*=n$0 [line 235];
+EXIT_SCOPE(n$0,n$1); [line 235];
+</span></span></a> <a href="./nodes/com.dulishuo.test.testGetFields.numStudent%28net.sf.json.JSONObject%29%3Anet.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+*&amp;flag:int=0 [line 236];
+</span></span></a> <a href="./nodes/com.dulishuo.test.testGetFields.numStudent%28net.sf.json.JSONObject%29%3Anet.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 8 exn:3 Instructions
+n$2=*&amp;json:net.sf.json.JSONObject* [line 237];
+_=*n$2:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 237];
+n$4=_fun_boolean JSONObject.containsKey(Object)(n$2:net.sf.json.JSONObject*,"Number\\194\\160of\\194\\160new\\194\\160students":java.lang.Object*) virtual [line 237];
+*&amp;$irvar0:_Bool=n$4 [line 237];
+EXIT_SCOPE(_,n$2,n$4); [line 237];
+</span></span></a> <a href="./nodes/com.dulishuo.test.testGetFields.numStudent%28net.sf.json.JSONObject%29%3Anet.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_node7.html"><span class='visited with_tooltip'>C_7<span class='tooltip'>node7 preds:6 succs:9 exn:3 Conditional method_body
+n$5=*&amp;$irvar0:_Bool [line 237];
+PRUNE(!(n$5 == 0), true); [line 237];
+NULLIFY(&amp;$irvar0); [line 237];
+NULLIFY(&amp;flag); [line 237];
+EXIT_SCOPE(n$5,$irvar0,flag); [line 237];
+</span></span></a> <a href="./nodes/com.dulishuo.test.testGetFields.numStudent%28net.sf.json.JSONObject%29%3Anet.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_node8.html"><span class='visited with_tooltip'>C_8<span class='tooltip'>node8 preds:6 succs:12 exn:3 Conditional method_body
+n$5=*&amp;$irvar0:_Bool [line 237];
+PRUNE((n$5 == 0), false); [line 237];
+NULLIFY(&amp;$irvar0); [line 237];
+EXIT_SCOPE(n$5,$irvar0); [line 237];
+APPLY_ABSTRACTION; [line 237];
+</span></span></a> <a href="./nodes/com.dulishuo.test.testGetFields.numStudent%28net.sf.json.JSONObject%29%3Anet.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:7 succs:10 exn:3 Instructions
+n$6=*&amp;json:net.sf.json.JSONObject* [line 238];
+_=*n$6:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 238];
+n$8=_fun_String JSONObject.getString(String)(n$6:net.sf.json.JSONObject*,"Number\\194\\160of\\194\\160new\\194\\160students":java.lang.Object*) virtual [line 238];
+*&amp;$irvar1:java.lang.String*=n$8 [line 238];
+EXIT_SCOPE(_,n$6,n$8); [line 238];
+</span></span></a> <a href="./nodes/com.dulishuo.test.testGetFields.numStudent%28net.sf.json.JSONObject%29%3Anet.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+n$9=*&amp;map:java.util.HashMap* [line 238];
+_=*n$9:java.util.HashMap*(root java.util.HashMap) [line 238];
+n$11=*&amp;$irvar1:java.lang.String* [line 238];
+n$12=_fun_Object HashMap.put(Object,Object)(n$9:java.util.HashMap*,"new":java.lang.Object*,n$11:java.lang.String*) interface virtual [line 238];
+*&amp;$irvar2:java.lang.Object*=n$12 [line 238];
+NULLIFY(&amp;$irvar1); [line 238];
+NULLIFY(&amp;$irvar2); [line 238];
+EXIT_SCOPE(_,n$9,n$11,n$12,$irvar1,$irvar2); [line 238];
+</span></span></a> <a href="./nodes/com.dulishuo.test.testGetFields.numStudent%28net.sf.json.JSONObject%29%3Anet.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+*&amp;flag:int=1 [line 239];
+APPLY_ABSTRACTION; [line 239];
+</span></span></a> <a href="./nodes/com.dulishuo.test.testGetFields.numStudent%28net.sf.json.JSONObject%29%3Anet.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 8 succs:13 14 exn:3 Instructions
+n$13=*&amp;json:net.sf.json.JSONObject* [line 241];
+_=*n$13:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 241];
+n$15=_fun_boolean JSONObject.containsKey(Object)(n$13:net.sf.json.JSONObject*,"Total\\194\\160number\\194\\160of\\194\\160students":java.lang.Object*) virtual [line 241];
+*&amp;$irvar3:_Bool=n$15 [line 241];
+EXIT_SCOPE(_,n$13,n$15); [line 241];
+</span></span></a> <a href="./nodes/com.dulishuo.test.testGetFields.numStudent%28net.sf.json.JSONObject%29%3Anet.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_node13.html"><span class='visited with_tooltip'>C_13<span class='tooltip'>node13 preds:12 succs:15 exn:3 Conditional method_body
+n$16=*&amp;$irvar3:_Bool [line 241];
+PRUNE(!(n$16 == 0), true); [line 241];
+NULLIFY(&amp;$irvar3); [line 241];
+NULLIFY(&amp;flag); [line 241];
+EXIT_SCOPE(n$16,$irvar3,flag); [line 241];
+</span></span></a> <a href="./nodes/com.dulishuo.test.testGetFields.numStudent%28net.sf.json.JSONObject%29%3Anet.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_node14.html"><span class='visited with_tooltip'>C_14<span class='tooltip'>node14 preds:12 succs:18 19 exn:3 Conditional method_body
+n$16=*&amp;$irvar3:_Bool [line 241];
+PRUNE((n$16 == 0), false); [line 241];
+NULLIFY(&amp;$irvar3); [line 241];
+EXIT_SCOPE(n$16,$irvar3); [line 241];
+</span></span></a> <a href="./nodes/com.dulishuo.test.testGetFields.numStudent%28net.sf.json.JSONObject%29%3Anet.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:13 succs:16 exn:3 Instructions
+n$17=*&amp;json:net.sf.json.JSONObject* [line 242];
+_=*n$17:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 242];
+n$19=_fun_String JSONObject.getString(String)(n$17:net.sf.json.JSONObject*,"Total\\194\\160number\\194\\160of\\194\\160students":java.lang.Object*) virtual [line 242];
+*&amp;$irvar4:java.lang.String*=n$19 [line 242];
+NULLIFY(&amp;json); [line 242];
+EXIT_SCOPE(_,n$17,n$19,json); [line 242];
+</span></span></a> <a href="./nodes/com.dulishuo.test.testGetFields.numStudent%28net.sf.json.JSONObject%29%3Anet.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:3 Instructions
+n$20=*&amp;map:java.util.HashMap* [line 242];
+_=*n$20:java.util.HashMap*(root java.util.HashMap) [line 242];
+n$22=*&amp;$irvar4:java.lang.String* [line 242];
+n$23=_fun_Object HashMap.put(Object,Object)(n$20:java.util.HashMap*,"total":java.lang.Object*,n$22:java.lang.String*) interface virtual [line 242];
+*&amp;$irvar5:java.lang.Object*=n$23 [line 242];
+NULLIFY(&amp;$irvar5); [line 242];
+NULLIFY(&amp;$irvar4); [line 242];
+EXIT_SCOPE(_,n$20,n$22,n$23,$irvar5,$irvar4); [line 242];
+</span></span></a> <a href="./nodes/com.dulishuo.test.testGetFields.numStudent%28net.sf.json.JSONObject%29%3Anet.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 19 exn:3 Instructions
+*&amp;flag:int=1 [line 243];
+</span></span></a> <a href="./nodes/com.dulishuo.test.testGetFields.numStudent%28net.sf.json.JSONObject%29%3Anet.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_node18.html"><span class='visited with_tooltip'>C_18<span class='tooltip'>node18 preds:17 14 succs:20 exn:3 Conditional method_body
+n$24=*&amp;flag:int [line 246];
+PRUNE(!(n$24 == 0), true); [line 246];
+NULLIFY(&amp;flag); [line 246];
+EXIT_SCOPE(n$24,flag); [line 246];
+</span></span></a> <a href="./nodes/com.dulishuo.test.testGetFields.numStudent%28net.sf.json.JSONObject%29%3Anet.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_node19.html"><span class='visited with_tooltip'>C_19<span class='tooltip'>node19 preds:17 14 succs:22 exn:3 Conditional method_body
+n$24=*&amp;flag:int [line 246];
+PRUNE((n$24 == 0), false); [line 246];
+NULLIFY(&amp;map); [line 246];
+NULLIFY(&amp;flag); [line 246];
+EXIT_SCOPE(n$24,map,flag); [line 246];
+</span></span></a> <a href="./nodes/com.dulishuo.test.testGetFields.numStudent%28net.sf.json.JSONObject%29%3Anet.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:18 succs:21 exn:3 Instructions
+n$25=*&amp;map:java.util.HashMap* [line 247];
+n$26=_fun_JSONObject JSONObject.fromObject(Object)(n$25:java.util.HashMap*) [line 247];
+*&amp;aa:net.sf.json.JSONObject*=n$26 [line 247];
+NULLIFY(&amp;map); [line 247];
+EXIT_SCOPE(n$25,n$26,map); [line 247];
+</span></span></a> <a href="./nodes/com.dulishuo.test.testGetFields.numStudent%28net.sf.json.JSONObject%29%3Anet.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:2 exn:3 Instructions
+n$27=*&amp;aa:net.sf.json.JSONObject* [line 248];
+*&amp;return:net.sf.json.JSONObject*=n$27 [line 248];
+NULLIFY(&amp;aa); [line 248];
+EXIT_SCOPE(n$27,aa); [line 248];
+APPLY_ABSTRACTION; [line 248];
+</span></span></a> <a href="./nodes/com.dulishuo.test.testGetFields.numStudent%28net.sf.json.JSONObject%29%3Anet.sf.json.JSONObject.03a2c71ce4fcbdcd3319ac197853ecbe_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:19 succs:2 exn:3 Instructions
+*&amp;return:net.sf.json.JSONObject*=null [line 251];
+APPLY_ABSTRACTION; [line 251];
+</span></span></a><br />@
+
+<span class='color_black'>net.sf.json.JSONObject* JSONObject testGetFields.numStudent(JSONObject)(net.sf.json.JSONObject* json)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { return -> { } }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= JSONObject testGetFields.numStudent(JSONObject)
+; translation_unit= src/com/dulishuo/test/testGetFields.java
+; access= Public
+; formals= [(json,net.sf.json.JSONObject*)]
+; is_defined= true
+; loc= src/com/dulishuo/test/testGetFields.java:234
+; locals= [{ name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= flag; typ= _Bool; modify_in_block= false }; 
+           { name= map; typ= java.util.Map*; modify_in_block= false }; 
+           { name= aa; typ= net.sf.json.JSONObject*; modify_in_block= false }]
+; ret_type= net.sf.json.JSONObject* 
+; proc_id= com.dulishuo.test.testGetFields.numStudent(net.sf.json.JSONObject):net.sf.json.JSONObject }</pre>
+</body>
+</html>

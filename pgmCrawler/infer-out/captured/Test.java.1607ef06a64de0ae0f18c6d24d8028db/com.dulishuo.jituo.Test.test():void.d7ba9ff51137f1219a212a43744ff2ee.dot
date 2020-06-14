@@ -1,0 +1,34 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_1" [label="1: Start void Test.test()\nFormals: \nLocals:  res:java.lang.String* url:java.lang.String* \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_1" -> "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_4" ;
+"com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_2" [label="2: Exit void Test.test() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_3" [label="3:  exceptions sink \n   NULLIFY(&url); [line 31]\n  NULLIFY(&res); [line 31]\n  EXIT_SCOPE(url,res); [line 31]\n  APPLY_ABSTRACTION; [line 31]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_3" -> "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_2" ;
+"com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_4" [label="4:  method_body \n   *&url:java.lang.Object*=\"http://www.gter.net/offer/index/ajax?page=1&page_num=24&kw=\" [line 23]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_4" -> "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_5" ;
+	 "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_4" -> "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_3" [color="red" ];
+"com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_5" [label="5:  Call String CrawlerUtil.httpRequest(String) \n   n$0=*&url:java.lang.Object* [line 25]\n  n$1=_fun_String CrawlerUtil.httpRequest(String)(n$0:java.lang.Object*) [line 25]\n  *&res:java.lang.String*=n$1 [line 25]\n  NULLIFY(&url); [line 25]\n  EXIT_SCOPE(n$0,n$1,url); [line 25]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_5" -> "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_6" ;
+	 "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_5" -> "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_3" [color="red" ];
+"com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_6" [label="6:  Call void PrintStream.println(String) \n   n$2=*&#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 28]\n  _=*n$2:java.io.PrintStream*(root java.io.PrintStream) [line 28]\n  n$4=*&res:java.lang.String* [line 28]\n  n$5=_fun_void PrintStream.println(String)(n$2:java.io.PrintStream*,n$4:java.lang.String*) virtual [line 28]\n  NULLIFY(&res); [line 28]\n  EXIT_SCOPE(_,n$2,n$4,n$5,res); [line 28]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_6" -> "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_7" ;
+	 "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_6" -> "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_3" [color="red" ];
+"com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_7" [label="7:  method_body \n   APPLY_ABSTRACTION; [line 31]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_7" -> "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_2" ;
+	 "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_7" -> "com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee_3" [color="red" ];
+}

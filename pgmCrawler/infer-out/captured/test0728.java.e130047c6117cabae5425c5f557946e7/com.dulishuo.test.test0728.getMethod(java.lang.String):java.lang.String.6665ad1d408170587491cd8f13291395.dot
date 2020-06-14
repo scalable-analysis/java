@@ -1,0 +1,210 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_1" [label="1: Start String test0728.getMethod(String)\nFormals:  urlString:java.lang.String*\nLocals:  $irvar4:void $bcvar10:void CatchVar148:void CatchVar140:void $irvar3:void $irvar2:void $irvar1:void $irvar0:void repString:java.lang.String* buffer:java.io.ByteArrayOutputStream* ex:java.lang.Exception* length:int bytes:signed char[_*_](*) reader:java.io.InputStream* ssf:javax.net.ssl.SSLSocketFactory* sslContext:javax.net.ssl.SSLContext* tm:javax.net.ssl.TrustManager*[_*_](*) connection:javax.net.ssl.HttpsURLConnection* url:java.net.URL* \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_1" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_4" ;
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_2" [label="2: Exit String test0728.getMethod(String) \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_3" [label="3:  exceptions sink \n   NULLIFY(&CatchVar140); [line 110]\n  NULLIFY(&$irvar4); [line 110]\n  NULLIFY(&repString); [line 110]\n  NULLIFY(&buffer); [line 110]\n  EXIT_SCOPE(n$70,CatchVar140,$irvar4,repString,buffer); [line 110]\n  APPLY_ABSTRACTION; [line 110]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_3" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_2" ;
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_4" [label="4:  Call ByteArrayOutputStream.<init>(int) \n   n$0=_fun___new(sizeof(t=java.io.ByteArrayOutputStream):java.io.ByteArrayOutputStream*) [line 74]\n  n$1=_fun_ByteArrayOutputStream.<init>(int)(n$0:java.io.ByteArrayOutputStream*,512:int) [line 74]\n  *&buffer:java.io.ByteArrayOutputStream*=n$0 [line 74]\n  EXIT_SCOPE(n$0,n$1); [line 74]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_4" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_5" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_4" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_3" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_5" [label="5:  Call URL.<init>(String) \n   n$2=_fun___new(sizeof(t=java.net.URL):java.net.URL*) [line 76]\n  n$3=*&urlString:java.lang.String* [line 76]\n  n$4=_fun_URL.<init>(String)(n$2:java.net.URL*,n$3:java.lang.String*) [line 76]\n  *&url:java.net.URL*=n$2 [line 76]\n  NULLIFY(&urlString); [line 76]\n  EXIT_SCOPE(n$2,n$3,n$4,urlString); [line 76]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_5" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_6" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_5" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_38" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_6" [label="6:  method_body \n   n$5=*&#GB<>$com.dulishuo.test.test0728.ignoreHostnameVerifier:javax.net.ssl.HostnameVerifier*(root com.dulishuo.test.test0728) [line 80]\n  *&$irvar0:javax.net.ssl.HostnameVerifier*=n$5 [line 80]\n  EXIT_SCOPE(n$5); [line 80]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_6" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_7" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_6" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_38" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_7" [label="7:  Call void HttpsURLConnection.setDefaultHostnameVerifier(HostnameVerifier) \n   n$6=*&$irvar0:javax.net.ssl.HostnameVerifier* [line 80]\n  n$7=_fun_void HttpsURLConnection.setDefaultHostnameVerifier(HostnameVerifier)(n$6:javax.net.ssl.HostnameVerifier*) [line 80]\n  NULLIFY(&$irvar0); [line 80]\n  EXIT_SCOPE(n$6,n$7,$irvar0); [line 80]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_7" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_8" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_7" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_38" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_8" [label="8:  Call URLConnection URL.openConnection() \n   n$8=*&url:java.net.URL* [line 81]\n  _=*n$8:java.net.URL*(root java.net.URL) [line 81]\n  n$10=_fun_URLConnection URL.openConnection()(n$8:java.net.URL*) virtual [line 81]\n  *&$irvar1:java.net.URLConnection*=n$10 [line 81]\n  NULLIFY(&url); [line 81]\n  EXIT_SCOPE(_,n$8,n$10,url); [line 81]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_8" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_9" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_8" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_38" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_9" [label="9:  method_body \n   n$11=*&$irvar1:java.net.URLConnection* [line 81]\n  n$12=_fun___cast(n$11:java.net.URLConnection*,sizeof(t=javax.net.ssl.HttpsURLConnection;sub_t=( sub )(cast)):void) [line 81]\n  *&connection:javax.net.ssl.HttpsURLConnection*=n$12 [line 81]\n  NULLIFY(&$irvar1); [line 81]\n  EXIT_SCOPE(n$11,n$12,$irvar1); [line 81]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_9" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_10" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_9" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_38" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_10" [label="10:  method_body \n   n$13=_fun___new_array(sizeof(t=javax.net.ssl.TrustManager*[_*_];len=[1]):javax.net.ssl.TrustManager*[_*_](*)) [line 84]\n  *&$irvar2:javax.net.ssl.TrustManager*[_*_](*)=n$13 [line 84]\n  EXIT_SCOPE(n$13); [line 84]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_10" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_11" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_10" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_38" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_11" [label="11:  method_body \n   n$14=*&$irvar2:javax.net.ssl.TrustManager*[_*_](*) [line 84]\n  n$15=*&#GB<>$com.dulishuo.test.test0728.ignoreCertificationTrustManger:javax.net.ssl.TrustManager*(root com.dulishuo.test.test0728) [line 84]\n  *n$14[0]:javax.net.ssl.TrustManager*=n$15 [line 84]\n  EXIT_SCOPE(n$14,n$15); [line 84]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_11" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_12" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_11" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_38" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_12" [label="12:  method_body \n   n$16=*&$irvar2:javax.net.ssl.TrustManager*[_*_](*) [line 84]\n  *&tm:javax.net.ssl.TrustManager*[_*_](*)=n$16 [line 84]\n  NULLIFY(&$irvar2); [line 84]\n  EXIT_SCOPE(n$16,$irvar2); [line 84]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_12" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_13" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_12" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_38" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_13" [label="13:  Call SSLContext SSLContext.getInstance(String,String) \n   n$17=_fun_SSLContext SSLContext.getInstance(String,String)(\"SSL\":java.lang.Object*,\"SunJSSE\":java.lang.Object*) [line 85]\n  *&sslContext:javax.net.ssl.SSLContext*=n$17 [line 85]\n  EXIT_SCOPE(n$17); [line 85]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_13" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_14" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_13" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_38" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_14" [label="14:  Call SecureRandom.<init>() \n   n$18=_fun___new(sizeof(t=java.security.SecureRandom):java.security.SecureRandom*) [line 86]\n  n$19=_fun_SecureRandom.<init>()(n$18:java.security.SecureRandom*) [line 86]\n  *&$irvar3:java.security.SecureRandom*=n$18 [line 86]\n  EXIT_SCOPE(n$18,n$19); [line 86]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_14" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_15" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_14" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_38" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_15" [label="15:  Call void SSLContext.init(KeyManager[],TrustManager[],SecureRandom) \n   n$20=*&sslContext:javax.net.ssl.SSLContext* [line 86]\n  _=*n$20:javax.net.ssl.SSLContext*(root javax.net.ssl.SSLContext) [line 86]\n  n$22=*&tm:javax.net.ssl.TrustManager*[_*_](*) [line 86]\n  n$23=*&$irvar3:java.security.SecureRandom* [line 86]\n  n$24=_fun_void SSLContext.init(KeyManager[],TrustManager[],SecureRandom)(n$20:javax.net.ssl.SSLContext*,null:java.lang.Object*,n$22:javax.net.ssl.TrustManager*[_*_](*),n$23:java.security.SecureRandom*) virtual [line 86]\n  NULLIFY(&$irvar3); [line 86]\n  NULLIFY(&tm); [line 86]\n  EXIT_SCOPE(_,n$20,n$22,n$23,n$24,$irvar3,tm); [line 86]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_15" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_16" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_15" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_38" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_16" [label="16:  Call SSLSocketFactory SSLContext.getSocketFactory() \n   n$25=*&sslContext:javax.net.ssl.SSLContext* [line 89]\n  _=*n$25:javax.net.ssl.SSLContext*(root javax.net.ssl.SSLContext) [line 89]\n  n$27=_fun_SSLSocketFactory SSLContext.getSocketFactory()(n$25:javax.net.ssl.SSLContext*) virtual [line 89]\n  *&ssf:javax.net.ssl.SSLSocketFactory*=n$27 [line 89]\n  NULLIFY(&sslContext); [line 89]\n  EXIT_SCOPE(_,n$25,n$27,sslContext); [line 89]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_16" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_17" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_16" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_38" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_17" [label="17:  Call void HttpsURLConnection.setSSLSocketFactory(SSLSocketFactory) \n   n$28=*&connection:javax.net.ssl.HttpsURLConnection* [line 90]\n  _=*n$28:javax.net.ssl.HttpsURLConnection*(root javax.net.ssl.HttpsURLConnection) [line 90]\n  n$30=*&ssf:javax.net.ssl.SSLSocketFactory* [line 90]\n  n$31=_fun_void HttpsURLConnection.setSSLSocketFactory(SSLSocketFactory)(n$28:javax.net.ssl.HttpsURLConnection*,n$30:javax.net.ssl.SSLSocketFactory*) virtual [line 90]\n  NULLIFY(&ssf); [line 90]\n  EXIT_SCOPE(_,n$28,n$30,n$31,ssf); [line 90]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_17" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_18" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_17" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_38" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_18" [label="18:  Call InputStream URLConnection.getInputStream() \n   n$32=*&connection:javax.net.ssl.HttpsURLConnection* [line 92]\n  _=*n$32:javax.net.ssl.HttpsURLConnection*(root javax.net.ssl.HttpsURLConnection) [line 92]\n  n$34=_fun_InputStream URLConnection.getInputStream()(n$32:javax.net.ssl.HttpsURLConnection*) virtual [line 92]\n  *&reader:java.io.InputStream*=n$34 [line 92]\n  EXIT_SCOPE(_,n$32,n$34); [line 92]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_18" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_19" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_18" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_38" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_19" [label="19:  method_body \n   n$35=_fun___new_array(sizeof(t=signed char[_*_];len=[512]):signed char[_*_](*)) [line 93]\n  *&bytes:signed char[_*_](*)=n$35 [line 93]\n  EXIT_SCOPE(n$35); [line 93]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_19" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_20" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_19" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_38" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_20" [label="20:  Call int InputStream.read(byte[]) \n   n$36=*&reader:java.io.InputStream* [line 94]\n  _=*n$36:java.io.InputStream*(root java.io.InputStream) [line 94]\n  n$38=*&bytes:signed char[_*_](*) [line 94]\n  n$39=_fun_int InputStream.read(byte[])(n$36:java.io.InputStream*,n$38:signed char[_*_](*)) virtual [line 94]\n  *&length:int=n$39 [line 94]\n  EXIT_SCOPE(_,n$36,n$38,n$39); [line 94]\n  APPLY_ABSTRACTION; [line 94]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_20" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_21" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_20" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_38" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_21" [label="21:  Call void ByteArrayOutputStream.write(byte[],int,int) \n   n$40=*&buffer:java.io.ByteArrayOutputStream* [line 97]\n  _=*n$40:java.io.ByteArrayOutputStream*(root java.io.ByteArrayOutputStream) [line 97]\n  n$42=*&bytes:signed char[_*_](*) [line 97]\n  n$43=*&length:int [line 97]\n  n$44=_fun_void ByteArrayOutputStream.write(byte[],int,int)(n$40:java.io.ByteArrayOutputStream*,n$42:signed char[_*_](*),0:int,n$43:int) virtual [line 97]\n  NULLIFY(&length); [line 97]\n  EXIT_SCOPE(_,n$40,n$42,n$43,n$44,length); [line 97]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_21" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_22" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_21" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_38" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_22" [label="22:  Call int InputStream.read(byte[]) \n   n$45=*&reader:java.io.InputStream* [line 98]\n  _=*n$45:java.io.InputStream*(root java.io.InputStream) [line 98]\n  n$47=*&bytes:signed char[_*_](*) [line 98]\n  n$48=_fun_int InputStream.read(byte[])(n$45:java.io.InputStream*,n$47:signed char[_*_](*)) virtual [line 98]\n  *&length:int=n$48 [line 98]\n  EXIT_SCOPE(_,n$45,n$47,n$48); [line 98]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_22" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_25" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_22" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_38" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_23" [label="23: Prune (true branch, if) \n   n$49=*&length:int [line 99]\n  PRUNE(!(n$49 > 0), true); [line 99]\n  NULLIFY(&bytes); [line 99]\n  NULLIFY(&length); [line 99]\n  EXIT_SCOPE(n$49,bytes,length); [line 99]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_23" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_26" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_23" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_38" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_24" [label="24: Prune (false branch, if) \n   n$49=*&length:int [line 99]\n  PRUNE((n$49 > 0), false); [line 99]\n  EXIT_SCOPE(n$49); [line 99]\n  APPLY_ABSTRACTION; [line 99]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_24" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_21" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_24" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_38" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_25" [label="25: + \n  " ]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_25" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_23" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_25" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_24" ;
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_26" [label="26:  Call void InputStream.close() \n   n$50=*&reader:java.io.InputStream* [line 102]\n  _=*n$50:java.io.InputStream*(root java.io.InputStream) [line 102]\n  n$52=_fun_void InputStream.close()(n$50:java.io.InputStream*) virtual [line 102]\n  NULLIFY(&reader); [line 102]\n  EXIT_SCOPE(_,n$50,n$52,reader); [line 102]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_26" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_27" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_26" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_38" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_27" [label="27:  Call void HttpURLConnection.disconnect() \n   n$53=*&connection:javax.net.ssl.HttpsURLConnection* [line 104]\n  _=*n$53:javax.net.ssl.HttpsURLConnection*(root javax.net.ssl.HttpsURLConnection) [line 104]\n  n$55=_fun_void HttpURLConnection.disconnect()(n$53:javax.net.ssl.HttpsURLConnection*) virtual [line 104]\n  NULLIFY(&connection); [line 104]\n  EXIT_SCOPE(_,n$53,n$55,connection); [line 104]\n  APPLY_ABSTRACTION; [line 104]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_27" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_32" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_27" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_38" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_28" [label="28:  method_body \n   n$56=*&CatchVar140:java.lang.Object* [line 105]\n  *&ex:java.lang.Object*=n$56 [line 105]\n  NULLIFY(&CatchVar140); [line 105]\n  EXIT_SCOPE(n$56,CatchVar140); [line 105]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_28" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_29" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_28" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_40" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_29" [label="29:  Call void Throwable.printStackTrace() \n   n$57=*&ex:java.lang.Object* [line 106]\n  _=*n$57:java.lang.Object*(root java.lang.Object) [line 106]\n  n$59=_fun_void Throwable.printStackTrace()(n$57:java.lang.Object*) virtual [line 106]\n  NULLIFY(&ex); [line 106]\n  EXIT_SCOPE(_,n$57,n$59,ex); [line 106]\n  APPLY_ABSTRACTION; [line 106]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_29" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_32" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_29" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_40" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_30" [label="30:  method_body \n   n$60=*&CatchVar148:java.lang.Object* [line 107]\n  *&$bcvar10:java.lang.Object*=n$60 [line 107]\n  EXIT_SCOPE(n$60); [line 107]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_30" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_31" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_30" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_42" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_31" [label="31:  throw \n   n$61=*&$bcvar10:java.lang.Object* [line 108]\n  *&return:java.lang.String*=EXN n$61 [line 108]\n  NULLIFY(&$bcvar10); [line 108]\n  EXIT_SCOPE(n$61,$bcvar10); [line 108]\n  APPLY_ABSTRACTION; [line 108]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_31" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_2" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_31" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_3" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_32" [label="32:  Call byte[] ByteArrayOutputStream.toByteArray() \n   n$62=*&buffer:java.io.ByteArrayOutputStream* [line 109]\n  _=*n$62:java.io.ByteArrayOutputStream*(root java.io.ByteArrayOutputStream) [line 109]\n  n$64=_fun_byte[] ByteArrayOutputStream.toByteArray()(n$62:java.io.ByteArrayOutputStream*) virtual [line 109]\n  *&$irvar4:signed char[_*_](*)=n$64 [line 109]\n  NULLIFY(&buffer); [line 109]\n  EXIT_SCOPE(_,n$62,n$64,buffer); [line 109]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_32" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_33" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_32" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_3" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_33" [label="33:  Call String.<init>(byte[]) \n   n$65=_fun___new(sizeof(t=java.lang.String):java.lang.String*) [line 109]\n  n$66=*&$irvar4:signed char[_*_](*) [line 109]\n  n$67=_fun_String.<init>(byte[])(n$65:java.lang.String*,n$66:signed char[_*_](*)) [line 109]\n  *&repString:java.lang.String*=n$65 [line 109]\n  NULLIFY(&$irvar4); [line 109]\n  EXIT_SCOPE(n$65,n$66,n$67,$irvar4); [line 109]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_33" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_34" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_33" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_3" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_34" [label="34:  method_body \n   n$68=*&repString:java.lang.String* [line 110]\n  *&return:java.lang.String*=n$68 [line 110]\n  NULLIFY(&repString); [line 110]\n  EXIT_SCOPE(n$68,repString); [line 110]\n  APPLY_ABSTRACTION; [line 110]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_34" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_2" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_34" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_3" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_35" [label="35:  Finally branch \n   APPLY_ABSTRACTION; [line 107]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_35" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_30" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_35" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_3" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_36" [label="36: Prune (true branch, switch) \n   n$71=_fun___instanceof(n$70:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 105]\n  PRUNE(n$71, true); [line 105]\n  *&CatchVar140:java.lang.String*=n$70 [line 105]\n  EXIT_SCOPE(n$70,n$71); [line 105]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_36" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_28" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_36" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_3" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_37" [label="37: Prune (false branch, switch) \n   n$71=_fun___instanceof(n$70:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 105]\n  PRUNE(!n$71, false); [line 105]\n  NULLIFY(&buffer); [line 105]\n  EXIT_SCOPE(n$70,n$71,buffer); [line 105]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_37" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_35" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_37" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_3" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_38" [label="38:  exception handler \n   n$69=*&return:java.lang.String* [line 105]\n  *&return:java.lang.String*=null [line 105]\n  n$70=_fun___unwrap_exception(n$69:java.lang.String*) [line 105]\n  NULLIFY(&$irvar3); [line 105]\n  NULLIFY(&tm); [line 105]\n  NULLIFY(&url); [line 105]\n  NULLIFY(&ssf); [line 105]\n  NULLIFY(&connection); [line 105]\n  NULLIFY(&sslContext); [line 105]\n  NULLIFY(&bytes); [line 105]\n  NULLIFY(&$irvar0); [line 105]\n  NULLIFY(&reader); [line 105]\n  NULLIFY(&$irvar1); [line 105]\n  NULLIFY(&$irvar2); [line 105]\n  NULLIFY(&length); [line 105]\n  EXIT_SCOPE(n$69,$irvar3,tm,url,ssf,connection,sslContext,bytes,$irvar0,reader,$irvar1,$irvar2,length); [line 105]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_38" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_36" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_38" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_37" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_38" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_3" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_39" [label="39:  Finally branch \n   APPLY_ABSTRACTION; [line 107]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_39" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_30" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_39" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_3" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_40" [label="40:  exception handler \n   n$69=*&return:java.lang.String* [line 107]\n  *&return:java.lang.String*=null [line 107]\n  n$70=_fun___unwrap_exception(n$69:java.lang.String*) [line 107]\n  NULLIFY(&ex); [line 107]\n  NULLIFY(&buffer); [line 107]\n  EXIT_SCOPE(n$69,n$70,ex,buffer); [line 107]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_40" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_39" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_40" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_3" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_41" [label="41:  Finally branch \n   APPLY_ABSTRACTION; [line 107]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_41" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_30" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_41" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_3" [color="red" ];
+"com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_42" [label="42:  exception handler \n   n$69=*&return:java.lang.String* [line 107]\n  *&return:java.lang.String*=null [line 107]\n  n$70=_fun___unwrap_exception(n$69:java.lang.String*) [line 107]\n  NULLIFY(&$bcvar10); [line 107]\n  EXIT_SCOPE(n$69,n$70,$bcvar10); [line 107]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_42" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_41" ;
+	 "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_42" -> "com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_3" [color="red" ];
+}

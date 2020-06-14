@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.usnews.SixFacultyRanking.<init>().4014d6aa9153f93a8dc7d89cd8cd1f63_1" [label="1: Start SixFacultyRanking.<init>()\nFormals:  this:com.dulishuo.usnews.SixFacultyRanking*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.usnews.SixFacultyRanking.<init>().4014d6aa9153f93a8dc7d89cd8cd1f63_1" -> "com.dulishuo.usnews.SixFacultyRanking.<init>().4014d6aa9153f93a8dc7d89cd8cd1f63_4" ;
+"com.dulishuo.usnews.SixFacultyRanking.<init>().4014d6aa9153f93a8dc7d89cd8cd1f63_2" [label="2: Exit SixFacultyRanking.<init>() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.usnews.SixFacultyRanking.<init>().4014d6aa9153f93a8dc7d89cd8cd1f63_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 14]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.SixFacultyRanking.<init>().4014d6aa9153f93a8dc7d89cd8cd1f63_3" -> "com.dulishuo.usnews.SixFacultyRanking.<init>().4014d6aa9153f93a8dc7d89cd8cd1f63_2" ;
+"com.dulishuo.usnews.SixFacultyRanking.<init>().4014d6aa9153f93a8dc7d89cd8cd1f63_4" [label="4:  Call Object.<init>() \n   n$0=*&this:com.dulishuo.usnews.SixFacultyRanking* [line 14]\n  n$1=_fun_Object.<init>()(n$0:com.dulishuo.usnews.SixFacultyRanking*) [line 14]\n  NULLIFY(&this); [line 14]\n  EXIT_SCOPE(n$0,n$1,this); [line 14]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.SixFacultyRanking.<init>().4014d6aa9153f93a8dc7d89cd8cd1f63_4" -> "com.dulishuo.usnews.SixFacultyRanking.<init>().4014d6aa9153f93a8dc7d89cd8cd1f63_5" ;
+	 "com.dulishuo.usnews.SixFacultyRanking.<init>().4014d6aa9153f93a8dc7d89cd8cd1f63_4" -> "com.dulishuo.usnews.SixFacultyRanking.<init>().4014d6aa9153f93a8dc7d89cd8cd1f63_3" [color="red" ];
+"com.dulishuo.usnews.SixFacultyRanking.<init>().4014d6aa9153f93a8dc7d89cd8cd1f63_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 14]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.SixFacultyRanking.<init>().4014d6aa9153f93a8dc7d89cd8cd1f63_5" -> "com.dulishuo.usnews.SixFacultyRanking.<init>().4014d6aa9153f93a8dc7d89cd8cd1f63_2" ;
+	 "com.dulishuo.usnews.SixFacultyRanking.<init>().4014d6aa9153f93a8dc7d89cd8cd1f63_5" -> "com.dulishuo.usnews.SixFacultyRanking.<init>().4014d6aa9153f93a8dc7d89cd8cd1f63_3" [color="red" ];
+}

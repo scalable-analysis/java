@@ -1,0 +1,65 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_1" [label="1: Start BufferedReader FileUtil.FileReader(String)\nFormals:  path:java.lang.String*\nLocals:  CatchVar28:void $irvar1:void $irvar0:void reader:java.io.BufferedReader* e:java.io.FileNotFoundException* \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_1" -> "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_4" ;
+"com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_2" [label="2: Exit BufferedReader FileUtil.FileReader(String) \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_3" [label="3:  exceptions sink \n   NULLIFY(&CatchVar28); [line 37]\n  NULLIFY(&reader); [line 37]\n  NULLIFY(&e); [line 37]\n  EXIT_SCOPE(n$16,CatchVar28,reader,e); [line 37]\n  APPLY_ABSTRACTION; [line 37]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_3" -> "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_2" ;
+"com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_4" [label="4:  method_body \n   *&reader:java.lang.Object*=null [line 30]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_4" -> "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_5" ;
+	 "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_4" -> "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_3" [color="red" ];
+"com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_5" [label="5:  Call FileInputStream.<init>(String) \n   n$0=_fun___new(sizeof(t=java.io.FileInputStream):java.io.FileInputStream*) [line 32]\n  n$1=*&path:java.lang.String* [line 32]\n  n$2=_fun_FileInputStream.<init>(String)(n$0:java.io.FileInputStream*,n$1:java.lang.String*) [line 32]\n  *&$irvar0:java.io.FileInputStream*=n$0 [line 32]\n  NULLIFY(&path); [line 32]\n  EXIT_SCOPE(n$0,n$1,n$2,path); [line 32]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_5" -> "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_6" ;
+	 "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_5" -> "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_13" [color="red" ];
+"com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_6" [label="6:  Call InputStreamReader.<init>(InputStream) \n   n$3=_fun___new(sizeof(t=java.io.InputStreamReader):java.io.InputStreamReader*) [line 32]\n  n$4=*&$irvar0:java.io.FileInputStream* [line 32]\n  n$5=_fun_InputStreamReader.<init>(InputStream)(n$3:java.io.InputStreamReader*,n$4:java.io.FileInputStream*) [line 32]\n  n$6=_fun___set_file_attribute(n$3:java.io.InputStreamReader*) [line 32]\n  *&$irvar1:java.io.InputStreamReader*=n$3 [line 32]\n  NULLIFY(&$irvar0); [line 32]\n  EXIT_SCOPE(n$3,n$4,n$5,n$6,$irvar0); [line 32]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_6" -> "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_7" ;
+	 "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_6" -> "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_13" [color="red" ];
+"com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_7" [label="7:  Call BufferedReader.<init>(Reader) \n   n$7=_fun___new(sizeof(t=java.io.BufferedReader):java.io.BufferedReader*) [line 32]\n  n$8=*&$irvar1:java.io.InputStreamReader* [line 32]\n  n$9=_fun_BufferedReader.<init>(Reader)(n$7:java.io.BufferedReader*,n$8:java.io.InputStreamReader*) [line 32]\n  *&reader:java.io.BufferedReader*=n$7 [line 32]\n  NULLIFY(&$irvar1); [line 32]\n  EXIT_SCOPE(n$7,n$8,n$9,$irvar1); [line 32]\n  APPLY_ABSTRACTION; [line 32]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_7" -> "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_10" ;
+	 "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_7" -> "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_13" [color="red" ];
+"com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_8" [label="8:  method_body \n   n$10=*&CatchVar28:java.lang.Object* [line 33]\n  *&e:java.lang.Object*=n$10 [line 33]\n  NULLIFY(&CatchVar28); [line 33]\n  EXIT_SCOPE(n$10,CatchVar28); [line 33]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_8" -> "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_9" ;
+	 "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_8" -> "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_3" [color="red" ];
+"com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_9" [label="9:  Call void Throwable.printStackTrace() \n   n$11=*&e:java.lang.Object* [line 35]\n  _=*n$11:java.lang.Object*(root java.lang.Object) [line 35]\n  n$13=_fun_void Throwable.printStackTrace()(n$11:java.lang.Object*) virtual [line 35]\n  NULLIFY(&e); [line 35]\n  EXIT_SCOPE(_,n$11,n$13,e); [line 35]\n  APPLY_ABSTRACTION; [line 35]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_9" -> "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_10" ;
+	 "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_9" -> "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_3" [color="red" ];
+"com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_10" [label="10:  method_body \n   n$14=*&reader:java.io.BufferedReader* [line 37]\n  *&return:java.io.BufferedReader*=n$14 [line 37]\n  NULLIFY(&reader); [line 37]\n  EXIT_SCOPE(n$14,reader); [line 37]\n  APPLY_ABSTRACTION; [line 37]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_10" -> "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_2" ;
+	 "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_10" -> "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_3" [color="red" ];
+"com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_11" [label="11: Prune (true branch, switch) \n   n$17=_fun___instanceof(n$16:java.io.FileNotFoundException*,sizeof(t=java.io.FileNotFoundException):void) [line 33]\n  PRUNE(n$17, true); [line 33]\n  *&CatchVar28:java.io.BufferedReader*=n$16 [line 33]\n  EXIT_SCOPE(n$16,n$17); [line 33]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_11" -> "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_8" ;
+	 "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_11" -> "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_3" [color="red" ];
+"com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_12" [label="12: Prune (false branch, switch) \n   n$17=_fun___instanceof(n$16:java.io.FileNotFoundException*,sizeof(t=java.io.FileNotFoundException):void) [line 33]\n  PRUNE(!n$17, false); [line 33]\n  *&return:java.io.BufferedReader*=EXN n$16 [line 33]\n  NULLIFY(&reader); [line 33]\n  EXIT_SCOPE(n$16,n$17,reader); [line 33]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_12" -> "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_3" ;
+	 "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_12" -> "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_3" [color="red" ];
+"com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_13" [label="13:  exception handler \n   n$15=*&return:java.io.BufferedReader* [line 33]\n  *&return:java.io.BufferedReader*=null [line 33]\n  n$16=_fun___unwrap_exception(n$15:java.io.BufferedReader*) [line 33]\n  NULLIFY(&$irvar0); [line 33]\n  NULLIFY(&$irvar1); [line 33]\n  EXIT_SCOPE(n$15,$irvar0,$irvar1); [line 33]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_13" -> "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_11" ;
+	 "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_13" -> "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_12" ;
+	 "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_13" -> "com.dulishuo.util.FileUtil.FileReader(java.lang.String):java.io.BufferedReader.4a8e58d1080aa5ff0a556809f67c7bce_3" [color="red" ];
+}

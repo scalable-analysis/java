@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.shunshun.UrlGet.<init>().6a65e9fe0f82688d364f27d39ad85616_1" [label="1: Start UrlGet.<init>()\nFormals:  this:com.dulishuo.shunshun.UrlGet*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.shunshun.UrlGet.<init>().6a65e9fe0f82688d364f27d39ad85616_1" -> "com.dulishuo.shunshun.UrlGet.<init>().6a65e9fe0f82688d364f27d39ad85616_4" ;
+"com.dulishuo.shunshun.UrlGet.<init>().6a65e9fe0f82688d364f27d39ad85616_2" [label="2: Exit UrlGet.<init>() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.shunshun.UrlGet.<init>().6a65e9fe0f82688d364f27d39ad85616_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 3]\n " shape="box"]
+	
+
+	 "com.dulishuo.shunshun.UrlGet.<init>().6a65e9fe0f82688d364f27d39ad85616_3" -> "com.dulishuo.shunshun.UrlGet.<init>().6a65e9fe0f82688d364f27d39ad85616_2" ;
+"com.dulishuo.shunshun.UrlGet.<init>().6a65e9fe0f82688d364f27d39ad85616_4" [label="4:  Call Object.<init>() \n   n$0=*&this:com.dulishuo.shunshun.UrlGet* [line 3]\n  n$1=_fun_Object.<init>()(n$0:com.dulishuo.shunshun.UrlGet*) [line 3]\n  NULLIFY(&this); [line 3]\n  EXIT_SCOPE(n$0,n$1,this); [line 3]\n " shape="box"]
+	
+
+	 "com.dulishuo.shunshun.UrlGet.<init>().6a65e9fe0f82688d364f27d39ad85616_4" -> "com.dulishuo.shunshun.UrlGet.<init>().6a65e9fe0f82688d364f27d39ad85616_5" ;
+	 "com.dulishuo.shunshun.UrlGet.<init>().6a65e9fe0f82688d364f27d39ad85616_4" -> "com.dulishuo.shunshun.UrlGet.<init>().6a65e9fe0f82688d364f27d39ad85616_3" [color="red" ];
+"com.dulishuo.shunshun.UrlGet.<init>().6a65e9fe0f82688d364f27d39ad85616_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 3]\n " shape="box"]
+	
+
+	 "com.dulishuo.shunshun.UrlGet.<init>().6a65e9fe0f82688d364f27d39ad85616_5" -> "com.dulishuo.shunshun.UrlGet.<init>().6a65e9fe0f82688d364f27d39ad85616_2" ;
+	 "com.dulishuo.shunshun.UrlGet.<init>().6a65e9fe0f82688d364f27d39ad85616_5" -> "com.dulishuo.shunshun.UrlGet.<init>().6a65e9fe0f82688d364f27d39ad85616_3" [color="red" ];
+}

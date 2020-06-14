@@ -1,0 +1,180 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_1" [label="1: Start void Crawler.test()\nFormals: \nLocals:  $irvar8:void $irvar7:void $irvar6:void $irvar5:void $irvar4:void $irvar3:void $irvar2:void $irvar1:void CatchVar36:void $irvar0:void list:java.util.List* i:int response:java.lang.String* url:java.lang.String* ja:net.sf.json.JSONArray* json:net.sf.json.JSONObject* j:int e:java.lang.InterruptedException* \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_1" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_4" ;
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_2" [label="2: Exit void Crawler.test() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" [label="3:  exceptions sink \n   NULLIFY(&$irvar3); [line 48]\n  NULLIFY(&url); [line 48]\n  NULLIFY(&$irvar5); [line 48]\n  NULLIFY(&json); [line 48]\n  NULLIFY(&list); [line 48]\n  NULLIFY(&$irvar4); [line 48]\n  NULLIFY(&$irvar7); [line 48]\n  NULLIFY(&CatchVar36); [line 48]\n  NULLIFY(&j); [line 48]\n  NULLIFY(&i); [line 48]\n  NULLIFY(&$irvar6); [line 48]\n  NULLIFY(&ja); [line 48]\n  NULLIFY(&$irvar1); [line 48]\n  NULLIFY(&$irvar2); [line 48]\n  NULLIFY(&response); [line 48]\n  NULLIFY(&e); [line 48]\n  EXIT_SCOPE(n$56,$irvar3,url,$irvar5,json,list,$irvar4,$irvar7,CatchVar36,j,i,$irvar6,ja,$irvar1,$irvar2,response,e); [line 48]\n  APPLY_ABSTRACTION; [line 48]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_2" ;
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_4" [label="4:  Call ArrayList.<init>() \n   n$0=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 30]\n  n$1=_fun_ArrayList.<init>()(n$0:java.util.ArrayList*) [line 30]\n  *&list:java.util.ArrayList*=n$0 [line 30]\n  EXIT_SCOPE(n$0,n$1); [line 30]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_4" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_5" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_4" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" [color="red" ];
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_5" [label="5:  method_body \n   *&i:int=1 [line 31]\n  APPLY_ABSTRACTION; [line 31]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_5" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_8" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_5" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" [color="red" ];
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_6" [label="6: Prune (true branch, if) \n   n$2=*&i:int [line 31]\n  PRUNE(!(n$2 >= 34), true); [line 31]\n  EXIT_SCOPE(n$2); [line 31]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_6" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_9" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_6" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" [color="red" ];
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_7" [label="7: Prune (false branch, if) \n   n$2=*&i:int [line 31]\n  PRUNE((n$2 >= 34), false); [line 31]\n  NULLIFY(&i); [line 31]\n  EXIT_SCOPE(n$2,i); [line 31]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_7" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_32" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_7" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" [color="red" ];
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_8" [label="8: + \n  " ]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_8" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_6" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_8" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_7" ;
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_9" [label="9:  Call Thread Thread.currentThread() \n   n$3=_fun_Thread Thread.currentThread()() [line 33]\n  *&$irvar0:java.lang.Thread*=n$3 [line 33]\n  NULLIFY(&$irvar0); [line 33]\n  EXIT_SCOPE(n$3,$irvar0); [line 33]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_9" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_10" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_9" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_36" [color="red" ];
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_10" [label="10:  Call void Thread.sleep(long) \n   n$4=_fun_void Thread.sleep(long)(100:long) [line 33]\n  EXIT_SCOPE(n$4); [line 33]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_10" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_11" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_10" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_36" [color="red" ];
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_11" [label="11:  Call void PrintStream.println(int) \n   n$5=*&#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 34]\n  _=*n$5:java.io.PrintStream*(root java.io.PrintStream) [line 34]\n  n$7=*&i:int [line 34]\n  n$8=_fun_void PrintStream.println(int)(n$5:java.io.PrintStream*,n$7:int) virtual [line 34]\n  EXIT_SCOPE(_,n$5,n$7,n$8); [line 34]\n  APPLY_ABSTRACTION; [line 34]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_11" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_14" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_11" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_36" [color="red" ];
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_12" [label="12:  method_body \n   n$9=*&CatchVar36:java.lang.Object* [line 35]\n  *&e:java.lang.Object*=n$9 [line 35]\n  NULLIFY(&CatchVar36); [line 35]\n  EXIT_SCOPE(n$9,CatchVar36); [line 35]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_12" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_13" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_12" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" [color="red" ];
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_13" [label="13:  Call void Throwable.printStackTrace() \n   n$10=*&e:java.lang.Object* [line 37]\n  _=*n$10:java.lang.Object*(root java.lang.Object) [line 37]\n  n$12=_fun_void Throwable.printStackTrace()(n$10:java.lang.Object*) virtual [line 37]\n  NULLIFY(&e); [line 37]\n  EXIT_SCOPE(_,n$10,n$12,e); [line 37]\n  APPLY_ABSTRACTION; [line 37]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_13" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_14" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_13" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" [color="red" ];
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_14" [label="14:  Call StringBuilder.<init>() \n   n$13=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 39]\n  n$14=_fun_StringBuilder.<init>()(n$13:java.lang.StringBuilder*) [line 39]\n  *&$irvar1:java.lang.StringBuilder*=n$13 [line 39]\n  EXIT_SCOPE(n$13,n$14); [line 39]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_14" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_15" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_14" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" [color="red" ];
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_15" [label="15:  Call StringBuilder StringBuilder.append(String) \n   n$15=*&$irvar1:java.lang.StringBuilder* [line 39]\n  _=*n$15:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 39]\n  n$17=_fun_StringBuilder StringBuilder.append(String)(n$15:java.lang.StringBuilder*,\"http://www.gter.net/offer/index/ajax?page=\":java.lang.Object*) virtual [line 39]\n  *&$irvar2:java.lang.StringBuilder*=n$17 [line 39]\n  NULLIFY(&$irvar1); [line 39]\n  EXIT_SCOPE(_,n$15,n$17,$irvar1); [line 39]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_15" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_16" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_15" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" [color="red" ];
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_16" [label="16:  Call StringBuilder StringBuilder.append(int) \n   n$18=*&$irvar2:java.lang.StringBuilder* [line 39]\n  _=*n$18:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 39]\n  n$20=*&i:int [line 39]\n  n$21=_fun_StringBuilder StringBuilder.append(int)(n$18:java.lang.StringBuilder*,n$20:int) virtual [line 39]\n  *&$irvar3:java.lang.StringBuilder*=n$21 [line 39]\n  NULLIFY(&$irvar2); [line 39]\n  EXIT_SCOPE(_,n$18,n$20,n$21,$irvar2); [line 39]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_16" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_17" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_16" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" [color="red" ];
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_17" [label="17:  Call StringBuilder StringBuilder.append(String) \n   n$22=*&$irvar3:java.lang.StringBuilder* [line 39]\n  _=*n$22:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 39]\n  n$24=_fun_StringBuilder StringBuilder.append(String)(n$22:java.lang.StringBuilder*,\"&page_num=24&kw=\":java.lang.Object*) virtual [line 39]\n  *&$irvar4:java.lang.StringBuilder*=n$24 [line 39]\n  NULLIFY(&$irvar3); [line 39]\n  EXIT_SCOPE(_,n$22,n$24,$irvar3); [line 39]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_17" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_18" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_17" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" [color="red" ];
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_18" [label="18:  Call String StringBuilder.toString() \n   n$25=*&$irvar4:java.lang.StringBuilder* [line 39]\n  _=*n$25:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 39]\n  n$27=_fun_String StringBuilder.toString()(n$25:java.lang.StringBuilder*) virtual [line 39]\n  *&url:java.lang.String*=n$27 [line 39]\n  NULLIFY(&$irvar4); [line 39]\n  EXIT_SCOPE(_,n$25,n$27,$irvar4); [line 39]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_18" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_19" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_18" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" [color="red" ];
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_19" [label="19:  Call String CrawlerUtil.httpRequest(String) \n   n$28=*&url:java.lang.String* [line 40]\n  n$29=_fun_String CrawlerUtil.httpRequest(String)(n$28:java.lang.String*) [line 40]\n  *&response:java.lang.String*=n$29 [line 40]\n  NULLIFY(&url); [line 40]\n  EXIT_SCOPE(n$28,n$29,url); [line 40]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_19" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_20" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_19" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" [color="red" ];
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_20" [label="20:  Call JSONObject JSONObject.fromObject(Object) \n   n$30=*&response:java.lang.String* [line 41]\n  n$31=_fun_JSONObject JSONObject.fromObject(Object)(n$30:java.lang.String*) [line 41]\n  *&json:net.sf.json.JSONObject*=n$31 [line 41]\n  NULLIFY(&response); [line 41]\n  EXIT_SCOPE(n$30,n$31,response); [line 41]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_20" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_21" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_20" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" [color="red" ];
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_21" [label="21:  Call JSONArray JSONObject.getJSONArray(String) \n   n$32=*&json:net.sf.json.JSONObject* [line 42]\n  _=*n$32:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 42]\n  n$34=_fun_JSONArray JSONObject.getJSONArray(String)(n$32:net.sf.json.JSONObject*,\"data\":java.lang.Object*) virtual [line 42]\n  *&ja:net.sf.json.JSONArray*=n$34 [line 42]\n  NULLIFY(&json); [line 42]\n  EXIT_SCOPE(_,n$32,n$34,json); [line 42]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_21" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_22" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_21" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" [color="red" ];
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_22" [label="22:  method_body \n   *&j:int=0 [line 43]\n  APPLY_ABSTRACTION; [line 43]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_22" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_23" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_22" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" [color="red" ];
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_23" [label="23:  Call int JSONArray.size() \n   n$35=*&ja:net.sf.json.JSONArray* [line 43]\n  _=*n$35:net.sf.json.JSONArray*(root net.sf.json.JSONArray) [line 43]\n  n$37=_fun_int JSONArray.size()(n$35:net.sf.json.JSONArray*) virtual [line 43]\n  *&$irvar5:int=n$37 [line 43]\n  EXIT_SCOPE(_,n$35,n$37); [line 43]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_23" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_26" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_23" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" [color="red" ];
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_24" [label="24: Prune (true branch, if) \n   n$38=*&j:int [line 43]\n  n$39=*&$irvar5:int [line 43]\n  PRUNE(!(n$38 >= n$39), true); [line 43]\n  NULLIFY(&$irvar5); [line 43]\n  EXIT_SCOPE(n$38,n$39,$irvar5); [line 43]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_24" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_27" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_24" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" [color="red" ];
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_25" [label="25: Prune (false branch, if) \n   n$38=*&j:int [line 43]\n  n$39=*&$irvar5:int [line 43]\n  PRUNE((n$38 >= n$39), false); [line 43]\n  NULLIFY(&$irvar5); [line 43]\n  NULLIFY(&j); [line 43]\n  NULLIFY(&ja); [line 43]\n  EXIT_SCOPE(n$38,n$39,$irvar5,j,ja); [line 43]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_25" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_31" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_25" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" [color="red" ];
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_26" [label="26: + \n  " ]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_26" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_24" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_26" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_25" ;
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_27" [label="27:  Call JSONObject JSONArray.getJSONObject(int) \n   n$40=*&ja:net.sf.json.JSONArray* [line 44]\n  _=*n$40:net.sf.json.JSONArray*(root net.sf.json.JSONArray) [line 44]\n  n$42=*&j:int [line 44]\n  n$43=_fun_JSONObject JSONArray.getJSONObject(int)(n$40:net.sf.json.JSONArray*,n$42:int) virtual [line 44]\n  *&$irvar6:net.sf.json.JSONObject*=n$43 [line 44]\n  EXIT_SCOPE(_,n$40,n$42,n$43); [line 44]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_27" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_28" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_27" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" [color="red" ];
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_28" [label="28:  Call String JSONObject.toString() \n   n$44=*&$irvar6:net.sf.json.JSONObject* [line 44]\n  _=*n$44:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 44]\n  n$46=_fun_String JSONObject.toString()(n$44:net.sf.json.JSONObject*) virtual [line 44]\n  *&$irvar7:java.lang.String*=n$46 [line 44]\n  NULLIFY(&$irvar6); [line 44]\n  EXIT_SCOPE(_,n$44,n$46,$irvar6); [line 44]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_28" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_29" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_28" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" [color="red" ];
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_29" [label="29:  Call boolean ArrayList.add(Object) \n   n$47=*&list:java.util.ArrayList* [line 44]\n  _=*n$47:java.util.ArrayList*(root java.util.ArrayList) [line 44]\n  n$49=*&$irvar7:java.lang.String* [line 44]\n  n$50=_fun_boolean ArrayList.add(Object)(n$47:java.util.ArrayList*,n$49:java.lang.String*) interface virtual [line 44]\n  *&$irvar8:_Bool=n$50 [line 44]\n  NULLIFY(&$irvar7); [line 44]\n  NULLIFY(&$irvar8); [line 44]\n  EXIT_SCOPE(_,n$47,n$49,n$50,$irvar7,$irvar8); [line 44]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_29" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_30" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_29" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" [color="red" ];
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_30" [label="30:  method_body \n   n$51=*&j:int [line 43]\n  *&j:int=(n$51 + 1) [line 43]\n  EXIT_SCOPE(n$51); [line 43]\n  APPLY_ABSTRACTION; [line 43]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_30" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_23" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_30" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" [color="red" ];
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_31" [label="31:  method_body \n   n$52=*&i:int [line 31]\n  *&i:int=(n$52 + 1) [line 31]\n  EXIT_SCOPE(n$52); [line 31]\n  APPLY_ABSTRACTION; [line 31]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_31" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_8" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_31" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" [color="red" ];
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_32" [label="32:  Call void FileUtil.ListToFile(List,String) \n   n$53=*&list:java.util.ArrayList* [line 47]\n  n$54=_fun_void FileUtil.ListToFile(List,String)(n$53:java.util.ArrayList*,\"C:/Users/\\\\229\\\\188\\\\186\\\\232\\\\131\\\\156/Desktop/\\\\229\\\\156\\\\163\\\\232\\\\175\\\\158/gter/toto.json\":java.lang.Object*) [line 47]\n  NULLIFY(&list); [line 47]\n  EXIT_SCOPE(n$53,n$54,list); [line 47]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_32" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_33" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_32" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" [color="red" ];
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_33" [label="33:  method_body \n   APPLY_ABSTRACTION; [line 48]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_33" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_2" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_33" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" [color="red" ];
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_34" [label="34: Prune (true branch, switch) \n   n$57=_fun___instanceof(n$56:java.lang.InterruptedException*,sizeof(t=java.lang.InterruptedException):void) [line 35]\n  PRUNE(n$57, true); [line 35]\n  *&CatchVar36:void=n$56 [line 35]\n  EXIT_SCOPE(n$56,n$57); [line 35]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_34" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_12" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_34" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" [color="red" ];
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_35" [label="35: Prune (false branch, switch) \n   n$57=_fun___instanceof(n$56:java.lang.InterruptedException*,sizeof(t=java.lang.InterruptedException):void) [line 35]\n  PRUNE(!n$57, false); [line 35]\n  *&return:void=EXN n$56 [line 35]\n  NULLIFY(&list); [line 35]\n  NULLIFY(&i); [line 35]\n  EXIT_SCOPE(n$56,n$57,list,i); [line 35]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_35" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_35" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" [color="red" ];
+"com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_36" [label="36:  exception handler \n   n$55=*&return:void [line 35]\n  *&return:void=null [line 35]\n  n$56=_fun___unwrap_exception(n$55:void) [line 35]\n  EXIT_SCOPE(n$55); [line 35]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_36" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_34" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_36" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_35" ;
+	 "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_36" -> "com.dulishuo.jituo.offer.Crawler.test():void.ecdb2aad8919a09efcd5c9bf212de4a0_3" [color="red" ];
+}

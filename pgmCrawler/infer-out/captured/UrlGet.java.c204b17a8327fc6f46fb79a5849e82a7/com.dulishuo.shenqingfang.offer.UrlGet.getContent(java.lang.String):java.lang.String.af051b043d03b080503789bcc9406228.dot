@@ -1,0 +1,54 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_1" [label="1: Start String UrlGet.getContent(String)\nFormals:  url:java.lang.String*\nLocals:  $irvar3:void $irvar2:void $irvar1:void $irvar0:void doc:org.jsoup.nodes.Document* res:java.lang.String* \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_1" -> "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_4" ;
+"com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_2" [label="2: Exit String UrlGet.getContent(String) \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_3" [label="3:  exceptions sink \n   NULLIFY(&doc); [line 179]\n  NULLIFY(&$irvar3); [line 179]\n  NULLIFY(&res); [line 179]\n  NULLIFY(&$irvar0); [line 179]\n  NULLIFY(&$irvar1); [line 179]\n  NULLIFY(&$irvar2); [line 179]\n  EXIT_SCOPE(doc,$irvar3,res,$irvar0,$irvar1,$irvar2); [line 179]\n  APPLY_ABSTRACTION; [line 179]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_3" -> "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_2" ;
+"com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_4" [label="4:  method_body \n   *&res:java.lang.Object*=\"\" [line 175]\n  NULLIFY(&res); [line 175]\n  EXIT_SCOPE(res); [line 175]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_4" -> "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_5" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_4" -> "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_5" [label="5:  Call String CrawlerUtil.httpsRequest(String) \n   n$0=*&url:java.lang.String* [line 176]\n  n$1=_fun_String CrawlerUtil.httpsRequest(String)(n$0:java.lang.String*) [line 176]\n  *&$irvar0:java.lang.String*=n$1 [line 176]\n  NULLIFY(&url); [line 176]\n  EXIT_SCOPE(n$0,n$1,url); [line 176]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_5" -> "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_6" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_5" -> "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_6" [label="6:  Call Document Jsoup.parse(String) \n   n$2=*&$irvar0:java.lang.String* [line 176]\n  n$3=_fun_Document Jsoup.parse(String)(n$2:java.lang.String*) [line 176]\n  *&doc:org.jsoup.nodes.Document*=n$3 [line 176]\n  NULLIFY(&$irvar0); [line 176]\n  EXIT_SCOPE(n$2,n$3,$irvar0); [line 176]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_6" -> "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_7" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_6" -> "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_7" [label="7:  Call Element Element.getElementById(String) \n   n$4=*&doc:org.jsoup.nodes.Document* [line 177]\n  _=*n$4:org.jsoup.nodes.Document*(root org.jsoup.nodes.Document) [line 177]\n  n$6=_fun_Element Element.getElementById(String)(n$4:org.jsoup.nodes.Document*,\"content\":java.lang.Object*) virtual [line 177]\n  *&$irvar1:org.jsoup.nodes.Element*=n$6 [line 177]\n  NULLIFY(&doc); [line 177]\n  EXIT_SCOPE(_,n$4,n$6,doc); [line 177]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_7" -> "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_8" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_7" -> "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_8" [label="8:  Call Elements Element.getElementsByClass(String) \n   n$7=*&$irvar1:org.jsoup.nodes.Element* [line 177]\n  _=*n$7:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 177]\n  n$9=_fun_Elements Element.getElementsByClass(String)(n$7:org.jsoup.nodes.Element*,\"box\":java.lang.Object*) virtual [line 177]\n  *&$irvar2:org.jsoup.select.Elements*=n$9 [line 177]\n  NULLIFY(&$irvar1); [line 177]\n  EXIT_SCOPE(_,n$7,n$9,$irvar1); [line 177]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_8" -> "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_9" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_8" -> "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_9" [label="9:  Call Element Elements.get(int) \n   n$10=*&$irvar2:org.jsoup.select.Elements* [line 177]\n  _=*n$10:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 177]\n  n$12=_fun_Element Elements.get(int)(n$10:org.jsoup.select.Elements*,0:int) virtual [line 177]\n  *&$irvar3:org.jsoup.nodes.Element*=n$12 [line 177]\n  NULLIFY(&$irvar2); [line 177]\n  EXIT_SCOPE(_,n$10,n$12,$irvar2); [line 177]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_9" -> "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_10" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_9" -> "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_10" [label="10:  Call String Element.html() \n   n$13=*&$irvar3:org.jsoup.nodes.Element* [line 178]\n  _=*n$13:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 178]\n  n$15=_fun_String Element.html()(n$13:org.jsoup.nodes.Element*) virtual [line 178]\n  *&res:java.lang.String*=n$15 [line 178]\n  NULLIFY(&$irvar3); [line 178]\n  EXIT_SCOPE(_,n$13,n$15,$irvar3); [line 178]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_10" -> "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_11" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_10" -> "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_11" [label="11:  method_body \n   n$16=*&res:java.lang.String* [line 179]\n  *&return:java.lang.String*=n$16 [line 179]\n  NULLIFY(&res); [line 179]\n  EXIT_SCOPE(n$16,res); [line 179]\n  APPLY_ABSTRACTION; [line 179]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_11" -> "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_2" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_11" -> "com.dulishuo.shenqingfang.offer.UrlGet.getContent(java.lang.String):java.lang.String.af051b043d03b080503789bcc9406228_3" [color="red" ];
+}

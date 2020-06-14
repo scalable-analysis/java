@@ -1,0 +1,222 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_1" [label="1: Start String Util.httpRequest(String)\nFormals:  url:java.lang.String*\nLocals:  CatchVar170:void $irvar4:void $irvar3:void $irvar2:void $irvar1:void CatchVar96:void CatchVar87:void $irvar0:void getMethod:org.apache.commons.httpclient.methods.GetMethod* client:org.apache.commons.httpclient.HttpClient* cookie:java.lang.String* response:java.lang.String* str:java.lang.String* stringBuffer:java.lang.StringBuffer* reader:java.io.BufferedReader* e:org.apache.commons.httpclient.HttpException* \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_1" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_4" ;
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_2" [label="2: Exit String Util.httpRequest(String) \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" [label="3:  exceptions sink \n   NULLIFY(&client); [line 63]\n  NULLIFY(&CatchVar87); [line 63]\n  NULLIFY(&CatchVar170); [line 63]\n  NULLIFY(&getMethod); [line 63]\n  NULLIFY(&cookie); [line 63]\n  NULLIFY(&CatchVar96); [line 63]\n  NULLIFY(&response); [line 63]\n  NULLIFY(&e); [line 63]\n  EXIT_SCOPE(n$69,client,CatchVar87,CatchVar170,getMethod,cookie,CatchVar96,response,e); [line 63]\n  APPLY_ABSTRACTION; [line 63]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_2" ;
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_4" [label="4:  method_body \n   *&response:java.lang.Object*=\"-1\" [line 26]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_4" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_5" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_4" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_5" [label="5:  method_body \n   *&cookie:java.lang.Object*=\"Hm_lvt_f409979f9c1034edcba2b24ea2b0a835=1444730041,1444735066,1444788843,1444894003; JSESSIONID=7C19CDDCA87BE9E3548ADB93491848C0; Hm_lpvt_f409979f9c1034edcba2b24ea2b0a835=1444894022\" [line 27]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_5" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_6" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_5" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_6" [label="6:  Call HttpClient.<init>() \n   n$0=_fun___new(sizeof(t=org.apache.commons.httpclient.HttpClient):org.apache.commons.httpclient.HttpClient*) [line 28]\n  n$1=_fun_HttpClient.<init>()(n$0:org.apache.commons.httpclient.HttpClient*) [line 28]\n  *&client:org.apache.commons.httpclient.HttpClient*=n$0 [line 28]\n  EXIT_SCOPE(n$0,n$1); [line 28]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_6" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_7" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_6" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_7" [label="7:  Call GetMethod.<init>(String) \n   n$2=_fun___new(sizeof(t=org.apache.commons.httpclient.methods.GetMethod):org.apache.commons.httpclient.methods.GetMethod*) [line 29]\n  n$3=*&url:java.lang.String* [line 29]\n  n$4=_fun_GetMethod.<init>(String)(n$2:org.apache.commons.httpclient.methods.GetMethod*,n$3:java.lang.String*) [line 29]\n  *&getMethod:org.apache.commons.httpclient.methods.GetMethod*=n$2 [line 29]\n  NULLIFY(&url); [line 29]\n  EXIT_SCOPE(n$2,n$3,n$4,url); [line 29]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_7" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_8" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_7" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_8" [label="8:  Call void HttpMethodBase.setRequestHeader(String,String) \n   n$5=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 30]\n  _=*n$5:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 30]\n  n$7=*&cookie:java.lang.Object* [line 30]\n  n$8=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$5:org.apache.commons.httpclient.methods.GetMethod*,\"cookie\":java.lang.Object*,n$7:java.lang.Object*) virtual [line 30]\n  NULLIFY(&cookie); [line 30]\n  EXIT_SCOPE(_,n$5,n$7,n$8,cookie); [line 30]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_8" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_9" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_8" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_9" [label="9:  Call void HttpMethodBase.setRequestHeader(String,String) \n   n$9=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 31]\n  _=*n$9:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 31]\n  n$11=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$9:org.apache.commons.httpclient.methods.GetMethod*,\"Host\":java.lang.Object*,\"www.qianmu.org\":java.lang.Object*) virtual [line 31]\n  EXIT_SCOPE(_,n$9,n$11); [line 31]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_9" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_10" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_9" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_10" [label="10:  Call void HttpMethodBase.setRequestHeader(String,String) \n   n$12=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 32]\n  _=*n$12:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 32]\n  n$14=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$12:org.apache.commons.httpclient.methods.GetMethod*,\"User-Agent\":java.lang.Object*,\"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.111 Safari/537.36\":java.lang.Object*) virtual [line 32]\n  EXIT_SCOPE(_,n$12,n$14); [line 32]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_10" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_11" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_10" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_11" [label="11:  Call void HttpMethodBase.setRequestHeader(String,String) \n   n$15=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 33]\n  _=*n$15:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 33]\n  n$17=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$15:org.apache.commons.httpclient.methods.GetMethod*,\"Accept\":java.lang.Object*,\"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\":java.lang.Object*) virtual [line 33]\n  EXIT_SCOPE(_,n$15,n$17); [line 33]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_11" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_12" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_11" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_12" [label="12:  Call void HttpMethodBase.setRequestHeader(String,String) \n   n$18=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 34]\n  _=*n$18:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 34]\n  n$20=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$18:org.apache.commons.httpclient.methods.GetMethod*,\"Accept-Language\":java.lang.Object*,\"zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3\":java.lang.Object*) virtual [line 34]\n  EXIT_SCOPE(_,n$18,n$20); [line 34]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_12" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_13" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_12" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_13" [label="13:  Call void HttpMethodBase.setRequestHeader(String,String) \n   n$21=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 36]\n  _=*n$21:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 36]\n  n$23=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$21:org.apache.commons.httpclient.methods.GetMethod*,\"DNT\":java.lang.Object*,\"1\":java.lang.Object*) virtual [line 36]\n  EXIT_SCOPE(_,n$21,n$23); [line 36]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_13" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_14" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_13" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_14" [label="14:  Call int HttpClient.executeMethod(HttpMethod) \n   n$24=*&client:org.apache.commons.httpclient.HttpClient* [line 39]\n  _=*n$24:org.apache.commons.httpclient.HttpClient*(root org.apache.commons.httpclient.HttpClient) [line 39]\n  n$26=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 39]\n  n$27=_fun_int HttpClient.executeMethod(HttpMethod)(n$24:org.apache.commons.httpclient.HttpClient*,n$26:org.apache.commons.httpclient.methods.GetMethod*) virtual [line 39]\n  *&$irvar0:int=n$27 [line 39]\n  NULLIFY(&client); [line 39]\n  NULLIFY(&$irvar0); [line 39]\n  EXIT_SCOPE(_,n$24,n$26,n$27,client,$irvar0); [line 39]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_14" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_21" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_14" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_41" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_15" [label="15:  method_body \n   n$28=*&CatchVar87:java.lang.Object* [line 40]\n  *&e:java.lang.Object*=n$28 [line 40]\n  NULLIFY(&CatchVar87); [line 40]\n  EXIT_SCOPE(n$28,CatchVar87); [line 40]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_15" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_16" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_15" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_16" [label="16:  Call void HttpException.printStackTrace() \n   n$29=*&e:java.lang.Object* [line 42]\n  _=*n$29:java.lang.Object*(root java.lang.Object) [line 42]\n  n$31=_fun_void HttpException.printStackTrace()(n$29:java.lang.Object*) virtual [line 42]\n  NULLIFY(&e); [line 42]\n  EXIT_SCOPE(_,n$29,n$31,e); [line 42]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_16" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_17" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_16" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_17" [label="17:  method_body \n   n$32=*&response:java.lang.Object* [line 43]\n  *&return:java.lang.String*=n$32 [line 43]\n  NULLIFY(&response); [line 43]\n  EXIT_SCOPE(n$32,response); [line 43]\n  APPLY_ABSTRACTION; [line 43]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_17" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_2" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_17" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_18" [label="18:  method_body \n   n$33=*&CatchVar96:java.lang.Object* [line 44]\n  *&e:java.lang.Object*=n$33 [line 44]\n  NULLIFY(&CatchVar96); [line 44]\n  EXIT_SCOPE(n$33,CatchVar96); [line 44]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_18" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_19" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_18" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_19" [label="19:  Call void Throwable.printStackTrace() \n   n$34=*&e:java.lang.Object* [line 46]\n  _=*n$34:java.lang.Object*(root java.lang.Object) [line 46]\n  n$36=_fun_void Throwable.printStackTrace()(n$34:java.lang.Object*) virtual [line 46]\n  NULLIFY(&e); [line 46]\n  EXIT_SCOPE(_,n$34,n$36,e); [line 46]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_19" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_20" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_19" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_20" [label="20:  method_body \n   n$37=*&response:java.lang.Object* [line 47]\n  *&return:java.lang.String*=n$37 [line 47]\n  NULLIFY(&response); [line 47]\n  EXIT_SCOPE(n$37,response); [line 47]\n  APPLY_ABSTRACTION; [line 47]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_20" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_2" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_20" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_21" [label="21:  Call InputStream HttpMethodBase.getResponseBodyAsStream() \n   n$38=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 50]\n  _=*n$38:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 50]\n  n$40=_fun_InputStream HttpMethodBase.getResponseBodyAsStream()(n$38:org.apache.commons.httpclient.methods.GetMethod*) virtual [line 50]\n  *&$irvar1:java.io.InputStream*=n$40 [line 50]\n  NULLIFY(&getMethod); [line 50]\n  EXIT_SCOPE(_,n$38,n$40,getMethod); [line 50]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_21" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_22" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_21" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_44" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_22" [label="22:  Call InputStreamReader.<init>(InputStream) \n   n$41=_fun___new(sizeof(t=java.io.InputStreamReader):java.io.InputStreamReader*) [line 50]\n  n$42=*&$irvar1:java.io.InputStream* [line 50]\n  n$43=_fun_InputStreamReader.<init>(InputStream)(n$41:java.io.InputStreamReader*,n$42:java.io.InputStream*) [line 50]\n  n$44=_fun___set_file_attribute(n$41:java.io.InputStreamReader*) [line 50]\n  *&$irvar2:java.io.InputStreamReader*=n$41 [line 50]\n  NULLIFY(&$irvar1); [line 50]\n  EXIT_SCOPE(n$41,n$42,n$43,n$44,$irvar1); [line 50]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_22" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_23" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_22" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_44" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_23" [label="23:  Call BufferedReader.<init>(Reader) \n   n$45=_fun___new(sizeof(t=java.io.BufferedReader):java.io.BufferedReader*) [line 50]\n  n$46=*&$irvar2:java.io.InputStreamReader* [line 50]\n  n$47=_fun_BufferedReader.<init>(Reader)(n$45:java.io.BufferedReader*,n$46:java.io.InputStreamReader*) [line 50]\n  *&reader:java.io.BufferedReader*=n$45 [line 50]\n  NULLIFY(&$irvar2); [line 50]\n  EXIT_SCOPE(n$45,n$46,n$47,$irvar2); [line 50]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_23" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_24" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_23" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_44" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_24" [label="24:  Call StringBuffer.<init>() \n   n$48=_fun___new(sizeof(t=java.lang.StringBuffer):java.lang.StringBuffer*) [line 51]\n  n$49=_fun_StringBuffer.<init>()(n$48:java.lang.StringBuffer*) [line 51]\n  *&stringBuffer:java.lang.StringBuffer*=n$48 [line 51]\n  EXIT_SCOPE(n$48,n$49); [line 51]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_24" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_25" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_24" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_44" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_25" [label="25:  method_body \n   *&str:java.lang.Object*=\"\" [line 52]\n  NULLIFY(&str); [line 52]\n  EXIT_SCOPE(str); [line 52]\n  APPLY_ABSTRACTION; [line 52]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_25" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_26" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_25" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_44" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_26" [label="26:  Call String BufferedReader.readLine() \n   n$50=*&reader:java.io.BufferedReader* [line 53]\n  _=*n$50:java.io.BufferedReader*(root java.io.BufferedReader) [line 53]\n  n$52=_fun_String BufferedReader.readLine()(n$50:java.io.BufferedReader*) virtual [line 53]\n  *&$irvar3:java.lang.String*=n$52 [line 53]\n  EXIT_SCOPE(_,n$50,n$52); [line 53]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_26" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_27" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_26" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_44" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_27" [label="27:  method_body \n   n$53=*&$irvar3:java.lang.String* [line 53]\n  *&str:java.lang.String*=n$53 [line 53]\n  EXIT_SCOPE(n$53); [line 53]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_27" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_30" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_27" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_44" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_28" [label="28: Prune (true branch, if) \n   n$54=*&$irvar3:java.lang.String* [line 53]\n  PRUNE(!(n$54 == null), true); [line 53]\n  NULLIFY(&$irvar3); [line 53]\n  EXIT_SCOPE(n$54,$irvar3); [line 53]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_28" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_31" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_28" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_44" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_29" [label="29: Prune (false branch, if) \n   n$54=*&$irvar3:java.lang.String* [line 53]\n  PRUNE((n$54 == null), false); [line 53]\n  NULLIFY(&str); [line 53]\n  NULLIFY(&$irvar3); [line 53]\n  NULLIFY(&reader); [line 53]\n  EXIT_SCOPE(n$54,str,$irvar3,reader); [line 53]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_29" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_32" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_29" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_44" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_30" [label="30: + \n  " ]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_30" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_28" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_30" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_29" ;
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_31" [label="31:  Call StringBuffer StringBuffer.append(String) \n   n$55=*&stringBuffer:java.lang.StringBuffer* [line 54]\n  _=*n$55:java.lang.StringBuffer*(root java.lang.StringBuffer) [line 54]\n  n$57=*&str:java.lang.String* [line 54]\n  n$58=_fun_StringBuffer StringBuffer.append(String)(n$55:java.lang.StringBuffer*,n$57:java.lang.String*) virtual [line 54]\n  *&$irvar4:java.lang.StringBuffer*=n$58 [line 54]\n  NULLIFY(&str); [line 54]\n  NULLIFY(&$irvar4); [line 54]\n  EXIT_SCOPE(_,n$55,n$57,n$58,str,$irvar4); [line 54]\n  APPLY_ABSTRACTION; [line 54]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_31" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_26" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_31" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_44" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_32" [label="32:  Call String StringBuffer.toString() \n   n$59=*&stringBuffer:java.lang.StringBuffer* [line 56]\n  _=*n$59:java.lang.StringBuffer*(root java.lang.StringBuffer) [line 56]\n  n$61=_fun_String StringBuffer.toString()(n$59:java.lang.StringBuffer*) virtual [line 56]\n  *&response:java.lang.String*=n$61 [line 56]\n  NULLIFY(&stringBuffer); [line 56]\n  EXIT_SCOPE(_,n$59,n$61,stringBuffer); [line 56]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_32" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_36" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_32" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_44" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_33" [label="33:  method_body \n   n$62=*&CatchVar170:java.lang.Object* [line 57]\n  *&e:java.lang.Object*=n$62 [line 57]\n  NULLIFY(&CatchVar170); [line 57]\n  EXIT_SCOPE(n$62,CatchVar170); [line 57]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_33" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_34" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_33" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_34" [label="34:  Call void Throwable.printStackTrace() \n   n$63=*&e:java.lang.Object* [line 59]\n  _=*n$63:java.lang.Object*(root java.lang.Object) [line 59]\n  n$65=_fun_void Throwable.printStackTrace()(n$63:java.lang.Object*) virtual [line 59]\n  NULLIFY(&e); [line 59]\n  EXIT_SCOPE(_,n$63,n$65,e); [line 59]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_34" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_35" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_34" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_35" [label="35:  method_body \n   n$66=*&response:java.lang.String* [line 60]\n  *&return:java.lang.String*=n$66 [line 60]\n  NULLIFY(&response); [line 60]\n  EXIT_SCOPE(n$66,response); [line 60]\n  APPLY_ABSTRACTION; [line 60]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_35" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_2" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_35" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_36" [label="36:  method_body \n   n$67=*&response:java.lang.String* [line 63]\n  *&return:java.lang.String*=n$67 [line 63]\n  NULLIFY(&response); [line 63]\n  EXIT_SCOPE(n$67,response); [line 63]\n  APPLY_ABSTRACTION; [line 63]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_36" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_2" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_36" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_37" [label="37: Prune (true branch, switch) \n   n$70=_fun___instanceof(n$69:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 44]\n  PRUNE(n$70, true); [line 44]\n  *&CatchVar96:java.lang.String*=n$69 [line 44]\n  EXIT_SCOPE(n$69,n$70); [line 44]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_37" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_18" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_37" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_38" [label="38: Prune (false branch, switch) \n   n$70=_fun___instanceof(n$69:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 44]\n  PRUNE(!n$70, false); [line 44]\n  *&return:java.lang.String*=EXN n$69 [line 44]\n  NULLIFY(&response); [line 44]\n  EXIT_SCOPE(n$69,n$70,response); [line 44]\n  APPLY_ABSTRACTION; [line 44]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_38" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_38" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_39" [label="39: Prune (true branch, switch) \n   n$71=_fun___instanceof(n$69:org.apache.commons.httpclient.HttpException*,sizeof(t=org.apache.commons.httpclient.HttpException):void) [line 40]\n  PRUNE(n$71, true); [line 40]\n  *&CatchVar87:java.lang.String*=n$69 [line 40]\n  EXIT_SCOPE(n$69,n$71); [line 40]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_39" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_15" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_39" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_40" [label="40: Prune (false branch, switch) \n   n$71=_fun___instanceof(n$69:org.apache.commons.httpclient.HttpException*,sizeof(t=org.apache.commons.httpclient.HttpException):void) [line 40]\n  PRUNE(!n$71, false); [line 40]\n  EXIT_SCOPE(n$71); [line 40]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_40" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_37" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_40" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_38" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_40" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_41" [label="41:  exception handler \n   n$68=*&return:java.lang.String* [line 40]\n  *&return:java.lang.String*=null [line 40]\n  n$69=_fun___unwrap_exception(n$68:java.lang.String*) [line 40]\n  NULLIFY(&getMethod); [line 40]\n  EXIT_SCOPE(n$68,getMethod); [line 40]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_41" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_39" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_41" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_40" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_41" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_42" [label="42: Prune (true branch, switch) \n   n$72=_fun___instanceof(n$69:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 57]\n  PRUNE(n$72, true); [line 57]\n  *&CatchVar170:java.lang.String*=n$69 [line 57]\n  EXIT_SCOPE(n$69,n$72); [line 57]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_42" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_33" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_42" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_43" [label="43: Prune (false branch, switch) \n   n$72=_fun___instanceof(n$69:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 57]\n  PRUNE(!n$72, false); [line 57]\n  *&return:java.lang.String*=EXN n$69 [line 57]\n  NULLIFY(&response); [line 57]\n  EXIT_SCOPE(n$69,n$72,response); [line 57]\n  APPLY_ABSTRACTION; [line 57]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_43" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_43" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" [color="red" ];
+"com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_44" [label="44:  exception handler \n   n$68=*&return:java.lang.String* [line 57]\n  *&return:java.lang.String*=null [line 57]\n  n$69=_fun___unwrap_exception(n$68:java.lang.String*) [line 57]\n  NULLIFY(&str); [line 57]\n  NULLIFY(&$irvar3); [line 57]\n  NULLIFY(&reader); [line 57]\n  NULLIFY(&stringBuffer); [line 57]\n  NULLIFY(&$irvar1); [line 57]\n  NULLIFY(&$irvar2); [line 57]\n  EXIT_SCOPE(n$68,str,$irvar3,reader,stringBuffer,$irvar1,$irvar2); [line 57]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_44" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_42" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_44" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_43" ;
+	 "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_44" -> "com.dulishuo.qianmu.Util.httpRequest(java.lang.String):java.lang.String.e61467e4114116dae5ab6a0a68fd0b17_3" [color="red" ];
+}

@@ -1,0 +1,179 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_1" [label="1: Start void UrlCrawler.main(String[])\nFormals:  args:java.lang.String*[_*_](*)\nLocals:  $irvar13:void $irvar12:void $bcvar4:void $irvar11:void $irvar10:void $irvar9:void $irvar8:void $irvar7:void $irvar6:void $irvar5:void $irvar4:void $irvar3:void $irvar2:void $irvar1:void $irvar0:void writer:java.io.BufferedWriter* url:java.lang.String* i:int xx:java.lang.String* \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_1" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_4" ;
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_2" [label="2: Exit void UrlCrawler.main(String[]) \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [label="3:  exceptions sink \n   NULLIFY(&$irvar3); [line 38]\n  NULLIFY(&$irvar9); [line 38]\n  NULLIFY(&url); [line 38]\n  NULLIFY(&$bcvar4); [line 38]\n  NULLIFY(&$irvar5); [line 38]\n  NULLIFY(&writer); [line 38]\n  NULLIFY(&$irvar4); [line 38]\n  NULLIFY(&$irvar7); [line 38]\n  NULLIFY(&$irvar12); [line 38]\n  NULLIFY(&i); [line 38]\n  NULLIFY(&$irvar6); [line 38]\n  NULLIFY(&$irvar0); [line 38]\n  NULLIFY(&$irvar13); [line 38]\n  NULLIFY(&$irvar11); [line 38]\n  NULLIFY(&$irvar10); [line 38]\n  NULLIFY(&$irvar8); [line 38]\n  NULLIFY(&$irvar1); [line 38]\n  NULLIFY(&$irvar2); [line 38]\n  NULLIFY(&xx); [line 38]\n  EXIT_SCOPE($irvar3,$irvar9,url,$bcvar4,$irvar5,writer,$irvar4,$irvar7,$irvar12,i,$irvar6,$irvar0,$irvar13,$irvar11,$irvar10,$irvar8,$irvar1,$irvar2,xx); [line 38]\n  APPLY_ABSTRACTION; [line 38]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_2" ;
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_4" [label="4:  method_body \n   *&url:java.lang.Object*=\"http://www.1point3acres.com/bbs/forum.php?mod=forumdisplay&fid=27&sortid=189&filter=sortid&sortid=189&page=\" [line 24]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_4" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_5" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_4" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_5" [label="5:  Call FileOutputStream.<init>(String) \n   n$0=_fun___new(sizeof(t=java.io.FileOutputStream):java.io.FileOutputStream*) [line 25]\n  n$1=_fun_FileOutputStream.<init>(String)(n$0:java.io.FileOutputStream*,\"C:/Users/\\\\229\\\\188\\\\186\\\\232\\\\131\\\\156/Desktop/dataCrawler/\\\\228\\\\184\\\\128\\\\228\\\\186\\\\169\\\\228\\\\184\\\\137\\\\229\\\\136\\\\134\\\\229\\\\156\\\\176/data/\\\\231\\\\148\\\\179\\\\232\\\\175\\\\183\\\\230\\\\128\\\\187\\\\231\\\\187\\\\147/url.txt\":java.lang.Object*) [line 25]\n  *&$irvar0:java.io.FileOutputStream*=n$0 [line 25]\n  EXIT_SCOPE(n$0,n$1); [line 25]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_5" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_6" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_5" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_6" [label="6:  Call OutputStreamWriter.<init>(OutputStream) \n   n$2=_fun___new(sizeof(t=java.io.OutputStreamWriter):java.io.OutputStreamWriter*) [line 25]\n  n$3=*&$irvar0:java.io.FileOutputStream* [line 25]\n  n$4=_fun_OutputStreamWriter.<init>(OutputStream)(n$2:java.io.OutputStreamWriter*,n$3:java.io.FileOutputStream*) [line 25]\n  n$5=_fun___set_file_attribute(n$2:java.io.OutputStreamWriter*) [line 25]\n  *&$irvar1:java.io.OutputStreamWriter*=n$2 [line 25]\n  NULLIFY(&$irvar0); [line 25]\n  EXIT_SCOPE(n$2,n$3,n$4,n$5,$irvar0); [line 25]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_6" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_7" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_6" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_7" [label="7:  Call BufferedWriter.<init>(Writer) \n   n$6=_fun___new(sizeof(t=java.io.BufferedWriter):java.io.BufferedWriter*) [line 25]\n  n$7=*&$irvar1:java.io.OutputStreamWriter* [line 25]\n  n$8=_fun_BufferedWriter.<init>(Writer)(n$6:java.io.BufferedWriter*,n$7:java.io.OutputStreamWriter*) [line 25]\n  n$9=_fun___set_file_attribute(n$6:java.io.BufferedWriter*) [line 25]\n  *&writer:java.io.BufferedWriter*=n$6 [line 25]\n  NULLIFY(&$irvar1); [line 25]\n  EXIT_SCOPE(n$6,n$7,n$8,n$9,$irvar1); [line 25]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_7" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_8" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_7" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_8" [label="8:  method_body \n   *&i:int=1 [line 28]\n  APPLY_ABSTRACTION; [line 28]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_8" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_11" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_8" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_9" [label="9: Prune (true branch, if) \n   n$10=*&i:int [line 28]\n  PRUNE(!(n$10 >= 7), true); [line 28]\n  EXIT_SCOPE(n$10); [line 28]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_9" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_12" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_9" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_10" [label="10: Prune (false branch, if) \n   n$10=*&i:int [line 28]\n  PRUNE((n$10 >= 7), false); [line 28]\n  NULLIFY(&url); [line 28]\n  NULLIFY(&i); [line 28]\n  EXIT_SCOPE(n$10,url,i); [line 28]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_10" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_34" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_10" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_11" [label="11: + \n  " ]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_11" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_9" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_11" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_10" ;
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_12" [label="12:  method_body \n   n$11=*&#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 29]\n  *&$irvar2:java.io.PrintStream*=n$11 [line 29]\n  EXIT_SCOPE(n$11); [line 29]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_12" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_13" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_12" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_13" [label="13:  Call StringBuilder.<init>() \n   n$12=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 29]\n  n$13=_fun_StringBuilder.<init>()(n$12:java.lang.StringBuilder*) [line 29]\n  *&$irvar3:java.lang.StringBuilder*=n$12 [line 29]\n  EXIT_SCOPE(n$12,n$13); [line 29]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_13" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_14" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_13" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_14" [label="14:  Call StringBuilder StringBuilder.append(String) \n   n$14=*&$irvar3:java.lang.StringBuilder* [line 29]\n  _=*n$14:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 29]\n  n$16=_fun_StringBuilder StringBuilder.append(String)(n$14:java.lang.StringBuilder*,\"capture__\":java.lang.Object*) virtual [line 29]\n  *&$irvar4:java.lang.StringBuilder*=n$16 [line 29]\n  NULLIFY(&$irvar3); [line 29]\n  EXIT_SCOPE(_,n$14,n$16,$irvar3); [line 29]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_14" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_15" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_14" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_15" [label="15:  Call StringBuilder StringBuilder.append(int) \n   n$17=*&$irvar4:java.lang.StringBuilder* [line 29]\n  _=*n$17:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 29]\n  n$19=*&i:int [line 29]\n  n$20=_fun_StringBuilder StringBuilder.append(int)(n$17:java.lang.StringBuilder*,n$19:int) virtual [line 29]\n  *&$irvar5:java.lang.StringBuilder*=n$20 [line 29]\n  NULLIFY(&$irvar4); [line 29]\n  EXIT_SCOPE(_,n$17,n$19,n$20,$irvar4); [line 29]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_15" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_16" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_15" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_16" [label="16:  Call String StringBuilder.toString() \n   n$21=*&$irvar5:java.lang.StringBuilder* [line 29]\n  _=*n$21:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 29]\n  n$23=_fun_String StringBuilder.toString()(n$21:java.lang.StringBuilder*) virtual [line 29]\n  *&$irvar6:java.lang.String*=n$23 [line 29]\n  NULLIFY(&$irvar5); [line 29]\n  EXIT_SCOPE(_,n$21,n$23,$irvar5); [line 29]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_16" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_17" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_16" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_17" [label="17:  Call void PrintStream.println(String) \n   n$24=*&$irvar2:java.io.PrintStream* [line 29]\n  _=*n$24:java.io.PrintStream*(root java.io.PrintStream) [line 29]\n  n$26=*&$irvar6:java.lang.String* [line 29]\n  n$27=_fun_void PrintStream.println(String)(n$24:java.io.PrintStream*,n$26:java.lang.String*) virtual [line 29]\n  NULLIFY(&$irvar6); [line 29]\n  NULLIFY(&$irvar2); [line 29]\n  EXIT_SCOPE(_,n$24,n$26,n$27,$irvar6,$irvar2); [line 29]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_17" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_18" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_17" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_18" [label="18:  Call StringBuilder.<init>() \n   n$28=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 30]\n  n$29=_fun_StringBuilder.<init>()(n$28:java.lang.StringBuilder*) [line 30]\n  *&$irvar7:java.lang.StringBuilder*=n$28 [line 30]\n  EXIT_SCOPE(n$28,n$29); [line 30]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_18" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_19" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_18" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_19" [label="19:  Call StringBuilder StringBuilder.append(String) \n   n$30=*&$irvar7:java.lang.StringBuilder* [line 30]\n  _=*n$30:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 30]\n  n$32=*&url:java.lang.Object* [line 30]\n  n$33=_fun_StringBuilder StringBuilder.append(String)(n$30:java.lang.StringBuilder*,n$32:java.lang.Object*) virtual [line 30]\n  *&$irvar8:java.lang.StringBuilder*=n$33 [line 30]\n  NULLIFY(&$irvar7); [line 30]\n  EXIT_SCOPE(_,n$30,n$32,n$33,$irvar7); [line 30]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_19" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_20" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_19" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_20" [label="20:  Call StringBuilder StringBuilder.append(int) \n   n$34=*&$irvar8:java.lang.StringBuilder* [line 30]\n  _=*n$34:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 30]\n  n$36=*&i:int [line 30]\n  n$37=_fun_StringBuilder StringBuilder.append(int)(n$34:java.lang.StringBuilder*,n$36:int) virtual [line 30]\n  *&$irvar9:java.lang.StringBuilder*=n$37 [line 30]\n  NULLIFY(&$irvar8); [line 30]\n  EXIT_SCOPE(_,n$34,n$36,n$37,$irvar8); [line 30]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_20" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_21" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_20" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_21" [label="21:  Call String StringBuilder.toString() \n   n$38=*&$irvar9:java.lang.StringBuilder* [line 30]\n  _=*n$38:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 30]\n  n$40=_fun_String StringBuilder.toString()(n$38:java.lang.StringBuilder*) virtual [line 30]\n  *&$irvar10:java.lang.String*=n$40 [line 30]\n  NULLIFY(&$irvar9); [line 30]\n  EXIT_SCOPE(_,n$38,n$40,$irvar9); [line 30]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_21" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_22" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_21" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_22" [label="22:  Call List UrlCrawler.getUrl(String) \n   n$41=*&$irvar10:java.lang.String* [line 30]\n  n$42=_fun_List UrlCrawler.getUrl(String)(n$41:java.lang.String*) [line 30]\n  *&$irvar11:java.util.List*=n$42 [line 30]\n  NULLIFY(&$irvar10); [line 30]\n  EXIT_SCOPE(n$41,n$42,$irvar10); [line 30]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_22" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_23" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_22" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_23" [label="23:  Call Iterator List.iterator() \n   n$43=*&$irvar11:java.util.List* [line 30]\n  _=*n$43:java.util.List*(root java.util.List) [line 30]\n  n$45=_fun_Iterator List.iterator()(n$43:java.util.List*) interface virtual [line 30]\n  *&$bcvar4:java.util.Iterator*=n$45 [line 30]\n  NULLIFY(&$irvar11); [line 30]\n  EXIT_SCOPE(_,n$43,n$45,$irvar11); [line 30]\n  APPLY_ABSTRACTION; [line 30]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_23" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_24" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_23" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_24" [label="24:  Call boolean Iterator.hasNext() \n   n$46=*&$bcvar4:java.util.Iterator* [line 30]\n  _=*n$46:java.util.Iterator*(root java.util.Iterator) [line 30]\n  n$48=_fun_boolean Iterator.hasNext()(n$46:java.util.Iterator*) interface virtual [line 30]\n  *&$irvar12:_Bool=n$48 [line 30]\n  EXIT_SCOPE(_,n$46,n$48); [line 30]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_24" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_27" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_24" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_25" [label="25: Prune (true branch, if) \n   n$49=*&$irvar12:_Bool [line 30]\n  PRUNE(!(n$49 == 0), true); [line 30]\n  NULLIFY(&$irvar12); [line 30]\n  EXIT_SCOPE(n$49,$irvar12); [line 30]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_25" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_28" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_25" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_26" [label="26: Prune (false branch, if) \n   n$49=*&$irvar12:_Bool [line 30]\n  PRUNE((n$49 == 0), false); [line 30]\n  NULLIFY(&$bcvar4); [line 30]\n  NULLIFY(&$irvar12); [line 30]\n  EXIT_SCOPE(n$49,$bcvar4,$irvar12); [line 30]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_26" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_33" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_26" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_27" [label="27: + \n  " ]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_27" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_25" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_27" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_26" ;
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_28" [label="28:  Call Object Iterator.next() \n   n$50=*&$bcvar4:java.util.Iterator* [line 30]\n  _=*n$50:java.util.Iterator*(root java.util.Iterator) [line 30]\n  n$52=_fun_Object Iterator.next()(n$50:java.util.Iterator*) interface virtual [line 30]\n  *&$irvar13:java.lang.Object*=n$52 [line 30]\n  EXIT_SCOPE(_,n$50,n$52); [line 30]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_28" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_29" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_28" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_29" [label="29:  method_body \n   n$53=*&$irvar13:java.lang.Object* [line 30]\n  n$54=_fun___cast(n$53:java.lang.Object*,sizeof(t=java.lang.String;sub_t=( sub )(cast)):void) [line 30]\n  *&xx:java.lang.String*=n$54 [line 30]\n  NULLIFY(&$irvar13); [line 30]\n  EXIT_SCOPE(n$53,n$54,$irvar13); [line 30]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_29" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_30" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_29" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_30" [label="30:  Call void Writer.write(String) \n   n$55=*&writer:java.io.BufferedWriter* [line 31]\n  _=*n$55:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 31]\n  n$57=*&xx:java.lang.String* [line 31]\n  n$58=_fun_void Writer.write(String)(n$55:java.io.BufferedWriter*,n$57:java.lang.String*) virtual [line 31]\n  NULLIFY(&xx); [line 31]\n  EXIT_SCOPE(_,n$55,n$57,n$58,xx); [line 31]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_30" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_31" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_30" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_31" [label="31:  Call void BufferedWriter.newLine() \n   n$59=*&writer:java.io.BufferedWriter* [line 32]\n  _=*n$59:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 32]\n  n$61=_fun_void BufferedWriter.newLine()(n$59:java.io.BufferedWriter*) virtual [line 32]\n  EXIT_SCOPE(_,n$59,n$61); [line 32]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_31" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_32" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_31" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_32" [label="32:  Call void BufferedWriter.flush() \n   n$62=*&writer:java.io.BufferedWriter* [line 33]\n  _=*n$62:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 33]\n  n$64=_fun_void BufferedWriter.flush()(n$62:java.io.BufferedWriter*) virtual [line 33]\n  EXIT_SCOPE(_,n$62,n$64); [line 33]\n  APPLY_ABSTRACTION; [line 33]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_32" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_24" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_32" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_33" [label="33:  method_body \n   n$65=*&i:int [line 28]\n  *&i:int=(n$65 + 1) [line 28]\n  EXIT_SCOPE(n$65); [line 28]\n  APPLY_ABSTRACTION; [line 28]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_33" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_11" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_33" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_34" [label="34:  Call void BufferedWriter.close() \n   n$66=*&writer:java.io.BufferedWriter* [line 36]\n  n$69=_fun___set_mem_attribute(n$66:java.io.BufferedWriter*) [line 36]\n  _=*n$66:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 36]\n  n$68=_fun_void BufferedWriter.close()(n$66:java.io.BufferedWriter*) virtual [line 36]\n  NULLIFY(&writer); [line 36]\n  EXIT_SCOPE(_,n$66,n$68,n$69,writer); [line 36]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_34" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_35" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_34" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_35" [label="35:  Call void PrintStream.println(String) \n   n$70=*&#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 37]\n  _=*n$70:java.io.PrintStream*(root java.io.PrintStream) [line 37]\n  n$72=_fun_void PrintStream.println(String)(n$70:java.io.PrintStream*,\"\\\\226\\\\128\\\\148\\\\226\\\\128\\\\148\\\\226\\\\128\\\\148\\\\226\\\\128\\\\148\\\\226\\\\128\\\\148\\\\226\\\\128\\\\148\\\\226\\\\128\\\\148end________\":java.lang.Object*) virtual [line 37]\n  EXIT_SCOPE(_,n$70,n$72); [line 37]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_35" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_36" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_35" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+"com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_36" [label="36:  method_body \n   APPLY_ABSTRACTION; [line 38]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_36" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_2" ;
+	 "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_36" -> "com.dulishuo.yimusanfendi.UrlCrawler.main(java.lang.String[]):void.39315ac406c4c51b82a27bb3fa0a436e_3" [color="red" ];
+}

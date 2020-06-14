@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.<init>().2a0bd4f995b8658b2321118f39f1295d_1" [label="1: Start GlobalSchoolRank.<init>()\nFormals:  this:com.dulishuo.usnews.sixteen.GlobalSchoolRank*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.<init>().2a0bd4f995b8658b2321118f39f1295d_1" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.<init>().2a0bd4f995b8658b2321118f39f1295d_4" ;
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.<init>().2a0bd4f995b8658b2321118f39f1295d_2" [label="2: Exit GlobalSchoolRank.<init>() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.<init>().2a0bd4f995b8658b2321118f39f1295d_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 19]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.<init>().2a0bd4f995b8658b2321118f39f1295d_3" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.<init>().2a0bd4f995b8658b2321118f39f1295d_2" ;
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.<init>().2a0bd4f995b8658b2321118f39f1295d_4" [label="4:  Call Object.<init>() \n   n$0=*&this:com.dulishuo.usnews.sixteen.GlobalSchoolRank* [line 19]\n  n$1=_fun_Object.<init>()(n$0:com.dulishuo.usnews.sixteen.GlobalSchoolRank*) [line 19]\n  NULLIFY(&this); [line 19]\n  EXIT_SCOPE(n$0,n$1,this); [line 19]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.<init>().2a0bd4f995b8658b2321118f39f1295d_4" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.<init>().2a0bd4f995b8658b2321118f39f1295d_5" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.<init>().2a0bd4f995b8658b2321118f39f1295d_4" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.<init>().2a0bd4f995b8658b2321118f39f1295d_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.<init>().2a0bd4f995b8658b2321118f39f1295d_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 19]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.<init>().2a0bd4f995b8658b2321118f39f1295d_5" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.<init>().2a0bd4f995b8658b2321118f39f1295d_2" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.<init>().2a0bd4f995b8658b2321118f39f1295d_5" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.<init>().2a0bd4f995b8658b2321118f39f1295d_3" [color="red" ];
+}

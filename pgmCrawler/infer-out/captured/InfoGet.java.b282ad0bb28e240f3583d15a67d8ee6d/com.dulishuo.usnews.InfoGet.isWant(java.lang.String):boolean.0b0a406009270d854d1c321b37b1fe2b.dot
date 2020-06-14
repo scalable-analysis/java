@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.usnews.InfoGet.isWant(java.lang.String):boolean.0b0a406009270d854d1c321b37b1fe2b_1" [label="1: Start boolean InfoGet.isWant(String)\nFormals:  xx:java.lang.String*\nLocals:  oo:_Bool \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.usnews.InfoGet.isWant(java.lang.String):boolean.0b0a406009270d854d1c321b37b1fe2b_1" -> "com.dulishuo.usnews.InfoGet.isWant(java.lang.String):boolean.0b0a406009270d854d1c321b37b1fe2b_4" ;
+"com.dulishuo.usnews.InfoGet.isWant(java.lang.String):boolean.0b0a406009270d854d1c321b37b1fe2b_2" [label="2: Exit boolean InfoGet.isWant(String) \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.usnews.InfoGet.isWant(java.lang.String):boolean.0b0a406009270d854d1c321b37b1fe2b_3" [label="3:  exceptions sink \n   NULLIFY(&oo); [line 178]\n  EXIT_SCOPE(oo); [line 178]\n  APPLY_ABSTRACTION; [line 178]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.isWant(java.lang.String):boolean.0b0a406009270d854d1c321b37b1fe2b_3" -> "com.dulishuo.usnews.InfoGet.isWant(java.lang.String):boolean.0b0a406009270d854d1c321b37b1fe2b_2" ;
+"com.dulishuo.usnews.InfoGet.isWant(java.lang.String):boolean.0b0a406009270d854d1c321b37b1fe2b_4" [label="4:  method_body \n   *&oo:int=0 [line 176]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.isWant(java.lang.String):boolean.0b0a406009270d854d1c321b37b1fe2b_4" -> "com.dulishuo.usnews.InfoGet.isWant(java.lang.String):boolean.0b0a406009270d854d1c321b37b1fe2b_5" ;
+	 "com.dulishuo.usnews.InfoGet.isWant(java.lang.String):boolean.0b0a406009270d854d1c321b37b1fe2b_4" -> "com.dulishuo.usnews.InfoGet.isWant(java.lang.String):boolean.0b0a406009270d854d1c321b37b1fe2b_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.isWant(java.lang.String):boolean.0b0a406009270d854d1c321b37b1fe2b_5" [label="5:  method_body \n   n$0=*&oo:int [line 178]\n  *&return:_Bool=n$0 [line 178]\n  NULLIFY(&oo); [line 178]\n  EXIT_SCOPE(n$0,oo); [line 178]\n  APPLY_ABSTRACTION; [line 178]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.isWant(java.lang.String):boolean.0b0a406009270d854d1c321b37b1fe2b_5" -> "com.dulishuo.usnews.InfoGet.isWant(java.lang.String):boolean.0b0a406009270d854d1c321b37b1fe2b_2" ;
+	 "com.dulishuo.usnews.InfoGet.isWant(java.lang.String):boolean.0b0a406009270d854d1c321b37b1fe2b_5" -> "com.dulishuo.usnews.InfoGet.isWant(java.lang.String):boolean.0b0a406009270d854d1c321b37b1fe2b_3" [color="red" ];
+}

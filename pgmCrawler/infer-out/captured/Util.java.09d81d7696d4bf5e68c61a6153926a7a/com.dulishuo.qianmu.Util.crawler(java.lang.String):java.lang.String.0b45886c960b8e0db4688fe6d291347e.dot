@@ -1,0 +1,79 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_1" [label="1: Start String Util.crawler(String)\nFormals:  url:java.lang.String*\nLocals:  $irvar0:void flag:int response:java.lang.String* \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_1" -> "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_4" ;
+"com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_2" [label="2: Exit String Util.crawler(String) \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_3" [label="3:  exceptions sink \n   NULLIFY(&$irvar0); [line 23]\n  NULLIFY(&response); [line 23]\n  NULLIFY(&flag); [line 23]\n  EXIT_SCOPE($irvar0,response,flag); [line 23]\n  APPLY_ABSTRACTION; [line 23]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_3" -> "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_2" ;
+"com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_4" [label="4:  method_body \n   *&response:java.lang.Object*=\"-1\" [line 13]\n  NULLIFY(&response); [line 13]\n  EXIT_SCOPE(response); [line 13]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_4" -> "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_5" ;
+	 "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_4" -> "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_3" [color="red" ];
+"com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_5" [label="5:  method_body \n   *&flag:int=0 [line 16]\n  APPLY_ABSTRACTION; [line 16]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_5" -> "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_8" ;
+	 "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_5" -> "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_3" [color="red" ];
+"com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_6" [label="6: Prune (true branch, if) \n   n$0=*&flag:int [line 17]\n  PRUNE(!(n$0 >= 10), true); [line 17]\n  EXIT_SCOPE(n$0); [line 17]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_6" -> "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_9" ;
+	 "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_6" -> "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_3" [color="red" ];
+"com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_7" [label="7: Prune (false branch, if) \n   n$0=*&flag:int [line 17]\n  PRUNE((n$0 >= 10), false); [line 17]\n  NULLIFY(&flag); [line 17]\n  EXIT_SCOPE(n$0,flag); [line 17]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_7" -> "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_16" ;
+	 "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_7" -> "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_3" [color="red" ];
+"com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_8" [label="8: + \n  " ]
+	
+
+	 "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_8" -> "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_6" ;
+	 "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_8" -> "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_7" ;
+"com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_9" [label="9:  Call String Util.httpRequest(String) \n   n$1=*&url:java.lang.String* [line 18]\n  n$2=_fun_String Util.httpRequest(String)(n$1:java.lang.String*) [line 18]\n  *&response:java.lang.String*=n$2 [line 18]\n  EXIT_SCOPE(n$1,n$2); [line 18]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_9" -> "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_10" ;
+	 "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_9" -> "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_3" [color="red" ];
+"com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_10" [label="10:  Call boolean String.equals(Object) \n   n$3=*&response:java.lang.String* [line 19]\n  _=*n$3:java.lang.String*(root java.lang.String) [line 19]\n  n$5=_fun_boolean String.equals(Object)(n$3:java.lang.String*,\"-1\":java.lang.Object*) virtual [line 19]\n  *&$irvar0:_Bool=n$5 [line 19]\n  EXIT_SCOPE(_,n$3,n$5); [line 19]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_10" -> "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_13" ;
+	 "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_10" -> "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_3" [color="red" ];
+"com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_11" [label="11: Prune (true branch, if) \n   n$6=*&$irvar0:_Bool [line 19]\n  PRUNE(!(n$6 != 0), true); [line 19]\n  NULLIFY(&$irvar0); [line 19]\n  NULLIFY(&flag); [line 19]\n  EXIT_SCOPE(n$6,$irvar0,flag); [line 19]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_11" -> "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_14" ;
+	 "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_11" -> "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_3" [color="red" ];
+"com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_12" [label="12: Prune (false branch, if) \n   n$6=*&$irvar0:_Bool [line 19]\n  PRUNE((n$6 != 0), false); [line 19]\n  NULLIFY(&$irvar0); [line 19]\n  NULLIFY(&response); [line 19]\n  EXIT_SCOPE(n$6,$irvar0,response); [line 19]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_12" -> "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_15" ;
+	 "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_12" -> "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_3" [color="red" ];
+"com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_13" [label="13: + \n  " ]
+	
+
+	 "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_13" -> "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_11" ;
+	 "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_13" -> "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_12" ;
+"com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_14" [label="14:  method_body \n   n$7=*&response:java.lang.String* [line 20]\n  *&return:java.lang.String*=n$7 [line 20]\n  NULLIFY(&response); [line 20]\n  EXIT_SCOPE(n$7,response); [line 20]\n  APPLY_ABSTRACTION; [line 20]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_14" -> "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_2" ;
+	 "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_14" -> "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_3" [color="red" ];
+"com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_15" [label="15:  method_body \n   n$8=*&flag:int [line 21]\n  *&flag:int=(n$8 + 1) [line 21]\n  EXIT_SCOPE(n$8); [line 21]\n  APPLY_ABSTRACTION; [line 21]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_15" -> "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_8" ;
+	 "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_15" -> "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_3" [color="red" ];
+"com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_16" [label="16:  method_body \n   *&return:java.lang.String*=\"-1\" [line 23]\n  APPLY_ABSTRACTION; [line 23]\n " shape="box"]
+	
+
+	 "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_16" -> "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_2" ;
+	 "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_16" -> "com.dulishuo.qianmu.Util.crawler(java.lang.String):java.lang.String.0b45886c960b8e0db4688fe6d291347e_3" [color="red" ];
+}

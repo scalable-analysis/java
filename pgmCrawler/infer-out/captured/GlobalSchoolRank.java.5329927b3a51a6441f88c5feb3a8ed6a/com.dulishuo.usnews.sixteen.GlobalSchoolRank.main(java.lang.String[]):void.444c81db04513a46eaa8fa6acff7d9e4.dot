@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.main(java.lang.String[]):void.444c81db04513a46eaa8fa6acff7d9e4_1" [label="1: Start void GlobalSchoolRank.main(String[])\nFormals:  args:java.lang.String*[_*_](*)\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.main(java.lang.String[]):void.444c81db04513a46eaa8fa6acff7d9e4_1" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.main(java.lang.String[]):void.444c81db04513a46eaa8fa6acff7d9e4_4" ;
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.main(java.lang.String[]):void.444c81db04513a46eaa8fa6acff7d9e4_2" [label="2: Exit void GlobalSchoolRank.main(String[]) \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.main(java.lang.String[]):void.444c81db04513a46eaa8fa6acff7d9e4_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 24]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.main(java.lang.String[]):void.444c81db04513a46eaa8fa6acff7d9e4_3" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.main(java.lang.String[]):void.444c81db04513a46eaa8fa6acff7d9e4_2" ;
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.main(java.lang.String[]):void.444c81db04513a46eaa8fa6acff7d9e4_4" [label="4:  Call void GlobalSchoolRank.crawler() \n   n$0=_fun_void GlobalSchoolRank.crawler()() [line 23]\n  EXIT_SCOPE(n$0); [line 23]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.main(java.lang.String[]):void.444c81db04513a46eaa8fa6acff7d9e4_4" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.main(java.lang.String[]):void.444c81db04513a46eaa8fa6acff7d9e4_5" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.main(java.lang.String[]):void.444c81db04513a46eaa8fa6acff7d9e4_4" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.main(java.lang.String[]):void.444c81db04513a46eaa8fa6acff7d9e4_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.main(java.lang.String[]):void.444c81db04513a46eaa8fa6acff7d9e4_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 24]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.main(java.lang.String[]):void.444c81db04513a46eaa8fa6acff7d9e4_5" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.main(java.lang.String[]):void.444c81db04513a46eaa8fa6acff7d9e4_2" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.main(java.lang.String[]):void.444c81db04513a46eaa8fa6acff7d9e4_5" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.main(java.lang.String[]):void.444c81db04513a46eaa8fa6acff7d9e4_3" [color="red" ];
+}

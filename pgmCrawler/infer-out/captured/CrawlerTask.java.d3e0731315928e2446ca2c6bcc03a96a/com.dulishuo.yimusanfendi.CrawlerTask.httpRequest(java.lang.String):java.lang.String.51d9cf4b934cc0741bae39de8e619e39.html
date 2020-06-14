@@ -1,0 +1,233 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../CrawlerTask.java.d3e0731315928e2446ca2c6bcc03a96a.html#LINE160">String CrawlerTask.httpRequest(String)</a></h1></center>
+<a href="./nodes/com.dulishuo.yimusanfendi.CrawlerTask.httpRequest%28java.lang.String%29%3Ajava.lang.String.51d9cf4b934cc0741bae39de8e619e39_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.CrawlerTask.httpRequest%28java.lang.String%29%3Ajava.lang.String.51d9cf4b934cc0741bae39de8e619e39_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:21 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.CrawlerTask.httpRequest%28java.lang.String%29%3Ajava.lang.String.51d9cf4b934cc0741bae39de8e619e39_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:26 23 succs:2 exn:2 Instructions
+NULLIFY(&amp;client); [line 194];
+NULLIFY(&amp;CatchVar77); [line 194];
+NULLIFY(&amp;CatchVar87); [line 194];
+NULLIFY(&amp;getMethod); [line 194];
+NULLIFY(&amp;CatchVar102); [line 194];
+NULLIFY(&amp;response); [line 194];
+NULLIFY(&amp;e); [line 194];
+EXIT_SCOPE(n$44,client,CatchVar77,CatchVar87,getMethod,CatchVar102,response,e); [line 194];
+APPLY_ABSTRACTION; [line 194];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.CrawlerTask.httpRequest%28java.lang.String%29%3Ajava.lang.String.51d9cf4b934cc0741bae39de8e619e39_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+*&amp;response:java.lang.Object*="" [line 161];
+NULLIFY(&amp;response); [line 161];
+EXIT_SCOPE(response); [line 161];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.CrawlerTask.httpRequest%28java.lang.String%29%3Ajava.lang.String.51d9cf4b934cc0741bae39de8e619e39_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$0=_fun___new(sizeof(t=org.apache.commons.httpclient.HttpClient):org.apache.commons.httpclient.HttpClient*) [line 163];
+n$1=_fun_HttpClient.&lt;init&gt;()(n$0:org.apache.commons.httpclient.HttpClient*) [line 163];
+*&amp;client:org.apache.commons.httpclient.HttpClient*=n$0 [line 163];
+EXIT_SCOPE(n$0,n$1); [line 163];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.CrawlerTask.httpRequest%28java.lang.String%29%3Ajava.lang.String.51d9cf4b934cc0741bae39de8e619e39_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$2=_fun___new(sizeof(t=org.apache.commons.httpclient.methods.GetMethod):org.apache.commons.httpclient.methods.GetMethod*) [line 168];
+n$3=*&amp;url:java.lang.String* [line 168];
+n$4=_fun_GetMethod.&lt;init&gt;(String)(n$2:org.apache.commons.httpclient.methods.GetMethod*,n$3:java.lang.String*) [line 168];
+*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod*=n$2 [line 168];
+NULLIFY(&amp;url); [line 168];
+EXIT_SCOPE(n$2,n$3,n$4,url); [line 168];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.CrawlerTask.httpRequest%28java.lang.String%29%3Ajava.lang.String.51d9cf4b934cc0741bae39de8e619e39_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$5=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 170];
+_=*n$5:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 170];
+n$7=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$5:org.apache.commons.httpclient.methods.GetMethod*,"Host":java.lang.Object*,"www.1point3acres.com":java.lang.Object*) virtual [line 170];
+EXIT_SCOPE(_,n$5,n$7); [line 170];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.CrawlerTask.httpRequest%28java.lang.String%29%3Ajava.lang.String.51d9cf4b934cc0741bae39de8e619e39_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$8=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 171];
+_=*n$8:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 171];
+n$10=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$8:org.apache.commons.httpclient.methods.GetMethod*,"User-Agent":java.lang.Object*,"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.111 Safari/537.36":java.lang.Object*) virtual [line 171];
+EXIT_SCOPE(_,n$8,n$10); [line 171];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.CrawlerTask.httpRequest%28java.lang.String%29%3Ajava.lang.String.51d9cf4b934cc0741bae39de8e619e39_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$11=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 172];
+_=*n$11:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 172];
+n$13=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$11:org.apache.commons.httpclient.methods.GetMethod*,"Accept":java.lang.Object*,"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8":java.lang.Object*) virtual [line 172];
+EXIT_SCOPE(_,n$11,n$13); [line 172];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.CrawlerTask.httpRequest%28java.lang.String%29%3Ajava.lang.String.51d9cf4b934cc0741bae39de8e619e39_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+n$14=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 173];
+_=*n$14:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 173];
+n$16=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$14:org.apache.commons.httpclient.methods.GetMethod*,"Accept-Language":java.lang.Object*,"zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3":java.lang.Object*) virtual [line 173];
+EXIT_SCOPE(_,n$14,n$16); [line 173];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.CrawlerTask.httpRequest%28java.lang.String%29%3Ajava.lang.String.51d9cf4b934cc0741bae39de8e619e39_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+n$17=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 175];
+_=*n$17:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 175];
+n$19=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$17:org.apache.commons.httpclient.methods.GetMethod*,"DNT":java.lang.Object*,"1":java.lang.Object*) virtual [line 175];
+EXIT_SCOPE(_,n$17,n$19); [line 175];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.CrawlerTask.httpRequest%28java.lang.String%29%3Ajava.lang.String.51d9cf4b934cc0741bae39de8e619e39_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$20=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 176];
+_=*n$20:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 176];
+n$22=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$20:org.apache.commons.httpclient.methods.GetMethod*,"Referer":java.lang.Object*,"http://www.1point3acres.com/bbs/":java.lang.Object*) virtual [line 176];
+EXIT_SCOPE(_,n$20,n$22); [line 176];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.CrawlerTask.httpRequest%28java.lang.String%29%3Ajava.lang.String.51d9cf4b934cc0741bae39de8e619e39_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:18 exn:29 Instructions
+n$23=*&amp;client:org.apache.commons.httpclient.HttpClient* [line 179];
+_=*n$23:org.apache.commons.httpclient.HttpClient*(root org.apache.commons.httpclient.HttpClient) [line 179];
+n$25=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 179];
+n$26=_fun_int HttpClient.executeMethod(HttpMethod)(n$23:org.apache.commons.httpclient.HttpClient*,n$25:org.apache.commons.httpclient.methods.GetMethod*) virtual [line 179];
+*&amp;$irvar0:int=n$26 [line 179];
+NULLIFY(&amp;client); [line 179];
+NULLIFY(&amp;$irvar0); [line 179];
+EXIT_SCOPE(_,n$23,n$25,n$26,client,$irvar0); [line 179];
+APPLY_ABSTRACTION; [line 179];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.CrawlerTask.httpRequest%28java.lang.String%29%3Ajava.lang.String.51d9cf4b934cc0741bae39de8e619e39_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:27 succs:15 exn:3 Instructions
+n$27=*&amp;CatchVar77:java.lang.Object* [line 180];
+*&amp;e:java.lang.Object*=n$27 [line 180];
+NULLIFY(&amp;CatchVar77); [line 180];
+EXIT_SCOPE(n$27,CatchVar77); [line 180];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.CrawlerTask.httpRequest%28java.lang.String%29%3Ajava.lang.String.51d9cf4b934cc0741bae39de8e619e39_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:18 exn:3 Instructions
+n$28=*&amp;e:java.lang.Object* [line 182];
+_=*n$28:java.lang.Object*(root java.lang.Object) [line 182];
+n$30=_fun_void HttpException.printStackTrace()(n$28:java.lang.Object*) virtual [line 182];
+NULLIFY(&amp;e); [line 182];
+EXIT_SCOPE(_,n$28,n$30,e); [line 182];
+APPLY_ABSTRACTION; [line 182];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.CrawlerTask.httpRequest%28java.lang.String%29%3Ajava.lang.String.51d9cf4b934cc0741bae39de8e619e39_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:25 succs:17 exn:3 Instructions
+n$31=*&amp;CatchVar87:java.lang.Object* [line 183];
+*&amp;e:java.lang.Object*=n$31 [line 183];
+NULLIFY(&amp;CatchVar87); [line 183];
+EXIT_SCOPE(n$31,CatchVar87); [line 183];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.CrawlerTask.httpRequest%28java.lang.String%29%3Ajava.lang.String.51d9cf4b934cc0741bae39de8e619e39_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:3 Instructions
+n$32=*&amp;e:java.lang.Object* [line 185];
+_=*n$32:java.lang.Object*(root java.lang.Object) [line 185];
+n$34=_fun_void Throwable.printStackTrace()(n$32:java.lang.Object*) virtual [line 185];
+NULLIFY(&amp;e); [line 185];
+EXIT_SCOPE(_,n$32,n$34,e); [line 185];
+APPLY_ABSTRACTION; [line 185];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.CrawlerTask.httpRequest%28java.lang.String%29%3Ajava.lang.String.51d9cf4b934cc0741bae39de8e619e39_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 15 13 succs:21 exn:24 Instructions
+n$35=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 188];
+_=*n$35:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 188];
+n$37=_fun_String HttpMethodBase.getResponseBodyAsString()(n$35:org.apache.commons.httpclient.methods.GetMethod*) virtual [line 188];
+*&amp;response:java.lang.String*=n$37 [line 188];
+NULLIFY(&amp;getMethod); [line 188];
+EXIT_SCOPE(_,n$35,n$37,getMethod); [line 188];
+APPLY_ABSTRACTION; [line 188];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.CrawlerTask.httpRequest%28java.lang.String%29%3Ajava.lang.String.51d9cf4b934cc0741bae39de8e619e39_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:22 succs:20 exn:3 Instructions
+n$38=*&amp;CatchVar102:java.lang.Object* [line 189];
+*&amp;e:java.lang.Object*=n$38 [line 189];
+NULLIFY(&amp;CatchVar102); [line 189];
+EXIT_SCOPE(n$38,CatchVar102); [line 189];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.CrawlerTask.httpRequest%28java.lang.String%29%3Ajava.lang.String.51d9cf4b934cc0741bae39de8e619e39_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:3 Instructions
+n$39=*&amp;e:java.lang.Object* [line 191];
+_=*n$39:java.lang.Object*(root java.lang.Object) [line 191];
+n$41=_fun_void Throwable.printStackTrace()(n$39:java.lang.Object*) virtual [line 191];
+NULLIFY(&amp;e); [line 191];
+EXIT_SCOPE(_,n$39,n$41,e); [line 191];
+APPLY_ABSTRACTION; [line 191];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.CrawlerTask.httpRequest%28java.lang.String%29%3Ajava.lang.String.51d9cf4b934cc0741bae39de8e619e39_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 18 succs:2 exn:3 Instructions
+n$42=*&amp;response:java.lang.String* [line 194];
+*&amp;return:java.lang.String*=n$42 [line 194];
+NULLIFY(&amp;response); [line 194];
+EXIT_SCOPE(n$42,response); [line 194];
+APPLY_ABSTRACTION; [line 194];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.CrawlerTask.httpRequest%28java.lang.String%29%3Ajava.lang.String.51d9cf4b934cc0741bae39de8e619e39_node22.html"><span class='visited with_tooltip'>C_22<span class='tooltip'>node22 preds:24 succs:19 exn:3 Conditional exception handler
+n$45=_fun___instanceof(n$44:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 189];
+PRUNE(n$45, true); [line 189];
+*&amp;CatchVar102:java.lang.String*=n$44 [line 189];
+EXIT_SCOPE(n$44,n$45); [line 189];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.CrawlerTask.httpRequest%28java.lang.String%29%3Ajava.lang.String.51d9cf4b934cc0741bae39de8e619e39_node23.html"><span class='visited with_tooltip'>C_23<span class='tooltip'>node23 preds:24 succs:3 exn:3 Conditional exception handler
+n$45=_fun___instanceof(n$44:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 189];
+PRUNE(!n$45, false); [line 189];
+*&amp;return:java.lang.String*=EXN n$44 [line 189];
+NULLIFY(&amp;response); [line 189];
+EXIT_SCOPE(n$44,n$45,response); [line 189];
+APPLY_ABSTRACTION; [line 189];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.CrawlerTask.httpRequest%28java.lang.String%29%3Ajava.lang.String.51d9cf4b934cc0741bae39de8e619e39_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds: succs:22 23 exn:3 Instructions
+n$43=*&amp;return:java.lang.String* [line 189];
+*&amp;return:java.lang.String*=null [line 189];
+n$44=_fun___unwrap_exception(n$43:java.lang.String*) [line 189];
+EXIT_SCOPE(n$43); [line 189];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.CrawlerTask.httpRequest%28java.lang.String%29%3Ajava.lang.String.51d9cf4b934cc0741bae39de8e619e39_node25.html"><span class='visited with_tooltip'>C_25<span class='tooltip'>node25 preds:28 succs:16 exn:3 Conditional exception handler
+n$46=_fun___instanceof(n$44:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 183];
+PRUNE(n$46, true); [line 183];
+*&amp;CatchVar87:java.lang.String*=n$44 [line 183];
+EXIT_SCOPE(n$44,n$46); [line 183];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.CrawlerTask.httpRequest%28java.lang.String%29%3Ajava.lang.String.51d9cf4b934cc0741bae39de8e619e39_node26.html"><span class='visited with_tooltip'>C_26<span class='tooltip'>node26 preds:28 succs:3 exn:3 Conditional exception handler
+n$46=_fun___instanceof(n$44:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 183];
+PRUNE(!n$46, false); [line 183];
+*&amp;return:java.lang.String*=EXN n$44 [line 183];
+NULLIFY(&amp;getMethod); [line 183];
+EXIT_SCOPE(n$44,n$46,getMethod); [line 183];
+APPLY_ABSTRACTION; [line 183];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.CrawlerTask.httpRequest%28java.lang.String%29%3Ajava.lang.String.51d9cf4b934cc0741bae39de8e619e39_node27.html"><span class='visited with_tooltip'>C_27<span class='tooltip'>node27 preds:29 succs:14 exn:3 Conditional exception handler
+n$47=_fun___instanceof(n$44:org.apache.commons.httpclient.HttpException*,sizeof(t=org.apache.commons.httpclient.HttpException):void) [line 180];
+PRUNE(n$47, true); [line 180];
+*&amp;CatchVar77:java.lang.String*=n$44 [line 180];
+EXIT_SCOPE(n$44,n$47); [line 180];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.CrawlerTask.httpRequest%28java.lang.String%29%3Ajava.lang.String.51d9cf4b934cc0741bae39de8e619e39_node28.html"><span class='visited with_tooltip'>C_28<span class='tooltip'>node28 preds:29 succs:25 26 exn:3 Conditional exception handler
+n$47=_fun___instanceof(n$44:org.apache.commons.httpclient.HttpException*,sizeof(t=org.apache.commons.httpclient.HttpException):void) [line 180];
+PRUNE(!n$47, false); [line 180];
+EXIT_SCOPE(n$47); [line 180];
+</span></span></a> <a href="./nodes/com.dulishuo.yimusanfendi.CrawlerTask.httpRequest%28java.lang.String%29%3Ajava.lang.String.51d9cf4b934cc0741bae39de8e619e39_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds: succs:27 28 exn:3 Instructions
+n$43=*&amp;return:java.lang.String* [line 180];
+*&amp;return:java.lang.String*=null [line 180];
+n$44=_fun___unwrap_exception(n$43:java.lang.String*) [line 180];
+EXIT_SCOPE(n$43); [line 180];
+</span></span></a><br />@
+
+<span class='color_black'>java.lang.String* String CrawlerTask.httpRequest(String)(java.lang.String* url)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { return -> (Footprint({ @val$0* }) ~> ?, *) }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= String CrawlerTask.httpRequest(String)
+; translation_unit= src/com/dulishuo/yimusanfendi/CrawlerTask.java
+; access= Public
+; formals= [(url,java.lang.String*)]
+; is_defined= true
+; loc= src/com/dulishuo/yimusanfendi/CrawlerTask.java:160
+; locals= [{ name= CatchVar102; typ= void; modify_in_block= false }; 
+           { name= CatchVar87; typ= void; modify_in_block= false }; 
+           { name= CatchVar77; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= getMethod; typ= org.apache.commons.httpclient.methods.GetMethod*; modify_in_block= false }; 
+           { name= client; typ= org.apache.commons.httpclient.HttpClient*; modify_in_block= false }; 
+           { name= response; typ= java.lang.String*; modify_in_block= false }; 
+           { name= e; typ= org.apache.commons.httpclient.HttpException*; modify_in_block= false }]
+; ret_type= java.lang.String* 
+; proc_id= com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String }</pre>
+</body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Chi.java.84682c7b6a5e16f16650f30ef7bf7c40</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>File src/com/dulishuo/school/Chi.java </h1></center>
+<table class="code">
+<tr><td class="num" id="LINE1">1</td><td class="line">package com.dulishuo.school; </td></tr>
+<tr><td class="num" id="LINE2">2</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE3">3</td><td class="line">import java.io.UnsupportedEncodingException; </td></tr>
+<tr><td class="num" id="LINE4">4</td><td class="line">import java.net.URLDecoder; </td></tr>
+<tr><td class="num" id="LINE5">5</td><td class="line">import java.util.ArrayList; </td></tr>
+<tr><td class="num" id="LINE6">6</td><td class="line">import java.util.Arrays; </td></tr>
+<tr><td class="num" id="LINE7">7</td><td class="line">import java.util.HashMap; </td></tr>
+<tr><td class="num" id="LINE8">8</td><td class="line">import java.util.List; </td></tr>
+<tr><td class="num" id="LINE9">9</td><td class="line">import java.util.Map; </td></tr>
+<tr><td class="num" id="LINE10">10</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE11">11</td><td class="line">import org.jsoup.Jsoup; </td></tr>
+<tr><td class="num" id="LINE12">12</td><td class="line">import org.jsoup.nodes.Document; </td></tr>
+<tr><td class="num" id="LINE13">13</td><td class="line">import org.jsoup.nodes.Element; </td></tr>
+<tr><td class="num" id="LINE14">14</td><td class="line">import org.jsoup.select.Elements; </td></tr>
+<tr><td class="num" id="LINE15">15</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE16">16</td><td class="line">import com.dulishuo.util.CrawlerUtil; </td></tr>
+<tr><td class="num" id="LINE17">17</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE18">18</td><td class="line">public class Chi { <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.<init>%28%29.6e8e78a142cbfecfd197d6ea07ba5494_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.<init>%28%29.6e8e78a142cbfecfd197d6ea07ba5494_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.dulishuo.school.Chi* [line 18];
+n$1=_fun_Object.&lt;init&gt;()(n$0:com.dulishuo.school.Chi*) [line 18];
+</span></span></a> <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.<init>%28%29.6e8e78a142cbfecfd197d6ea07ba5494_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.<init>%28%29.6e8e78a142cbfecfd197d6ea07ba5494_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.<init>%28%29.6e8e78a142cbfecfd197d6ea07ba5494_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a> <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/com.dulishuo.school.Chi.<init>%28%29.6e8e78a142cbfecfd197d6ea07ba5494.html">summary for Chi.&lt;init&gt;()</a></td></tr>
+<tr><td class="num" id="LINE19">19</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE20">20</td><td class="line">	public static void main(String[] args) { <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.main%28java.lang.String%5B%5D%29%3Avoid.07cea072276a97db9bfa9a9ac5d21a9f_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/com.dulishuo.school.Chi.main%28java.lang.String%5B%5D%29%3Avoid.07cea072276a97db9bfa9a9ac5d21a9f.html">summary for void Chi.main(String[])</a></td></tr>
+<tr><td class="num" id="LINE21">21</td><td class="line">		// TODO Auto-generated method stub </td></tr>
+<tr><td class="num" id="LINE22">22</td><td class="line">		System.out.println(&quot;start . . . &quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.main%28java.lang.String%5B%5D%29%3Avoid.07cea072276a97db9bfa9a9ac5d21a9f_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 22];
+_=*n$0:java.io.PrintStream*(root java.io.PrintStream) [line 22];
+n$2=_fun_void PrintStream.println(String)(n$0:java.io.PrintStream*,"start . . . ":java.lang.Object*) virtual [line 22];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE23">23</td><td class="line">		long start = System.currentTimeMillis(); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.main%28java.lang.String%5B%5D%29%3Avoid.07cea072276a97db9bfa9a9ac5d21a9f_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$3=_fun_long System.currentTimeMillis()() [line 23];
+*&amp;start:long=n$3 [line 23];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE24">24</td><td class="line">		 </td></tr>
+<tr><td class="num" id="LINE25">25</td><td class="line">		 </td></tr>
+<tr><td class="num" id="LINE26">26</td><td class="line">		test(); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.main%28java.lang.String%5B%5D%29%3Avoid.07cea072276a97db9bfa9a9ac5d21a9f_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$4=_fun_void Chi.test()() [line 26];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE27">27</td><td class="line">		 </td></tr>
+<tr><td class="num" id="LINE28">28</td><td class="line">		long end = System.currentTimeMillis(); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.main%28java.lang.String%5B%5D%29%3Avoid.07cea072276a97db9bfa9a9ac5d21a9f_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$5=_fun_long System.currentTimeMillis()() [line 28];
+*&amp;end:long=n$5 [line 28];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE29">29</td><td class="line">		System.out.println(&quot;end . . . &quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.main%28java.lang.String%5B%5D%29%3Avoid.07cea072276a97db9bfa9a9ac5d21a9f_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$6=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 29];
+_=*n$6:java.io.PrintStream*(root java.io.PrintStream) [line 29];
+n$8=_fun_void PrintStream.println(String)(n$6:java.io.PrintStream*,"end . . . ":java.lang.Object*) virtual [line 29];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE30">30</td><td class="line">	} <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.main%28java.lang.String%5B%5D%29%3Avoid.07cea072276a97db9bfa9a9ac5d21a9f_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:2 exn:3 Instructions
+</span></span></a> <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.main%28java.lang.String%5B%5D%29%3Avoid.07cea072276a97db9bfa9a9ac5d21a9f_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:9 3 succs: exn: Exit
+</span></span></a> <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.main%28java.lang.String%5B%5D%29%3Avoid.07cea072276a97db9bfa9a9ac5d21a9f_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE31">31</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE32">32</td><td class="line">	private static void test() { <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b.html">summary for void Chi.test()</a></td></tr>
+<tr><td class="num" id="LINE33">33</td><td class="line">		// TODO Auto-generated method stub </td></tr>
+<tr><td class="num" id="LINE34">34</td><td class="line">		Map&lt;String,String&gt; provinceMap = new HashMap&lt;String,String&gt;(); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun___new(sizeof(t=java.util.HashMap):java.util.HashMap*) [line 34];
+n$1=_fun_HashMap.&lt;init&gt;()(n$0:java.util.HashMap*) [line 34];
+*&amp;provinceMap:java.util.HashMap*=n$0 [line 34];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE35">35</td><td class="line">		provinceMap.put(&quot;151&quot;, &quot;北京&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$2=*&amp;provinceMap:java.util.HashMap* [line 35];
+_=*n$2:java.util.HashMap*(root java.util.HashMap) [line 35];
+n$4=_fun_Object HashMap.put(Object,Object)(n$2:java.util.HashMap*,"151":java.lang.Object*,"\\229\\140\\151\\228\\186\\172":java.lang.Object*) interface virtual [line 35];
+*&amp;$irvar0:java.lang.Object*=n$4 [line 35];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE36">36</td><td class="line">		provinceMap.put(&quot;152&quot;, &quot;天津&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$5=*&amp;provinceMap:java.util.HashMap* [line 36];
+_=*n$5:java.util.HashMap*(root java.util.HashMap) [line 36];
+n$7=_fun_Object HashMap.put(Object,Object)(n$5:java.util.HashMap*,"152":java.lang.Object*,"\\229\\164\\169\\230\\180\\165":java.lang.Object*) interface virtual [line 36];
+*&amp;$irvar1:java.lang.Object*=n$7 [line 36];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE37">37</td><td class="line">		provinceMap.put(&quot;153&quot;, &quot;河北&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$8=*&amp;provinceMap:java.util.HashMap* [line 37];
+_=*n$8:java.util.HashMap*(root java.util.HashMap) [line 37];
+n$10=_fun_Object HashMap.put(Object,Object)(n$8:java.util.HashMap*,"153":java.lang.Object*,"\\230\\178\\179\\229\\140\\151":java.lang.Object*) interface virtual [line 37];
+*&amp;$irvar2:java.lang.Object*=n$10 [line 37];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE38">38</td><td class="line">		provinceMap.put(&quot;622&quot;, &quot;山西&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$11=*&amp;provinceMap:java.util.HashMap* [line 38];
+_=*n$11:java.util.HashMap*(root java.util.HashMap) [line 38];
+n$13=_fun_Object HashMap.put(Object,Object)(n$11:java.util.HashMap*,"622":java.lang.Object*,"\\229\\177\\177\\232\\165\\191":java.lang.Object*) interface virtual [line 38];
+*&amp;$irvar3:java.lang.Object*=n$13 [line 38];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE39">39</td><td class="line">		provinceMap.put(&quot;623&quot;, &quot;内蒙古&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$14=*&amp;provinceMap:java.util.HashMap* [line 39];
+_=*n$14:java.util.HashMap*(root java.util.HashMap) [line 39];
+n$16=_fun_Object HashMap.put(Object,Object)(n$14:java.util.HashMap*,"623":java.lang.Object*,"\\229\\134\\133\\232\\146\\153\\229\\143\\164":java.lang.Object*) interface virtual [line 39];
+*&amp;$irvar4:java.lang.Object*=n$16 [line 39];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE40">40</td><td class="line">		provinceMap.put(&quot;322&quot;, &quot;辽宁&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+n$17=*&amp;provinceMap:java.util.HashMap* [line 40];
+_=*n$17:java.util.HashMap*(root java.util.HashMap) [line 40];
+n$19=_fun_Object HashMap.put(Object,Object)(n$17:java.util.HashMap*,"322":java.lang.Object*,"\\232\\190\\189\\229\\174\\129":java.lang.Object*) interface virtual [line 40];
+*&amp;$irvar5:java.lang.Object*=n$19 [line 40];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE41">41</td><td class="line">		provinceMap.put(&quot;642&quot;, &quot;吉林&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+n$20=*&amp;provinceMap:java.util.HashMap* [line 41];
+_=*n$20:java.util.HashMap*(root java.util.HashMap) [line 41];
+n$22=_fun_Object HashMap.put(Object,Object)(n$20:java.util.HashMap*,"642":java.lang.Object*,"\\229\\144\\137\\230\\158\\151":java.lang.Object*) interface virtual [line 41];
+*&amp;$irvar6:java.lang.Object*=n$22 [line 41];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE42">42</td><td class="line">		provinceMap.put(&quot;643&quot;, &quot;黑龙江&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$23=*&amp;provinceMap:java.util.HashMap* [line 42];
+_=*n$23:java.util.HashMap*(root java.util.HashMap) [line 42];
+n$25=_fun_Object HashMap.put(Object,Object)(n$23:java.util.HashMap*,"643":java.lang.Object*,"\\233\\187\\145\\233\\190\\153\\230\\177\\159":java.lang.Object*) interface virtual [line 42];
+*&amp;$irvar7:java.lang.Object*=n$25 [line 42];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE43">43</td><td class="line">		provinceMap.put(&quot;159&quot;, &quot;江苏&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:3 Instructions
+n$26=*&amp;provinceMap:java.util.HashMap* [line 43];
+_=*n$26:java.util.HashMap*(root java.util.HashMap) [line 43];
+n$28=_fun_Object HashMap.put(Object,Object)(n$26:java.util.HashMap*,"159":java.lang.Object*,"\\230\\177\\159\\232\\139\\143":java.lang.Object*) interface virtual [line 43];
+*&amp;$irvar8:java.lang.Object*=n$28 [line 43];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE44">44</td><td class="line">		provinceMap.put(&quot;160&quot;, &quot;安徽&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:3 Instructions
+n$29=*&amp;provinceMap:java.util.HashMap* [line 44];
+_=*n$29:java.util.HashMap*(root java.util.HashMap) [line 44];
+n$31=_fun_Object HashMap.put(Object,Object)(n$29:java.util.HashMap*,"160":java.lang.Object*,"\\229\\174\\137\\229\\190\\189":java.lang.Object*) interface virtual [line 44];
+*&amp;$irvar9:java.lang.Object*=n$31 [line 44];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE45">45</td><td class="line">		provinceMap.put(&quot;624&quot;, &quot;山东&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:3 Instructions
+n$32=*&amp;provinceMap:java.util.HashMap* [line 45];
+_=*n$32:java.util.HashMap*(root java.util.HashMap) [line 45];
+n$34=_fun_Object HashMap.put(Object,Object)(n$32:java.util.HashMap*,"624":java.lang.Object*,"\\229\\177\\177\\228\\184\\156":java.lang.Object*) interface virtual [line 45];
+*&amp;$irvar10:java.lang.Object*=n$34 [line 45];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE46">46</td><td class="line">		provinceMap.put(&quot;162&quot;, &quot;上海&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:3 Instructions
+n$35=*&amp;provinceMap:java.util.HashMap* [line 46];
+_=*n$35:java.util.HashMap*(root java.util.HashMap) [line 46];
+n$37=_fun_Object HashMap.put(Object,Object)(n$35:java.util.HashMap*,"162":java.lang.Object*,"\\228\\184\\138\\230\\181\\183":java.lang.Object*) interface virtual [line 46];
+*&amp;$irvar11:java.lang.Object*=n$37 [line 46];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE47">47</td><td class="line">		provinceMap.put(&quot;163&quot;, &quot;浙江&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:3 Instructions
+n$38=*&amp;provinceMap:java.util.HashMap* [line 47];
+_=*n$38:java.util.HashMap*(root java.util.HashMap) [line 47];
+n$40=_fun_Object HashMap.put(Object,Object)(n$38:java.util.HashMap*,"163":java.lang.Object*,"\\230\\181\\153\\230\\177\\159":java.lang.Object*) interface virtual [line 47];
+*&amp;$irvar12:java.lang.Object*=n$40 [line 47];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE48">48</td><td class="line">		provinceMap.put(&quot;625&quot;, &quot;江西&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 exn:3 Instructions
+n$41=*&amp;provinceMap:java.util.HashMap* [line 48];
+_=*n$41:java.util.HashMap*(root java.util.HashMap) [line 48];
+n$43=_fun_Object HashMap.put(Object,Object)(n$41:java.util.HashMap*,"625":java.lang.Object*,"\\230\\177\\159\\232\\165\\191":java.lang.Object*) interface virtual [line 48];
+*&amp;$irvar13:java.lang.Object*=n$43 [line 48];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE49">49</td><td class="line">		provinceMap.put(&quot;626&quot;, &quot;福建&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:20 exn:3 Instructions
+n$44=*&amp;provinceMap:java.util.HashMap* [line 49];
+_=*n$44:java.util.HashMap*(root java.util.HashMap) [line 49];
+n$46=_fun_Object HashMap.put(Object,Object)(n$44:java.util.HashMap*,"626":java.lang.Object*,"\\231\\166\\143\\229\\187\\186":java.lang.Object*) interface virtual [line 49];
+*&amp;$irvar14:java.lang.Object*=n$46 [line 49];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE50">50</td><td class="line">		provinceMap.put(&quot;166&quot;, &quot;湖北&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:3 Instructions
+n$47=*&amp;provinceMap:java.util.HashMap* [line 50];
+_=*n$47:java.util.HashMap*(root java.util.HashMap) [line 50];
+n$49=_fun_Object HashMap.put(Object,Object)(n$47:java.util.HashMap*,"166":java.lang.Object*,"\\230\\185\\150\\229\\140\\151":java.lang.Object*) interface virtual [line 50];
+*&amp;$irvar15:java.lang.Object*=n$49 [line 50];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE51">51</td><td class="line">		provinceMap.put(&quot;627&quot;, &quot;湖南&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:22 exn:3 Instructions
+n$50=*&amp;provinceMap:java.util.HashMap* [line 51];
+_=*n$50:java.util.HashMap*(root java.util.HashMap) [line 51];
+n$52=_fun_Object HashMap.put(Object,Object)(n$50:java.util.HashMap*,"627":java.lang.Object*,"\\230\\185\\150\\229\\141\\151":java.lang.Object*) interface virtual [line 51];
+*&amp;$irvar16:java.lang.Object*=n$52 [line 51];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE52">52</td><td class="line">		provinceMap.put(&quot;628&quot;, &quot;河南&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:3 Instructions
+n$53=*&amp;provinceMap:java.util.HashMap* [line 52];
+_=*n$53:java.util.HashMap*(root java.util.HashMap) [line 52];
+n$55=_fun_Object HashMap.put(Object,Object)(n$53:java.util.HashMap*,"628":java.lang.Object*,"\\230\\178\\179\\229\\141\\151":java.lang.Object*) interface virtual [line 52];
+*&amp;$irvar17:java.lang.Object*=n$55 [line 52];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE53">53</td><td class="line">		provinceMap.put(&quot;170&quot;, &quot;广东&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:3 Instructions
+n$56=*&amp;provinceMap:java.util.HashMap* [line 53];
+_=*n$56:java.util.HashMap*(root java.util.HashMap) [line 53];
+n$58=_fun_Object HashMap.put(Object,Object)(n$56:java.util.HashMap*,"170":java.lang.Object*,"\\229\\185\\191\\228\\184\\156":java.lang.Object*) interface virtual [line 53];
+*&amp;$irvar18:java.lang.Object*=n$58 [line 53];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE54">54</td><td class="line">		provinceMap.put(&quot;632&quot;, &quot;广西&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:25 exn:3 Instructions
+n$59=*&amp;provinceMap:java.util.HashMap* [line 54];
+_=*n$59:java.util.HashMap*(root java.util.HashMap) [line 54];
+n$61=_fun_Object HashMap.put(Object,Object)(n$59:java.util.HashMap*,"632":java.lang.Object*,"\\229\\185\\191\\232\\165\\191":java.lang.Object*) interface virtual [line 54];
+*&amp;$irvar19:java.lang.Object*=n$61 [line 54];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE55">55</td><td class="line">		provinceMap.put(&quot;633&quot;, &quot;海南&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:26 exn:3 Instructions
+n$62=*&amp;provinceMap:java.util.HashMap* [line 55];
+_=*n$62:java.util.HashMap*(root java.util.HashMap) [line 55];
+n$64=_fun_Object HashMap.put(Object,Object)(n$62:java.util.HashMap*,"633":java.lang.Object*,"\\230\\181\\183\\229\\141\\151":java.lang.Object*) interface virtual [line 55];
+*&amp;$irvar20:java.lang.Object*=n$64 [line 55];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE56">56</td><td class="line">		provinceMap.put(&quot;342&quot;, &quot;重庆&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:25 succs:27 exn:3 Instructions
+n$65=*&amp;provinceMap:java.util.HashMap* [line 56];
+_=*n$65:java.util.HashMap*(root java.util.HashMap) [line 56];
+n$67=_fun_Object HashMap.put(Object,Object)(n$65:java.util.HashMap*,"342":java.lang.Object*,"\\233\\135\\141\\229\\186\\134":java.lang.Object*) interface virtual [line 56];
+*&amp;$irvar21:java.lang.Object*=n$67 [line 56];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE57">57</td><td class="line">		provinceMap.put(&quot;174&quot;, &quot;四川&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:26 succs:28 exn:3 Instructions
+n$68=*&amp;provinceMap:java.util.HashMap* [line 57];
+_=*n$68:java.util.HashMap*(root java.util.HashMap) [line 57];
+n$70=_fun_Object HashMap.put(Object,Object)(n$68:java.util.HashMap*,"174":java.lang.Object*,"\\229\\155\\155\\229\\183\\157":java.lang.Object*) interface virtual [line 57];
+*&amp;$irvar22:java.lang.Object*=n$70 [line 57];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE58">58</td><td class="line">		provinceMap.put(&quot;176&quot;, &quot;贵州&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:27 succs:29 exn:3 Instructions
+n$71=*&amp;provinceMap:java.util.HashMap* [line 58];
+_=*n$71:java.util.HashMap*(root java.util.HashMap) [line 58];
+n$73=_fun_Object HashMap.put(Object,Object)(n$71:java.util.HashMap*,"176":java.lang.Object*,"\\232\\180\\181\\229\\183\\158":java.lang.Object*) interface virtual [line 58];
+*&amp;$irvar23:java.lang.Object*=n$73 [line 58];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE59">59</td><td class="line">		provinceMap.put(&quot;629&quot;, &quot;云南&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:28 succs:30 exn:3 Instructions
+n$74=*&amp;provinceMap:java.util.HashMap* [line 59];
+_=*n$74:java.util.HashMap*(root java.util.HashMap) [line 59];
+n$76=_fun_Object HashMap.put(Object,Object)(n$74:java.util.HashMap*,"629":java.lang.Object*,"\\228\\186\\145\\229\\141\\151":java.lang.Object*) interface virtual [line 59];
+*&amp;$irvar24:java.lang.Object*=n$76 [line 59];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE60">60</td><td class="line">		provinceMap.put(&quot;630&quot;, &quot;西藏&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:29 succs:31 exn:3 Instructions
+n$77=*&amp;provinceMap:java.util.HashMap* [line 60];
+_=*n$77:java.util.HashMap*(root java.util.HashMap) [line 60];
+n$79=_fun_Object HashMap.put(Object,Object)(n$77:java.util.HashMap*,"630":java.lang.Object*,"\\232\\165\\191\\232\\151\\143":java.lang.Object*) interface virtual [line 60];
+*&amp;$irvar25:java.lang.Object*=n$79 [line 60];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE61">61</td><td class="line">		provinceMap.put(&quot;179&quot;, &quot;陕西&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:30 succs:32 exn:3 Instructions
+n$80=*&amp;provinceMap:java.util.HashMap* [line 61];
+_=*n$80:java.util.HashMap*(root java.util.HashMap) [line 61];
+n$82=_fun_Object HashMap.put(Object,Object)(n$80:java.util.HashMap*,"179":java.lang.Object*,"\\233\\153\\149\\232\\165\\191":java.lang.Object*) interface virtual [line 61];
+*&amp;$irvar26:java.lang.Object*=n$82 [line 61];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE62">62</td><td class="line">		provinceMap.put(&quot;631&quot;, &quot;甘肃&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node32.html"><span class='visited with_tooltip'>I_32<span class='tooltip'>node32 preds:31 succs:33 exn:3 Instructions
+n$83=*&amp;provinceMap:java.util.HashMap* [line 62];
+_=*n$83:java.util.HashMap*(root java.util.HashMap) [line 62];
+n$85=_fun_Object HashMap.put(Object,Object)(n$83:java.util.HashMap*,"631":java.lang.Object*,"\\231\\148\\152\\232\\130\\131":java.lang.Object*) interface virtual [line 62];
+*&amp;$irvar27:java.lang.Object*=n$85 [line 62];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE63">63</td><td class="line">		provinceMap.put(&quot;181&quot;, &quot;宁夏&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds:32 succs:34 exn:3 Instructions
+n$86=*&amp;provinceMap:java.util.HashMap* [line 63];
+_=*n$86:java.util.HashMap*(root java.util.HashMap) [line 63];
+n$88=_fun_Object HashMap.put(Object,Object)(n$86:java.util.HashMap*,"181":java.lang.Object*,"\\229\\174\\129\\229\\164\\143":java.lang.Object*) interface virtual [line 63];
+*&amp;$irvar28:java.lang.Object*=n$88 [line 63];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE64">64</td><td class="line">		provinceMap.put(&quot;634&quot;, &quot;青海&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds:33 succs:35 exn:3 Instructions
+n$89=*&amp;provinceMap:java.util.HashMap* [line 64];
+_=*n$89:java.util.HashMap*(root java.util.HashMap) [line 64];
+n$91=_fun_Object HashMap.put(Object,Object)(n$89:java.util.HashMap*,"634":java.lang.Object*,"\\233\\157\\146\\230\\181\\183":java.lang.Object*) interface virtual [line 64];
+*&amp;$irvar29:java.lang.Object*=n$91 [line 64];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE65">65</td><td class="line">		provinceMap.put(&quot;635&quot;, &quot;新疆&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node35.html"><span class='visited with_tooltip'>I_35<span class='tooltip'>node35 preds:34 succs:36 exn:3 Instructions
+n$92=*&amp;provinceMap:java.util.HashMap* [line 65];
+_=*n$92:java.util.HashMap*(root java.util.HashMap) [line 65];
+n$94=_fun_Object HashMap.put(Object,Object)(n$92:java.util.HashMap*,"635":java.lang.Object*,"\\230\\150\\176\\231\\150\\134":java.lang.Object*) interface virtual [line 65];
+*&amp;$irvar30:java.lang.Object*=n$94 [line 65];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE66">66</td><td class="line">		provinceMap.put(&quot;184&quot;, &quot;香港&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node36.html"><span class='visited with_tooltip'>I_36<span class='tooltip'>node36 preds:35 succs:37 exn:3 Instructions
+n$95=*&amp;provinceMap:java.util.HashMap* [line 66];
+_=*n$95:java.util.HashMap*(root java.util.HashMap) [line 66];
+n$97=_fun_Object HashMap.put(Object,Object)(n$95:java.util.HashMap*,"184":java.lang.Object*,"\\233\\166\\153\\230\\184\\175":java.lang.Object*) interface virtual [line 66];
+*&amp;$irvar31:java.lang.Object*=n$97 [line 66];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE67">67</td><td class="line">		provinceMap.put(&quot;636&quot;, &quot;澳门&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node37.html"><span class='visited with_tooltip'>I_37<span class='tooltip'>node37 preds:36 succs:38 exn:3 Instructions
+n$98=*&amp;provinceMap:java.util.HashMap* [line 67];
+_=*n$98:java.util.HashMap*(root java.util.HashMap) [line 67];
+n$100=_fun_Object HashMap.put(Object,Object)(n$98:java.util.HashMap*,"636":java.lang.Object*,"\\230\\190\\179\\233\\151\\168":java.lang.Object*) interface virtual [line 67];
+*&amp;$irvar32:java.lang.Object*=n$100 [line 67];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE68">68</td><td class="line">		provinceMap.put(&quot;637&quot;, &quot;台湾&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node38.html"><span class='visited with_tooltip'>I_38<span class='tooltip'>node38 preds:37 succs:39 exn:3 Instructions
+n$101=*&amp;provinceMap:java.util.HashMap* [line 68];
+_=*n$101:java.util.HashMap*(root java.util.HashMap) [line 68];
+n$103=_fun_Object HashMap.put(Object,Object)(n$101:java.util.HashMap*,"637":java.lang.Object*,"\\229\\143\\176\\230\\185\\190":java.lang.Object*) interface virtual [line 68];
+*&amp;$irvar33:java.lang.Object*=n$103 [line 68];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE69">69</td><td class="line">		 </td></tr>
+<tr><td class="num" id="LINE70">70</td><td class="line">		String url = &quot;&quot;; <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node39.html"><span class='visited with_tooltip'>I_39<span class='tooltip'>node39 preds:38 succs:40 exn:3 Instructions
+*&amp;url:java.lang.Object*="" [line 70];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE71">71</td><td class="line">		String response = &quot;&quot;; <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node40.html"><span class='visited with_tooltip'>I_40<span class='tooltip'>node40 preds:39 succs:41 exn:3 Instructions
+*&amp;response:java.lang.Object*="" [line 71];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE72">72</td><td class="line">		List&lt;String&gt; result = new ArrayList&lt;String&gt;(); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node41.html"><span class='visited with_tooltip'>I_41<span class='tooltip'>node41 preds:40 succs:42 exn:3 Instructions
+n$104=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 72];
+n$105=_fun_ArrayList.&lt;init&gt;()(n$104:java.util.ArrayList*) [line 72];
+*&amp;result:java.util.ArrayList*=n$104 [line 72];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE73">73</td><td class="line">		for(String xx : provinceMap.keySet()){ <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node42.html"><span class='visited with_tooltip'>I_42<span class='tooltip'>node42 preds:41 succs:43 exn:3 Instructions
+n$106=*&amp;provinceMap:java.util.HashMap* [line 73];
+_=*n$106:java.util.HashMap*(root java.util.HashMap) [line 73];
+n$108=_fun_Set HashMap.keySet()(n$106:java.util.HashMap*) interface virtual [line 73];
+*&amp;$irvar34:java.util.Set*=n$108 [line 73];
+</span></span></a> <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node43.html"><span class='visited with_tooltip'>I_43<span class='tooltip'>node43 preds:42 succs:44 exn:3 Instructions
+n$109=*&amp;$irvar34:java.util.Set* [line 73];
+_=*n$109:java.util.Set*(root java.util.Set) [line 73];
+n$111=_fun_Iterator Set.iterator()(n$109:java.util.Set*) interface virtual [line 73];
+*&amp;$bcvar4:java.util.Iterator*=n$111 [line 73];
+</span></span></a> <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node44.html"><span class='visited with_tooltip'>I_44<span class='tooltip'>node44 preds:43 succs:45 46 exn:3 Instructions
+n$112=*&amp;$bcvar4:java.util.Iterator* [line 73];
+_=*n$112:java.util.Iterator*(root java.util.Iterator) [line 73];
+n$114=_fun_boolean Iterator.hasNext()(n$112:java.util.Iterator*) interface virtual [line 73];
+*&amp;$irvar35:_Bool=n$114 [line 73];
+</span></span></a> <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node45.html"><span class='visited with_tooltip'>C_45<span class='tooltip'>node45 preds:44 succs:47 exn:3 Conditional method_body
+n$115=*&amp;$irvar35:_Bool [line 73];
+PRUNE(!(n$115 == 0), true); [line 73];
+</span></span></a> <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node47.html"><span class='visited with_tooltip'>I_47<span class='tooltip'>node47 preds:45 succs:48 exn:3 Instructions
+n$116=*&amp;$bcvar4:java.util.Iterator* [line 73];
+_=*n$116:java.util.Iterator*(root java.util.Iterator) [line 73];
+n$118=_fun_Object Iterator.next()(n$116:java.util.Iterator*) interface virtual [line 73];
+*&amp;$irvar36:java.lang.Object*=n$118 [line 73];
+</span></span></a> <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node48.html"><span class='visited with_tooltip'>I_48<span class='tooltip'>node48 preds:47 succs:49 exn:3 Instructions
+n$119=*&amp;$irvar36:java.lang.Object* [line 73];
+n$120=_fun___cast(n$119:java.lang.Object*,sizeof(t=java.lang.String;sub_t=( sub )(cast)):void) [line 73];
+*&amp;xx:java.lang.String*=n$120 [line 73];
+</span></span></a> <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node46.html"><span class='visited with_tooltip'>C_46<span class='tooltip'>node46 preds:44 succs:64 exn:3 Conditional method_body
+n$115=*&amp;$irvar35:_Bool [line 73];
+PRUNE((n$115 == 0), false); [line 73];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE74">74</td><td class="line">			url = &quot;http://ziyuan.eol.cn/list.php?listid=&quot;+xx; <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node49.html"><span class='visited with_tooltip'>I_49<span class='tooltip'>node49 preds:48 succs:50 exn:3 Instructions
+n$121=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 74];
+n$122=_fun_StringBuilder.&lt;init&gt;()(n$121:java.lang.StringBuilder*) [line 74];
+*&amp;$irvar37:java.lang.StringBuilder*=n$121 [line 74];
+</span></span></a> <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node50.html"><span class='visited with_tooltip'>I_50<span class='tooltip'>node50 preds:49 succs:51 exn:3 Instructions
+n$123=*&amp;$irvar37:java.lang.StringBuilder* [line 74];
+_=*n$123:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 74];
+n$125=_fun_StringBuilder StringBuilder.append(String)(n$123:java.lang.StringBuilder*,"http://ziyuan.eol.cn/list.php?listid=":java.lang.Object*) virtual [line 74];
+*&amp;$irvar38:java.lang.StringBuilder*=n$125 [line 74];
+</span></span></a> <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node51.html"><span class='visited with_tooltip'>I_51<span class='tooltip'>node51 preds:50 succs:52 exn:3 Instructions
+n$126=*&amp;$irvar38:java.lang.StringBuilder* [line 74];
+_=*n$126:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 74];
+n$128=*&amp;xx:java.lang.String* [line 74];
+n$129=_fun_StringBuilder StringBuilder.append(String)(n$126:java.lang.StringBuilder*,n$128:java.lang.String*) virtual [line 74];
+*&amp;$irvar39:java.lang.StringBuilder*=n$129 [line 74];
+</span></span></a> <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node52.html"><span class='visited with_tooltip'>I_52<span class='tooltip'>node52 preds:51 succs:53 exn:3 Instructions
+n$130=*&amp;$irvar39:java.lang.StringBuilder* [line 74];
+_=*n$130:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 74];
+n$132=_fun_String StringBuilder.toString()(n$130:java.lang.StringBuilder*) virtual [line 74];
+*&amp;url:java.lang.String*=n$132 [line 74];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE75">75</td><td class="line">			 </td></tr>
+<tr><td class="num" id="LINE76">76</td><td class="line">			try { </td></tr>
+<tr><td class="num" id="LINE77">77</td><td class="line">				response = new String(CrawlerUtil.httpRequest(url).getBytes(&quot;ISO-8859-1&quot;),&quot;utf-8&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node53.html"><span class='visited with_tooltip'>I_53<span class='tooltip'>node53 preds:52 succs:54 exn:67 Instructions
+n$133=*&amp;url:java.lang.String* [line 77];
+n$134=_fun_String CrawlerUtil.httpRequest(String)(n$133:java.lang.String*) [line 77];
+*&amp;$irvar40:java.lang.String*=n$134 [line 77];
+</span></span></a> <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node54.html"><span class='visited with_tooltip'>I_54<span class='tooltip'>node54 preds:53 succs:55 exn:67 Instructions
+n$135=*&amp;$irvar40:java.lang.String* [line 77];
+_=*n$135:java.lang.String*(root java.lang.String) [line 77];
+n$137=_fun_byte[] String.getBytes(String)(n$135:java.lang.String*,"ISO-8859-1":java.lang.Object*) virtual [line 77];
+*&amp;$irvar41:signed char[_*_](*)=n$137 [line 77];
+</span></span></a> <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node55.html"><span class='visited with_tooltip'>I_55<span class='tooltip'>node55 preds:54 succs:58 exn:67 Instructions
+n$138=_fun___new(sizeof(t=java.lang.String):java.lang.String*) [line 77];
+n$139=*&amp;$irvar41:signed char[_*_](*) [line 77];
+n$140=_fun_String.&lt;init&gt;(byte[],String)(n$138:java.lang.String*,n$139:signed char[_*_](*),"utf-8":java.lang.Object*) [line 77];
+*&amp;response:java.lang.String*=n$138 [line 77];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE78">78</td><td class="line">			} catch (Exception e) { <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node56.html"><span class='visited with_tooltip'>I_56<span class='tooltip'>node56 preds:65 succs:57 exn:3 Instructions
+n$141=*&amp;CatchVar474:java.lang.Object* [line 78];
+*&amp;e:java.lang.Object*=n$141 [line 78];
+</span></span></a> <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node65.html"><span class='visited with_tooltip'>C_65<span class='tooltip'>node65 preds:67 succs:56 exn:3 Conditional exception handler
+n$163=_fun___instanceof(n$162:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 78];
+PRUNE(n$163, true); [line 78];
+*&amp;CatchVar474:void=n$162 [line 78];
+</span></span></a> <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node66.html"><span class='visited with_tooltip'>C_66<span class='tooltip'>node66 preds:67 succs:3 exn:3 Conditional exception handler
+n$163=_fun___instanceof(n$162:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 78];
+PRUNE(!n$163, false); [line 78];
+*&amp;return:void=EXN n$162 [line 78];
+</span></span></a> <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node67.html"><span class='visited with_tooltip'>I_67<span class='tooltip'>node67 preds: succs:65 66 exn:3 Instructions
+n$161=*&amp;return:void [line 78];
+*&amp;return:void=null [line 78];
+n$162=_fun___unwrap_exception(n$161:void) [line 78];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE79">79</td><td class="line">				// TODO Auto-generated catch block </td></tr>
+<tr><td class="num" id="LINE80">80</td><td class="line">				e.printStackTrace(); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node57.html"><span class='visited with_tooltip'>I_57<span class='tooltip'>node57 preds:56 succs:58 exn:3 Instructions
+n$142=*&amp;e:java.lang.Object* [line 80];
+_=*n$142:java.lang.Object*(root java.lang.Object) [line 80];
+n$144=_fun_void Throwable.printStackTrace()(n$142:java.lang.Object*) virtual [line 80];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE81">81</td><td class="line">			} </td></tr>
+<tr><td class="num" id="LINE82">82</td><td class="line">			Document doc = Jsoup.parse(response); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node58.html"><span class='visited with_tooltip'>I_58<span class='tooltip'>node58 preds:57 55 succs:59 exn:3 Instructions
+n$145=*&amp;response:java.lang.String* [line 82];
+n$146=_fun_Document Jsoup.parse(String)(n$145:java.lang.String*) [line 82];
+*&amp;doc:org.jsoup.nodes.Document*=n$146 [line 82];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE83">83</td><td class="line">			Elements eles = doc.getElementsByTag(&quot;table&quot;); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node59.html"><span class='visited with_tooltip'>I_59<span class='tooltip'>node59 preds:58 succs:60 exn:3 Instructions
+n$147=*&amp;doc:org.jsoup.nodes.Document* [line 83];
+_=*n$147:org.jsoup.nodes.Document*(root org.jsoup.nodes.Document) [line 83];
+n$149=_fun_Elements Element.getElementsByTag(String)(n$147:org.jsoup.nodes.Document*,"table":java.lang.Object*) virtual [line 83];
+*&amp;eles:org.jsoup.select.Elements*=n$149 [line 83];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE84">84</td><td class="line">			 </td></tr>
+<tr><td class="num" id="LINE85">85</td><td class="line">			Element ele = eles.get(7); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node60.html"><span class='visited with_tooltip'>I_60<span class='tooltip'>node60 preds:59 succs:61 exn:3 Instructions
+n$150=*&amp;eles:org.jsoup.select.Elements* [line 85];
+_=*n$150:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 85];
+n$152=_fun_Element Elements.get(int)(n$150:org.jsoup.select.Elements*,7:int) virtual [line 85];
+*&amp;ele:org.jsoup.nodes.Element*=n$152 [line 85];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE86">86</td><td class="line">			 </td></tr>
+<tr><td class="num" id="LINE87">87</td><td class="line">			System.out.println(ele.text()); <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node61.html"><span class='visited with_tooltip'>I_61<span class='tooltip'>node61 preds:60 succs:62 exn:3 Instructions
+n$153=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 87];
+*&amp;$irvar43:java.io.PrintStream*=n$153 [line 87];
+</span></span></a> <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node62.html"><span class='visited with_tooltip'>I_62<span class='tooltip'>node62 preds:61 succs:63 exn:3 Instructions
+n$154=*&amp;ele:org.jsoup.nodes.Element* [line 87];
+_=*n$154:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 87];
+n$156=_fun_String Element.text()(n$154:org.jsoup.nodes.Element*) virtual [line 87];
+*&amp;$irvar42:java.lang.String*=n$156 [line 87];
+</span></span></a> <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node63.html"><span class='visited with_tooltip'>I_63<span class='tooltip'>node63 preds:62 succs:64 exn:3 Instructions
+n$157=*&amp;$irvar43:java.io.PrintStream* [line 87];
+_=*n$157:java.io.PrintStream*(root java.io.PrintStream) [line 87];
+n$159=*&amp;$irvar42:java.lang.String* [line 87];
+n$160=_fun_void PrintStream.println(String)(n$157:java.io.PrintStream*,n$159:java.lang.String*) virtual [line 87];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE88">88</td><td class="line">			 </td></tr>
+<tr><td class="num" id="LINE89">89</td><td class="line">			break; </td></tr>
+<tr><td class="num" id="LINE90">90</td><td class="line">		} </td></tr>
+<tr><td class="num" id="LINE91">91</td><td class="line">	} <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node64.html"><span class='visited with_tooltip'>I_64<span class='tooltip'>node64 preds:63 46 succs:2 exn:3 Instructions
+</span></span></a> <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:64 3 succs: exn: Exit
+</span></span></a> <a href="./Chi.java.84682c7b6a5e16f16650f30ef7bf7c40/nodes/com.dulishuo.school.Chi.test%28%29%3Avoid.30fd01a43b178efeb2701db017b47b7b_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:66 succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE92">92</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE93">93</td><td class="line">} </td></tr>
+</table>
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+</body>
+</html>

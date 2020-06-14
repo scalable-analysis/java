@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.usnews.InstituteNewField.<init>().d1a3d29239de9ead338ed09d6db1bbdc_1" [label="1: Start InstituteNewField.<init>()\nFormals:  this:com.dulishuo.usnews.InstituteNewField*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.usnews.InstituteNewField.<init>().d1a3d29239de9ead338ed09d6db1bbdc_1" -> "com.dulishuo.usnews.InstituteNewField.<init>().d1a3d29239de9ead338ed09d6db1bbdc_4" ;
+"com.dulishuo.usnews.InstituteNewField.<init>().d1a3d29239de9ead338ed09d6db1bbdc_2" [label="2: Exit InstituteNewField.<init>() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.usnews.InstituteNewField.<init>().d1a3d29239de9ead338ed09d6db1bbdc_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 10]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InstituteNewField.<init>().d1a3d29239de9ead338ed09d6db1bbdc_3" -> "com.dulishuo.usnews.InstituteNewField.<init>().d1a3d29239de9ead338ed09d6db1bbdc_2" ;
+"com.dulishuo.usnews.InstituteNewField.<init>().d1a3d29239de9ead338ed09d6db1bbdc_4" [label="4:  Call Object.<init>() \n   n$0=*&this:com.dulishuo.usnews.InstituteNewField* [line 10]\n  n$1=_fun_Object.<init>()(n$0:com.dulishuo.usnews.InstituteNewField*) [line 10]\n  NULLIFY(&this); [line 10]\n  EXIT_SCOPE(n$0,n$1,this); [line 10]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InstituteNewField.<init>().d1a3d29239de9ead338ed09d6db1bbdc_4" -> "com.dulishuo.usnews.InstituteNewField.<init>().d1a3d29239de9ead338ed09d6db1bbdc_5" ;
+	 "com.dulishuo.usnews.InstituteNewField.<init>().d1a3d29239de9ead338ed09d6db1bbdc_4" -> "com.dulishuo.usnews.InstituteNewField.<init>().d1a3d29239de9ead338ed09d6db1bbdc_3" [color="red" ];
+"com.dulishuo.usnews.InstituteNewField.<init>().d1a3d29239de9ead338ed09d6db1bbdc_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 10]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InstituteNewField.<init>().d1a3d29239de9ead338ed09d6db1bbdc_5" -> "com.dulishuo.usnews.InstituteNewField.<init>().d1a3d29239de9ead338ed09d6db1bbdc_2" ;
+	 "com.dulishuo.usnews.InstituteNewField.<init>().d1a3d29239de9ead338ed09d6db1bbdc_5" -> "com.dulishuo.usnews.InstituteNewField.<init>().d1a3d29239de9ead338ed09d6db1bbdc_3" [color="red" ];
+}

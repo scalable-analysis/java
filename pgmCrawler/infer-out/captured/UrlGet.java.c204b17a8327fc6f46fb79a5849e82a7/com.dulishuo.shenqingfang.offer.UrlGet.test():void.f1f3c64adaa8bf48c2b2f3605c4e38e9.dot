@@ -1,0 +1,114 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_1" [label="1: Start void UrlGet.test()\nFormals: \nLocals:  $irvar10:void $irvar9:void $irvar8:void $irvar7:void $irvar6:void $irvar5:void $irvar4:void $irvar3:void $irvar2:void $irvar1:void $irvar0:void $bcvar1:void lsit:java.util.List* json:net.sf.json.JSONObject* id:java.lang.String* \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_1" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_4" ;
+"com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_2" [label="2: Exit void UrlGet.test() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_3" [label="3:  exceptions sink \n   NULLIFY(&$irvar3); [line 343]\n  NULLIFY(&$irvar9); [line 343]\n  NULLIFY(&$irvar5); [line 343]\n  NULLIFY(&json); [line 343]\n  NULLIFY(&$irvar4); [line 343]\n  NULLIFY(&$irvar7); [line 343]\n  NULLIFY(&$irvar6); [line 343]\n  NULLIFY(&$irvar0); [line 343]\n  NULLIFY(&$irvar10); [line 343]\n  NULLIFY(&$irvar8); [line 343]\n  NULLIFY(&$irvar1); [line 343]\n  NULLIFY(&$irvar2); [line 343]\n  NULLIFY(&id); [line 343]\n  NULLIFY(&$bcvar1); [line 343]\n  NULLIFY(&lsit); [line 343]\n  EXIT_SCOPE($irvar3,$irvar9,$irvar5,json,$irvar4,$irvar7,$irvar6,$irvar0,$irvar10,$irvar8,$irvar1,$irvar2,id,$bcvar1,lsit); [line 343]\n  APPLY_ABSTRACTION; [line 343]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_3" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_2" ;
+"com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_4" [label="4:  Call List FileUtil.FileToJsonList(String,String) \n   n$0=_fun_List FileUtil.FileToJsonList(String,String)(\"H:/\\\\231\\\\139\\\\172\\\\231\\\\171\\\\139\\\\232\\\\175\\\\180/backup/facultytype1022.json\":java.lang.Object*,\"utf-8\":java.lang.Object*) [line 335]\n  *&lsit:java.util.List*=n$0 [line 335]\n  EXIT_SCOPE(n$0); [line 335]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_4" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_5" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_4" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_5" [label="5:  Call Iterator List.iterator() \n   n$1=*&lsit:java.util.List* [line 338]\n  _=*n$1:java.util.List*(root java.util.List) [line 338]\n  n$3=_fun_Iterator List.iterator()(n$1:java.util.List*) interface virtual [line 338]\n  *&$bcvar1:java.util.Iterator*=n$3 [line 338]\n  NULLIFY(&lsit); [line 338]\n  EXIT_SCOPE(_,n$1,n$3,lsit); [line 338]\n  APPLY_ABSTRACTION; [line 338]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_5" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_6" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_5" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_6" [label="6:  Call boolean Iterator.hasNext() \n   n$4=*&$bcvar1:java.util.Iterator* [line 338]\n  _=*n$4:java.util.Iterator*(root java.util.Iterator) [line 338]\n  n$6=_fun_boolean Iterator.hasNext()(n$4:java.util.Iterator*) interface virtual [line 338]\n  *&$irvar0:_Bool=n$6 [line 338]\n  EXIT_SCOPE(_,n$4,n$6); [line 338]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_6" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_9" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_6" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_7" [label="7: Prune (true branch, if) \n   n$7=*&$irvar0:_Bool [line 338]\n  PRUNE(!(n$7 == 0), true); [line 338]\n  NULLIFY(&$irvar0); [line 338]\n  EXIT_SCOPE(n$7,$irvar0); [line 338]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_7" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_10" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_7" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_8" [label="8: Prune (false branch, if) \n   n$7=*&$irvar0:_Bool [line 338]\n  PRUNE((n$7 == 0), false); [line 338]\n  NULLIFY(&$irvar0); [line 338]\n  NULLIFY(&$bcvar1); [line 338]\n  EXIT_SCOPE(n$7,$irvar0,$bcvar1); [line 338]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_8" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_23" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_8" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_9" [label="9: + \n  " ]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_9" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_7" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_9" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_8" ;
+"com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_10" [label="10:  Call Object Iterator.next() \n   n$8=*&$bcvar1:java.util.Iterator* [line 338]\n  _=*n$8:java.util.Iterator*(root java.util.Iterator) [line 338]\n  n$10=_fun_Object Iterator.next()(n$8:java.util.Iterator*) interface virtual [line 338]\n  *&$irvar1:java.lang.Object*=n$10 [line 338]\n  EXIT_SCOPE(_,n$8,n$10); [line 338]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_10" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_11" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_10" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_11" [label="11:  method_body \n   n$11=*&$irvar1:java.lang.Object* [line 338]\n  n$12=_fun___cast(n$11:java.lang.Object*,sizeof(t=net.sf.json.JSONObject;sub_t=( sub )(cast)):void) [line 338]\n  *&json:net.sf.json.JSONObject*=n$12 [line 338]\n  NULLIFY(&$irvar1); [line 338]\n  EXIT_SCOPE(n$11,n$12,$irvar1); [line 338]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_11" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_12" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_11" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_12" [label="12:  Call String JSONObject.getString(String) \n   n$13=*&json:net.sf.json.JSONObject* [line 339]\n  _=*n$13:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 339]\n  n$15=_fun_String JSONObject.getString(String)(n$13:net.sf.json.JSONObject*,\"id\":java.lang.Object*) virtual [line 339]\n  *&id:java.lang.String*=n$15 [line 339]\n  EXIT_SCOPE(_,n$13,n$15); [line 339]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_12" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_13" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_12" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_13" [label="13:  method_body \n   n$16=*&#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 340]\n  *&$irvar2:java.io.PrintStream*=n$16 [line 340]\n  EXIT_SCOPE(n$16); [line 340]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_13" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_14" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_13" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_14" [label="14:  Call StringBuilder.<init>() \n   n$17=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 340]\n  n$18=_fun_StringBuilder.<init>()(n$17:java.lang.StringBuilder*) [line 340]\n  *&$irvar3:java.lang.StringBuilder*=n$17 [line 340]\n  EXIT_SCOPE(n$17,n$18); [line 340]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_14" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_15" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_14" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_15" [label="15:  Call StringBuilder StringBuilder.append(String) \n   n$19=*&$irvar3:java.lang.StringBuilder* [line 340]\n  _=*n$19:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 340]\n  n$21=_fun_StringBuilder StringBuilder.append(String)(n$19:java.lang.StringBuilder*,\"map.put(\\\\\\\"\":java.lang.Object*) virtual [line 340]\n  *&$irvar4:java.lang.StringBuilder*=n$21 [line 340]\n  NULLIFY(&$irvar3); [line 340]\n  EXIT_SCOPE(_,n$19,n$21,$irvar3); [line 340]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_15" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_16" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_15" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_16" [label="16:  Call String JSONObject.getString(String) \n   n$22=*&json:net.sf.json.JSONObject* [line 340]\n  _=*n$22:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 340]\n  n$24=_fun_String JSONObject.getString(String)(n$22:net.sf.json.JSONObject*,\"name_chinese\":java.lang.Object*) virtual [line 340]\n  *&$irvar5:java.lang.String*=n$24 [line 340]\n  NULLIFY(&json); [line 340]\n  EXIT_SCOPE(_,n$22,n$24,json); [line 340]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_16" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_17" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_16" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_17" [label="17:  Call StringBuilder StringBuilder.append(String) \n   n$25=*&$irvar4:java.lang.StringBuilder* [line 340]\n  _=*n$25:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 340]\n  n$27=*&$irvar5:java.lang.String* [line 340]\n  n$28=_fun_StringBuilder StringBuilder.append(String)(n$25:java.lang.StringBuilder*,n$27:java.lang.String*) virtual [line 340]\n  *&$irvar6:java.lang.StringBuilder*=n$28 [line 340]\n  NULLIFY(&$irvar5); [line 340]\n  NULLIFY(&$irvar4); [line 340]\n  EXIT_SCOPE(_,n$25,n$27,n$28,$irvar5,$irvar4); [line 340]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_17" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_18" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_17" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_18" [label="18:  Call StringBuilder StringBuilder.append(String) \n   n$29=*&$irvar6:java.lang.StringBuilder* [line 340]\n  _=*n$29:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 340]\n  n$31=_fun_StringBuilder StringBuilder.append(String)(n$29:java.lang.StringBuilder*,\"\\\\\\\",\":java.lang.Object*) virtual [line 340]\n  *&$irvar7:java.lang.StringBuilder*=n$31 [line 340]\n  NULLIFY(&$irvar6); [line 340]\n  EXIT_SCOPE(_,n$29,n$31,$irvar6); [line 340]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_18" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_19" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_18" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_19" [label="19:  Call StringBuilder StringBuilder.append(String) \n   n$32=*&$irvar7:java.lang.StringBuilder* [line 340]\n  _=*n$32:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 340]\n  n$34=*&id:java.lang.String* [line 340]\n  n$35=_fun_StringBuilder StringBuilder.append(String)(n$32:java.lang.StringBuilder*,n$34:java.lang.String*) virtual [line 340]\n  *&$irvar8:java.lang.StringBuilder*=n$35 [line 340]\n  NULLIFY(&$irvar7); [line 340]\n  NULLIFY(&id); [line 340]\n  EXIT_SCOPE(_,n$32,n$34,n$35,$irvar7,id); [line 340]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_19" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_20" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_19" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_20" [label="20:  Call StringBuilder StringBuilder.append(String) \n   n$36=*&$irvar8:java.lang.StringBuilder* [line 340]\n  _=*n$36:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 340]\n  n$38=_fun_StringBuilder StringBuilder.append(String)(n$36:java.lang.StringBuilder*,\");\":java.lang.Object*) virtual [line 340]\n  *&$irvar9:java.lang.StringBuilder*=n$38 [line 340]\n  NULLIFY(&$irvar8); [line 340]\n  EXIT_SCOPE(_,n$36,n$38,$irvar8); [line 340]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_20" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_21" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_20" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_21" [label="21:  Call String StringBuilder.toString() \n   n$39=*&$irvar9:java.lang.StringBuilder* [line 340]\n  _=*n$39:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 340]\n  n$41=_fun_String StringBuilder.toString()(n$39:java.lang.StringBuilder*) virtual [line 340]\n  *&$irvar10:java.lang.String*=n$41 [line 340]\n  NULLIFY(&$irvar9); [line 340]\n  EXIT_SCOPE(_,n$39,n$41,$irvar9); [line 340]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_21" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_22" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_21" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_22" [label="22:  Call void PrintStream.println(String) \n   n$42=*&$irvar2:java.io.PrintStream* [line 340]\n  _=*n$42:java.io.PrintStream*(root java.io.PrintStream) [line 340]\n  n$44=*&$irvar10:java.lang.String* [line 340]\n  n$45=_fun_void PrintStream.println(String)(n$42:java.io.PrintStream*,n$44:java.lang.String*) virtual [line 340]\n  NULLIFY(&$irvar10); [line 340]\n  NULLIFY(&$irvar2); [line 340]\n  EXIT_SCOPE(_,n$42,n$44,n$45,$irvar10,$irvar2); [line 340]\n  APPLY_ABSTRACTION; [line 340]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_22" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_6" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_22" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_23" [label="23:  method_body \n   APPLY_ABSTRACTION; [line 343]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_23" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_2" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_23" -> "com.dulishuo.shenqingfang.offer.UrlGet.test():void.f1f3c64adaa8bf48c2b2f3605c4e38e9_3" [color="red" ];
+}

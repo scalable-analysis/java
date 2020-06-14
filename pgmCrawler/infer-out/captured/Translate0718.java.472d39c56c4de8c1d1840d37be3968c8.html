@@ -1,0 +1,421 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Translate0718.java.472d39c56c4de8c1d1840d37be3968c8</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>File src/com/dulishuo/test/Translate0718.java </h1></center>
+<table class="code">
+<tr><td class="num" id="LINE1">1</td><td class="line">package com.dulishuo.test; </td></tr>
+<tr><td class="num" id="LINE2">2</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE3">3</td><td class="line">import java.io.BufferedReader; </td></tr>
+<tr><td class="num" id="LINE4">4</td><td class="line">import java.io.BufferedWriter; </td></tr>
+<tr><td class="num" id="LINE5">5</td><td class="line">import java.io.FileInputStream; </td></tr>
+<tr><td class="num" id="LINE6">6</td><td class="line">import java.io.FileNotFoundException; </td></tr>
+<tr><td class="num" id="LINE7">7</td><td class="line">import java.io.FileWriter; </td></tr>
+<tr><td class="num" id="LINE8">8</td><td class="line">import java.io.IOException; </td></tr>
+<tr><td class="num" id="LINE9">9</td><td class="line">import java.io.InputStreamReader; </td></tr>
+<tr><td class="num" id="LINE10">10</td><td class="line">import java.util.HashSet; </td></tr>
+<tr><td class="num" id="LINE11">11</td><td class="line">import java.util.Set; </td></tr>
+<tr><td class="num" id="LINE12">12</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE13">13</td><td class="line">import org.apache.commons.httpclient.HttpClient; </td></tr>
+<tr><td class="num" id="LINE14">14</td><td class="line">import org.apache.commons.httpclient.HttpException; </td></tr>
+<tr><td class="num" id="LINE15">15</td><td class="line">import org.apache.commons.httpclient.methods.PostMethod; </td></tr>
+<tr><td class="num" id="LINE16">16</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE17">17</td><td class="line">import net.sf.json.JSONArray; </td></tr>
+<tr><td class="num" id="LINE18">18</td><td class="line">import net.sf.json.JSONObject; </td></tr>
+<tr><td class="num" id="LINE19">19</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE20">20</td><td class="line">public class Translate0718 { <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.<init>%28%29.0a412a2aaf6060645bdc8bccd11afa3c_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.<init>%28%29.0a412a2aaf6060645bdc8bccd11afa3c_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.dulishuo.test.Translate0718* [line 20];
+n$1=_fun_Object.&lt;init&gt;()(n$0:com.dulishuo.test.Translate0718*) [line 20];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.<init>%28%29.0a412a2aaf6060645bdc8bccd11afa3c_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.<init>%28%29.0a412a2aaf6060645bdc8bccd11afa3c_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.<init>%28%29.0a412a2aaf6060645bdc8bccd11afa3c_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/com.dulishuo.test.Translate0718.<init>%28%29.0a412a2aaf6060645bdc8bccd11afa3c.html">summary for Translate0718.&lt;init&gt;()</a></td></tr>
+<tr><td class="num" id="LINE21">21</td><td class="line">	static int count = 1; <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.<clinit>%28%29%3Avoid.5d599c780faec5b7a472d9d9d26dc686_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.<clinit>%28%29%3Avoid.5d599c780faec5b7a472d9d9d26dc686_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+*&amp;#GB<>$com.dulishuo.test.Translate0718.count:com.dulishuo.test.Translate0718(root com.dulishuo.test.Translate0718)=1 [line 21];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.<clinit>%28%29%3Avoid.5d599c780faec5b7a472d9d9d26dc686_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.<clinit>%28%29%3Avoid.5d599c780faec5b7a472d9d9d26dc686_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.<clinit>%28%29%3Avoid.5d599c780faec5b7a472d9d9d26dc686_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/com.dulishuo.test.Translate0718.<clinit>%28%29%3Avoid.5d599c780faec5b7a472d9d9d26dc686.html">summary for void Translate0718.&lt;clinit&gt;()</a></td></tr>
+<tr><td class="num" id="LINE22">22</td><td class="line">	public static void main(String[] args) throws IOException { <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4.html">summary for void Translate0718.main(String[])</a></td></tr>
+<tr><td class="num" id="LINE23">23</td><td class="line">		// TODO Auto-generated method stub </td></tr>
+<tr><td class="num" id="LINE24">24</td><td class="line">		BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(&quot;C:/Users/强胜/Desktop/result.txt&quot;))); <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun___new(sizeof(t=java.io.FileInputStream):java.io.FileInputStream*) [line 24];
+n$1=_fun_FileInputStream.&lt;init&gt;(String)(n$0:java.io.FileInputStream*,"C:/Users/\\229\\188\\186\\232\\131\\156/Desktop/result.txt":java.lang.Object*) [line 24];
+*&amp;$irvar0:java.io.FileInputStream*=n$0 [line 24];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$2=_fun___new(sizeof(t=java.io.InputStreamReader):java.io.InputStreamReader*) [line 24];
+n$3=*&amp;$irvar0:java.io.FileInputStream* [line 24];
+n$4=_fun_InputStreamReader.&lt;init&gt;(InputStream)(n$2:java.io.InputStreamReader*,n$3:java.io.FileInputStream*) [line 24];
+n$5=_fun___set_file_attribute(n$2:java.io.InputStreamReader*) [line 24];
+*&amp;$irvar1:java.io.InputStreamReader*=n$2 [line 24];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$6=_fun___new(sizeof(t=java.io.BufferedReader):java.io.BufferedReader*) [line 24];
+n$7=*&amp;$irvar1:java.io.InputStreamReader* [line 24];
+n$8=_fun_BufferedReader.&lt;init&gt;(Reader)(n$6:java.io.BufferedReader*,n$7:java.io.InputStreamReader*) [line 24];
+*&amp;br:java.io.BufferedReader*=n$6 [line 24];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE25">25</td><td class="line">		BufferedWriter bw = new BufferedWriter(new FileWriter(&quot;C:/Users/强胜/Desktop/dataCrawler/英国专业/program.txt&quot;)); <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$9=_fun___new(sizeof(t=java.io.FileWriter):java.io.FileWriter*) [line 25];
+n$10=_fun_FileWriter.&lt;init&gt;(String)(n$9:java.io.FileWriter*,"C:/Users/\\229\\188\\186\\232\\131\\156/Desktop/dataCrawler/\\232\\139\\177\\229\\155\\189\\228\\184\\147\\228\\184\\154/program.txt":java.lang.Object*) [line 25];
+n$11=_fun___set_file_attribute(n$9:java.io.FileWriter*) [line 25];
+*&amp;$irvar2:java.io.FileWriter*=n$9 [line 25];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$12=_fun___new(sizeof(t=java.io.BufferedWriter):java.io.BufferedWriter*) [line 25];
+n$13=*&amp;$irvar2:java.io.FileWriter* [line 25];
+n$14=_fun_BufferedWriter.&lt;init&gt;(Writer)(n$12:java.io.BufferedWriter*,n$13:java.io.FileWriter*) [line 25];
+n$15=_fun___set_file_attribute(n$12:java.io.BufferedWriter*) [line 25];
+*&amp;bw:java.io.BufferedWriter*=n$12 [line 25];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE26">26</td><td class="line">		 </td></tr>
+<tr><td class="num" id="LINE27">27</td><td class="line">		 </td></tr>
+<tr><td class="num" id="LINE28">28</td><td class="line">		String each_line = &quot;&quot;; <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+*&amp;each_line:java.lang.Object*="" [line 28];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE29">29</td><td class="line">		while((each_line = br.readLine()) !=null){ <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:31 9 succs:11 exn:3 Instructions
+n$16=*&amp;br:java.io.BufferedReader* [line 29];
+_=*n$16:java.io.BufferedReader*(root java.io.BufferedReader) [line 29];
+n$18=_fun_String BufferedReader.readLine()(n$16:java.io.BufferedReader*) virtual [line 29];
+*&amp;$irvar3:java.lang.String*=n$18 [line 29];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:14 exn:3 Instructions
+n$19=*&amp;$irvar3:java.lang.String* [line 29];
+*&amp;each_line:java.lang.String*=n$19 [line 29];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node14.html"><span class='visited with_tooltip'>J_14<span class='tooltip'>node14 preds:11 succs:12 13 exn: Join
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node12.html"><span class='visited with_tooltip'>C_12<span class='tooltip'>node12 preds:14 succs:15 exn:3 Conditional method_body
+n$20=*&amp;$irvar3:java.lang.String* [line 29];
+PRUNE(!(n$20 == null), true); [line 29];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node13.html"><span class='visited with_tooltip'>C_13<span class='tooltip'>node13 preds:14 succs:32 exn:3 Conditional method_body
+n$20=*&amp;$irvar3:java.lang.String* [line 29];
+PRUNE((n$20 == null), false); [line 29];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE30">30</td><td class="line">			System.out.println(&quot;translate________&quot;+(count++)); <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:12 succs:16 exn:3 Instructions
+n$21=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 30];
+*&amp;$irvar4:java.io.PrintStream*=n$21 [line 30];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:3 Instructions
+n$22=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 30];
+n$23=_fun_StringBuilder.&lt;init&gt;()(n$22:java.lang.StringBuilder*) [line 30];
+*&amp;$irvar5:java.lang.StringBuilder*=n$22 [line 30];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:3 Instructions
+n$24=*&amp;$irvar5:java.lang.StringBuilder* [line 30];
+_=*n$24:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 30];
+n$26=_fun_StringBuilder StringBuilder.append(String)(n$24:java.lang.StringBuilder*,"translate________":java.lang.Object*) virtual [line 30];
+*&amp;$irvar6:java.lang.StringBuilder*=n$26 [line 30];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 exn:3 Instructions
+n$27=*&amp;#GB<>$com.dulishuo.test.Translate0718.count:int(root com.dulishuo.test.Translate0718) [line 30];
+*&amp;$irvar8:int=(n$27 + 1) [line 30];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:20 exn:3 Instructions
+n$28=*&amp;#GB<>$com.dulishuo.test.Translate0718.count:int(root com.dulishuo.test.Translate0718) [line 30];
+*&amp;$irvar7:int=n$28 [line 30];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:3 Instructions
+n$29=*&amp;$irvar8:int [line 30];
+*&amp;#GB<>$com.dulishuo.test.Translate0718.count:com.dulishuo.test.Translate0718(root com.dulishuo.test.Translate0718)=n$29 [line 30];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:22 exn:3 Instructions
+n$30=*&amp;$irvar6:java.lang.StringBuilder* [line 30];
+_=*n$30:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 30];
+n$32=*&amp;$irvar7:int [line 30];
+n$33=_fun_StringBuilder StringBuilder.append(int)(n$30:java.lang.StringBuilder*,n$32:int) virtual [line 30];
+*&amp;$irvar9:java.lang.StringBuilder*=n$33 [line 30];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:3 Instructions
+n$34=*&amp;$irvar9:java.lang.StringBuilder* [line 30];
+_=*n$34:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 30];
+n$36=_fun_String StringBuilder.toString()(n$34:java.lang.StringBuilder*) virtual [line 30];
+*&amp;$irvar10:java.lang.String*=n$36 [line 30];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:3 Instructions
+n$37=*&amp;$irvar4:java.io.PrintStream* [line 30];
+_=*n$37:java.io.PrintStream*(root java.io.PrintStream) [line 30];
+n$39=*&amp;$irvar10:java.lang.String* [line 30];
+n$40=_fun_void PrintStream.println(String)(n$37:java.io.PrintStream*,n$39:java.lang.String*) virtual [line 30];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE31">31</td><td class="line">			JSONObject json = JSONObject.fromObject(each_line); <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:25 exn:3 Instructions
+n$41=*&amp;each_line:java.lang.String* [line 31];
+n$42=_fun_JSONObject JSONObject.fromObject(Object)(n$41:java.lang.String*) [line 31];
+*&amp;json:net.sf.json.JSONObject*=n$42 [line 31];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE32">32</td><td class="line">			json.put(&quot;tsubject&quot;, process(json.getString(&quot;subject&quot;))); <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:26 exn:3 Instructions
+n$43=*&amp;json:net.sf.json.JSONObject* [line 32];
+_=*n$43:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 32];
+n$45=_fun_String JSONObject.getString(String)(n$43:net.sf.json.JSONObject*,"subject":java.lang.Object*) virtual [line 32];
+*&amp;$irvar11:java.lang.String*=n$45 [line 32];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:25 succs:27 exn:3 Instructions
+n$46=*&amp;$irvar11:java.lang.String* [line 32];
+n$47=_fun_String Translate0718.process(String)(n$46:java.lang.String*) [line 32];
+*&amp;$irvar12:java.lang.String*=n$47 [line 32];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:26 succs:28 exn:3 Instructions
+n$48=*&amp;json:net.sf.json.JSONObject* [line 32];
+_=*n$48:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 32];
+n$50=*&amp;$irvar12:java.lang.String* [line 32];
+n$51=_fun_Object JSONObject.put(Object,Object)(n$48:net.sf.json.JSONObject*,"tsubject":java.lang.Object*,n$50:java.lang.String*) virtual [line 32];
+*&amp;$irvar13:java.lang.Object*=n$51 [line 32];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE33">33</td><td class="line">			bw.write(json.toString()); <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:27 succs:29 exn:3 Instructions
+n$52=*&amp;json:net.sf.json.JSONObject* [line 33];
+_=*n$52:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 33];
+n$54=_fun_String JSONObject.toString()(n$52:net.sf.json.JSONObject*) virtual [line 33];
+*&amp;$irvar14:java.lang.String*=n$54 [line 33];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:28 succs:30 exn:3 Instructions
+n$55=*&amp;bw:java.io.BufferedWriter* [line 33];
+_=*n$55:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 33];
+n$57=*&amp;$irvar14:java.lang.String* [line 33];
+n$58=_fun_void Writer.write(String)(n$55:java.io.BufferedWriter*,n$57:java.lang.String*) virtual [line 33];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE34">34</td><td class="line">			bw.newLine(); <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:29 succs:31 exn:3 Instructions
+n$59=*&amp;bw:java.io.BufferedWriter* [line 34];
+_=*n$59:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 34];
+n$61=_fun_void BufferedWriter.newLine()(n$59:java.io.BufferedWriter*) virtual [line 34];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE35">35</td><td class="line">			bw.flush(); <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:30 succs:10 exn:3 Instructions
+n$62=*&amp;bw:java.io.BufferedWriter* [line 35];
+_=*n$62:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 35];
+n$64=_fun_void BufferedWriter.flush()(n$62:java.io.BufferedWriter*) virtual [line 35];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE36">36</td><td class="line">		} </td></tr>
+<tr><td class="num" id="LINE37">37</td><td class="line">		br.close(); <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node32.html"><span class='visited with_tooltip'>I_32<span class='tooltip'>node32 preds:13 succs:33 exn:3 Instructions
+n$65=*&amp;br:java.io.BufferedReader* [line 37];
+_=*n$65:java.io.BufferedReader*(root java.io.BufferedReader) [line 37];
+n$67=_fun_void BufferedReader.close()(n$65:java.io.BufferedReader*) virtual [line 37];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE38">38</td><td class="line">		bw.close(); <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds:32 succs:34 exn:3 Instructions
+n$68=*&amp;bw:java.io.BufferedWriter* [line 38];
+n$71=_fun___set_mem_attribute(n$68:java.io.BufferedWriter*) [line 38];
+_=*n$68:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 38];
+n$70=_fun_void BufferedWriter.close()(n$68:java.io.BufferedWriter*) virtual [line 38];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE39">39</td><td class="line">		System.out.println(&quot;______________end_______________&quot;); <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds:33 succs:35 exn:3 Instructions
+n$72=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 39];
+_=*n$72:java.io.PrintStream*(root java.io.PrintStream) [line 39];
+n$74=_fun_void PrintStream.println(String)(n$72:java.io.PrintStream*,"______________end_______________":java.lang.Object*) virtual [line 39];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE40">40</td><td class="line">	} <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node35.html"><span class='visited with_tooltip'>I_35<span class='tooltip'>node35 preds:34 succs:2 exn:3 Instructions
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:35 3 succs: exn: Exit
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.main%28java.lang.String%5B%5D%29%3Avoid.4916441a553bffe7d7570a45cb3c18c4_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE41">41</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE42">42</td><td class="line">	private static String process(String str) { <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456.html">summary for String Translate0718.process(String)</a></td></tr>
+<tr><td class="num" id="LINE43">43</td><td class="line">		// TODO Auto-generated method stub </td></tr>
+<tr><td class="num" id="LINE44">44</td><td class="line">		String response = &quot;&quot;; <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+*&amp;response:java.lang.Object*="" [line 44];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE45">45</td><td class="line">		String url =&quot;http://openapi.baidu.com/public/2.0/bmt/translate&quot;; <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+*&amp;url:java.lang.Object*="http://openapi.baidu.com/public/2.0/bmt/translate" [line 45];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE46">46</td><td class="line">		HttpClient client = new HttpClient(); <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$0=_fun___new(sizeof(t=org.apache.commons.httpclient.HttpClient):org.apache.commons.httpclient.HttpClient*) [line 46];
+n$1=_fun_HttpClient.&lt;init&gt;()(n$0:org.apache.commons.httpclient.HttpClient*) [line 46];
+*&amp;client:org.apache.commons.httpclient.HttpClient*=n$0 [line 46];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE47">47</td><td class="line">		PostMethod method = new PostMethod(url); <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$2=_fun___new(sizeof(t=org.apache.commons.httpclient.methods.PostMethod):org.apache.commons.httpclient.methods.PostMethod*) [line 47];
+n$3=*&amp;url:java.lang.Object* [line 47];
+n$4=_fun_PostMethod.&lt;init&gt;(String)(n$2:org.apache.commons.httpclient.methods.PostMethod*,n$3:java.lang.Object*) [line 47];
+*&amp;method:org.apache.commons.httpclient.methods.PostMethod*=n$2 [line 47];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE48">48</td><td class="line">		method.addParameter(&quot;client_id&quot;, &quot;6j46EjCjQKVkMMTAQGsFPWa4&quot;); <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$5=*&amp;method:org.apache.commons.httpclient.methods.PostMethod* [line 48];
+_=*n$5:org.apache.commons.httpclient.methods.PostMethod*(root org.apache.commons.httpclient.methods.PostMethod) [line 48];
+n$7=_fun_void PostMethod.addParameter(String,String)(n$5:org.apache.commons.httpclient.methods.PostMethod*,"client_id":java.lang.Object*,"6j46EjCjQKVkMMTAQGsFPWa4":java.lang.Object*) virtual [line 48];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE49">49</td><td class="line">		method.addParameter(&quot;from&quot;, &quot;auto&quot;); <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$8=*&amp;method:org.apache.commons.httpclient.methods.PostMethod* [line 49];
+_=*n$8:org.apache.commons.httpclient.methods.PostMethod*(root org.apache.commons.httpclient.methods.PostMethod) [line 49];
+n$10=_fun_void PostMethod.addParameter(String,String)(n$8:org.apache.commons.httpclient.methods.PostMethod*,"from":java.lang.Object*,"auto":java.lang.Object*) virtual [line 49];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE50">50</td><td class="line">		method.addParameter(&quot;to&quot;, &quot;zh&quot;); <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+n$11=*&amp;method:org.apache.commons.httpclient.methods.PostMethod* [line 50];
+_=*n$11:org.apache.commons.httpclient.methods.PostMethod*(root org.apache.commons.httpclient.methods.PostMethod) [line 50];
+n$13=_fun_void PostMethod.addParameter(String,String)(n$11:org.apache.commons.httpclient.methods.PostMethod*,"to":java.lang.Object*,"zh":java.lang.Object*) virtual [line 50];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE51">51</td><td class="line">		method.addParameter(&quot;q&quot;, str); <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+n$14=*&amp;method:org.apache.commons.httpclient.methods.PostMethod* [line 51];
+_=*n$14:org.apache.commons.httpclient.methods.PostMethod*(root org.apache.commons.httpclient.methods.PostMethod) [line 51];
+n$16=*&amp;str:java.lang.String* [line 51];
+n$17=_fun_void PostMethod.addParameter(String,String)(n$14:org.apache.commons.httpclient.methods.PostMethod*,"q":java.lang.Object*,n$16:java.lang.String*) virtual [line 51];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE52">52</td><td class="line">		 </td></tr>
+<tr><td class="num" id="LINE53">53</td><td class="line">		try { </td></tr>
+<tr><td class="num" id="LINE54">54</td><td class="line">			client.executeMethod(method); <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:17 exn:37 Instructions
+n$18=*&amp;client:org.apache.commons.httpclient.HttpClient* [line 54];
+_=*n$18:org.apache.commons.httpclient.HttpClient*(root org.apache.commons.httpclient.HttpClient) [line 54];
+n$20=*&amp;method:org.apache.commons.httpclient.methods.PostMethod* [line 54];
+n$21=_fun_int HttpClient.executeMethod(HttpMethod)(n$18:org.apache.commons.httpclient.HttpClient*,n$20:org.apache.commons.httpclient.methods.PostMethod*) virtual [line 54];
+*&amp;$irvar0:int=n$21 [line 54];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE55">55</td><td class="line">		} catch (HttpException e1) { <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:35 succs:14 exn:3 Instructions
+n$22=*&amp;CatchVar69:java.lang.Object* [line 55];
+*&amp;e1:java.lang.Object*=n$22 [line 55];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node35.html"><span class='visited with_tooltip'>C_35<span class='tooltip'>node35 preds:37 succs:13 exn:3 Conditional exception handler
+n$58=_fun___instanceof(n$55:org.apache.commons.httpclient.HttpException*,sizeof(t=org.apache.commons.httpclient.HttpException):void) [line 55];
+PRUNE(n$58, true); [line 55];
+*&amp;CatchVar69:java.lang.String*=n$55 [line 55];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node36.html"><span class='visited with_tooltip'>C_36<span class='tooltip'>node36 preds:37 succs:33 34 exn:3 Conditional exception handler
+n$58=_fun___instanceof(n$55:org.apache.commons.httpclient.HttpException*,sizeof(t=org.apache.commons.httpclient.HttpException):void) [line 55];
+PRUNE(!n$58, false); [line 55];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node37.html"><span class='visited with_tooltip'>I_37<span class='tooltip'>node37 preds: succs:35 36 exn:3 Instructions
+n$54=*&amp;return:java.lang.String* [line 55];
+*&amp;return:java.lang.String*=null [line 55];
+n$55=_fun___unwrap_exception(n$54:java.lang.String*) [line 55];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE56">56</td><td class="line">			// TODO Auto-generated catch block </td></tr>
+<tr><td class="num" id="LINE57">57</td><td class="line">			e1.printStackTrace(); <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:17 exn:3 Instructions
+n$23=*&amp;e1:java.lang.Object* [line 57];
+_=*n$23:java.lang.Object*(root java.lang.Object) [line 57];
+n$25=_fun_void HttpException.printStackTrace()(n$23:java.lang.Object*) virtual [line 57];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE58">58</td><td class="line">		} catch (IOException e1) { <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:33 succs:16 exn:3 Instructions
+n$26=*&amp;CatchVar79:java.lang.Object* [line 58];
+*&amp;e1:java.lang.Object*=n$26 [line 58];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node33.html"><span class='visited with_tooltip'>C_33<span class='tooltip'>node33 preds:36 succs:15 exn:3 Conditional exception handler
+n$57=_fun___instanceof(n$55:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 58];
+PRUNE(n$57, true); [line 58];
+*&amp;CatchVar79:java.lang.String*=n$55 [line 58];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node34.html"><span class='visited with_tooltip'>C_34<span class='tooltip'>node34 preds:36 succs:3 exn:3 Conditional exception handler
+n$57=_fun___instanceof(n$55:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 58];
+PRUNE(!n$57, false); [line 58];
+*&amp;return:java.lang.String*=EXN n$55 [line 58];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE59">59</td><td class="line">			// TODO Auto-generated catch block </td></tr>
+<tr><td class="num" id="LINE60">60</td><td class="line">			e1.printStackTrace(); <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:3 Instructions
+n$27=*&amp;e1:java.lang.Object* [line 60];
+_=*n$27:java.lang.Object*(root java.lang.Object) [line 60];
+n$29=_fun_void Throwable.printStackTrace()(n$27:java.lang.Object*) virtual [line 60];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE61">61</td><td class="line">		} </td></tr>
+<tr><td class="num" id="LINE62">62</td><td class="line">		 </td></tr>
+<tr><td class="num" id="LINE63">63</td><td class="line">		try { </td></tr>
+<tr><td class="num" id="LINE64">64</td><td class="line">			response = method.getResponseBodyAsString(); <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 14 12 succs:20 exn:40 Instructions
+n$30=*&amp;method:org.apache.commons.httpclient.methods.PostMethod* [line 64];
+_=*n$30:org.apache.commons.httpclient.methods.PostMethod*(root org.apache.commons.httpclient.methods.PostMethod) [line 64];
+n$32=_fun_String HttpMethodBase.getResponseBodyAsString()(n$30:org.apache.commons.httpclient.methods.PostMethod*) virtual [line 64];
+*&amp;response:java.lang.String*=n$32 [line 64];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE65">65</td><td class="line">		} catch (IOException e) { <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:38 succs:19 exn:3 Instructions
+n$33=*&amp;CatchVar95:java.lang.Object* [line 65];
+*&amp;e:java.lang.Object*=n$33 [line 65];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node38.html"><span class='visited with_tooltip'>C_38<span class='tooltip'>node38 preds:40 succs:18 exn:3 Conditional exception handler
+n$59=_fun___instanceof(n$55:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 65];
+PRUNE(n$59, true); [line 65];
+*&amp;CatchVar95:java.lang.String*=n$55 [line 65];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node39.html"><span class='visited with_tooltip'>C_39<span class='tooltip'>node39 preds:40 succs:3 exn:3 Conditional exception handler
+n$59=_fun___instanceof(n$55:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 65];
+PRUNE(!n$59, false); [line 65];
+*&amp;return:java.lang.String*=EXN n$55 [line 65];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node40.html"><span class='visited with_tooltip'>I_40<span class='tooltip'>node40 preds: succs:38 39 exn:3 Instructions
+n$54=*&amp;return:java.lang.String* [line 65];
+*&amp;return:java.lang.String*=null [line 65];
+n$55=_fun___unwrap_exception(n$54:java.lang.String*) [line 65];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE66">66</td><td class="line">			// TODO Auto-generated catch block </td></tr>
+<tr><td class="num" id="LINE67">67</td><td class="line">			e.printStackTrace(); <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:20 exn:3 Instructions
+n$34=*&amp;e:java.lang.Object* [line 67];
+_=*n$34:java.lang.Object*(root java.lang.Object) [line 67];
+n$36=_fun_void Throwable.printStackTrace()(n$34:java.lang.Object*) virtual [line 67];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE68">68</td><td class="line">		} </td></tr>
+<tr><td class="num" id="LINE69">69</td><td class="line">		String dst = &quot;&quot;; <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 17 succs:21 exn:3 Instructions
+*&amp;dst:java.lang.Object*="" [line 69];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE70">70</td><td class="line">		try{ </td></tr>
+<tr><td class="num" id="LINE71">71</td><td class="line">			JSONObject json = JSONObject.fromObject(response); <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:22 exn:32 Instructions
+n$37=*&amp;response:java.lang.String* [line 71];
+n$38=_fun_JSONObject JSONObject.fromObject(Object)(n$37:java.lang.String*) [line 71];
+*&amp;json:net.sf.json.JSONObject*=n$38 [line 71];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE72">72</td><td class="line">			JSONArray jsonA = (JSONArray) json.get(&quot;trans_result&quot;); <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:32 Instructions
+n$39=*&amp;json:net.sf.json.JSONObject* [line 72];
+_=*n$39:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 72];
+n$41=_fun_Object JSONObject.get(String)(n$39:net.sf.json.JSONObject*,"trans_result":java.lang.Object*) virtual [line 72];
+*&amp;$irvar1:java.lang.Object*=n$41 [line 72];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:32 Instructions
+n$42=*&amp;$irvar1:java.lang.Object* [line 72];
+n$43=_fun___cast(n$42:java.lang.Object*,sizeof(t=net.sf.json.JSONArray;sub_t=( sub )(cast)):void) [line 72];
+*&amp;jsonA:net.sf.json.JSONArray*=n$43 [line 72];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE73">73</td><td class="line">			JSONObject jsonTmp = (JSONObject) jsonA.get(0); <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:25 exn:32 Instructions
+n$44=*&amp;jsonA:net.sf.json.JSONArray* [line 73];
+_=*n$44:net.sf.json.JSONArray*(root net.sf.json.JSONArray) [line 73];
+n$46=_fun_Object JSONArray.get(int)(n$44:net.sf.json.JSONArray*,0:int) virtual [line 73];
+*&amp;$irvar2:java.lang.Object*=n$46 [line 73];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:26 exn:32 Instructions
+n$47=*&amp;$irvar2:java.lang.Object* [line 73];
+n$48=_fun___cast(n$47:java.lang.Object*,sizeof(t=net.sf.json.JSONObject;sub_t=( sub )(cast)):void) [line 73];
+*&amp;jsonTmp:net.sf.json.JSONObject*=n$48 [line 73];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE74">74</td><td class="line">			dst = jsonTmp.getString(&quot;dst&quot;); <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:25 succs:29 exn:32 Instructions
+n$49=*&amp;jsonTmp:net.sf.json.JSONObject* [line 74];
+_=*n$49:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 74];
+n$51=_fun_String JSONObject.getString(String)(n$49:net.sf.json.JSONObject*,"dst":java.lang.Object*) virtual [line 74];
+*&amp;dst:java.lang.String*=n$51 [line 74];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE75">75</td><td class="line">		} </td></tr>
+<tr><td class="num" id="LINE76">76</td><td class="line">		catch(Exception e){ <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:30 succs:28 exn:3 Instructions
+n$52=*&amp;CatchVar147:java.lang.Object* [line 76];
+*&amp;e:java.lang.Object*=n$52 [line 76];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node30.html"><span class='visited with_tooltip'>C_30<span class='tooltip'>node30 preds:32 succs:27 exn:3 Conditional exception handler
+n$56=_fun___instanceof(n$55:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 76];
+PRUNE(n$56, true); [line 76];
+*&amp;CatchVar147:java.lang.String*=n$55 [line 76];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node31.html"><span class='visited with_tooltip'>C_31<span class='tooltip'>node31 preds:32 succs:3 exn:3 Conditional exception handler
+n$56=_fun___instanceof(n$55:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 76];
+PRUNE(!n$56, false); [line 76];
+*&amp;return:java.lang.String*=EXN n$55 [line 76];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node32.html"><span class='visited with_tooltip'>I_32<span class='tooltip'>node32 preds: succs:30 31 exn:3 Instructions
+n$54=*&amp;return:java.lang.String* [line 76];
+*&amp;return:java.lang.String*=null [line 76];
+n$55=_fun___unwrap_exception(n$54:java.lang.String*) [line 76];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE77">77</td><td class="line">			dst=&quot;-1&quot;; <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:27 succs:29 exn:3 Instructions
+*&amp;dst:java.lang.Object*="-1" [line 77];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE78">78</td><td class="line">		} </td></tr>
+<tr><td class="num" id="LINE79">79</td><td class="line">		return dst; <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:28 26 succs:2 exn:3 Instructions
+n$53=*&amp;dst:java.lang.Object* [line 79];
+*&amp;return:java.lang.String*=n$53 [line 79];
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:29 3 succs: exn: Exit
+</span></span></a> <a href="./Translate0718.java.472d39c56c4de8c1d1840d37be3968c8/nodes/com.dulishuo.test.Translate0718.process%28java.lang.String%29%3Ajava.lang.String.5c2535f13954c34c13dc8c7a144af456_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:39 34 31 succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE80">80</td><td class="line">	} </td></tr>
+<tr><td class="num" id="LINE81">81</td><td class="line">	 </td></tr>
+<tr><td class="num" id="LINE82">82</td><td class="line">	 </td></tr>
+<tr><td class="num" id="LINE83">83</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE84">84</td><td class="line">} </td></tr>
+</table>
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+</body>
+</html>

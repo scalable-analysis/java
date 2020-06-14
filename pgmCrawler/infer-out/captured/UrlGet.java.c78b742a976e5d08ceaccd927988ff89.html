@@ -1,0 +1,356 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>UrlGet.java.c78b742a976e5d08ceaccd927988ff89</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>File src/com/dulishuo/chasedream/UrlGet.java </h1></center>
+<table class="code">
+<tr><td class="num" id="LINE1">1</td><td class="line">package com.dulishuo.chasedream; </td></tr>
+<tr><td class="num" id="LINE2">2</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE3">3</td><td class="line">import java.io.BufferedWriter; </td></tr>
+<tr><td class="num" id="LINE4">4</td><td class="line">import java.io.FileWriter; </td></tr>
+<tr><td class="num" id="LINE5">5</td><td class="line">import java.io.IOException; </td></tr>
+<tr><td class="num" id="LINE6">6</td><td class="line">import java.util.ArrayList; </td></tr>
+<tr><td class="num" id="LINE7">7</td><td class="line">import java.util.List; </td></tr>
+<tr><td class="num" id="LINE8">8</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE9">9</td><td class="line">import org.apache.commons.httpclient.HttpClient; </td></tr>
+<tr><td class="num" id="LINE10">10</td><td class="line">import org.apache.commons.httpclient.HttpException; </td></tr>
+<tr><td class="num" id="LINE11">11</td><td class="line">import org.apache.commons.httpclient.methods.GetMethod; </td></tr>
+<tr><td class="num" id="LINE12">12</td><td class="line">import org.jsoup.Jsoup; </td></tr>
+<tr><td class="num" id="LINE13">13</td><td class="line">import org.jsoup.nodes.Document; </td></tr>
+<tr><td class="num" id="LINE14">14</td><td class="line">import org.jsoup.nodes.Element; </td></tr>
+<tr><td class="num" id="LINE15">15</td><td class="line">import org.jsoup.select.Elements; </td></tr>
+<tr><td class="num" id="LINE16">16</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE17">17</td><td class="line">import com.dulishuo.util.CrawlerUtil; </td></tr>
+<tr><td class="num" id="LINE18">18</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE19">19</td><td class="line">public class UrlGet { <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.<init>%28%29.13e7aeea7b5fb62a2c90136319d7226e_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.<init>%28%29.13e7aeea7b5fb62a2c90136319d7226e_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.dulishuo.chasedream.UrlGet* [line 19];
+n$1=_fun_Object.&lt;init&gt;()(n$0:com.dulishuo.chasedream.UrlGet*) [line 19];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.<init>%28%29.13e7aeea7b5fb62a2c90136319d7226e_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.<init>%28%29.13e7aeea7b5fb62a2c90136319d7226e_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.<init>%28%29.13e7aeea7b5fb62a2c90136319d7226e_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/com.dulishuo.chasedream.UrlGet.<init>%28%29.13e7aeea7b5fb62a2c90136319d7226e.html">summary for UrlGet.&lt;init&gt;()</a></td></tr>
+<tr><td class="num" id="LINE20">20</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE21">21</td><td class="line">	public static void main(String[] args) throws IOException { <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816.html">summary for void UrlGet.main(String[])</a></td></tr>
+<tr><td class="num" id="LINE22">22</td><td class="line">		// TODO Auto-generated method stub </td></tr>
+<tr><td class="num" id="LINE23">23</td><td class="line">		String urlBasic = &quot;http://forum.chasedream.com/forum.php?mod=forumdisplay&amp;fid=14&amp;typeid=230&amp;filter=typeid&amp;typeid=230&amp;page=&quot;; <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+*&amp;urlBasic:java.lang.Object*="http://forum.chasedream.com/forum.php?mod=forumdisplay&fid=14&typeid=230&filter=typeid&typeid=230&page=" [line 23];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE24">24</td><td class="line">		BufferedWriter bw  = new BufferedWriter(new FileWriter(&quot;C:/Users/强胜/Desktop/dataCrawler/chasedream/商学院申请/商学院Master申请区/选校/url.txt&quot;)); <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$0=_fun___new(sizeof(t=java.io.FileWriter):java.io.FileWriter*) [line 24];
+n$1=_fun_FileWriter.&lt;init&gt;(String)(n$0:java.io.FileWriter*,"C:/Users/\\229\\188\\186\\232\\131\\156/Desktop/dataCrawler/chasedream/\\229\\149\\134\\229\\173\\166\\233\\153\\162\\231\\148\\179\\232\\175\\183/\\229\\149\\134\\229\\173\\166\\233\\153\\162Master\\231\\148\\179\\232\\175\\183\\229\\140\\186/\\233\\128\\137\\230\\160\\161/url.txt":java.lang.Object*) [line 24];
+n$2=_fun___set_file_attribute(n$0:java.io.FileWriter*) [line 24];
+*&amp;$irvar0:java.io.FileWriter*=n$0 [line 24];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$3=_fun___new(sizeof(t=java.io.BufferedWriter):java.io.BufferedWriter*) [line 24];
+n$4=*&amp;$irvar0:java.io.FileWriter* [line 24];
+n$5=_fun_BufferedWriter.&lt;init&gt;(Writer)(n$3:java.io.BufferedWriter*,n$4:java.io.FileWriter*) [line 24];
+n$6=_fun___set_file_attribute(n$3:java.io.BufferedWriter*) [line 24];
+*&amp;bw:java.io.BufferedWriter*=n$3 [line 24];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE25">25</td><td class="line">		 </td></tr>
+<tr><td class="num" id="LINE26">26</td><td class="line">		for(int i = 1 ; i &lt; 11 ; i++){ <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:10 exn:3 Instructions
+*&amp;i:int=1 [line 26];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node10.html"><span class='visited with_tooltip'>J_10<span class='tooltip'>node10 preds:31 7 succs:8 9 exn: Join
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node8.html"><span class='visited with_tooltip'>C_8<span class='tooltip'>node8 preds:10 succs:11 exn:3 Conditional method_body
+n$7=*&amp;i:int [line 26];
+PRUNE(!(n$7  &gt;=  11), true); [line 26];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:20 succs:10 exn:3 Instructions
+n$59=*&amp;i:int [line 26];
+*&amp;i:int=(n$59 + 1) [line 26];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node9.html"><span class='visited with_tooltip'>C_9<span class='tooltip'>node9 preds:10 succs:32 exn:3 Conditional method_body
+n$7=*&amp;i:int [line 26];
+PRUNE((n$7  &gt;=  11), false); [line 26];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE27">27</td><td class="line">			for(String xx : parseHtml(CrawlerUtil.httpRequest(urlBasic+i))){ <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:8 succs:12 exn:3 Instructions
+n$8=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 27];
+n$9=_fun_StringBuilder.&lt;init&gt;()(n$8:java.lang.StringBuilder*) [line 27];
+*&amp;$irvar1:java.lang.StringBuilder*=n$8 [line 27];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$10=*&amp;$irvar1:java.lang.StringBuilder* [line 27];
+_=*n$10:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 27];
+n$12=*&amp;urlBasic:java.lang.Object* [line 27];
+n$13=_fun_StringBuilder StringBuilder.append(String)(n$10:java.lang.StringBuilder*,n$12:java.lang.Object*) virtual [line 27];
+*&amp;$irvar2:java.lang.StringBuilder*=n$13 [line 27];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:3 Instructions
+n$14=*&amp;$irvar2:java.lang.StringBuilder* [line 27];
+_=*n$14:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 27];
+n$16=*&amp;i:int [line 27];
+n$17=_fun_StringBuilder StringBuilder.append(int)(n$14:java.lang.StringBuilder*,n$16:int) virtual [line 27];
+*&amp;$irvar3:java.lang.StringBuilder*=n$17 [line 27];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:3 Instructions
+n$18=*&amp;$irvar3:java.lang.StringBuilder* [line 27];
+_=*n$18:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 27];
+n$20=_fun_String StringBuilder.toString()(n$18:java.lang.StringBuilder*) virtual [line 27];
+*&amp;$irvar4:java.lang.String*=n$20 [line 27];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:3 Instructions
+n$21=*&amp;$irvar4:java.lang.String* [line 27];
+n$22=_fun_String CrawlerUtil.httpRequest(String)(n$21:java.lang.String*) [line 27];
+*&amp;$irvar5:java.lang.String*=n$22 [line 27];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:3 Instructions
+n$23=*&amp;$irvar5:java.lang.String* [line 27];
+n$24=_fun_List UrlGet.parseHtml(String)(n$23:java.lang.String*) [line 27];
+*&amp;$irvar6:java.util.List*=n$24 [line 27];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:3 Instructions
+n$25=*&amp;$irvar6:java.util.List* [line 27];
+_=*n$25:java.util.List*(root java.util.List) [line 27];
+n$27=_fun_Iterator List.iterator()(n$25:java.util.List*) interface virtual [line 27];
+*&amp;$bcvar4:java.util.Iterator*=n$27 [line 27];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:30 17 succs:21 exn:3 Instructions
+n$28=*&amp;$bcvar4:java.util.Iterator* [line 27];
+_=*n$28:java.util.Iterator*(root java.util.Iterator) [line 27];
+n$30=_fun_boolean Iterator.hasNext()(n$28:java.util.Iterator*) interface virtual [line 27];
+*&amp;$irvar7:_Bool=n$30 [line 27];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node21.html"><span class='visited with_tooltip'>J_21<span class='tooltip'>node21 preds:18 succs:19 20 exn: Join
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node19.html"><span class='visited with_tooltip'>C_19<span class='tooltip'>node19 preds:21 succs:22 exn:3 Conditional method_body
+n$31=*&amp;$irvar7:_Bool [line 27];
+PRUNE(!(n$31 == 0), true); [line 27];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:19 succs:23 exn:3 Instructions
+n$32=*&amp;$bcvar4:java.util.Iterator* [line 27];
+_=*n$32:java.util.Iterator*(root java.util.Iterator) [line 27];
+n$34=_fun_Object Iterator.next()(n$32:java.util.Iterator*) interface virtual [line 27];
+*&amp;$irvar8:java.lang.Object*=n$34 [line 27];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:3 Instructions
+n$35=*&amp;$irvar8:java.lang.Object* [line 27];
+n$36=_fun___cast(n$35:java.lang.Object*,sizeof(t=java.lang.String;sub_t=( sub )(cast)):void) [line 27];
+*&amp;xx:java.lang.String*=n$36 [line 27];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node20.html"><span class='visited with_tooltip'>C_20<span class='tooltip'>node20 preds:21 succs:31 exn:3 Conditional method_body
+n$31=*&amp;$irvar7:_Bool [line 27];
+PRUNE((n$31 == 0), false); [line 27];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE28">28</td><td class="line">				bw.write(&quot;http://forum.chasedream.com/&quot;+xx); <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:25 exn:3 Instructions
+n$37=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 28];
+n$38=_fun_StringBuilder.&lt;init&gt;()(n$37:java.lang.StringBuilder*) [line 28];
+*&amp;$irvar9:java.lang.StringBuilder*=n$37 [line 28];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:26 exn:3 Instructions
+n$39=*&amp;$irvar9:java.lang.StringBuilder* [line 28];
+_=*n$39:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 28];
+n$41=_fun_StringBuilder StringBuilder.append(String)(n$39:java.lang.StringBuilder*,"http://forum.chasedream.com/":java.lang.Object*) virtual [line 28];
+*&amp;$irvar10:java.lang.StringBuilder*=n$41 [line 28];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:25 succs:27 exn:3 Instructions
+n$42=*&amp;$irvar10:java.lang.StringBuilder* [line 28];
+_=*n$42:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 28];
+n$44=*&amp;xx:java.lang.String* [line 28];
+n$45=_fun_StringBuilder StringBuilder.append(String)(n$42:java.lang.StringBuilder*,n$44:java.lang.String*) virtual [line 28];
+*&amp;$irvar11:java.lang.StringBuilder*=n$45 [line 28];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:26 succs:28 exn:3 Instructions
+n$46=*&amp;$irvar11:java.lang.StringBuilder* [line 28];
+_=*n$46:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 28];
+n$48=_fun_String StringBuilder.toString()(n$46:java.lang.StringBuilder*) virtual [line 28];
+*&amp;$irvar12:java.lang.String*=n$48 [line 28];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:27 succs:29 exn:3 Instructions
+n$49=*&amp;bw:java.io.BufferedWriter* [line 28];
+_=*n$49:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 28];
+n$51=*&amp;$irvar12:java.lang.String* [line 28];
+n$52=_fun_void Writer.write(String)(n$49:java.io.BufferedWriter*,n$51:java.lang.String*) virtual [line 28];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE29">29</td><td class="line">				bw.newLine(); <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:28 succs:30 exn:3 Instructions
+n$53=*&amp;bw:java.io.BufferedWriter* [line 29];
+_=*n$53:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 29];
+n$55=_fun_void BufferedWriter.newLine()(n$53:java.io.BufferedWriter*) virtual [line 29];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE30">30</td><td class="line">				bw.flush(); <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:29 succs:18 exn:3 Instructions
+n$56=*&amp;bw:java.io.BufferedWriter* [line 30];
+_=*n$56:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 30];
+n$58=_fun_void BufferedWriter.flush()(n$56:java.io.BufferedWriter*) virtual [line 30];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE31">31</td><td class="line">			} </td></tr>
+<tr><td class="num" id="LINE32">32</td><td class="line">		} </td></tr>
+<tr><td class="num" id="LINE33">33</td><td class="line">		bw.close(); <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node32.html"><span class='visited with_tooltip'>I_32<span class='tooltip'>node32 preds:9 succs:33 exn:3 Instructions
+n$60=*&amp;bw:java.io.BufferedWriter* [line 33];
+n$63=_fun___set_mem_attribute(n$60:java.io.BufferedWriter*) [line 33];
+_=*n$60:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 33];
+n$62=_fun_void BufferedWriter.close()(n$60:java.io.BufferedWriter*) virtual [line 33];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE34">34</td><td class="line">		System.out.println(&quot;____end_____&quot;); <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds:32 succs:34 exn:3 Instructions
+n$64=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 34];
+_=*n$64:java.io.PrintStream*(root java.io.PrintStream) [line 34];
+n$66=_fun_void PrintStream.println(String)(n$64:java.io.PrintStream*,"____end_____":java.lang.Object*) virtual [line 34];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE35">35</td><td class="line">	} <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds:33 succs:2 exn:3 Instructions
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:34 3 succs: exn: Exit
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.main%28java.lang.String%5B%5D%29%3Avoid.22d963b2e66db8a1fe2bb6a55ad2f816_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE36">36</td><td class="line">				 </td></tr>
+<tr><td class="num" id="LINE37">37</td><td class="line">	public static List&lt;String&gt; parseHtml(String str){ <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.parseHtml%28java.lang.String%29%3Ajava.util.List.ac3ce8a1ae2d16037ac490c754efc729_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/com.dulishuo.chasedream.UrlGet.parseHtml%28java.lang.String%29%3Ajava.util.List.ac3ce8a1ae2d16037ac490c754efc729.html">summary for List UrlGet.parseHtml(String)</a></td></tr>
+<tr><td class="num" id="LINE38">38</td><td class="line">		List&lt;String&gt; result = new ArrayList&lt;String&gt;(); <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.parseHtml%28java.lang.String%29%3Ajava.util.List.ac3ce8a1ae2d16037ac490c754efc729_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 38];
+n$1=_fun_ArrayList.&lt;init&gt;()(n$0:java.util.ArrayList*) [line 38];
+*&amp;result:java.util.ArrayList*=n$0 [line 38];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE39">39</td><td class="line">		 </td></tr>
+<tr><td class="num" id="LINE40">40</td><td class="line">		Document html = Jsoup.parse(str); <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.parseHtml%28java.lang.String%29%3Ajava.util.List.ac3ce8a1ae2d16037ac490c754efc729_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$2=*&amp;str:java.lang.String* [line 40];
+n$3=_fun_Document Jsoup.parse(String)(n$2:java.lang.String*) [line 40];
+*&amp;html:org.jsoup.nodes.Document*=n$3 [line 40];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE41">41</td><td class="line">		Element ele = html.getElementById(&quot;threadlist&quot;); <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.parseHtml%28java.lang.String%29%3Ajava.util.List.ac3ce8a1ae2d16037ac490c754efc729_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$4=*&amp;html:org.jsoup.nodes.Document* [line 41];
+_=*n$4:org.jsoup.nodes.Document*(root org.jsoup.nodes.Document) [line 41];
+n$6=_fun_Element Element.getElementById(String)(n$4:org.jsoup.nodes.Document*,"threadlist":java.lang.Object*) virtual [line 41];
+*&amp;ele:org.jsoup.nodes.Element*=n$6 [line 41];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE42">42</td><td class="line">		Elements sibling = ele.getElementById(&quot;separatorline&quot;).siblingElements(); <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.parseHtml%28java.lang.String%29%3Ajava.util.List.ac3ce8a1ae2d16037ac490c754efc729_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$7=*&amp;ele:org.jsoup.nodes.Element* [line 42];
+_=*n$7:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 42];
+n$9=_fun_Element Element.getElementById(String)(n$7:org.jsoup.nodes.Element*,"separatorline":java.lang.Object*) virtual [line 42];
+*&amp;$irvar0:org.jsoup.nodes.Element*=n$9 [line 42];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.parseHtml%28java.lang.String%29%3Ajava.util.List.ac3ce8a1ae2d16037ac490c754efc729_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$10=*&amp;$irvar0:org.jsoup.nodes.Element* [line 42];
+_=*n$10:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 42];
+n$12=_fun_Elements Element.siblingElements()(n$10:org.jsoup.nodes.Element*) virtual [line 42];
+*&amp;sibling:org.jsoup.select.Elements*=n$12 [line 42];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE43">43</td><td class="line">		int size = sibling.size(); <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.parseHtml%28java.lang.String%29%3Ajava.util.List.ac3ce8a1ae2d16037ac490c754efc729_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$13=*&amp;sibling:org.jsoup.select.Elements* [line 43];
+_=*n$13:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 43];
+n$15=_fun_int Elements.size()(n$13:org.jsoup.select.Elements*) virtual [line 43];
+*&amp;size:int=n$15 [line 43];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE44">44</td><td class="line">		int start = ele.getElementById(&quot;separatorline&quot;).elementSiblingIndex()+1; <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.parseHtml%28java.lang.String%29%3Ajava.util.List.ac3ce8a1ae2d16037ac490c754efc729_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+n$16=*&amp;ele:org.jsoup.nodes.Element* [line 44];
+_=*n$16:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 44];
+n$18=_fun_Element Element.getElementById(String)(n$16:org.jsoup.nodes.Element*,"separatorline":java.lang.Object*) virtual [line 44];
+*&amp;$irvar1:org.jsoup.nodes.Element*=n$18 [line 44];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.parseHtml%28java.lang.String%29%3Ajava.util.List.ac3ce8a1ae2d16037ac490c754efc729_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+n$19=*&amp;$irvar1:org.jsoup.nodes.Element* [line 44];
+_=*n$19:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 44];
+n$21=_fun_Integer Element.elementSiblingIndex()(n$19:org.jsoup.nodes.Element*) virtual [line 44];
+*&amp;$irvar2:java.lang.Integer*=n$21 [line 44];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.parseHtml%28java.lang.String%29%3Ajava.util.List.ac3ce8a1ae2d16037ac490c754efc729_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$22=*&amp;$irvar2:java.lang.Integer* [line 44];
+_=*n$22:java.lang.Integer*(root java.lang.Integer) [line 44];
+n$24=_fun_int Integer.intValue()(n$22:java.lang.Integer*) virtual [line 44];
+*&amp;$irvar3:int=n$24 [line 44];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.parseHtml%28java.lang.String%29%3Ajava.util.List.ac3ce8a1ae2d16037ac490c754efc729_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:3 Instructions
+n$25=*&amp;$irvar3:int [line 44];
+*&amp;start:int=(n$25 + 1) [line 44];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE45">45</td><td class="line">		for(int i = start ; i &lt; size ; i++){ <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.parseHtml%28java.lang.String%29%3Ajava.util.List.ac3ce8a1ae2d16037ac490c754efc729_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:17 exn:3 Instructions
+n$26=*&amp;start:int [line 45];
+*&amp;i:int=n$26 [line 45];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.parseHtml%28java.lang.String%29%3Ajava.util.List.ac3ce8a1ae2d16037ac490c754efc729_node17.html"><span class='visited with_tooltip'>J_17<span class='tooltip'>node17 preds:28 14 succs:15 16 exn: Join
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.parseHtml%28java.lang.String%29%3Ajava.util.List.ac3ce8a1ae2d16037ac490c754efc729_node15.html"><span class='visited with_tooltip'>C_15<span class='tooltip'>node15 preds:17 succs:18 exn:3 Conditional method_body
+n$27=*&amp;i:int [line 45];
+n$28=*&amp;size:int [line 45];
+PRUNE(!(n$27  &gt;=  n$28), true); [line 45];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.parseHtml%28java.lang.String%29%3Ajava.util.List.ac3ce8a1ae2d16037ac490c754efc729_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:27 succs:17 exn:3 Instructions
+n$61=*&amp;i:int [line 45];
+*&amp;i:int=(n$61 + 1) [line 45];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.parseHtml%28java.lang.String%29%3Ajava.util.List.ac3ce8a1ae2d16037ac490c754efc729_node16.html"><span class='visited with_tooltip'>C_16<span class='tooltip'>node16 preds:17 succs:29 exn:3 Conditional method_body
+n$27=*&amp;i:int [line 45];
+n$28=*&amp;size:int [line 45];
+PRUNE((n$27  &gt;=  n$28), false); [line 45];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE46">46</td><td class="line">			Element each = sibling.get(i); <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.parseHtml%28java.lang.String%29%3Ajava.util.List.ac3ce8a1ae2d16037ac490c754efc729_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:15 succs:19 exn:3 Instructions
+n$29=*&amp;sibling:org.jsoup.select.Elements* [line 46];
+_=*n$29:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 46];
+n$31=*&amp;i:int [line 46];
+n$32=_fun_Element Elements.get(int)(n$29:org.jsoup.select.Elements*,n$31:int) virtual [line 46];
+*&amp;each:org.jsoup.nodes.Element*=n$32 [line 46];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE47">47</td><td class="line">			String date = each.getElementsByClass(&quot;by&quot;).get(0).getElementsByTag(&quot;em&quot;).get(0).getElementsByTag(&quot;span&quot;).get(0).text().replace(&quot;&amp;nbsp;&quot;, &quot;&quot;); <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.parseHtml%28java.lang.String%29%3Ajava.util.List.ac3ce8a1ae2d16037ac490c754efc729_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:20 exn:3 Instructions
+n$33=*&amp;each:org.jsoup.nodes.Element* [line 47];
+_=*n$33:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 47];
+n$35=_fun_Elements Element.getElementsByClass(String)(n$33:org.jsoup.nodes.Element*,"by":java.lang.Object*) virtual [line 47];
+*&amp;$irvar4:org.jsoup.select.Elements*=n$35 [line 47];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.parseHtml%28java.lang.String%29%3Ajava.util.List.ac3ce8a1ae2d16037ac490c754efc729_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:3 Instructions
+n$36=*&amp;$irvar4:org.jsoup.select.Elements* [line 47];
+_=*n$36:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 47];
+n$38=_fun_Element Elements.get(int)(n$36:org.jsoup.select.Elements*,0:int) virtual [line 47];
+*&amp;$irvar5:org.jsoup.nodes.Element*=n$38 [line 47];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.parseHtml%28java.lang.String%29%3Ajava.util.List.ac3ce8a1ae2d16037ac490c754efc729_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:22 exn:3 Instructions
+n$39=*&amp;$irvar5:org.jsoup.nodes.Element* [line 47];
+_=*n$39:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 47];
+n$41=_fun_Elements Element.getElementsByTag(String)(n$39:org.jsoup.nodes.Element*,"em":java.lang.Object*) virtual [line 47];
+*&amp;$irvar6:org.jsoup.select.Elements*=n$41 [line 47];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.parseHtml%28java.lang.String%29%3Ajava.util.List.ac3ce8a1ae2d16037ac490c754efc729_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:3 Instructions
+n$42=*&amp;$irvar6:org.jsoup.select.Elements* [line 47];
+_=*n$42:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 47];
+n$44=_fun_Element Elements.get(int)(n$42:org.jsoup.select.Elements*,0:int) virtual [line 47];
+*&amp;$irvar7:org.jsoup.nodes.Element*=n$44 [line 47];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.parseHtml%28java.lang.String%29%3Ajava.util.List.ac3ce8a1ae2d16037ac490c754efc729_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:3 Instructions
+n$45=*&amp;$irvar7:org.jsoup.nodes.Element* [line 47];
+_=*n$45:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 47];
+n$47=_fun_Elements Element.getElementsByTag(String)(n$45:org.jsoup.nodes.Element*,"span":java.lang.Object*) virtual [line 47];
+*&amp;$irvar8:org.jsoup.select.Elements*=n$47 [line 47];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.parseHtml%28java.lang.String%29%3Ajava.util.List.ac3ce8a1ae2d16037ac490c754efc729_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:25 exn:3 Instructions
+n$48=*&amp;$irvar8:org.jsoup.select.Elements* [line 47];
+_=*n$48:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 47];
+n$50=_fun_Element Elements.get(int)(n$48:org.jsoup.select.Elements*,0:int) virtual [line 47];
+*&amp;$irvar9:org.jsoup.nodes.Element*=n$50 [line 47];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.parseHtml%28java.lang.String%29%3Ajava.util.List.ac3ce8a1ae2d16037ac490c754efc729_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:26 exn:3 Instructions
+n$51=*&amp;$irvar9:org.jsoup.nodes.Element* [line 47];
+_=*n$51:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 47];
+n$53=_fun_String Element.text()(n$51:org.jsoup.nodes.Element*) virtual [line 47];
+*&amp;$irvar10:java.lang.String*=n$53 [line 47];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.parseHtml%28java.lang.String%29%3Ajava.util.List.ac3ce8a1ae2d16037ac490c754efc729_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:25 succs:27 exn:3 Instructions
+n$54=*&amp;$irvar10:java.lang.String* [line 47];
+_=*n$54:java.lang.String*(root java.lang.String) [line 47];
+n$56=_fun_String String.replace(CharSequence,CharSequence)(n$54:java.lang.String*,"&nbsp;":java.lang.Object*,"":java.lang.Object*) virtual [line 47];
+*&amp;date:java.lang.String*=n$56 [line 47];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE48">48</td><td class="line">			System.out.println(date); <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.parseHtml%28java.lang.String%29%3Ajava.util.List.ac3ce8a1ae2d16037ac490c754efc729_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:26 succs:28 exn:3 Instructions
+n$57=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 48];
+_=*n$57:java.io.PrintStream*(root java.io.PrintStream) [line 48];
+n$59=*&amp;date:java.lang.String* [line 48];
+n$60=_fun_void PrintStream.println(String)(n$57:java.io.PrintStream*,n$59:java.lang.String*) virtual [line 48];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE49">49</td><td class="line">		} </td></tr>
+<tr><td class="num" id="LINE50">50</td><td class="line">		 </td></tr>
+<tr><td class="num" id="LINE51">51</td><td class="line">		/*for(Element element : tbody){ </td></tr>
+<tr><td class="num" id="LINE52">52</td><td class="line">			String url = element.getElementsByClass(&quot;icn&quot;).select(&quot;a&quot;).attr(&quot;href&quot;).toString(); </td></tr>
+<tr><td class="num" id="LINE53">53</td><td class="line">			System.out.println(&quot;url__&quot;+url); </td></tr>
+<tr><td class="num" id="LINE54">54</td><td class="line">			result.add(url); </td></tr>
+<tr><td class="num" id="LINE55">55</td><td class="line">		} </td></tr>
+<tr><td class="num" id="LINE56">56</td><td class="line">		*/ </td></tr>
+<tr><td class="num" id="LINE57">57</td><td class="line">		 </td></tr>
+<tr><td class="num" id="LINE58">58</td><td class="line">		return result;	 <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.parseHtml%28java.lang.String%29%3Ajava.util.List.ac3ce8a1ae2d16037ac490c754efc729_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:16 succs:2 exn:3 Instructions
+n$62=*&amp;result:java.util.ArrayList* [line 58];
+*&amp;return:java.util.List*=n$62 [line 58];
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.parseHtml%28java.lang.String%29%3Ajava.util.List.ac3ce8a1ae2d16037ac490c754efc729_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:29 3 succs: exn: Exit
+</span></span></a> <a href="./UrlGet.java.c78b742a976e5d08ceaccd927988ff89/nodes/com.dulishuo.chasedream.UrlGet.parseHtml%28java.lang.String%29%3Ajava.util.List.ac3ce8a1ae2d16037ac490c754efc729_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE59">59</td><td class="line">	} </td></tr>
+<tr><td class="num" id="LINE60">60</td><td class="line">} </td></tr>
+</table>
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+</body>
+</html>

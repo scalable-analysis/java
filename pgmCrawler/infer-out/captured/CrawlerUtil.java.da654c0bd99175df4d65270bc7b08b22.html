@@ -1,0 +1,1002 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>File src/com/dulishuo/util/CrawlerUtil.java </h1></center>
+<table class="code">
+<tr><td class="num" id="LINE1">1</td><td class="line">package com.dulishuo.util; </td></tr>
+<tr><td class="num" id="LINE2">2</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE3">3</td><td class="line">import java.io.BufferedReader; </td></tr>
+<tr><td class="num" id="LINE4">4</td><td class="line">import java.io.ByteArrayOutputStream; </td></tr>
+<tr><td class="num" id="LINE5">5</td><td class="line">import java.io.IOException; </td></tr>
+<tr><td class="num" id="LINE6">6</td><td class="line">import java.io.InputStream; </td></tr>
+<tr><td class="num" id="LINE7">7</td><td class="line">import java.io.InputStreamReader; </td></tr>
+<tr><td class="num" id="LINE8">8</td><td class="line">import java.io.UnsupportedEncodingException; </td></tr>
+<tr><td class="num" id="LINE9">9</td><td class="line">import java.net.HttpURLConnection; </td></tr>
+<tr><td class="num" id="LINE10">10</td><td class="line">import java.net.URL; </td></tr>
+<tr><td class="num" id="LINE11">11</td><td class="line">import java.net.URLEncoder; </td></tr>
+<tr><td class="num" id="LINE12">12</td><td class="line">import java.security.cert.CertificateException; </td></tr>
+<tr><td class="num" id="LINE13">13</td><td class="line">import java.security.cert.X509Certificate; </td></tr>
+<tr><td class="num" id="LINE14">14</td><td class="line">import java.util.ArrayList; </td></tr>
+<tr><td class="num" id="LINE15">15</td><td class="line">import java.util.List; </td></tr>
+<tr><td class="num" id="LINE16">16</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE17">17</td><td class="line">import javax.net.ssl.HostnameVerifier; </td></tr>
+<tr><td class="num" id="LINE18">18</td><td class="line">import javax.net.ssl.HttpsURLConnection; </td></tr>
+<tr><td class="num" id="LINE19">19</td><td class="line">import javax.net.ssl.SSLContext; </td></tr>
+<tr><td class="num" id="LINE20">20</td><td class="line">import javax.net.ssl.SSLSession; </td></tr>
+<tr><td class="num" id="LINE21">21</td><td class="line">import javax.net.ssl.SSLSocketFactory; </td></tr>
+<tr><td class="num" id="LINE22">22</td><td class="line">import javax.net.ssl.TrustManager; </td></tr>
+<tr><td class="num" id="LINE23">23</td><td class="line">import javax.net.ssl.X509TrustManager; </td></tr>
+<tr><td class="num" id="LINE24">24</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE25">25</td><td class="line">import org.apache.commons.httpclient.HttpClient; </td></tr>
+<tr><td class="num" id="LINE26">26</td><td class="line">import org.apache.commons.httpclient.HttpException; </td></tr>
+<tr><td class="num" id="LINE27">27</td><td class="line">import org.apache.commons.httpclient.methods.GetMethod; </td></tr>
+<tr><td class="num" id="LINE28">28</td><td class="line">import org.jsoup.Jsoup; </td></tr>
+<tr><td class="num" id="LINE29">29</td><td class="line">import org.jsoup.nodes.Document; </td></tr>
+<tr><td class="num" id="LINE30">30</td><td class="line">import org.jsoup.nodes.Element; </td></tr>
+<tr><td class="num" id="LINE31">31</td><td class="line">import org.jsoup.select.Elements; </td></tr>
+<tr><td class="num" id="LINE32">32</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE33">33</td><td class="line">public class CrawlerUtil { <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.<init>%28%29.f5a9e7b3473edbcf2a45e23e0e1730c7_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.<init>%28%29.f5a9e7b3473edbcf2a45e23e0e1730c7_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.dulishuo.util.CrawlerUtil* [line 33];
+n$1=_fun_Object.&lt;init&gt;()(n$0:com.dulishuo.util.CrawlerUtil*) [line 33];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.<init>%28%29.f5a9e7b3473edbcf2a45e23e0e1730c7_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.<init>%28%29.f5a9e7b3473edbcf2a45e23e0e1730c7_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.<init>%28%29.f5a9e7b3473edbcf2a45e23e0e1730c7_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/com.dulishuo.util.CrawlerUtil.<init>%28%29.f5a9e7b3473edbcf2a45e23e0e1730c7.html">summary for CrawlerUtil.&lt;init&gt;()</a></td></tr>
+<tr><td class="num" id="LINE34">34</td><td class="line">	public static List&lt;String&gt; getUrl(String url){ <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec.html">summary for List CrawlerUtil.getUrl(String)</a></td></tr>
+<tr><td class="num" id="LINE35">35</td><td class="line">		List&lt;String&gt; result = new ArrayList&lt;String&gt;(); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 35];
+n$1=_fun_ArrayList.&lt;init&gt;()(n$0:java.util.ArrayList*) [line 35];
+*&amp;result:java.util.ArrayList*=n$0 [line 35];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE36">36</td><td class="line">		String response = &quot;&quot;; <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+*&amp;response:java.lang.Object*="" [line 36];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE37">37</td><td class="line">	 </td></tr>
+<tr><td class="num" id="LINE38">38</td><td class="line">		HttpClient client = new HttpClient(); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$2=_fun___new(sizeof(t=org.apache.commons.httpclient.HttpClient):org.apache.commons.httpclient.HttpClient*) [line 38];
+n$3=_fun_HttpClient.&lt;init&gt;()(n$2:org.apache.commons.httpclient.HttpClient*) [line 38];
+*&amp;client:org.apache.commons.httpclient.HttpClient*=n$2 [line 38];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE39">39</td><td class="line">		GetMethod getMethod = new GetMethod(url); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$4=_fun___new(sizeof(t=org.apache.commons.httpclient.methods.GetMethod):org.apache.commons.httpclient.methods.GetMethod*) [line 39];
+n$5=*&amp;url:java.lang.String* [line 39];
+n$6=_fun_GetMethod.&lt;init&gt;(String)(n$4:org.apache.commons.httpclient.methods.GetMethod*,n$5:java.lang.String*) [line 39];
+*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod*=n$4 [line 39];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE40">40</td><td class="line">		//请求配置 </td></tr>
+<tr><td class="num" id="LINE41">41</td><td class="line">		String ck = &quot;tjpctrl=1439455956083; __utma=142000562.1509796625.1436709690.1438412213.1439453720.13; __utmz=142000562.1439453720.13.9.utmcsr=mail.qq.com|utmccn=(referral)|utmcmd=referral|utmcct=/cgi-bin/readtemplate; pgv_pvi=3811975168; 4Oaf_61d6_saltkey=nnmfbob3; 4Oaf_61d6_lastvisit=1437378911; 4Oaf_61d6_atarget=1; 4Oaf_61d6_visitedfid=27; 4Oaf_61d6_sid=Q89d9W; 4Oaf_61d6_lastact=1439454242&#37;09home.php&#37;09spacecp; 4Oaf_61d6_sendmail=1; __utmb=142000562.12.10.1439453720; __utmc=142000562; __utmt=1; 4Oaf_61d6_nofocus_member=1; 4Oaf_61d6_nofocus_forum=1; 4Oaf_61d6_ulastactivity=b1ccszmakCkkoWTaybWumhPQy0hx1PDIt6FDBQ5WElNhsEaEot6p; 4Oaf_61d6_auth=5808WxQ6wi8Gf9YPAp2asvku33LiM5xIWqdR67gpl8HOZTL87ISKHL5cTtUOFQR8V&#37;2Be4wSyU5Taa4q9Va33Bq9v&#37;2FlRM; 4Oaf_61d6_lastcheckfeed=175519&#37;7C1439454242; 4Oaf_61d6_lip=118.187.68.34&#37;2C1439453999; 4Oaf_61d6_nofavfid=1; 4Oaf_61d6_onlineusernum=258; 4Oaf_61d6_forum_lastvisit=D_27_1439454207; 4Oaf_61d6_smile=4D1; 4Oaf_61d6_viewid=tid_72476; 4Oaf_61d6_checkpm=1; 4Oaf_61d6_checkfollow=1&quot;; <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+*&amp;ck:java.lang.Object*="tjpctrl=1439455956083; __utma=142000562.1509796625.1436709690.1438412213.1439453720.13; __utmz=142000562.1439453720.13.9.utmcsr=mail.qq.com|utmccn=(referral)|utmcmd=referral|utmcct=/cgi-bin/readtemplate; pgv_pvi=3811975168; 4Oaf_61d6_saltkey=nnmfbob3; 4Oaf_61d6_lastvisit=1437378911; 4Oaf_61d6_atarget=1; 4Oaf_61d6_visitedfid=27; 4Oaf_61d6_sid=Q89d9W; 4Oaf_61d6_lastact=1439454242%09home.php%09spacecp; 4Oaf_61d6_sendmail=1; __utmb=142000562.12.10.1439453720; __utmc=142000562; __utmt=1; 4Oaf_61d6_nofocus_member=1; 4Oaf_61d6_nofocus_forum=1; 4Oaf_61d6_ulastactivity=b1ccszmakCkkoWTaybWumhPQy0hx1PDIt6FDBQ5WElNhsEaEot6p; 4Oaf_61d6_auth=5808WxQ6wi8Gf9YPAp2asvku33LiM5xIWqdR67gpl8HOZTL87ISKHL5cTtUOFQR8V%2Be4wSyU5Taa4q9Va33Bq9v%2FlRM; 4Oaf_61d6_lastcheckfeed=175519%7C1439454242; 4Oaf_61d6_lip=118.187.68.34%2C1439453999; 4Oaf_61d6_nofavfid=1; 4Oaf_61d6_onlineusernum=258; 4Oaf_61d6_forum_lastvisit=D_27_1439454207; 4Oaf_61d6_smile=4D1; 4Oaf_61d6_viewid=tid_72476; 4Oaf_61d6_checkpm=1; 4Oaf_61d6_checkfollow=1" [line 41];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE42">42</td><td class="line">         </td></tr>
+<tr><td class="num" id="LINE43">43</td><td class="line">        // 每次访问需授权的网址时需带上前面的 cookie 作为通行证   </td></tr>
+<tr><td class="num" id="LINE44">44</td><td class="line">        getMethod.setRequestHeader(&quot;Cookie&quot;, ck); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$7=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 44];
+_=*n$7:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 44];
+n$9=*&amp;ck:java.lang.Object* [line 44];
+n$10=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$7:org.apache.commons.httpclient.methods.GetMethod*,"Cookie":java.lang.Object*,n$9:java.lang.Object*) virtual [line 44];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE45">45</td><td class="line">		getMethod.setRequestHeader(&quot;Host&quot;, &quot;www.1point3acres.com&quot;);   <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+n$11=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 45];
+_=*n$11:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 45];
+n$13=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$11:org.apache.commons.httpclient.methods.GetMethod*,"Host":java.lang.Object*,"www.1point3acres.com":java.lang.Object*) virtual [line 45];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE46">46</td><td class="line">	    getMethod.setRequestHeader(&quot;User-Agent&quot;, &quot;Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.111 Safari/537.36&quot;);     <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+n$14=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 46];
+_=*n$14:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 46];
+n$16=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$14:org.apache.commons.httpclient.methods.GetMethod*,"User-Agent":java.lang.Object*,"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.111 Safari/537.36":java.lang.Object*) virtual [line 46];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE47">47</td><td class="line">	    getMethod.setRequestHeader(&quot;Accept&quot;, &quot;text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&quot;);   <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$17=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 47];
+_=*n$17:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 47];
+n$19=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$17:org.apache.commons.httpclient.methods.GetMethod*,"Accept":java.lang.Object*,"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8":java.lang.Object*) virtual [line 47];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE48">48</td><td class="line">	    getMethod.setRequestHeader(&quot;Accept-Language&quot;, &quot;zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3&quot;);   <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:3 Instructions
+n$20=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 48];
+_=*n$20:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 48];
+n$22=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$20:org.apache.commons.httpclient.methods.GetMethod*,"Accept-Language":java.lang.Object*,"zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3":java.lang.Object*) virtual [line 48];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE49">49</td><td class="line">	    //getMethod.setRequestHeader(&quot;Accept-Encoding&quot;, &quot;gzip, deflate&quot;);   </td></tr>
+<tr><td class="num" id="LINE50">50</td><td class="line">	    getMethod.setRequestHeader(&quot;DNT&quot;, &quot;1&quot;);   <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:3 Instructions
+n$23=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 50];
+_=*n$23:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 50];
+n$25=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$23:org.apache.commons.httpclient.methods.GetMethod*,"DNT":java.lang.Object*,"1":java.lang.Object*) virtual [line 50];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE51">51</td><td class="line">	    getMethod.setRequestHeader(&quot;Referer&quot;, &quot;http://www.1point3acres.com/bbs/&quot;);   <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:3 Instructions
+n$26=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 51];
+_=*n$26:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 51];
+n$28=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$26:org.apache.commons.httpclient.methods.GetMethod*,"Referer":java.lang.Object*,"http://www.1point3acres.com/bbs/":java.lang.Object*) virtual [line 51];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE52">52</td><td class="line">	     </td></tr>
+<tr><td class="num" id="LINE53">53</td><td class="line">	    try { </td></tr>
+<tr><td class="num" id="LINE54">54</td><td class="line">			client.executeMethod(getMethod); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:21 exn:49 Instructions
+n$29=*&amp;client:org.apache.commons.httpclient.HttpClient* [line 54];
+_=*n$29:org.apache.commons.httpclient.HttpClient*(root org.apache.commons.httpclient.HttpClient) [line 54];
+n$31=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 54];
+n$32=_fun_int HttpClient.executeMethod(HttpMethod)(n$29:org.apache.commons.httpclient.HttpClient*,n$31:org.apache.commons.httpclient.methods.GetMethod*) virtual [line 54];
+*&amp;$irvar0:int=n$32 [line 54];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE55">55</td><td class="line">		} catch (HttpException e) { <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:47 succs:18 exn:3 Instructions
+n$33=*&amp;CatchVar106:java.lang.Object* [line 55];
+*&amp;e:java.lang.Object*=n$33 [line 55];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node47.html"><span class='visited with_tooltip'>C_47<span class='tooltip'>node47 preds:49 succs:17 exn:3 Conditional exception handler
+n$93=_fun___instanceof(n$90:org.apache.commons.httpclient.HttpException*,sizeof(t=org.apache.commons.httpclient.HttpException):void) [line 55];
+PRUNE(n$93, true); [line 55];
+*&amp;CatchVar106:java.util.List*=n$90 [line 55];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node48.html"><span class='visited with_tooltip'>C_48<span class='tooltip'>node48 preds:49 succs:45 46 exn:3 Conditional exception handler
+n$93=_fun___instanceof(n$90:org.apache.commons.httpclient.HttpException*,sizeof(t=org.apache.commons.httpclient.HttpException):void) [line 55];
+PRUNE(!n$93, false); [line 55];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node49.html"><span class='visited with_tooltip'>I_49<span class='tooltip'>node49 preds: succs:47 48 exn:3 Instructions
+n$89=*&amp;return:java.util.List* [line 55];
+*&amp;return:java.util.List*=null [line 55];
+n$90=_fun___unwrap_exception(n$89:java.util.List*) [line 55];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE56">56</td><td class="line">			// TODO Auto-generated catch block </td></tr>
+<tr><td class="num" id="LINE57">57</td><td class="line">			e.printStackTrace(); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:21 exn:3 Instructions
+n$34=*&amp;e:java.lang.Object* [line 57];
+_=*n$34:java.lang.Object*(root java.lang.Object) [line 57];
+n$36=_fun_void HttpException.printStackTrace()(n$34:java.lang.Object*) virtual [line 57];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE58">58</td><td class="line">		} catch (IOException e) { <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:45 succs:20 exn:3 Instructions
+n$37=*&amp;CatchVar116:java.lang.Object* [line 58];
+*&amp;e:java.lang.Object*=n$37 [line 58];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node45.html"><span class='visited with_tooltip'>C_45<span class='tooltip'>node45 preds:48 succs:19 exn:3 Conditional exception handler
+n$92=_fun___instanceof(n$90:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 58];
+PRUNE(n$92, true); [line 58];
+*&amp;CatchVar116:java.util.List*=n$90 [line 58];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node46.html"><span class='visited with_tooltip'>C_46<span class='tooltip'>node46 preds:48 succs:3 exn:3 Conditional exception handler
+n$92=_fun___instanceof(n$90:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 58];
+PRUNE(!n$92, false); [line 58];
+*&amp;return:java.util.List*=EXN n$90 [line 58];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE59">59</td><td class="line">			// TODO Auto-generated catch block </td></tr>
+<tr><td class="num" id="LINE60">60</td><td class="line">			e.printStackTrace(); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:3 Instructions
+n$38=*&amp;e:java.lang.Object* [line 60];
+_=*n$38:java.lang.Object*(root java.lang.Object) [line 60];
+n$40=_fun_void Throwable.printStackTrace()(n$38:java.lang.Object*) virtual [line 60];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE61">61</td><td class="line">		} </td></tr>
+<tr><td class="num" id="LINE62">62</td><td class="line">	    try { </td></tr>
+<tr><td class="num" id="LINE63">63</td><td class="line">			response = getMethod.getResponseBodyAsString(); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 18 16 succs:24 exn:44 Instructions
+n$41=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 63];
+_=*n$41:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 63];
+n$43=_fun_String HttpMethodBase.getResponseBodyAsString()(n$41:org.apache.commons.httpclient.methods.GetMethod*) virtual [line 63];
+*&amp;response:java.lang.String*=n$43 [line 63];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE64">64</td><td class="line">			 </td></tr>
+<tr><td class="num" id="LINE65">65</td><td class="line">		} catch (IOException e) { <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:42 succs:23 exn:3 Instructions
+n$44=*&amp;CatchVar132:java.lang.Object* [line 65];
+*&amp;e:java.lang.Object*=n$44 [line 65];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node42.html"><span class='visited with_tooltip'>C_42<span class='tooltip'>node42 preds:44 succs:22 exn:3 Conditional exception handler
+n$91=_fun___instanceof(n$90:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 65];
+PRUNE(n$91, true); [line 65];
+*&amp;CatchVar132:java.util.List*=n$90 [line 65];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node43.html"><span class='visited with_tooltip'>C_43<span class='tooltip'>node43 preds:44 succs:3 exn:3 Conditional exception handler
+n$91=_fun___instanceof(n$90:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 65];
+PRUNE(!n$91, false); [line 65];
+*&amp;return:java.util.List*=EXN n$90 [line 65];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node44.html"><span class='visited with_tooltip'>I_44<span class='tooltip'>node44 preds: succs:42 43 exn:3 Instructions
+n$89=*&amp;return:java.util.List* [line 65];
+*&amp;return:java.util.List*=null [line 65];
+n$90=_fun___unwrap_exception(n$89:java.util.List*) [line 65];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE66">66</td><td class="line">			// TODO Auto-generated catch block </td></tr>
+<tr><td class="num" id="LINE67">67</td><td class="line">			e.printStackTrace(); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:3 Instructions
+n$45=*&amp;e:java.lang.Object* [line 67];
+_=*n$45:java.lang.Object*(root java.lang.Object) [line 67];
+n$47=_fun_void Throwable.printStackTrace()(n$45:java.lang.Object*) virtual [line 67];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE68">68</td><td class="line">		} </td></tr>
+<tr><td class="num" id="LINE69">69</td><td class="line">		Document html = Jsoup.parse(response); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 21 succs:25 exn:3 Instructions
+n$48=*&amp;response:java.lang.String* [line 69];
+n$49=_fun_Document Jsoup.parse(String)(n$48:java.lang.String*) [line 69];
+*&amp;html:org.jsoup.nodes.Document*=n$49 [line 69];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE70">70</td><td class="line">		Element ele = html.getElementById(&quot;threadlisttableid&quot;); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:26 exn:3 Instructions
+n$50=*&amp;html:org.jsoup.nodes.Document* [line 70];
+_=*n$50:org.jsoup.nodes.Document*(root org.jsoup.nodes.Document) [line 70];
+n$52=_fun_Element Element.getElementById(String)(n$50:org.jsoup.nodes.Document*,"threadlisttableid":java.lang.Object*) virtual [line 70];
+*&amp;ele:org.jsoup.nodes.Element*=n$52 [line 70];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE71">71</td><td class="line">		Elements tbodys = ele.children(); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:25 succs:27 exn:3 Instructions
+n$53=*&amp;ele:org.jsoup.nodes.Element* [line 71];
+_=*n$53:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 71];
+n$55=_fun_Elements Element.children()(n$53:org.jsoup.nodes.Element*) virtual [line 71];
+*&amp;tbodys:org.jsoup.select.Elements*=n$55 [line 71];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE72">72</td><td class="line">		int size = tbodys.size(); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:26 succs:28 exn:3 Instructions
+n$56=*&amp;tbodys:org.jsoup.select.Elements* [line 72];
+_=*n$56:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 72];
+n$58=_fun_int Elements.size()(n$56:org.jsoup.select.Elements*) virtual [line 72];
+*&amp;size:int=n$58 [line 72];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE73">73</td><td class="line">		for(int i = 1 ; i &lt; size ; i++){ <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:27 succs:31 exn:3 Instructions
+*&amp;i:int=1 [line 73];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node31.html"><span class='visited with_tooltip'>J_31<span class='tooltip'>node31 preds:40 28 succs:29 30 exn: Join
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node29.html"><span class='visited with_tooltip'>C_29<span class='tooltip'>node29 preds:31 succs:32 exn:3 Conditional method_body
+n$59=*&amp;i:int [line 73];
+n$60=*&amp;size:int [line 73];
+PRUNE(!(n$59  &gt;=  n$60), true); [line 73];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node40.html"><span class='visited with_tooltip'>I_40<span class='tooltip'>node40 preds:39 succs:31 exn:3 Instructions
+n$87=*&amp;i:int [line 73];
+*&amp;i:int=(n$87 + 1) [line 73];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node30.html"><span class='visited with_tooltip'>C_30<span class='tooltip'>node30 preds:31 succs:41 exn:3 Conditional method_body
+n$59=*&amp;i:int [line 73];
+n$60=*&amp;size:int [line 73];
+PRUNE((n$59  &gt;=  n$60), false); [line 73];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE74">74</td><td class="line">			String href = tbodys.get(i).getElementsByClass(&quot;icn&quot;).get(0).select(&quot;a&quot;).first().attr(&quot;href&quot;).toString(); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node32.html"><span class='visited with_tooltip'>I_32<span class='tooltip'>node32 preds:29 succs:33 exn:3 Instructions
+n$61=*&amp;tbodys:org.jsoup.select.Elements* [line 74];
+_=*n$61:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 74];
+n$63=*&amp;i:int [line 74];
+n$64=_fun_Element Elements.get(int)(n$61:org.jsoup.select.Elements*,n$63:int) virtual [line 74];
+*&amp;$irvar1:org.jsoup.nodes.Element*=n$64 [line 74];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds:32 succs:34 exn:3 Instructions
+n$65=*&amp;$irvar1:org.jsoup.nodes.Element* [line 74];
+_=*n$65:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 74];
+n$67=_fun_Elements Element.getElementsByClass(String)(n$65:org.jsoup.nodes.Element*,"icn":java.lang.Object*) virtual [line 74];
+*&amp;$irvar2:org.jsoup.select.Elements*=n$67 [line 74];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds:33 succs:35 exn:3 Instructions
+n$68=*&amp;$irvar2:org.jsoup.select.Elements* [line 74];
+_=*n$68:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 74];
+n$70=_fun_Element Elements.get(int)(n$68:org.jsoup.select.Elements*,0:int) virtual [line 74];
+*&amp;$irvar3:org.jsoup.nodes.Element*=n$70 [line 74];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node35.html"><span class='visited with_tooltip'>I_35<span class='tooltip'>node35 preds:34 succs:36 exn:3 Instructions
+n$71=*&amp;$irvar3:org.jsoup.nodes.Element* [line 74];
+_=*n$71:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 74];
+n$73=_fun_Elements Element.select(String)(n$71:org.jsoup.nodes.Element*,"a":java.lang.Object*) virtual [line 74];
+*&amp;$irvar4:org.jsoup.select.Elements*=n$73 [line 74];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node36.html"><span class='visited with_tooltip'>I_36<span class='tooltip'>node36 preds:35 succs:37 exn:3 Instructions
+n$74=*&amp;$irvar4:org.jsoup.select.Elements* [line 74];
+_=*n$74:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 74];
+n$76=_fun_Element Elements.first()(n$74:org.jsoup.select.Elements*) virtual [line 74];
+*&amp;$irvar5:org.jsoup.nodes.Element*=n$76 [line 74];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node37.html"><span class='visited with_tooltip'>I_37<span class='tooltip'>node37 preds:36 succs:38 exn:3 Instructions
+n$77=*&amp;$irvar5:org.jsoup.nodes.Element* [line 74];
+_=*n$77:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 74];
+n$79=_fun_String Node.attr(String)(n$77:org.jsoup.nodes.Element*,"href":java.lang.Object*) virtual [line 74];
+*&amp;$irvar6:java.lang.String*=n$79 [line 74];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node38.html"><span class='visited with_tooltip'>I_38<span class='tooltip'>node38 preds:37 succs:39 exn:3 Instructions
+n$80=*&amp;$irvar6:java.lang.String* [line 74];
+_=*n$80:java.lang.String*(root java.lang.String) [line 74];
+n$82=_fun_String String.toString()(n$80:java.lang.String*) virtual [line 74];
+*&amp;href:java.lang.String*=n$82 [line 74];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE75">75</td><td class="line">			result.add(href); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node39.html"><span class='visited with_tooltip'>I_39<span class='tooltip'>node39 preds:38 succs:40 exn:3 Instructions
+n$83=*&amp;result:java.util.ArrayList* [line 75];
+_=*n$83:java.util.ArrayList*(root java.util.ArrayList) [line 75];
+n$85=*&amp;href:java.lang.String* [line 75];
+n$86=_fun_boolean ArrayList.add(Object)(n$83:java.util.ArrayList*,n$85:java.lang.String*) interface virtual [line 75];
+*&amp;$irvar7:_Bool=n$86 [line 75];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE76">76</td><td class="line">		}	     </td></tr>
+<tr><td class="num" id="LINE77">77</td><td class="line">		return result; <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node41.html"><span class='visited with_tooltip'>I_41<span class='tooltip'>node41 preds:30 succs:2 exn:3 Instructions
+n$88=*&amp;result:java.util.ArrayList* [line 77];
+*&amp;return:java.util.List*=n$88 [line 77];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:41 3 succs: exn: Exit
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getUrl%28java.lang.String%29%3Ajava.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:46 43 succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE78">78</td><td class="line">	} </td></tr>
+<tr><td class="num" id="LINE79">79</td><td class="line">	 </td></tr>
+<tr><td class="num" id="LINE80">80</td><td class="line">	public static String httpRequest(String url){ <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpRequest%28java.lang.String%29%3Ajava.lang.String.cae6e6f8486321ab6861ae904dc497fb_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/com.dulishuo.util.CrawlerUtil.httpRequest%28java.lang.String%29%3Ajava.lang.String.cae6e6f8486321ab6861ae904dc497fb.html">summary for String CrawlerUtil.httpRequest(String)</a></td></tr>
+<tr><td class="num" id="LINE81">81</td><td class="line">		String response = &quot;-1&quot;; <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpRequest%28java.lang.String%29%3Ajava.lang.String.cae6e6f8486321ab6861ae904dc497fb_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+*&amp;response:java.lang.Object*="-1" [line 81];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE82">82</td><td class="line">		 </td></tr>
+<tr><td class="num" id="LINE83">83</td><td class="line">		HttpClient client = new HttpClient(); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpRequest%28java.lang.String%29%3Ajava.lang.String.cae6e6f8486321ab6861ae904dc497fb_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$0=_fun___new(sizeof(t=org.apache.commons.httpclient.HttpClient):org.apache.commons.httpclient.HttpClient*) [line 83];
+n$1=_fun_HttpClient.&lt;init&gt;()(n$0:org.apache.commons.httpclient.HttpClient*) [line 83];
+*&amp;client:org.apache.commons.httpclient.HttpClient*=n$0 [line 83];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE84">84</td><td class="line">		//设置代理服务器的ip地址和端口   </td></tr>
+<tr><td class="num" id="LINE85">85</td><td class="line">		//client.getHostConfiguration().setProxy(&quot;59.175.192.126&quot;, 3128);   </td></tr>
+<tr><td class="num" id="LINE86">86</td><td class="line">		//使用抢先认证   </td></tr>
+<tr><td class="num" id="LINE87">87</td><td class="line">		//client.getParams().setAuthenticationPreemptive(true);  </td></tr>
+<tr><td class="num" id="LINE88">88</td><td class="line">		GetMethod getMethod = new GetMethod(url); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpRequest%28java.lang.String%29%3Ajava.lang.String.cae6e6f8486321ab6861ae904dc497fb_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$2=_fun___new(sizeof(t=org.apache.commons.httpclient.methods.GetMethod):org.apache.commons.httpclient.methods.GetMethod*) [line 88];
+n$3=*&amp;url:java.lang.String* [line 88];
+n$4=_fun_GetMethod.&lt;init&gt;(String)(n$2:org.apache.commons.httpclient.methods.GetMethod*,n$3:java.lang.String*) [line 88];
+*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod*=n$2 [line 88];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE89">89</td><td class="line">		//请求配置 </td></tr>
+<tr><td class="num" id="LINE90">90</td><td class="line">		//String cookie = &quot;Hm_lvt_4bd66cbe45a640b607fe46c48f658746=1451016691; Hm_lpvt_4bd66cbe45a640b607fe46c48f658746=1451017061; PHPSESSID=86042607b79939dbfe1988582fd946dd; VMhOIbxho_checkcode=kiyd; VMhOIbxho_member=M6D2AcwfM0DbA3wcM3DeA6waM4Hcs9i4d6W8lek7I2j1o6i8M3j9g7y2O1TdU82eMyIsInNlc3Npb24iOiI4MDkyYWMwODczY2E4MjFmNTUwNjYwNGUzOGYyMGU5ZCIsInVzZXJuYW1lIjoiXHU2ZDZhXHU3OTVlIiwiZ3JvdXBpZCI6NCwidWluIjozNjc5MzIyfQO0O0OO0O0O; 4B5x_c0ae_saltkey=PlnUgvzf; 4B5x_c0ae_lastvisit=1451013385; 4B5x_c0ae_sid=3TpTYC; 4B5x_c0ae_lastact=1451016985&#37;09dx_uicms_uc.php&#37;09; 4B5x_c0ae_uicms_uid=3679322; 4B5x_c0ae_auth=b05fDAgbgUtBntSR0N&#37;2FH4PDFESxBxYyXXxJMfRss1JXxC5zUyQ&quot;; </td></tr>
+<tr><td class="num" id="LINE91">91</td><td class="line">	   // getMethod.addRequestHeader(&quot;Cookie&quot;, cookie); </td></tr>
+<tr><td class="num" id="LINE92">92</td><td class="line">	    try { </td></tr>
+<tr><td class="num" id="LINE93">93</td><td class="line">			client.executeMethod(getMethod); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpRequest%28java.lang.String%29%3Ajava.lang.String.cae6e6f8486321ab6861ae904dc497fb_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:14 exn:26 Instructions
+n$5=*&amp;client:org.apache.commons.httpclient.HttpClient* [line 93];
+_=*n$5:org.apache.commons.httpclient.HttpClient*(root org.apache.commons.httpclient.HttpClient) [line 93];
+n$7=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 93];
+n$8=_fun_int HttpClient.executeMethod(HttpMethod)(n$5:org.apache.commons.httpclient.HttpClient*,n$7:org.apache.commons.httpclient.methods.GetMethod*) virtual [line 93];
+*&amp;$irvar0:int=n$8 [line 93];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE94">94</td><td class="line">		} catch (HttpException e) { <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpRequest%28java.lang.String%29%3Ajava.lang.String.cae6e6f8486321ab6861ae904dc497fb_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:24 succs:9 exn:3 Instructions
+n$9=*&amp;CatchVar29:java.lang.Object* [line 94];
+*&amp;e:java.lang.Object*=n$9 [line 94];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpRequest%28java.lang.String%29%3Ajava.lang.String.cae6e6f8486321ab6861ae904dc497fb_node24.html"><span class='visited with_tooltip'>C_24<span class='tooltip'>node24 preds:26 succs:8 exn:3 Conditional exception handler
+n$32=_fun___instanceof(n$29:org.apache.commons.httpclient.HttpException*,sizeof(t=org.apache.commons.httpclient.HttpException):void) [line 94];
+PRUNE(n$32, true); [line 94];
+*&amp;CatchVar29:java.lang.String*=n$29 [line 94];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpRequest%28java.lang.String%29%3Ajava.lang.String.cae6e6f8486321ab6861ae904dc497fb_node25.html"><span class='visited with_tooltip'>C_25<span class='tooltip'>node25 preds:26 succs:22 23 exn:3 Conditional exception handler
+n$32=_fun___instanceof(n$29:org.apache.commons.httpclient.HttpException*,sizeof(t=org.apache.commons.httpclient.HttpException):void) [line 94];
+PRUNE(!n$32, false); [line 94];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpRequest%28java.lang.String%29%3Ajava.lang.String.cae6e6f8486321ab6861ae904dc497fb_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds: succs:24 25 exn:3 Instructions
+n$28=*&amp;return:java.lang.String* [line 94];
+*&amp;return:java.lang.String*=null [line 94];
+n$29=_fun___unwrap_exception(n$28:java.lang.String*) [line 94];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE95">95</td><td class="line">			// TODO Auto-generated catch block </td></tr>
+<tr><td class="num" id="LINE96">96</td><td class="line">			e.printStackTrace(); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpRequest%28java.lang.String%29%3Ajava.lang.String.cae6e6f8486321ab6861ae904dc497fb_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$10=*&amp;e:java.lang.Object* [line 96];
+_=*n$10:java.lang.Object*(root java.lang.Object) [line 96];
+n$12=_fun_void HttpException.printStackTrace()(n$10:java.lang.Object*) virtual [line 96];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE97">97</td><td class="line">			return response; <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpRequest%28java.lang.String%29%3Ajava.lang.String.cae6e6f8486321ab6861ae904dc497fb_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:2 exn:3 Instructions
+n$13=*&amp;response:java.lang.Object* [line 97];
+*&amp;return:java.lang.String*=n$13 [line 97];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE98">98</td><td class="line">		} catch (IOException e) { <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpRequest%28java.lang.String%29%3Ajava.lang.String.cae6e6f8486321ab6861ae904dc497fb_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:22 succs:12 exn:3 Instructions
+n$14=*&amp;CatchVar38:java.lang.Object* [line 98];
+*&amp;e:java.lang.Object*=n$14 [line 98];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpRequest%28java.lang.String%29%3Ajava.lang.String.cae6e6f8486321ab6861ae904dc497fb_node22.html"><span class='visited with_tooltip'>C_22<span class='tooltip'>node22 preds:25 succs:11 exn:3 Conditional exception handler
+n$31=_fun___instanceof(n$29:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 98];
+PRUNE(n$31, true); [line 98];
+*&amp;CatchVar38:java.lang.String*=n$29 [line 98];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpRequest%28java.lang.String%29%3Ajava.lang.String.cae6e6f8486321ab6861ae904dc497fb_node23.html"><span class='visited with_tooltip'>C_23<span class='tooltip'>node23 preds:25 succs:3 exn:3 Conditional exception handler
+n$31=_fun___instanceof(n$29:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 98];
+PRUNE(!n$31, false); [line 98];
+*&amp;return:java.lang.String*=EXN n$29 [line 98];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE99">99</td><td class="line">			// TODO Auto-generated catch block </td></tr>
+<tr><td class="num" id="LINE100">100</td><td class="line">			e.printStackTrace(); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpRequest%28java.lang.String%29%3Ajava.lang.String.cae6e6f8486321ab6861ae904dc497fb_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$15=*&amp;e:java.lang.Object* [line 100];
+_=*n$15:java.lang.Object*(root java.lang.Object) [line 100];
+n$17=_fun_void Throwable.printStackTrace()(n$15:java.lang.Object*) virtual [line 100];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE101">101</td><td class="line">			return response; <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpRequest%28java.lang.String%29%3Ajava.lang.String.cae6e6f8486321ab6861ae904dc497fb_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:2 exn:3 Instructions
+n$18=*&amp;response:java.lang.Object* [line 101];
+*&amp;return:java.lang.String*=n$18 [line 101];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE102">102</td><td class="line">		} </td></tr>
+<tr><td class="num" id="LINE103">103</td><td class="line">	    try { </td></tr>
+<tr><td class="num" id="LINE104">104</td><td class="line">			response = getMethod.getResponseBodyAsString(); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpRequest%28java.lang.String%29%3Ajava.lang.String.cae6e6f8486321ab6861ae904dc497fb_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:7 succs:18 exn:21 Instructions
+n$19=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 104];
+_=*n$19:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 104];
+n$21=_fun_String HttpMethodBase.getResponseBodyAsString()(n$19:org.apache.commons.httpclient.methods.GetMethod*) virtual [line 104];
+*&amp;response:java.lang.String*=n$21 [line 104];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE105">105</td><td class="line">		} catch (IOException e) { <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpRequest%28java.lang.String%29%3Ajava.lang.String.cae6e6f8486321ab6861ae904dc497fb_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:19 succs:16 exn:3 Instructions
+n$22=*&amp;CatchVar55:java.lang.Object* [line 105];
+*&amp;e:java.lang.Object*=n$22 [line 105];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpRequest%28java.lang.String%29%3Ajava.lang.String.cae6e6f8486321ab6861ae904dc497fb_node19.html"><span class='visited with_tooltip'>C_19<span class='tooltip'>node19 preds:21 succs:15 exn:3 Conditional exception handler
+n$30=_fun___instanceof(n$29:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 105];
+PRUNE(n$30, true); [line 105];
+*&amp;CatchVar55:java.lang.String*=n$29 [line 105];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpRequest%28java.lang.String%29%3Ajava.lang.String.cae6e6f8486321ab6861ae904dc497fb_node20.html"><span class='visited with_tooltip'>C_20<span class='tooltip'>node20 preds:21 succs:3 exn:3 Conditional exception handler
+n$30=_fun___instanceof(n$29:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 105];
+PRUNE(!n$30, false); [line 105];
+*&amp;return:java.lang.String*=EXN n$29 [line 105];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpRequest%28java.lang.String%29%3Ajava.lang.String.cae6e6f8486321ab6861ae904dc497fb_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds: succs:19 20 exn:3 Instructions
+n$28=*&amp;return:java.lang.String* [line 105];
+*&amp;return:java.lang.String*=null [line 105];
+n$29=_fun___unwrap_exception(n$28:java.lang.String*) [line 105];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE106">106</td><td class="line">			// TODO Auto-generated catch block </td></tr>
+<tr><td class="num" id="LINE107">107</td><td class="line">			e.printStackTrace(); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpRequest%28java.lang.String%29%3Ajava.lang.String.cae6e6f8486321ab6861ae904dc497fb_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:3 Instructions
+n$23=*&amp;e:java.lang.Object* [line 107];
+_=*n$23:java.lang.Object*(root java.lang.Object) [line 107];
+n$25=_fun_void Throwable.printStackTrace()(n$23:java.lang.Object*) virtual [line 107];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE108">108</td><td class="line">			return response; <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpRequest%28java.lang.String%29%3Ajava.lang.String.cae6e6f8486321ab6861ae904dc497fb_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:2 exn:3 Instructions
+n$26=*&amp;response:java.lang.String* [line 108];
+*&amp;return:java.lang.String*=n$26 [line 108];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE109">109</td><td class="line">		} </td></tr>
+<tr><td class="num" id="LINE110">110</td><td class="line">	     </td></tr>
+<tr><td class="num" id="LINE111">111</td><td class="line">	    return response; <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpRequest%28java.lang.String%29%3Ajava.lang.String.cae6e6f8486321ab6861ae904dc497fb_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:14 succs:2 exn:3 Instructions
+n$27=*&amp;response:java.lang.String* [line 111];
+*&amp;return:java.lang.String*=n$27 [line 111];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpRequest%28java.lang.String%29%3Ajava.lang.String.cae6e6f8486321ab6861ae904dc497fb_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:18 17 13 10 3 succs: exn: Exit
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpRequest%28java.lang.String%29%3Ajava.lang.String.cae6e6f8486321ab6861ae904dc497fb_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:23 20 succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE112">112</td><td class="line">	} </td></tr>
+<tr><td class="num" id="LINE113">113</td><td class="line">	 </td></tr>
+<tr><td class="num" id="LINE114">114</td><td class="line">	public static String earse(String src){ <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.earse%28java.lang.String%29%3Ajava.lang.String.9d436a9a4b6ff0b8aae595b1e011a324_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/com.dulishuo.util.CrawlerUtil.earse%28java.lang.String%29%3Ajava.lang.String.9d436a9a4b6ff0b8aae595b1e011a324.html">summary for String CrawlerUtil.earse(String)</a></td></tr>
+<tr><td class="num" id="LINE115">115</td><td class="line">		String result = &quot;&quot;; <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.earse%28java.lang.String%29%3Ajava.lang.String.9d436a9a4b6ff0b8aae595b1e011a324_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+*&amp;result:java.lang.Object*="" [line 115];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE116">116</td><td class="line">		 </td></tr>
+<tr><td class="num" id="LINE117">117</td><td class="line">		String regex = &quot;&lt;(?!br).*?&gt;&quot;;   //去除所有标签，只剩br <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.earse%28java.lang.String%29%3Ajava.lang.String.9d436a9a4b6ff0b8aae595b1e011a324_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+*&amp;regex:java.lang.Object*="<(?!br).*?>" [line 117];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE118">118</td><td class="line">		 </td></tr>
+<tr><td class="num" id="LINE119">119</td><td class="line">		src = src.replace(&quot;&lt;/div&gt;&quot;, &quot;&lt;br&gt;&quot;).replace(&quot;&lt;/p&gt;&quot;,&quot;&quot;).replace(&quot;&lt;/h&gt;&quot;,&quot;&quot;).replace(&quot;&lt;/ul&gt;&quot;,&quot;&quot;).replace(&quot;&lt;/li&gt;&quot;,&quot;&quot;).replace(&quot;\\n&quot;, &quot;&quot;).replace(&quot;&lt;/ol&gt;&quot;,&quot;&quot;).replace(&quot;&lt;/tr&gt;&quot;,&quot;&quot;); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.earse%28java.lang.String%29%3Ajava.lang.String.9d436a9a4b6ff0b8aae595b1e011a324_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$0=*&amp;src:java.lang.String* [line 119];
+_=*n$0:java.lang.String*(root java.lang.String) [line 119];
+n$2=_fun_String String.replace(CharSequence,CharSequence)(n$0:java.lang.String*,"</div>":java.lang.Object*,"<br>":java.lang.Object*) virtual [line 119];
+*&amp;$irvar0:java.lang.String*=n$2 [line 119];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.earse%28java.lang.String%29%3Ajava.lang.String.9d436a9a4b6ff0b8aae595b1e011a324_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$3=*&amp;$irvar0:java.lang.String* [line 119];
+_=*n$3:java.lang.String*(root java.lang.String) [line 119];
+n$5=_fun_String String.replace(CharSequence,CharSequence)(n$3:java.lang.String*,"</p>":java.lang.Object*,"":java.lang.Object*) virtual [line 119];
+*&amp;$irvar1:java.lang.String*=n$5 [line 119];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.earse%28java.lang.String%29%3Ajava.lang.String.9d436a9a4b6ff0b8aae595b1e011a324_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$6=*&amp;$irvar1:java.lang.String* [line 119];
+_=*n$6:java.lang.String*(root java.lang.String) [line 119];
+n$8=_fun_String String.replace(CharSequence,CharSequence)(n$6:java.lang.String*,"</h>":java.lang.Object*,"":java.lang.Object*) virtual [line 119];
+*&amp;$irvar2:java.lang.String*=n$8 [line 119];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.earse%28java.lang.String%29%3Ajava.lang.String.9d436a9a4b6ff0b8aae595b1e011a324_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$9=*&amp;$irvar2:java.lang.String* [line 119];
+_=*n$9:java.lang.String*(root java.lang.String) [line 119];
+n$11=_fun_String String.replace(CharSequence,CharSequence)(n$9:java.lang.String*,"</ul>":java.lang.Object*,"":java.lang.Object*) virtual [line 119];
+*&amp;$irvar3:java.lang.String*=n$11 [line 119];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.earse%28java.lang.String%29%3Ajava.lang.String.9d436a9a4b6ff0b8aae595b1e011a324_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+n$12=*&amp;$irvar3:java.lang.String* [line 119];
+_=*n$12:java.lang.String*(root java.lang.String) [line 119];
+n$14=_fun_String String.replace(CharSequence,CharSequence)(n$12:java.lang.String*,"</li>":java.lang.Object*,"":java.lang.Object*) virtual [line 119];
+*&amp;$irvar4:java.lang.String*=n$14 [line 119];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.earse%28java.lang.String%29%3Ajava.lang.String.9d436a9a4b6ff0b8aae595b1e011a324_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+n$15=*&amp;$irvar4:java.lang.String* [line 119];
+_=*n$15:java.lang.String*(root java.lang.String) [line 119];
+n$17=_fun_String String.replace(CharSequence,CharSequence)(n$15:java.lang.String*,"\\\\n":java.lang.Object*,"":java.lang.Object*) virtual [line 119];
+*&amp;$irvar5:java.lang.String*=n$17 [line 119];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.earse%28java.lang.String%29%3Ajava.lang.String.9d436a9a4b6ff0b8aae595b1e011a324_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$18=*&amp;$irvar5:java.lang.String* [line 119];
+_=*n$18:java.lang.String*(root java.lang.String) [line 119];
+n$20=_fun_String String.replace(CharSequence,CharSequence)(n$18:java.lang.String*,"</ol>":java.lang.Object*,"":java.lang.Object*) virtual [line 119];
+*&amp;$irvar6:java.lang.String*=n$20 [line 119];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.earse%28java.lang.String%29%3Ajava.lang.String.9d436a9a4b6ff0b8aae595b1e011a324_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:3 Instructions
+n$21=*&amp;$irvar6:java.lang.String* [line 119];
+_=*n$21:java.lang.String*(root java.lang.String) [line 119];
+n$23=_fun_String String.replace(CharSequence,CharSequence)(n$21:java.lang.String*,"</tr>":java.lang.Object*,"":java.lang.Object*) virtual [line 119];
+*&amp;src:java.lang.String*=n$23 [line 119];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE120">120</td><td class="line">		 </td></tr>
+<tr><td class="num" id="LINE121">121</td><td class="line">		result = src.replaceAll(regex, &quot;&quot;).replaceAll(&quot;&amp;nbsp[\\;]?&quot;,&quot;&quot;).replace(&quot;&lt;br /&gt;&quot;,&quot;&lt;br&gt;&quot;); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.earse%28java.lang.String%29%3Ajava.lang.String.9d436a9a4b6ff0b8aae595b1e011a324_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:3 Instructions
+n$24=*&amp;src:java.lang.String* [line 121];
+_=*n$24:java.lang.String*(root java.lang.String) [line 121];
+n$26=*&amp;regex:java.lang.Object* [line 121];
+n$27=_fun_String String.replaceAll(String,String)(n$24:java.lang.String*,n$26:java.lang.Object*,"":java.lang.Object*) virtual [line 121];
+*&amp;$irvar7:java.lang.String*=n$27 [line 121];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.earse%28java.lang.String%29%3Ajava.lang.String.9d436a9a4b6ff0b8aae595b1e011a324_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:3 Instructions
+n$28=*&amp;$irvar7:java.lang.String* [line 121];
+_=*n$28:java.lang.String*(root java.lang.String) [line 121];
+n$30=_fun_String String.replaceAll(String,String)(n$28:java.lang.String*,"&nbsp[\\\\;]?":java.lang.Object*,"":java.lang.Object*) virtual [line 121];
+*&amp;$irvar8:java.lang.String*=n$30 [line 121];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.earse%28java.lang.String%29%3Ajava.lang.String.9d436a9a4b6ff0b8aae595b1e011a324_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:3 Instructions
+n$31=*&amp;$irvar8:java.lang.String* [line 121];
+_=*n$31:java.lang.String*(root java.lang.String) [line 121];
+n$33=_fun_String String.replace(CharSequence,CharSequence)(n$31:java.lang.String*,"<br />":java.lang.Object*,"<br>":java.lang.Object*) virtual [line 121];
+*&amp;result:java.lang.String*=n$33 [line 121];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE122">122</td><td class="line">		 </td></tr>
+<tr><td class="num" id="LINE123">123</td><td class="line">		return result.trim(); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.earse%28java.lang.String%29%3Ajava.lang.String.9d436a9a4b6ff0b8aae595b1e011a324_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:3 Instructions
+n$34=*&amp;result:java.lang.String* [line 123];
+_=*n$34:java.lang.String*(root java.lang.String) [line 123];
+n$36=_fun_String String.trim()(n$34:java.lang.String*) virtual [line 123];
+*&amp;$irvar9:java.lang.String*=n$36 [line 123];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.earse%28java.lang.String%29%3Ajava.lang.String.9d436a9a4b6ff0b8aae595b1e011a324_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:2 exn:3 Instructions
+n$37=*&amp;$irvar9:java.lang.String* [line 123];
+*&amp;return:java.lang.String*=n$37 [line 123];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.earse%28java.lang.String%29%3Ajava.lang.String.9d436a9a4b6ff0b8aae595b1e011a324_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:18 3 succs: exn: Exit
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.earse%28java.lang.String%29%3Ajava.lang.String.9d436a9a4b6ff0b8aae595b1e011a324_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE124">124</td><td class="line">	} </td></tr>
+<tr><td class="num" id="LINE125">125</td><td class="line">	 </td></tr>
+<tr><td class="num" id="LINE126">126</td><td class="line">	//为每个帖子匹配school字段 </td></tr>
+<tr><td class="num" id="LINE127">127</td><td class="line">		public static String getSchool(String req) throws UnsupportedEncodingException{ <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9.html">summary for String CrawlerUtil.getSchool(String)</a></td></tr>
+<tr><td class="num" id="LINE128">128</td><td class="line">			String result = &quot;-1&quot;; <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+*&amp;result:java.lang.Object*="-1" [line 128];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE129">129</td><td class="line">			//String regex = &quot;[^\u4e00-\u9fa5_a-zA-Z]+&quot;; </td></tr>
+<tr><td class="num" id="LINE130">130</td><td class="line">			 </td></tr>
+<tr><td class="num" id="LINE131">131</td><td class="line">			//req = req.replaceAll(regex, &quot;&quot;); </td></tr>
+<tr><td class="num" id="LINE132">132</td><td class="line">			String str = &quot;&quot;; <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+*&amp;str:java.lang.Object*="" [line 132];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE133">133</td><td class="line">			str = &quot;http://123.57.250.189:8818/question_process?q=&quot;+URLEncoder.encode(req, &quot;utf-8&quot;); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$0=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 133];
+n$1=_fun_StringBuilder.&lt;init&gt;()(n$0:java.lang.StringBuilder*) [line 133];
+*&amp;$irvar0:java.lang.StringBuilder*=n$0 [line 133];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$2=*&amp;$irvar0:java.lang.StringBuilder* [line 133];
+_=*n$2:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 133];
+n$4=_fun_StringBuilder StringBuilder.append(String)(n$2:java.lang.StringBuilder*,"http://123.57.250.189:8818/question_process?q=":java.lang.Object*) virtual [line 133];
+*&amp;$irvar1:java.lang.StringBuilder*=n$4 [line 133];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$5=*&amp;req:java.lang.String* [line 133];
+n$6=_fun_String URLEncoder.encode(String,String)(n$5:java.lang.String*,"utf-8":java.lang.Object*) [line 133];
+*&amp;$irvar2:java.lang.String*=n$6 [line 133];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$7=*&amp;$irvar1:java.lang.StringBuilder* [line 133];
+_=*n$7:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 133];
+n$9=*&amp;$irvar2:java.lang.String* [line 133];
+n$10=_fun_StringBuilder StringBuilder.append(String)(n$7:java.lang.StringBuilder*,n$9:java.lang.String*) virtual [line 133];
+*&amp;$irvar3:java.lang.StringBuilder*=n$10 [line 133];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+n$11=*&amp;$irvar3:java.lang.StringBuilder* [line 133];
+_=*n$11:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 133];
+n$13=_fun_String StringBuilder.toString()(n$11:java.lang.StringBuilder*) virtual [line 133];
+*&amp;str:java.lang.String*=n$13 [line 133];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE134">134</td><td class="line">			 </td></tr>
+<tr><td class="num" id="LINE135">135</td><td class="line">			try{ </td></tr>
+<tr><td class="num" id="LINE136">136</td><td class="line">				URL url = new URL(str); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:33 Instructions
+n$14=_fun___new(sizeof(t=java.net.URL):java.net.URL*) [line 136];
+n$15=*&amp;str:java.lang.String* [line 136];
+n$16=_fun_URL.&lt;init&gt;(String)(n$14:java.net.URL*,n$15:java.lang.String*) [line 136];
+*&amp;url:java.net.URL*=n$14 [line 136];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE137">137</td><td class="line">		         HttpURLConnection urlcon = (HttpURLConnection)url.openConnection(); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:33 Instructions
+n$17=*&amp;url:java.net.URL* [line 137];
+_=*n$17:java.net.URL*(root java.net.URL) [line 137];
+n$19=_fun_URLConnection URL.openConnection()(n$17:java.net.URL*) virtual [line 137];
+*&amp;$irvar4:java.net.URLConnection*=n$19 [line 137];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:33 Instructions
+n$20=*&amp;$irvar4:java.net.URLConnection* [line 137];
+n$21=_fun___cast(n$20:java.net.URLConnection*,sizeof(t=java.net.HttpURLConnection;sub_t=( sub )(cast)):void) [line 137];
+*&amp;urlcon:java.net.HttpURLConnection*=n$21 [line 137];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE138">138</td><td class="line">		         urlcon.connect();         //获取连接 <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:33 Instructions
+n$22=*&amp;urlcon:java.net.HttpURLConnection* [line 138];
+_=*n$22:java.net.HttpURLConnection*(root java.net.HttpURLConnection) [line 138];
+n$24=_fun_void URLConnection.connect()(n$22:java.net.HttpURLConnection*) virtual [line 138];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE139">139</td><td class="line">		         InputStream is = urlcon.getInputStream(); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:33 Instructions
+n$25=*&amp;urlcon:java.net.HttpURLConnection* [line 139];
+_=*n$25:java.net.HttpURLConnection*(root java.net.HttpURLConnection) [line 139];
+n$27=_fun_InputStream URLConnection.getInputStream()(n$25:java.net.HttpURLConnection*) virtual [line 139];
+*&amp;is:java.io.InputStream*=n$27 [line 139];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE140">140</td><td class="line">		         BufferedReader buffer = new BufferedReader(new InputStreamReader(is)); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:33 Instructions
+n$28=_fun___new(sizeof(t=java.io.InputStreamReader):java.io.InputStreamReader*) [line 140];
+n$29=*&amp;is:java.io.InputStream* [line 140];
+n$30=_fun_InputStreamReader.&lt;init&gt;(InputStream)(n$28:java.io.InputStreamReader*,n$29:java.io.InputStream*) [line 140];
+n$31=_fun___set_file_attribute(n$28:java.io.InputStreamReader*) [line 140];
+*&amp;$irvar5:java.io.InputStreamReader*=n$28 [line 140];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:33 Instructions
+n$32=_fun___new(sizeof(t=java.io.BufferedReader):java.io.BufferedReader*) [line 140];
+n$33=*&amp;$irvar5:java.io.InputStreamReader* [line 140];
+n$34=_fun_BufferedReader.&lt;init&gt;(Reader)(n$32:java.io.BufferedReader*,n$33:java.io.InputStreamReader*) [line 140];
+*&amp;buffer:java.io.BufferedReader*=n$32 [line 140];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE141">141</td><td class="line">		         StringBuffer bs = new StringBuffer(); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 exn:33 Instructions
+n$35=_fun___new(sizeof(t=java.lang.StringBuffer):java.lang.StringBuffer*) [line 141];
+n$36=_fun_StringBuffer.&lt;init&gt;()(n$35:java.lang.StringBuffer*) [line 141];
+*&amp;bs:java.lang.StringBuffer*=n$35 [line 141];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE142">142</td><td class="line">		         String each = null; <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:20 exn:33 Instructions
+*&amp;each:java.lang.Object*=null [line 142];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE143">143</td><td class="line">		         while((each=buffer.readLine())!=null){ <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:25 19 succs:21 exn:33 Instructions
+n$37=*&amp;buffer:java.io.BufferedReader* [line 143];
+_=*n$37:java.io.BufferedReader*(root java.io.BufferedReader) [line 143];
+n$39=_fun_String BufferedReader.readLine()(n$37:java.io.BufferedReader*) virtual [line 143];
+*&amp;$irvar6:java.lang.String*=n$39 [line 143];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:24 exn:33 Instructions
+n$40=*&amp;$irvar6:java.lang.String* [line 143];
+*&amp;each:java.lang.String*=n$40 [line 143];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node24.html"><span class='visited with_tooltip'>J_24<span class='tooltip'>node24 preds:21 succs:22 23 exn: Join
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node22.html"><span class='visited with_tooltip'>C_22<span class='tooltip'>node22 preds:24 succs:25 exn:33 Conditional method_body
+n$41=*&amp;$irvar6:java.lang.String* [line 143];
+PRUNE(!(n$41 == null), true); [line 143];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node23.html"><span class='visited with_tooltip'>C_23<span class='tooltip'>node23 preds:24 succs:26 exn:33 Conditional method_body
+n$41=*&amp;$irvar6:java.lang.String* [line 143];
+PRUNE((n$41 == null), false); [line 143];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE144">144</td><td class="line">		             bs.append(each); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:22 succs:20 exn:33 Instructions
+n$42=*&amp;bs:java.lang.StringBuffer* [line 144];
+_=*n$42:java.lang.StringBuffer*(root java.lang.StringBuffer) [line 144];
+n$44=*&amp;each:java.lang.String* [line 144];
+n$45=_fun_StringBuffer StringBuffer.append(String)(n$42:java.lang.StringBuffer*,n$44:java.lang.String*) virtual [line 144];
+*&amp;$irvar7:java.lang.StringBuffer*=n$45 [line 144];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE145">145</td><td class="line">		         }  </td></tr>
+<tr><td class="num" id="LINE146">146</td><td class="line">		         result = bs.toString(); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:23 succs:30 exn:33 Instructions
+n$46=*&amp;bs:java.lang.StringBuffer* [line 146];
+_=*n$46:java.lang.StringBuffer*(root java.lang.StringBuffer) [line 146];
+n$48=_fun_String StringBuffer.toString()(n$46:java.lang.StringBuffer*) virtual [line 146];
+*&amp;result:java.lang.String*=n$48 [line 146];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE147">147</td><td class="line">			}catch(Exception e){ <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:31 succs:28 exn:3 Instructions
+n$49=*&amp;CatchVar122:java.lang.Object* [line 147];
+*&amp;e:java.lang.Object*=n$49 [line 147];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node31.html"><span class='visited with_tooltip'>C_31<span class='tooltip'>node31 preds:33 succs:27 exn:3 Conditional exception handler
+n$57=_fun___instanceof(n$56:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 147];
+PRUNE(n$57, true); [line 147];
+*&amp;CatchVar122:java.lang.String*=n$56 [line 147];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node32.html"><span class='visited with_tooltip'>C_32<span class='tooltip'>node32 preds:33 succs:3 exn:3 Conditional exception handler
+n$57=_fun___instanceof(n$56:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 147];
+PRUNE(!n$57, false); [line 147];
+*&amp;return:java.lang.String*=EXN n$56 [line 147];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds: succs:31 32 exn:3 Instructions
+n$55=*&amp;return:java.lang.String* [line 147];
+*&amp;return:java.lang.String*=null [line 147];
+n$56=_fun___unwrap_exception(n$55:java.lang.String*) [line 147];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE148">148</td><td class="line">				e.printStackTrace(); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:27 succs:29 exn:3 Instructions
+n$50=*&amp;e:java.lang.Object* [line 148];
+_=*n$50:java.lang.Object*(root java.lang.Object) [line 148];
+n$52=_fun_void Throwable.printStackTrace()(n$50:java.lang.Object*) virtual [line 148];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE149">149</td><td class="line">				return result; <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:28 succs:2 exn:3 Instructions
+n$53=*&amp;result:java.lang.String* [line 149];
+*&amp;return:java.lang.String*=n$53 [line 149];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE150">150</td><td class="line">			} </td></tr>
+<tr><td class="num" id="LINE151">151</td><td class="line">			        </td></tr>
+<tr><td class="num" id="LINE152">152</td><td class="line">	         return result; <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:26 succs:2 exn:3 Instructions
+n$54=*&amp;result:java.lang.String* [line 152];
+*&amp;return:java.lang.String*=n$54 [line 152];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:30 29 3 succs: exn: Exit
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.getSchool%28java.lang.String%29%3Ajava.lang.String.6e4da2f4f9ba61c6be48398b0289fff9_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:32 succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE153">153</td><td class="line">		} </td></tr>
+<tr><td class="num" id="LINE154">154</td><td class="line">		 </td></tr>
+<tr><td class="num" id="LINE155">155</td><td class="line">		private static HostnameVerifier ignoreHostnameVerifier = new HostnameVerifier() { <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%241.<init>%28%29.5abbad73df4d1bfc478aa00ded6725cb_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.<clinit>%28%29%3Avoid.233efaa2ab796f54cdf7ffaa5883d876_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%241.<init>%28%29.5abbad73df4d1bfc478aa00ded6725cb_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.dulishuo.util.CrawlerUtil$1* [line 155];
+n$1=_fun_Object.&lt;init&gt;()(n$0:com.dulishuo.util.CrawlerUtil$1*) [line 155];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.<clinit>%28%29%3Avoid.233efaa2ab796f54cdf7ffaa5883d876_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun___new(sizeof(t=com.dulishuo.util.CrawlerUtil$1):com.dulishuo.util.CrawlerUtil$1*) [line 155];
+n$1=_fun_CrawlerUtil$1.&lt;init&gt;()(n$0:com.dulishuo.util.CrawlerUtil$1*) [line 155];
+*&amp;$irvar0:com.dulishuo.util.CrawlerUtil$1*=n$0 [line 155];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%241.<init>%28%29.5abbad73df4d1bfc478aa00ded6725cb_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.<clinit>%28%29%3Avoid.233efaa2ab796f54cdf7ffaa5883d876_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$2=*&amp;$irvar0:com.dulishuo.util.CrawlerUtil$1* [line 155];
+*&amp;#GB<>$com.dulishuo.util.CrawlerUtil.ignoreHostnameVerifier:com.dulishuo.util.CrawlerUtil(root com.dulishuo.util.CrawlerUtil)=n$2 [line 155];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%241.<init>%28%29.5abbad73df4d1bfc478aa00ded6725cb_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%241.<init>%28%29.5abbad73df4d1bfc478aa00ded6725cb_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/com.dulishuo.util.CrawlerUtil%241.<init>%28%29.5abbad73df4d1bfc478aa00ded6725cb.html">summary for CrawlerUtil$1.&lt;init&gt;()</a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/com.dulishuo.util.CrawlerUtil.<clinit>%28%29%3Avoid.233efaa2ab796f54cdf7ffaa5883d876.html">summary for void CrawlerUtil.&lt;clinit&gt;()</a></td></tr>
+<tr><td class="num" id="LINE156">156</td><td class="line">	        public boolean verify(String s, SSLSession sslsession) { <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%241.verify%28java.lang.String%2Cjavax.net.ssl.SSLSession%29%3Aboolean.1abb139923f98759dcb681b576020c2e_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/com.dulishuo.util.CrawlerUtil%241.verify%28java.lang.String%2Cjavax.net.ssl.SSLSession%29%3Aboolean.1abb139923f98759dcb681b576020c2e.html">summary for boolean CrawlerUtil$1.verify(String,SSLSession)</a></td></tr>
+<tr><td class="num" id="LINE157">157</td><td class="line">	            System.out.println(&quot;WARNING: Hostname is not matched for cert.&quot;); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%241.verify%28java.lang.String%2Cjavax.net.ssl.SSLSession%29%3Aboolean.1abb139923f98759dcb681b576020c2e_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 157];
+_=*n$0:java.io.PrintStream*(root java.io.PrintStream) [line 157];
+n$2=_fun_void PrintStream.println(String)(n$0:java.io.PrintStream*,"WARNING: Hostname is not matched for cert.":java.lang.Object*) virtual [line 157];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE158">158</td><td class="line">	            return true; <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%241.verify%28java.lang.String%2Cjavax.net.ssl.SSLSession%29%3Aboolean.1abb139923f98759dcb681b576020c2e_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+*&amp;return:_Bool=1 [line 158];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%241.verify%28java.lang.String%2Cjavax.net.ssl.SSLSession%29%3Aboolean.1abb139923f98759dcb681b576020c2e_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%241.verify%28java.lang.String%2Cjavax.net.ssl.SSLSession%29%3Aboolean.1abb139923f98759dcb681b576020c2e_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE159">159</td><td class="line">	        } </td></tr>
+<tr><td class="num" id="LINE160">160</td><td class="line">	    }; </td></tr>
+<tr><td class="num" id="LINE161">161</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE162">162</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE163">163</td><td class="line">	     /** </td></tr>
+<tr><td class="num" id="LINE164">164</td><td class="line">	     * Ignore Certification </td></tr>
+<tr><td class="num" id="LINE165">165</td><td class="line">	     */ </td></tr>
+<tr><td class="num" id="LINE166">166</td><td class="line">	    private static TrustManager ignoreCertificationTrustManger = new X509TrustManager() { <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%242.<init>%28%29.e70e33de5e6001e5583bef40c5bb49b4_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%242.<init>%28%29.e70e33de5e6001e5583bef40c5bb49b4_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.dulishuo.util.CrawlerUtil$2* [line 166];
+n$1=_fun_Object.&lt;init&gt;()(n$0:com.dulishuo.util.CrawlerUtil$2*) [line 166];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%242.<init>%28%29.e70e33de5e6001e5583bef40c5bb49b4_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%242.<init>%28%29.e70e33de5e6001e5583bef40c5bb49b4_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.<clinit>%28%29%3Avoid.233efaa2ab796f54cdf7ffaa5883d876_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$3=_fun___new(sizeof(t=com.dulishuo.util.CrawlerUtil$2):com.dulishuo.util.CrawlerUtil$2*) [line 166];
+n$4=_fun_CrawlerUtil$2.&lt;init&gt;()(n$3:com.dulishuo.util.CrawlerUtil$2*) [line 166];
+*&amp;$irvar1:com.dulishuo.util.CrawlerUtil$2*=n$3 [line 166];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.<clinit>%28%29%3Avoid.233efaa2ab796f54cdf7ffaa5883d876_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$5=*&amp;$irvar1:com.dulishuo.util.CrawlerUtil$2* [line 166];
+*&amp;#GB<>$com.dulishuo.util.CrawlerUtil.ignoreCertificationTrustManger:com.dulishuo.util.CrawlerUtil(root com.dulishuo.util.CrawlerUtil)=n$5 [line 166];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.<clinit>%28%29%3Avoid.233efaa2ab796f54cdf7ffaa5883d876_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:2 exn:3 Instructions
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.<clinit>%28%29%3Avoid.233efaa2ab796f54cdf7ffaa5883d876_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:8 3 succs: exn: Exit
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%242.<init>%28%29.e70e33de5e6001e5583bef40c5bb49b4_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.<clinit>%28%29%3Avoid.233efaa2ab796f54cdf7ffaa5883d876_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/com.dulishuo.util.CrawlerUtil%242.<init>%28%29.e70e33de5e6001e5583bef40c5bb49b4.html">summary for CrawlerUtil$2.&lt;init&gt;()</a></td></tr>
+<tr><td class="num" id="LINE167">167</td><td class="line">	        private X509Certificate[] certificates; </td></tr>
+<tr><td class="num" id="LINE168">168</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE169">169</td><td class="line">	        @Override </td></tr>
+<tr><td class="num" id="LINE170">170</td><td class="line">	        public void checkClientTrusted(X509Certificate certificates[], <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%242.checkClientTrusted%28java.security.cert.X509Certificate%5B%5D%2Cjava.lang.St.86eebf44178834d4b149528c9ce4724d_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 5 exn:2 Start
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/com.dulishuo.util.CrawlerUtil%242.checkClientTrusted%28java.security.cert.X509Certificate%5B%5D%2Cjava.lang.St.86eebf44178834d4b149528c9ce4724d.html">summary for void CrawlerUtil$2.checkClientTrusted(X509Certificate[],String)</a></td></tr>
+<tr><td class="num" id="LINE171">171</td><td class="line">	                String authType) throws CertificateException { </td></tr>
+<tr><td class="num" id="LINE172">172</td><td class="line">	            if (this.certificates == null) { <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%242.checkClientTrusted%28java.security.cert.X509Certificate%5B%5D%2Cjava.lang.St.86eebf44178834d4b149528c9ce4724d_node4.html"><span class='visited with_tooltip'>C_4<span class='tooltip'>node4 preds:1 succs:6 exn:3 Conditional method_body
+n$0=*&amp;this:com.dulishuo.util.CrawlerUtil$2* [line 172];
+n$1=*n$0.certificates:java.security.cert.X509Certificate*[_*_](*)(root com.dulishuo.util.CrawlerUtil$2) [line 172];
+PRUNE(!(n$1 != null), true); [line 172];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%242.checkClientTrusted%28java.security.cert.X509Certificate%5B%5D%2Cjava.lang.St.86eebf44178834d4b149528c9ce4724d_node5.html"><span class='visited with_tooltip'>C_5<span class='tooltip'>node5 preds:1 succs:8 exn:3 Conditional method_body
+n$0=*&amp;this:com.dulishuo.util.CrawlerUtil$2* [line 172];
+n$1=*n$0.certificates:java.security.cert.X509Certificate*[_*_](*)(root com.dulishuo.util.CrawlerUtil$2) [line 172];
+PRUNE((n$1 != null), false); [line 172];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE173">173</td><td class="line">	                this.certificates = certificates; <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%242.checkClientTrusted%28java.security.cert.X509Certificate%5B%5D%2Cjava.lang.St.86eebf44178834d4b149528c9ce4724d_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:4 succs:7 exn:3 Instructions
+n$2=*&amp;this:com.dulishuo.util.CrawlerUtil$2* [line 173];
+n$3=*&amp;certificates:java.security.cert.X509Certificate*[_*_](*) [line 173];
+*n$2.certificates:com.dulishuo.util.CrawlerUtil$2(root com.dulishuo.util.CrawlerUtil$2)=n$3 [line 173];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE174">174</td><td class="line">	                System.out.println(&quot;init at checkClientTrusted&quot;); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%242.checkClientTrusted%28java.security.cert.X509Certificate%5B%5D%2Cjava.lang.St.86eebf44178834d4b149528c9ce4724d_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$4=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 174];
+_=*n$4:java.io.PrintStream*(root java.io.PrintStream) [line 174];
+n$6=_fun_void PrintStream.println(String)(n$4:java.io.PrintStream*,"init at checkClientTrusted":java.lang.Object*) virtual [line 174];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE175">175</td><td class="line">	            } </td></tr>
+<tr><td class="num" id="LINE176">176</td><td class="line">	        } <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%242.checkClientTrusted%28java.security.cert.X509Certificate%5B%5D%2Cjava.lang.St.86eebf44178834d4b149528c9ce4724d_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 5 succs:2 exn:3 Instructions
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%242.checkClientTrusted%28java.security.cert.X509Certificate%5B%5D%2Cjava.lang.St.86eebf44178834d4b149528c9ce4724d_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:8 3 succs: exn: Exit
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%242.checkClientTrusted%28java.security.cert.X509Certificate%5B%5D%2Cjava.lang.St.86eebf44178834d4b149528c9ce4724d_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE177">177</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE178">178</td><td class="line">	        @Override </td></tr>
+<tr><td class="num" id="LINE179">179</td><td class="line">	        public void checkServerTrusted(X509Certificate[] ax509certificate, <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%242.checkServerTrusted%28java.security.cert.X509Certificate%5B%5D%2Cjava.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 5 exn:2 Start
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/com.dulishuo.util.CrawlerUtil%242.checkServerTrusted%28java.security.cert.X509Certificate%5B%5D%2Cjava.lang.St.203b55c3a1ffa0ba8e41af4656137e4d.html">summary for void CrawlerUtil$2.checkServerTrusted(X509Certificate[],String)</a></td></tr>
+<tr><td class="num" id="LINE180">180</td><td class="line">	                String s) throws CertificateException { </td></tr>
+<tr><td class="num" id="LINE181">181</td><td class="line">	            if (this.certificates == null) { <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%242.checkServerTrusted%28java.security.cert.X509Certificate%5B%5D%2Cjava.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_node4.html"><span class='visited with_tooltip'>C_4<span class='tooltip'>node4 preds:1 succs:6 exn:3 Conditional method_body
+n$0=*&amp;this:com.dulishuo.util.CrawlerUtil$2* [line 181];
+n$1=*n$0.certificates:java.security.cert.X509Certificate*[_*_](*)(root com.dulishuo.util.CrawlerUtil$2) [line 181];
+PRUNE(!(n$1 != null), true); [line 181];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%242.checkServerTrusted%28java.security.cert.X509Certificate%5B%5D%2Cjava.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_node5.html"><span class='visited with_tooltip'>C_5<span class='tooltip'>node5 preds:1 succs:8 exn:3 Conditional method_body
+n$0=*&amp;this:com.dulishuo.util.CrawlerUtil$2* [line 181];
+n$1=*n$0.certificates:java.security.cert.X509Certificate*[_*_](*)(root com.dulishuo.util.CrawlerUtil$2) [line 181];
+PRUNE((n$1 != null), false); [line 181];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE182">182</td><td class="line">	                this.certificates = ax509certificate; <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%242.checkServerTrusted%28java.security.cert.X509Certificate%5B%5D%2Cjava.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:4 succs:7 exn:3 Instructions
+n$2=*&amp;this:com.dulishuo.util.CrawlerUtil$2* [line 182];
+n$3=*&amp;ax509certificate:java.security.cert.X509Certificate*[_*_](*) [line 182];
+*n$2.certificates:com.dulishuo.util.CrawlerUtil$2(root com.dulishuo.util.CrawlerUtil$2)=n$3 [line 182];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE183">183</td><td class="line">	                System.out.println(&quot;init at checkServerTrusted&quot;); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%242.checkServerTrusted%28java.security.cert.X509Certificate%5B%5D%2Cjava.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$4=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 183];
+_=*n$4:java.io.PrintStream*(root java.io.PrintStream) [line 183];
+n$6=_fun_void PrintStream.println(String)(n$4:java.io.PrintStream*,"init at checkServerTrusted":java.lang.Object*) virtual [line 183];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE184">184</td><td class="line">	            } </td></tr>
+<tr><td class="num" id="LINE185">185</td><td class="line">	        } <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%242.checkServerTrusted%28java.security.cert.X509Certificate%5B%5D%2Cjava.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 5 succs:2 exn:3 Instructions
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%242.checkServerTrusted%28java.security.cert.X509Certificate%5B%5D%2Cjava.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:8 3 succs: exn: Exit
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%242.checkServerTrusted%28java.security.cert.X509Certificate%5B%5D%2Cjava.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE186">186</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE187">187</td><td class="line">	        @Override </td></tr>
+<tr><td class="num" id="LINE188">188</td><td class="line">	        public X509Certificate[] getAcceptedIssuers() { <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%242.getAcceptedIssuers%28%29%3Ajava.security.cert.X509Certificate%5B%5D.4f12f1db2de748dc7db6cd326f39d4c7_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/com.dulishuo.util.CrawlerUtil%242.getAcceptedIssuers%28%29%3Ajava.security.cert.X509Certificate%5B%5D.4f12f1db2de748dc7db6cd326f39d4c7.html">summary for X509Certificate[] CrawlerUtil$2.getAcceptedIssuers()</a></td></tr>
+<tr><td class="num" id="LINE189">189</td><td class="line">	            // TODO Auto-generated method stub </td></tr>
+<tr><td class="num" id="LINE190">190</td><td class="line">	            return null; <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%242.getAcceptedIssuers%28%29%3Ajava.security.cert.X509Certificate%5B%5D.4f12f1db2de748dc7db6cd326f39d4c7_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:2 exn:3 Instructions
+*&amp;return:java.security.cert.X509Certificate*[_*_](*)=null [line 190];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%242.getAcceptedIssuers%28%29%3Ajava.security.cert.X509Certificate%5B%5D.4f12f1db2de748dc7db6cd326f39d4c7_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:4 3 succs: exn: Exit
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil%242.getAcceptedIssuers%28%29%3Ajava.security.cert.X509Certificate%5B%5D.4f12f1db2de748dc7db6cd326f39d4c7_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE191">191</td><td class="line">	        } </td></tr>
+<tr><td class="num" id="LINE192">192</td><td class="line">	    }; </td></tr>
+<tr><td class="num" id="LINE193">193</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE194">194</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE195">195</td><td class="line">	    public static String httpsRequest(String urlString) { <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a.html">summary for String CrawlerUtil.httpsRequest(String)</a></td></tr>
+<tr><td class="num" id="LINE196">196</td><td class="line">	        ByteArrayOutputStream buffer = new ByteArrayOutputStream(512); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun___new(sizeof(t=java.io.ByteArrayOutputStream):java.io.ByteArrayOutputStream*) [line 196];
+n$1=_fun_ByteArrayOutputStream.&lt;init&gt;(int)(n$0:java.io.ByteArrayOutputStream*,512:int) [line 196];
+*&amp;buffer:java.io.ByteArrayOutputStream*=n$0 [line 196];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE197">197</td><td class="line">	        try { </td></tr>
+<tr><td class="num" id="LINE198">198</td><td class="line">	            URL url = new URL(urlString); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:40 Instructions
+n$2=_fun___new(sizeof(t=java.net.URL):java.net.URL*) [line 198];
+n$3=*&amp;urlString:java.lang.String* [line 198];
+n$4=_fun_URL.&lt;init&gt;(String)(n$2:java.net.URL*,n$3:java.lang.String*) [line 198];
+*&amp;url:java.net.URL*=n$2 [line 198];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE199">199</td><td class="line">	            /* </td></tr>
+<tr><td class="num" id="LINE200">200</td><td class="line">	             * use ignore host name verifier </td></tr>
+<tr><td class="num" id="LINE201">201</td><td class="line">	             */ </td></tr>
+<tr><td class="num" id="LINE202">202</td><td class="line">	            HttpsURLConnection.setDefaultHostnameVerifier(ignoreHostnameVerifier); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:40 Instructions
+n$5=*&amp;#GB<>$com.dulishuo.util.CrawlerUtil.ignoreHostnameVerifier:javax.net.ssl.HostnameVerifier*(root com.dulishuo.util.CrawlerUtil) [line 202];
+*&amp;$irvar0:javax.net.ssl.HostnameVerifier*=n$5 [line 202];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:40 Instructions
+n$6=*&amp;$irvar0:javax.net.ssl.HostnameVerifier* [line 202];
+n$7=_fun_void HttpsURLConnection.setDefaultHostnameVerifier(HostnameVerifier)(n$6:javax.net.ssl.HostnameVerifier*) [line 202];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE203">203</td><td class="line">	            HttpsURLConnection connection = (HttpsURLConnection) url.openConnection(); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:40 Instructions
+n$8=*&amp;url:java.net.URL* [line 203];
+_=*n$8:java.net.URL*(root java.net.URL) [line 203];
+n$10=_fun_URLConnection URL.openConnection()(n$8:java.net.URL*) virtual [line 203];
+*&amp;$irvar1:java.net.URLConnection*=n$10 [line 203];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:40 Instructions
+n$11=*&amp;$irvar1:java.net.URLConnection* [line 203];
+n$12=_fun___cast(n$11:java.net.URLConnection*,sizeof(t=javax.net.ssl.HttpsURLConnection;sub_t=( sub )(cast)):void) [line 203];
+*&amp;connection:javax.net.ssl.HttpsURLConnection*=n$12 [line 203];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE204">204</td><td class="line">	            String cok = &quot;csrftoken=GSqmfsT3VclDank3C4eXd4CAlXnLAa67; _ga=GA1.3.892752371.1440493108; Hm_lvt_50058a93dcd49a44afcea1dccb89a8e1=1448505213,1448534940,1448592899,1448604307; banner_remove=true; sessionid=hrw2rlln3sxre25otv4mrjdwtgnd2wvq; locale=; Hm_lpvt_50058a93dcd49a44afcea1dccb89a8e1=1448610187; _gat=1&quot;; <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:40 Instructions
+*&amp;cok:java.lang.Object*="csrftoken=GSqmfsT3VclDank3C4eXd4CAlXnLAa67; _ga=GA1.3.892752371.1440493108; Hm_lvt_50058a93dcd49a44afcea1dccb89a8e1=1448505213,1448534940,1448592899,1448604307; banner_remove=true; sessionid=hrw2rlln3sxre25otv4mrjdwtgnd2wvq; locale=; Hm_lpvt_50058a93dcd49a44afcea1dccb89a8e1=1448610187; _gat=1" [line 204];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE205">205</td><td class="line">	            connection.setRequestProperty(&quot;Cookie&quot;, cok); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:40 Instructions
+n$13=*&amp;connection:javax.net.ssl.HttpsURLConnection* [line 205];
+_=*n$13:javax.net.ssl.HttpsURLConnection*(root javax.net.ssl.HttpsURLConnection) [line 205];
+n$15=*&amp;cok:java.lang.Object* [line 205];
+n$16=_fun_void URLConnection.setRequestProperty(String,String)(n$13:javax.net.ssl.HttpsURLConnection*,"Cookie":java.lang.Object*,n$15:java.lang.Object*) virtual [line 205];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE206">206</td><td class="line">	            // Prepare SSL Context </td></tr>
+<tr><td class="num" id="LINE207">207</td><td class="line">	            TrustManager[] tm = { ignoreCertificationTrustManger }; <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:40 Instructions
+n$17=_fun___new_array(sizeof(t=javax.net.ssl.TrustManager*[_*_];len=[1]):javax.net.ssl.TrustManager*[_*_](*)) [line 207];
+*&amp;$irvar2:javax.net.ssl.TrustManager*[_*_](*)=n$17 [line 207];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:40 Instructions
+n$18=*&amp;$irvar2:javax.net.ssl.TrustManager*[_*_](*) [line 207];
+n$19=*&amp;#GB<>$com.dulishuo.util.CrawlerUtil.ignoreCertificationTrustManger:javax.net.ssl.TrustManager*(root com.dulishuo.util.CrawlerUtil) [line 207];
+*n$18[0]:javax.net.ssl.TrustManager*=n$19 [line 207];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:40 Instructions
+n$20=*&amp;$irvar2:javax.net.ssl.TrustManager*[_*_](*) [line 207];
+*&amp;tm:javax.net.ssl.TrustManager*[_*_](*)=n$20 [line 207];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE208">208</td><td class="line">	            SSLContext sslContext = SSLContext.getInstance(&quot;SSL&quot;, &quot;SunJSSE&quot;); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:40 Instructions
+n$21=_fun_SSLContext SSLContext.getInstance(String,String)("SSL":java.lang.Object*,"SunJSSE":java.lang.Object*) [line 208];
+*&amp;sslContext:javax.net.ssl.SSLContext*=n$21 [line 208];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE209">209</td><td class="line">	            sslContext.init(null, tm, new java.security.SecureRandom()); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:40 Instructions
+n$22=_fun___new(sizeof(t=java.security.SecureRandom):java.security.SecureRandom*) [line 209];
+n$23=_fun_SecureRandom.&lt;init&gt;()(n$22:java.security.SecureRandom*) [line 209];
+*&amp;$irvar3:java.security.SecureRandom*=n$22 [line 209];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:40 Instructions
+n$24=*&amp;sslContext:javax.net.ssl.SSLContext* [line 209];
+_=*n$24:javax.net.ssl.SSLContext*(root javax.net.ssl.SSLContext) [line 209];
+n$26=*&amp;tm:javax.net.ssl.TrustManager*[_*_](*) [line 209];
+n$27=*&amp;$irvar3:java.security.SecureRandom* [line 209];
+n$28=_fun_void SSLContext.init(KeyManager[],TrustManager[],SecureRandom)(n$24:javax.net.ssl.SSLContext*,null:java.lang.Object*,n$26:javax.net.ssl.TrustManager*[_*_](*),n$27:java.security.SecureRandom*) virtual [line 209];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE210">210</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE211">211</td><td class="line">	            // 从上述SSLContext对象中得到SSLSocketFactory对象 </td></tr>
+<tr><td class="num" id="LINE212">212</td><td class="line">	            SSLSocketFactory ssf = sslContext.getSocketFactory(); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 exn:40 Instructions
+n$29=*&amp;sslContext:javax.net.ssl.SSLContext* [line 212];
+_=*n$29:javax.net.ssl.SSLContext*(root javax.net.ssl.SSLContext) [line 212];
+n$31=_fun_SSLSocketFactory SSLContext.getSocketFactory()(n$29:javax.net.ssl.SSLContext*) virtual [line 212];
+*&amp;ssf:javax.net.ssl.SSLSocketFactory*=n$31 [line 212];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE213">213</td><td class="line">	            connection.setSSLSocketFactory(ssf); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:20 exn:40 Instructions
+n$32=*&amp;connection:javax.net.ssl.HttpsURLConnection* [line 213];
+_=*n$32:javax.net.ssl.HttpsURLConnection*(root javax.net.ssl.HttpsURLConnection) [line 213];
+n$34=*&amp;ssf:javax.net.ssl.SSLSocketFactory* [line 213];
+n$35=_fun_void HttpsURLConnection.setSSLSocketFactory(SSLSocketFactory)(n$32:javax.net.ssl.HttpsURLConnection*,n$34:javax.net.ssl.SSLSocketFactory*) virtual [line 213];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE214">214</td><td class="line">	             </td></tr>
+<tr><td class="num" id="LINE215">215</td><td class="line">	            InputStream reader = connection.getInputStream(); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:40 Instructions
+n$36=*&amp;connection:javax.net.ssl.HttpsURLConnection* [line 215];
+_=*n$36:javax.net.ssl.HttpsURLConnection*(root javax.net.ssl.HttpsURLConnection) [line 215];
+n$38=_fun_InputStream URLConnection.getInputStream()(n$36:javax.net.ssl.HttpsURLConnection*) virtual [line 215];
+*&amp;reader:java.io.InputStream*=n$38 [line 215];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE216">216</td><td class="line">	            byte[] bytes = new byte[512]; <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:22 exn:40 Instructions
+n$39=_fun___new_array(sizeof(t=signed char[_*_];len=[512]):signed char[_*_](*)) [line 216];
+*&amp;bytes:signed char[_*_](*)=n$39 [line 216];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE217">217</td><td class="line">	            int length = reader.read(bytes); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:40 Instructions
+n$40=*&amp;reader:java.io.InputStream* [line 217];
+_=*n$40:java.io.InputStream*(root java.io.InputStream) [line 217];
+n$42=*&amp;bytes:signed char[_*_](*) [line 217];
+n$43=_fun_int InputStream.read(byte[])(n$40:java.io.InputStream*,n$42:signed char[_*_](*)) virtual [line 217];
+*&amp;length:int=n$43 [line 217];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE218">218</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE219">219</td><td class="line">	            do { </td></tr>
+<tr><td class="num" id="LINE220">220</td><td class="line">	                buffer.write(bytes, 0, length); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:26 22 succs:24 exn:40 Instructions
+n$44=*&amp;buffer:java.io.ByteArrayOutputStream* [line 220];
+_=*n$44:java.io.ByteArrayOutputStream*(root java.io.ByteArrayOutputStream) [line 220];
+n$46=*&amp;bytes:signed char[_*_](*) [line 220];
+n$47=*&amp;length:int [line 220];
+n$48=_fun_void ByteArrayOutputStream.write(byte[],int,int)(n$44:java.io.ByteArrayOutputStream*,n$46:signed char[_*_](*),0:int,n$47:int) virtual [line 220];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE221">221</td><td class="line">	                length = reader.read(bytes); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:27 exn:40 Instructions
+n$49=*&amp;reader:java.io.InputStream* [line 221];
+_=*n$49:java.io.InputStream*(root java.io.InputStream) [line 221];
+n$51=*&amp;bytes:signed char[_*_](*) [line 221];
+n$52=_fun_int InputStream.read(byte[])(n$49:java.io.InputStream*,n$51:signed char[_*_](*)) virtual [line 221];
+*&amp;length:int=n$52 [line 221];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE222">222</td><td class="line">	            } while (length &gt; 0); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node27.html"><span class='visited with_tooltip'>J_27<span class='tooltip'>node27 preds:24 succs:25 26 exn: Join
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node26.html"><span class='visited with_tooltip'>C_26<span class='tooltip'>node26 preds:27 succs:23 exn:40 Conditional method_body
+n$53=*&amp;length:int [line 222];
+PRUNE((n$53  &gt;  0), false); [line 222];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node25.html"><span class='visited with_tooltip'>C_25<span class='tooltip'>node25 preds:27 succs:28 exn:40 Conditional method_body
+n$53=*&amp;length:int [line 222];
+PRUNE(!(n$53  &gt;  0), true); [line 222];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE223">223</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE224">224</td><td class="line">	            // result.setResponseData(bytes); </td></tr>
+<tr><td class="num" id="LINE225">225</td><td class="line">	            reader.close(); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:25 succs:29 exn:40 Instructions
+n$54=*&amp;reader:java.io.InputStream* [line 225];
+_=*n$54:java.io.InputStream*(root java.io.InputStream) [line 225];
+n$56=_fun_void InputStream.close()(n$54:java.io.InputStream*) virtual [line 225];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE226">226</td><td class="line">	             </td></tr>
+<tr><td class="num" id="LINE227">227</td><td class="line">	            connection.disconnect(); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:28 succs:34 exn:40 Instructions
+n$57=*&amp;connection:javax.net.ssl.HttpsURLConnection* [line 227];
+_=*n$57:javax.net.ssl.HttpsURLConnection*(root javax.net.ssl.HttpsURLConnection) [line 227];
+n$59=_fun_void HttpURLConnection.disconnect()(n$57:javax.net.ssl.HttpsURLConnection*) virtual [line 227];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE228">228</td><td class="line">	        } catch (Exception ex) { <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:38 succs:31 exn:42 Instructions
+n$60=*&amp;CatchVar152:java.lang.Object* [line 228];
+*&amp;ex:java.lang.Object*=n$60 [line 228];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node38.html"><span class='visited with_tooltip'>C_38<span class='tooltip'>node38 preds:40 succs:30 exn:3 Conditional exception handler
+n$75=_fun___instanceof(n$74:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 228];
+PRUNE(n$75, true); [line 228];
+*&amp;CatchVar152:java.lang.String*=n$74 [line 228];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node39.html"><span class='visited with_tooltip'>C_39<span class='tooltip'>node39 preds:40 succs:37 exn:3 Conditional exception handler
+n$75=_fun___instanceof(n$74:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 228];
+PRUNE(!n$75, false); [line 228];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node40.html"><span class='visited with_tooltip'>I_40<span class='tooltip'>node40 preds: succs:38 39 exn:3 Instructions
+n$73=*&amp;return:java.lang.String* [line 228];
+*&amp;return:java.lang.String*=null [line 228];
+n$74=_fun___unwrap_exception(n$73:java.lang.String*) [line 228];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE229">229</td><td class="line">	            ex.printStackTrace(); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:30 succs:34 exn:42 Instructions
+n$61=*&amp;ex:java.lang.Object* [line 229];
+_=*n$61:java.lang.Object*(root java.lang.Object) [line 229];
+n$63=_fun_void Throwable.printStackTrace()(n$61:java.lang.Object*) virtual [line 229];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE230">230</td><td class="line">	        } finally { <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node32.html"><span class='visited with_tooltip'>I_32<span class='tooltip'>node32 preds:43 41 37 succs:33 exn:44 Instructions
+n$64=*&amp;CatchVar160:java.lang.Object* [line 230];
+*&amp;$bcvar11:java.lang.Object*=n$64 [line 230];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node37.html"><span class='visited with_tooltip'>I_37<span class='tooltip'>node37 preds:39 succs:32 exn:3 Instructions
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node41.html"><span class='visited with_tooltip'>I_41<span class='tooltip'>node41 preds:42 succs:32 exn:3 Instructions
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node42.html"><span class='visited with_tooltip'>I_42<span class='tooltip'>node42 preds: succs:41 exn:3 Instructions
+n$73=*&amp;return:java.lang.String* [line 230];
+*&amp;return:java.lang.String*=null [line 230];
+n$74=_fun___unwrap_exception(n$73:java.lang.String*) [line 230];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node43.html"><span class='visited with_tooltip'>I_43<span class='tooltip'>node43 preds:44 succs:32 exn:3 Instructions
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node44.html"><span class='visited with_tooltip'>I_44<span class='tooltip'>node44 preds: succs:43 exn:3 Instructions
+n$73=*&amp;return:java.lang.String* [line 230];
+*&amp;return:java.lang.String*=null [line 230];
+n$74=_fun___unwrap_exception(n$73:java.lang.String*) [line 230];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE231">231</td><td class="line">	        } <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds:32 succs:2 exn:3 Instructions
+n$65=*&amp;$bcvar11:java.lang.Object* [line 231];
+*&amp;return:java.lang.String*=EXN n$65 [line 231];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE232">232</td><td class="line">	        String repString= new String (buffer.toByteArray()); <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds:31 29 succs:35 exn:3 Instructions
+n$66=*&amp;buffer:java.io.ByteArrayOutputStream* [line 232];
+_=*n$66:java.io.ByteArrayOutputStream*(root java.io.ByteArrayOutputStream) [line 232];
+n$68=_fun_byte[] ByteArrayOutputStream.toByteArray()(n$66:java.io.ByteArrayOutputStream*) virtual [line 232];
+*&amp;$irvar4:signed char[_*_](*)=n$68 [line 232];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node35.html"><span class='visited with_tooltip'>I_35<span class='tooltip'>node35 preds:34 succs:36 exn:3 Instructions
+n$69=_fun___new(sizeof(t=java.lang.String):java.lang.String*) [line 232];
+n$70=*&amp;$irvar4:signed char[_*_](*) [line 232];
+n$71=_fun_String.&lt;init&gt;(byte[])(n$69:java.lang.String*,n$70:signed char[_*_](*)) [line 232];
+*&amp;repString:java.lang.String*=n$69 [line 232];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE233">233</td><td class="line">	        return repString; <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node36.html"><span class='visited with_tooltip'>I_36<span class='tooltip'>node36 preds:35 succs:2 exn:3 Instructions
+n$72=*&amp;repString:java.lang.String* [line 233];
+*&amp;return:java.lang.String*=n$72 [line 233];
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:36 33 3 succs: exn: Exit
+</span></span></a> <a href="./CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22/nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE234">234</td><td class="line">	    } </td></tr>
+<tr><td class="num" id="LINE235">235</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE236">236</td><td class="line">} </td></tr>
+</table>
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+</body>
+</html>

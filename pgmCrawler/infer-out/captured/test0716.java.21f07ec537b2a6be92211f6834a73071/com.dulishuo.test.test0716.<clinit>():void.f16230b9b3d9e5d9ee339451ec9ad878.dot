@@ -1,0 +1,29 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.test.test0716.<clinit>():void.f16230b9b3d9e5d9ee339451ec9ad878_1" [label="1: Start void test0716.<clinit>()\nFormals: \nLocals:  $irvar0:void \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.test.test0716.<clinit>():void.f16230b9b3d9e5d9ee339451ec9ad878_1" -> "com.dulishuo.test.test0716.<clinit>():void.f16230b9b3d9e5d9ee339451ec9ad878_4" ;
+"com.dulishuo.test.test0716.<clinit>():void.f16230b9b3d9e5d9ee339451ec9ad878_2" [label="2: Exit void test0716.<clinit>() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.test.test0716.<clinit>():void.f16230b9b3d9e5d9ee339451ec9ad878_3" [label="3:  exceptions sink \n   NULLIFY(&$irvar0); [line 13]\n  EXIT_SCOPE($irvar0); [line 13]\n  APPLY_ABSTRACTION; [line 13]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0716.<clinit>():void.f16230b9b3d9e5d9ee339451ec9ad878_3" -> "com.dulishuo.test.test0716.<clinit>():void.f16230b9b3d9e5d9ee339451ec9ad878_2" ;
+"com.dulishuo.test.test0716.<clinit>():void.f16230b9b3d9e5d9ee339451ec9ad878_4" [label="4:  Call ArrayList.<init>() \n   n$0=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 13]\n  n$1=_fun_ArrayList.<init>()(n$0:java.util.ArrayList*) [line 13]\n  *&$irvar0:java.util.ArrayList*=n$0 [line 13]\n  EXIT_SCOPE(n$0,n$1); [line 13]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0716.<clinit>():void.f16230b9b3d9e5d9ee339451ec9ad878_4" -> "com.dulishuo.test.test0716.<clinit>():void.f16230b9b3d9e5d9ee339451ec9ad878_5" ;
+	 "com.dulishuo.test.test0716.<clinit>():void.f16230b9b3d9e5d9ee339451ec9ad878_4" -> "com.dulishuo.test.test0716.<clinit>():void.f16230b9b3d9e5d9ee339451ec9ad878_3" [color="red" ];
+"com.dulishuo.test.test0716.<clinit>():void.f16230b9b3d9e5d9ee339451ec9ad878_5" [label="5:  method_body \n   n$2=*&$irvar0:java.util.ArrayList* [line 13]\n  *&#GB<>$com.dulishuo.test.test0716.fail:com.dulishuo.test.test0716(root com.dulishuo.test.test0716)=n$2 [line 13]\n  NULLIFY(&$irvar0); [line 13]\n  EXIT_SCOPE(n$2,$irvar0); [line 13]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0716.<clinit>():void.f16230b9b3d9e5d9ee339451ec9ad878_5" -> "com.dulishuo.test.test0716.<clinit>():void.f16230b9b3d9e5d9ee339451ec9ad878_6" ;
+	 "com.dulishuo.test.test0716.<clinit>():void.f16230b9b3d9e5d9ee339451ec9ad878_5" -> "com.dulishuo.test.test0716.<clinit>():void.f16230b9b3d9e5d9ee339451ec9ad878_3" [color="red" ];
+"com.dulishuo.test.test0716.<clinit>():void.f16230b9b3d9e5d9ee339451ec9ad878_6" [label="6:  method_body \n   APPLY_ABSTRACTION; [line 13]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0716.<clinit>():void.f16230b9b3d9e5d9ee339451ec9ad878_6" -> "com.dulishuo.test.test0716.<clinit>():void.f16230b9b3d9e5d9ee339451ec9ad878_2" ;
+	 "com.dulishuo.test.test0716.<clinit>():void.f16230b9b3d9e5d9ee339451ec9ad878_6" -> "com.dulishuo.test.test0716.<clinit>():void.f16230b9b3d9e5d9ee339451ec9ad878_3" [color="red" ];
+}

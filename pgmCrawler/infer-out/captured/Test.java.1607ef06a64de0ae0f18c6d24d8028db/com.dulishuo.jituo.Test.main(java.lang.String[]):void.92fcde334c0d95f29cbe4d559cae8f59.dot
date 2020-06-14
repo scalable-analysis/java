@@ -1,0 +1,74 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_1" [label="1: Start void Test.main(String[])\nFormals:  args:java.lang.String*[_*_](*)\nLocals:  $irvar5:void $irvar4:void $irvar3:void $irvar2:void $irvar1:void $irvar0:void end:long start:long \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_1" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_4" ;
+"com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_2" [label="2: Exit void Test.main(String[]) \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_3" [label="3:  exceptions sink \n   NULLIFY(&start); [line 19]\n  NULLIFY(&$irvar3); [line 19]\n  NULLIFY(&$irvar5); [line 19]\n  NULLIFY(&$irvar4); [line 19]\n  NULLIFY(&$irvar0); [line 19]\n  NULLIFY(&$irvar1); [line 19]\n  NULLIFY(&$irvar2); [line 19]\n  NULLIFY(&end); [line 19]\n  EXIT_SCOPE(start,$irvar3,$irvar5,$irvar4,$irvar0,$irvar1,$irvar2,end); [line 19]\n  APPLY_ABSTRACTION; [line 19]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_3" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_2" ;
+"com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_4" [label="4:  Call void PrintStream.println(String) \n   n$0=*&#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 12]\n  _=*n$0:java.io.PrintStream*(root java.io.PrintStream) [line 12]\n  n$2=_fun_void PrintStream.println(String)(n$0:java.io.PrintStream*,\"start . . . \":java.lang.Object*) virtual [line 12]\n  EXIT_SCOPE(_,n$0,n$2); [line 12]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_4" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_5" ;
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_4" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_3" [color="red" ];
+"com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_5" [label="5:  Call long System.currentTimeMillis() \n   n$3=_fun_long System.currentTimeMillis()() [line 13]\n  *&start:long=n$3 [line 13]\n  EXIT_SCOPE(n$3); [line 13]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_5" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_6" ;
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_5" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_3" [color="red" ];
+"com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_6" [label="6:  Call void Test.test() \n   n$4=_fun_void Test.test()() [line 15]\n  EXIT_SCOPE(n$4); [line 15]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_6" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_7" ;
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_6" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_3" [color="red" ];
+"com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_7" [label="7:  Call long System.currentTimeMillis() \n   n$5=_fun_long System.currentTimeMillis()() [line 17]\n  *&end:long=n$5 [line 17]\n  EXIT_SCOPE(n$5); [line 17]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_7" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_8" ;
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_7" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_3" [color="red" ];
+"com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_8" [label="8:  method_body \n   n$6=*&#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 18]\n  *&$irvar0:java.io.PrintStream*=n$6 [line 18]\n  EXIT_SCOPE(n$6); [line 18]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_8" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_9" ;
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_8" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_3" [color="red" ];
+"com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_9" [label="9:  Call StringBuilder.<init>() \n   n$7=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 18]\n  n$8=_fun_StringBuilder.<init>()(n$7:java.lang.StringBuilder*) [line 18]\n  *&$irvar1:java.lang.StringBuilder*=n$7 [line 18]\n  EXIT_SCOPE(n$7,n$8); [line 18]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_9" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_10" ;
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_9" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_3" [color="red" ];
+"com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_10" [label="10:  Call StringBuilder StringBuilder.append(String) \n   n$9=*&$irvar1:java.lang.StringBuilder* [line 18]\n  _=*n$9:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 18]\n  n$11=_fun_StringBuilder StringBuilder.append(String)(n$9:java.lang.StringBuilder*,\"end . . . , use time : \":java.lang.Object*) virtual [line 18]\n  *&$irvar2:java.lang.StringBuilder*=n$11 [line 18]\n  NULLIFY(&$irvar1); [line 18]\n  EXIT_SCOPE(_,n$9,n$11,$irvar1); [line 18]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_10" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_11" ;
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_10" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_3" [color="red" ];
+"com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_11" [label="11:  Call StringBuilder StringBuilder.append(long) \n   n$12=*&$irvar2:java.lang.StringBuilder* [line 18]\n  _=*n$12:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 18]\n  n$14=*&end:long [line 18]\n  n$15=*&start:long [line 18]\n  n$16=_fun_StringBuilder StringBuilder.append(long)(n$12:java.lang.StringBuilder*,((n$14 - n$15) / 1000):long) virtual [line 18]\n  *&$irvar3:java.lang.StringBuilder*=n$16 [line 18]\n  NULLIFY(&start); [line 18]\n  NULLIFY(&$irvar2); [line 18]\n  NULLIFY(&end); [line 18]\n  EXIT_SCOPE(_,n$12,n$14,n$15,n$16,start,$irvar2,end); [line 18]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_11" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_12" ;
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_11" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_3" [color="red" ];
+"com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_12" [label="12:  Call StringBuilder StringBuilder.append(String) \n   n$17=*&$irvar3:java.lang.StringBuilder* [line 18]\n  _=*n$17:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 18]\n  n$19=_fun_StringBuilder StringBuilder.append(String)(n$17:java.lang.StringBuilder*,\" ms . \":java.lang.Object*) virtual [line 18]\n  *&$irvar4:java.lang.StringBuilder*=n$19 [line 18]\n  NULLIFY(&$irvar3); [line 18]\n  EXIT_SCOPE(_,n$17,n$19,$irvar3); [line 18]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_12" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_13" ;
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_12" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_3" [color="red" ];
+"com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_13" [label="13:  Call String StringBuilder.toString() \n   n$20=*&$irvar4:java.lang.StringBuilder* [line 18]\n  _=*n$20:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 18]\n  n$22=_fun_String StringBuilder.toString()(n$20:java.lang.StringBuilder*) virtual [line 18]\n  *&$irvar5:java.lang.String*=n$22 [line 18]\n  NULLIFY(&$irvar4); [line 18]\n  EXIT_SCOPE(_,n$20,n$22,$irvar4); [line 18]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_13" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_14" ;
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_13" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_3" [color="red" ];
+"com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_14" [label="14:  Call void PrintStream.println(String) \n   n$23=*&$irvar0:java.io.PrintStream* [line 18]\n  _=*n$23:java.io.PrintStream*(root java.io.PrintStream) [line 18]\n  n$25=*&$irvar5:java.lang.String* [line 18]\n  n$26=_fun_void PrintStream.println(String)(n$23:java.io.PrintStream*,n$25:java.lang.String*) virtual [line 18]\n  NULLIFY(&$irvar5); [line 18]\n  NULLIFY(&$irvar0); [line 18]\n  EXIT_SCOPE(_,n$23,n$25,n$26,$irvar5,$irvar0); [line 18]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_14" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_15" ;
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_14" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_3" [color="red" ];
+"com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_15" [label="15:  method_body \n   APPLY_ABSTRACTION; [line 19]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_15" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_2" ;
+	 "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_15" -> "com.dulishuo.jituo.Test.main(java.lang.String[]):void.92fcde334c0d95f29cbe4d559cae8f59_3" [color="red" ];
+}

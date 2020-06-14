@@ -1,0 +1,663 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>testCapture.java.daa1306e85f290e2a260c8577d57fc8b</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>File src/com/dulishuo/yimusanfendi/testCapture.java </h1></center>
+<table class="code">
+<tr><td class="num" id="LINE1">1</td><td class="line">package com.dulishuo.yimusanfendi; </td></tr>
+<tr><td class="num" id="LINE2">2</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE3">3</td><td class="line">import java.io.BufferedReader; </td></tr>
+<tr><td class="num" id="LINE4">4</td><td class="line">import java.io.BufferedWriter; </td></tr>
+<tr><td class="num" id="LINE5">5</td><td class="line">import java.io.FileOutputStream; </td></tr>
+<tr><td class="num" id="LINE6">6</td><td class="line">import java.io.FileWriter; </td></tr>
+<tr><td class="num" id="LINE7">7</td><td class="line">import java.io.IOException; </td></tr>
+<tr><td class="num" id="LINE8">8</td><td class="line">import java.io.InputStream; </td></tr>
+<tr><td class="num" id="LINE9">9</td><td class="line">import java.io.InputStreamReader; </td></tr>
+<tr><td class="num" id="LINE10">10</td><td class="line">import java.io.OutputStream; </td></tr>
+<tr><td class="num" id="LINE11">11</td><td class="line">import java.io.OutputStreamWriter; </td></tr>
+<tr><td class="num" id="LINE12">12</td><td class="line">import java.nio.charset.Charset; </td></tr>
+<tr><td class="num" id="LINE13">13</td><td class="line">import java.util.zip.GZIPInputStream; </td></tr>
+<tr><td class="num" id="LINE14">14</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE15">15</td><td class="line">import org.apache.commons.httpclient.HttpClient; </td></tr>
+<tr><td class="num" id="LINE16">16</td><td class="line">import org.apache.commons.httpclient.NameValuePair; </td></tr>
+<tr><td class="num" id="LINE17">17</td><td class="line">import org.apache.commons.httpclient.cookie.CookiePolicy; </td></tr>
+<tr><td class="num" id="LINE18">18</td><td class="line">import org.apache.commons.httpclient.methods.GetMethod; </td></tr>
+<tr><td class="num" id="LINE19">19</td><td class="line">import org.apache.commons.httpclient.methods.PostMethod; </td></tr>
+<tr><td class="num" id="LINE20">20</td><td class="line">import org.apache.commons.httpclient.Cookie; </td></tr>
+<tr><td class="num" id="LINE21">21</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE22">22</td><td class="line">public class testCapture { <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.<init>%28%29.861bb2f0b97cf8e05581420c201867ff_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.<init>%28%29.861bb2f0b97cf8e05581420c201867ff_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.dulishuo.yimusanfendi.testCapture* [line 22];
+n$1=_fun_Object.&lt;init&gt;()(n$0:com.dulishuo.yimusanfendi.testCapture*) [line 22];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.<init>%28%29.861bb2f0b97cf8e05581420c201867ff_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.<init>%28%29.861bb2f0b97cf8e05581420c201867ff_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.<init>%28%29.861bb2f0b97cf8e05581420c201867ff_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/com.dulishuo.yimusanfendi.testCapture.<init>%28%29.861bb2f0b97cf8e05581420c201867ff.html">summary for testCapture.&lt;init&gt;()</a></td></tr>
+<tr><td class="num" id="LINE23">23</td><td class="line">	public static void main(String[] args) throws IOException{ <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa.html">summary for void testCapture.main(String[])</a></td></tr>
+<tr><td class="num" id="LINE24">24</td><td class="line">		 </td></tr>
+<tr><td class="num" id="LINE25">25</td><td class="line">		String charset = &quot;UTF-8&quot;;   <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+*&amp;charset:java.lang.Object*="UTF-8" [line 25];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE26">26</td><td class="line">		 String loginUrl = &quot;https://secure.usnews.com/member/login&quot;; <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+*&amp;loginUrl:java.lang.Object*="https://secure.usnews.com/member/login" [line 26];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE27">27</td><td class="line">	        // 需登陆后访问的 Url   </td></tr>
+<tr><td class="num" id="LINE28">28</td><td class="line">	        String dataUrl = &quot;http://premium.usnews.com/best-colleges/princeton-university-2627?int=9ff208&quot;;  <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+*&amp;dataUrl:java.lang.Object*="http://premium.usnews.com/best-colleges/princeton-university-2627?int=9ff208" [line 28];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE29">29</td><td class="line">	         </td></tr>
+<tr><td class="num" id="LINE30">30</td><td class="line">	        //BufferedWriter fw = new BufferedWriter(new FileWriter(&quot;C:/Users/强胜/Desktop/dataCrawler/一亩三分地/test.html&quot;)); </td></tr>
+<tr><td class="num" id="LINE31">31</td><td class="line">	        BufferedWriter fw1 = new BufferedWriter (new OutputStreamWriter (new FileOutputStream (&quot;C:/Users/强胜/Desktop/dataCrawler/一亩三分地/test1.html&quot;))); <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$0=_fun___new(sizeof(t=java.io.FileOutputStream):java.io.FileOutputStream*) [line 31];
+n$1=_fun_FileOutputStream.&lt;init&gt;(String)(n$0:java.io.FileOutputStream*,"C:/Users/\\229\\188\\186\\232\\131\\156/Desktop/dataCrawler/\\228\\184\\128\\228\\186\\169\\228\\184\\137\\229\\136\\134\\229\\156\\176/test1.html":java.lang.Object*) [line 31];
+*&amp;$irvar0:java.io.FileOutputStream*=n$0 [line 31];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$2=_fun___new(sizeof(t=java.io.OutputStreamWriter):java.io.OutputStreamWriter*) [line 31];
+n$3=*&amp;$irvar0:java.io.FileOutputStream* [line 31];
+n$4=_fun_OutputStreamWriter.&lt;init&gt;(OutputStream)(n$2:java.io.OutputStreamWriter*,n$3:java.io.FileOutputStream*) [line 31];
+n$5=_fun___set_file_attribute(n$2:java.io.OutputStreamWriter*) [line 31];
+*&amp;$irvar1:java.io.OutputStreamWriter*=n$2 [line 31];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$6=_fun___new(sizeof(t=java.io.BufferedWriter):java.io.BufferedWriter*) [line 31];
+n$7=*&amp;$irvar1:java.io.OutputStreamWriter* [line 31];
+n$8=_fun_BufferedWriter.&lt;init&gt;(Writer)(n$6:java.io.BufferedWriter*,n$7:java.io.OutputStreamWriter*) [line 31];
+n$9=_fun___set_file_attribute(n$6:java.io.BufferedWriter*) [line 31];
+*&amp;fw1:java.io.BufferedWriter*=n$6 [line 31];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE32">32</td><td class="line">	        FileWriter fw2 = new FileWriter(&quot;C:/Users/强胜/Desktop/dataCrawler/一亩三分地/test3.html&quot;); <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+n$10=_fun___new(sizeof(t=java.io.FileWriter):java.io.FileWriter*) [line 32];
+n$11=_fun_FileWriter.&lt;init&gt;(String)(n$10:java.io.FileWriter*,"C:/Users/\\229\\188\\186\\232\\131\\156/Desktop/dataCrawler/\\228\\184\\128\\228\\186\\169\\228\\184\\137\\229\\136\\134\\229\\156\\176/test3.html":java.lang.Object*) [line 32];
+n$12=_fun___set_file_attribute(n$10:java.io.FileWriter*) [line 32];
+*&amp;fw2:java.io.FileWriter*=n$10 [line 32];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE33">33</td><td class="line">	        HttpClient httpClient = new HttpClient();   <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+n$13=_fun___new(sizeof(t=org.apache.commons.httpclient.HttpClient):org.apache.commons.httpclient.HttpClient*) [line 33];
+n$14=_fun_HttpClient.&lt;init&gt;()(n$13:org.apache.commons.httpclient.HttpClient*) [line 33];
+*&amp;httpClient:org.apache.commons.httpclient.HttpClient*=n$13 [line 33];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE34">34</td><td class="line">	        </td></tr>
+<tr><td class="num" id="LINE35">35</td><td class="line">	   </td></tr>
+<tr><td class="num" id="LINE36">36</td><td class="line">	        // 模拟登陆，按实际服务器端要求选用 Post 或 Get 请求方式   </td></tr>
+<tr><td class="num" id="LINE37">37</td><td class="line">	        PostMethod postMethod = new PostMethod(loginUrl);   <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$15=_fun___new(sizeof(t=org.apache.commons.httpclient.methods.PostMethod):org.apache.commons.httpclient.methods.PostMethod*) [line 37];
+n$16=*&amp;loginUrl:java.lang.Object* [line 37];
+n$17=_fun_PostMethod.&lt;init&gt;(String)(n$15:org.apache.commons.httpclient.methods.PostMethod*,n$16:java.lang.Object*) [line 37];
+*&amp;postMethod:org.apache.commons.httpclient.methods.PostMethod*=n$15 [line 37];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE38">38</td><td class="line">	         </td></tr>
+<tr><td class="num" id="LINE39">39</td><td class="line">	   </td></tr>
+<tr><td class="num" id="LINE40">40</td><td class="line">	        // 设置登陆时要求的信息，用户名和密码   </td></tr>
+<tr><td class="num" id="LINE41">41</td><td class="line">	        NameValuePair[] data = {  <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:3 Instructions
+n$18=_fun___new_array(sizeof(t=org.apache.commons.httpclient.NameValuePair*[_*_];len=[3]):org.apache.commons.httpclient.NameValuePair*[_*_](*)) [line 41];
+*&amp;$irvar2:org.apache.commons.httpclient.NameValuePair*[_*_](*)=n$18 [line 41];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:3 Instructions
+n$19=_fun___new(sizeof(t=org.apache.commons.httpclient.NameValuePair):org.apache.commons.httpclient.NameValuePair*) [line 41];
+n$20=_fun_NameValuePair.&lt;init&gt;(String,String)(n$19:org.apache.commons.httpclient.NameValuePair*,"username":java.lang.Object*,"andrew.liang@dulishuo.com":java.lang.Object*) [line 41];
+*&amp;$irvar3:org.apache.commons.httpclient.NameValuePair*=n$19 [line 41];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:3 Instructions
+n$21=*&amp;$irvar2:org.apache.commons.httpclient.NameValuePair*[_*_](*) [line 41];
+n$22=*&amp;$irvar3:org.apache.commons.httpclient.NameValuePair* [line 41];
+*n$21[0]:org.apache.commons.httpclient.NameValuePair*=n$22 [line 41];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:3 Instructions
+n$23=_fun___new(sizeof(t=org.apache.commons.httpclient.NameValuePair):org.apache.commons.httpclient.NameValuePair*) [line 41];
+n$24=_fun_NameValuePair.&lt;init&gt;(String,String)(n$23:org.apache.commons.httpclient.NameValuePair*,"password":java.lang.Object*,"Lcy19930524!":java.lang.Object*) [line 41];
+*&amp;$irvar4:org.apache.commons.httpclient.NameValuePair*=n$23 [line 41];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:3 Instructions
+n$25=*&amp;$irvar2:org.apache.commons.httpclient.NameValuePair*[_*_](*) [line 41];
+n$26=*&amp;$irvar4:org.apache.commons.httpclient.NameValuePair* [line 41];
+*n$25[1]:org.apache.commons.httpclient.NameValuePair*=n$26 [line 41];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 exn:3 Instructions
+n$27=_fun___new(sizeof(t=org.apache.commons.httpclient.NameValuePair):org.apache.commons.httpclient.NameValuePair*) [line 41];
+n$28=_fun_NameValuePair.&lt;init&gt;(String,String)(n$27:org.apache.commons.httpclient.NameValuePair*,"referer":java.lang.Object*,"":java.lang.Object*) [line 41];
+*&amp;$irvar5:org.apache.commons.httpclient.NameValuePair*=n$27 [line 41];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:20 exn:3 Instructions
+n$29=*&amp;$irvar2:org.apache.commons.httpclient.NameValuePair*[_*_](*) [line 41];
+n$30=*&amp;$irvar5:org.apache.commons.httpclient.NameValuePair* [line 41];
+*n$29[2]:org.apache.commons.httpclient.NameValuePair*=n$30 [line 41];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:3 Instructions
+n$31=*&amp;$irvar2:org.apache.commons.httpclient.NameValuePair*[_*_](*) [line 41];
+*&amp;data:org.apache.commons.httpclient.NameValuePair*[_*_](*)=n$31 [line 41];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE42">42</td><td class="line">	        		new NameValuePair(&quot;username&quot;, &quot;andrew.liang@dulishuo.com&quot;),   </td></tr>
+<tr><td class="num" id="LINE43">43</td><td class="line">	                new NameValuePair(&quot;password&quot;, &quot;Lcy19930524!&quot;), </td></tr>
+<tr><td class="num" id="LINE44">44</td><td class="line">	        		new NameValuePair(&quot;referer&quot;, &quot;&quot;) </td></tr>
+<tr><td class="num" id="LINE45">45</td><td class="line">	        		};   </td></tr>
+<tr><td class="num" id="LINE46">46</td><td class="line">	        postMethod.setRequestHeader(&quot;Host&quot;, &quot;secure.usnews.com&quot;);   <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:22 exn:3 Instructions
+n$32=*&amp;postMethod:org.apache.commons.httpclient.methods.PostMethod* [line 46];
+_=*n$32:org.apache.commons.httpclient.methods.PostMethod*(root org.apache.commons.httpclient.methods.PostMethod) [line 46];
+n$34=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$32:org.apache.commons.httpclient.methods.PostMethod*,"Host":java.lang.Object*,"secure.usnews.com":java.lang.Object*) virtual [line 46];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE47">47</td><td class="line">	        postMethod.setRequestHeader(&quot;User-Agent&quot;, &quot;Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0&quot;);     <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:3 Instructions
+n$35=*&amp;postMethod:org.apache.commons.httpclient.methods.PostMethod* [line 47];
+_=*n$35:org.apache.commons.httpclient.methods.PostMethod*(root org.apache.commons.httpclient.methods.PostMethod) [line 47];
+n$37=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$35:org.apache.commons.httpclient.methods.PostMethod*,"User-Agent":java.lang.Object*,"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0":java.lang.Object*) virtual [line 47];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE48">48</td><td class="line">	        postMethod.setRequestHeader(&quot;Accept&quot;, &quot;Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0&quot;);   <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:3 Instructions
+n$38=*&amp;postMethod:org.apache.commons.httpclient.methods.PostMethod* [line 48];
+_=*n$38:org.apache.commons.httpclient.methods.PostMethod*(root org.apache.commons.httpclient.methods.PostMethod) [line 48];
+n$40=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$38:org.apache.commons.httpclient.methods.PostMethod*,"Accept":java.lang.Object*,"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0":java.lang.Object*) virtual [line 48];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE49">49</td><td class="line">	        postMethod.setRequestHeader(&quot;Accept-Language&quot;, &quot;zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3&quot;);   <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:25 exn:3 Instructions
+n$41=*&amp;postMethod:org.apache.commons.httpclient.methods.PostMethod* [line 49];
+_=*n$41:org.apache.commons.httpclient.methods.PostMethod*(root org.apache.commons.httpclient.methods.PostMethod) [line 49];
+n$43=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$41:org.apache.commons.httpclient.methods.PostMethod*,"Accept-Language":java.lang.Object*,"zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3":java.lang.Object*) virtual [line 49];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE50">50</td><td class="line">	        postMethod.setRequestHeader(&quot;Accept-Encoding&quot;, &quot;gzip, deflate&quot;);   <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:26 exn:3 Instructions
+n$44=*&amp;postMethod:org.apache.commons.httpclient.methods.PostMethod* [line 50];
+_=*n$44:org.apache.commons.httpclient.methods.PostMethod*(root org.apache.commons.httpclient.methods.PostMethod) [line 50];
+n$46=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$44:org.apache.commons.httpclient.methods.PostMethod*,"Accept-Encoding":java.lang.Object*,"gzip, deflate":java.lang.Object*) virtual [line 50];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE51">51</td><td class="line">	        postMethod.setRequestHeader(&quot;DNT&quot;, &quot;1&quot;);   <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:25 succs:27 exn:3 Instructions
+n$47=*&amp;postMethod:org.apache.commons.httpclient.methods.PostMethod* [line 51];
+_=*n$47:org.apache.commons.httpclient.methods.PostMethod*(root org.apache.commons.httpclient.methods.PostMethod) [line 51];
+n$49=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$47:org.apache.commons.httpclient.methods.PostMethod*,"DNT":java.lang.Object*,"1":java.lang.Object*) virtual [line 51];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE52">52</td><td class="line">	        postMethod.setRequestHeader(&quot;Referer&quot;, &quot;https://secure.usnews.com/member/login&quot;);  	  <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:26 succs:28 exn:3 Instructions
+n$50=*&amp;postMethod:org.apache.commons.httpclient.methods.PostMethod* [line 52];
+_=*n$50:org.apache.commons.httpclient.methods.PostMethod*(root org.apache.commons.httpclient.methods.PostMethod) [line 52];
+n$52=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$50:org.apache.commons.httpclient.methods.PostMethod*,"Referer":java.lang.Object*,"https://secure.usnews.com/member/login":java.lang.Object*) virtual [line 52];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE53">53</td><td class="line">	        postMethod.setRequestHeader(&quot;Connection&quot;, &quot;keep-alive&quot;);   <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:27 succs:29 exn:3 Instructions
+n$53=*&amp;postMethod:org.apache.commons.httpclient.methods.PostMethod* [line 53];
+_=*n$53:org.apache.commons.httpclient.methods.PostMethod*(root org.apache.commons.httpclient.methods.PostMethod) [line 53];
+n$55=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$53:org.apache.commons.httpclient.methods.PostMethod*,"Connection":java.lang.Object*,"keep-alive":java.lang.Object*) virtual [line 53];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE54">54</td><td class="line">            postMethod.setRequestHeader(&quot;Content-type&quot;, &quot;application/x-www-form-urlencoded&quot;);  <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:28 succs:30 exn:3 Instructions
+n$56=*&amp;postMethod:org.apache.commons.httpclient.methods.PostMethod* [line 54];
+_=*n$56:org.apache.commons.httpclient.methods.PostMethod*(root org.apache.commons.httpclient.methods.PostMethod) [line 54];
+n$58=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$56:org.apache.commons.httpclient.methods.PostMethod*,"Content-type":java.lang.Object*,"application/x-www-form-urlencoded":java.lang.Object*) virtual [line 54];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE55">55</td><td class="line">	  </td></tr>
+<tr><td class="num" id="LINE56">56</td><td class="line">                    </td></tr>
+<tr><td class="num" id="LINE57">57</td><td class="line">	        postMethod.setRequestBody(data);   <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:29 succs:31 exn:3 Instructions
+n$59=*&amp;postMethod:org.apache.commons.httpclient.methods.PostMethod* [line 57];
+_=*n$59:org.apache.commons.httpclient.methods.PostMethod*(root org.apache.commons.httpclient.methods.PostMethod) [line 57];
+n$61=*&amp;data:org.apache.commons.httpclient.NameValuePair*[_*_](*) [line 57];
+n$62=_fun_void PostMethod.setRequestBody(NameValuePair[])(n$59:org.apache.commons.httpclient.methods.PostMethod*,n$61:org.apache.commons.httpclient.NameValuePair*[_*_](*)) virtual [line 57];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE58">58</td><td class="line">	        try {   </td></tr>
+<tr><td class="num" id="LINE59">59</td><td class="line">	            // 设置 HttpClient 接收 Cookie,用与浏览器一样的策略   </td></tr>
+<tr><td class="num" id="LINE60">60</td><td class="line">	            httpClient.getParams().setCookiePolicy(   <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:30 succs:32 exn:115 Instructions
+n$63=*&amp;httpClient:org.apache.commons.httpclient.HttpClient* [line 60];
+_=*n$63:org.apache.commons.httpclient.HttpClient*(root org.apache.commons.httpclient.HttpClient) [line 60];
+n$65=_fun_HttpClientParams HttpClient.getParams()(n$63:org.apache.commons.httpclient.HttpClient*) virtual [line 60];
+*&amp;$irvar6:org.apache.commons.httpclient.params.HttpClientParams*=n$65 [line 60];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node32.html"><span class='visited with_tooltip'>I_32<span class='tooltip'>node32 preds:31 succs:33 exn:115 Instructions
+n$66=*&amp;$irvar6:org.apache.commons.httpclient.params.HttpClientParams* [line 60];
+_=*n$66:org.apache.commons.httpclient.params.HttpClientParams*(root org.apache.commons.httpclient.params.HttpClientParams) [line 60];
+n$68=_fun_void HttpMethodParams.setCookiePolicy(String)(n$66:org.apache.commons.httpclient.params.HttpClientParams*,"compatibility":java.lang.Object*) virtual [line 60];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE61">61</td><td class="line">	                    CookiePolicy.BROWSER_COMPATIBILITY);   </td></tr>
+<tr><td class="num" id="LINE62">62</td><td class="line">	            httpClient.executeMethod(postMethod);   <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds:32 succs:34 exn:115 Instructions
+n$69=*&amp;httpClient:org.apache.commons.httpclient.HttpClient* [line 62];
+_=*n$69:org.apache.commons.httpclient.HttpClient*(root org.apache.commons.httpclient.HttpClient) [line 62];
+n$71=*&amp;postMethod:org.apache.commons.httpclient.methods.PostMethod* [line 62];
+n$72=_fun_int HttpClient.executeMethod(HttpMethod)(n$69:org.apache.commons.httpclient.HttpClient*,n$71:org.apache.commons.httpclient.methods.PostMethod*) virtual [line 62];
+*&amp;$irvar7:int=n$72 [line 62];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE63">63</td><td class="line">	             </td></tr>
+<tr><td class="num" id="LINE64">64</td><td class="line">	            fw1.write(postMethod.getResponseBodyAsString()); <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds:33 succs:35 exn:115 Instructions
+n$73=*&amp;postMethod:org.apache.commons.httpclient.methods.PostMethod* [line 64];
+_=*n$73:org.apache.commons.httpclient.methods.PostMethod*(root org.apache.commons.httpclient.methods.PostMethod) [line 64];
+n$75=_fun_String HttpMethodBase.getResponseBodyAsString()(n$73:org.apache.commons.httpclient.methods.PostMethod*) virtual [line 64];
+*&amp;$irvar8:java.lang.String*=n$75 [line 64];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node35.html"><span class='visited with_tooltip'>I_35<span class='tooltip'>node35 preds:34 succs:36 exn:115 Instructions
+n$76=*&amp;fw1:java.io.BufferedWriter* [line 64];
+_=*n$76:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 64];
+n$78=*&amp;$irvar8:java.lang.String* [line 64];
+n$79=_fun_void Writer.write(String)(n$76:java.io.BufferedWriter*,n$78:java.lang.String*) virtual [line 64];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE65">65</td><td class="line">	            fw1.flush(); <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node36.html"><span class='visited with_tooltip'>I_36<span class='tooltip'>node36 preds:35 succs:37 exn:115 Instructions
+n$80=*&amp;fw1:java.io.BufferedWriter* [line 65];
+_=*n$80:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 65];
+n$82=_fun_void BufferedWriter.flush()(n$80:java.io.BufferedWriter*) virtual [line 65];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE66">66</td><td class="line">	            fw1.close(); <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node37.html"><span class='visited with_tooltip'>I_37<span class='tooltip'>node37 preds:36 succs:38 exn:115 Instructions
+n$83=*&amp;fw1:java.io.BufferedWriter* [line 66];
+n$86=_fun___set_mem_attribute(n$83:java.io.BufferedWriter*) [line 66];
+_=*n$83:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 66];
+n$85=_fun_void BufferedWriter.close()(n$83:java.io.BufferedWriter*) virtual [line 66];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE67">67</td><td class="line">	            // 获得登陆后的 Cookie   </td></tr>
+<tr><td class="num" id="LINE68">68</td><td class="line">	            Cookie[] cookies = (Cookie[]) httpClient.getState().getCookies();   <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node38.html"><span class='visited with_tooltip'>I_38<span class='tooltip'>node38 preds:37 succs:39 exn:115 Instructions
+n$87=*&amp;httpClient:org.apache.commons.httpclient.HttpClient* [line 68];
+_=*n$87:org.apache.commons.httpclient.HttpClient*(root org.apache.commons.httpclient.HttpClient) [line 68];
+n$89=_fun_HttpState HttpClient.getState()(n$87:org.apache.commons.httpclient.HttpClient*) virtual [line 68];
+*&amp;$irvar9:org.apache.commons.httpclient.HttpState*=n$89 [line 68];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node39.html"><span class='visited with_tooltip'>I_39<span class='tooltip'>node39 preds:38 succs:40 exn:115 Instructions
+n$90=*&amp;$irvar9:org.apache.commons.httpclient.HttpState* [line 68];
+_=*n$90:org.apache.commons.httpclient.HttpState*(root org.apache.commons.httpclient.HttpState) [line 68];
+n$92=_fun_Cookie[] HttpState.getCookies()(n$90:org.apache.commons.httpclient.HttpState*) virtual [line 68];
+*&amp;$irvar10:org.apache.commons.httpclient.Cookie*[_*_](*)=n$92 [line 68];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node40.html"><span class='visited with_tooltip'>I_40<span class='tooltip'>node40 preds:39 succs:41 exn:115 Instructions
+n$93=*&amp;$irvar10:org.apache.commons.httpclient.Cookie*[_*_](*) [line 68];
+n$94=_fun___cast(n$93:org.apache.commons.httpclient.Cookie*[_*_](*),sizeof(t=org.apache.commons.httpclient.Cookie*[_*_];sub_t=( sub )(cast)):void) [line 68];
+*&amp;cookies:org.apache.commons.httpclient.Cookie*[_*_](*)=n$94 [line 68];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE69">69</td><td class="line">	            StringBuffer tmpcookies = new StringBuffer();   <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node41.html"><span class='visited with_tooltip'>I_41<span class='tooltip'>node41 preds:40 succs:42 exn:115 Instructions
+n$95=_fun___new(sizeof(t=java.lang.StringBuffer):java.lang.StringBuffer*) [line 69];
+n$96=_fun_StringBuffer.&lt;init&gt;()(n$95:java.lang.StringBuffer*) [line 69];
+*&amp;tmpcookies:java.lang.StringBuffer*=n$95 [line 69];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE70">70</td><td class="line">	            for (Cookie c : cookies) {   <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node42.html"><span class='visited with_tooltip'>I_42<span class='tooltip'>node42 preds:41 succs:43 exn:115 Instructions
+n$97=*&amp;cookies:org.apache.commons.httpclient.Cookie*[_*_](*) [line 70];
+*&amp;$bcvar11:org.apache.commons.httpclient.Cookie*[_*_](*)=n$97 [line 70];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node43.html"><span class='visited with_tooltip'>I_43<span class='tooltip'>node43 preds:42 succs:44 exn:115 Instructions
+n$98=*&amp;$bcvar11:org.apache.commons.httpclient.Cookie*[_*_](*) [line 70];
+_=*n$98:int(root org.apache.commons.httpclient.Cookie*[_*_]) [line 70];
+n$100=_fun___get_array_length(n$98:org.apache.commons.httpclient.Cookie*[_*_](*)) [line 70];
+*&amp;$bcvar12:int=n$100 [line 70];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node44.html"><span class='visited with_tooltip'>I_44<span class='tooltip'>node44 preds:43 succs:47 exn:115 Instructions
+*&amp;$bcvar13:int=0 [line 70];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node47.html"><span class='visited with_tooltip'>J_47<span class='tooltip'>node47 preds:56 44 succs:45 46 exn: Join
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node45.html"><span class='visited with_tooltip'>C_45<span class='tooltip'>node45 preds:47 succs:48 exn:115 Conditional method_body
+n$101=*&amp;$bcvar13:int [line 70];
+n$102=*&amp;$bcvar12:int [line 70];
+PRUNE(!(n$101  &gt;=  n$102), true); [line 70];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node48.html"><span class='visited with_tooltip'>I_48<span class='tooltip'>node48 preds:45 succs:49 exn:115 Instructions
+n$103=*&amp;$bcvar11:org.apache.commons.httpclient.Cookie*[_*_](*) [line 70];
+_=*n$103:org.apache.commons.httpclient.Cookie*(root org.apache.commons.httpclient.Cookie*[_*_]) [line 70];
+n$104=*&amp;$bcvar13:int [line 70];
+n$106=*n$103[n$104]:org.apache.commons.httpclient.Cookie* [line 70];
+*&amp;c:org.apache.commons.httpclient.Cookie*=n$106 [line 70];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node56.html"><span class='visited with_tooltip'>I_56<span class='tooltip'>node56 preds:55 succs:47 exn:115 Instructions
+n$130=*&amp;$bcvar13:int [line 70];
+*&amp;$bcvar13:int=(n$130 + 1) [line 70];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node46.html"><span class='visited with_tooltip'>C_46<span class='tooltip'>node46 preds:47 succs:57 exn:115 Conditional method_body
+n$101=*&amp;$bcvar13:int [line 70];
+n$102=*&amp;$bcvar12:int [line 70];
+PRUNE((n$101  &gt;=  n$102), false); [line 70];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE71">71</td><td class="line">	                tmpcookies.append(c.toString() + &quot;;&quot;);   <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node49.html"><span class='visited with_tooltip'>I_49<span class='tooltip'>node49 preds:48 succs:50 exn:115 Instructions
+n$107=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 71];
+n$108=_fun_StringBuilder.&lt;init&gt;()(n$107:java.lang.StringBuilder*) [line 71];
+*&amp;$irvar11:java.lang.StringBuilder*=n$107 [line 71];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node50.html"><span class='visited with_tooltip'>I_50<span class='tooltip'>node50 preds:49 succs:51 exn:115 Instructions
+n$109=*&amp;c:org.apache.commons.httpclient.Cookie* [line 71];
+_=*n$109:org.apache.commons.httpclient.Cookie*(root org.apache.commons.httpclient.Cookie) [line 71];
+n$111=_fun_String Cookie.toString()(n$109:org.apache.commons.httpclient.Cookie*) virtual [line 71];
+*&amp;$irvar12:java.lang.String*=n$111 [line 71];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node51.html"><span class='visited with_tooltip'>I_51<span class='tooltip'>node51 preds:50 succs:52 exn:115 Instructions
+n$112=*&amp;$irvar11:java.lang.StringBuilder* [line 71];
+_=*n$112:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 71];
+n$114=*&amp;$irvar12:java.lang.String* [line 71];
+n$115=_fun_StringBuilder StringBuilder.append(String)(n$112:java.lang.StringBuilder*,n$114:java.lang.String*) virtual [line 71];
+*&amp;$irvar13:java.lang.StringBuilder*=n$115 [line 71];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node52.html"><span class='visited with_tooltip'>I_52<span class='tooltip'>node52 preds:51 succs:53 exn:115 Instructions
+n$116=*&amp;$irvar13:java.lang.StringBuilder* [line 71];
+_=*n$116:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 71];
+n$118=_fun_StringBuilder StringBuilder.append(String)(n$116:java.lang.StringBuilder*,";":java.lang.Object*) virtual [line 71];
+*&amp;$irvar14:java.lang.StringBuilder*=n$118 [line 71];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node53.html"><span class='visited with_tooltip'>I_53<span class='tooltip'>node53 preds:52 succs:54 exn:115 Instructions
+n$119=*&amp;$irvar14:java.lang.StringBuilder* [line 71];
+_=*n$119:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 71];
+n$121=_fun_String StringBuilder.toString()(n$119:java.lang.StringBuilder*) virtual [line 71];
+*&amp;$irvar15:java.lang.String*=n$121 [line 71];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node54.html"><span class='visited with_tooltip'>I_54<span class='tooltip'>node54 preds:53 succs:55 exn:115 Instructions
+n$122=*&amp;tmpcookies:java.lang.StringBuffer* [line 71];
+_=*n$122:java.lang.StringBuffer*(root java.lang.StringBuffer) [line 71];
+n$124=*&amp;$irvar15:java.lang.String* [line 71];
+n$125=_fun_StringBuffer StringBuffer.append(String)(n$122:java.lang.StringBuffer*,n$124:java.lang.String*) virtual [line 71];
+*&amp;$irvar16:java.lang.StringBuffer*=n$125 [line 71];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE72">72</td><td class="line">	                System.out.println(c); <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node55.html"><span class='visited with_tooltip'>I_55<span class='tooltip'>node55 preds:54 succs:56 exn:115 Instructions
+n$126=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 72];
+_=*n$126:java.io.PrintStream*(root java.io.PrintStream) [line 72];
+n$128=*&amp;c:org.apache.commons.httpclient.Cookie* [line 72];
+n$129=_fun_void PrintStream.println(Object)(n$126:java.io.PrintStream*,n$128:org.apache.commons.httpclient.Cookie*) virtual [line 72];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE73">73</td><td class="line">	            }   </td></tr>
+<tr><td class="num" id="LINE74">74</td><td class="line">	            System.out.println(postMethod.getStatusText()); <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node57.html"><span class='visited with_tooltip'>I_57<span class='tooltip'>node57 preds:46 succs:58 exn:115 Instructions
+n$131=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 74];
+*&amp;$irvar18:java.io.PrintStream*=n$131 [line 74];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node58.html"><span class='visited with_tooltip'>I_58<span class='tooltip'>node58 preds:57 succs:59 exn:115 Instructions
+n$132=*&amp;postMethod:org.apache.commons.httpclient.methods.PostMethod* [line 74];
+_=*n$132:org.apache.commons.httpclient.methods.PostMethod*(root org.apache.commons.httpclient.methods.PostMethod) [line 74];
+n$134=_fun_String HttpMethodBase.getStatusText()(n$132:org.apache.commons.httpclient.methods.PostMethod*) virtual [line 74];
+*&amp;$irvar17:java.lang.String*=n$134 [line 74];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node59.html"><span class='visited with_tooltip'>I_59<span class='tooltip'>node59 preds:58 succs:60 exn:115 Instructions
+n$135=*&amp;$irvar18:java.io.PrintStream* [line 74];
+_=*n$135:java.io.PrintStream*(root java.io.PrintStream) [line 74];
+n$137=*&amp;$irvar17:java.lang.String* [line 74];
+n$138=_fun_void PrintStream.println(String)(n$135:java.io.PrintStream*,n$137:java.lang.String*) virtual [line 74];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE75">75</td><td class="line">	            System.out.println(postMethod.getStatusCode()); <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node60.html"><span class='visited with_tooltip'>I_60<span class='tooltip'>node60 preds:59 succs:61 exn:115 Instructions
+n$139=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 75];
+*&amp;$irvar20:java.io.PrintStream*=n$139 [line 75];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node61.html"><span class='visited with_tooltip'>I_61<span class='tooltip'>node61 preds:60 succs:62 exn:115 Instructions
+n$140=*&amp;postMethod:org.apache.commons.httpclient.methods.PostMethod* [line 75];
+_=*n$140:org.apache.commons.httpclient.methods.PostMethod*(root org.apache.commons.httpclient.methods.PostMethod) [line 75];
+n$142=_fun_int HttpMethodBase.getStatusCode()(n$140:org.apache.commons.httpclient.methods.PostMethod*) virtual [line 75];
+*&amp;$irvar19:int=n$142 [line 75];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node62.html"><span class='visited with_tooltip'>I_62<span class='tooltip'>node62 preds:61 succs:63 exn:115 Instructions
+n$143=*&amp;$irvar20:java.io.PrintStream* [line 75];
+_=*n$143:java.io.PrintStream*(root java.io.PrintStream) [line 75];
+n$145=*&amp;$irvar19:int [line 75];
+n$146=_fun_void PrintStream.println(int)(n$143:java.io.PrintStream*,n$145:int) virtual [line 75];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE76">76</td><td class="line">	         //   System.out.println(postMethod.get); </td></tr>
+<tr><td class="num" id="LINE77">77</td><td class="line">	             </td></tr>
+<tr><td class="num" id="LINE78">78</td><td class="line">	            </td></tr>
+<tr><td class="num" id="LINE79">79</td><td class="line">	            String tt = &quot;auth=\&quot;926U70ZZZ30m64qMaJX1IJKCfvJmO4S01aWgzXW7nhmK98cAQx2jK7JlfmNUOGxQscpDsT71h9Y4QVtytPtl7cmQOJ9GoTZ9LlNFxv1-CXTcLicvZaj2COeYEcs_cRCBa8n3ILqfhcXV_wFnly7akKSCFbKzyw4_jVq51wl6sO4tKxwb-rz0eZHuZAhRkguBPkb1t6uxa6kNu5-1mAULLSWFOZ8xFjVqiqhqFXv0JRRJxLW4d9e-0FPj6llT3Hgj.eNqrVkrLLCouic9LzE1VslJQck7MrMxU0lFQyklEEvXJTMxLB4lmpgC5RgYWxoYG5kBuSX52ah5IgaVZYrJBsrFBUmpqikmyRapFcrKJsbmZsUGaUaJpmnmSUi0AirUeeQ\&quot;; tk=96ac0c30beed4c8e8cc437630f2a5f7b; c=2085190804; compstat=compstu; usnQuantCast=D; __gads=ID=24381f81148ef0b6:T=1439363530:S=ALNI_MbygNq4VzFdG9nrMLE_yO1d_V3M8A; __qca=P0-376455809-1439363544561; _vis_opt_s=1&#37;7C; _vis_opt_test_cookie=1; s_cc=true; s_sq=&#37;5B&#37;5BB&#37;5D&#37;5D; __ybotb=9597; __ybotu=id8fvkxmwqln2c3w6g; __ybotv=1439367772921; __ybots=id8iepkpqb11hvo56k.0.id8iepko78go619lul.1; OX_sd=1; __ybotc=http&#37;3A//ads-adswest.yldbt.com/m/; _trp_hit_11882/41456_728x90=5; _trp_hit_11882/41456_300x250=5; __utma=1.69014033.1439363543.1439363543.1439367785.2; __utmb=1.1.10.1439367785; __utmz=1.1439363543.1.1.utmcsr=colleges.usnews.rankingsandreviews.com|utmccn=(referral)|utmcmd=referral|utmcct=/best-colleges; __utmt=1; ki_t=1439363545567&#37;3B1439363545567&#37;3B1439367788518&#37;3B1&#37;3B2; ki_r=; __ybota=; __ybote=; __ybotz=; OX_plg=swf|shk|pm; __utmc=1; usn_colleges_interstitial=2&quot;; <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node63.html"><span class='visited with_tooltip'>I_63<span class='tooltip'>node63 preds:62 succs:64 exn:115 Instructions
+*&amp;tt:java.lang.Object*="auth=\\\"926U70ZZZ30m64qMaJX1IJKCfvJmO4S01aWgzXW7nhmK98cAQx2jK7JlfmNUOGxQscpDsT71h9Y4QVtytPtl7cmQOJ9GoTZ9LlNFxv1-CXTcLicvZaj2COeYEcs_cRCBa8n3ILqfhcXV_wFnly7akKSCFbKzyw4_jVq51wl6sO4tKxwb-rz0eZHuZAhRkguBPkb1t6uxa6kNu5-1mAULLSWFOZ8xFjVqiqhqFXv0JRRJxLW4d9e-0FPj6llT3Hgj.eNqrVkrLLCouic9LzE1VslJQck7MrMxU0lFQyklEEvXJTMxLB4lmpgC5RgYWxoYG5kBuSX52ah5IgaVZYrJBsrFBUmpqikmyRapFcrKJsbmZsUGaUaJpmnmSUi0AirUeeQ\\\"; tk=96ac0c30beed4c8e8cc437630f2a5f7b; c=2085190804; compstat=compstu; usnQuantCast=D; __gads=ID=24381f81148ef0b6:T=1439363530:S=ALNI_MbygNq4VzFdG9nrMLE_yO1d_V3M8A; __qca=P0-376455809-1439363544561; _vis_opt_s=1%7C; _vis_opt_test_cookie=1; s_cc=true; s_sq=%5B%5BB%5D%5D; __ybotb=9597; __ybotu=id8fvkxmwqln2c3w6g; __ybotv=1439367772921; __ybots=id8iepkpqb11hvo56k.0.id8iepko78go619lul.1; OX_sd=1; __ybotc=http%3A//ads-adswest.yldbt.com/m/; _trp_hit_11882/41456_728x90=5; _trp_hit_11882/41456_300x250=5; __utma=1.69014033.1439363543.1439363543.1439367785.2; __utmb=1.1.10.1439367785; __utmz=1.1439363543.1.1.utmcsr=colleges.usnews.rankingsandreviews.com|utmccn=(referral)|utmcmd=referral|utmcct=/best-colleges; __utmt=1; ki_t=1439363545567%3B1439363545567%3B1439367788518%3B1%3B2; ki_r=; __ybota=; __ybote=; __ybotz=; OX_plg=swf|shk|pm; __utmc=1; usn_colleges_interstitial=2" [line 79];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE80">80</td><td class="line">	            // 进行登陆后的操作1581,1602,1603,1610,1609,1608,1607,1606,1605,1620,1619,1617,1616,1622,1626,1642,1648,1647,1657   </td></tr>
+<tr><td class="num" id="LINE81">81</td><td class="line">	            GetMethod getMethod = new GetMethod(dataUrl);   <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node64.html"><span class='visited with_tooltip'>I_64<span class='tooltip'>node64 preds:63 succs:65 exn:115 Instructions
+n$147=_fun___new(sizeof(t=org.apache.commons.httpclient.methods.GetMethod):org.apache.commons.httpclient.methods.GetMethod*) [line 81];
+n$148=*&amp;dataUrl:java.lang.Object* [line 81];
+n$149=_fun_GetMethod.&lt;init&gt;(String)(n$147:org.apache.commons.httpclient.methods.GetMethod*,n$148:java.lang.Object*) [line 81];
+*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod*=n$147 [line 81];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE82">82</td><td class="line">	            // 每次访问需授权的网址时需带上前面的 cookie 作为通行证   </td></tr>
+<tr><td class="num" id="LINE83">83</td><td class="line">	            getMethod.setRequestHeader(&quot;cookie&quot;, tt);   <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node65.html"><span class='visited with_tooltip'>I_65<span class='tooltip'>node65 preds:64 succs:66 exn:115 Instructions
+n$150=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 83];
+_=*n$150:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 83];
+n$152=*&amp;tt:java.lang.Object* [line 83];
+n$153=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$150:org.apache.commons.httpclient.methods.GetMethod*,"cookie":java.lang.Object*,n$152:java.lang.Object*) virtual [line 83];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE84">84</td><td class="line">	            getMethod.setRequestHeader(&quot;Host&quot;, &quot;premium.usnews.com&quot;);   <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node66.html"><span class='visited with_tooltip'>I_66<span class='tooltip'>node66 preds:65 succs:67 exn:115 Instructions
+n$154=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 84];
+_=*n$154:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 84];
+n$156=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$154:org.apache.commons.httpclient.methods.GetMethod*,"Host":java.lang.Object*,"premium.usnews.com":java.lang.Object*) virtual [line 84];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE85">85</td><td class="line">	            getMethod.setRequestHeader(&quot;User-Agent&quot;, &quot;Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0&quot;);     <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node67.html"><span class='visited with_tooltip'>I_67<span class='tooltip'>node67 preds:66 succs:68 exn:115 Instructions
+n$157=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 85];
+_=*n$157:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 85];
+n$159=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$157:org.apache.commons.httpclient.methods.GetMethod*,"User-Agent":java.lang.Object*,"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0":java.lang.Object*) virtual [line 85];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE86">86</td><td class="line">	            getMethod.setRequestHeader(&quot;Accept&quot;, &quot;Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0&quot;);   <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node68.html"><span class='visited with_tooltip'>I_68<span class='tooltip'>node68 preds:67 succs:69 exn:115 Instructions
+n$160=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 86];
+_=*n$160:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 86];
+n$162=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$160:org.apache.commons.httpclient.methods.GetMethod*,"Accept":java.lang.Object*,"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0":java.lang.Object*) virtual [line 86];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE87">87</td><td class="line">	            getMethod.setRequestHeader(&quot;Accept-Language&quot;, &quot;zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3&quot;);   <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node69.html"><span class='visited with_tooltip'>I_69<span class='tooltip'>node69 preds:68 succs:70 exn:115 Instructions
+n$163=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 87];
+_=*n$163:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 87];
+n$165=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$163:org.apache.commons.httpclient.methods.GetMethod*,"Accept-Language":java.lang.Object*,"zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3":java.lang.Object*) virtual [line 87];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE88">88</td><td class="line">	            getMethod.setRequestHeader(&quot;Accept-Encoding&quot;, &quot;gzip, deflate&quot;);    <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node70.html"><span class='visited with_tooltip'>I_70<span class='tooltip'>node70 preds:69 succs:71 exn:115 Instructions
+n$166=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 88];
+_=*n$166:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 88];
+n$168=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$166:org.apache.commons.httpclient.methods.GetMethod*,"Accept-Encoding":java.lang.Object*,"gzip, deflate":java.lang.Object*) virtual [line 88];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE89">89</td><td class="line">	            getMethod.setRequestHeader(&quot;DNT&quot;, &quot;1&quot;);    <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node71.html"><span class='visited with_tooltip'>I_71<span class='tooltip'>node71 preds:70 succs:72 exn:115 Instructions
+n$169=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 89];
+_=*n$169:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 89];
+n$171=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$169:org.apache.commons.httpclient.methods.GetMethod*,"DNT":java.lang.Object*,"1":java.lang.Object*) virtual [line 89];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE90">90</td><td class="line">	            getMethod.setRequestHeader(&quot;Connection&quot;, &quot;keep-alive&quot;);   <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node72.html"><span class='visited with_tooltip'>I_72<span class='tooltip'>node72 preds:71 succs:73 exn:115 Instructions
+n$172=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 90];
+_=*n$172:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 90];
+n$174=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$172:org.apache.commons.httpclient.methods.GetMethod*,"Connection":java.lang.Object*,"keep-alive":java.lang.Object*) virtual [line 90];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE91">91</td><td class="line">		        </td></tr>
+<tr><td class="num" id="LINE92">92</td><td class="line">		        </td></tr>
+<tr><td class="num" id="LINE93">93</td><td class="line">	           </td></tr>
+<tr><td class="num" id="LINE94">94</td><td class="line">	             </td></tr>
+<tr><td class="num" id="LINE95">95</td><td class="line">	            </td></tr>
+<tr><td class="num" id="LINE96">96</td><td class="line">	            httpClient.executeMethod(getMethod);   <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node73.html"><span class='visited with_tooltip'>I_73<span class='tooltip'>node73 preds:72 succs:74 exn:115 Instructions
+n$175=*&amp;httpClient:org.apache.commons.httpclient.HttpClient* [line 96];
+_=*n$175:org.apache.commons.httpclient.HttpClient*(root org.apache.commons.httpclient.HttpClient) [line 96];
+n$177=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 96];
+n$178=_fun_int HttpClient.executeMethod(HttpMethod)(n$175:org.apache.commons.httpclient.HttpClient*,n$177:org.apache.commons.httpclient.methods.GetMethod*) virtual [line 96];
+*&amp;$irvar21:int=n$178 [line 96];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE97">97</td><td class="line">	            getMethod.getParams().setContentCharset(&quot;UTF-8&quot;); <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node74.html"><span class='visited with_tooltip'>I_74<span class='tooltip'>node74 preds:73 succs:75 exn:115 Instructions
+n$179=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 97];
+_=*n$179:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 97];
+n$181=_fun_HttpMethodParams HttpMethodBase.getParams()(n$179:org.apache.commons.httpclient.methods.GetMethod*) virtual [line 97];
+*&amp;$irvar22:org.apache.commons.httpclient.params.HttpMethodParams*=n$181 [line 97];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node75.html"><span class='visited with_tooltip'>I_75<span class='tooltip'>node75 preds:74 succs:76 exn:115 Instructions
+n$182=*&amp;$irvar22:org.apache.commons.httpclient.params.HttpMethodParams* [line 97];
+_=*n$182:org.apache.commons.httpclient.params.HttpMethodParams*(root org.apache.commons.httpclient.params.HttpMethodParams) [line 97];
+n$184=_fun_void HttpMethodParams.setContentCharset(String)(n$182:org.apache.commons.httpclient.params.HttpMethodParams*,"UTF-8":java.lang.Object*) virtual [line 97];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE98">98</td><td class="line">	            System.out.println(getMethod.getResponseCharSet()); <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node76.html"><span class='visited with_tooltip'>I_76<span class='tooltip'>node76 preds:75 succs:77 exn:115 Instructions
+n$185=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 98];
+*&amp;$irvar24:java.io.PrintStream*=n$185 [line 98];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node77.html"><span class='visited with_tooltip'>I_77<span class='tooltip'>node77 preds:76 succs:78 exn:115 Instructions
+n$186=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 98];
+_=*n$186:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 98];
+n$188=_fun_String HttpMethodBase.getResponseCharSet()(n$186:org.apache.commons.httpclient.methods.GetMethod*) virtual [line 98];
+*&amp;$irvar23:java.lang.String*=n$188 [line 98];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node78.html"><span class='visited with_tooltip'>I_78<span class='tooltip'>node78 preds:77 succs:79 exn:115 Instructions
+n$189=*&amp;$irvar24:java.io.PrintStream* [line 98];
+_=*n$189:java.io.PrintStream*(root java.io.PrintStream) [line 98];
+n$191=*&amp;$irvar23:java.lang.String* [line 98];
+n$192=_fun_void PrintStream.println(String)(n$189:java.io.PrintStream*,n$191:java.lang.String*) virtual [line 98];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE99">99</td><td class="line">	            System.out.println(getMethod.getResponseHeader(&quot;Set-Cookie&quot;)); <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node79.html"><span class='visited with_tooltip'>I_79<span class='tooltip'>node79 preds:78 succs:80 exn:115 Instructions
+n$193=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 99];
+*&amp;$irvar26:java.io.PrintStream*=n$193 [line 99];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node80.html"><span class='visited with_tooltip'>I_80<span class='tooltip'>node80 preds:79 succs:81 exn:115 Instructions
+n$194=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 99];
+_=*n$194:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 99];
+n$196=_fun_Header HttpMethodBase.getResponseHeader(String)(n$194:org.apache.commons.httpclient.methods.GetMethod*,"Set-Cookie":java.lang.Object*) virtual [line 99];
+*&amp;$irvar25:org.apache.commons.httpclient.Header*=n$196 [line 99];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node81.html"><span class='visited with_tooltip'>I_81<span class='tooltip'>node81 preds:80 succs:82 exn:115 Instructions
+n$197=*&amp;$irvar26:java.io.PrintStream* [line 99];
+_=*n$197:java.io.PrintStream*(root java.io.PrintStream) [line 99];
+n$199=*&amp;$irvar25:org.apache.commons.httpclient.Header* [line 99];
+n$200=_fun_void PrintStream.println(Object)(n$197:java.io.PrintStream*,n$199:org.apache.commons.httpclient.Header*) virtual [line 99];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE100">100</td><td class="line">	            // 打印出返回数据，检验一下是否成功   </td></tr>
+<tr><td class="num" id="LINE101">101</td><td class="line">	            String text = &quot;Set-Cookie&quot;;  <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node82.html"><span class='visited with_tooltip'>I_82<span class='tooltip'>node82 preds:81 succs:83 exn:115 Instructions
+*&amp;text:java.lang.Object*="Set-Cookie" [line 101];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE102">102</td><td class="line">	           /* </td></tr>
+<tr><td class="num" id="LINE103">103</td><td class="line">	            BufferedReader reader=new BufferedReader(new InputStreamReader(getMethod.getResponseBodyAsStream(),&quot;ISO-8859-1&quot;)); </td></tr>
+<tr><td class="num" id="LINE104">104</td><td class="line">	             </td></tr>
+<tr><td class="num" id="LINE105">105</td><td class="line">	            String tmp=null; </td></tr>
+<tr><td class="num" id="LINE106">106</td><td class="line">	            String htmlRet=&quot;&quot;;  </td></tr>
+<tr><td class="num" id="LINE107">107</td><td class="line">	            while((tmp=reader.readLine())!=null){ </td></tr>
+<tr><td class="num" id="LINE108">108</td><td class="line">	            htmlRet+=tmp+&quot;\r\n&quot;; </td></tr>
+<tr><td class="num" id="LINE109">109</td><td class="line">	            }*/ </td></tr>
+<tr><td class="num" id="LINE110">110</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE111">111</td><td class="line">	            //text = new String(htmlRet.getBytes(&quot;ISO-8859-1&quot;),&quot;utf-8&quot;); </td></tr>
+<tr><td class="num" id="LINE112">112</td><td class="line">	            InputStream inputStream=getMethod.getResponseBodyAsStream(); <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node83.html"><span class='visited with_tooltip'>I_83<span class='tooltip'>node83 preds:82 succs:84 exn:115 Instructions
+n$201=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 112];
+_=*n$201:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 112];
+n$203=_fun_InputStream HttpMethodBase.getResponseBodyAsStream()(n$201:org.apache.commons.httpclient.methods.GetMethod*) virtual [line 112];
+*&amp;inputStream:java.io.InputStream*=n$203 [line 112];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE113">113</td><td class="line">	             </td></tr>
+<tr><td class="num" id="LINE114">114</td><td class="line">	            //使用这个来读 </td></tr>
+<tr><td class="num" id="LINE115">115</td><td class="line">	            GZIPInputStream gzipInputStream=new GZIPInputStream(inputStream); <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node84.html"><span class='visited with_tooltip'>I_84<span class='tooltip'>node84 preds:83 succs:85 exn:115 Instructions
+n$204=_fun___new(sizeof(t=java.util.zip.GZIPInputStream):java.util.zip.GZIPInputStream*) [line 115];
+n$205=*&amp;inputStream:java.io.InputStream* [line 115];
+n$206=_fun_GZIPInputStream.&lt;init&gt;(InputStream)(n$204:java.util.zip.GZIPInputStream*,n$205:java.io.InputStream*) [line 115];
+*&amp;gzipInputStream:java.util.zip.GZIPInputStream*=n$204 [line 115];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE116">116</td><td class="line">	              </td></tr>
+<tr><td class="num" id="LINE117">117</td><td class="line">	              </td></tr>
+<tr><td class="num" id="LINE118">118</td><td class="line">	            InputStreamReader inputStreamReader= </td></tr>
+<tr><td class="num" id="LINE119">119</td><td class="line">	                    new InputStreamReader(gzipInputStream,Charset.forName(&quot;utf-8&quot;)); <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node85.html"><span class='visited with_tooltip'>I_85<span class='tooltip'>node85 preds:84 succs:86 exn:115 Instructions
+n$207=_fun_Charset Charset.forName(String)("utf-8":java.lang.Object*) [line 119];
+*&amp;$irvar27:java.nio.charset.Charset*=n$207 [line 119];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node86.html"><span class='visited with_tooltip'>I_86<span class='tooltip'>node86 preds:85 succs:87 exn:115 Instructions
+n$208=_fun___new(sizeof(t=java.io.InputStreamReader):java.io.InputStreamReader*) [line 119];
+n$209=*&amp;gzipInputStream:java.util.zip.GZIPInputStream* [line 119];
+n$210=*&amp;$irvar27:java.nio.charset.Charset* [line 119];
+n$211=_fun_InputStreamReader.&lt;init&gt;(InputStream,Charset)(n$208:java.io.InputStreamReader*,n$209:java.util.zip.GZIPInputStream*,n$210:java.nio.charset.Charset*) [line 119];
+n$212=_fun___set_file_attribute(n$208:java.io.InputStreamReader*) [line 119];
+*&amp;inputStreamReader:java.io.InputStreamReader*=n$208 [line 119];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE120">120</td><td class="line">	              </td></tr>
+<tr><td class="num" id="LINE121">121</td><td class="line">	            BufferedReader bufferedReader=new BufferedReader(inputStreamReader); <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node87.html"><span class='visited with_tooltip'>I_87<span class='tooltip'>node87 preds:86 succs:88 exn:115 Instructions
+n$213=_fun___new(sizeof(t=java.io.BufferedReader):java.io.BufferedReader*) [line 121];
+n$214=*&amp;inputStreamReader:java.io.InputStreamReader* [line 121];
+n$215=_fun_BufferedReader.&lt;init&gt;(Reader)(n$213:java.io.BufferedReader*,n$214:java.io.InputStreamReader*) [line 121];
+*&amp;bufferedReader:java.io.BufferedReader*=n$213 [line 121];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE122">122</td><td class="line">	            String line=null; <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node88.html"><span class='visited with_tooltip'>I_88<span class='tooltip'>node88 preds:87 succs:89 exn:115 Instructions
+*&amp;line:java.lang.Object*=null [line 122];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE123">123</td><td class="line">	            String sb = &quot;&quot;; <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node89.html"><span class='visited with_tooltip'>I_89<span class='tooltip'>node89 preds:88 succs:90 exn:115 Instructions
+*&amp;sb:java.lang.Object*="" [line 123];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE124">124</td><td class="line">	            while((line=bufferedReader.readLine())!=null){ <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node90.html"><span class='visited with_tooltip'>I_90<span class='tooltip'>node90 preds:98 89 succs:91 exn:115 Instructions
+n$216=*&amp;bufferedReader:java.io.BufferedReader* [line 124];
+_=*n$216:java.io.BufferedReader*(root java.io.BufferedReader) [line 124];
+n$218=_fun_String BufferedReader.readLine()(n$216:java.io.BufferedReader*) virtual [line 124];
+*&amp;$irvar28:java.lang.String*=n$218 [line 124];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node91.html"><span class='visited with_tooltip'>I_91<span class='tooltip'>node91 preds:90 succs:94 exn:115 Instructions
+n$219=*&amp;$irvar28:java.lang.String* [line 124];
+*&amp;line:java.lang.String*=n$219 [line 124];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node94.html"><span class='visited with_tooltip'>J_94<span class='tooltip'>node94 preds:91 succs:92 93 exn: Join
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node92.html"><span class='visited with_tooltip'>C_92<span class='tooltip'>node92 preds:94 succs:95 exn:115 Conditional method_body
+n$220=*&amp;$irvar28:java.lang.String* [line 124];
+PRUNE(!(n$220 == null), true); [line 124];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node93.html"><span class='visited with_tooltip'>C_93<span class='tooltip'>node93 preds:94 succs:99 exn:115 Conditional method_body
+n$220=*&amp;$irvar28:java.lang.String* [line 124];
+PRUNE((n$220 == null), false); [line 124];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE125">125</td><td class="line">	                sb += line; <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node95.html"><span class='visited with_tooltip'>I_95<span class='tooltip'>node95 preds:92 succs:96 exn:115 Instructions
+n$221=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 125];
+n$222=_fun_StringBuilder.&lt;init&gt;()(n$221:java.lang.StringBuilder*) [line 125];
+*&amp;$irvar29:java.lang.StringBuilder*=n$221 [line 125];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node96.html"><span class='visited with_tooltip'>I_96<span class='tooltip'>node96 preds:95 succs:97 exn:115 Instructions
+n$223=*&amp;$irvar29:java.lang.StringBuilder* [line 125];
+_=*n$223:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 125];
+n$225=*&amp;sb:java.lang.Object* [line 125];
+n$226=_fun_StringBuilder StringBuilder.append(String)(n$223:java.lang.StringBuilder*,n$225:java.lang.Object*) virtual [line 125];
+*&amp;$irvar30:java.lang.StringBuilder*=n$226 [line 125];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node97.html"><span class='visited with_tooltip'>I_97<span class='tooltip'>node97 preds:96 succs:98 exn:115 Instructions
+n$227=*&amp;$irvar30:java.lang.StringBuilder* [line 125];
+_=*n$227:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 125];
+n$229=*&amp;line:java.lang.String* [line 125];
+n$230=_fun_StringBuilder StringBuilder.append(String)(n$227:java.lang.StringBuilder*,n$229:java.lang.String*) virtual [line 125];
+*&amp;$irvar31:java.lang.StringBuilder*=n$230 [line 125];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node98.html"><span class='visited with_tooltip'>I_98<span class='tooltip'>node98 preds:97 succs:90 exn:115 Instructions
+n$231=*&amp;$irvar31:java.lang.StringBuilder* [line 125];
+_=*n$231:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 125];
+n$233=_fun_String StringBuilder.toString()(n$231:java.lang.StringBuilder*) virtual [line 125];
+*&amp;sb:java.lang.String*=n$233 [line 125];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE126">126</td><td class="line">	            } </td></tr>
+<tr><td class="num" id="LINE127">127</td><td class="line">	            System.out.println(getMethod.getStatusText()); <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node99.html"><span class='visited with_tooltip'>I_99<span class='tooltip'>node99 preds:93 succs:100 exn:115 Instructions
+n$234=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 127];
+*&amp;$irvar33:java.io.PrintStream*=n$234 [line 127];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node100.html"><span class='visited with_tooltip'>I_100<span class='tooltip'>node100 preds:99 succs:101 exn:115 Instructions
+n$235=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 127];
+_=*n$235:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 127];
+n$237=_fun_String HttpMethodBase.getStatusText()(n$235:org.apache.commons.httpclient.methods.GetMethod*) virtual [line 127];
+*&amp;$irvar32:java.lang.String*=n$237 [line 127];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node101.html"><span class='visited with_tooltip'>I_101<span class='tooltip'>node101 preds:100 succs:102 exn:115 Instructions
+n$238=*&amp;$irvar33:java.io.PrintStream* [line 127];
+_=*n$238:java.io.PrintStream*(root java.io.PrintStream) [line 127];
+n$240=*&amp;$irvar32:java.lang.String* [line 127];
+n$241=_fun_void PrintStream.println(String)(n$238:java.io.PrintStream*,n$240:java.lang.String*) virtual [line 127];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE128">128</td><td class="line">	            System.out.println(getMethod.getStatusCode()); <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node102.html"><span class='visited with_tooltip'>I_102<span class='tooltip'>node102 preds:101 succs:103 exn:115 Instructions
+n$242=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 128];
+*&amp;$irvar35:java.io.PrintStream*=n$242 [line 128];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node103.html"><span class='visited with_tooltip'>I_103<span class='tooltip'>node103 preds:102 succs:104 exn:115 Instructions
+n$243=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 128];
+_=*n$243:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 128];
+n$245=_fun_int HttpMethodBase.getStatusCode()(n$243:org.apache.commons.httpclient.methods.GetMethod*) virtual [line 128];
+*&amp;$irvar34:int=n$245 [line 128];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node104.html"><span class='visited with_tooltip'>I_104<span class='tooltip'>node104 preds:103 succs:105 exn:115 Instructions
+n$246=*&amp;$irvar35:java.io.PrintStream* [line 128];
+_=*n$246:java.io.PrintStream*(root java.io.PrintStream) [line 128];
+n$248=*&amp;$irvar34:int [line 128];
+n$249=_fun_void PrintStream.println(int)(n$246:java.io.PrintStream*,n$248:int) virtual [line 128];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE129">129</td><td class="line">	            System.out.println(sb); <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node105.html"><span class='visited with_tooltip'>I_105<span class='tooltip'>node105 preds:104 succs:106 exn:115 Instructions
+n$250=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 129];
+_=*n$250:java.io.PrintStream*(root java.io.PrintStream) [line 129];
+n$252=*&amp;sb:java.lang.String* [line 129];
+n$253=_fun_void PrintStream.println(String)(n$250:java.io.PrintStream*,n$252:java.lang.String*) virtual [line 129];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE130">130</td><td class="line">	            String xx =getMethod.getResponseBodyAsString(); <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node106.html"><span class='visited with_tooltip'>I_106<span class='tooltip'>node106 preds:105 succs:107 exn:115 Instructions
+n$254=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 130];
+_=*n$254:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 130];
+n$256=_fun_String HttpMethodBase.getResponseBodyAsString()(n$254:org.apache.commons.httpclient.methods.GetMethod*) virtual [line 130];
+*&amp;xx:java.lang.String*=n$256 [line 130];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE131">131</td><td class="line">	            //System.out.println(xx); </td></tr>
+<tr><td class="num" id="LINE132">132</td><td class="line">	            fw2.write(sb); <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node107.html"><span class='visited with_tooltip'>I_107<span class='tooltip'>node107 preds:106 succs:108 exn:115 Instructions
+n$257=*&amp;fw2:java.io.FileWriter* [line 132];
+_=*n$257:java.io.FileWriter*(root java.io.FileWriter) [line 132];
+n$259=*&amp;sb:java.lang.String* [line 132];
+n$260=_fun_void Writer.write(String)(n$257:java.io.FileWriter*,n$259:java.lang.String*) virtual [line 132];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE133">133</td><td class="line">	            fw2.flush(); <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node108.html"><span class='visited with_tooltip'>I_108<span class='tooltip'>node108 preds:107 succs:109 exn:115 Instructions
+n$261=*&amp;fw2:java.io.FileWriter* [line 133];
+_=*n$261:java.io.FileWriter*(root java.io.FileWriter) [line 133];
+n$263=_fun_void OutputStreamWriter.flush()(n$261:java.io.FileWriter*) virtual [line 133];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE134">134</td><td class="line">	            fw2.close(); <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node109.html"><span class='visited with_tooltip'>I_109<span class='tooltip'>node109 preds:108 succs:112 exn:115 Instructions
+n$264=*&amp;fw2:java.io.FileWriter* [line 134];
+n$267=_fun___set_mem_attribute(n$264:java.io.FileWriter*) [line 134];
+_=*n$264:java.io.FileWriter*(root java.io.FileWriter) [line 134];
+n$266=_fun_void OutputStreamWriter.close()(n$264:java.io.FileWriter*) virtual [line 134];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE135">135</td><td class="line">	             </td></tr>
+<tr><td class="num" id="LINE136">136</td><td class="line">	            //System.out.println(text);   </td></tr>
+<tr><td class="num" id="LINE137">137</td><td class="line">	        } catch (Exception e) {   <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node110.html"><span class='visited with_tooltip'>I_110<span class='tooltip'>node110 preds:113 succs:111 exn:3 Instructions
+n$268=*&amp;CatchVar628:java.lang.Object* [line 137];
+*&amp;e:java.lang.Object*=n$268 [line 137];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node113.html"><span class='visited with_tooltip'>C_113<span class='tooltip'>node113 preds:115 succs:110 exn:3 Conditional exception handler
+n$274=_fun___instanceof(n$273:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 137];
+PRUNE(n$274, true); [line 137];
+*&amp;CatchVar628:void=n$273 [line 137];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node114.html"><span class='visited with_tooltip'>C_114<span class='tooltip'>node114 preds:115 succs:3 exn:3 Conditional exception handler
+n$274=_fun___instanceof(n$273:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 137];
+PRUNE(!n$274, false); [line 137];
+*&amp;return:void=EXN n$273 [line 137];
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node115.html"><span class='visited with_tooltip'>I_115<span class='tooltip'>node115 preds: succs:113 114 exn:3 Instructions
+n$272=*&amp;return:void [line 137];
+*&amp;return:void=null [line 137];
+n$273=_fun___unwrap_exception(n$272:void) [line 137];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE138">138</td><td class="line">	            e.printStackTrace();   <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node111.html"><span class='visited with_tooltip'>I_111<span class='tooltip'>node111 preds:110 succs:112 exn:3 Instructions
+n$269=*&amp;e:java.lang.Object* [line 138];
+_=*n$269:java.lang.Object*(root java.lang.Object) [line 138];
+n$271=_fun_void Throwable.printStackTrace()(n$269:java.lang.Object*) virtual [line 138];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE139">139</td><td class="line">	        }   </td></tr>
+<tr><td class="num" id="LINE140">140</td><td class="line">	} <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node112.html"><span class='visited with_tooltip'>I_112<span class='tooltip'>node112 preds:111 109 succs:2 exn:3 Instructions
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:112 3 succs: exn: Exit
+</span></span></a> <a href="./testCapture.java.daa1306e85f290e2a260c8577d57fc8b/nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:114 succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE141">141</td><td class="line">} </td></tr>
+</table>
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+</body>
+</html>

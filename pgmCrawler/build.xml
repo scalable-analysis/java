@@ -4,15 +4,17 @@
 	<property name="jar" location="pgmCrawler.jar" />
 	<property name="build" location="build" />
 	<property name="javalib" location="./lib" />
+        <property name="dist.lib.dir" location="dist/lib" />
+        <property name="dist.dir" location="dist/lib" />
 	<target name="init">
 		<tstamp />
 		<mkdir dir="${build}" />
 	</target>
-	
+
 	<target name="clearBuild">
 		<delete dir="${build}" />
 	</target>
-	
+
 	<target name="compileonly">
 		<javac debug="true" srcdir="${src}" source="1.6" target="1.6"  encoding="utf-8" destdir="${build}" >
 			<classpath>
@@ -20,9 +22,9 @@
 					<include name="**/*.jar"/>
 				</fileset>
 			</classpath>
-		</javac>	
+		</javac>
 	</target>
-	
+
 	<target name="compile" depends="clearBuild,init,compileonly">
 		<copy todir="${build}">
 			<fileset dir="${src}">
@@ -32,9 +34,39 @@
 		</copy>
 		<!-- basedir is class file dir for jar command-->
 		<jar jarfile="${jar}" basedir="${build}" >
-			<manifest> 
-	            <attribute name= "Main-class"   value= ""/> 
-	        </manifest>
-		</jar>	
+			<manifest>
+                            <attribute name="Main-class" value= ""/>
+                        </manifest>
+		</jar>
 	</target>
+
+        <!-- Group all dependencies into a big dependency-all.jar -->
+        <target name="copy-dependencies">
+
+                <mkdir dir="${dist.lib.dir}" />
+
+                <jar jarfile="${dist.lib.dir}/dependencies-all.jar">
+                        <zipgroupfileset dir="${javalib}">
+                                <include name="**/*.jar" />
+                        </zipgroupfileset>
+                </jar>
+
+        </target>
+
+        <!-- jar it, extract above dependency-all.jar and zip it with project files -->
+        <target name="jar" depends="compile, copy-dependencies"
+                        description="package, output to JAR">
+
+                <mkdir dir="${dist.dir}" />
+                <mkdir dir="${dist.lib.dir}" />
+
+                <jar jarfile="${dist.dir}/pgmCrawler-all-dependencies.jar" basedir="${build}">
+                        <manifest>
+                                <attribute name="Main-Class" value="" />
+                        </manifest>
+                        <zipfileset src="${dist.lib.dir}/dependencies-all.jar"
+                                        excludes="META-INF/*.SF" />
+                </jar>
+
+        </target>
 </project>

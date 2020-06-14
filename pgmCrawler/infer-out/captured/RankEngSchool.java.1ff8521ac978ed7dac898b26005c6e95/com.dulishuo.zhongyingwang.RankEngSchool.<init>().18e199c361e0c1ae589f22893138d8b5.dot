@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.zhongyingwang.RankEngSchool.<init>().18e199c361e0c1ae589f22893138d8b5_1" [label="1: Start RankEngSchool.<init>()\nFormals:  this:com.dulishuo.zhongyingwang.RankEngSchool*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.zhongyingwang.RankEngSchool.<init>().18e199c361e0c1ae589f22893138d8b5_1" -> "com.dulishuo.zhongyingwang.RankEngSchool.<init>().18e199c361e0c1ae589f22893138d8b5_4" ;
+"com.dulishuo.zhongyingwang.RankEngSchool.<init>().18e199c361e0c1ae589f22893138d8b5_2" [label="2: Exit RankEngSchool.<init>() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.zhongyingwang.RankEngSchool.<init>().18e199c361e0c1ae589f22893138d8b5_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 12]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.RankEngSchool.<init>().18e199c361e0c1ae589f22893138d8b5_3" -> "com.dulishuo.zhongyingwang.RankEngSchool.<init>().18e199c361e0c1ae589f22893138d8b5_2" ;
+"com.dulishuo.zhongyingwang.RankEngSchool.<init>().18e199c361e0c1ae589f22893138d8b5_4" [label="4:  Call Object.<init>() \n   n$0=*&this:com.dulishuo.zhongyingwang.RankEngSchool* [line 12]\n  n$1=_fun_Object.<init>()(n$0:com.dulishuo.zhongyingwang.RankEngSchool*) [line 12]\n  NULLIFY(&this); [line 12]\n  EXIT_SCOPE(n$0,n$1,this); [line 12]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.RankEngSchool.<init>().18e199c361e0c1ae589f22893138d8b5_4" -> "com.dulishuo.zhongyingwang.RankEngSchool.<init>().18e199c361e0c1ae589f22893138d8b5_5" ;
+	 "com.dulishuo.zhongyingwang.RankEngSchool.<init>().18e199c361e0c1ae589f22893138d8b5_4" -> "com.dulishuo.zhongyingwang.RankEngSchool.<init>().18e199c361e0c1ae589f22893138d8b5_3" [color="red" ];
+"com.dulishuo.zhongyingwang.RankEngSchool.<init>().18e199c361e0c1ae589f22893138d8b5_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 12]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.RankEngSchool.<init>().18e199c361e0c1ae589f22893138d8b5_5" -> "com.dulishuo.zhongyingwang.RankEngSchool.<init>().18e199c361e0c1ae589f22893138d8b5_2" ;
+	 "com.dulishuo.zhongyingwang.RankEngSchool.<init>().18e199c361e0c1ae589f22893138d8b5_5" -> "com.dulishuo.zhongyingwang.RankEngSchool.<init>().18e199c361e0c1ae589f22893138d8b5_3" [color="red" ];
+}

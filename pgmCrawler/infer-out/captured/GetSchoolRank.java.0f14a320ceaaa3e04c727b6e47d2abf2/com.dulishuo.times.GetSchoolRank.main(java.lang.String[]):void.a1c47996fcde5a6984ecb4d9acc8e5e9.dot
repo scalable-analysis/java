@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.times.GetSchoolRank.main(java.lang.String[]):void.a1c47996fcde5a6984ecb4d9acc8e5e9_1" [label="1: Start void GetSchoolRank.main(String[])\nFormals:  args:java.lang.String*[_*_](*)\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.times.GetSchoolRank.main(java.lang.String[]):void.a1c47996fcde5a6984ecb4d9acc8e5e9_1" -> "com.dulishuo.times.GetSchoolRank.main(java.lang.String[]):void.a1c47996fcde5a6984ecb4d9acc8e5e9_4" ;
+"com.dulishuo.times.GetSchoolRank.main(java.lang.String[]):void.a1c47996fcde5a6984ecb4d9acc8e5e9_2" [label="2: Exit void GetSchoolRank.main(String[]) \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.times.GetSchoolRank.main(java.lang.String[]):void.a1c47996fcde5a6984ecb4d9acc8e5e9_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 8]\n " shape="box"]
+	
+
+	 "com.dulishuo.times.GetSchoolRank.main(java.lang.String[]):void.a1c47996fcde5a6984ecb4d9acc8e5e9_3" -> "com.dulishuo.times.GetSchoolRank.main(java.lang.String[]):void.a1c47996fcde5a6984ecb4d9acc8e5e9_2" ;
+"com.dulishuo.times.GetSchoolRank.main(java.lang.String[]):void.a1c47996fcde5a6984ecb4d9acc8e5e9_4" [label="4:  Call void GetSchoolRank.crawler() \n   n$0=_fun_void GetSchoolRank.crawler()() [line 7]\n  EXIT_SCOPE(n$0); [line 7]\n " shape="box"]
+	
+
+	 "com.dulishuo.times.GetSchoolRank.main(java.lang.String[]):void.a1c47996fcde5a6984ecb4d9acc8e5e9_4" -> "com.dulishuo.times.GetSchoolRank.main(java.lang.String[]):void.a1c47996fcde5a6984ecb4d9acc8e5e9_5" ;
+	 "com.dulishuo.times.GetSchoolRank.main(java.lang.String[]):void.a1c47996fcde5a6984ecb4d9acc8e5e9_4" -> "com.dulishuo.times.GetSchoolRank.main(java.lang.String[]):void.a1c47996fcde5a6984ecb4d9acc8e5e9_3" [color="red" ];
+"com.dulishuo.times.GetSchoolRank.main(java.lang.String[]):void.a1c47996fcde5a6984ecb4d9acc8e5e9_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 8]\n " shape="box"]
+	
+
+	 "com.dulishuo.times.GetSchoolRank.main(java.lang.String[]):void.a1c47996fcde5a6984ecb4d9acc8e5e9_5" -> "com.dulishuo.times.GetSchoolRank.main(java.lang.String[]):void.a1c47996fcde5a6984ecb4d9acc8e5e9_2" ;
+	 "com.dulishuo.times.GetSchoolRank.main(java.lang.String[]):void.a1c47996fcde5a6984ecb4d9acc8e5e9_5" -> "com.dulishuo.times.GetSchoolRank.main(java.lang.String[]):void.a1c47996fcde5a6984ecb4d9acc8e5e9_3" [color="red" ];
+}

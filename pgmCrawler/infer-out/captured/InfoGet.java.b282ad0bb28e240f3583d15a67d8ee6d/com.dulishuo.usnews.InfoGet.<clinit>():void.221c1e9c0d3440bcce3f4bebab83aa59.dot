@@ -1,0 +1,44 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_1" [label="1: Start void InfoGet.<clinit>()\nFormals: \nLocals:  $irvar1:void $irvar0:void \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_1" -> "com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_4" ;
+"com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_2" [label="2: Exit void InfoGet.<clinit>() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_3" [label="3:  exceptions sink \n   NULLIFY(&$irvar0); [line 27]\n  NULLIFY(&$irvar1); [line 27]\n  EXIT_SCOPE($irvar0,$irvar1); [line 27]\n  APPLY_ABSTRACTION; [line 27]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_3" -> "com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_2" ;
+"com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_4" [label="4:  Call Logger Logger.getLogger(Class) \n   n$0=_fun_Logger Logger.getLogger(Class)(com.dulishuo.usnews.InfoGet:java.lang.Object*) [line 24]\n  *&$irvar0:org.apache.log4j.Logger*=n$0 [line 24]\n  EXIT_SCOPE(n$0); [line 24]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_4" -> "com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_5" ;
+	 "com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_4" -> "com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_5" [label="5:  method_body \n   n$1=*&$irvar0:org.apache.log4j.Logger* [line 24]\n  *&#GB<>$com.dulishuo.usnews.InfoGet.log:com.dulishuo.usnews.InfoGet(root com.dulishuo.usnews.InfoGet)=n$1 [line 24]\n  NULLIFY(&$irvar0); [line 24]\n  EXIT_SCOPE(n$1,$irvar0); [line 24]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_5" -> "com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_6" ;
+	 "com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_5" -> "com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_6" [label="6:  method_body \n   *&#GB<>$com.dulishuo.usnews.InfoGet.count:com.dulishuo.usnews.InfoGet(root com.dulishuo.usnews.InfoGet)=1 [line 25]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_6" -> "com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_7" ;
+	 "com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_6" -> "com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_7" [label="7:  Call HashMap.<init>() \n   n$2=_fun___new(sizeof(t=java.util.HashMap):java.util.HashMap*) [line 27]\n  n$3=_fun_HashMap.<init>()(n$2:java.util.HashMap*) [line 27]\n  *&$irvar1:java.util.HashMap*=n$2 [line 27]\n  EXIT_SCOPE(n$2,n$3); [line 27]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_7" -> "com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_8" ;
+	 "com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_7" -> "com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_8" [label="8:  method_body \n   n$4=*&$irvar1:java.util.HashMap* [line 27]\n  *&#GB<>$com.dulishuo.usnews.InfoGet.mapR:com.dulishuo.usnews.InfoGet(root com.dulishuo.usnews.InfoGet)=n$4 [line 27]\n  NULLIFY(&$irvar1); [line 27]\n  EXIT_SCOPE(n$4,$irvar1); [line 27]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_8" -> "com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_9" ;
+	 "com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_8" -> "com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_9" [label="9:  method_body \n   APPLY_ABSTRACTION; [line 27]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_9" -> "com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_2" ;
+	 "com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_9" -> "com.dulishuo.usnews.InfoGet.<clinit>():void.221c1e9c0d3440bcce3f4bebab83aa59_3" [color="red" ];
+}

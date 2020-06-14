@@ -1,0 +1,222 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.dulishuo.util.CrawlerUtil.httpsRequest(java.lang.String):java.lang.String.1130e2a825c80d22ec8befab15d1896a_node17</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22.html#LINE209">17</a></h1></center>PROC: <a href="./../com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a.html">String CrawlerUtil.httpsRequest(String)</a> LINE: <a href="./../../CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22.html#LINE209">209</a>
+<br>PREDS:
+<a href="./../nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node16.html"><span class='visited with_tooltip'>N_16<span class='tooltip'>node16 preds:15 succs:17 exn:40 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node18.html"><span class='visited with_tooltip'>N_18<span class='tooltip'>node18 preds:17 succs:19 exn:40 </span></span></a><br>EXN:
+<a href="./../nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node40.html"><span class='visited with_tooltip'>N_40<span class='tooltip'>node40 preds: succs:38 39 exn:3 </span></span></a><br>
+<LISTING class='color_green'>n$24=*&amp;sslContext:javax.net.ssl.SSLContext* [line 209];
+_=*n$24:javax.net.ssl.SSLContext*(root javax.net.ssl.SSLContext) [line 209];
+n$26=*&amp;tm:javax.net.ssl.TrustManager*[_*_](*) [line 209];
+n$27=*&amp;$irvar3:java.security.SecureRandom* [line 209];
+n$28=_fun_void SSLContext.init(KeyManager[],TrustManager[],SecureRandom)(n$24:javax.net.ssl.SSLContext*,null:java.lang.Object*,n$26:javax.net.ssl.TrustManager*[_*_](*),n$27:java.security.SecureRandom*) virtual [line 209];
+</LISTING>
+<hr width="100%">
+<a name="session40" href="./../nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node17.html#session40">node17#session40</a>(<a href="./../../CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22.html#LINE209">209</a>) [compute pre] liveness 17
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session41" href="./../nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node17.html#session41">node17#session41</a>(<a href="./../../CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22.html#LINE209">209</a>) [exec] liveness 17
+<LISTING class='color_black'>PRE STATE:
+{ connection, sslContext, buffer }
+
+INSTR=  n$28=_fun_void SSLContext.init(KeyManager[],TrustManager[],SecureRandom)(n$24:javax.net.ssl.SSLContext*,null:java.lang.Object*,n$26:javax.net.ssl.TrustManager*[_*_](*),n$27:java.security.SecureRandom*) virtual [line 209]; 
+
+STATE:
+{ n$24, n$26, n$27, connection, sslContext, buffer }
+
+INSTR=  n$27=*&amp;$irvar3:java.security.SecureRandom* [line 209]; 
+
+STATE:
+{ n$24, n$26, $irvar3, connection, sslContext, buffer }
+
+INSTR=  n$26=*&amp;tm:javax.net.ssl.TrustManager*[_*_](*) [line 209]; 
+
+STATE:
+{ n$24, $irvar3, tm, connection, sslContext, buffer }
+
+INSTR=  _=*n$24:javax.net.ssl.SSLContext*(root javax.net.ssl.SSLContext) [line 209]; 
+
+STATE UNCHANGED
+
+INSTR=  n$24=*&amp;sslContext:javax.net.ssl.SSLContext* [line 209]; 
+
+STATE:
+{ $irvar3, tm, connection, sslContext, buffer }
+
+</LISTING>
+<hr width="100%">
+<a name="session150" href="./../nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node17.html#session150">node17#session150</a>(<a href="./../../CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22.html#LINE209">209</a>) [compute pre] liveness 17
+<LISTING class='color_black'>JOIN
+
+LEFT:   { connection, sslContext, buffer }
+RIGHT:  { CatchVar160, return, buffer }
+RESULT: { CatchVar160, connection, sslContext, return, buffer }
+
+</LISTING>
+<hr width="100%">
+<a name="session151" href="./../nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node17.html#session151">node17#session151</a>(<a href="./../../CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22.html#LINE209">209</a>) [exec] liveness 17
+<LISTING class='color_black'>PRE STATE:
+{ CatchVar160, connection, sslContext, return, buffer }
+
+INSTR=  n$28=_fun_void SSLContext.init(KeyManager[],TrustManager[],SecureRandom)(n$24:javax.net.ssl.SSLContext*,null:java.lang.Object*,n$26:javax.net.ssl.TrustManager*[_*_](*),n$27:java.security.SecureRandom*) virtual [line 209]; 
+
+STATE:
+{ n$24, n$26, n$27, CatchVar160, connection, sslContext, return, buffer }
+
+INSTR=  n$27=*&amp;$irvar3:java.security.SecureRandom* [line 209]; 
+
+STATE:
+{ n$24, n$26, $irvar3, CatchVar160, connection, sslContext, return, buffer }
+
+INSTR=  n$26=*&amp;tm:javax.net.ssl.TrustManager*[_*_](*) [line 209]; 
+
+STATE:
+{ n$24, $irvar3, tm, CatchVar160, connection, sslContext, return, buffer }
+
+INSTR=  _=*n$24:javax.net.ssl.SSLContext*(root javax.net.ssl.SSLContext) [line 209]; 
+
+STATE UNCHANGED
+
+INSTR=  n$24=*&amp;sslContext:javax.net.ssl.SSLContext* [line 209]; 
+
+STATE:
+{ $irvar3, tm, CatchVar160, connection, sslContext, return, buffer }
+
+</LISTING>
+<hr width="100%">
+<a name="session156" href="./../nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node17.html#session156">node17#session156</a>(<a href="./../../CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22.html#LINE209">209</a>) [compute pre] liveness 17
+<LISTING class='color_black'>JOIN
+
+LEFT:   { CatchVar160, connection, sslContext, return, buffer }
+RIGHT:  { CatchVar160, return, buffer }
+RESULT: { CatchVar160, connection, sslContext, return, buffer }
+
+</LISTING>
+<hr width="100%">
+<a name="session157" href="./../nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node17.html#session157">node17#session157</a>(<a href="./../../CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22.html#LINE209">209</a>) [exec] liveness 17
+<LISTING class='color_black'>Fixpoint reached.
+
+</LISTING>
+<hr width="100%">
+<a name="session238" href="./../nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node17.html#session238">node17#session238</a>(<a href="./../../CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22.html#LINE209">209</a>) [compute pre] liveness 17
+<LISTING class='color_black'>JOIN
+
+LEFT:   { CatchVar160, connection, sslContext, return, buffer }
+RIGHT:  { CatchVar160, return, buffer }
+RESULT: { CatchVar160, connection, sslContext, return, buffer }
+
+</LISTING>
+<hr width="100%">
+<a name="session239" href="./../nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node17.html#session239">node17#session239</a>(<a href="./../../CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22.html#LINE209">209</a>) [exec] liveness 17
+<LISTING class='color_black'>Fixpoint reached.
+
+</LISTING>
+<hr width="100%">
+<a name="session303" href="./../nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node17.html#session303">node17#session303</a>(<a href="./../../CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22.html#LINE209">209</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session304" href="./../nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node17.html#session304">node17#session304</a>(<a href="./../../CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22.html#LINE209">209</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ $irvar3, tm, connection, sslContext, buffer },{ n$22, n$23 })
+
+INSTR=  n$24=*&amp;sslContext:javax.net.ssl.SSLContext* [line 209]; 
+
+STATE:
+({ n$24, $irvar3, tm, connection, sslContext, buffer },{ n$22, n$23 })
+
+INSTR=  _=*n$24:javax.net.ssl.SSLContext*(root javax.net.ssl.SSLContext) [line 209]; 
+
+STATE:
+({ _, n$24, $irvar3, tm, connection, sslContext, buffer },{ n$22, n$23 })
+
+INSTR=  n$26=*&amp;tm:javax.net.ssl.TrustManager*[_*_](*) [line 209]; 
+
+STATE:
+({ _, n$24, n$26, $irvar3, tm, connection, sslContext, buffer },
+{ n$22, n$23 })
+
+INSTR=  n$27=*&amp;$irvar3:java.security.SecureRandom* [line 209]; 
+
+STATE:
+({ _, n$24, n$26, n$27, $irvar3, tm, connection, sslContext, buffer },
+{ n$22, n$23 })
+
+INSTR=  n$28=_fun_void SSLContext.init(KeyManager[],TrustManager[],SecureRandom)(n$24:javax.net.ssl.SSLContext*,null:java.lang.Object*,n$26:javax.net.ssl.TrustManager*[_*_](*),n$27:java.security.SecureRandom*) virtual [line 209]; 
+
+STATE:
+({ connection, sslContext, buffer },
+{ _, n$24, n$26, n$27, n$28, $irvar3, tm })
+
+</LISTING>
+<hr width="100%">
+<a name="session28" href="./../nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node17.html#session28">node17#session28</a>(<a href="./../../CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22.html#LINE209">209</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session29" href="./../nodes/com.dulishuo.util.CrawlerUtil.httpsRequest%28java.lang.String%29%3Ajava.lang.String.1130e2a825c80d22ec8befab15d1896a_node17.html#session29">node17#session29</a>(<a href="./../../CrawlerUtil.java.da654c0bd99175df4d65270bc7b08b22.html#LINE209">209</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$2 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  n$17 -&gt; { [_] -&gt; Footprint({ util.CrawlerUtil.ignoreCertificationTrustManger }) ~&gt; ? },
+  tm -&gt; { [_] -&gt; Footprint({ util.CrawlerUtil.ignoreCertificationTrustManger }) ~&gt; ? },
+  url -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  connection -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  sslContext -&gt; { },
+  cok -&gt; { },
+  buffer -&gt; { } }
+
+
+
+
+
+INSTR=  n$28 := void SSLContext.init(KeyManager[],TrustManager[],SecureRandom)({ sslContext,
+                                                                    null,
+                                                                    tm,
+                                                                    n$22 }) [line 209]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;$irvar3); [line 209]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;tm); [line 209]; 
+
+STATE UNCHANGED
+
+INSTR=  EXIT_SCOPE(n$28,tm); [line 209]; 
+
+STATE:
+{ n$2 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  n$17 -&gt; { [_] -&gt; Footprint({ util.CrawlerUtil.ignoreCertificationTrustManger }) ~&gt; ? },
+  tm -&gt; { [_] -&gt; Footprint({ util.CrawlerUtil.ignoreCertificationTrustManger }) ~&gt; ? },
+  url -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  connection -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  sslContext -&gt; { },
+  cok -&gt; { },
+  buffer -&gt; { } }
+
+</LISTING>

@@ -1,0 +1,421 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>File src/com/dulishuo/usnews/SixFacultyRanking.java </h1></center>
+<table class="code">
+<tr><td class="num" id="LINE1">1</td><td class="line">package com.dulishuo.usnews; </td></tr>
+<tr><td class="num" id="LINE2">2</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE3">3</td><td class="line">import java.util.ArrayList; </td></tr>
+<tr><td class="num" id="LINE4">4</td><td class="line">import java.util.HashMap; </td></tr>
+<tr><td class="num" id="LINE5">5</td><td class="line">import java.util.List; </td></tr>
+<tr><td class="num" id="LINE6">6</td><td class="line">import java.util.Map; </td></tr>
+<tr><td class="num" id="LINE7">7</td><td class="line">import java.util.Set; </td></tr>
+<tr><td class="num" id="LINE8">8</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE9">9</td><td class="line">import net.sf.json.JSONArray; </td></tr>
+<tr><td class="num" id="LINE10">10</td><td class="line">import net.sf.json.JSONObject; </td></tr>
+<tr><td class="num" id="LINE11">11</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE12">12</td><td class="line">import com.dulishuo.util.FileUtil; </td></tr>
+<tr><td class="num" id="LINE13">13</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE14">14</td><td class="line">public class SixFacultyRanking { <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.<init>%28%29.4014d6aa9153f93a8dc7d89cd8cd1f63_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.<init>%28%29.4014d6aa9153f93a8dc7d89cd8cd1f63_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.dulishuo.usnews.SixFacultyRanking* [line 14];
+n$1=_fun_Object.&lt;init&gt;()(n$0:com.dulishuo.usnews.SixFacultyRanking*) [line 14];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.<init>%28%29.4014d6aa9153f93a8dc7d89cd8cd1f63_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.<init>%28%29.4014d6aa9153f93a8dc7d89cd8cd1f63_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.<init>%28%29.4014d6aa9153f93a8dc7d89cd8cd1f63_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/com.dulishuo.usnews.SixFacultyRanking.<init>%28%29.4014d6aa9153f93a8dc7d89cd8cd1f63.html">summary for SixFacultyRanking.&lt;init&gt;()</a></td></tr>
+<tr><td class="num" id="LINE15">15</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE16">16</td><td class="line">	static int count = 1; <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.<clinit>%28%29%3Avoid.8122d0e39cd7ba8e14ddab0b38b3e0cb_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.<clinit>%28%29%3Avoid.8122d0e39cd7ba8e14ddab0b38b3e0cb_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+*&amp;#GB<>$com.dulishuo.usnews.SixFacultyRanking.count:com.dulishuo.usnews.SixFacultyRanking(root com.dulishuo.usnews.SixFacultyRanking)=1 [line 16];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.<clinit>%28%29%3Avoid.8122d0e39cd7ba8e14ddab0b38b3e0cb_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.<clinit>%28%29%3Avoid.8122d0e39cd7ba8e14ddab0b38b3e0cb_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.<clinit>%28%29%3Avoid.8122d0e39cd7ba8e14ddab0b38b3e0cb_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/com.dulishuo.usnews.SixFacultyRanking.<clinit>%28%29%3Avoid.8122d0e39cd7ba8e14ddab0b38b3e0cb.html">summary for void SixFacultyRanking.&lt;clinit&gt;()</a></td></tr>
+<tr><td class="num" id="LINE17">17</td><td class="line">	public static void main(String[] args) { <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72.html">summary for void SixFacultyRanking.main(String[])</a></td></tr>
+<tr><td class="num" id="LINE18">18</td><td class="line">		// TODO Auto-generated method stub </td></tr>
+<tr><td class="num" id="LINE19">19</td><td class="line">		List&lt;JSONObject&gt; src = FileUtil.FileToJsonList(&quot;C:/Users/强胜/Desktop/dataCrawler/usnews/每个学院的每个faculty的东西/96个匹配到的学校.json&quot;,&quot;utf-8&quot;); <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun_List FileUtil.FileToJsonList(String,String)("C:/Users/\\229\\188\\186\\232\\131\\156/Desktop/dataCrawler/usnews/\\230\\175\\143\\228\\184\\170\\229\\173\\166\\233\\153\\162\\231\\154\\132\\230\\175\\143\\228\\184\\170faculty\\231\\154\\132\\228\\184\\156\\232\\165\\191/96\\228\\184\\170\\229\\140\\185\\233\\133\\141\\229\\136\\176\\231\\154\\132\\229\\173\\166\\230\\160\\161.json":java.lang.Object*,"utf-8":java.lang.Object*) [line 19];
+*&amp;src:java.util.List*=n$0 [line 19];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE20">20</td><td class="line">		List&lt;String&gt; result = new ArrayList&lt;String&gt;(); <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$1=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 20];
+n$2=_fun_ArrayList.&lt;init&gt;()(n$1:java.util.ArrayList*) [line 20];
+*&amp;result:java.util.ArrayList*=n$1 [line 20];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE21">21</td><td class="line">		for(JSONObject json : src){ <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$3=*&amp;src:java.util.List* [line 21];
+_=*n$3:java.util.List*(root java.util.List) [line 21];
+n$5=_fun_Iterator List.iterator()(n$3:java.util.List*) interface virtual [line 21];
+*&amp;$bcvar3:java.util.Iterator*=n$5 [line 21];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:47 6 succs:10 exn:3 Instructions
+n$6=*&amp;$bcvar3:java.util.Iterator* [line 21];
+_=*n$6:java.util.Iterator*(root java.util.Iterator) [line 21];
+n$8=_fun_boolean Iterator.hasNext()(n$6:java.util.Iterator*) interface virtual [line 21];
+*&amp;$irvar0:_Bool=n$8 [line 21];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node10.html"><span class='visited with_tooltip'>J_10<span class='tooltip'>node10 preds:7 succs:8 9 exn: Join
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node8.html"><span class='visited with_tooltip'>C_8<span class='tooltip'>node8 preds:10 succs:11 exn:3 Conditional method_body
+n$9=*&amp;$irvar0:_Bool [line 21];
+PRUNE(!(n$9 == 0), true); [line 21];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:8 succs:12 exn:3 Instructions
+n$10=*&amp;$bcvar3:java.util.Iterator* [line 21];
+_=*n$10:java.util.Iterator*(root java.util.Iterator) [line 21];
+n$12=_fun_Object Iterator.next()(n$10:java.util.Iterator*) interface virtual [line 21];
+*&amp;$irvar1:java.lang.Object*=n$12 [line 21];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$13=*&amp;$irvar1:java.lang.Object* [line 21];
+n$14=_fun___cast(n$13:java.lang.Object*,sizeof(t=net.sf.json.JSONObject;sub_t=( sub )(cast)):void) [line 21];
+*&amp;json:net.sf.json.JSONObject*=n$14 [line 21];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node9.html"><span class='visited with_tooltip'>C_9<span class='tooltip'>node9 preds:10 succs:48 exn:3 Conditional method_body
+n$9=*&amp;$irvar0:_Bool [line 21];
+PRUNE((n$9 == 0), false); [line 21];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE22">22</td><td class="line">			System.out.println(&quot;process____&quot;+(count++)); <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:3 Instructions
+n$15=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 22];
+*&amp;$irvar2:java.io.PrintStream*=n$15 [line 22];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:3 Instructions
+n$16=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 22];
+n$17=_fun_StringBuilder.&lt;init&gt;()(n$16:java.lang.StringBuilder*) [line 22];
+*&amp;$irvar3:java.lang.StringBuilder*=n$16 [line 22];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:3 Instructions
+n$18=*&amp;$irvar3:java.lang.StringBuilder* [line 22];
+_=*n$18:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 22];
+n$20=_fun_StringBuilder StringBuilder.append(String)(n$18:java.lang.StringBuilder*,"process____":java.lang.Object*) virtual [line 22];
+*&amp;$irvar4:java.lang.StringBuilder*=n$20 [line 22];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:3 Instructions
+n$21=*&amp;#GB<>$com.dulishuo.usnews.SixFacultyRanking.count:int(root com.dulishuo.usnews.SixFacultyRanking) [line 22];
+*&amp;$irvar6:int=(n$21 + 1) [line 22];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:3 Instructions
+n$22=*&amp;#GB<>$com.dulishuo.usnews.SixFacultyRanking.count:int(root com.dulishuo.usnews.SixFacultyRanking) [line 22];
+*&amp;$irvar5:int=n$22 [line 22];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 exn:3 Instructions
+n$23=*&amp;$irvar6:int [line 22];
+*&amp;#GB<>$com.dulishuo.usnews.SixFacultyRanking.count:com.dulishuo.usnews.SixFacultyRanking(root com.dulishuo.usnews.SixFacultyRanking)=n$23 [line 22];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:20 exn:3 Instructions
+n$24=*&amp;$irvar4:java.lang.StringBuilder* [line 22];
+_=*n$24:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 22];
+n$26=*&amp;$irvar5:int [line 22];
+n$27=_fun_StringBuilder StringBuilder.append(int)(n$24:java.lang.StringBuilder*,n$26:int) virtual [line 22];
+*&amp;$irvar7:java.lang.StringBuilder*=n$27 [line 22];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:3 Instructions
+n$28=*&amp;$irvar7:java.lang.StringBuilder* [line 22];
+_=*n$28:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 22];
+n$30=_fun_String StringBuilder.toString()(n$28:java.lang.StringBuilder*) virtual [line 22];
+*&amp;$irvar8:java.lang.String*=n$30 [line 22];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:22 exn:3 Instructions
+n$31=*&amp;$irvar2:java.io.PrintStream* [line 22];
+_=*n$31:java.io.PrintStream*(root java.io.PrintStream) [line 22];
+n$33=*&amp;$irvar8:java.lang.String* [line 22];
+n$34=_fun_void PrintStream.println(String)(n$31:java.io.PrintStream*,n$33:java.lang.String*) virtual [line 22];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE23">23</td><td class="line">			Set&lt;String&gt; set = json.keySet(); <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:3 Instructions
+n$35=*&amp;json:net.sf.json.JSONObject* [line 23];
+_=*n$35:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 23];
+n$37=_fun_Set JSONObject.keySet()(n$35:net.sf.json.JSONObject*) virtual [line 23];
+*&amp;set:java.util.Set*=n$37 [line 23];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE24">24</td><td class="line">			Map&lt;String,Object&gt; map = new HashMap&lt;String,Object&gt;(); <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:3 Instructions
+n$38=_fun___new(sizeof(t=java.util.HashMap):java.util.HashMap*) [line 24];
+n$39=_fun_HashMap.&lt;init&gt;()(n$38:java.util.HashMap*) [line 24];
+*&amp;map:java.util.HashMap*=n$38 [line 24];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE25">25</td><td class="line">			for(String xx : set){ <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:25 exn:3 Instructions
+n$40=*&amp;set:java.util.Set* [line 25];
+_=*n$40:java.util.Set*(root java.util.Set) [line 25];
+n$42=_fun_Iterator Set.iterator()(n$40:java.util.Set*) interface virtual [line 25];
+*&amp;$bcvar7:java.util.Iterator*=n$42 [line 25];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:44 39 36 24 succs:28 exn:3 Instructions
+n$43=*&amp;$bcvar7:java.util.Iterator* [line 25];
+_=*n$43:java.util.Iterator*(root java.util.Iterator) [line 25];
+n$45=_fun_boolean Iterator.hasNext()(n$43:java.util.Iterator*) interface virtual [line 25];
+*&amp;$irvar9:_Bool=n$45 [line 25];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node28.html"><span class='visited with_tooltip'>J_28<span class='tooltip'>node28 preds:25 succs:26 27 exn: Join
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node26.html"><span class='visited with_tooltip'>C_26<span class='tooltip'>node26 preds:28 succs:29 exn:3 Conditional method_body
+n$46=*&amp;$irvar9:_Bool [line 25];
+PRUNE(!(n$46 == 0), true); [line 25];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:26 succs:30 exn:3 Instructions
+n$47=*&amp;$bcvar7:java.util.Iterator* [line 25];
+_=*n$47:java.util.Iterator*(root java.util.Iterator) [line 25];
+n$49=_fun_Object Iterator.next()(n$47:java.util.Iterator*) interface virtual [line 25];
+*&amp;$irvar10:java.lang.Object*=n$49 [line 25];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:29 succs:31 exn:3 Instructions
+n$50=*&amp;$irvar10:java.lang.Object* [line 25];
+n$51=_fun___cast(n$50:java.lang.Object*,sizeof(t=java.lang.String;sub_t=( sub )(cast)):void) [line 25];
+*&amp;xx:java.lang.String*=n$51 [line 25];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node27.html"><span class='visited with_tooltip'>C_27<span class='tooltip'>node27 preds:28 succs:45 exn:3 Conditional method_body
+n$46=*&amp;$irvar9:_Bool [line 25];
+PRUNE((n$46 == 0), false); [line 25];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE26">26</td><td class="line">				if(xx.equals(&quot;name&quot;)) <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:30 succs:34 exn:3 Instructions
+n$52=*&amp;xx:java.lang.String* [line 26];
+_=*n$52:java.lang.String*(root java.lang.String) [line 26];
+n$54=_fun_boolean String.equals(Object)(n$52:java.lang.String*,"name":java.lang.Object*) virtual [line 26];
+*&amp;$irvar11:_Bool=n$54 [line 26];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node34.html"><span class='visited with_tooltip'>J_34<span class='tooltip'>node34 preds:31 succs:32 33 exn: Join
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node32.html"><span class='visited with_tooltip'>C_32<span class='tooltip'>node32 preds:34 succs:35 exn:3 Conditional method_body
+n$55=*&amp;$irvar11:_Bool [line 26];
+PRUNE(!(n$55 == 0), true); [line 26];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node33.html"><span class='visited with_tooltip'>C_33<span class='tooltip'>node33 preds:34 succs:37 exn:3 Conditional method_body
+n$55=*&amp;$irvar11:_Bool [line 26];
+PRUNE((n$55 == 0), false); [line 26];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE27">27</td><td class="line">					map.put(&quot;name&quot;, json.getString(&quot;name&quot;)); <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node35.html"><span class='visited with_tooltip'>I_35<span class='tooltip'>node35 preds:32 succs:36 exn:3 Instructions
+n$56=*&amp;json:net.sf.json.JSONObject* [line 27];
+_=*n$56:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 27];
+n$58=_fun_String JSONObject.getString(String)(n$56:net.sf.json.JSONObject*,"name":java.lang.Object*) virtual [line 27];
+*&amp;$irvar12:java.lang.String*=n$58 [line 27];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node36.html"><span class='visited with_tooltip'>I_36<span class='tooltip'>node36 preds:35 succs:25 exn:3 Instructions
+n$59=*&amp;map:java.util.HashMap* [line 27];
+_=*n$59:java.util.HashMap*(root java.util.HashMap) [line 27];
+n$61=*&amp;$irvar12:java.lang.String* [line 27];
+n$62=_fun_Object HashMap.put(Object,Object)(n$59:java.util.HashMap*,"name":java.lang.Object*,n$61:java.lang.String*) interface virtual [line 27];
+*&amp;$irvar13:java.lang.Object*=n$62 [line 27];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE28">28</td><td class="line">				else if(!xx.equals(&quot;id&quot;)){ <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node37.html"><span class='visited with_tooltip'>I_37<span class='tooltip'>node37 preds:33 succs:40 exn:3 Instructions
+n$63=*&amp;xx:java.lang.String* [line 28];
+_=*n$63:java.lang.String*(root java.lang.String) [line 28];
+n$65=_fun_boolean String.equals(Object)(n$63:java.lang.String*,"id":java.lang.Object*) virtual [line 28];
+*&amp;$irvar14:_Bool=n$65 [line 28];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node40.html"><span class='visited with_tooltip'>J_40<span class='tooltip'>node40 preds:37 succs:38 39 exn: Join
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node38.html"><span class='visited with_tooltip'>C_38<span class='tooltip'>node38 preds:40 succs:41 exn:3 Conditional method_body
+n$66=*&amp;$irvar14:_Bool [line 28];
+PRUNE(!(n$66 != 0), true); [line 28];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node39.html"><span class='visited with_tooltip'>C_39<span class='tooltip'>node39 preds:40 succs:25 exn:3 Conditional method_body
+n$66=*&amp;$irvar14:_Bool [line 28];
+PRUNE((n$66 != 0), false); [line 28];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE29">29</td><td class="line">					System.out.println(xx); <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node41.html"><span class='visited with_tooltip'>I_41<span class='tooltip'>node41 preds:38 succs:42 exn:3 Instructions
+n$67=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 29];
+_=*n$67:java.io.PrintStream*(root java.io.PrintStream) [line 29];
+n$69=*&amp;xx:java.lang.String* [line 29];
+n$70=_fun_void PrintStream.println(String)(n$67:java.io.PrintStream*,n$69:java.lang.String*) virtual [line 29];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE30">30</td><td class="line">					JSONArray ja = json.getJSONArray(xx); <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node42.html"><span class='visited with_tooltip'>I_42<span class='tooltip'>node42 preds:41 succs:43 exn:3 Instructions
+n$71=*&amp;json:net.sf.json.JSONObject* [line 30];
+_=*n$71:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 30];
+n$73=*&amp;xx:java.lang.String* [line 30];
+n$74=_fun_JSONArray JSONObject.getJSONArray(String)(n$71:net.sf.json.JSONObject*,n$73:java.lang.String*) virtual [line 30];
+*&amp;ja:net.sf.json.JSONArray*=n$74 [line 30];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE31">31</td><td class="line">					JSONObject faja = new JSONObject(); <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node43.html"><span class='visited with_tooltip'>I_43<span class='tooltip'>node43 preds:42 succs:44 exn:3 Instructions
+n$75=_fun___new(sizeof(t=net.sf.json.JSONObject):net.sf.json.JSONObject*) [line 31];
+n$76=_fun_JSONObject.&lt;init&gt;()(n$75:net.sf.json.JSONObject*) [line 31];
+*&amp;faja:net.sf.json.JSONObject*=n$75 [line 31];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE32">32</td><td class="line">					faja = process(ja,xx); <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node44.html"><span class='visited with_tooltip'>I_44<span class='tooltip'>node44 preds:43 succs:25 exn:3 Instructions
+n$77=*&amp;ja:net.sf.json.JSONArray* [line 32];
+n$78=*&amp;xx:java.lang.String* [line 32];
+n$79=_fun_JSONObject SixFacultyRanking.process(JSONArray,String)(n$77:net.sf.json.JSONArray*,n$78:java.lang.String*) [line 32];
+*&amp;$bcvar10:net.sf.json.JSONObject*=n$79 [line 32];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE33">33</td><td class="line">				}					 </td></tr>
+<tr><td class="num" id="LINE34">34</td><td class="line">			} </td></tr>
+<tr><td class="num" id="LINE35">35</td><td class="line">			JSONObject rstj = JSONObject.fromObject(map); <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node45.html"><span class='visited with_tooltip'>I_45<span class='tooltip'>node45 preds:27 succs:46 exn:3 Instructions
+n$80=*&amp;map:java.util.HashMap* [line 35];
+n$81=_fun_JSONObject JSONObject.fromObject(Object)(n$80:java.util.HashMap*) [line 35];
+*&amp;rstj:net.sf.json.JSONObject*=n$81 [line 35];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE36">36</td><td class="line">			result.add(rstj.toString()); <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node46.html"><span class='visited with_tooltip'>I_46<span class='tooltip'>node46 preds:45 succs:47 exn:3 Instructions
+n$82=*&amp;rstj:net.sf.json.JSONObject* [line 36];
+_=*n$82:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 36];
+n$84=_fun_String JSONObject.toString()(n$82:net.sf.json.JSONObject*) virtual [line 36];
+*&amp;$irvar15:java.lang.String*=n$84 [line 36];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node47.html"><span class='visited with_tooltip'>I_47<span class='tooltip'>node47 preds:46 succs:7 exn:3 Instructions
+n$85=*&amp;result:java.util.ArrayList* [line 36];
+_=*n$85:java.util.ArrayList*(root java.util.ArrayList) [line 36];
+n$87=*&amp;$irvar15:java.lang.String* [line 36];
+n$88=_fun_boolean ArrayList.add(Object)(n$85:java.util.ArrayList*,n$87:java.lang.String*) interface virtual [line 36];
+*&amp;$irvar16:_Bool=n$88 [line 36];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE37">37</td><td class="line">		} </td></tr>
+<tr><td class="num" id="LINE38">38</td><td class="line">		 </td></tr>
+<tr><td class="num" id="LINE39">39</td><td class="line">		FileUtil.ListToFile(result, &quot;C:/Users/强胜/Desktop/dataCrawler/usnews/每个学院的每个faculty的东西/96个匹配到的学11.json&quot;); <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node48.html"><span class='visited with_tooltip'>I_48<span class='tooltip'>node48 preds:9 succs:49 exn:3 Instructions
+n$89=*&amp;result:java.util.ArrayList* [line 39];
+n$90=_fun_void FileUtil.ListToFile(List,String)(n$89:java.util.ArrayList*,"C:/Users/\\229\\188\\186\\232\\131\\156/Desktop/dataCrawler/usnews/\\230\\175\\143\\228\\184\\170\\229\\173\\166\\233\\153\\162\\231\\154\\132\\230\\175\\143\\228\\184\\170faculty\\231\\154\\132\\228\\184\\156\\232\\165\\191/96\\228\\184\\170\\229\\140\\185\\233\\133\\141\\229\\136\\176\\231\\154\\132\\229\\173\\16611.json":java.lang.Object*) [line 39];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE40">40</td><td class="line">		System.out.println(&quot;+++____end____+++&quot;); <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node49.html"><span class='visited with_tooltip'>I_49<span class='tooltip'>node49 preds:48 succs:50 exn:3 Instructions
+n$91=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 40];
+_=*n$91:java.io.PrintStream*(root java.io.PrintStream) [line 40];
+n$93=_fun_void PrintStream.println(String)(n$91:java.io.PrintStream*,"+++____end____+++":java.lang.Object*) virtual [line 40];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE41">41</td><td class="line">	} <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node50.html"><span class='visited with_tooltip'>I_50<span class='tooltip'>node50 preds:49 succs:2 exn:3 Instructions
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:50 3 succs: exn: Exit
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.main%28java.lang.String%5B%5D%29%3Avoid.1a4f0699c04265a5c66f303186574a72_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE42">42</td><td class="line">	public static JSONObject process(JSONArray ja, String id){ <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be.html">summary for JSONObject SixFacultyRanking.process(JSONArray,String)</a></td></tr>
+<tr><td class="num" id="LINE43">43</td><td class="line">		JSONObject json = new JSONObject(); <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun___new(sizeof(t=net.sf.json.JSONObject):net.sf.json.JSONObject*) [line 43];
+n$1=_fun_JSONObject.&lt;init&gt;()(n$0:net.sf.json.JSONObject*) [line 43];
+*&amp;json:net.sf.json.JSONObject*=n$0 [line 43];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE44">44</td><td class="line">		Map&lt;String,Object&gt; map = new HashMap&lt;String,Object&gt;(); <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$2=_fun___new(sizeof(t=java.util.HashMap):java.util.HashMap*) [line 44];
+n$3=_fun_HashMap.&lt;init&gt;()(n$2:java.util.HashMap*) [line 44];
+*&amp;map:java.util.HashMap*=n$2 [line 44];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE45">45</td><td class="line">		 </td></tr>
+<tr><td class="num" id="LINE46">46</td><td class="line">		//map.put(&quot;&quot;, value) </td></tr>
+<tr><td class="num" id="LINE47">47</td><td class="line">		for(int i = 0 ; i &lt; ja.size() ; i++){ <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+*&amp;i:int=0 [line 47];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:30 6 succs:10 exn:3 Instructions
+n$4=*&amp;ja:net.sf.json.JSONArray* [line 47];
+_=*n$4:net.sf.json.JSONArray*(root net.sf.json.JSONArray) [line 47];
+n$6=_fun_int JSONArray.size()(n$4:net.sf.json.JSONArray*) virtual [line 47];
+*&amp;$irvar0:int=n$6 [line 47];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node10.html"><span class='visited with_tooltip'>J_10<span class='tooltip'>node10 preds:7 succs:8 9 exn: Join
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node8.html"><span class='visited with_tooltip'>C_8<span class='tooltip'>node8 preds:10 succs:11 exn:3 Conditional method_body
+n$7=*&amp;i:int [line 47];
+n$8=*&amp;$irvar0:int [line 47];
+PRUNE(!(n$7  &gt;=  n$8), true); [line 47];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:16 succs:7 exn:3 Instructions
+n$59=*&amp;i:int [line 47];
+*&amp;i:int=(n$59 + 1) [line 47];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node9.html"><span class='visited with_tooltip'>C_9<span class='tooltip'>node9 preds:10 succs:31 exn:3 Conditional method_body
+n$7=*&amp;i:int [line 47];
+n$8=*&amp;$irvar0:int [line 47];
+PRUNE((n$7  &gt;=  n$8), false); [line 47];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE48">48</td><td class="line">			JSONObject joo = ja.getJSONObject(i); <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:8 succs:12 exn:3 Instructions
+n$9=*&amp;ja:net.sf.json.JSONArray* [line 48];
+_=*n$9:net.sf.json.JSONArray*(root net.sf.json.JSONArray) [line 48];
+n$11=*&amp;i:int [line 48];
+n$12=_fun_JSONObject JSONArray.getJSONObject(int)(n$9:net.sf.json.JSONArray*,n$11:int) virtual [line 48];
+*&amp;joo:net.sf.json.JSONObject*=n$12 [line 48];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE49">49</td><td class="line">			for(String xx : (Set&lt;String&gt;)joo.keySet()){ <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$13=*&amp;joo:net.sf.json.JSONObject* [line 49];
+_=*n$13:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 49];
+n$15=_fun_Set JSONObject.keySet()(n$13:net.sf.json.JSONObject*) virtual [line 49];
+*&amp;$irvar1:java.util.Set*=n$15 [line 49];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:3 Instructions
+n$16=*&amp;$irvar1:java.util.Set* [line 49];
+_=*n$16:java.util.Set*(root java.util.Set) [line 49];
+n$18=_fun_Iterator Set.iterator()(n$16:java.util.Set*) interface virtual [line 49];
+*&amp;$bcvar6:java.util.Iterator*=n$18 [line 49];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:29 13 succs:17 exn:3 Instructions
+n$19=*&amp;$bcvar6:java.util.Iterator* [line 49];
+_=*n$19:java.util.Iterator*(root java.util.Iterator) [line 49];
+n$21=_fun_boolean Iterator.hasNext()(n$19:java.util.Iterator*) interface virtual [line 49];
+*&amp;$irvar2:_Bool=n$21 [line 49];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node17.html"><span class='visited with_tooltip'>J_17<span class='tooltip'>node17 preds:14 succs:15 16 exn: Join
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node15.html"><span class='visited with_tooltip'>C_15<span class='tooltip'>node15 preds:17 succs:18 exn:3 Conditional method_body
+n$22=*&amp;$irvar2:_Bool [line 49];
+PRUNE(!(n$22 == 0), true); [line 49];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:15 succs:19 exn:3 Instructions
+n$23=*&amp;$bcvar6:java.util.Iterator* [line 49];
+_=*n$23:java.util.Iterator*(root java.util.Iterator) [line 49];
+n$25=_fun_Object Iterator.next()(n$23:java.util.Iterator*) interface virtual [line 49];
+*&amp;$irvar3:java.lang.Object*=n$25 [line 49];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:20 exn:3 Instructions
+n$26=*&amp;$irvar3:java.lang.Object* [line 49];
+n$27=_fun___cast(n$26:java.lang.Object*,sizeof(t=java.lang.String;sub_t=( sub )(cast)):void) [line 49];
+*&amp;xx:java.lang.String*=n$27 [line 49];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node16.html"><span class='visited with_tooltip'>C_16<span class='tooltip'>node16 preds:17 succs:30 exn:3 Conditional method_body
+n$22=*&amp;$irvar2:_Bool [line 49];
+PRUNE((n$22 == 0), false); [line 49];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE50">50</td><td class="line">				map.put(xx, joo.getString(xx)); <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:3 Instructions
+n$28=*&amp;joo:net.sf.json.JSONObject* [line 50];
+_=*n$28:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 50];
+n$30=*&amp;xx:java.lang.String* [line 50];
+n$31=_fun_String JSONObject.getString(String)(n$28:net.sf.json.JSONObject*,n$30:java.lang.String*) virtual [line 50];
+*&amp;$irvar4:java.lang.String*=n$31 [line 50];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:22 exn:3 Instructions
+n$32=*&amp;map:java.util.HashMap* [line 50];
+_=*n$32:java.util.HashMap*(root java.util.HashMap) [line 50];
+n$34=*&amp;xx:java.lang.String* [line 50];
+n$35=*&amp;$irvar4:java.lang.String* [line 50];
+n$36=_fun_Object HashMap.put(Object,Object)(n$32:java.util.HashMap*,n$34:java.lang.String*,n$35:java.lang.String*) interface virtual [line 50];
+*&amp;$irvar5:java.lang.Object*=n$36 [line 50];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE51">51</td><td class="line">				System.out.println(xx=&quot;__&quot;+joo.getString(xx)); <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:3 Instructions
+n$37=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 51];
+*&amp;$irvar6:java.io.PrintStream*=n$37 [line 51];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:3 Instructions
+n$38=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 51];
+n$39=_fun_StringBuilder.&lt;init&gt;()(n$38:java.lang.StringBuilder*) [line 51];
+*&amp;$irvar7:java.lang.StringBuilder*=n$38 [line 51];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:25 exn:3 Instructions
+n$40=*&amp;$irvar7:java.lang.StringBuilder* [line 51];
+_=*n$40:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 51];
+n$42=_fun_StringBuilder StringBuilder.append(String)(n$40:java.lang.StringBuilder*,"__":java.lang.Object*) virtual [line 51];
+*&amp;$irvar8:java.lang.StringBuilder*=n$42 [line 51];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:26 exn:3 Instructions
+n$43=*&amp;joo:net.sf.json.JSONObject* [line 51];
+_=*n$43:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 51];
+n$45=*&amp;xx:java.lang.String* [line 51];
+n$46=_fun_String JSONObject.getString(String)(n$43:net.sf.json.JSONObject*,n$45:java.lang.String*) virtual [line 51];
+*&amp;$irvar9:java.lang.String*=n$46 [line 51];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:25 succs:27 exn:3 Instructions
+n$47=*&amp;$irvar8:java.lang.StringBuilder* [line 51];
+_=*n$47:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 51];
+n$49=*&amp;$irvar9:java.lang.String* [line 51];
+n$50=_fun_StringBuilder StringBuilder.append(String)(n$47:java.lang.StringBuilder*,n$49:java.lang.String*) virtual [line 51];
+*&amp;$irvar10:java.lang.StringBuilder*=n$50 [line 51];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:26 succs:28 exn:3 Instructions
+n$51=*&amp;$irvar10:java.lang.StringBuilder* [line 51];
+_=*n$51:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 51];
+n$53=_fun_String StringBuilder.toString()(n$51:java.lang.StringBuilder*) virtual [line 51];
+*&amp;$irvar11:java.lang.String*=n$53 [line 51];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:27 succs:29 exn:3 Instructions
+n$54=*&amp;$irvar11:java.lang.String* [line 51];
+*&amp;xx:java.lang.String*=n$54 [line 51];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:28 succs:14 exn:3 Instructions
+n$55=*&amp;$irvar6:java.io.PrintStream* [line 51];
+_=*n$55:java.io.PrintStream*(root java.io.PrintStream) [line 51];
+n$57=*&amp;$irvar11:java.lang.String* [line 51];
+n$58=_fun_void PrintStream.println(String)(n$55:java.io.PrintStream*,n$57:java.lang.String*) virtual [line 51];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE52">52</td><td class="line">			} </td></tr>
+<tr><td class="num" id="LINE53">53</td><td class="line">		} </td></tr>
+<tr><td class="num" id="LINE54">54</td><td class="line">		return json; <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:9 succs:2 exn:3 Instructions
+n$60=*&amp;json:net.sf.json.JSONObject* [line 54];
+*&amp;return:net.sf.json.JSONObject*=n$60 [line 54];
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:31 3 succs: exn: Exit
+</span></span></a> <a href="./SixFacultyRanking.java.3828159ab7ad894f5f1b5a6dec142c18/nodes/com.dulishuo.usnews.SixFacultyRanking.process%28net.sf.json.JSONArray%2Cjava.lang.String%29%3Anet.sf.json.JS.dee450fa5c15c862d49d9750133ab8be_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE55">55</td><td class="line">	} </td></tr>
+<tr><td class="num" id="LINE56">56</td><td class="line">} </td></tr>
+<tr><td class="num" id="LINE57">57</td><td class="line"> </td></tr>
+</table>
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+</body>
+</html>

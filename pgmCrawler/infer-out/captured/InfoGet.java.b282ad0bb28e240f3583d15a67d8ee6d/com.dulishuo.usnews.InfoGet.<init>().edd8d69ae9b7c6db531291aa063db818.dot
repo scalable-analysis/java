@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.usnews.InfoGet.<init>().edd8d69ae9b7c6db531291aa063db818_1" [label="1: Start InfoGet.<init>()\nFormals:  this:com.dulishuo.usnews.InfoGet*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.usnews.InfoGet.<init>().edd8d69ae9b7c6db531291aa063db818_1" -> "com.dulishuo.usnews.InfoGet.<init>().edd8d69ae9b7c6db531291aa063db818_4" ;
+"com.dulishuo.usnews.InfoGet.<init>().edd8d69ae9b7c6db531291aa063db818_2" [label="2: Exit InfoGet.<init>() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.usnews.InfoGet.<init>().edd8d69ae9b7c6db531291aa063db818_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 23]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.<init>().edd8d69ae9b7c6db531291aa063db818_3" -> "com.dulishuo.usnews.InfoGet.<init>().edd8d69ae9b7c6db531291aa063db818_2" ;
+"com.dulishuo.usnews.InfoGet.<init>().edd8d69ae9b7c6db531291aa063db818_4" [label="4:  Call Object.<init>() \n   n$0=*&this:com.dulishuo.usnews.InfoGet* [line 23]\n  n$1=_fun_Object.<init>()(n$0:com.dulishuo.usnews.InfoGet*) [line 23]\n  NULLIFY(&this); [line 23]\n  EXIT_SCOPE(n$0,n$1,this); [line 23]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.<init>().edd8d69ae9b7c6db531291aa063db818_4" -> "com.dulishuo.usnews.InfoGet.<init>().edd8d69ae9b7c6db531291aa063db818_5" ;
+	 "com.dulishuo.usnews.InfoGet.<init>().edd8d69ae9b7c6db531291aa063db818_4" -> "com.dulishuo.usnews.InfoGet.<init>().edd8d69ae9b7c6db531291aa063db818_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.<init>().edd8d69ae9b7c6db531291aa063db818_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 23]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.<init>().edd8d69ae9b7c6db531291aa063db818_5" -> "com.dulishuo.usnews.InfoGet.<init>().edd8d69ae9b7c6db531291aa063db818_2" ;
+	 "com.dulishuo.usnews.InfoGet.<init>().edd8d69ae9b7c6db531291aa063db818_5" -> "com.dulishuo.usnews.InfoGet.<init>().edd8d69ae9b7c6db531291aa063db818_3" [color="red" ];
+}

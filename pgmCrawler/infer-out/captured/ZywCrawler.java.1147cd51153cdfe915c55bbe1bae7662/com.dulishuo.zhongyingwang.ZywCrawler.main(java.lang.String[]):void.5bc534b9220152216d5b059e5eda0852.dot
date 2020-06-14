@@ -1,0 +1,234 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_1" [label="1: Start void ZywCrawler.main(String[])\nFormals:  args:java.lang.String*[_*_](*)\nLocals:  $irvar15:void $irvar14:void $irvar13:void $irvar12:void $irvar11:void $irvar10:void $irvar9:void $irvar8:void $irvar7:void $irvar6:void $bcvar5:void $irvar5:void $irvar4:void $irvar3:void $irvar2:void $irvar1:void $irvar0:void each_line:java.lang.String* set:java.util.Set* bw:java.io.BufferedWriter* br:java.io.BufferedReader* xx:java.lang.String* json:net.sf.json.JSONObject* response:java.lang.String* \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_1" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_4" ;
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_2" [label="2: Exit void ZywCrawler.main(String[]) \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [label="3:  exceptions sink \n   NULLIFY(&each_line); [line 45]\n  NULLIFY(&$irvar3); [line 45]\n  NULLIFY(&$irvar9); [line 45]\n  NULLIFY(&json); [line 45]\n  NULLIFY(&$irvar4); [line 45]\n  NULLIFY(&$irvar7); [line 45]\n  NULLIFY(&$irvar12); [line 45]\n  NULLIFY(&$bcvar5); [line 45]\n  NULLIFY(&set); [line 45]\n  NULLIFY(&$irvar6); [line 45]\n  NULLIFY(&$irvar0); [line 45]\n  NULLIFY(&$irvar13); [line 45]\n  NULLIFY(&$irvar11); [line 45]\n  NULLIFY(&$irvar10); [line 45]\n  NULLIFY(&$irvar8); [line 45]\n  NULLIFY(&$irvar1); [line 45]\n  NULLIFY(&bw); [line 45]\n  NULLIFY(&$irvar2); [line 45]\n  NULLIFY(&br); [line 45]\n  NULLIFY(&$irvar15); [line 45]\n  NULLIFY(&response); [line 45]\n  NULLIFY(&xx); [line 45]\n  NULLIFY(&$irvar14); [line 45]\n  EXIT_SCOPE(each_line,$irvar3,$irvar9,json,$irvar4,$irvar7,$irvar12,$bcvar5,set,$irvar6,$irvar0,$irvar13,$irvar11,$irvar10,$irvar8,$irvar1,bw,$irvar2,br,$irvar15,response,xx,$irvar14); [line 45]\n  APPLY_ABSTRACTION; [line 45]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_2" ;
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_4" [label="4:  Call FileInputStream.<init>(String) \n   n$0=_fun___new(sizeof(t=java.io.FileInputStream):java.io.FileInputStream*) [line 20]\n  n$1=_fun_FileInputStream.<init>(String)(n$0:java.io.FileInputStream*,\"C:/Users/\\\\229\\\\188\\\\186\\\\232\\\\131\\\\156/Desktop/dataCrawler/\\\\228\\\\184\\\\173\\\\232\\\\139\\\\177\\\\231\\\\189\\\\145/url.txt\":java.lang.Object*) [line 20]\n  *&$irvar0:java.io.FileInputStream*=n$0 [line 20]\n  EXIT_SCOPE(n$0,n$1); [line 20]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_4" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_5" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_4" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_5" [label="5:  Call InputStreamReader.<init>(InputStream) \n   n$2=_fun___new(sizeof(t=java.io.InputStreamReader):java.io.InputStreamReader*) [line 20]\n  n$3=*&$irvar0:java.io.FileInputStream* [line 20]\n  n$4=_fun_InputStreamReader.<init>(InputStream)(n$2:java.io.InputStreamReader*,n$3:java.io.FileInputStream*) [line 20]\n  n$5=_fun___set_file_attribute(n$2:java.io.InputStreamReader*) [line 20]\n  *&$irvar1:java.io.InputStreamReader*=n$2 [line 20]\n  NULLIFY(&$irvar0); [line 20]\n  EXIT_SCOPE(n$2,n$3,n$4,n$5,$irvar0); [line 20]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_5" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_6" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_5" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_6" [label="6:  Call BufferedReader.<init>(Reader) \n   n$6=_fun___new(sizeof(t=java.io.BufferedReader):java.io.BufferedReader*) [line 20]\n  n$7=*&$irvar1:java.io.InputStreamReader* [line 20]\n  n$8=_fun_BufferedReader.<init>(Reader)(n$6:java.io.BufferedReader*,n$7:java.io.InputStreamReader*) [line 20]\n  *&br:java.io.BufferedReader*=n$6 [line 20]\n  NULLIFY(&$irvar1); [line 20]\n  EXIT_SCOPE(n$6,n$7,n$8,$irvar1); [line 20]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_6" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_7" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_6" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_7" [label="7:  Call FileWriter.<init>(String) \n   n$9=_fun___new(sizeof(t=java.io.FileWriter):java.io.FileWriter*) [line 21]\n  n$10=_fun_FileWriter.<init>(String)(n$9:java.io.FileWriter*,\"C:/Users/\\\\229\\\\188\\\\186\\\\232\\\\131\\\\156/Desktop/dataCrawler/\\\\228\\\\184\\\\173\\\\232\\\\139\\\\177\\\\231\\\\189\\\\145/zywSchool.txt\":java.lang.Object*) [line 21]\n  n$11=_fun___set_file_attribute(n$9:java.io.FileWriter*) [line 21]\n  *&$irvar2:java.io.FileWriter*=n$9 [line 21]\n  EXIT_SCOPE(n$9,n$10,n$11); [line 21]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_7" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_8" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_7" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_8" [label="8:  Call BufferedWriter.<init>(Writer) \n   n$12=_fun___new(sizeof(t=java.io.BufferedWriter):java.io.BufferedWriter*) [line 21]\n  n$13=*&$irvar2:java.io.FileWriter* [line 21]\n  n$14=_fun_BufferedWriter.<init>(Writer)(n$12:java.io.BufferedWriter*,n$13:java.io.FileWriter*) [line 21]\n  n$15=_fun___set_file_attribute(n$12:java.io.BufferedWriter*) [line 21]\n  *&bw:java.io.BufferedWriter*=n$12 [line 21]\n  NULLIFY(&$irvar2); [line 21]\n  EXIT_SCOPE(n$12,n$13,n$14,n$15,$irvar2); [line 21]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_8" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_9" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_8" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_9" [label="9:  Call HashSet.<init>() \n   n$16=_fun___new(sizeof(t=java.util.HashSet):java.util.HashSet*) [line 23]\n  n$17=_fun_HashSet.<init>()(n$16:java.util.HashSet*) [line 23]\n  *&set:java.util.HashSet*=n$16 [line 23]\n  EXIT_SCOPE(n$16,n$17); [line 23]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_9" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_10" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_9" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_10" [label="10:  method_body \n   *&each_line:java.lang.Object*=\"\" [line 24]\n  NULLIFY(&each_line); [line 24]\n  EXIT_SCOPE(each_line); [line 24]\n  APPLY_ABSTRACTION; [line 24]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_10" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_11" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_10" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_11" [label="11:  Call String BufferedReader.readLine() \n   n$18=*&br:java.io.BufferedReader* [line 25]\n  _=*n$18:java.io.BufferedReader*(root java.io.BufferedReader) [line 25]\n  n$20=_fun_String BufferedReader.readLine()(n$18:java.io.BufferedReader*) virtual [line 25]\n  *&$irvar3:java.lang.String*=n$20 [line 25]\n  EXIT_SCOPE(_,n$18,n$20); [line 25]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_11" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_12" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_11" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_12" [label="12:  method_body \n   n$21=*&$irvar3:java.lang.String* [line 25]\n  *&each_line:java.lang.String*=n$21 [line 25]\n  EXIT_SCOPE(n$21); [line 25]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_12" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_15" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_12" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_13" [label="13: Prune (true branch, if) \n   n$22=*&$irvar3:java.lang.String* [line 25]\n  PRUNE(!(n$22 == null), true); [line 25]\n  NULLIFY(&$irvar3); [line 25]\n  EXIT_SCOPE(n$22,$irvar3); [line 25]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_13" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_16" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_13" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_14" [label="14: Prune (false branch, if) \n   n$22=*&$irvar3:java.lang.String* [line 25]\n  PRUNE((n$22 == null), false); [line 25]\n  NULLIFY(&each_line); [line 25]\n  NULLIFY(&$irvar3); [line 25]\n  EXIT_SCOPE(n$22,each_line,$irvar3); [line 25]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_14" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_21" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_14" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_15" [label="15: + \n  " ]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_15" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_13" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_15" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_14" ;
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_16" [label="16:  Call boolean String.contains(CharSequence) \n   n$23=*&each_line:java.lang.String* [line 26]\n  _=*n$23:java.lang.String*(root java.lang.String) [line 26]\n  n$25=_fun_boolean String.contains(CharSequence)(n$23:java.lang.String*,\"html\":java.lang.Object*) virtual [line 26]\n  *&$irvar4:_Bool=n$25 [line 26]\n  EXIT_SCOPE(_,n$23,n$25); [line 26]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_16" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_19" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_16" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_17" [label="17: Prune (true branch, if) \n   n$26=*&$irvar4:_Bool [line 26]\n  PRUNE(!(n$26 == 0), true); [line 26]\n  NULLIFY(&$irvar4); [line 26]\n  EXIT_SCOPE(n$26,$irvar4); [line 26]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_17" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_20" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_17" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_18" [label="18: Prune (false branch, if) \n   n$26=*&$irvar4:_Bool [line 26]\n  PRUNE((n$26 == 0), false); [line 26]\n  NULLIFY(&each_line); [line 26]\n  NULLIFY(&$irvar4); [line 26]\n  EXIT_SCOPE(n$26,each_line,$irvar4); [line 26]\n  APPLY_ABSTRACTION; [line 26]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_18" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_11" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_18" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_19" [label="19: + \n  " ]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_19" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_17" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_19" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_18" ;
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_20" [label="20:  Call boolean HashSet.add(Object) \n   n$27=*&set:java.util.HashSet* [line 27]\n  _=*n$27:java.util.HashSet*(root java.util.HashSet) [line 27]\n  n$29=*&each_line:java.lang.String* [line 27]\n  n$30=_fun_boolean HashSet.add(Object)(n$27:java.util.HashSet*,n$29:java.lang.String*) interface virtual [line 27]\n  *&$irvar5:_Bool=n$30 [line 27]\n  NULLIFY(&each_line); [line 27]\n  NULLIFY(&$irvar5); [line 27]\n  EXIT_SCOPE(_,n$27,n$29,n$30,each_line,$irvar5); [line 27]\n  APPLY_ABSTRACTION; [line 27]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_20" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_11" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_20" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_21" [label="21:  Call void BufferedReader.close() \n   n$31=*&br:java.io.BufferedReader* [line 30]\n  _=*n$31:java.io.BufferedReader*(root java.io.BufferedReader) [line 30]\n  n$33=_fun_void BufferedReader.close()(n$31:java.io.BufferedReader*) virtual [line 30]\n  NULLIFY(&br); [line 30]\n  EXIT_SCOPE(_,n$31,n$33,br); [line 30]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_21" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_22" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_21" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_22" [label="22:  Call Iterator HashSet.iterator() \n   n$34=*&set:java.util.HashSet* [line 32]\n  _=*n$34:java.util.HashSet*(root java.util.HashSet) [line 32]\n  n$36=_fun_Iterator HashSet.iterator()(n$34:java.util.HashSet*) interface virtual [line 32]\n  *&$bcvar5:java.util.Iterator*=n$36 [line 32]\n  NULLIFY(&set); [line 32]\n  EXIT_SCOPE(_,n$34,n$36,set); [line 32]\n  APPLY_ABSTRACTION; [line 32]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_22" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_23" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_22" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_23" [label="23:  Call boolean Iterator.hasNext() \n   n$37=*&$bcvar5:java.util.Iterator* [line 32]\n  _=*n$37:java.util.Iterator*(root java.util.Iterator) [line 32]\n  n$39=_fun_boolean Iterator.hasNext()(n$37:java.util.Iterator*) interface virtual [line 32]\n  *&$irvar6:_Bool=n$39 [line 32]\n  EXIT_SCOPE(_,n$37,n$39); [line 32]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_23" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_26" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_23" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_24" [label="24: Prune (true branch, if) \n   n$40=*&$irvar6:_Bool [line 32]\n  PRUNE(!(n$40 == 0), true); [line 32]\n  NULLIFY(&$irvar6); [line 32]\n  EXIT_SCOPE(n$40,$irvar6); [line 32]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_24" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_27" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_24" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_25" [label="25: Prune (false branch, if) \n   n$40=*&$irvar6:_Bool [line 32]\n  PRUNE((n$40 == 0), false); [line 32]\n  NULLIFY(&$bcvar5); [line 32]\n  NULLIFY(&$irvar6); [line 32]\n  EXIT_SCOPE(n$40,$bcvar5,$irvar6); [line 32]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_25" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_45" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_25" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_26" [label="26: + \n  " ]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_26" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_24" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_26" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_25" ;
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_27" [label="27:  Call Object Iterator.next() \n   n$41=*&$bcvar5:java.util.Iterator* [line 32]\n  _=*n$41:java.util.Iterator*(root java.util.Iterator) [line 32]\n  n$43=_fun_Object Iterator.next()(n$41:java.util.Iterator*) interface virtual [line 32]\n  *&$irvar7:java.lang.Object*=n$43 [line 32]\n  EXIT_SCOPE(_,n$41,n$43); [line 32]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_27" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_28" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_27" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_28" [label="28:  method_body \n   n$44=*&$irvar7:java.lang.Object* [line 32]\n  n$45=_fun___cast(n$44:java.lang.Object*,sizeof(t=java.lang.String;sub_t=( sub )(cast)):void) [line 32]\n  *&xx:java.lang.String*=n$45 [line 32]\n  NULLIFY(&$irvar7); [line 32]\n  EXIT_SCOPE(n$44,n$45,$irvar7); [line 32]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_28" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_29" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_28" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_29" [label="29:  method_body \n   n$46=*&#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 33]\n  *&$irvar8:java.io.PrintStream*=n$46 [line 33]\n  EXIT_SCOPE(n$46); [line 33]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_29" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_30" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_29" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_30" [label="30:  Call StringBuilder.<init>() \n   n$47=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 33]\n  n$48=_fun_StringBuilder.<init>()(n$47:java.lang.StringBuilder*) [line 33]\n  *&$irvar9:java.lang.StringBuilder*=n$47 [line 33]\n  EXIT_SCOPE(n$47,n$48); [line 33]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_30" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_31" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_30" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_31" [label="31:  Call StringBuilder StringBuilder.append(String) \n   n$49=*&$irvar9:java.lang.StringBuilder* [line 33]\n  _=*n$49:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 33]\n  n$51=_fun_StringBuilder StringBuilder.append(String)(n$49:java.lang.StringBuilder*,\"grab--------\":java.lang.Object*) virtual [line 33]\n  *&$irvar10:java.lang.StringBuilder*=n$51 [line 33]\n  NULLIFY(&$irvar9); [line 33]\n  EXIT_SCOPE(_,n$49,n$51,$irvar9); [line 33]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_31" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_32" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_31" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_32" [label="32:  method_body \n   n$52=*&#GB<>$com.dulishuo.zhongyingwang.ZywCrawler.count:int(root com.dulishuo.zhongyingwang.ZywCrawler) [line 33]\n  *&$irvar12:int=(n$52 + 1) [line 33]\n  EXIT_SCOPE(n$52); [line 33]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_32" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_33" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_32" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_33" [label="33:  method_body \n   n$53=*&#GB<>$com.dulishuo.zhongyingwang.ZywCrawler.count:int(root com.dulishuo.zhongyingwang.ZywCrawler) [line 33]\n  *&$irvar11:int=n$53 [line 33]\n  EXIT_SCOPE(n$53); [line 33]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_33" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_34" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_33" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_34" [label="34:  method_body \n   n$54=*&$irvar12:int [line 33]\n  *&#GB<>$com.dulishuo.zhongyingwang.ZywCrawler.count:com.dulishuo.zhongyingwang.ZywCrawler(root com.dulishuo.zhongyingwang.ZywCrawler)=n$54 [line 33]\n  NULLIFY(&$irvar12); [line 33]\n  EXIT_SCOPE(n$54,$irvar12); [line 33]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_34" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_35" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_34" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_35" [label="35:  Call StringBuilder StringBuilder.append(int) \n   n$55=*&$irvar10:java.lang.StringBuilder* [line 33]\n  _=*n$55:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 33]\n  n$57=*&$irvar11:int [line 33]\n  n$58=_fun_StringBuilder StringBuilder.append(int)(n$55:java.lang.StringBuilder*,n$57:int) virtual [line 33]\n  *&$irvar13:java.lang.StringBuilder*=n$58 [line 33]\n  NULLIFY(&$irvar11); [line 33]\n  NULLIFY(&$irvar10); [line 33]\n  EXIT_SCOPE(_,n$55,n$57,n$58,$irvar11,$irvar10); [line 33]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_35" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_36" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_35" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_36" [label="36:  Call String StringBuilder.toString() \n   n$59=*&$irvar13:java.lang.StringBuilder* [line 33]\n  _=*n$59:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 33]\n  n$61=_fun_String StringBuilder.toString()(n$59:java.lang.StringBuilder*) virtual [line 33]\n  *&$irvar14:java.lang.String*=n$61 [line 33]\n  NULLIFY(&$irvar13); [line 33]\n  EXIT_SCOPE(_,n$59,n$61,$irvar13); [line 33]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_36" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_37" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_36" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_37" [label="37:  Call void PrintStream.println(String) \n   n$62=*&$irvar8:java.io.PrintStream* [line 33]\n  _=*n$62:java.io.PrintStream*(root java.io.PrintStream) [line 33]\n  n$64=*&$irvar14:java.lang.String* [line 33]\n  n$65=_fun_void PrintStream.println(String)(n$62:java.io.PrintStream*,n$64:java.lang.String*) virtual [line 33]\n  NULLIFY(&$irvar8); [line 33]\n  NULLIFY(&$irvar14); [line 33]\n  EXIT_SCOPE(_,n$62,n$64,n$65,$irvar8,$irvar14); [line 33]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_37" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_38" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_37" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_38" [label="38:  method_body \n   *&response:java.lang.Object*=\"\" [line 34]\n  NULLIFY(&response); [line 34]\n  EXIT_SCOPE(response); [line 34]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_38" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_39" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_38" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_39" [label="39:  Call String ZywCrawler.process(String) \n   n$66=*&xx:java.lang.String* [line 35]\n  n$67=_fun_String ZywCrawler.process(String)(n$66:java.lang.String*) [line 35]\n  *&response:java.lang.String*=n$67 [line 35]\n  NULLIFY(&xx); [line 35]\n  EXIT_SCOPE(n$66,n$67,xx); [line 35]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_39" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_40" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_39" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_40" [label="40:  Call JSONObject ZywCrawler.domParse(String) \n   n$68=*&response:java.lang.String* [line 36]\n  n$69=_fun_JSONObject ZywCrawler.domParse(String)(n$68:java.lang.String*) [line 36]\n  *&json:net.sf.json.JSONObject*=n$69 [line 36]\n  NULLIFY(&response); [line 36]\n  EXIT_SCOPE(n$68,n$69,response); [line 36]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_40" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_41" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_40" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_41" [label="41:  Call String JSONObject.toString() \n   n$70=*&json:net.sf.json.JSONObject* [line 37]\n  _=*n$70:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 37]\n  n$72=_fun_String JSONObject.toString()(n$70:net.sf.json.JSONObject*) virtual [line 37]\n  *&$irvar15:java.lang.String*=n$72 [line 37]\n  NULLIFY(&json); [line 37]\n  EXIT_SCOPE(_,n$70,n$72,json); [line 37]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_41" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_42" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_41" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_42" [label="42:  Call void Writer.write(String) \n   n$73=*&bw:java.io.BufferedWriter* [line 37]\n  _=*n$73:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 37]\n  n$75=*&$irvar15:java.lang.String* [line 37]\n  n$76=_fun_void Writer.write(String)(n$73:java.io.BufferedWriter*,n$75:java.lang.String*) virtual [line 37]\n  NULLIFY(&$irvar15); [line 37]\n  EXIT_SCOPE(_,n$73,n$75,n$76,$irvar15); [line 37]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_42" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_43" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_42" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_43" [label="43:  Call void BufferedWriter.newLine() \n   n$77=*&bw:java.io.BufferedWriter* [line 38]\n  _=*n$77:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 38]\n  n$79=_fun_void BufferedWriter.newLine()(n$77:java.io.BufferedWriter*) virtual [line 38]\n  EXIT_SCOPE(_,n$77,n$79); [line 38]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_43" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_44" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_43" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_44" [label="44:  Call void BufferedWriter.flush() \n   n$80=*&bw:java.io.BufferedWriter* [line 39]\n  _=*n$80:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 39]\n  n$82=_fun_void BufferedWriter.flush()(n$80:java.io.BufferedWriter*) virtual [line 39]\n  EXIT_SCOPE(_,n$80,n$82); [line 39]\n  APPLY_ABSTRACTION; [line 39]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_44" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_23" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_44" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_45" [label="45:  Call void BufferedWriter.close() \n   n$83=*&bw:java.io.BufferedWriter* [line 41]\n  n$86=_fun___set_mem_attribute(n$83:java.io.BufferedWriter*) [line 41]\n  _=*n$83:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 41]\n  n$85=_fun_void BufferedWriter.close()(n$83:java.io.BufferedWriter*) virtual [line 41]\n  NULLIFY(&bw); [line 41]\n  EXIT_SCOPE(_,n$83,n$85,n$86,bw); [line 41]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_45" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_46" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_45" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_46" [label="46:  Call void PrintStream.println(String) \n   n$87=*&#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 42]\n  _=*n$87:java.io.PrintStream*(root java.io.PrintStream) [line 42]\n  n$89=_fun_void PrintStream.println(String)(n$87:java.io.PrintStream*,\"___________end___________\":java.lang.Object*) virtual [line 42]\n  EXIT_SCOPE(_,n$87,n$89); [line 42]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_46" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_47" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_46" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+"com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_47" [label="47:  method_body \n   APPLY_ABSTRACTION; [line 45]\n " shape="box"]
+	
+
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_47" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_2" ;
+	 "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_47" -> "com.dulishuo.zhongyingwang.ZywCrawler.main(java.lang.String[]):void.5bc534b9220152216d5b059e5eda0852_3" [color="red" ];
+}

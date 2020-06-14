@@ -1,0 +1,49 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_1" [label="1: Start void test0731.main(String[])\nFormals:  args:java.lang.String*[_*_](*)\nLocals:  $irvar2:void $irvar1:void $irvar0:void url:java.lang.String* \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_1" -> "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_4" ;
+"com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_2" [label="2: Exit void test0731.main(String[]) \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_3" [label="3:  exceptions sink \n   NULLIFY(&url); [line 15]\n  NULLIFY(&$irvar0); [line 15]\n  NULLIFY(&$irvar1); [line 15]\n  NULLIFY(&$irvar2); [line 15]\n  EXIT_SCOPE(url,$irvar0,$irvar1,$irvar2); [line 15]\n  APPLY_ABSTRACTION; [line 15]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_3" -> "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_2" ;
+"com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_4" [label="4:  method_body \n   *&url:java.lang.Object*=\"http://123.57.250.189:8818/question_process?q=\\\\232\\\\175\\\\183\\\\233\\\\151\\\\174\\\\230\\\\190\\\\179\\\\229\\\\164\\\\167\\\\229\\\\136\\\\169\\\\228\\\\186\\\\154\\\\231\\\\186\\\\189\\\\229\\\\141\\\\161\\\\230\\\\150\\\\175\\\\229\\\\176\\\\148\\\\229\\\\164\\\\167\\\\229\\\\173\\\\166\\\\229\\\\183\\\\165\\\\231\\\\168\\\\139\\\\228\\\\184\\\\147\\\\228\\\\184\\\\154\\\\230\\\\156\\\\137\\\\229\\\\165\\\\150\\\\229\\\\173\\\\166\\\\233\\\\135\\\\145\\\\228\\\\185\\\\136\\\\231\\\\186\\\\189\\\\229\\\\141\\\\161\\\\230\\\\150\\\\175\\\\229\\\\176\\\\148\\\\229\\\\164\\\\167\\\\229\\\\173\\\\166httpwwweduaucomnewcastle\\\\229\\\\183\\\\165\\\\231\\\\168\\\\139\\\\229\\\\173\\\\166\\\\233\\\\153\\\\162\\\\230\\\\175\\\\143\\\\229\\\\185\\\\180\\\\228\\\\184\\\\186\\\\228\\\\187\\\\165\\\\228\\\\184\\\\139\\\\228\\\\184\\\\147\\\\228\\\\184\\\\154\\\\231\\\\154\\\\132\\\\230\\\\156\\\\172\\\\231\\\\167\\\\145\\\\231\\\\148\\\\159\\\\230\\\\143\\\\144\\\\228\\\\190\\\\155\\\\228\\\\184\\\\170\\\\229\\\\165\\\\150\\\\229\\\\173\\\\166\\\\233\\\\135\\\\145\\\\229\\\\144\\\\141\\\\233\\\\162\\\\157\\\\229\\\\183\\\\165\\\\231\\\\168\\\\139\\\\229\\\\187\\\\186\\\\231\\\\173\\\\145\\\\228\\\\184\\\\142\\\\229\\\\187\\\\186\\\\231\\\\173\\\\145\\\\231\\\\174\\\\161\\\\231\\\\144\\\\134br\\\\230\\\\190\\\\179\\\\230\\\\180\\\\178\\\\231\\\\149\\\\153\\\\229\\\\173\\\\166\\\\231\\\\189\\\\145httpwwwsharewithucomcollege\\\\230\\\\172\\\\162\\\\232\\\\191\\\\142\\\\230\\\\130\\\\168\\\\229\\\\146\\\\168\\\\232\\\\175\\\\162\" [line 12]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_4" -> "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_5" ;
+	 "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_4" -> "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_3" [color="red" ];
+"com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_5" [label="5:  method_body \n   n$0=*&#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 13]\n  *&$irvar0:java.io.PrintStream*=n$0 [line 13]\n  EXIT_SCOPE(n$0); [line 13]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_5" -> "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_6" ;
+	 "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_5" -> "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_3" [color="red" ];
+"com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_6" [label="6:  Call String URLEncoder.encode(String,String) \n   n$1=*&url:java.lang.Object* [line 13]\n  n$2=_fun_String URLEncoder.encode(String,String)(n$1:java.lang.Object*,\"utf-8\":java.lang.Object*) [line 13]\n  *&$irvar1:java.lang.String*=n$2 [line 13]\n  NULLIFY(&url); [line 13]\n  EXIT_SCOPE(n$1,n$2,url); [line 13]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_6" -> "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_7" ;
+	 "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_6" -> "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_3" [color="red" ];
+"com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_7" [label="7:  Call String CrawlerUtil.httpRequest(String) \n   n$3=*&$irvar1:java.lang.String* [line 13]\n  n$4=_fun_String CrawlerUtil.httpRequest(String)(n$3:java.lang.String*) [line 13]\n  *&$irvar2:java.lang.String*=n$4 [line 13]\n  NULLIFY(&$irvar1); [line 13]\n  EXIT_SCOPE(n$3,n$4,$irvar1); [line 13]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_7" -> "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_8" ;
+	 "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_7" -> "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_3" [color="red" ];
+"com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_8" [label="8:  Call void PrintStream.println(String) \n   n$5=*&$irvar0:java.io.PrintStream* [line 13]\n  _=*n$5:java.io.PrintStream*(root java.io.PrintStream) [line 13]\n  n$7=*&$irvar2:java.lang.String* [line 13]\n  n$8=_fun_void PrintStream.println(String)(n$5:java.io.PrintStream*,n$7:java.lang.String*) virtual [line 13]\n  NULLIFY(&$irvar0); [line 13]\n  NULLIFY(&$irvar2); [line 13]\n  EXIT_SCOPE(_,n$5,n$7,n$8,$irvar0,$irvar2); [line 13]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_8" -> "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_9" ;
+	 "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_8" -> "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_3" [color="red" ];
+"com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_9" [label="9:  Call void PrintStream.println(String) \n   n$9=*&#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 14]\n  _=*n$9:java.io.PrintStream*(root java.io.PrintStream) [line 14]\n  n$11=_fun_void PrintStream.println(String)(n$9:java.io.PrintStream*,\"___end____\":java.lang.Object*) virtual [line 14]\n  EXIT_SCOPE(_,n$9,n$11); [line 14]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_9" -> "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_10" ;
+	 "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_9" -> "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_3" [color="red" ];
+"com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_10" [label="10:  method_body \n   APPLY_ABSTRACTION; [line 15]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_10" -> "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_2" ;
+	 "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_10" -> "com.dulishuo.test.test0731.main(java.lang.String[]):void.efd8488aa3ea087e192e3c6184b73dd0_3" [color="red" ];
+}

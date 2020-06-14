@@ -1,0 +1,203 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_1" [label="1: Start String Translate0718.process(String)\nFormals:  str:java.lang.String*\nLocals:  CatchVar147:void $irvar2:void $irvar1:void CatchVar95:void CatchVar79:void CatchVar69:void $irvar0:void dst:java.lang.String* method:org.apache.commons.httpclient.methods.PostMethod* client:org.apache.commons.httpclient.HttpClient* url:java.lang.String* response:java.lang.String* jsonTmp:net.sf.json.JSONObject* jsonA:net.sf.json.JSONArray* json:net.sf.json.JSONObject* e:java.io.IOException* e1:org.apache.commons.httpclient.HttpException* \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_1" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_4" ;
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_2" [label="2: Exit String Translate0718.process(String) \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" [label="3:  exceptions sink \n   NULLIFY(&client); [line 79]\n  NULLIFY(&method); [line 79]\n  NULLIFY(&e1); [line 79]\n  NULLIFY(&url); [line 79]\n  NULLIFY(&dst); [line 79]\n  NULLIFY(&CatchVar95); [line 79]\n  NULLIFY(&CatchVar147); [line 79]\n  NULLIFY(&CatchVar79); [line 79]\n  NULLIFY(&CatchVar69); [line 79]\n  NULLIFY(&response); [line 79]\n  NULLIFY(&e); [line 79]\n  EXIT_SCOPE(n$55,client,method,e1,url,dst,CatchVar95,CatchVar147,CatchVar79,CatchVar69,response,e); [line 79]\n  APPLY_ABSTRACTION; [line 79]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_2" ;
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_4" [label="4:  method_body \n   *&response:java.lang.Object*=\"\" [line 44]\n  NULLIFY(&response); [line 44]\n  EXIT_SCOPE(response); [line 44]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_4" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_5" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_4" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_5" [label="5:  method_body \n   *&url:java.lang.Object*=\"http://openapi.baidu.com/public/2.0/bmt/translate\" [line 45]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_5" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_6" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_5" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_6" [label="6:  Call HttpClient.<init>() \n   n$0=_fun___new(sizeof(t=org.apache.commons.httpclient.HttpClient):org.apache.commons.httpclient.HttpClient*) [line 46]\n  n$1=_fun_HttpClient.<init>()(n$0:org.apache.commons.httpclient.HttpClient*) [line 46]\n  *&client:org.apache.commons.httpclient.HttpClient*=n$0 [line 46]\n  EXIT_SCOPE(n$0,n$1); [line 46]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_6" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_7" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_6" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_7" [label="7:  Call PostMethod.<init>(String) \n   n$2=_fun___new(sizeof(t=org.apache.commons.httpclient.methods.PostMethod):org.apache.commons.httpclient.methods.PostMethod*) [line 47]\n  n$3=*&url:java.lang.Object* [line 47]\n  n$4=_fun_PostMethod.<init>(String)(n$2:org.apache.commons.httpclient.methods.PostMethod*,n$3:java.lang.Object*) [line 47]\n  *&method:org.apache.commons.httpclient.methods.PostMethod*=n$2 [line 47]\n  NULLIFY(&url); [line 47]\n  EXIT_SCOPE(n$2,n$3,n$4,url); [line 47]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_7" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_8" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_7" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_8" [label="8:  Call void PostMethod.addParameter(String,String) \n   n$5=*&method:org.apache.commons.httpclient.methods.PostMethod* [line 48]\n  _=*n$5:org.apache.commons.httpclient.methods.PostMethod*(root org.apache.commons.httpclient.methods.PostMethod) [line 48]\n  n$7=_fun_void PostMethod.addParameter(String,String)(n$5:org.apache.commons.httpclient.methods.PostMethod*,\"client_id\":java.lang.Object*,\"6j46EjCjQKVkMMTAQGsFPWa4\":java.lang.Object*) virtual [line 48]\n  EXIT_SCOPE(_,n$5,n$7); [line 48]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_8" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_9" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_8" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_9" [label="9:  Call void PostMethod.addParameter(String,String) \n   n$8=*&method:org.apache.commons.httpclient.methods.PostMethod* [line 49]\n  _=*n$8:org.apache.commons.httpclient.methods.PostMethod*(root org.apache.commons.httpclient.methods.PostMethod) [line 49]\n  n$10=_fun_void PostMethod.addParameter(String,String)(n$8:org.apache.commons.httpclient.methods.PostMethod*,\"from\":java.lang.Object*,\"auto\":java.lang.Object*) virtual [line 49]\n  EXIT_SCOPE(_,n$8,n$10); [line 49]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_9" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_10" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_9" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_10" [label="10:  Call void PostMethod.addParameter(String,String) \n   n$11=*&method:org.apache.commons.httpclient.methods.PostMethod* [line 50]\n  _=*n$11:org.apache.commons.httpclient.methods.PostMethod*(root org.apache.commons.httpclient.methods.PostMethod) [line 50]\n  n$13=_fun_void PostMethod.addParameter(String,String)(n$11:org.apache.commons.httpclient.methods.PostMethod*,\"to\":java.lang.Object*,\"zh\":java.lang.Object*) virtual [line 50]\n  EXIT_SCOPE(_,n$11,n$13); [line 50]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_10" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_11" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_10" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_11" [label="11:  Call void PostMethod.addParameter(String,String) \n   n$14=*&method:org.apache.commons.httpclient.methods.PostMethod* [line 51]\n  _=*n$14:org.apache.commons.httpclient.methods.PostMethod*(root org.apache.commons.httpclient.methods.PostMethod) [line 51]\n  n$16=*&str:java.lang.String* [line 51]\n  n$17=_fun_void PostMethod.addParameter(String,String)(n$14:org.apache.commons.httpclient.methods.PostMethod*,\"q\":java.lang.Object*,n$16:java.lang.String*) virtual [line 51]\n  NULLIFY(&str); [line 51]\n  EXIT_SCOPE(_,n$14,n$16,n$17,str); [line 51]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_11" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_12" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_11" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_12" [label="12:  Call int HttpClient.executeMethod(HttpMethod) \n   n$18=*&client:org.apache.commons.httpclient.HttpClient* [line 54]\n  _=*n$18:org.apache.commons.httpclient.HttpClient*(root org.apache.commons.httpclient.HttpClient) [line 54]\n  n$20=*&method:org.apache.commons.httpclient.methods.PostMethod* [line 54]\n  n$21=_fun_int HttpClient.executeMethod(HttpMethod)(n$18:org.apache.commons.httpclient.HttpClient*,n$20:org.apache.commons.httpclient.methods.PostMethod*) virtual [line 54]\n  *&$irvar0:int=n$21 [line 54]\n  NULLIFY(&client); [line 54]\n  NULLIFY(&$irvar0); [line 54]\n  EXIT_SCOPE(_,n$18,n$20,n$21,client,$irvar0); [line 54]\n  APPLY_ABSTRACTION; [line 54]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_12" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_17" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_12" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_37" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_13" [label="13:  method_body \n   n$22=*&CatchVar69:java.lang.Object* [line 55]\n  *&e1:java.lang.Object*=n$22 [line 55]\n  NULLIFY(&CatchVar69); [line 55]\n  EXIT_SCOPE(n$22,CatchVar69); [line 55]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_13" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_14" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_13" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_14" [label="14:  Call void HttpException.printStackTrace() \n   n$23=*&e1:java.lang.Object* [line 57]\n  _=*n$23:java.lang.Object*(root java.lang.Object) [line 57]\n  n$25=_fun_void HttpException.printStackTrace()(n$23:java.lang.Object*) virtual [line 57]\n  NULLIFY(&e1); [line 57]\n  EXIT_SCOPE(_,n$23,n$25,e1); [line 57]\n  APPLY_ABSTRACTION; [line 57]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_14" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_17" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_14" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_15" [label="15:  method_body \n   n$26=*&CatchVar79:java.lang.Object* [line 58]\n  *&e1:java.lang.Object*=n$26 [line 58]\n  NULLIFY(&CatchVar79); [line 58]\n  EXIT_SCOPE(n$26,CatchVar79); [line 58]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_15" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_16" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_15" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_16" [label="16:  Call void Throwable.printStackTrace() \n   n$27=*&e1:java.lang.Object* [line 60]\n  _=*n$27:java.lang.Object*(root java.lang.Object) [line 60]\n  n$29=_fun_void Throwable.printStackTrace()(n$27:java.lang.Object*) virtual [line 60]\n  NULLIFY(&e1); [line 60]\n  EXIT_SCOPE(_,n$27,n$29,e1); [line 60]\n  APPLY_ABSTRACTION; [line 60]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_16" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_17" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_16" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_17" [label="17:  Call String HttpMethodBase.getResponseBodyAsString() \n   n$30=*&method:org.apache.commons.httpclient.methods.PostMethod* [line 64]\n  _=*n$30:org.apache.commons.httpclient.methods.PostMethod*(root org.apache.commons.httpclient.methods.PostMethod) [line 64]\n  n$32=_fun_String HttpMethodBase.getResponseBodyAsString()(n$30:org.apache.commons.httpclient.methods.PostMethod*) virtual [line 64]\n  *&response:java.lang.String*=n$32 [line 64]\n  NULLIFY(&method); [line 64]\n  EXIT_SCOPE(_,n$30,n$32,method); [line 64]\n  APPLY_ABSTRACTION; [line 64]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_17" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_20" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_17" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_40" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_18" [label="18:  method_body \n   n$33=*&CatchVar95:java.lang.Object* [line 65]\n  *&e:java.lang.Object*=n$33 [line 65]\n  NULLIFY(&CatchVar95); [line 65]\n  EXIT_SCOPE(n$33,CatchVar95); [line 65]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_18" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_19" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_18" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_19" [label="19:  Call void Throwable.printStackTrace() \n   n$34=*&e:java.lang.Object* [line 67]\n  _=*n$34:java.lang.Object*(root java.lang.Object) [line 67]\n  n$36=_fun_void Throwable.printStackTrace()(n$34:java.lang.Object*) virtual [line 67]\n  NULLIFY(&e); [line 67]\n  EXIT_SCOPE(_,n$34,n$36,e); [line 67]\n  APPLY_ABSTRACTION; [line 67]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_19" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_20" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_19" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_20" [label="20:  method_body \n   *&dst:java.lang.Object*=\"\" [line 69]\n  NULLIFY(&dst); [line 69]\n  EXIT_SCOPE(dst); [line 69]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_20" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_21" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_20" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_21" [label="21:  Call JSONObject JSONObject.fromObject(Object) \n   n$37=*&response:java.lang.String* [line 71]\n  n$38=_fun_JSONObject JSONObject.fromObject(Object)(n$37:java.lang.String*) [line 71]\n  *&json:net.sf.json.JSONObject*=n$38 [line 71]\n  NULLIFY(&response); [line 71]\n  EXIT_SCOPE(n$37,n$38,response); [line 71]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_21" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_22" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_21" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_32" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_22" [label="22:  Call Object JSONObject.get(String) \n   n$39=*&json:net.sf.json.JSONObject* [line 72]\n  _=*n$39:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 72]\n  n$41=_fun_Object JSONObject.get(String)(n$39:net.sf.json.JSONObject*,\"trans_result\":java.lang.Object*) virtual [line 72]\n  *&$irvar1:java.lang.Object*=n$41 [line 72]\n  NULLIFY(&json); [line 72]\n  EXIT_SCOPE(_,n$39,n$41,json); [line 72]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_22" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_23" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_22" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_32" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_23" [label="23:  method_body \n   n$42=*&$irvar1:java.lang.Object* [line 72]\n  n$43=_fun___cast(n$42:java.lang.Object*,sizeof(t=net.sf.json.JSONArray;sub_t=( sub )(cast)):void) [line 72]\n  *&jsonA:net.sf.json.JSONArray*=n$43 [line 72]\n  NULLIFY(&$irvar1); [line 72]\n  EXIT_SCOPE(n$42,n$43,$irvar1); [line 72]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_23" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_24" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_23" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_32" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_24" [label="24:  Call Object JSONArray.get(int) \n   n$44=*&jsonA:net.sf.json.JSONArray* [line 73]\n  _=*n$44:net.sf.json.JSONArray*(root net.sf.json.JSONArray) [line 73]\n  n$46=_fun_Object JSONArray.get(int)(n$44:net.sf.json.JSONArray*,0:int) virtual [line 73]\n  *&$irvar2:java.lang.Object*=n$46 [line 73]\n  NULLIFY(&jsonA); [line 73]\n  EXIT_SCOPE(_,n$44,n$46,jsonA); [line 73]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_24" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_25" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_24" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_32" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_25" [label="25:  method_body \n   n$47=*&$irvar2:java.lang.Object* [line 73]\n  n$48=_fun___cast(n$47:java.lang.Object*,sizeof(t=net.sf.json.JSONObject;sub_t=( sub )(cast)):void) [line 73]\n  *&jsonTmp:net.sf.json.JSONObject*=n$48 [line 73]\n  NULLIFY(&$irvar2); [line 73]\n  EXIT_SCOPE(n$47,n$48,$irvar2); [line 73]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_25" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_26" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_25" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_32" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_26" [label="26:  Call String JSONObject.getString(String) \n   n$49=*&jsonTmp:net.sf.json.JSONObject* [line 74]\n  _=*n$49:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 74]\n  n$51=_fun_String JSONObject.getString(String)(n$49:net.sf.json.JSONObject*,\"dst\":java.lang.Object*) virtual [line 74]\n  *&dst:java.lang.String*=n$51 [line 74]\n  NULLIFY(&jsonTmp); [line 74]\n  EXIT_SCOPE(_,n$49,n$51,jsonTmp); [line 74]\n  APPLY_ABSTRACTION; [line 74]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_26" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_29" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_26" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_32" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_27" [label="27:  method_body \n   n$52=*&CatchVar147:java.lang.Object* [line 76]\n  *&e:java.lang.Object*=n$52 [line 76]\n  NULLIFY(&CatchVar147); [line 76]\n  NULLIFY(&e); [line 76]\n  EXIT_SCOPE(n$52,CatchVar147,e); [line 76]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_27" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_28" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_27" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_28" [label="28:  method_body \n   *&dst:java.lang.Object*=\"-1\" [line 77]\n  APPLY_ABSTRACTION; [line 77]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_28" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_29" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_28" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_29" [label="29:  method_body \n   n$53=*&dst:java.lang.Object* [line 79]\n  *&return:java.lang.String*=n$53 [line 79]\n  NULLIFY(&dst); [line 79]\n  EXIT_SCOPE(n$53,dst); [line 79]\n  APPLY_ABSTRACTION; [line 79]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_29" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_2" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_29" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_30" [label="30: Prune (true branch, switch) \n   n$56=_fun___instanceof(n$55:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 76]\n  PRUNE(n$56, true); [line 76]\n  *&CatchVar147:java.lang.String*=n$55 [line 76]\n  EXIT_SCOPE(n$55,n$56); [line 76]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_30" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_27" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_30" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_31" [label="31: Prune (false branch, switch) \n   n$56=_fun___instanceof(n$55:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 76]\n  PRUNE(!n$56, false); [line 76]\n  *&return:java.lang.String*=EXN n$55 [line 76]\n  EXIT_SCOPE(n$55,n$56); [line 76]\n  APPLY_ABSTRACTION; [line 76]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_31" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_31" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_32" [label="32:  exception handler \n   n$54=*&return:java.lang.String* [line 76]\n  *&return:java.lang.String*=null [line 76]\n  n$55=_fun___unwrap_exception(n$54:java.lang.String*) [line 76]\n  NULLIFY(&jsonTmp); [line 76]\n  NULLIFY(&json); [line 76]\n  NULLIFY(&dst); [line 76]\n  NULLIFY(&$irvar1); [line 76]\n  NULLIFY(&$irvar2); [line 76]\n  NULLIFY(&jsonA); [line 76]\n  EXIT_SCOPE(n$54,jsonTmp,json,dst,$irvar1,$irvar2,jsonA); [line 76]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_32" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_30" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_32" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_31" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_32" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_33" [label="33: Prune (true branch, switch) \n   n$57=_fun___instanceof(n$55:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 58]\n  PRUNE(n$57, true); [line 58]\n  *&CatchVar79:java.lang.String*=n$55 [line 58]\n  EXIT_SCOPE(n$55,n$57); [line 58]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_33" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_15" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_33" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_34" [label="34: Prune (false branch, switch) \n   n$57=_fun___instanceof(n$55:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 58]\n  PRUNE(!n$57, false); [line 58]\n  *&return:java.lang.String*=EXN n$55 [line 58]\n  NULLIFY(&method); [line 58]\n  EXIT_SCOPE(n$55,n$57,method); [line 58]\n  APPLY_ABSTRACTION; [line 58]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_34" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_34" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_35" [label="35: Prune (true branch, switch) \n   n$58=_fun___instanceof(n$55:org.apache.commons.httpclient.HttpException*,sizeof(t=org.apache.commons.httpclient.HttpException):void) [line 55]\n  PRUNE(n$58, true); [line 55]\n  *&CatchVar69:java.lang.String*=n$55 [line 55]\n  EXIT_SCOPE(n$55,n$58); [line 55]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_35" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_13" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_35" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_36" [label="36: Prune (false branch, switch) \n   n$58=_fun___instanceof(n$55:org.apache.commons.httpclient.HttpException*,sizeof(t=org.apache.commons.httpclient.HttpException):void) [line 55]\n  PRUNE(!n$58, false); [line 55]\n  EXIT_SCOPE(n$58); [line 55]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_36" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_33" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_36" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_34" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_36" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_37" [label="37:  exception handler \n   n$54=*&return:java.lang.String* [line 55]\n  *&return:java.lang.String*=null [line 55]\n  n$55=_fun___unwrap_exception(n$54:java.lang.String*) [line 55]\n  EXIT_SCOPE(n$54); [line 55]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_37" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_35" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_37" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_36" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_37" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_38" [label="38: Prune (true branch, switch) \n   n$59=_fun___instanceof(n$55:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 65]\n  PRUNE(n$59, true); [line 65]\n  *&CatchVar95:java.lang.String*=n$55 [line 65]\n  EXIT_SCOPE(n$55,n$59); [line 65]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_38" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_18" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_38" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_39" [label="39: Prune (false branch, switch) \n   n$59=_fun___instanceof(n$55:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 65]\n  PRUNE(!n$59, false); [line 65]\n  *&return:java.lang.String*=EXN n$55 [line 65]\n  NULLIFY(&response); [line 65]\n  EXIT_SCOPE(n$55,n$59,response); [line 65]\n  APPLY_ABSTRACTION; [line 65]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_39" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_39" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" [color="red" ];
+"com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_40" [label="40:  exception handler \n   n$54=*&return:java.lang.String* [line 65]\n  *&return:java.lang.String*=null [line 65]\n  n$55=_fun___unwrap_exception(n$54:java.lang.String*) [line 65]\n  EXIT_SCOPE(n$54); [line 65]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_40" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_38" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_40" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_39" ;
+	 "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_40" -> "com.dulishuo.test.Translate0718.process(java.lang.String):java.lang.String.5c2535f13954c34c13dc8c7a144af456_3" [color="red" ];
+}

@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.chasedream.PostCrawler.<init>().1c9e26dec284f9ef9735ef82fbdbb3e5_1" [label="1: Start PostCrawler.<init>()\nFormals:  this:com.dulishuo.chasedream.PostCrawler*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.chasedream.PostCrawler.<init>().1c9e26dec284f9ef9735ef82fbdbb3e5_1" -> "com.dulishuo.chasedream.PostCrawler.<init>().1c9e26dec284f9ef9735ef82fbdbb3e5_4" ;
+"com.dulishuo.chasedream.PostCrawler.<init>().1c9e26dec284f9ef9735ef82fbdbb3e5_2" [label="2: Exit PostCrawler.<init>() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.chasedream.PostCrawler.<init>().1c9e26dec284f9ef9735ef82fbdbb3e5_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 25]\n " shape="box"]
+	
+
+	 "com.dulishuo.chasedream.PostCrawler.<init>().1c9e26dec284f9ef9735ef82fbdbb3e5_3" -> "com.dulishuo.chasedream.PostCrawler.<init>().1c9e26dec284f9ef9735ef82fbdbb3e5_2" ;
+"com.dulishuo.chasedream.PostCrawler.<init>().1c9e26dec284f9ef9735ef82fbdbb3e5_4" [label="4:  Call Object.<init>() \n   n$0=*&this:com.dulishuo.chasedream.PostCrawler* [line 25]\n  n$1=_fun_Object.<init>()(n$0:com.dulishuo.chasedream.PostCrawler*) [line 25]\n  NULLIFY(&this); [line 25]\n  EXIT_SCOPE(n$0,n$1,this); [line 25]\n " shape="box"]
+	
+
+	 "com.dulishuo.chasedream.PostCrawler.<init>().1c9e26dec284f9ef9735ef82fbdbb3e5_4" -> "com.dulishuo.chasedream.PostCrawler.<init>().1c9e26dec284f9ef9735ef82fbdbb3e5_5" ;
+	 "com.dulishuo.chasedream.PostCrawler.<init>().1c9e26dec284f9ef9735ef82fbdbb3e5_4" -> "com.dulishuo.chasedream.PostCrawler.<init>().1c9e26dec284f9ef9735ef82fbdbb3e5_3" [color="red" ];
+"com.dulishuo.chasedream.PostCrawler.<init>().1c9e26dec284f9ef9735ef82fbdbb3e5_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 25]\n " shape="box"]
+	
+
+	 "com.dulishuo.chasedream.PostCrawler.<init>().1c9e26dec284f9ef9735ef82fbdbb3e5_5" -> "com.dulishuo.chasedream.PostCrawler.<init>().1c9e26dec284f9ef9735ef82fbdbb3e5_2" ;
+	 "com.dulishuo.chasedream.PostCrawler.<init>().1c9e26dec284f9ef9735ef82fbdbb3e5_5" -> "com.dulishuo.chasedream.PostCrawler.<init>().1c9e26dec284f9ef9735ef82fbdbb3e5_3" [color="red" ];
+}

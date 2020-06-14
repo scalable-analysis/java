@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.indexedu.TagEarse.<init>().86fc6ff6623229a2c19f66b07971b665_1" [label="1: Start TagEarse.<init>()\nFormals:  this:com.dulishuo.indexedu.TagEarse*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.indexedu.TagEarse.<init>().86fc6ff6623229a2c19f66b07971b665_1" -> "com.dulishuo.indexedu.TagEarse.<init>().86fc6ff6623229a2c19f66b07971b665_4" ;
+"com.dulishuo.indexedu.TagEarse.<init>().86fc6ff6623229a2c19f66b07971b665_2" [label="2: Exit TagEarse.<init>() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.indexedu.TagEarse.<init>().86fc6ff6623229a2c19f66b07971b665_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 13]\n " shape="box"]
+	
+
+	 "com.dulishuo.indexedu.TagEarse.<init>().86fc6ff6623229a2c19f66b07971b665_3" -> "com.dulishuo.indexedu.TagEarse.<init>().86fc6ff6623229a2c19f66b07971b665_2" ;
+"com.dulishuo.indexedu.TagEarse.<init>().86fc6ff6623229a2c19f66b07971b665_4" [label="4:  Call Object.<init>() \n   n$0=*&this:com.dulishuo.indexedu.TagEarse* [line 13]\n  n$1=_fun_Object.<init>()(n$0:com.dulishuo.indexedu.TagEarse*) [line 13]\n  NULLIFY(&this); [line 13]\n  EXIT_SCOPE(n$0,n$1,this); [line 13]\n " shape="box"]
+	
+
+	 "com.dulishuo.indexedu.TagEarse.<init>().86fc6ff6623229a2c19f66b07971b665_4" -> "com.dulishuo.indexedu.TagEarse.<init>().86fc6ff6623229a2c19f66b07971b665_5" ;
+	 "com.dulishuo.indexedu.TagEarse.<init>().86fc6ff6623229a2c19f66b07971b665_4" -> "com.dulishuo.indexedu.TagEarse.<init>().86fc6ff6623229a2c19f66b07971b665_3" [color="red" ];
+"com.dulishuo.indexedu.TagEarse.<init>().86fc6ff6623229a2c19f66b07971b665_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 13]\n " shape="box"]
+	
+
+	 "com.dulishuo.indexedu.TagEarse.<init>().86fc6ff6623229a2c19f66b07971b665_5" -> "com.dulishuo.indexedu.TagEarse.<init>().86fc6ff6623229a2c19f66b07971b665_2" ;
+	 "com.dulishuo.indexedu.TagEarse.<init>().86fc6ff6623229a2c19f66b07971b665_5" -> "com.dulishuo.indexedu.TagEarse.<init>().86fc6ff6623229a2c19f66b07971b665_3" [color="red" ];
+}

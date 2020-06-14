@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.usnews.RequireGet.<init>().d4d25db0ef2ec6c6469efd109340dbd6_1" [label="1: Start RequireGet.<init>()\nFormals:  this:com.dulishuo.usnews.RequireGet*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.usnews.RequireGet.<init>().d4d25db0ef2ec6c6469efd109340dbd6_1" -> "com.dulishuo.usnews.RequireGet.<init>().d4d25db0ef2ec6c6469efd109340dbd6_4" ;
+"com.dulishuo.usnews.RequireGet.<init>().d4d25db0ef2ec6c6469efd109340dbd6_2" [label="2: Exit RequireGet.<init>() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.usnews.RequireGet.<init>().d4d25db0ef2ec6c6469efd109340dbd6_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 17]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.RequireGet.<init>().d4d25db0ef2ec6c6469efd109340dbd6_3" -> "com.dulishuo.usnews.RequireGet.<init>().d4d25db0ef2ec6c6469efd109340dbd6_2" ;
+"com.dulishuo.usnews.RequireGet.<init>().d4d25db0ef2ec6c6469efd109340dbd6_4" [label="4:  Call Object.<init>() \n   n$0=*&this:com.dulishuo.usnews.RequireGet* [line 17]\n  n$1=_fun_Object.<init>()(n$0:com.dulishuo.usnews.RequireGet*) [line 17]\n  NULLIFY(&this); [line 17]\n  EXIT_SCOPE(n$0,n$1,this); [line 17]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.RequireGet.<init>().d4d25db0ef2ec6c6469efd109340dbd6_4" -> "com.dulishuo.usnews.RequireGet.<init>().d4d25db0ef2ec6c6469efd109340dbd6_5" ;
+	 "com.dulishuo.usnews.RequireGet.<init>().d4d25db0ef2ec6c6469efd109340dbd6_4" -> "com.dulishuo.usnews.RequireGet.<init>().d4d25db0ef2ec6c6469efd109340dbd6_3" [color="red" ];
+"com.dulishuo.usnews.RequireGet.<init>().d4d25db0ef2ec6c6469efd109340dbd6_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 17]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.RequireGet.<init>().d4d25db0ef2ec6c6469efd109340dbd6_5" -> "com.dulishuo.usnews.RequireGet.<init>().d4d25db0ef2ec6c6469efd109340dbd6_2" ;
+	 "com.dulishuo.usnews.RequireGet.<init>().d4d25db0ef2ec6c6469efd109340dbd6_5" -> "com.dulishuo.usnews.RequireGet.<init>().d4d25db0ef2ec6c6469efd109340dbd6_3" [color="red" ];
+}

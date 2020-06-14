@@ -1,0 +1,44 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_1" [label="1: Start void Chi.main(String[])\nFormals:  args:java.lang.String*[_*_](*)\nLocals:  end:long start:long \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_1" -> "com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_4" ;
+"com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_2" [label="2: Exit void Chi.main(String[]) \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 30]\n " shape="box"]
+	
+
+	 "com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_3" -> "com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_2" ;
+"com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_4" [label="4:  Call void PrintStream.println(String) \n   n$0=*&#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 22]\n  _=*n$0:java.io.PrintStream*(root java.io.PrintStream) [line 22]\n  n$2=_fun_void PrintStream.println(String)(n$0:java.io.PrintStream*,\"start . . . \":java.lang.Object*) virtual [line 22]\n  EXIT_SCOPE(_,n$0,n$2); [line 22]\n " shape="box"]
+	
+
+	 "com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_4" -> "com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_5" ;
+	 "com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_4" -> "com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_3" [color="red" ];
+"com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_5" [label="5:  Call long System.currentTimeMillis() \n   n$3=_fun_long System.currentTimeMillis()() [line 23]\n  *&start:long=n$3 [line 23]\n  NULLIFY(&start); [line 23]\n  EXIT_SCOPE(n$3,start); [line 23]\n " shape="box"]
+	
+
+	 "com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_5" -> "com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_6" ;
+	 "com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_5" -> "com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_3" [color="red" ];
+"com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_6" [label="6:  Call void Chi.test() \n   n$4=_fun_void Chi.test()() [line 26]\n  EXIT_SCOPE(n$4); [line 26]\n " shape="box"]
+	
+
+	 "com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_6" -> "com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_7" ;
+	 "com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_6" -> "com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_3" [color="red" ];
+"com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_7" [label="7:  Call long System.currentTimeMillis() \n   n$5=_fun_long System.currentTimeMillis()() [line 28]\n  *&end:long=n$5 [line 28]\n  NULLIFY(&end); [line 28]\n  EXIT_SCOPE(n$5,end); [line 28]\n " shape="box"]
+	
+
+	 "com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_7" -> "com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_8" ;
+	 "com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_7" -> "com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_3" [color="red" ];
+"com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_8" [label="8:  Call void PrintStream.println(String) \n   n$6=*&#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 29]\n  _=*n$6:java.io.PrintStream*(root java.io.PrintStream) [line 29]\n  n$8=_fun_void PrintStream.println(String)(n$6:java.io.PrintStream*,\"end . . . \":java.lang.Object*) virtual [line 29]\n  EXIT_SCOPE(_,n$6,n$8); [line 29]\n " shape="box"]
+	
+
+	 "com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_8" -> "com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_9" ;
+	 "com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_8" -> "com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_3" [color="red" ];
+"com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_9" [label="9:  method_body \n   APPLY_ABSTRACTION; [line 30]\n " shape="box"]
+	
+
+	 "com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_9" -> "com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_2" ;
+	 "com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_9" -> "com.dulishuo.school.Chi.main(java.lang.String[]):void.07cea072276a97db9bfa9a9ac5d21a9f_3" [color="red" ];
+}

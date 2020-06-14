@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.times.GetSchoolRank.<init>().8f489fe6126b6f52de6511d77eff099a_1" [label="1: Start GetSchoolRank.<init>()\nFormals:  this:com.dulishuo.times.GetSchoolRank*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.times.GetSchoolRank.<init>().8f489fe6126b6f52de6511d77eff099a_1" -> "com.dulishuo.times.GetSchoolRank.<init>().8f489fe6126b6f52de6511d77eff099a_4" ;
+"com.dulishuo.times.GetSchoolRank.<init>().8f489fe6126b6f52de6511d77eff099a_2" [label="2: Exit GetSchoolRank.<init>() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.times.GetSchoolRank.<init>().8f489fe6126b6f52de6511d77eff099a_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 3]\n " shape="box"]
+	
+
+	 "com.dulishuo.times.GetSchoolRank.<init>().8f489fe6126b6f52de6511d77eff099a_3" -> "com.dulishuo.times.GetSchoolRank.<init>().8f489fe6126b6f52de6511d77eff099a_2" ;
+"com.dulishuo.times.GetSchoolRank.<init>().8f489fe6126b6f52de6511d77eff099a_4" [label="4:  Call Object.<init>() \n   n$0=*&this:com.dulishuo.times.GetSchoolRank* [line 3]\n  n$1=_fun_Object.<init>()(n$0:com.dulishuo.times.GetSchoolRank*) [line 3]\n  NULLIFY(&this); [line 3]\n  EXIT_SCOPE(n$0,n$1,this); [line 3]\n " shape="box"]
+	
+
+	 "com.dulishuo.times.GetSchoolRank.<init>().8f489fe6126b6f52de6511d77eff099a_4" -> "com.dulishuo.times.GetSchoolRank.<init>().8f489fe6126b6f52de6511d77eff099a_5" ;
+	 "com.dulishuo.times.GetSchoolRank.<init>().8f489fe6126b6f52de6511d77eff099a_4" -> "com.dulishuo.times.GetSchoolRank.<init>().8f489fe6126b6f52de6511d77eff099a_3" [color="red" ];
+"com.dulishuo.times.GetSchoolRank.<init>().8f489fe6126b6f52de6511d77eff099a_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 3]\n " shape="box"]
+	
+
+	 "com.dulishuo.times.GetSchoolRank.<init>().8f489fe6126b6f52de6511d77eff099a_5" -> "com.dulishuo.times.GetSchoolRank.<init>().8f489fe6126b6f52de6511d77eff099a_2" ;
+	 "com.dulishuo.times.GetSchoolRank.<init>().8f489fe6126b6f52de6511d77eff099a_5" -> "com.dulishuo.times.GetSchoolRank.<init>().8f489fe6126b6f52de6511d77eff099a_3" [color="red" ];
+}

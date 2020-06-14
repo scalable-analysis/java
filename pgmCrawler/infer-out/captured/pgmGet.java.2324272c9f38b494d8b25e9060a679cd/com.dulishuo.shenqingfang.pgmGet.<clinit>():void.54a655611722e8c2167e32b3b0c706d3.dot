@@ -1,0 +1,29 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.shenqingfang.pgmGet.<clinit>():void.54a655611722e8c2167e32b3b0c706d3_1" [label="1: Start void pgmGet.<clinit>()\nFormals: \nLocals:  $irvar0:void \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.shenqingfang.pgmGet.<clinit>():void.54a655611722e8c2167e32b3b0c706d3_1" -> "com.dulishuo.shenqingfang.pgmGet.<clinit>():void.54a655611722e8c2167e32b3b0c706d3_4" ;
+"com.dulishuo.shenqingfang.pgmGet.<clinit>():void.54a655611722e8c2167e32b3b0c706d3_2" [label="2: Exit void pgmGet.<clinit>() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.shenqingfang.pgmGet.<clinit>():void.54a655611722e8c2167e32b3b0c706d3_3" [label="3:  exceptions sink \n   NULLIFY(&$irvar0); [line 23]\n  EXIT_SCOPE($irvar0); [line 23]\n  APPLY_ABSTRACTION; [line 23]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.pgmGet.<clinit>():void.54a655611722e8c2167e32b3b0c706d3_3" -> "com.dulishuo.shenqingfang.pgmGet.<clinit>():void.54a655611722e8c2167e32b3b0c706d3_2" ;
+"com.dulishuo.shenqingfang.pgmGet.<clinit>():void.54a655611722e8c2167e32b3b0c706d3_4" [label="4:  Call Logger Logger.getLogger(Class) \n   n$0=_fun_Logger Logger.getLogger(Class)(com.dulishuo.shenqingfang.pgmGet:java.lang.Object*) [line 23]\n  *&$irvar0:org.apache.log4j.Logger*=n$0 [line 23]\n  EXIT_SCOPE(n$0); [line 23]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.pgmGet.<clinit>():void.54a655611722e8c2167e32b3b0c706d3_4" -> "com.dulishuo.shenqingfang.pgmGet.<clinit>():void.54a655611722e8c2167e32b3b0c706d3_5" ;
+	 "com.dulishuo.shenqingfang.pgmGet.<clinit>():void.54a655611722e8c2167e32b3b0c706d3_4" -> "com.dulishuo.shenqingfang.pgmGet.<clinit>():void.54a655611722e8c2167e32b3b0c706d3_3" [color="red" ];
+"com.dulishuo.shenqingfang.pgmGet.<clinit>():void.54a655611722e8c2167e32b3b0c706d3_5" [label="5:  method_body \n   n$1=*&$irvar0:org.apache.log4j.Logger* [line 23]\n  *&#GB<>$com.dulishuo.shenqingfang.pgmGet.log:com.dulishuo.shenqingfang.pgmGet(root com.dulishuo.shenqingfang.pgmGet)=n$1 [line 23]\n  NULLIFY(&$irvar0); [line 23]\n  EXIT_SCOPE(n$1,$irvar0); [line 23]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.pgmGet.<clinit>():void.54a655611722e8c2167e32b3b0c706d3_5" -> "com.dulishuo.shenqingfang.pgmGet.<clinit>():void.54a655611722e8c2167e32b3b0c706d3_6" ;
+	 "com.dulishuo.shenqingfang.pgmGet.<clinit>():void.54a655611722e8c2167e32b3b0c706d3_5" -> "com.dulishuo.shenqingfang.pgmGet.<clinit>():void.54a655611722e8c2167e32b3b0c706d3_3" [color="red" ];
+"com.dulishuo.shenqingfang.pgmGet.<clinit>():void.54a655611722e8c2167e32b3b0c706d3_6" [label="6:  method_body \n   APPLY_ABSTRACTION; [line 23]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.pgmGet.<clinit>():void.54a655611722e8c2167e32b3b0c706d3_6" -> "com.dulishuo.shenqingfang.pgmGet.<clinit>():void.54a655611722e8c2167e32b3b0c706d3_2" ;
+	 "com.dulishuo.shenqingfang.pgmGet.<clinit>():void.54a655611722e8c2167e32b3b0c706d3_6" -> "com.dulishuo.shenqingfang.pgmGet.<clinit>():void.54a655611722e8c2167e32b3b0c706d3_3" [color="red" ];
+}

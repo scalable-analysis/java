@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.test.test0728$1.<init>().bed4091a385d70b42713b55078aba1d2_1" [label="1: Start test0728$1.<init>()\nFormals:  this:com.dulishuo.test.test0728$1*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.test.test0728$1.<init>().bed4091a385d70b42713b55078aba1d2_1" -> "com.dulishuo.test.test0728$1.<init>().bed4091a385d70b42713b55078aba1d2_4" ;
+"com.dulishuo.test.test0728$1.<init>().bed4091a385d70b42713b55078aba1d2_2" [label="2: Exit test0728$1.<init>() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.test.test0728$1.<init>().bed4091a385d70b42713b55078aba1d2_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 33]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728$1.<init>().bed4091a385d70b42713b55078aba1d2_3" -> "com.dulishuo.test.test0728$1.<init>().bed4091a385d70b42713b55078aba1d2_2" ;
+"com.dulishuo.test.test0728$1.<init>().bed4091a385d70b42713b55078aba1d2_4" [label="4:  Call Object.<init>() \n   n$0=*&this:com.dulishuo.test.test0728$1* [line 33]\n  n$1=_fun_Object.<init>()(n$0:com.dulishuo.test.test0728$1*) [line 33]\n  NULLIFY(&this); [line 33]\n  EXIT_SCOPE(n$0,n$1,this); [line 33]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728$1.<init>().bed4091a385d70b42713b55078aba1d2_4" -> "com.dulishuo.test.test0728$1.<init>().bed4091a385d70b42713b55078aba1d2_5" ;
+	 "com.dulishuo.test.test0728$1.<init>().bed4091a385d70b42713b55078aba1d2_4" -> "com.dulishuo.test.test0728$1.<init>().bed4091a385d70b42713b55078aba1d2_3" [color="red" ];
+"com.dulishuo.test.test0728$1.<init>().bed4091a385d70b42713b55078aba1d2_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 33]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728$1.<init>().bed4091a385d70b42713b55078aba1d2_5" -> "com.dulishuo.test.test0728$1.<init>().bed4091a385d70b42713b55078aba1d2_2" ;
+	 "com.dulishuo.test.test0728$1.<init>().bed4091a385d70b42713b55078aba1d2_5" -> "com.dulishuo.test.test0728$1.<init>().bed4091a385d70b42713b55078aba1d2_3" [color="red" ];
+}

@@ -1,0 +1,39 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_1" [label="1: Start void test0728.<clinit>()\nFormals: \nLocals:  $irvar1:void $irvar0:void \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_1" -> "com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_4" ;
+"com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_2" [label="2: Exit void test0728.<clinit>() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_3" [label="3:  exceptions sink \n   NULLIFY(&$irvar0); [line 44]\n  NULLIFY(&$irvar1); [line 44]\n  EXIT_SCOPE($irvar0,$irvar1); [line 44]\n  APPLY_ABSTRACTION; [line 44]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_3" -> "com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_2" ;
+"com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_4" [label="4:  Call test0728$1.<init>() \n   n$0=_fun___new(sizeof(t=com.dulishuo.test.test0728$1):com.dulishuo.test.test0728$1*) [line 33]\n  n$1=_fun_test0728$1.<init>()(n$0:com.dulishuo.test.test0728$1*) [line 33]\n  *&$irvar0:com.dulishuo.test.test0728$1*=n$0 [line 33]\n  EXIT_SCOPE(n$0,n$1); [line 33]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_4" -> "com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_5" ;
+	 "com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_4" -> "com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_3" [color="red" ];
+"com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_5" [label="5:  method_body \n   n$2=*&$irvar0:com.dulishuo.test.test0728$1* [line 33]\n  *&#GB<>$com.dulishuo.test.test0728.ignoreHostnameVerifier:com.dulishuo.test.test0728(root com.dulishuo.test.test0728)=n$2 [line 33]\n  NULLIFY(&$irvar0); [line 33]\n  EXIT_SCOPE(n$2,$irvar0); [line 33]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_5" -> "com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_6" ;
+	 "com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_5" -> "com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_3" [color="red" ];
+"com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_6" [label="6:  Call test0728$2.<init>() \n   n$3=_fun___new(sizeof(t=com.dulishuo.test.test0728$2):com.dulishuo.test.test0728$2*) [line 44]\n  n$4=_fun_test0728$2.<init>()(n$3:com.dulishuo.test.test0728$2*) [line 44]\n  *&$irvar1:com.dulishuo.test.test0728$2*=n$3 [line 44]\n  EXIT_SCOPE(n$3,n$4); [line 44]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_6" -> "com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_7" ;
+	 "com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_6" -> "com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_3" [color="red" ];
+"com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_7" [label="7:  method_body \n   n$5=*&$irvar1:com.dulishuo.test.test0728$2* [line 44]\n  *&#GB<>$com.dulishuo.test.test0728.ignoreCertificationTrustManger:com.dulishuo.test.test0728(root com.dulishuo.test.test0728)=n$5 [line 44]\n  NULLIFY(&$irvar1); [line 44]\n  EXIT_SCOPE(n$5,$irvar1); [line 44]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_7" -> "com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_8" ;
+	 "com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_7" -> "com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_3" [color="red" ];
+"com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_8" [label="8:  method_body \n   APPLY_ABSTRACTION; [line 44]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_8" -> "com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_2" ;
+	 "com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_8" -> "com.dulishuo.test.test0728.<clinit>():void.8a8e7de3174e5fd76e8be64f26184f87_3" [color="red" ];
+}

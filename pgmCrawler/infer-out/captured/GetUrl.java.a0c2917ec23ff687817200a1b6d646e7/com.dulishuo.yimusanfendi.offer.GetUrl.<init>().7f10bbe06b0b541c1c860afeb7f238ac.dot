@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.yimusanfendi.offer.GetUrl.<init>().7f10bbe06b0b541c1c860afeb7f238ac_1" [label="1: Start GetUrl.<init>()\nFormals:  this:com.dulishuo.yimusanfendi.offer.GetUrl*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.yimusanfendi.offer.GetUrl.<init>().7f10bbe06b0b541c1c860afeb7f238ac_1" -> "com.dulishuo.yimusanfendi.offer.GetUrl.<init>().7f10bbe06b0b541c1c860afeb7f238ac_4" ;
+"com.dulishuo.yimusanfendi.offer.GetUrl.<init>().7f10bbe06b0b541c1c860afeb7f238ac_2" [label="2: Exit GetUrl.<init>() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.yimusanfendi.offer.GetUrl.<init>().7f10bbe06b0b541c1c860afeb7f238ac_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 20]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.offer.GetUrl.<init>().7f10bbe06b0b541c1c860afeb7f238ac_3" -> "com.dulishuo.yimusanfendi.offer.GetUrl.<init>().7f10bbe06b0b541c1c860afeb7f238ac_2" ;
+"com.dulishuo.yimusanfendi.offer.GetUrl.<init>().7f10bbe06b0b541c1c860afeb7f238ac_4" [label="4:  Call Object.<init>() \n   n$0=*&this:com.dulishuo.yimusanfendi.offer.GetUrl* [line 20]\n  n$1=_fun_Object.<init>()(n$0:com.dulishuo.yimusanfendi.offer.GetUrl*) [line 20]\n  NULLIFY(&this); [line 20]\n  EXIT_SCOPE(n$0,n$1,this); [line 20]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.offer.GetUrl.<init>().7f10bbe06b0b541c1c860afeb7f238ac_4" -> "com.dulishuo.yimusanfendi.offer.GetUrl.<init>().7f10bbe06b0b541c1c860afeb7f238ac_5" ;
+	 "com.dulishuo.yimusanfendi.offer.GetUrl.<init>().7f10bbe06b0b541c1c860afeb7f238ac_4" -> "com.dulishuo.yimusanfendi.offer.GetUrl.<init>().7f10bbe06b0b541c1c860afeb7f238ac_3" [color="red" ];
+"com.dulishuo.yimusanfendi.offer.GetUrl.<init>().7f10bbe06b0b541c1c860afeb7f238ac_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 20]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.offer.GetUrl.<init>().7f10bbe06b0b541c1c860afeb7f238ac_5" -> "com.dulishuo.yimusanfendi.offer.GetUrl.<init>().7f10bbe06b0b541c1c860afeb7f238ac_2" ;
+	 "com.dulishuo.yimusanfendi.offer.GetUrl.<init>().7f10bbe06b0b541c1c860afeb7f238ac_5" -> "com.dulishuo.yimusanfendi.offer.GetUrl.<init>().7f10bbe06b0b541c1c860afeb7f238ac_3" [color="red" ];
+}

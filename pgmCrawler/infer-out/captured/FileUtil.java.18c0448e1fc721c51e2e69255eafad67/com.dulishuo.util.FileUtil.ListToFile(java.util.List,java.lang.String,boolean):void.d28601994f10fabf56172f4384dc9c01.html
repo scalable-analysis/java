@@ -1,0 +1,272 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.dulishuo.util.FileUtil.ListToFile(java.util.List,java.lang.String,boolean):void.d28601994f10fabf56172f4384dc9c01</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../FileUtil.java.18c0448e1fc721c51e2e69255eafad67.html#LINE188">void FileUtil.ListToFile(List,String,boolean)</a></h1></center>
+<a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:25 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:33 30 27 succs:2 exn:2 Instructions
+NULLIFY(&amp;CatchVar29); [line 213];
+NULLIFY(&amp;CatchVar100); [line 213];
+NULLIFY(&amp;$irvar3); [line 213];
+NULLIFY(&amp;$bcvar4); [line 213];
+NULLIFY(&amp;writer); [line 213];
+NULLIFY(&amp;each); [line 213];
+NULLIFY(&amp;CatchVar83); [line 213];
+NULLIFY(&amp;$irvar2); [line 213];
+NULLIFY(&amp;e); [line 213];
+EXIT_SCOPE(n$51,CatchVar29,CatchVar100,$irvar3,$bcvar4,writer,each,CatchVar83,$irvar2,e); [line 213];
+APPLY_ABSTRACTION; [line 213];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+*&amp;writer:java.lang.Object*=null [line 189];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:28 Instructions
+n$0=_fun___new(sizeof(t=java.io.FileOutputStream):java.io.FileOutputStream*) [line 191];
+n$1=*&amp;path:java.lang.String* [line 191];
+n$2=*&amp;flag:_Bool [line 191];
+n$3=_fun_FileOutputStream.&lt;init&gt;(String,boolean)(n$0:java.io.FileOutputStream*,n$1:java.lang.String*,n$2:_Bool) [line 191];
+*&amp;$irvar0:java.io.FileOutputStream*=n$0 [line 191];
+NULLIFY(&amp;path); [line 191];
+NULLIFY(&amp;flag); [line 191];
+EXIT_SCOPE(n$0,n$1,n$2,n$3,path,flag); [line 191];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:28 Instructions
+n$4=_fun___new(sizeof(t=java.io.OutputStreamWriter):java.io.OutputStreamWriter*) [line 191];
+n$5=*&amp;$irvar0:java.io.FileOutputStream* [line 191];
+n$6=_fun_OutputStreamWriter.&lt;init&gt;(OutputStream)(n$4:java.io.OutputStreamWriter*,n$5:java.io.FileOutputStream*) [line 191];
+n$7=_fun___set_file_attribute(n$4:java.io.OutputStreamWriter*) [line 191];
+*&amp;$irvar1:java.io.OutputStreamWriter*=n$4 [line 191];
+NULLIFY(&amp;$irvar0); [line 191];
+EXIT_SCOPE(n$4,n$5,n$6,n$7,$irvar0); [line 191];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:10 exn:28 Instructions
+n$8=_fun___new(sizeof(t=java.io.BufferedWriter):java.io.BufferedWriter*) [line 191];
+n$9=*&amp;$irvar1:java.io.OutputStreamWriter* [line 191];
+n$10=_fun_BufferedWriter.&lt;init&gt;(Writer)(n$8:java.io.BufferedWriter*,n$9:java.io.OutputStreamWriter*) [line 191];
+n$11=_fun___set_file_attribute(n$8:java.io.BufferedWriter*) [line 191];
+*&amp;writer:java.io.BufferedWriter*=n$8 [line 191];
+NULLIFY(&amp;$irvar1); [line 191];
+EXIT_SCOPE(n$8,n$9,n$10,n$11,$irvar1); [line 191];
+APPLY_ABSTRACTION; [line 191];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:26 succs:9 exn:3 Instructions
+n$12=*&amp;CatchVar29:java.lang.Object* [line 192];
+*&amp;e:java.lang.Object*=n$12 [line 192];
+NULLIFY(&amp;CatchVar29); [line 192];
+EXIT_SCOPE(n$12,CatchVar29); [line 192];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$13=*&amp;e:java.lang.Object* [line 194];
+_=*n$13:java.lang.Object*(root java.lang.Object) [line 194];
+n$15=_fun_void Throwable.printStackTrace()(n$13:java.lang.Object*) virtual [line 194];
+NULLIFY(&amp;e); [line 194];
+EXIT_SCOPE(_,n$13,n$15,e); [line 194];
+APPLY_ABSTRACTION; [line 194];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 7 succs:11 exn:3 Instructions
+n$16=*&amp;list:java.util.List* [line 197];
+_=*n$16:java.util.List*(root java.util.List) [line 197];
+n$18=_fun_Iterator List.iterator()(n$16:java.util.List*) interface virtual [line 197];
+*&amp;$bcvar4:java.util.Iterator*=n$18 [line 197];
+NULLIFY(&amp;list); [line 197];
+EXIT_SCOPE(_,n$16,n$18,list); [line 197];
+APPLY_ABSTRACTION; [line 197];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:21 19 10 succs:14 exn:3 Instructions
+n$19=*&amp;$bcvar4:java.util.Iterator* [line 197];
+_=*n$19:java.util.Iterator*(root java.util.Iterator) [line 197];
+n$21=_fun_boolean Iterator.hasNext()(n$19:java.util.Iterator*) interface virtual [line 197];
+*&amp;$irvar2:_Bool=n$21 [line 197];
+EXIT_SCOPE(_,n$19,n$21); [line 197];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node12.html"><span class='visited with_tooltip'>C_12<span class='tooltip'>node12 preds:14 succs:15 exn:3 Conditional method_body
+n$22=*&amp;$irvar2:_Bool [line 197];
+PRUNE(!(n$22 == 0), true); [line 197];
+NULLIFY(&amp;$irvar2); [line 197];
+EXIT_SCOPE(n$22,$irvar2); [line 197];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node13.html"><span class='visited with_tooltip'>C_13<span class='tooltip'>node13 preds:14 succs:22 exn:3 Conditional method_body
+n$22=*&amp;$irvar2:_Bool [line 197];
+PRUNE((n$22 == 0), false); [line 197];
+NULLIFY(&amp;$bcvar4); [line 197];
+NULLIFY(&amp;$irvar2); [line 197];
+EXIT_SCOPE(n$22,$bcvar4,$irvar2); [line 197];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node14.html"><span class='visited with_tooltip'>J_14<span class='tooltip'>node14 preds:11 succs:12 13 exn: Join
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:12 succs:16 exn:3 Instructions
+n$23=*&amp;$bcvar4:java.util.Iterator* [line 197];
+_=*n$23:java.util.Iterator*(root java.util.Iterator) [line 197];
+n$25=_fun_Object Iterator.next()(n$23:java.util.Iterator*) interface virtual [line 197];
+*&amp;$irvar3:java.lang.Object*=n$25 [line 197];
+EXIT_SCOPE(_,n$23,n$25); [line 197];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:3 Instructions
+n$26=*&amp;$irvar3:java.lang.Object* [line 197];
+n$27=_fun___cast(n$26:java.lang.Object*,sizeof(t=java.lang.String;sub_t=( sub )(cast)):void) [line 197];
+*&amp;each:java.lang.String*=n$27 [line 197];
+NULLIFY(&amp;$irvar3); [line 197];
+EXIT_SCOPE(n$26,n$27,$irvar3); [line 197];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:34 Instructions
+n$28=*&amp;writer:java.io.BufferedWriter* [line 199];
+_=*n$28:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 199];
+n$30=*&amp;each:java.lang.String* [line 199];
+n$31=_fun_void Writer.write(String)(n$28:java.io.BufferedWriter*,n$30:java.lang.String*) virtual [line 199];
+NULLIFY(&amp;each); [line 199];
+EXIT_SCOPE(_,n$28,n$30,n$31,each); [line 199];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 exn:34 Instructions
+n$32=*&amp;writer:java.io.BufferedWriter* [line 200];
+_=*n$32:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 200];
+n$34=_fun_void BufferedWriter.newLine()(n$32:java.io.BufferedWriter*) virtual [line 200];
+EXIT_SCOPE(_,n$32,n$34); [line 200];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:11 exn:34 Instructions
+n$35=*&amp;writer:java.io.BufferedWriter* [line 201];
+_=*n$35:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 201];
+n$37=_fun_void BufferedWriter.flush()(n$35:java.io.BufferedWriter*) virtual [line 201];
+EXIT_SCOPE(_,n$35,n$37); [line 201];
+APPLY_ABSTRACTION; [line 201];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:32 succs:21 exn:3 Instructions
+n$38=*&amp;CatchVar83:java.lang.Object* [line 202];
+*&amp;e:java.lang.Object*=n$38 [line 202];
+NULLIFY(&amp;CatchVar83); [line 202];
+EXIT_SCOPE(n$38,CatchVar83); [line 202];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:11 exn:3 Instructions
+n$39=*&amp;e:java.lang.Object* [line 204];
+_=*n$39:java.lang.Object*(root java.lang.Object) [line 204];
+n$41=_fun_void Throwable.printStackTrace()(n$39:java.lang.Object*) virtual [line 204];
+NULLIFY(&amp;e); [line 204];
+EXIT_SCOPE(_,n$39,n$41,e); [line 204];
+APPLY_ABSTRACTION; [line 204];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:13 succs:25 exn:31 Instructions
+n$42=*&amp;writer:java.io.BufferedWriter* [line 208];
+n$45=_fun___set_mem_attribute(n$42:java.io.BufferedWriter*) [line 208];
+_=*n$42:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 208];
+n$44=_fun_void BufferedWriter.close()(n$42:java.io.BufferedWriter*) virtual [line 208];
+NULLIFY(&amp;writer); [line 208];
+EXIT_SCOPE(_,n$42,n$44,n$45,writer); [line 208];
+APPLY_ABSTRACTION; [line 208];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:29 succs:24 exn:3 Instructions
+n$46=*&amp;CatchVar100:java.lang.Object* [line 209];
+*&amp;e:java.lang.Object*=n$46 [line 209];
+NULLIFY(&amp;CatchVar100); [line 209];
+EXIT_SCOPE(n$46,CatchVar100); [line 209];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:25 exn:3 Instructions
+n$47=*&amp;e:java.lang.Object* [line 211];
+_=*n$47:java.lang.Object*(root java.lang.Object) [line 211];
+n$49=_fun_void Throwable.printStackTrace()(n$47:java.lang.Object*) virtual [line 211];
+NULLIFY(&amp;e); [line 211];
+EXIT_SCOPE(_,n$47,n$49,e); [line 211];
+APPLY_ABSTRACTION; [line 211];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 22 succs:2 exn:3 Instructions
+APPLY_ABSTRACTION; [line 213];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node26.html"><span class='visited with_tooltip'>C_26<span class='tooltip'>node26 preds:28 succs:8 exn:3 Conditional exception handler
+n$52=_fun___instanceof(n$51:java.io.FileNotFoundException*,sizeof(t=java.io.FileNotFoundException):void) [line 192];
+PRUNE(n$52, true); [line 192];
+*&amp;CatchVar29:void=n$51 [line 192];
+EXIT_SCOPE(n$51,n$52); [line 192];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node27.html"><span class='visited with_tooltip'>C_27<span class='tooltip'>node27 preds:28 succs:3 exn:3 Conditional exception handler
+n$52=_fun___instanceof(n$51:java.io.FileNotFoundException*,sizeof(t=java.io.FileNotFoundException):void) [line 192];
+PRUNE(!n$52, false); [line 192];
+*&amp;return:void=EXN n$51 [line 192];
+NULLIFY(&amp;writer); [line 192];
+EXIT_SCOPE(n$51,n$52,writer); [line 192];
+APPLY_ABSTRACTION; [line 192];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds: succs:26 27 exn:3 Instructions
+n$50=*&amp;return:void [line 192];
+*&amp;return:void=null [line 192];
+n$51=_fun___unwrap_exception(n$50:void) [line 192];
+NULLIFY(&amp;$irvar0); [line 192];
+NULLIFY(&amp;$irvar1); [line 192];
+EXIT_SCOPE(n$50,$irvar0,$irvar1); [line 192];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node29.html"><span class='visited with_tooltip'>C_29<span class='tooltip'>node29 preds:31 succs:23 exn:3 Conditional exception handler
+n$53=_fun___instanceof(n$51:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 209];
+PRUNE(n$53, true); [line 209];
+*&amp;CatchVar100:void=n$51 [line 209];
+EXIT_SCOPE(n$51,n$53); [line 209];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node30.html"><span class='visited with_tooltip'>C_30<span class='tooltip'>node30 preds:31 succs:3 exn:3 Conditional exception handler
+n$53=_fun___instanceof(n$51:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 209];
+PRUNE(!n$53, false); [line 209];
+*&amp;return:void=EXN n$51 [line 209];
+EXIT_SCOPE(n$51,n$53); [line 209];
+APPLY_ABSTRACTION; [line 209];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds: succs:29 30 exn:3 Instructions
+n$50=*&amp;return:void [line 209];
+*&amp;return:void=null [line 209];
+n$51=_fun___unwrap_exception(n$50:void) [line 209];
+EXIT_SCOPE(n$50); [line 209];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node32.html"><span class='visited with_tooltip'>C_32<span class='tooltip'>node32 preds:34 succs:20 exn:3 Conditional exception handler
+n$54=_fun___instanceof(n$51:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 202];
+PRUNE(n$54, true); [line 202];
+*&amp;CatchVar83:void=n$51 [line 202];
+EXIT_SCOPE(n$51,n$54); [line 202];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node33.html"><span class='visited with_tooltip'>C_33<span class='tooltip'>node33 preds:34 succs:3 exn:3 Conditional exception handler
+n$54=_fun___instanceof(n$51:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 202];
+PRUNE(!n$54, false); [line 202];
+*&amp;return:void=EXN n$51 [line 202];
+NULLIFY(&amp;$bcvar4); [line 202];
+NULLIFY(&amp;writer); [line 202];
+EXIT_SCOPE(n$51,n$54,$bcvar4,writer); [line 202];
+APPLY_ABSTRACTION; [line 202];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.ListToFile%28java.util.List%2Cjava.lang.String%2Cboolean%29%3Avoid.d28601994f10fabf56172f4384dc9c01_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds: succs:32 33 exn:3 Instructions
+n$50=*&amp;return:void [line 202];
+*&amp;return:void=null [line 202];
+n$51=_fun___unwrap_exception(n$50:void) [line 202];
+EXIT_SCOPE(n$50); [line 202];
+</span></span></a><br />@
+
+<span class='color_black'>void void FileUtil.ListToFile(List,String,boolean)(java.util.List* list, java.lang.String* path, _Bool flag)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= void FileUtil.ListToFile(List,String,boolean)
+; translation_unit= src/com/dulishuo/util/FileUtil.java
+; access= Public
+; formals= [(list,java.util.List*);  (path,java.lang.String*);  (flag,_Bool)]
+; is_defined= true
+; loc= src/com/dulishuo/util/FileUtil.java:188
+; locals= [{ name= CatchVar100; typ= void; modify_in_block= false }; 
+           { name= CatchVar83; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $bcvar4; typ= void; modify_in_block= false }; 
+           { name= CatchVar29; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= writer; typ= java.io.BufferedWriter*; modify_in_block= false }; 
+           { name= each; typ= java.lang.String*; modify_in_block= false }; 
+           { name= e; typ= java.io.FileNotFoundException*; modify_in_block= false }]
+; ret_type= void 
+; proc_id= com.dulishuo.util.FileUtil.ListToFile(java.util.List,java.lang.String,boolean):void }</pre>
+</body>
+</html>

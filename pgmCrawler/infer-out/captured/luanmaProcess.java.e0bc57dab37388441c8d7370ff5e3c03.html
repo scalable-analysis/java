@@ -1,0 +1,85 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>luanmaProcess.java.e0bc57dab37388441c8d7370ff5e3c03</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>File src/com/dulishuo/yimusanfendi/luanmaProcess.java </h1></center>
+<table class="code">
+<tr><td class="num" id="LINE1">1</td><td class="line">package com.dulishuo.yimusanfendi; </td></tr>
+<tr><td class="num" id="LINE2">2</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE3">3</td><td class="line">import java.io.BufferedReader; </td></tr>
+<tr><td class="num" id="LINE4">4</td><td class="line">import java.io.BufferedWriter; </td></tr>
+<tr><td class="num" id="LINE5">5</td><td class="line">import java.io.FileInputStream; </td></tr>
+<tr><td class="num" id="LINE6">6</td><td class="line">import java.io.FileNotFoundException; </td></tr>
+<tr><td class="num" id="LINE7">7</td><td class="line">import java.io.FileOutputStream; </td></tr>
+<tr><td class="num" id="LINE8">8</td><td class="line">import java.io.InputStreamReader; </td></tr>
+<tr><td class="num" id="LINE9">9</td><td class="line">import java.io.OutputStreamWriter; </td></tr>
+<tr><td class="num" id="LINE10">10</td><td class="line">import java.util.regex.Pattern; </td></tr>
+<tr><td class="num" id="LINE11">11</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE12">12</td><td class="line">public class luanmaProcess { <a href="./luanmaProcess.java.e0bc57dab37388441c8d7370ff5e3c03/nodes/com.dulishuo.yimusanfendi.luanmaProcess.<init>%28%29.367f091295b2a20ee4be6d122d798bc9_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./luanmaProcess.java.e0bc57dab37388441c8d7370ff5e3c03/nodes/com.dulishuo.yimusanfendi.luanmaProcess.<init>%28%29.367f091295b2a20ee4be6d122d798bc9_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.dulishuo.yimusanfendi.luanmaProcess* [line 12];
+n$1=_fun_Object.&lt;init&gt;()(n$0:com.dulishuo.yimusanfendi.luanmaProcess*) [line 12];
+</span></span></a> <a href="./luanmaProcess.java.e0bc57dab37388441c8d7370ff5e3c03/nodes/com.dulishuo.yimusanfendi.luanmaProcess.<init>%28%29.367f091295b2a20ee4be6d122d798bc9_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./luanmaProcess.java.e0bc57dab37388441c8d7370ff5e3c03/nodes/com.dulishuo.yimusanfendi.luanmaProcess.<init>%28%29.367f091295b2a20ee4be6d122d798bc9_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./luanmaProcess.java.e0bc57dab37388441c8d7370ff5e3c03/nodes/com.dulishuo.yimusanfendi.luanmaProcess.<init>%28%29.367f091295b2a20ee4be6d122d798bc9_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a> <a href="./luanmaProcess.java.e0bc57dab37388441c8d7370ff5e3c03/com.dulishuo.yimusanfendi.luanmaProcess.<init>%28%29.367f091295b2a20ee4be6d122d798bc9.html">summary for luanmaProcess.&lt;init&gt;()</a></td></tr>
+<tr><td class="num" id="LINE13">13</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE14">14</td><td class="line">	public static void main(String[] args) throws FileNotFoundException { </td></tr>
+<tr><td class="num" id="LINE15">15</td><td class="line">		// TODO Auto-generated method stub </td></tr>
+<tr><td class="num" id="LINE16">16</td><td class="line">		/*long start =System.currentTimeMillis(); </td></tr>
+<tr><td class="num" id="LINE17">17</td><td class="line">		BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(&quot;C:/Users/强胜/Desktop/dataCrawler/一亩三分地/data/post.json&quot;))); </td></tr>
+<tr><td class="num" id="LINE18">18</td><td class="line">		BufferedWriter writer = new BufferedWriter(new OutputStreamWriter (new FileOutputStream (&quot;C:/Users/强胜/Desktop/dataCrawler/一亩三分地/data/zzz.json&quot;))); </td></tr>
+<tr><td class="num" id="LINE19">19</td><td class="line">		 </td></tr>
+<tr><td class="num" id="LINE20">20</td><td class="line">		String reg1 = &quot;[\u4e00-\u9fa5][0-9]&quot;; </td></tr>
+<tr><td class="num" id="LINE21">21</td><td class="line">		Pattern ptn = Pattern.compile(reg1); </td></tr>
+<tr><td class="num" id="LINE22">22</td><td class="line">		String each = &quot;&quot;; </td></tr>
+<tr><td class="num" id="LINE23">23</td><td class="line">		while((each = reader.readLine()) != null){ </td></tr>
+<tr><td class="num" id="LINE24">24</td><td class="line">			 </td></tr>
+<tr><td class="num" id="LINE25">25</td><td class="line">		}*/ </td></tr>
+<tr><td class="num" id="LINE26">26</td><td class="line">	 </td></tr>
+<tr><td class="num" id="LINE27">27</td><td class="line">	} <a href="./luanmaProcess.java.e0bc57dab37388441c8d7370ff5e3c03/nodes/com.dulishuo.yimusanfendi.luanmaProcess.main%28java.lang.String%5B%5D%29%3Avoid.7e3522bd5d94fcc370df7799de1369eb_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./luanmaProcess.java.e0bc57dab37388441c8d7370ff5e3c03/nodes/com.dulishuo.yimusanfendi.luanmaProcess.main%28java.lang.String%5B%5D%29%3Avoid.7e3522bd5d94fcc370df7799de1369eb_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:2 exn:3 Instructions
+</span></span></a> <a href="./luanmaProcess.java.e0bc57dab37388441c8d7370ff5e3c03/nodes/com.dulishuo.yimusanfendi.luanmaProcess.main%28java.lang.String%5B%5D%29%3Avoid.7e3522bd5d94fcc370df7799de1369eb_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:4 3 succs: exn: Exit
+</span></span></a> <a href="./luanmaProcess.java.e0bc57dab37388441c8d7370ff5e3c03/nodes/com.dulishuo.yimusanfendi.luanmaProcess.main%28java.lang.String%5B%5D%29%3Avoid.7e3522bd5d94fcc370df7799de1369eb_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a> <a href="./luanmaProcess.java.e0bc57dab37388441c8d7370ff5e3c03/com.dulishuo.yimusanfendi.luanmaProcess.main%28java.lang.String%5B%5D%29%3Avoid.7e3522bd5d94fcc370df7799de1369eb.html">summary for void luanmaProcess.main(String[])</a></td></tr>
+<tr><td class="num" id="LINE28">28</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE29">29</td><td class="line">} </td></tr>
+</table>
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+</body>
+</html>

@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_1" [label="1: Start Test.<init>()\nFormals:  this:com.dulishuo.jituo.Test*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_1" -> "com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_4" ;
+"com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_2" [label="2: Exit Test.<init>() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 8]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_3" -> "com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_2" ;
+"com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_4" [label="4:  Call Object.<init>() \n   n$0=*&this:com.dulishuo.jituo.Test* [line 8]\n  n$1=_fun_Object.<init>()(n$0:com.dulishuo.jituo.Test*) [line 8]\n  NULLIFY(&this); [line 8]\n  EXIT_SCOPE(n$0,n$1,this); [line 8]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_4" -> "com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_5" ;
+	 "com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_4" -> "com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_3" [color="red" ];
+"com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 8]\n " shape="box"]
+	
+
+	 "com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_5" -> "com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_2" ;
+	 "com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_5" -> "com.dulishuo.jituo.Test.<init>().d93e50000554129ebd31755091693de8_3" [color="red" ];
+}

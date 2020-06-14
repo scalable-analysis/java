@@ -1,0 +1,1248 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>pgmGet.java.2324272c9f38b494d8b25e9060a679cd</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>File src/com/dulishuo/shenqingfang/pgmGet.java </h1></center>
+<table class="code">
+<tr><td class="num" id="LINE1">1</td><td class="line">package com.dulishuo.shenqingfang; </td></tr>
+<tr><td class="num" id="LINE2">2</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE3">3</td><td class="line">import java.io.IOException; </td></tr>
+<tr><td class="num" id="LINE4">4</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE5">5</td><td class="line">import net.sf.json.JSONObject; </td></tr>
+<tr><td class="num" id="LINE6">6</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE7">7</td><td class="line">import org.apache.commons.httpclient.HttpClient; </td></tr>
+<tr><td class="num" id="LINE8">8</td><td class="line">import org.apache.commons.httpclient.HttpException; </td></tr>
+<tr><td class="num" id="LINE9">9</td><td class="line">import org.apache.commons.httpclient.methods.GetMethod; </td></tr>
+<tr><td class="num" id="LINE10">10</td><td class="line">import org.apache.commons.httpclient.methods.PostMethod; </td></tr>
+<tr><td class="num" id="LINE11">11</td><td class="line">import org.apache.log4j.Logger; </td></tr>
+<tr><td class="num" id="LINE12">12</td><td class="line">import org.jsoup.Jsoup; </td></tr>
+<tr><td class="num" id="LINE13">13</td><td class="line">import org.jsoup.nodes.Document; </td></tr>
+<tr><td class="num" id="LINE14">14</td><td class="line">import org.jsoup.nodes.Element; </td></tr>
+<tr><td class="num" id="LINE15">15</td><td class="line">import org.jsoup.select.Elements; </td></tr>
+<tr><td class="num" id="LINE16">16</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE17">17</td><td class="line">import com.dulishuo.util.CrawlerUtil; </td></tr>
+<tr><td class="num" id="LINE18">18</td><td class="line">import com.dulishuo.util.FileUtil; </td></tr>
+<tr><td class="num" id="LINE19">19</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE20">20</td><td class="line">import java.util.*; </td></tr>
+<tr><td class="num" id="LINE21">21</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE22">22</td><td class="line">public class pgmGet { <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.<init>%28%29.a1cf70ee260a283009b3138e7eb81917_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.<init>%28%29.a1cf70ee260a283009b3138e7eb81917_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.dulishuo.shenqingfang.pgmGet* [line 22];
+n$1=_fun_Object.&lt;init&gt;()(n$0:com.dulishuo.shenqingfang.pgmGet*) [line 22];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.<init>%28%29.a1cf70ee260a283009b3138e7eb81917_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.<init>%28%29.a1cf70ee260a283009b3138e7eb81917_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.<init>%28%29.a1cf70ee260a283009b3138e7eb81917_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/com.dulishuo.shenqingfang.pgmGet.<init>%28%29.a1cf70ee260a283009b3138e7eb81917.html">summary for pgmGet.&lt;init&gt;()</a></td></tr>
+<tr><td class="num" id="LINE23">23</td><td class="line">	static Logger log = Logger.getLogger(pgmGet.class); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.<clinit>%28%29%3Avoid.54a655611722e8c2167e32b3b0c706d3_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.<clinit>%28%29%3Avoid.54a655611722e8c2167e32b3b0c706d3_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun_Logger Logger.getLogger(Class)(com.dulishuo.shenqingfang.pgmGet:java.lang.Object*) [line 23];
+*&amp;$irvar0:org.apache.log4j.Logger*=n$0 [line 23];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.<clinit>%28%29%3Avoid.54a655611722e8c2167e32b3b0c706d3_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$1=*&amp;$irvar0:org.apache.log4j.Logger* [line 23];
+*&amp;#GB<>$com.dulishuo.shenqingfang.pgmGet.log:com.dulishuo.shenqingfang.pgmGet(root com.dulishuo.shenqingfang.pgmGet)=n$1 [line 23];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.<clinit>%28%29%3Avoid.54a655611722e8c2167e32b3b0c706d3_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:2 exn:3 Instructions
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.<clinit>%28%29%3Avoid.54a655611722e8c2167e32b3b0c706d3_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:6 3 succs: exn: Exit
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.<clinit>%28%29%3Avoid.54a655611722e8c2167e32b3b0c706d3_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/com.dulishuo.shenqingfang.pgmGet.<clinit>%28%29%3Avoid.54a655611722e8c2167e32b3b0c706d3.html">summary for void pgmGet.&lt;clinit&gt;()</a></td></tr>
+<tr><td class="num" id="LINE24">24</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE25">25</td><td class="line">	public static void main(String[] args) { <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.main%28java.lang.String%5B%5D%29%3Avoid.a1677d9095971a13a9b6dadf89cd883f_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/com.dulishuo.shenqingfang.pgmGet.main%28java.lang.String%5B%5D%29%3Avoid.a1677d9095971a13a9b6dadf89cd883f.html">summary for void pgmGet.main(String[])</a></td></tr>
+<tr><td class="num" id="LINE26">26</td><td class="line">		// TODO Auto-generated method stub </td></tr>
+<tr><td class="num" id="LINE27">27</td><td class="line">	 </td></tr>
+<tr><td class="num" id="LINE28">28</td><td class="line">		System.out.println(&quot; . . . start . . .&quot;); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.main%28java.lang.String%5B%5D%29%3Avoid.a1677d9095971a13a9b6dadf89cd883f_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 28];
+_=*n$0:java.io.PrintStream*(root java.io.PrintStream) [line 28];
+n$2=_fun_void PrintStream.println(String)(n$0:java.io.PrintStream*," . . . start . . .":java.lang.Object*) virtual [line 28];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE29">29</td><td class="line">		long start = System.currentTimeMillis(); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.main%28java.lang.String%5B%5D%29%3Avoid.a1677d9095971a13a9b6dadf89cd883f_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$3=_fun_long System.currentTimeMillis()() [line 29];
+*&amp;start:long=n$3 [line 29];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE30">30</td><td class="line">		 </td></tr>
+<tr><td class="num" id="LINE31">31</td><td class="line">		//getPgmUrl(); </td></tr>
+<tr><td class="num" id="LINE32">32</td><td class="line">		test(); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.main%28java.lang.String%5B%5D%29%3Avoid.a1677d9095971a13a9b6dadf89cd883f_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$4=_fun_void pgmGet.test()() [line 32];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE33">33</td><td class="line">		 </td></tr>
+<tr><td class="num" id="LINE34">34</td><td class="line">		long end = System.currentTimeMillis(); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.main%28java.lang.String%5B%5D%29%3Avoid.a1677d9095971a13a9b6dadf89cd883f_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$5=_fun_long System.currentTimeMillis()() [line 34];
+*&amp;end:long=n$5 [line 34];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE35">35</td><td class="line">		System.out.println(&quot; . . . end . . . use time : &quot; + (end - start) <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.main%28java.lang.String%5B%5D%29%3Avoid.a1677d9095971a13a9b6dadf89cd883f_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$6=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 35];
+*&amp;$irvar0:java.io.PrintStream*=n$6 [line 35];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.main%28java.lang.String%5B%5D%29%3Avoid.a1677d9095971a13a9b6dadf89cd883f_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$7=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 35];
+n$8=_fun_StringBuilder.&lt;init&gt;()(n$7:java.lang.StringBuilder*) [line 35];
+*&amp;$irvar1:java.lang.StringBuilder*=n$7 [line 35];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.main%28java.lang.String%5B%5D%29%3Avoid.a1677d9095971a13a9b6dadf89cd883f_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+n$9=*&amp;$irvar1:java.lang.StringBuilder* [line 35];
+_=*n$9:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 35];
+n$11=_fun_StringBuilder StringBuilder.append(String)(n$9:java.lang.StringBuilder*," . . . end . . . use time : ":java.lang.Object*) virtual [line 35];
+*&amp;$irvar2:java.lang.StringBuilder*=n$11 [line 35];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.main%28java.lang.String%5B%5D%29%3Avoid.a1677d9095971a13a9b6dadf89cd883f_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+n$12=*&amp;$irvar2:java.lang.StringBuilder* [line 35];
+_=*n$12:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 35];
+n$14=*&amp;end:long [line 35];
+n$15=*&amp;start:long [line 35];
+n$16=_fun_StringBuilder StringBuilder.append(long)(n$12:java.lang.StringBuilder*,(n$14 - n$15):long) virtual [line 35];
+*&amp;$irvar3:java.lang.StringBuilder*=n$16 [line 35];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.main%28java.lang.String%5B%5D%29%3Avoid.a1677d9095971a13a9b6dadf89cd883f_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$17=*&amp;$irvar3:java.lang.StringBuilder* [line 35];
+_=*n$17:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 35];
+n$19=_fun_StringBuilder StringBuilder.append(String)(n$17:java.lang.StringBuilder*,"ms ":java.lang.Object*) virtual [line 35];
+*&amp;$irvar4:java.lang.StringBuilder*=n$19 [line 35];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.main%28java.lang.String%5B%5D%29%3Avoid.a1677d9095971a13a9b6dadf89cd883f_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:3 Instructions
+n$20=*&amp;$irvar4:java.lang.StringBuilder* [line 35];
+_=*n$20:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 35];
+n$22=_fun_String StringBuilder.toString()(n$20:java.lang.StringBuilder*) virtual [line 35];
+*&amp;$irvar5:java.lang.String*=n$22 [line 35];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.main%28java.lang.String%5B%5D%29%3Avoid.a1677d9095971a13a9b6dadf89cd883f_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:3 Instructions
+n$23=*&amp;$irvar0:java.io.PrintStream* [line 35];
+_=*n$23:java.io.PrintStream*(root java.io.PrintStream) [line 35];
+n$25=*&amp;$irvar5:java.lang.String* [line 35];
+n$26=_fun_void PrintStream.println(String)(n$23:java.io.PrintStream*,n$25:java.lang.String*) virtual [line 35];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE36">36</td><td class="line">				+ &quot;ms &quot;); </td></tr>
+<tr><td class="num" id="LINE37">37</td><td class="line">		 </td></tr>
+<tr><td class="num" id="LINE38">38</td><td class="line">	} <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.main%28java.lang.String%5B%5D%29%3Avoid.a1677d9095971a13a9b6dadf89cd883f_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:2 exn:3 Instructions
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.main%28java.lang.String%5B%5D%29%3Avoid.a1677d9095971a13a9b6dadf89cd883f_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:15 3 succs: exn: Exit
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.main%28java.lang.String%5B%5D%29%3Avoid.a1677d9095971a13a9b6dadf89cd883f_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE39">39</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE40">40</td><td class="line">	private static void test() { <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59.html">summary for void pgmGet.test()</a></td></tr>
+<tr><td class="num" id="LINE41">41</td><td class="line">		// TODO Auto-generated method stub </td></tr>
+<tr><td class="num" id="LINE42">42</td><td class="line">		//String filePath = &quot;C:/Users/强胜/Desktop/sch.txt.json&quot;; </td></tr>
+<tr><td class="num" id="LINE43">43</td><td class="line">		String filePath = &quot;C:/Users/强胜/Desktop/xxxxx.txt&quot;; <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+*&amp;filePath:java.lang.Object*="C:/Users/\\229\\188\\186\\232\\131\\156/Desktop/xxxxx.txt" [line 43];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE44">44</td><td class="line">		List&lt;String&gt; urlList =  FileUtil.FileToList(filePath); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$0=*&amp;filePath:java.lang.Object* [line 44];
+n$1=_fun_List FileUtil.FileToList(String)(n$0:java.lang.Object*) [line 44];
+*&amp;urlList:java.util.List*=n$1 [line 44];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE45">45</td><td class="line">		System.out.println(urlList.size()); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$2=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 45];
+*&amp;$irvar1:java.io.PrintStream*=n$2 [line 45];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$3=*&amp;urlList:java.util.List* [line 45];
+_=*n$3:java.util.List*(root java.util.List) [line 45];
+n$5=_fun_int List.size()(n$3:java.util.List*) interface virtual [line 45];
+*&amp;$irvar0:int=n$5 [line 45];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$6=*&amp;$irvar1:java.io.PrintStream* [line 45];
+_=*n$6:java.io.PrintStream*(root java.io.PrintStream) [line 45];
+n$8=*&amp;$irvar0:int [line 45];
+n$9=_fun_void PrintStream.println(int)(n$6:java.io.PrintStream*,n$8:int) virtual [line 45];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE46">46</td><td class="line">		int flag = 2; <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+*&amp;flag:int=2 [line 46];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE47">47</td><td class="line">		String url = &quot;&quot;; <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+*&amp;url:java.lang.Object*="" [line 47];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE48">48</td><td class="line">		String response = &quot;&quot;; <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+*&amp;response:java.lang.Object*="" [line 48];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE49">49</td><td class="line">		List&lt;String&gt; ress = new ArrayList&lt;String&gt;(); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$10=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 49];
+n$11=_fun_ArrayList.&lt;init&gt;()(n$10:java.util.ArrayList*) [line 49];
+*&amp;ress:java.util.ArrayList*=n$10 [line 49];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE50">50</td><td class="line">		String link = &quot;&quot;; <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:3 Instructions
+*&amp;link:java.lang.Object*="" [line 50];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE51">51</td><td class="line">		for(String xx : urlList){ <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:3 Instructions
+n$12=*&amp;urlList:java.util.List* [line 51];
+_=*n$12:java.util.List*(root java.util.List) [line 51];
+n$14=_fun_Iterator List.iterator()(n$12:java.util.List*) interface virtual [line 51];
+*&amp;$bcvar7:java.util.Iterator*=n$14 [line 51];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:68 37 31 14 succs:18 exn:3 Instructions
+n$15=*&amp;$bcvar7:java.util.Iterator* [line 51];
+_=*n$15:java.util.Iterator*(root java.util.Iterator) [line 51];
+n$17=_fun_boolean Iterator.hasNext()(n$15:java.util.Iterator*) interface virtual [line 51];
+*&amp;$irvar2:_Bool=n$17 [line 51];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node18.html"><span class='visited with_tooltip'>J_18<span class='tooltip'>node18 preds:15 succs:16 17 exn: Join
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node16.html"><span class='visited with_tooltip'>C_16<span class='tooltip'>node16 preds:18 succs:19 exn:3 Conditional method_body
+n$18=*&amp;$irvar2:_Bool [line 51];
+PRUNE(!(n$18 == 0), true); [line 51];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:16 succs:20 exn:3 Instructions
+n$19=*&amp;$bcvar7:java.util.Iterator* [line 51];
+_=*n$19:java.util.Iterator*(root java.util.Iterator) [line 51];
+n$21=_fun_Object Iterator.next()(n$19:java.util.Iterator*) interface virtual [line 51];
+*&amp;$irvar3:java.lang.Object*=n$21 [line 51];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:3 Instructions
+n$22=*&amp;$irvar3:java.lang.Object* [line 51];
+n$23=_fun___cast(n$22:java.lang.Object*,sizeof(t=java.lang.String;sub_t=( sub )(cast)):void) [line 51];
+*&amp;xx:java.lang.String*=n$23 [line 51];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node17.html"><span class='visited with_tooltip'>C_17<span class='tooltip'>node17 preds:18 succs:69 exn:3 Conditional method_body
+n$18=*&amp;$irvar2:_Bool [line 51];
+PRUNE((n$18 == 0), false); [line 51];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE52">52</td><td class="line">			url = &quot;https://www.applysquare.com/zh-cn/institute/&quot;+xx.split(&quot;\t&quot;)[1]+&quot;/programs/&quot;; <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:22 exn:3 Instructions
+n$24=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 52];
+n$25=_fun_StringBuilder.&lt;init&gt;()(n$24:java.lang.StringBuilder*) [line 52];
+*&amp;$irvar4:java.lang.StringBuilder*=n$24 [line 52];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:3 Instructions
+n$26=*&amp;$irvar4:java.lang.StringBuilder* [line 52];
+_=*n$26:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 52];
+n$28=_fun_StringBuilder StringBuilder.append(String)(n$26:java.lang.StringBuilder*,"https://www.applysquare.com/zh-cn/institute/":java.lang.Object*) virtual [line 52];
+*&amp;$irvar5:java.lang.StringBuilder*=n$28 [line 52];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:3 Instructions
+n$29=*&amp;xx:java.lang.String* [line 52];
+_=*n$29:java.lang.String*(root java.lang.String) [line 52];
+n$31=_fun_String[] String.split(String)(n$29:java.lang.String*,"\\t":java.lang.Object*) virtual [line 52];
+*&amp;$irvar6:java.lang.String*[_*_](*)=n$31 [line 52];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:25 exn:3 Instructions
+n$32=*&amp;$irvar5:java.lang.StringBuilder* [line 52];
+_=*n$32:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 52];
+n$34=*&amp;$irvar6:java.lang.String*[_*_](*) [line 52];
+_=*n$34:java.lang.String*(root java.lang.String*[_*_]) [line 52];
+n$36=*n$34[1]:java.lang.String* [line 52];
+n$37=_fun_StringBuilder StringBuilder.append(String)(n$32:java.lang.StringBuilder*,n$36:java.lang.String*) virtual [line 52];
+*&amp;$irvar7:java.lang.StringBuilder*=n$37 [line 52];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:26 exn:3 Instructions
+n$38=*&amp;$irvar7:java.lang.StringBuilder* [line 52];
+_=*n$38:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 52];
+n$40=_fun_StringBuilder StringBuilder.append(String)(n$38:java.lang.StringBuilder*,"/programs/":java.lang.Object*) virtual [line 52];
+*&amp;$irvar8:java.lang.StringBuilder*=n$40 [line 52];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:25 succs:27 exn:3 Instructions
+n$41=*&amp;$irvar8:java.lang.StringBuilder* [line 52];
+_=*n$41:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 52];
+n$43=_fun_String StringBuilder.toString()(n$41:java.lang.StringBuilder*) virtual [line 52];
+*&amp;url:java.lang.String*=n$43 [line 52];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE53">53</td><td class="line">			try{ </td></tr>
+<tr><td class="num" id="LINE54">54</td><td class="line">				response = CrawlerUtil.httpsRequest(url); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:26 succs:28 exn:77 Instructions
+n$44=*&amp;url:java.lang.String* [line 54];
+n$45=_fun_String CrawlerUtil.httpsRequest(String)(n$44:java.lang.String*) [line 54];
+*&amp;response:java.lang.String*=n$45 [line 54];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE55">55</td><td class="line">				Document doc = Jsoup.parse(response); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:27 succs:29 exn:77 Instructions
+n$46=*&amp;response:java.lang.String* [line 55];
+n$47=_fun_Document Jsoup.parse(String)(n$46:java.lang.String*) [line 55];
+*&amp;doc:org.jsoup.nodes.Document*=n$47 [line 55];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE56">56</td><td class="line">				Elements eles = doc.getElementsByClass(&quot;box-content-flat&quot;); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:28 succs:30 exn:77 Instructions
+n$48=*&amp;doc:org.jsoup.nodes.Document* [line 56];
+_=*n$48:org.jsoup.nodes.Document*(root org.jsoup.nodes.Document) [line 56];
+n$50=_fun_Elements Element.getElementsByClass(String)(n$48:org.jsoup.nodes.Document*,"box-content-flat":java.lang.Object*) virtual [line 56];
+*&amp;eles:org.jsoup.select.Elements*=n$50 [line 56];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE57">57</td><td class="line">				if(eles.size() &lt; 1) <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:29 succs:33 exn:77 Instructions
+n$51=*&amp;eles:org.jsoup.select.Elements* [line 57];
+_=*n$51:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 57];
+n$53=_fun_int Elements.size()(n$51:org.jsoup.select.Elements*) virtual [line 57];
+*&amp;$irvar9:int=n$53 [line 57];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node33.html"><span class='visited with_tooltip'>J_33<span class='tooltip'>node33 preds:30 succs:31 32 exn: Join
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node31.html"><span class='visited with_tooltip'>C_31<span class='tooltip'>node31 preds:33 succs:15 exn:77 Conditional method_body
+n$54=*&amp;$irvar9:int [line 57];
+PRUNE(!(n$54  &gt;=  1), true); [line 57];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node32.html"><span class='visited with_tooltip'>C_32<span class='tooltip'>node32 preds:33 succs:34 exn:77 Conditional method_body
+n$54=*&amp;$irvar9:int [line 57];
+PRUNE((n$54  &gt;=  1), false); [line 57];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE58">58</td><td class="line">					continue; </td></tr>
+<tr><td class="num" id="LINE59">59</td><td class="line">				for(Element ele : eles){ <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds:32 succs:35 exn:80 Instructions
+n$55=*&amp;eles:org.jsoup.select.Elements* [line 59];
+_=*n$55:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 59];
+n$57=_fun_Iterator Elements.iterator()(n$55:org.jsoup.select.Elements*) virtual [line 59];
+*&amp;$bcvar11:java.util.Iterator*=n$57 [line 59];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node35.html"><span class='visited with_tooltip'>I_35<span class='tooltip'>node35 preds:67 53 47 34 succs:38 exn:80 Instructions
+n$58=*&amp;$bcvar11:java.util.Iterator* [line 59];
+_=*n$58:java.util.Iterator*(root java.util.Iterator) [line 59];
+n$60=_fun_boolean Iterator.hasNext()(n$58:java.util.Iterator*) interface virtual [line 59];
+*&amp;$irvar10:_Bool=n$60 [line 59];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node38.html"><span class='visited with_tooltip'>J_38<span class='tooltip'>node38 preds:35 succs:36 37 exn: Join
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node36.html"><span class='visited with_tooltip'>C_36<span class='tooltip'>node36 preds:38 succs:39 exn:80 Conditional method_body
+n$61=*&amp;$irvar10:_Bool [line 59];
+PRUNE(!(n$61 == 0), true); [line 59];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node39.html"><span class='visited with_tooltip'>I_39<span class='tooltip'>node39 preds:36 succs:40 exn:80 Instructions
+n$62=*&amp;$bcvar11:java.util.Iterator* [line 59];
+_=*n$62:java.util.Iterator*(root java.util.Iterator) [line 59];
+n$64=_fun_Object Iterator.next()(n$62:java.util.Iterator*) interface virtual [line 59];
+*&amp;$irvar11:java.lang.Object*=n$64 [line 59];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node40.html"><span class='visited with_tooltip'>I_40<span class='tooltip'>node40 preds:39 succs:41 exn:80 Instructions
+n$65=*&amp;$irvar11:java.lang.Object* [line 59];
+n$66=_fun___cast(n$65:java.lang.Object*,sizeof(t=org.jsoup.nodes.Element;sub_t=( sub )(cast)):void) [line 59];
+*&amp;ele:org.jsoup.nodes.Element*=n$66 [line 59];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node37.html"><span class='visited with_tooltip'>C_37<span class='tooltip'>node37 preds:38 succs:15 exn:80 Conditional method_body
+n$61=*&amp;$irvar10:_Bool [line 59];
+PRUNE((n$61 == 0), false); [line 59];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE60">60</td><td class="line">					try{ </td></tr>
+<tr><td class="num" id="LINE61">61</td><td class="line">						//判断年份 </td></tr>
+<tr><td class="num" id="LINE62">62</td><td class="line">						String year = ele.getElementsByTag(&quot;h2&quot;).get(0).text().substring(0, 4); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node41.html"><span class='visited with_tooltip'>I_41<span class='tooltip'>node41 preds:40 succs:42 exn:74 Instructions
+n$67=*&amp;ele:org.jsoup.nodes.Element* [line 62];
+_=*n$67:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 62];
+n$69=_fun_Elements Element.getElementsByTag(String)(n$67:org.jsoup.nodes.Element*,"h2":java.lang.Object*) virtual [line 62];
+*&amp;$irvar12:org.jsoup.select.Elements*=n$69 [line 62];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node42.html"><span class='visited with_tooltip'>I_42<span class='tooltip'>node42 preds:41 succs:43 exn:74 Instructions
+n$70=*&amp;$irvar12:org.jsoup.select.Elements* [line 62];
+_=*n$70:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 62];
+n$72=_fun_Element Elements.get(int)(n$70:org.jsoup.select.Elements*,0:int) virtual [line 62];
+*&amp;$irvar13:org.jsoup.nodes.Element*=n$72 [line 62];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node43.html"><span class='visited with_tooltip'>I_43<span class='tooltip'>node43 preds:42 succs:44 exn:74 Instructions
+n$73=*&amp;$irvar13:org.jsoup.nodes.Element* [line 62];
+_=*n$73:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 62];
+n$75=_fun_String Element.text()(n$73:org.jsoup.nodes.Element*) virtual [line 62];
+*&amp;$irvar14:java.lang.String*=n$75 [line 62];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node44.html"><span class='visited with_tooltip'>I_44<span class='tooltip'>node44 preds:43 succs:45 exn:74 Instructions
+n$76=*&amp;$irvar14:java.lang.String* [line 62];
+_=*n$76:java.lang.String*(root java.lang.String) [line 62];
+n$78=_fun_String String.substring(int,int)(n$76:java.lang.String*,0:int,4:int) virtual [line 62];
+*&amp;year:java.lang.String*=n$78 [line 62];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE63">63</td><td class="line">						if(year.equals(&quot;2016&quot;)){ <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node45.html"><span class='visited with_tooltip'>I_45<span class='tooltip'>node45 preds:44 succs:48 exn:74 Instructions
+n$79=*&amp;year:java.lang.String* [line 63];
+_=*n$79:java.lang.String*(root java.lang.String) [line 63];
+n$81=_fun_boolean String.equals(Object)(n$79:java.lang.String*,"2016":java.lang.Object*) virtual [line 63];
+*&amp;$irvar15:_Bool=n$81 [line 63];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node48.html"><span class='visited with_tooltip'>J_48<span class='tooltip'>node48 preds:45 succs:46 47 exn: Join
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node46.html"><span class='visited with_tooltip'>C_46<span class='tooltip'>node46 preds:48 succs:49 exn:74 Conditional method_body
+n$82=*&amp;$irvar15:_Bool [line 63];
+PRUNE(!(n$82 == 0), true); [line 63];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node47.html"><span class='visited with_tooltip'>C_47<span class='tooltip'>node47 preds:48 succs:35 exn:74 Conditional method_body
+n$82=*&amp;$irvar15:_Bool [line 63];
+PRUNE((n$82 == 0), false); [line 63];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE64">64</td><td class="line">							Elements hrefs = ele.getElementsByTag(&quot;a&quot;); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node49.html"><span class='visited with_tooltip'>I_49<span class='tooltip'>node49 preds:46 succs:50 exn:74 Instructions
+n$83=*&amp;ele:org.jsoup.nodes.Element* [line 64];
+_=*n$83:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 64];
+n$85=_fun_Elements Element.getElementsByTag(String)(n$83:org.jsoup.nodes.Element*,"a":java.lang.Object*) virtual [line 64];
+*&amp;hrefs:org.jsoup.select.Elements*=n$85 [line 64];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE65">65</td><td class="line">							for(Element href : hrefs){ <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node50.html"><span class='visited with_tooltip'>I_50<span class='tooltip'>node50 preds:49 succs:51 exn:74 Instructions
+n$86=*&amp;hrefs:org.jsoup.select.Elements* [line 65];
+_=*n$86:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 65];
+n$88=_fun_Iterator Elements.iterator()(n$86:org.jsoup.select.Elements*) virtual [line 65];
+*&amp;$bcvar15:java.util.Iterator*=n$88 [line 65];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node51.html"><span class='visited with_tooltip'>I_51<span class='tooltip'>node51 preds:65 60 50 succs:54 exn:74 Instructions
+n$89=*&amp;$bcvar15:java.util.Iterator* [line 65];
+_=*n$89:java.util.Iterator*(root java.util.Iterator) [line 65];
+n$91=_fun_boolean Iterator.hasNext()(n$89:java.util.Iterator*) interface virtual [line 65];
+*&amp;$irvar16:_Bool=n$91 [line 65];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node54.html"><span class='visited with_tooltip'>J_54<span class='tooltip'>node54 preds:51 succs:52 53 exn: Join
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node52.html"><span class='visited with_tooltip'>C_52<span class='tooltip'>node52 preds:54 succs:55 exn:74 Conditional method_body
+n$92=*&amp;$irvar16:_Bool [line 65];
+PRUNE(!(n$92 == 0), true); [line 65];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node55.html"><span class='visited with_tooltip'>I_55<span class='tooltip'>node55 preds:52 succs:56 exn:74 Instructions
+n$93=*&amp;$bcvar15:java.util.Iterator* [line 65];
+_=*n$93:java.util.Iterator*(root java.util.Iterator) [line 65];
+n$95=_fun_Object Iterator.next()(n$93:java.util.Iterator*) interface virtual [line 65];
+*&amp;$irvar17:java.lang.Object*=n$95 [line 65];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node56.html"><span class='visited with_tooltip'>I_56<span class='tooltip'>node56 preds:55 succs:57 exn:74 Instructions
+n$96=*&amp;$irvar17:java.lang.Object* [line 65];
+n$97=_fun___cast(n$96:java.lang.Object*,sizeof(t=org.jsoup.nodes.Element;sub_t=( sub )(cast)):void) [line 65];
+*&amp;href:org.jsoup.nodes.Element*=n$97 [line 65];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node53.html"><span class='visited with_tooltip'>C_53<span class='tooltip'>node53 preds:54 succs:35 exn:74 Conditional method_body
+n$92=*&amp;$irvar16:_Bool [line 65];
+PRUNE((n$92 == 0), false); [line 65];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE66">66</td><td class="line">								link = href.attr(&quot;href&quot;); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node57.html"><span class='visited with_tooltip'>I_57<span class='tooltip'>node57 preds:56 succs:58 exn:74 Instructions
+n$98=*&amp;href:org.jsoup.nodes.Element* [line 66];
+_=*n$98:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 66];
+n$100=_fun_String Node.attr(String)(n$98:org.jsoup.nodes.Element*,"href":java.lang.Object*) virtual [line 66];
+*&amp;link:java.lang.String*=n$100 [line 66];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE67">67</td><td class="line">								if(link.indexOf(&quot;zh-cn/program&quot;) != -1) <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node58.html"><span class='visited with_tooltip'>I_58<span class='tooltip'>node58 preds:57 succs:61 exn:74 Instructions
+n$101=*&amp;link:java.lang.String* [line 67];
+_=*n$101:java.lang.String*(root java.lang.String) [line 67];
+n$103=_fun_int String.indexOf(String)(n$101:java.lang.String*,"zh-cn/program":java.lang.Object*) virtual [line 67];
+*&amp;$irvar18:int=n$103 [line 67];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node61.html"><span class='visited with_tooltip'>J_61<span class='tooltip'>node61 preds:58 succs:59 60 exn: Join
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node59.html"><span class='visited with_tooltip'>C_59<span class='tooltip'>node59 preds:61 succs:62 exn:74 Conditional method_body
+n$104=*&amp;$irvar18:int [line 67];
+PRUNE(!(n$104 == -1), true); [line 67];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node60.html"><span class='visited with_tooltip'>C_60<span class='tooltip'>node60 preds:61 succs:51 exn:74 Conditional method_body
+n$104=*&amp;$irvar18:int [line 67];
+PRUNE((n$104 == -1), false); [line 67];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE68">68</td><td class="line">									System.out.println(href.parent().text()); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node62.html"><span class='visited with_tooltip'>I_62<span class='tooltip'>node62 preds:59 succs:63 exn:74 Instructions
+n$105=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 68];
+*&amp;$irvar20:java.io.PrintStream*=n$105 [line 68];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node63.html"><span class='visited with_tooltip'>I_63<span class='tooltip'>node63 preds:62 succs:64 exn:74 Instructions
+n$106=*&amp;href:org.jsoup.nodes.Element* [line 68];
+_=*n$106:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 68];
+n$108=_fun_Element Element.parent()(n$106:org.jsoup.nodes.Element*) virtual [line 68];
+*&amp;$irvar19:org.jsoup.nodes.Element*=n$108 [line 68];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node64.html"><span class='visited with_tooltip'>I_64<span class='tooltip'>node64 preds:63 succs:65 exn:74 Instructions
+n$109=*&amp;$irvar19:org.jsoup.nodes.Element* [line 68];
+_=*n$109:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 68];
+n$111=_fun_String Element.text()(n$109:org.jsoup.nodes.Element*) virtual [line 68];
+*&amp;$irvar21:java.lang.String*=n$111 [line 68];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node65.html"><span class='visited with_tooltip'>I_65<span class='tooltip'>node65 preds:64 succs:51 exn:74 Instructions
+n$112=*&amp;$irvar20:java.io.PrintStream* [line 68];
+_=*n$112:java.io.PrintStream*(root java.io.PrintStream) [line 68];
+n$114=*&amp;$irvar21:java.lang.String* [line 68];
+n$115=_fun_void PrintStream.println(String)(n$112:java.io.PrintStream*,n$114:java.lang.String*) virtual [line 68];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE69">69</td><td class="line">									//ress.add(link+&quot;\t&quot;+); </td></tr>
+<tr><td class="num" id="LINE70">70</td><td class="line">							} </td></tr>
+<tr><td class="num" id="LINE71">71</td><td class="line">						}else </td></tr>
+<tr><td class="num" id="LINE72">72</td><td class="line">							continue; </td></tr>
+<tr><td class="num" id="LINE73">73</td><td class="line">					}catch(Exception e){ <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node66.html"><span class='visited with_tooltip'>I_66<span class='tooltip'>node66 preds:72 succs:67 exn:80 Instructions
+n$116=*&amp;CatchVar283:java.lang.Object* [line 73];
+*&amp;e:java.lang.Object*=n$116 [line 73];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node72.html"><span class='visited with_tooltip'>C_72<span class='tooltip'>node72 preds:74 succs:66 exn:3 Conditional exception handler
+n$124=_fun___instanceof(n$122:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 73];
+PRUNE(n$124, true); [line 73];
+*&amp;CatchVar283:void=n$122 [line 73];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node73.html"><span class='visited with_tooltip'>C_73<span class='tooltip'>node73 preds:74 succs:70 71 exn:3 Conditional exception handler
+n$124=_fun___instanceof(n$122:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 73];
+PRUNE(!n$124, false); [line 73];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node74.html"><span class='visited with_tooltip'>I_74<span class='tooltip'>node74 preds: succs:72 73 exn:3 Instructions
+n$121=*&amp;return:void [line 73];
+*&amp;return:void=null [line 73];
+n$122=_fun___unwrap_exception(n$121:void) [line 73];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE74">74</td><td class="line">						log.error(&quot;something is wrong . . . &quot;); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node67.html"><span class='visited with_tooltip'>I_67<span class='tooltip'>node67 preds:66 succs:35 exn:80 Instructions
+n$117=*&amp;#GB<>$com.dulishuo.shenqingfang.pgmGet.log:org.apache.log4j.Logger*(root com.dulishuo.shenqingfang.pgmGet) [line 74];
+_=*n$117:org.apache.log4j.Logger*(root org.apache.log4j.Logger) [line 74];
+n$119=_fun_void Category.error(Object)(n$117:org.apache.log4j.Logger*,"something is wrong . . . ":java.lang.Object*) virtual [line 74];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE75">75</td><td class="line">					} </td></tr>
+<tr><td class="num" id="LINE76">76</td><td class="line">					 </td></tr>
+<tr><td class="num" id="LINE77">77</td><td class="line">				} </td></tr>
+<tr><td class="num" id="LINE78">78</td><td class="line">			}catch(Exception e){ <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node68.html"><span class='visited with_tooltip'>I_68<span class='tooltip'>node68 preds:78 75 70 succs:15 exn:3 Instructions
+n$120=*&amp;CatchVar299:java.lang.Object* [line 78];
+*&amp;$bcvar9:java.lang.Object*=n$120 [line 78];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node70.html"><span class='visited with_tooltip'>C_70<span class='tooltip'>node70 preds:73 succs:68 exn:3 Conditional exception handler
+n$123=_fun___instanceof(n$122:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 78];
+PRUNE(n$123, true); [line 78];
+*&amp;CatchVar299:void=n$122 [line 78];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node71.html"><span class='visited with_tooltip'>C_71<span class='tooltip'>node71 preds:73 succs:3 exn:3 Conditional exception handler
+n$123=_fun___instanceof(n$122:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 78];
+PRUNE(!n$123, false); [line 78];
+*&amp;return:void=EXN n$122 [line 78];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node75.html"><span class='visited with_tooltip'>C_75<span class='tooltip'>node75 preds:77 succs:68 exn:3 Conditional exception handler
+n$125=_fun___instanceof(n$122:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 78];
+PRUNE(n$125, true); [line 78];
+*&amp;CatchVar299:void=n$122 [line 78];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node76.html"><span class='visited with_tooltip'>C_76<span class='tooltip'>node76 preds:77 succs:3 exn:3 Conditional exception handler
+n$125=_fun___instanceof(n$122:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 78];
+PRUNE(!n$125, false); [line 78];
+*&amp;return:void=EXN n$122 [line 78];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node77.html"><span class='visited with_tooltip'>I_77<span class='tooltip'>node77 preds: succs:75 76 exn:3 Instructions
+n$121=*&amp;return:void [line 78];
+*&amp;return:void=null [line 78];
+n$122=_fun___unwrap_exception(n$121:void) [line 78];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node78.html"><span class='visited with_tooltip'>C_78<span class='tooltip'>node78 preds:80 succs:68 exn:3 Conditional exception handler
+n$126=_fun___instanceof(n$122:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 78];
+PRUNE(n$126, true); [line 78];
+*&amp;CatchVar299:void=n$122 [line 78];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node79.html"><span class='visited with_tooltip'>C_79<span class='tooltip'>node79 preds:80 succs:3 exn:3 Conditional exception handler
+n$126=_fun___instanceof(n$122:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 78];
+PRUNE(!n$126, false); [line 78];
+*&amp;return:void=EXN n$122 [line 78];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node80.html"><span class='visited with_tooltip'>I_80<span class='tooltip'>node80 preds: succs:78 79 exn:3 Instructions
+n$121=*&amp;return:void [line 78];
+*&amp;return:void=null [line 78];
+n$122=_fun___unwrap_exception(n$121:void) [line 78];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE79">79</td><td class="line">				 </td></tr>
+<tr><td class="num" id="LINE80">80</td><td class="line">			} </td></tr>
+<tr><td class="num" id="LINE81">81</td><td class="line">		} </td></tr>
+<tr><td class="num" id="LINE82">82</td><td class="line">	} <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node69.html"><span class='visited with_tooltip'>I_69<span class='tooltip'>node69 preds:17 succs:2 exn:3 Instructions
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:69 3 succs: exn: Exit
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.test%28%29%3Avoid.bab3359b21c438870ae4c8105007fd59_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:79 76 71 succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE83">83</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE84">84</td><td class="line">	private static void getPgmUrl() { <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8.html">summary for void pgmGet.getPgmUrl()</a></td></tr>
+<tr><td class="num" id="LINE85">85</td><td class="line">		// TODO Auto-generated method stub </td></tr>
+<tr><td class="num" id="LINE86">86</td><td class="line">		String filePath = &quot;sch.txt&quot;; <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+*&amp;filePath:java.lang.Object*="sch.txt" [line 86];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE87">87</td><td class="line">		List&lt;String&gt; urlList =  FileUtil.FileToList(filePath); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$0=*&amp;filePath:java.lang.Object* [line 87];
+n$1=_fun_List FileUtil.FileToList(String)(n$0:java.lang.Object*) [line 87];
+*&amp;urlList:java.util.List*=n$1 [line 87];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE88">88</td><td class="line">		List&lt;String&gt; fail = new ArrayList&lt;String&gt;(); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$2=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 88];
+n$3=_fun_ArrayList.&lt;init&gt;()(n$2:java.util.ArrayList*) [line 88];
+*&amp;fail:java.util.ArrayList*=n$2 [line 88];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE89">89</td><td class="line">		List&lt;String&gt; urlResult = new ArrayList&lt;String&gt;(); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$4=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 89];
+n$5=_fun_ArrayList.&lt;init&gt;()(n$4:java.util.ArrayList*) [line 89];
+*&amp;urlResult:java.util.ArrayList*=n$4 [line 89];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE90">90</td><td class="line">		List&lt;String&gt; result = new ArrayList&lt;String&gt;(); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$6=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 90];
+n$7=_fun_ArrayList.&lt;init&gt;()(n$6:java.util.ArrayList*) [line 90];
+*&amp;result:java.util.ArrayList*=n$6 [line 90];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE91">91</td><td class="line">		String url =&quot;&quot;; <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+*&amp;url:java.lang.Object*="" [line 91];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE92">92</td><td class="line">		String response = &quot;&quot;; <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+*&amp;response:java.lang.Object*="" [line 92];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE93">93</td><td class="line">		int flag = 0; <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+*&amp;flag:int=0 [line 93];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE94">94</td><td class="line">		for(String xx : urlList){ <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$8=*&amp;urlList:java.util.List* [line 94];
+_=*n$8:java.util.List*(root java.util.List) [line 94];
+n$10=_fun_Iterator List.iterator()(n$8:java.util.List*) interface virtual [line 94];
+*&amp;$bcvar8:java.util.Iterator*=n$10 [line 94];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:44 42 12 succs:16 exn:3 Instructions
+n$11=*&amp;$bcvar8:java.util.Iterator* [line 94];
+_=*n$11:java.util.Iterator*(root java.util.Iterator) [line 94];
+n$13=_fun_boolean Iterator.hasNext()(n$11:java.util.Iterator*) interface virtual [line 94];
+*&amp;$irvar0:_Bool=n$13 [line 94];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node16.html"><span class='visited with_tooltip'>J_16<span class='tooltip'>node16 preds:13 succs:14 15 exn: Join
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node14.html"><span class='visited with_tooltip'>C_14<span class='tooltip'>node14 preds:16 succs:17 exn:3 Conditional method_body
+n$14=*&amp;$irvar0:_Bool [line 94];
+PRUNE(!(n$14 == 0), true); [line 94];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:14 succs:18 exn:3 Instructions
+n$15=*&amp;$bcvar8:java.util.Iterator* [line 94];
+_=*n$15:java.util.Iterator*(root java.util.Iterator) [line 94];
+n$17=_fun_Object Iterator.next()(n$15:java.util.Iterator*) interface virtual [line 94];
+*&amp;$irvar1:java.lang.Object*=n$17 [line 94];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 exn:3 Instructions
+n$18=*&amp;$irvar1:java.lang.Object* [line 94];
+n$19=_fun___cast(n$18:java.lang.Object*,sizeof(t=java.lang.String;sub_t=( sub )(cast)):void) [line 94];
+*&amp;xx:java.lang.String*=n$19 [line 94];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node15.html"><span class='visited with_tooltip'>C_15<span class='tooltip'>node15 preds:16 succs:45 exn:3 Conditional method_body
+n$14=*&amp;$irvar0:_Bool [line 94];
+PRUNE((n$14 == 0), false); [line 94];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE95">95</td><td class="line">			log.info(&quot;url抓取执行到 &quot; + flag++ +&quot; 个 . &quot;); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:20 exn:3 Instructions
+n$20=*&amp;#GB<>$com.dulishuo.shenqingfang.pgmGet.log:org.apache.log4j.Logger*(root com.dulishuo.shenqingfang.pgmGet) [line 95];
+*&amp;$irvar2:org.apache.log4j.Logger*=n$20 [line 95];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:3 Instructions
+n$21=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 95];
+n$22=_fun_StringBuilder.&lt;init&gt;()(n$21:java.lang.StringBuilder*) [line 95];
+*&amp;$irvar3:java.lang.StringBuilder*=n$21 [line 95];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:22 exn:3 Instructions
+n$23=*&amp;$irvar3:java.lang.StringBuilder* [line 95];
+_=*n$23:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 95];
+n$25=_fun_StringBuilder StringBuilder.append(String)(n$23:java.lang.StringBuilder*,"url\\230\\138\\147\\229\\143\\150\\230\\137\\167\\232\\161\\140\\229\\136\\176 ":java.lang.Object*) virtual [line 95];
+*&amp;$irvar4:java.lang.StringBuilder*=n$25 [line 95];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:3 Instructions
+n$26=*&amp;flag:int [line 95];
+*&amp;$irvar5:int=n$26 [line 95];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:3 Instructions
+n$27=*&amp;flag:int [line 95];
+*&amp;flag:int=(n$27 + 1) [line 95];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:25 exn:3 Instructions
+n$28=*&amp;$irvar4:java.lang.StringBuilder* [line 95];
+_=*n$28:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 95];
+n$30=*&amp;$irvar5:int [line 95];
+n$31=_fun_StringBuilder StringBuilder.append(int)(n$28:java.lang.StringBuilder*,n$30:int) virtual [line 95];
+*&amp;$irvar6:java.lang.StringBuilder*=n$31 [line 95];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:26 exn:3 Instructions
+n$32=*&amp;$irvar6:java.lang.StringBuilder* [line 95];
+_=*n$32:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 95];
+n$34=_fun_StringBuilder StringBuilder.append(String)(n$32:java.lang.StringBuilder*," \\228\\184\\170 . ":java.lang.Object*) virtual [line 95];
+*&amp;$irvar7:java.lang.StringBuilder*=n$34 [line 95];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:25 succs:27 exn:3 Instructions
+n$35=*&amp;$irvar7:java.lang.StringBuilder* [line 95];
+_=*n$35:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 95];
+n$37=_fun_String StringBuilder.toString()(n$35:java.lang.StringBuilder*) virtual [line 95];
+*&amp;$irvar8:java.lang.String*=n$37 [line 95];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:26 succs:28 exn:3 Instructions
+n$38=*&amp;$irvar2:org.apache.log4j.Logger* [line 95];
+_=*n$38:org.apache.log4j.Logger*(root org.apache.log4j.Logger) [line 95];
+n$40=*&amp;$irvar8:java.lang.String* [line 95];
+n$41=_fun_void Category.info(Object)(n$38:org.apache.log4j.Logger*,n$40:java.lang.String*) virtual [line 95];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE96">96</td><td class="line">			//每次调用沉睡100ms </td></tr>
+<tr><td class="num" id="LINE97">97</td><td class="line">			try { </td></tr>
+<tr><td class="num" id="LINE98">98</td><td class="line">				Thread.currentThread().sleep(100); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:27 succs:29 exn:113 Instructions
+n$42=_fun_Thread Thread.currentThread()() [line 98];
+*&amp;$irvar9:java.lang.Thread*=n$42 [line 98];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:28 succs:32 exn:113 Instructions
+n$43=_fun_void Thread.sleep(long)(100:long) [line 98];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE99">99</td><td class="line">			} catch (InterruptedException e1) { <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:111 succs:31 exn:3 Instructions
+n$44=*&amp;CatchVar121:java.lang.Object* [line 99];
+*&amp;e1:java.lang.Object*=n$44 [line 99];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node111.html"><span class='visited with_tooltip'>C_111<span class='tooltip'>node111 preds:113 succs:30 exn:3 Conditional exception handler
+n$229=_fun___instanceof(n$225:java.lang.InterruptedException*,sizeof(t=java.lang.InterruptedException):void) [line 99];
+PRUNE(n$229, true); [line 99];
+*&amp;CatchVar121:void=n$225 [line 99];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node112.html"><span class='visited with_tooltip'>C_112<span class='tooltip'>node112 preds:113 succs:3 exn:3 Conditional exception handler
+n$229=_fun___instanceof(n$225:java.lang.InterruptedException*,sizeof(t=java.lang.InterruptedException):void) [line 99];
+PRUNE(!n$229, false); [line 99];
+*&amp;return:void=EXN n$225 [line 99];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node113.html"><span class='visited with_tooltip'>I_113<span class='tooltip'>node113 preds: succs:111 112 exn:3 Instructions
+n$224=*&amp;return:void [line 99];
+*&amp;return:void=null [line 99];
+n$225=_fun___unwrap_exception(n$224:void) [line 99];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE100">100</td><td class="line">				// TODO Auto-generated catch block </td></tr>
+<tr><td class="num" id="LINE101">101</td><td class="line">				e1.printStackTrace(); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds:30 succs:32 exn:3 Instructions
+n$45=*&amp;e1:java.lang.Object* [line 101];
+_=*n$45:java.lang.Object*(root java.lang.Object) [line 101];
+n$47=_fun_void Throwable.printStackTrace()(n$45:java.lang.Object*) virtual [line 101];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE102">102</td><td class="line">			} </td></tr>
+<tr><td class="num" id="LINE103">103</td><td class="line">			url = &quot;https://www.applysquare.com/zh-cn/institute/&quot;+xx.split(&quot;\t&quot;)[1]+&quot;/programs/&quot;; <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node32.html"><span class='visited with_tooltip'>I_32<span class='tooltip'>node32 preds:31 29 succs:33 exn:3 Instructions
+n$48=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 103];
+n$49=_fun_StringBuilder.&lt;init&gt;()(n$48:java.lang.StringBuilder*) [line 103];
+*&amp;$irvar10:java.lang.StringBuilder*=n$48 [line 103];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds:32 succs:34 exn:3 Instructions
+n$50=*&amp;$irvar10:java.lang.StringBuilder* [line 103];
+_=*n$50:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 103];
+n$52=_fun_StringBuilder StringBuilder.append(String)(n$50:java.lang.StringBuilder*,"https://www.applysquare.com/zh-cn/institute/":java.lang.Object*) virtual [line 103];
+*&amp;$irvar11:java.lang.StringBuilder*=n$52 [line 103];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds:33 succs:35 exn:3 Instructions
+n$53=*&amp;xx:java.lang.String* [line 103];
+_=*n$53:java.lang.String*(root java.lang.String) [line 103];
+n$55=_fun_String[] String.split(String)(n$53:java.lang.String*,"\\t":java.lang.Object*) virtual [line 103];
+*&amp;$irvar12:java.lang.String*[_*_](*)=n$55 [line 103];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node35.html"><span class='visited with_tooltip'>I_35<span class='tooltip'>node35 preds:34 succs:36 exn:3 Instructions
+n$56=*&amp;$irvar11:java.lang.StringBuilder* [line 103];
+_=*n$56:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 103];
+n$58=*&amp;$irvar12:java.lang.String*[_*_](*) [line 103];
+_=*n$58:java.lang.String*(root java.lang.String*[_*_]) [line 103];
+n$60=*n$58[1]:java.lang.String* [line 103];
+n$61=_fun_StringBuilder StringBuilder.append(String)(n$56:java.lang.StringBuilder*,n$60:java.lang.String*) virtual [line 103];
+*&amp;$irvar13:java.lang.StringBuilder*=n$61 [line 103];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node36.html"><span class='visited with_tooltip'>I_36<span class='tooltip'>node36 preds:35 succs:37 exn:3 Instructions
+n$62=*&amp;$irvar13:java.lang.StringBuilder* [line 103];
+_=*n$62:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 103];
+n$64=_fun_StringBuilder StringBuilder.append(String)(n$62:java.lang.StringBuilder*,"/programs/":java.lang.Object*) virtual [line 103];
+*&amp;$irvar14:java.lang.StringBuilder*=n$64 [line 103];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node37.html"><span class='visited with_tooltip'>I_37<span class='tooltip'>node37 preds:36 succs:38 exn:3 Instructions
+n$65=*&amp;$irvar14:java.lang.StringBuilder* [line 103];
+_=*n$65:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 103];
+n$67=_fun_String StringBuilder.toString()(n$65:java.lang.StringBuilder*) virtual [line 103];
+*&amp;url:java.lang.String*=n$67 [line 103];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE104">104</td><td class="line">			try{ </td></tr>
+<tr><td class="num" id="LINE105">105</td><td class="line">				response = CrawlerUtil.httpsRequest(url); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node38.html"><span class='visited with_tooltip'>I_38<span class='tooltip'>node38 preds:37 succs:39 exn:104 Instructions
+n$68=*&amp;url:java.lang.String* [line 105];
+n$69=_fun_String CrawlerUtil.httpsRequest(String)(n$68:java.lang.String*) [line 105];
+*&amp;response:java.lang.String*=n$69 [line 105];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE106">106</td><td class="line">				urlResult.addAll(process1(response,xx.split(&quot;\t&quot;)[0])); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node39.html"><span class='visited with_tooltip'>I_39<span class='tooltip'>node39 preds:38 succs:40 exn:104 Instructions
+n$70=*&amp;xx:java.lang.String* [line 106];
+_=*n$70:java.lang.String*(root java.lang.String) [line 106];
+n$72=_fun_String[] String.split(String)(n$70:java.lang.String*,"\\t":java.lang.Object*) virtual [line 106];
+*&amp;$irvar15:java.lang.String*[_*_](*)=n$72 [line 106];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node40.html"><span class='visited with_tooltip'>I_40<span class='tooltip'>node40 preds:39 succs:41 exn:104 Instructions
+n$73=*&amp;$irvar15:java.lang.String*[_*_](*) [line 106];
+_=*n$73:java.lang.String*(root java.lang.String*[_*_]) [line 106];
+n$75=*n$73[0]:java.lang.String* [line 106];
+*&amp;$irvar16:java.lang.String*=n$75 [line 106];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node41.html"><span class='visited with_tooltip'>I_41<span class='tooltip'>node41 preds:40 succs:42 exn:104 Instructions
+n$76=*&amp;response:java.lang.String* [line 106];
+n$77=*&amp;$irvar16:java.lang.String* [line 106];
+n$78=_fun_List pgmGet.process1(String,String)(n$76:java.lang.String*,n$77:java.lang.String*) [line 106];
+*&amp;$irvar17:java.util.List*=n$78 [line 106];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node42.html"><span class='visited with_tooltip'>I_42<span class='tooltip'>node42 preds:41 succs:13 exn:104 Instructions
+n$79=*&amp;urlResult:java.util.ArrayList* [line 106];
+_=*n$79:java.util.ArrayList*(root java.util.ArrayList) [line 106];
+n$81=*&amp;$irvar17:java.util.List* [line 106];
+n$82=_fun_boolean ArrayList.addAll(Collection)(n$79:java.util.ArrayList*,n$81:java.util.List*) interface virtual [line 106];
+*&amp;$irvar18:_Bool=n$82 [line 106];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE107">107</td><td class="line">			}catch(Exception e){ <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node43.html"><span class='visited with_tooltip'>I_43<span class='tooltip'>node43 preds:102 succs:44 exn:3 Instructions
+n$83=*&amp;CatchVar193:java.lang.Object* [line 107];
+*&amp;e:java.lang.Object*=n$83 [line 107];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node102.html"><span class='visited with_tooltip'>C_102<span class='tooltip'>node102 preds:104 succs:43 exn:3 Conditional exception handler
+n$226=_fun___instanceof(n$225:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 107];
+PRUNE(n$226, true); [line 107];
+*&amp;CatchVar193:void=n$225 [line 107];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node103.html"><span class='visited with_tooltip'>C_103<span class='tooltip'>node103 preds:104 succs:3 exn:3 Conditional exception handler
+n$226=_fun___instanceof(n$225:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 107];
+PRUNE(!n$226, false); [line 107];
+*&amp;return:void=EXN n$225 [line 107];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node104.html"><span class='visited with_tooltip'>I_104<span class='tooltip'>node104 preds: succs:102 103 exn:3 Instructions
+n$224=*&amp;return:void [line 107];
+*&amp;return:void=null [line 107];
+n$225=_fun___unwrap_exception(n$224:void) [line 107];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE108">108</td><td class="line">				fail.add(xx); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node44.html"><span class='visited with_tooltip'>I_44<span class='tooltip'>node44 preds:43 succs:13 exn:3 Instructions
+n$84=*&amp;fail:java.util.ArrayList* [line 108];
+_=*n$84:java.util.ArrayList*(root java.util.ArrayList) [line 108];
+n$86=*&amp;xx:java.lang.String* [line 108];
+n$87=_fun_boolean ArrayList.add(Object)(n$84:java.util.ArrayList*,n$86:java.lang.String*) interface virtual [line 108];
+*&amp;$irvar19:_Bool=n$87 [line 108];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE109">109</td><td class="line">			} </td></tr>
+<tr><td class="num" id="LINE110">110</td><td class="line">		} </td></tr>
+<tr><td class="num" id="LINE111">111</td><td class="line">		FileUtil.ListToFile(urlResult, &quot;result/urls.txt&quot;); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node45.html"><span class='visited with_tooltip'>I_45<span class='tooltip'>node45 preds:15 succs:46 exn:3 Instructions
+n$88=*&amp;urlResult:java.util.ArrayList* [line 111];
+n$89=_fun_void FileUtil.ListToFile(List,String)(n$88:java.util.ArrayList*,"result/urls.txt":java.lang.Object*) [line 111];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE112">112</td><td class="line">		log.info(&quot;抓取programd的url地址完毕 ,一共 &quot;+urlResult.size()+&quot; 个 。&quot;); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node46.html"><span class='visited with_tooltip'>I_46<span class='tooltip'>node46 preds:45 succs:47 exn:3 Instructions
+n$90=*&amp;#GB<>$com.dulishuo.shenqingfang.pgmGet.log:org.apache.log4j.Logger*(root com.dulishuo.shenqingfang.pgmGet) [line 112];
+*&amp;$irvar20:org.apache.log4j.Logger*=n$90 [line 112];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node47.html"><span class='visited with_tooltip'>I_47<span class='tooltip'>node47 preds:46 succs:48 exn:3 Instructions
+n$91=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 112];
+n$92=_fun_StringBuilder.&lt;init&gt;()(n$91:java.lang.StringBuilder*) [line 112];
+*&amp;$irvar21:java.lang.StringBuilder*=n$91 [line 112];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node48.html"><span class='visited with_tooltip'>I_48<span class='tooltip'>node48 preds:47 succs:49 exn:3 Instructions
+n$93=*&amp;$irvar21:java.lang.StringBuilder* [line 112];
+_=*n$93:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 112];
+n$95=_fun_StringBuilder StringBuilder.append(String)(n$93:java.lang.StringBuilder*,"\\230\\138\\147\\229\\143\\150programd\\231\\154\\132url\\229\\156\\176\\229\\157\\128\\229\\174\\140\\230\\175\\149 ,\\228\\184\\128\\229\\133\\177 ":java.lang.Object*) virtual [line 112];
+*&amp;$irvar22:java.lang.StringBuilder*=n$95 [line 112];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node49.html"><span class='visited with_tooltip'>I_49<span class='tooltip'>node49 preds:48 succs:50 exn:3 Instructions
+n$96=*&amp;urlResult:java.util.ArrayList* [line 112];
+_=*n$96:java.util.ArrayList*(root java.util.ArrayList) [line 112];
+n$98=_fun_int ArrayList.size()(n$96:java.util.ArrayList*) interface virtual [line 112];
+*&amp;$irvar23:int=n$98 [line 112];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node50.html"><span class='visited with_tooltip'>I_50<span class='tooltip'>node50 preds:49 succs:51 exn:3 Instructions
+n$99=*&amp;$irvar22:java.lang.StringBuilder* [line 112];
+_=*n$99:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 112];
+n$101=*&amp;$irvar23:int [line 112];
+n$102=_fun_StringBuilder StringBuilder.append(int)(n$99:java.lang.StringBuilder*,n$101:int) virtual [line 112];
+*&amp;$irvar24:java.lang.StringBuilder*=n$102 [line 112];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node51.html"><span class='visited with_tooltip'>I_51<span class='tooltip'>node51 preds:50 succs:52 exn:3 Instructions
+n$103=*&amp;$irvar24:java.lang.StringBuilder* [line 112];
+_=*n$103:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 112];
+n$105=_fun_StringBuilder StringBuilder.append(String)(n$103:java.lang.StringBuilder*," \\228\\184\\170 \\227\\128\\130":java.lang.Object*) virtual [line 112];
+*&amp;$irvar25:java.lang.StringBuilder*=n$105 [line 112];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node52.html"><span class='visited with_tooltip'>I_52<span class='tooltip'>node52 preds:51 succs:53 exn:3 Instructions
+n$106=*&amp;$irvar25:java.lang.StringBuilder* [line 112];
+_=*n$106:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 112];
+n$108=_fun_String StringBuilder.toString()(n$106:java.lang.StringBuilder*) virtual [line 112];
+*&amp;$irvar26:java.lang.String*=n$108 [line 112];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node53.html"><span class='visited with_tooltip'>I_53<span class='tooltip'>node53 preds:52 succs:54 exn:3 Instructions
+n$109=*&amp;$irvar20:org.apache.log4j.Logger* [line 112];
+_=*n$109:org.apache.log4j.Logger*(root org.apache.log4j.Logger) [line 112];
+n$111=*&amp;$irvar26:java.lang.String* [line 112];
+n$112=_fun_void Category.info(Object)(n$109:org.apache.log4j.Logger*,n$111:java.lang.String*) virtual [line 112];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE113">113</td><td class="line">		//抓取具体的program </td></tr>
+<tr><td class="num" id="LINE114">114</td><td class="line">		String tmp = &quot;&quot;; <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node54.html"><span class='visited with_tooltip'>I_54<span class='tooltip'>node54 preds:53 succs:55 exn:3 Instructions
+*&amp;tmp:java.lang.Object*="" [line 114];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE115">115</td><td class="line">		int total = urlResult.size(); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node55.html"><span class='visited with_tooltip'>I_55<span class='tooltip'>node55 preds:54 succs:56 exn:3 Instructions
+n$113=*&amp;urlResult:java.util.ArrayList* [line 115];
+_=*n$113:java.util.ArrayList*(root java.util.ArrayList) [line 115];
+n$115=_fun_int ArrayList.size()(n$113:java.util.ArrayList*) interface virtual [line 115];
+*&amp;total:int=n$115 [line 115];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE116">116</td><td class="line">		flag = 0; <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node56.html"><span class='visited with_tooltip'>I_56<span class='tooltip'>node56 preds:55 succs:57 exn:3 Instructions
+*&amp;flag:int=0 [line 116];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE117">117</td><td class="line">		for(String xx : urlResult){ <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node57.html"><span class='visited with_tooltip'>I_57<span class='tooltip'>node57 preds:56 succs:58 exn:3 Instructions
+n$116=*&amp;urlResult:java.util.ArrayList* [line 117];
+_=*n$116:java.util.ArrayList*(root java.util.ArrayList) [line 117];
+n$118=_fun_Iterator ArrayList.iterator()(n$116:java.util.ArrayList*) interface virtual [line 117];
+*&amp;$bcvar10:java.util.Iterator*=n$118 [line 117];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node58.html"><span class='visited with_tooltip'>I_58<span class='tooltip'>node58 preds:99 97 94 57 succs:61 exn:3 Instructions
+n$119=*&amp;$bcvar10:java.util.Iterator* [line 117];
+_=*n$119:java.util.Iterator*(root java.util.Iterator) [line 117];
+n$121=_fun_boolean Iterator.hasNext()(n$119:java.util.Iterator*) interface virtual [line 117];
+*&amp;$irvar27:_Bool=n$121 [line 117];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node61.html"><span class='visited with_tooltip'>J_61<span class='tooltip'>node61 preds:58 succs:59 60 exn: Join
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node59.html"><span class='visited with_tooltip'>C_59<span class='tooltip'>node59 preds:61 succs:62 exn:3 Conditional method_body
+n$122=*&amp;$irvar27:_Bool [line 117];
+PRUNE(!(n$122 == 0), true); [line 117];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node62.html"><span class='visited with_tooltip'>I_62<span class='tooltip'>node62 preds:59 succs:63 exn:3 Instructions
+n$123=*&amp;$bcvar10:java.util.Iterator* [line 117];
+_=*n$123:java.util.Iterator*(root java.util.Iterator) [line 117];
+n$125=_fun_Object Iterator.next()(n$123:java.util.Iterator*) interface virtual [line 117];
+*&amp;$irvar28:java.lang.Object*=n$125 [line 117];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node63.html"><span class='visited with_tooltip'>I_63<span class='tooltip'>node63 preds:62 succs:64 exn:3 Instructions
+n$126=*&amp;$irvar28:java.lang.Object* [line 117];
+n$127=_fun___cast(n$126:java.lang.Object*,sizeof(t=java.lang.String;sub_t=( sub )(cast)):void) [line 117];
+*&amp;xx:java.lang.String*=n$127 [line 117];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node60.html"><span class='visited with_tooltip'>C_60<span class='tooltip'>node60 preds:61 succs:100 exn:3 Conditional method_body
+n$122=*&amp;$irvar27:_Bool [line 117];
+PRUNE((n$122 == 0), false); [line 117];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE118">118</td><td class="line">			//每次调用沉睡100ms </td></tr>
+<tr><td class="num" id="LINE119">119</td><td class="line">			try { </td></tr>
+<tr><td class="num" id="LINE120">120</td><td class="line">				Thread.currentThread().sleep(50); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node64.html"><span class='visited with_tooltip'>I_64<span class='tooltip'>node64 preds:63 succs:65 exn:110 Instructions
+n$128=_fun_Thread Thread.currentThread()() [line 120];
+*&amp;$irvar29:java.lang.Thread*=n$128 [line 120];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node65.html"><span class='visited with_tooltip'>I_65<span class='tooltip'>node65 preds:64 succs:68 exn:110 Instructions
+n$129=_fun_void Thread.sleep(long)(50:long) [line 120];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE121">121</td><td class="line">			} catch (InterruptedException e1) { <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node66.html"><span class='visited with_tooltip'>I_66<span class='tooltip'>node66 preds:108 succs:67 exn:3 Instructions
+n$130=*&amp;CatchVar306:java.lang.Object* [line 121];
+*&amp;e1:java.lang.Object*=n$130 [line 121];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node108.html"><span class='visited with_tooltip'>C_108<span class='tooltip'>node108 preds:110 succs:66 exn:3 Conditional exception handler
+n$228=_fun___instanceof(n$225:java.lang.InterruptedException*,sizeof(t=java.lang.InterruptedException):void) [line 121];
+PRUNE(n$228, true); [line 121];
+*&amp;CatchVar306:void=n$225 [line 121];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node109.html"><span class='visited with_tooltip'>C_109<span class='tooltip'>node109 preds:110 succs:3 exn:3 Conditional exception handler
+n$228=_fun___instanceof(n$225:java.lang.InterruptedException*,sizeof(t=java.lang.InterruptedException):void) [line 121];
+PRUNE(!n$228, false); [line 121];
+*&amp;return:void=EXN n$225 [line 121];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node110.html"><span class='visited with_tooltip'>I_110<span class='tooltip'>node110 preds: succs:108 109 exn:3 Instructions
+n$224=*&amp;return:void [line 121];
+*&amp;return:void=null [line 121];
+n$225=_fun___unwrap_exception(n$224:void) [line 121];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE122">122</td><td class="line">				// TODO Auto-generated catch block </td></tr>
+<tr><td class="num" id="LINE123">123</td><td class="line">				e1.printStackTrace(); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node67.html"><span class='visited with_tooltip'>I_67<span class='tooltip'>node67 preds:66 succs:68 exn:3 Instructions
+n$131=*&amp;e1:java.lang.Object* [line 123];
+_=*n$131:java.lang.Object*(root java.lang.Object) [line 123];
+n$133=_fun_void Throwable.printStackTrace()(n$131:java.lang.Object*) virtual [line 123];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE124">124</td><td class="line">			} </td></tr>
+<tr><td class="num" id="LINE125">125</td><td class="line">			log.info(&quot;一共 &quot;+total+&quot; 个，执行到 &quot; + flag++ +&quot; 个 . &quot;); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node68.html"><span class='visited with_tooltip'>I_68<span class='tooltip'>node68 preds:67 65 succs:69 exn:3 Instructions
+n$134=*&amp;#GB<>$com.dulishuo.shenqingfang.pgmGet.log:org.apache.log4j.Logger*(root com.dulishuo.shenqingfang.pgmGet) [line 125];
+*&amp;$irvar30:org.apache.log4j.Logger*=n$134 [line 125];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node69.html"><span class='visited with_tooltip'>I_69<span class='tooltip'>node69 preds:68 succs:70 exn:3 Instructions
+n$135=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 125];
+n$136=_fun_StringBuilder.&lt;init&gt;()(n$135:java.lang.StringBuilder*) [line 125];
+*&amp;$irvar31:java.lang.StringBuilder*=n$135 [line 125];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node70.html"><span class='visited with_tooltip'>I_70<span class='tooltip'>node70 preds:69 succs:71 exn:3 Instructions
+n$137=*&amp;$irvar31:java.lang.StringBuilder* [line 125];
+_=*n$137:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 125];
+n$139=_fun_StringBuilder StringBuilder.append(String)(n$137:java.lang.StringBuilder*,"\\228\\184\\128\\229\\133\\177 ":java.lang.Object*) virtual [line 125];
+*&amp;$irvar32:java.lang.StringBuilder*=n$139 [line 125];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node71.html"><span class='visited with_tooltip'>I_71<span class='tooltip'>node71 preds:70 succs:72 exn:3 Instructions
+n$140=*&amp;$irvar32:java.lang.StringBuilder* [line 125];
+_=*n$140:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 125];
+n$142=*&amp;total:int [line 125];
+n$143=_fun_StringBuilder StringBuilder.append(int)(n$140:java.lang.StringBuilder*,n$142:int) virtual [line 125];
+*&amp;$irvar33:java.lang.StringBuilder*=n$143 [line 125];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node72.html"><span class='visited with_tooltip'>I_72<span class='tooltip'>node72 preds:71 succs:73 exn:3 Instructions
+n$144=*&amp;$irvar33:java.lang.StringBuilder* [line 125];
+_=*n$144:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 125];
+n$146=_fun_StringBuilder StringBuilder.append(String)(n$144:java.lang.StringBuilder*," \\228\\184\\170\\239\\188\\140\\230\\137\\167\\232\\161\\140\\229\\136\\176 ":java.lang.Object*) virtual [line 125];
+*&amp;$irvar34:java.lang.StringBuilder*=n$146 [line 125];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node73.html"><span class='visited with_tooltip'>I_73<span class='tooltip'>node73 preds:72 succs:74 exn:3 Instructions
+n$147=*&amp;flag:int [line 125];
+*&amp;$irvar35:int=n$147 [line 125];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node74.html"><span class='visited with_tooltip'>I_74<span class='tooltip'>node74 preds:73 succs:75 exn:3 Instructions
+n$148=*&amp;flag:int [line 125];
+*&amp;flag:int=(n$148 + 1) [line 125];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node75.html"><span class='visited with_tooltip'>I_75<span class='tooltip'>node75 preds:74 succs:76 exn:3 Instructions
+n$149=*&amp;$irvar34:java.lang.StringBuilder* [line 125];
+_=*n$149:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 125];
+n$151=*&amp;$irvar35:int [line 125];
+n$152=_fun_StringBuilder StringBuilder.append(int)(n$149:java.lang.StringBuilder*,n$151:int) virtual [line 125];
+*&amp;$irvar36:java.lang.StringBuilder*=n$152 [line 125];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node76.html"><span class='visited with_tooltip'>I_76<span class='tooltip'>node76 preds:75 succs:77 exn:3 Instructions
+n$153=*&amp;$irvar36:java.lang.StringBuilder* [line 125];
+_=*n$153:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 125];
+n$155=_fun_StringBuilder StringBuilder.append(String)(n$153:java.lang.StringBuilder*," \\228\\184\\170 . ":java.lang.Object*) virtual [line 125];
+*&amp;$irvar37:java.lang.StringBuilder*=n$155 [line 125];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node77.html"><span class='visited with_tooltip'>I_77<span class='tooltip'>node77 preds:76 succs:78 exn:3 Instructions
+n$156=*&amp;$irvar37:java.lang.StringBuilder* [line 125];
+_=*n$156:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 125];
+n$158=_fun_String StringBuilder.toString()(n$156:java.lang.StringBuilder*) virtual [line 125];
+*&amp;$irvar38:java.lang.String*=n$158 [line 125];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node78.html"><span class='visited with_tooltip'>I_78<span class='tooltip'>node78 preds:77 succs:79 exn:3 Instructions
+n$159=*&amp;$irvar30:org.apache.log4j.Logger* [line 125];
+_=*n$159:org.apache.log4j.Logger*(root org.apache.log4j.Logger) [line 125];
+n$161=*&amp;$irvar38:java.lang.String* [line 125];
+n$162=_fun_void Category.info(Object)(n$159:org.apache.log4j.Logger*,n$161:java.lang.String*) virtual [line 125];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE126">126</td><td class="line">			try{ </td></tr>
+<tr><td class="num" id="LINE127">127</td><td class="line">				response = CrawlerUtil.httpsRequest(xx.split(&quot;\t&quot;)[1]); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node79.html"><span class='visited with_tooltip'>I_79<span class='tooltip'>node79 preds:78 succs:80 exn:107 Instructions
+n$163=*&amp;xx:java.lang.String* [line 127];
+_=*n$163:java.lang.String*(root java.lang.String) [line 127];
+n$165=_fun_String[] String.split(String)(n$163:java.lang.String*,"\\t":java.lang.Object*) virtual [line 127];
+*&amp;$irvar39:java.lang.String*[_*_](*)=n$165 [line 127];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node80.html"><span class='visited with_tooltip'>I_80<span class='tooltip'>node80 preds:79 succs:81 exn:107 Instructions
+n$166=*&amp;$irvar39:java.lang.String*[_*_](*) [line 127];
+_=*n$166:java.lang.String*(root java.lang.String*[_*_]) [line 127];
+n$168=*n$166[1]:java.lang.String* [line 127];
+*&amp;$irvar40:java.lang.String*=n$168 [line 127];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node81.html"><span class='visited with_tooltip'>I_81<span class='tooltip'>node81 preds:80 succs:82 exn:107 Instructions
+n$169=*&amp;$irvar40:java.lang.String* [line 127];
+n$170=_fun_String CrawlerUtil.httpsRequest(String)(n$169:java.lang.String*) [line 127];
+*&amp;response:java.lang.String*=n$170 [line 127];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE128">128</td><td class="line">				Document doc = Jsoup.parse(response); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node82.html"><span class='visited with_tooltip'>I_82<span class='tooltip'>node82 preds:81 succs:83 exn:107 Instructions
+n$171=*&amp;response:java.lang.String* [line 128];
+n$172=_fun_Document Jsoup.parse(String)(n$171:java.lang.String*) [line 128];
+*&amp;doc:org.jsoup.nodes.Document*=n$172 [line 128];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE129">129</td><td class="line">				tmp = doc.getElementsByTag(&quot;body&quot;).get(0).html(); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node83.html"><span class='visited with_tooltip'>I_83<span class='tooltip'>node83 preds:82 succs:84 exn:107 Instructions
+n$173=*&amp;doc:org.jsoup.nodes.Document* [line 129];
+_=*n$173:org.jsoup.nodes.Document*(root org.jsoup.nodes.Document) [line 129];
+n$175=_fun_Elements Element.getElementsByTag(String)(n$173:org.jsoup.nodes.Document*,"body":java.lang.Object*) virtual [line 129];
+*&amp;$irvar41:org.jsoup.select.Elements*=n$175 [line 129];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node84.html"><span class='visited with_tooltip'>I_84<span class='tooltip'>node84 preds:83 succs:85 exn:107 Instructions
+n$176=*&amp;$irvar41:org.jsoup.select.Elements* [line 129];
+_=*n$176:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 129];
+n$178=_fun_Element Elements.get(int)(n$176:org.jsoup.select.Elements*,0:int) virtual [line 129];
+*&amp;$irvar42:org.jsoup.nodes.Element*=n$178 [line 129];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node85.html"><span class='visited with_tooltip'>I_85<span class='tooltip'>node85 preds:84 succs:86 exn:107 Instructions
+n$179=*&amp;$irvar42:org.jsoup.nodes.Element* [line 129];
+_=*n$179:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 129];
+n$181=_fun_String Element.html()(n$179:org.jsoup.nodes.Element*) virtual [line 129];
+*&amp;tmp:java.lang.String*=n$181 [line 129];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE130">130</td><td class="line">				JSONObject json = new JSONObject(); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node86.html"><span class='visited with_tooltip'>I_86<span class='tooltip'>node86 preds:85 succs:87 exn:107 Instructions
+n$182=_fun___new(sizeof(t=net.sf.json.JSONObject):net.sf.json.JSONObject*) [line 130];
+n$183=_fun_JSONObject.&lt;init&gt;()(n$182:net.sf.json.JSONObject*) [line 130];
+*&amp;json:net.sf.json.JSONObject*=n$182 [line 130];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE131">131</td><td class="line">				json.put(&quot;content&quot;, tmp); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node87.html"><span class='visited with_tooltip'>I_87<span class='tooltip'>node87 preds:86 succs:88 exn:107 Instructions
+n$184=*&amp;json:net.sf.json.JSONObject* [line 131];
+_=*n$184:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 131];
+n$186=*&amp;tmp:java.lang.String* [line 131];
+n$187=_fun_Object JSONObject.put(Object,Object)(n$184:net.sf.json.JSONObject*,"content":java.lang.Object*,n$186:java.lang.String*) virtual [line 131];
+*&amp;$irvar43:java.lang.Object*=n$187 [line 131];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE132">132</td><td class="line">				json.put(&quot;id&quot;, xx.split(&quot;\t&quot;)[0]); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node88.html"><span class='visited with_tooltip'>I_88<span class='tooltip'>node88 preds:87 succs:89 exn:107 Instructions
+n$188=*&amp;xx:java.lang.String* [line 132];
+_=*n$188:java.lang.String*(root java.lang.String) [line 132];
+n$190=_fun_String[] String.split(String)(n$188:java.lang.String*,"\\t":java.lang.Object*) virtual [line 132];
+*&amp;$irvar44:java.lang.String*[_*_](*)=n$190 [line 132];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node89.html"><span class='visited with_tooltip'>I_89<span class='tooltip'>node89 preds:88 succs:90 exn:107 Instructions
+n$191=*&amp;json:net.sf.json.JSONObject* [line 132];
+_=*n$191:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 132];
+n$193=*&amp;$irvar44:java.lang.String*[_*_](*) [line 132];
+_=*n$193:java.lang.String*(root java.lang.String*[_*_]) [line 132];
+n$195=*n$193[0]:java.lang.String* [line 132];
+n$196=_fun_Object JSONObject.put(Object,Object)(n$191:net.sf.json.JSONObject*,"id":java.lang.Object*,n$195:java.lang.String*) virtual [line 132];
+*&amp;$irvar45:java.lang.Object*=n$196 [line 132];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE133">133</td><td class="line">				json.put(&quot;url&quot;,xx.split(&quot;\t&quot;)[1]); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node90.html"><span class='visited with_tooltip'>I_90<span class='tooltip'>node90 preds:89 succs:91 exn:107 Instructions
+n$197=*&amp;xx:java.lang.String* [line 133];
+_=*n$197:java.lang.String*(root java.lang.String) [line 133];
+n$199=_fun_String[] String.split(String)(n$197:java.lang.String*,"\\t":java.lang.Object*) virtual [line 133];
+*&amp;$irvar46:java.lang.String*[_*_](*)=n$199 [line 133];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node91.html"><span class='visited with_tooltip'>I_91<span class='tooltip'>node91 preds:90 succs:92 exn:107 Instructions
+n$200=*&amp;json:net.sf.json.JSONObject* [line 133];
+_=*n$200:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 133];
+n$202=*&amp;$irvar46:java.lang.String*[_*_](*) [line 133];
+_=*n$202:java.lang.String*(root java.lang.String*[_*_]) [line 133];
+n$204=*n$202[1]:java.lang.String* [line 133];
+n$205=_fun_Object JSONObject.put(Object,Object)(n$200:net.sf.json.JSONObject*,"url":java.lang.Object*,n$204:java.lang.String*) virtual [line 133];
+*&amp;$irvar47:java.lang.Object*=n$205 [line 133];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE134">134</td><td class="line">				if(tmp.length() &gt; 100) <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node92.html"><span class='visited with_tooltip'>I_92<span class='tooltip'>node92 preds:91 succs:95 exn:107 Instructions
+n$206=*&amp;tmp:java.lang.String* [line 134];
+_=*n$206:java.lang.String*(root java.lang.String) [line 134];
+n$208=_fun_int String.length()(n$206:java.lang.String*) virtual [line 134];
+*&amp;$irvar48:int=n$208 [line 134];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node95.html"><span class='visited with_tooltip'>J_95<span class='tooltip'>node95 preds:92 succs:93 94 exn: Join
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node93.html"><span class='visited with_tooltip'>C_93<span class='tooltip'>node93 preds:95 succs:96 exn:107 Conditional method_body
+n$209=*&amp;$irvar48:int [line 134];
+PRUNE(!(n$209  &lt;=  100), true); [line 134];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node94.html"><span class='visited with_tooltip'>C_94<span class='tooltip'>node94 preds:95 succs:58 exn:107 Conditional method_body
+n$209=*&amp;$irvar48:int [line 134];
+PRUNE((n$209  &lt;=  100), false); [line 134];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE135">135</td><td class="line">					result.add(json.toString()); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node96.html"><span class='visited with_tooltip'>I_96<span class='tooltip'>node96 preds:93 succs:97 exn:107 Instructions
+n$210=*&amp;json:net.sf.json.JSONObject* [line 135];
+_=*n$210:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 135];
+n$212=_fun_String JSONObject.toString()(n$210:net.sf.json.JSONObject*) virtual [line 135];
+*&amp;$irvar49:java.lang.String*=n$212 [line 135];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node97.html"><span class='visited with_tooltip'>I_97<span class='tooltip'>node97 preds:96 succs:58 exn:107 Instructions
+n$213=*&amp;result:java.util.ArrayList* [line 135];
+_=*n$213:java.util.ArrayList*(root java.util.ArrayList) [line 135];
+n$215=*&amp;$irvar49:java.lang.String* [line 135];
+n$216=_fun_boolean ArrayList.add(Object)(n$213:java.util.ArrayList*,n$215:java.lang.String*) interface virtual [line 135];
+*&amp;$irvar50:_Bool=n$216 [line 135];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE136">136</td><td class="line">				 </td></tr>
+<tr><td class="num" id="LINE137">137</td><td class="line">			}catch(Exception e){ <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node98.html"><span class='visited with_tooltip'>I_98<span class='tooltip'>node98 preds:105 succs:99 exn:3 Instructions
+n$217=*&amp;CatchVar473:java.lang.Object* [line 137];
+*&amp;e:java.lang.Object*=n$217 [line 137];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node105.html"><span class='visited with_tooltip'>C_105<span class='tooltip'>node105 preds:107 succs:98 exn:3 Conditional exception handler
+n$227=_fun___instanceof(n$225:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 137];
+PRUNE(n$227, true); [line 137];
+*&amp;CatchVar473:void=n$225 [line 137];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node106.html"><span class='visited with_tooltip'>C_106<span class='tooltip'>node106 preds:107 succs:3 exn:3 Conditional exception handler
+n$227=_fun___instanceof(n$225:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 137];
+PRUNE(!n$227, false); [line 137];
+*&amp;return:void=EXN n$225 [line 137];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node107.html"><span class='visited with_tooltip'>I_107<span class='tooltip'>node107 preds: succs:105 106 exn:3 Instructions
+n$224=*&amp;return:void [line 137];
+*&amp;return:void=null [line 137];
+n$225=_fun___unwrap_exception(n$224:void) [line 137];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE138">138</td><td class="line">				fail.add(xx); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node99.html"><span class='visited with_tooltip'>I_99<span class='tooltip'>node99 preds:98 succs:58 exn:3 Instructions
+n$218=*&amp;fail:java.util.ArrayList* [line 138];
+_=*n$218:java.util.ArrayList*(root java.util.ArrayList) [line 138];
+n$220=*&amp;xx:java.lang.String* [line 138];
+n$221=_fun_boolean ArrayList.add(Object)(n$218:java.util.ArrayList*,n$220:java.lang.String*) interface virtual [line 138];
+*&amp;$irvar51:_Bool=n$221 [line 138];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE139">139</td><td class="line">			} </td></tr>
+<tr><td class="num" id="LINE140">140</td><td class="line">		} </td></tr>
+<tr><td class="num" id="LINE141">141</td><td class="line">		 </td></tr>
+<tr><td class="num" id="LINE142">142</td><td class="line">		FileUtil.ListToFile(result, &quot;result/result.json&quot;); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node100.html"><span class='visited with_tooltip'>I_100<span class='tooltip'>node100 preds:60 succs:101 exn:3 Instructions
+n$222=*&amp;result:java.util.ArrayList* [line 142];
+n$223=_fun_void FileUtil.ListToFile(List,String)(n$222:java.util.ArrayList*,"result/result.json":java.lang.Object*) [line 142];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE143">143</td><td class="line">	} <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node101.html"><span class='visited with_tooltip'>I_101<span class='tooltip'>node101 preds:100 succs:2 exn:3 Instructions
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:101 3 succs: exn: Exit
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.getPgmUrl%28%29%3Avoid.96036b05fb185979f590e3de068c5ad8_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:112 109 106 103 succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE144">144</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE145">145</td><td class="line">	/*private static String process2(String response) { </td></tr>
+<tr><td class="num" id="LINE146">146</td><td class="line">		// TODO Auto-generated method stub </td></tr>
+<tr><td class="num" id="LINE147">147</td><td class="line">		String res = &quot;&quot;; </td></tr>
+<tr><td class="num" id="LINE148">148</td><td class="line">		if(response.length() &lt; 100) </td></tr>
+<tr><td class="num" id="LINE149">149</td><td class="line">			return res; </td></tr>
+<tr><td class="num" id="LINE150">150</td><td class="line">		return res; </td></tr>
+<tr><td class="num" id="LINE151">151</td><td class="line">	}*/ </td></tr>
+<tr><td class="num" id="LINE152">152</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE153">153</td><td class="line">	private static List&lt;String&gt; process1(String response , String insid) { <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790.html">summary for List pgmGet.process1(String,String)</a></td></tr>
+<tr><td class="num" id="LINE154">154</td><td class="line">		// TODO Auto-generated method stub </td></tr>
+<tr><td class="num" id="LINE155">155</td><td class="line">		List&lt;String&gt; res = new ArrayList&lt;String&gt;(); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 155];
+n$1=_fun_ArrayList.&lt;init&gt;()(n$0:java.util.ArrayList*) [line 155];
+*&amp;res:java.util.ArrayList*=n$0 [line 155];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE156">156</td><td class="line">		String link = &quot;&quot;; <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+*&amp;link:java.lang.Object*="" [line 156];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE157">157</td><td class="line">		Document doc = Jsoup.parse(response); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$2=*&amp;response:java.lang.String* [line 157];
+n$3=_fun_Document Jsoup.parse(String)(n$2:java.lang.String*) [line 157];
+*&amp;doc:org.jsoup.nodes.Document*=n$3 [line 157];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE158">158</td><td class="line">		Elements eles = doc.getElementsByClass(&quot;box-content-flat&quot;); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$4=*&amp;doc:org.jsoup.nodes.Document* [line 158];
+_=*n$4:org.jsoup.nodes.Document*(root org.jsoup.nodes.Document) [line 158];
+n$6=_fun_Elements Element.getElementsByClass(String)(n$4:org.jsoup.nodes.Document*,"box-content-flat":java.lang.Object*) virtual [line 158];
+*&amp;eles:org.jsoup.select.Elements*=n$6 [line 158];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE159">159</td><td class="line">		//System.out.println(eles.size()); </td></tr>
+<tr><td class="num" id="LINE160">160</td><td class="line">		if(eles.size() &lt; 1) <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 10 exn:3 Instructions
+n$7=*&amp;eles:org.jsoup.select.Elements* [line 160];
+_=*n$7:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 160];
+n$9=_fun_int Elements.size()(n$7:org.jsoup.select.Elements*) virtual [line 160];
+*&amp;$irvar0:int=n$9 [line 160];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node9.html"><span class='visited with_tooltip'>C_9<span class='tooltip'>node9 preds:8 succs:11 exn:3 Conditional method_body
+n$10=*&amp;$irvar0:int [line 160];
+PRUNE(!(n$10  &gt;=  1), true); [line 160];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node10.html"><span class='visited with_tooltip'>C_10<span class='tooltip'>node10 preds:8 succs:12 exn:3 Conditional method_body
+n$10=*&amp;$irvar0:int [line 160];
+PRUNE((n$10  &gt;=  1), false); [line 160];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE161">161</td><td class="line">			return res; <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:9 succs:2 exn:3 Instructions
+n$11=*&amp;res:java.util.ArrayList* [line 161];
+*&amp;return:java.util.List*=n$11 [line 161];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE162">162</td><td class="line">		for(Element ele : eles){ <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:10 succs:13 exn:3 Instructions
+n$12=*&amp;eles:org.jsoup.select.Elements* [line 162];
+_=*n$12:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 162];
+n$14=_fun_Iterator Elements.iterator()(n$12:org.jsoup.select.Elements*) virtual [line 162];
+*&amp;$bcvar6:java.util.Iterator*=n$14 [line 162];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:47 31 25 12 succs:16 exn:3 Instructions
+n$15=*&amp;$bcvar6:java.util.Iterator* [line 162];
+_=*n$15:java.util.Iterator*(root java.util.Iterator) [line 162];
+n$17=_fun_boolean Iterator.hasNext()(n$15:java.util.Iterator*) interface virtual [line 162];
+*&amp;$irvar1:_Bool=n$17 [line 162];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node16.html"><span class='visited with_tooltip'>J_16<span class='tooltip'>node16 preds:13 succs:14 15 exn: Join
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node14.html"><span class='visited with_tooltip'>C_14<span class='tooltip'>node14 preds:16 succs:17 exn:3 Conditional method_body
+n$18=*&amp;$irvar1:_Bool [line 162];
+PRUNE(!(n$18 == 0), true); [line 162];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:14 succs:18 exn:3 Instructions
+n$19=*&amp;$bcvar6:java.util.Iterator* [line 162];
+_=*n$19:java.util.Iterator*(root java.util.Iterator) [line 162];
+n$21=_fun_Object Iterator.next()(n$19:java.util.Iterator*) interface virtual [line 162];
+*&amp;$irvar2:java.lang.Object*=n$21 [line 162];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:19 exn:3 Instructions
+n$22=*&amp;$irvar2:java.lang.Object* [line 162];
+n$23=_fun___cast(n$22:java.lang.Object*,sizeof(t=org.jsoup.nodes.Element;sub_t=( sub )(cast)):void) [line 162];
+*&amp;ele:org.jsoup.nodes.Element*=n$23 [line 162];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node15.html"><span class='visited with_tooltip'>C_15<span class='tooltip'>node15 preds:16 succs:48 exn:3 Conditional method_body
+n$18=*&amp;$irvar1:_Bool [line 162];
+PRUNE((n$18 == 0), false); [line 162];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE163">163</td><td class="line">			try{ </td></tr>
+<tr><td class="num" id="LINE164">164</td><td class="line">				//判断年份 </td></tr>
+<tr><td class="num" id="LINE165">165</td><td class="line">				String year = ele.getElementsByTag(&quot;h2&quot;).get(0).text().substring(0, 4); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:20 exn:51 Instructions
+n$24=*&amp;ele:org.jsoup.nodes.Element* [line 165];
+_=*n$24:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 165];
+n$26=_fun_Elements Element.getElementsByTag(String)(n$24:org.jsoup.nodes.Element*,"h2":java.lang.Object*) virtual [line 165];
+*&amp;$irvar3:org.jsoup.select.Elements*=n$26 [line 165];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:51 Instructions
+n$27=*&amp;$irvar3:org.jsoup.select.Elements* [line 165];
+_=*n$27:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 165];
+n$29=_fun_Element Elements.get(int)(n$27:org.jsoup.select.Elements*,0:int) virtual [line 165];
+*&amp;$irvar4:org.jsoup.nodes.Element*=n$29 [line 165];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:22 exn:51 Instructions
+n$30=*&amp;$irvar4:org.jsoup.nodes.Element* [line 165];
+_=*n$30:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 165];
+n$32=_fun_String Element.text()(n$30:org.jsoup.nodes.Element*) virtual [line 165];
+*&amp;$irvar5:java.lang.String*=n$32 [line 165];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:51 Instructions
+n$33=*&amp;$irvar5:java.lang.String* [line 165];
+_=*n$33:java.lang.String*(root java.lang.String) [line 165];
+n$35=_fun_String String.substring(int,int)(n$33:java.lang.String*,0:int,4:int) virtual [line 165];
+*&amp;year:java.lang.String*=n$35 [line 165];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE166">166</td><td class="line">				if(year.equals(&quot;2016&quot;)){ <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:26 exn:51 Instructions
+n$36=*&amp;year:java.lang.String* [line 166];
+_=*n$36:java.lang.String*(root java.lang.String) [line 166];
+n$38=_fun_boolean String.equals(Object)(n$36:java.lang.String*,"2016":java.lang.Object*) virtual [line 166];
+*&amp;$irvar6:_Bool=n$38 [line 166];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node26.html"><span class='visited with_tooltip'>J_26<span class='tooltip'>node26 preds:23 succs:24 25 exn: Join
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node24.html"><span class='visited with_tooltip'>C_24<span class='tooltip'>node24 preds:26 succs:27 exn:51 Conditional method_body
+n$39=*&amp;$irvar6:_Bool [line 166];
+PRUNE(!(n$39 == 0), true); [line 166];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node25.html"><span class='visited with_tooltip'>C_25<span class='tooltip'>node25 preds:26 succs:13 exn:51 Conditional method_body
+n$39=*&amp;$irvar6:_Bool [line 166];
+PRUNE((n$39 == 0), false); [line 166];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE167">167</td><td class="line">					Elements hrefs = ele.getElementsByTag(&quot;a&quot;); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:24 succs:28 exn:51 Instructions
+n$40=*&amp;ele:org.jsoup.nodes.Element* [line 167];
+_=*n$40:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 167];
+n$42=_fun_Elements Element.getElementsByTag(String)(n$40:org.jsoup.nodes.Element*,"a":java.lang.Object*) virtual [line 167];
+*&amp;hrefs:org.jsoup.select.Elements*=n$42 [line 167];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE168">168</td><td class="line">					for(Element href : hrefs){ <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:27 succs:29 exn:51 Instructions
+n$43=*&amp;hrefs:org.jsoup.select.Elements* [line 168];
+_=*n$43:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 168];
+n$45=_fun_Iterator Elements.iterator()(n$43:org.jsoup.select.Elements*) virtual [line 168];
+*&amp;$bcvar10:java.util.Iterator*=n$45 [line 168];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:45 38 28 succs:32 exn:51 Instructions
+n$46=*&amp;$bcvar10:java.util.Iterator* [line 168];
+_=*n$46:java.util.Iterator*(root java.util.Iterator) [line 168];
+n$48=_fun_boolean Iterator.hasNext()(n$46:java.util.Iterator*) interface virtual [line 168];
+*&amp;$irvar7:_Bool=n$48 [line 168];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node32.html"><span class='visited with_tooltip'>J_32<span class='tooltip'>node32 preds:29 succs:30 31 exn: Join
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node30.html"><span class='visited with_tooltip'>C_30<span class='tooltip'>node30 preds:32 succs:33 exn:51 Conditional method_body
+n$49=*&amp;$irvar7:_Bool [line 168];
+PRUNE(!(n$49 == 0), true); [line 168];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds:30 succs:34 exn:51 Instructions
+n$50=*&amp;$bcvar10:java.util.Iterator* [line 168];
+_=*n$50:java.util.Iterator*(root java.util.Iterator) [line 168];
+n$52=_fun_Object Iterator.next()(n$50:java.util.Iterator*) interface virtual [line 168];
+*&amp;$irvar8:java.lang.Object*=n$52 [line 168];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds:33 succs:35 exn:51 Instructions
+n$53=*&amp;$irvar8:java.lang.Object* [line 168];
+n$54=_fun___cast(n$53:java.lang.Object*,sizeof(t=org.jsoup.nodes.Element;sub_t=( sub )(cast)):void) [line 168];
+*&amp;href:org.jsoup.nodes.Element*=n$54 [line 168];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node31.html"><span class='visited with_tooltip'>C_31<span class='tooltip'>node31 preds:32 succs:13 exn:51 Conditional method_body
+n$49=*&amp;$irvar7:_Bool [line 168];
+PRUNE((n$49 == 0), false); [line 168];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE169">169</td><td class="line">						link = href.attr(&quot;href&quot;); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node35.html"><span class='visited with_tooltip'>I_35<span class='tooltip'>node35 preds:34 succs:36 exn:51 Instructions
+n$55=*&amp;href:org.jsoup.nodes.Element* [line 169];
+_=*n$55:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 169];
+n$57=_fun_String Node.attr(String)(n$55:org.jsoup.nodes.Element*,"href":java.lang.Object*) virtual [line 169];
+*&amp;link:java.lang.String*=n$57 [line 169];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE170">170</td><td class="line">						if(link.indexOf(&quot;zh-cn/program&quot;) != -1) <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node36.html"><span class='visited with_tooltip'>I_36<span class='tooltip'>node36 preds:35 succs:39 exn:51 Instructions
+n$58=*&amp;link:java.lang.String* [line 170];
+_=*n$58:java.lang.String*(root java.lang.String) [line 170];
+n$60=_fun_int String.indexOf(String)(n$58:java.lang.String*,"zh-cn/program":java.lang.Object*) virtual [line 170];
+*&amp;$irvar9:int=n$60 [line 170];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node39.html"><span class='visited with_tooltip'>J_39<span class='tooltip'>node39 preds:36 succs:37 38 exn: Join
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node37.html"><span class='visited with_tooltip'>C_37<span class='tooltip'>node37 preds:39 succs:40 exn:51 Conditional method_body
+n$61=*&amp;$irvar9:int [line 170];
+PRUNE(!(n$61 == -1), true); [line 170];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node38.html"><span class='visited with_tooltip'>C_38<span class='tooltip'>node38 preds:39 succs:29 exn:51 Conditional method_body
+n$61=*&amp;$irvar9:int [line 170];
+PRUNE((n$61 == -1), false); [line 170];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE171">171</td><td class="line">							res.add(insid+&quot;\t&quot;+&quot;https://www.applysquare.com&quot;+link); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node40.html"><span class='visited with_tooltip'>I_40<span class='tooltip'>node40 preds:37 succs:41 exn:51 Instructions
+n$62=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 171];
+n$63=_fun_StringBuilder.&lt;init&gt;()(n$62:java.lang.StringBuilder*) [line 171];
+*&amp;$irvar10:java.lang.StringBuilder*=n$62 [line 171];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node41.html"><span class='visited with_tooltip'>I_41<span class='tooltip'>node41 preds:40 succs:42 exn:51 Instructions
+n$64=*&amp;$irvar10:java.lang.StringBuilder* [line 171];
+_=*n$64:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 171];
+n$66=*&amp;insid:java.lang.String* [line 171];
+n$67=_fun_StringBuilder StringBuilder.append(String)(n$64:java.lang.StringBuilder*,n$66:java.lang.String*) virtual [line 171];
+*&amp;$irvar11:java.lang.StringBuilder*=n$67 [line 171];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node42.html"><span class='visited with_tooltip'>I_42<span class='tooltip'>node42 preds:41 succs:43 exn:51 Instructions
+n$68=*&amp;$irvar11:java.lang.StringBuilder* [line 171];
+_=*n$68:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 171];
+n$70=_fun_StringBuilder StringBuilder.append(String)(n$68:java.lang.StringBuilder*,"\\thttps://www.applysquare.com":java.lang.Object*) virtual [line 171];
+*&amp;$irvar12:java.lang.StringBuilder*=n$70 [line 171];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node43.html"><span class='visited with_tooltip'>I_43<span class='tooltip'>node43 preds:42 succs:44 exn:51 Instructions
+n$71=*&amp;$irvar12:java.lang.StringBuilder* [line 171];
+_=*n$71:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 171];
+n$73=*&amp;link:java.lang.String* [line 171];
+n$74=_fun_StringBuilder StringBuilder.append(String)(n$71:java.lang.StringBuilder*,n$73:java.lang.String*) virtual [line 171];
+*&amp;$irvar13:java.lang.StringBuilder*=n$74 [line 171];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node44.html"><span class='visited with_tooltip'>I_44<span class='tooltip'>node44 preds:43 succs:45 exn:51 Instructions
+n$75=*&amp;$irvar13:java.lang.StringBuilder* [line 171];
+_=*n$75:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 171];
+n$77=_fun_String StringBuilder.toString()(n$75:java.lang.StringBuilder*) virtual [line 171];
+*&amp;$irvar14:java.lang.String*=n$77 [line 171];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node45.html"><span class='visited with_tooltip'>I_45<span class='tooltip'>node45 preds:44 succs:29 exn:51 Instructions
+n$78=*&amp;res:java.util.ArrayList* [line 171];
+_=*n$78:java.util.ArrayList*(root java.util.ArrayList) [line 171];
+n$80=*&amp;$irvar14:java.lang.String* [line 171];
+n$81=_fun_boolean ArrayList.add(Object)(n$78:java.util.ArrayList*,n$80:java.lang.String*) interface virtual [line 171];
+*&amp;$irvar15:_Bool=n$81 [line 171];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE172">172</td><td class="line">					} </td></tr>
+<tr><td class="num" id="LINE173">173</td><td class="line">				}else </td></tr>
+<tr><td class="num" id="LINE174">174</td><td class="line">					continue; </td></tr>
+<tr><td class="num" id="LINE175">175</td><td class="line">			}catch(Exception e){ <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node46.html"><span class='visited with_tooltip'>I_46<span class='tooltip'>node46 preds:49 succs:47 exn:3 Instructions
+n$82=*&amp;CatchVar195:java.lang.Object* [line 175];
+*&amp;e:java.lang.Object*=n$82 [line 175];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node49.html"><span class='visited with_tooltip'>C_49<span class='tooltip'>node49 preds:51 succs:46 exn:3 Conditional exception handler
+n$89=_fun___instanceof(n$88:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 175];
+PRUNE(n$89, true); [line 175];
+*&amp;CatchVar195:java.util.List*=n$88 [line 175];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node50.html"><span class='visited with_tooltip'>C_50<span class='tooltip'>node50 preds:51 succs:3 exn:3 Conditional exception handler
+n$89=_fun___instanceof(n$88:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 175];
+PRUNE(!n$89, false); [line 175];
+*&amp;return:java.util.List*=EXN n$88 [line 175];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node51.html"><span class='visited with_tooltip'>I_51<span class='tooltip'>node51 preds: succs:49 50 exn:3 Instructions
+n$87=*&amp;return:java.util.List* [line 175];
+*&amp;return:java.util.List*=null [line 175];
+n$88=_fun___unwrap_exception(n$87:java.util.List*) [line 175];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE176">176</td><td class="line">				log.error(&quot;something is wrong . . . &quot;); <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node47.html"><span class='visited with_tooltip'>I_47<span class='tooltip'>node47 preds:46 succs:13 exn:3 Instructions
+n$83=*&amp;#GB<>$com.dulishuo.shenqingfang.pgmGet.log:org.apache.log4j.Logger*(root com.dulishuo.shenqingfang.pgmGet) [line 176];
+_=*n$83:org.apache.log4j.Logger*(root org.apache.log4j.Logger) [line 176];
+n$85=_fun_void Category.error(Object)(n$83:org.apache.log4j.Logger*,"something is wrong . . . ":java.lang.Object*) virtual [line 176];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE177">177</td><td class="line">			} </td></tr>
+<tr><td class="num" id="LINE178">178</td><td class="line">			 </td></tr>
+<tr><td class="num" id="LINE179">179</td><td class="line">		} </td></tr>
+<tr><td class="num" id="LINE180">180</td><td class="line">		 </td></tr>
+<tr><td class="num" id="LINE181">181</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE182">182</td><td class="line">		return res; <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node48.html"><span class='visited with_tooltip'>I_48<span class='tooltip'>node48 preds:15 succs:2 exn:3 Instructions
+n$86=*&amp;res:java.util.ArrayList* [line 182];
+*&amp;return:java.util.List*=n$86 [line 182];
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:48 11 3 succs: exn: Exit
+</span></span></a> <a href="./pgmGet.java.2324272c9f38b494d8b25e9060a679cd/nodes/com.dulishuo.shenqingfang.pgmGet.process1%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.59874323d3b98fc8f835321c39f0a790_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:50 succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE183">183</td><td class="line">	} </td></tr>
+<tr><td class="num" id="LINE184">184</td><td class="line">	 </td></tr>
+<tr><td class="num" id="LINE185">185</td><td class="line">	 </td></tr>
+<tr><td class="num" id="LINE186">186</td><td class="line">	 </td></tr>
+<tr><td class="num" id="LINE187">187</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE188">188</td><td class="line">} </td></tr>
+</table>
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+</body>
+</html>

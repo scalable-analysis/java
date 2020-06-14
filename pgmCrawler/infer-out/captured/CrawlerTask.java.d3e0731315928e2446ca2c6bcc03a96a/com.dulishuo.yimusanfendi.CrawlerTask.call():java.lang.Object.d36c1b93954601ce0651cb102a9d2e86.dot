@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.yimusanfendi.CrawlerTask.call():java.lang.Object.d36c1b93954601ce0651cb102a9d2e86_1" [label="1: Start Object CrawlerTask.call()\nFormals:  this:com.dulishuo.yimusanfendi.CrawlerTask*\nLocals:  $irvar0:void \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.call():java.lang.Object.d36c1b93954601ce0651cb102a9d2e86_1" -> "com.dulishuo.yimusanfendi.CrawlerTask.call():java.lang.Object.d36c1b93954601ce0651cb102a9d2e86_4" ;
+"com.dulishuo.yimusanfendi.CrawlerTask.call():java.lang.Object.d36c1b93954601ce0651cb102a9d2e86_2" [label="2: Exit Object CrawlerTask.call() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.yimusanfendi.CrawlerTask.call():java.lang.Object.d36c1b93954601ce0651cb102a9d2e86_3" [label="3:  exceptions sink \n   NULLIFY(&$irvar0); [line 22]\n  EXIT_SCOPE($irvar0); [line 22]\n  APPLY_ABSTRACTION; [line 22]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.call():java.lang.Object.d36c1b93954601ce0651cb102a9d2e86_3" -> "com.dulishuo.yimusanfendi.CrawlerTask.call():java.lang.Object.d36c1b93954601ce0651cb102a9d2e86_2" ;
+"com.dulishuo.yimusanfendi.CrawlerTask.call():java.lang.Object.d36c1b93954601ce0651cb102a9d2e86_4" [label="4:  Call List CrawlerTask.call() \n   n$0=*&this:com.dulishuo.yimusanfendi.CrawlerTask* [line 22]\n  _=*n$0:com.dulishuo.yimusanfendi.CrawlerTask*(root com.dulishuo.yimusanfendi.CrawlerTask) [line 22]\n  n$2=_fun_List CrawlerTask.call()(n$0:com.dulishuo.yimusanfendi.CrawlerTask*) virtual [line 22]\n  *&$irvar0:java.util.List*=n$2 [line 22]\n  NULLIFY(&this); [line 22]\n  EXIT_SCOPE(_,n$0,n$2,this); [line 22]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.call():java.lang.Object.d36c1b93954601ce0651cb102a9d2e86_4" -> "com.dulishuo.yimusanfendi.CrawlerTask.call():java.lang.Object.d36c1b93954601ce0651cb102a9d2e86_5" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.call():java.lang.Object.d36c1b93954601ce0651cb102a9d2e86_4" -> "com.dulishuo.yimusanfendi.CrawlerTask.call():java.lang.Object.d36c1b93954601ce0651cb102a9d2e86_3" [color="red" ];
+"com.dulishuo.yimusanfendi.CrawlerTask.call():java.lang.Object.d36c1b93954601ce0651cb102a9d2e86_5" [label="5:  method_body \n   n$3=*&$irvar0:java.util.List* [line 22]\n  *&return:java.lang.Object*=n$3 [line 22]\n  NULLIFY(&$irvar0); [line 22]\n  EXIT_SCOPE(n$3,$irvar0); [line 22]\n  APPLY_ABSTRACTION; [line 22]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.call():java.lang.Object.d36c1b93954601ce0651cb102a9d2e86_5" -> "com.dulishuo.yimusanfendi.CrawlerTask.call():java.lang.Object.d36c1b93954601ce0651cb102a9d2e86_2" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.call():java.lang.Object.d36c1b93954601ce0651cb102a9d2e86_5" -> "com.dulishuo.yimusanfendi.CrawlerTask.call():java.lang.Object.d36c1b93954601ce0651cb102a9d2e86_3" [color="red" ];
+}

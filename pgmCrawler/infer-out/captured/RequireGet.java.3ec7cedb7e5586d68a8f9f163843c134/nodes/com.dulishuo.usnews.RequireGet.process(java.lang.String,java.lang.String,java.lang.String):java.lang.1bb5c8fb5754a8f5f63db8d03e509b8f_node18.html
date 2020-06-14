@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.dulishuo.usnews.RequireGet.process(java.lang.String,java.lang.String,java.lang.String):java.lang.1bb5c8fb5754a8f5f63db8d03e509b8f_node18</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../RequireGet.java.3ec7cedb7e5586d68a8f9f163843c134.html#LINE65">18</a></h1></center>PROC: <a href="./../com.dulishuo.usnews.RequireGet.process%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Ajava.lang.1bb5c8fb5754a8f5f63db8d03e509b8f.html">String RequireGet.process(String,String,String)</a> LINE: <a href="./../../RequireGet.java.3ec7cedb7e5586d68a8f9f163843c134.html#LINE65">65</a>
+<br>PREDS:
+<a href="./../nodes/com.dulishuo.usnews.RequireGet.process%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Ajava.lang.1bb5c8fb5754a8f5f63db8d03e509b8f_node17.html"><span class='visited with_tooltip'>N_17<span class='tooltip'>node17 preds:16 14 succs:18 exn:77 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.dulishuo.usnews.RequireGet.process%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Ajava.lang.1bb5c8fb5754a8f5f63db8d03e509b8f_node19.html"><span class='visited with_tooltip'>N_19<span class='tooltip'>node19 preds:18 succs:20 exn:77 </span></span></a><br>EXN:
+<a href="./../nodes/com.dulishuo.usnews.RequireGet.process%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Ajava.lang.1bb5c8fb5754a8f5f63db8d03e509b8f_node77.html"><span class='visited with_tooltip'>N_77<span class='tooltip'>node77 preds: succs:75 76 exn:3 </span></span></a><br>
+<LISTING class='color_green'>n$34=*&amp;$irvar8:java.lang.StringBuilder* [line 65];
+_=*n$34:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 65];
+n$36=*&amp;each:java.lang.String* [line 65];
+n$37=_fun_StringBuilder StringBuilder.append(String)(n$34:java.lang.StringBuilder*,n$36:java.lang.String*) virtual [line 65];
+*&amp;$irvar9:java.lang.StringBuilder*=n$37 [line 65];
+</LISTING>
+<hr width="100%">
+<a name="session128" href="./../nodes/com.dulishuo.usnews.RequireGet.process%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Ajava.lang.1bb5c8fb5754a8f5f63db8d03e509b8f_node18.html#session128">node18#session128</a>(<a href="./../../RequireGet.java.3ec7cedb7e5586d68a8f9f163843c134.html#LINE65">65</a>) [compute pre] liveness 18
+<LISTING class='color_black'>JOIN
+
+LEFT:   { result, $irvar9, map, each, return }
+RIGHT:  { result, map, each, return }
+RESULT: { result, $irvar9, map, each, return }
+
+</LISTING>
+<hr width="100%">
+<a name="session129" href="./../nodes/com.dulishuo.usnews.RequireGet.process%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Ajava.lang.1bb5c8fb5754a8f5f63db8d03e509b8f_node18.html#session129">node18#session129</a>(<a href="./../../RequireGet.java.3ec7cedb7e5586d68a8f9f163843c134.html#LINE65">65</a>) [exec] liveness 18
+<LISTING class='color_black'>PRE STATE:
+{ result, $irvar9, map, each, return }
+
+INSTR=  *&amp;$irvar9:java.lang.StringBuilder*=n$37 [line 65]; 
+
+STATE:
+{ n$37, result, map, each, return }
+
+INSTR=  n$37=_fun_StringBuilder StringBuilder.append(String)(n$34:java.lang.StringBuilder*,n$36:java.lang.String*) virtual [line 65]; 
+
+STATE:
+{ n$34, n$36, result, map, each, return }
+
+INSTR=  n$36=*&amp;each:java.lang.String* [line 65]; 
+
+STATE:
+{ n$34, result, map, each, return }
+
+INSTR=  _=*n$34:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 65]; 
+
+STATE UNCHANGED
+
+INSTR=  n$34=*&amp;$irvar8:java.lang.StringBuilder* [line 65]; 
+
+STATE:
+{ result, map, each, return, $irvar8 }
+
+</LISTING>
+<hr width="100%">
+<a name="session197" href="./../nodes/com.dulishuo.usnews.RequireGet.process%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Ajava.lang.1bb5c8fb5754a8f5f63db8d03e509b8f_node18.html#session197">node18#session197</a>(<a href="./../../RequireGet.java.3ec7cedb7e5586d68a8f9f163843c134.html#LINE65">65</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session198" href="./../nodes/com.dulishuo.usnews.RequireGet.process%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Ajava.lang.1bb5c8fb5754a8f5f63db8d03e509b8f_node18.html#session198">node18#session198</a>(<a href="./../../RequireGet.java.3ec7cedb7e5586d68a8f9f163843c134.html#LINE65">65</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ result, map, return, $irvar8 },{ n$32, n$33 })
+
+INSTR=  n$34=*&amp;$irvar8:java.lang.StringBuilder* [line 65]; 
+
+STATE:
+({ n$34, result, map, return, $irvar8 },{ n$32, n$33 })
+
+INSTR=  _=*n$34:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 65]; 
+
+STATE:
+({ _, n$34, result, map, return, $irvar8 },{ n$32, n$33 })
+
+INSTR=  n$36=*&amp;each:java.lang.String* [line 65]; 
+
+STATE:
+({ _, n$34, n$36, result, map, return, $irvar8 },{ n$32, n$33 })
+
+INSTR=  n$37=_fun_StringBuilder StringBuilder.append(String)(n$34:java.lang.StringBuilder*,n$36:java.lang.String*) virtual [line 65]; 
+
+STATE:
+({ _, n$34, n$36, n$37, result, map, return, $irvar8 },{ n$32, n$33 })
+
+INSTR=  *&amp;$irvar9:java.lang.StringBuilder*=n$37 [line 65]; 
+
+STATE:
+({ result, $irvar9, map, return },{ _, n$34, n$36, n$37, $irvar8 })
+
+</LISTING>
+<hr width="100%">
+<a name="session34" href="./../nodes/com.dulishuo.usnews.RequireGet.process%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Ajava.lang.1bb5c8fb5754a8f5f63db8d03e509b8f_node18.html#session34">node18#session34</a>(<a href="./../../RequireGet.java.3ec7cedb7e5586d68a8f9f163843c134.html#LINE65">65</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session35" href="./../nodes/com.dulishuo.usnews.RequireGet.process%28java.lang.String%2Cjava.lang.String%2Cjava.lang.String%29%3Ajava.lang.1bb5c8fb5754a8f5f63db8d03e509b8f_node18.html#session35">node18#session35</a>(<a href="./../../RequireGet.java.3ec7cedb7e5586d68a8f9f163843c134.html#LINE65">65</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$5 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  n$9 -&gt; (Footprint({ @val$1*, @val$0* }) ~&gt; ?, *),
+  n$10 -&gt; (Footprint({ @val$2* }) ~&gt; ?, *),
+  n$15 -&gt; (Footprint({ @val$2* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$18 -&gt; Footprint({ @val$2* }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+  n$21 -&gt; (Footprint({ @val$2* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$23 -&gt; (Footprint({ @val$2* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$27 -&gt; (Footprint({ @val$2*, @val$1*, @val$0* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  result -&gt; { },
+  html -&gt; { },
+  map -&gt; (Footprint({ @val$2*, @val$1*, @val$0* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  return -&gt; { },
+  e -&gt; { } }
+
+
+
+
+TAINTED_CALL1: (callee="StringBuilder StringBuilder.append(String)", caller="String RequireGet.process(String,String,String)")
+TAINTED_CALL1: (callee="StringBuilder StringBuilder.append(String)", caller="String RequireGet.process(String,String,String)")
+TAINTED_CALL2: (callee="StringBuilder StringBuilder.append(String)", caller="String RequireGet.process(String,String,String)")
+INSTR=  n$37 := StringBuilder StringBuilder.append(String)({ n$32, each }) [line 65]; 
+
+STATE:
+{ n$5 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  n$9 -&gt; (Footprint({ @val$1*, @val$0* }) ~&gt; ?, *),
+  n$10 -&gt; (Footprint({ @val$2* }) ~&gt; ?, *),
+  n$15 -&gt; (Footprint({ @val$2* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$18 -&gt; Footprint({ @val$2* }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+  n$21 -&gt; (Footprint({ @val$2* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$23 -&gt; (Footprint({ @val$2* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$27 -&gt; (Footprint({ @val$2*, @val$1*, @val$0* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  n$32 -&gt; (Footprint({ @val$2* }) ~&gt; ?, *),
+  n$37 -&gt; Footprint({ @val$2* }) + Sanitizers({ StringConcatenation }) ~&gt; ?,
+  result -&gt; { },
+  html -&gt; { },
+  map -&gt; (Footprint({ @val$2*, @val$1*, @val$0* }) + Sanitizers({ StringConcatenation }) ~&gt; ?, *),
+  return -&gt; { },
+  e -&gt; { } }
+
+
+INSTR=  NULLIFY(&amp;$irvar8); [line 65]; 
+
+STATE UNCHANGED
+
+
+</LISTING>

@@ -1,0 +1,40 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_1" [label="1: Start void CrawlerUtil$2.checkServerTrusted(X509Certificate[],String)\nFormals:  this:com.dulishuo.util.CrawlerUtil$2* ax509certificate:java.security.cert.X509Certificate*[_*_](*) s:java.lang.String*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_1" -> "com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_4" ;
+	 "com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_1" -> "com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_5" ;
+"com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_2" [label="2: Exit void CrawlerUtil$2.checkServerTrusted(X509Certificate[],String) \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 185]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_3" -> "com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_2" ;
+"com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_4" [label="4: Prune (true branch, if) \n   n$0=*&this:com.dulishuo.util.CrawlerUtil$2* [line 181]\n  n$1=*n$0.certificates:java.security.cert.X509Certificate*[_*_](*)(root com.dulishuo.util.CrawlerUtil$2) [line 181]\n  PRUNE(!(n$1 != null), true); [line 181]\n  EXIT_SCOPE(n$0,n$1); [line 181]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_4" -> "com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_6" ;
+	 "com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_4" -> "com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_5" [label="5: Prune (false branch, if) \n   n$0=*&this:com.dulishuo.util.CrawlerUtil$2* [line 181]\n  n$1=*n$0.certificates:java.security.cert.X509Certificate*[_*_](*)(root com.dulishuo.util.CrawlerUtil$2) [line 181]\n  PRUNE((n$1 != null), false); [line 181]\n  NULLIFY(&this); [line 181]\n  EXIT_SCOPE(n$0,n$1,this); [line 181]\n  APPLY_ABSTRACTION; [line 181]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_5" -> "com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_8" ;
+	 "com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_5" -> "com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_6" [label="6:  method_body \n   n$2=*&this:com.dulishuo.util.CrawlerUtil$2* [line 182]\n  n$3=*&ax509certificate:java.security.cert.X509Certificate*[_*_](*) [line 182]\n  *n$2.certificates:com.dulishuo.util.CrawlerUtil$2(root com.dulishuo.util.CrawlerUtil$2)=n$3 [line 182]\n  NULLIFY(&ax509certificate); [line 182]\n  NULLIFY(&this); [line 182]\n  EXIT_SCOPE(n$2,n$3,ax509certificate,this); [line 182]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_6" -> "com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_7" ;
+	 "com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_6" -> "com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_7" [label="7:  Call void PrintStream.println(String) \n   n$4=*&#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 183]\n  _=*n$4:java.io.PrintStream*(root java.io.PrintStream) [line 183]\n  n$6=_fun_void PrintStream.println(String)(n$4:java.io.PrintStream*,\"init at checkServerTrusted\":java.lang.Object*) virtual [line 183]\n  EXIT_SCOPE(_,n$4,n$6); [line 183]\n  APPLY_ABSTRACTION; [line 183]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_7" -> "com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_8" ;
+	 "com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_7" -> "com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_8" [label="8:  method_body \n   APPLY_ABSTRACTION; [line 185]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_8" -> "com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_2" ;
+	 "com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_8" -> "com.dulishuo.util.CrawlerUtil$2.checkServerTrusted(java.security.cert.X509Certificate[],java.lang.St.203b55c3a1ffa0ba8e41af4656137e4d_3" [color="red" ];
+}

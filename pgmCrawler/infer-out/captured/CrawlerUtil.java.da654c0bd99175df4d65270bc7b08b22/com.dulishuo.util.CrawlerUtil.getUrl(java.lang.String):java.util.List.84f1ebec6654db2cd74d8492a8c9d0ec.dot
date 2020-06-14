@@ -1,0 +1,247 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_1" [label="1: Start List CrawlerUtil.getUrl(String)\nFormals:  url:java.lang.String*\nLocals:  $irvar7:void $irvar6:void $irvar5:void $irvar4:void $irvar3:void $irvar2:void $irvar1:void CatchVar132:void CatchVar116:void CatchVar106:void $irvar0:void size:int tbodys:org.jsoup.select.Elements* ele:org.jsoup.nodes.Element* html:org.jsoup.nodes.Document* ck:java.lang.String* getMethod:org.apache.commons.httpclient.methods.GetMethod* client:org.apache.commons.httpclient.HttpClient* response:java.lang.String* result:java.util.List* i:int href:java.lang.String* e:org.apache.commons.httpclient.HttpException* \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_1" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_4" ;
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_2" [label="2: Exit List CrawlerUtil.getUrl(String) \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [label="3:  exceptions sink \n   NULLIFY(&result); [line 77]\n  NULLIFY(&client); [line 77]\n  NULLIFY(&CatchVar132); [line 77]\n  NULLIFY(&$irvar3); [line 77]\n  NULLIFY(&CatchVar116); [line 77]\n  NULLIFY(&tbodys); [line 77]\n  NULLIFY(&ck); [line 77]\n  NULLIFY(&$irvar5); [line 77]\n  NULLIFY(&$irvar4); [line 77]\n  NULLIFY(&html); [line 77]\n  NULLIFY(&i); [line 77]\n  NULLIFY(&size); [line 77]\n  NULLIFY(&$irvar6); [line 77]\n  NULLIFY(&getMethod); [line 77]\n  NULLIFY(&ele); [line 77]\n  NULLIFY(&$irvar1); [line 77]\n  NULLIFY(&href); [line 77]\n  NULLIFY(&CatchVar106); [line 77]\n  NULLIFY(&$irvar2); [line 77]\n  NULLIFY(&response); [line 77]\n  NULLIFY(&e); [line 77]\n  EXIT_SCOPE(n$90,result,client,CatchVar132,$irvar3,CatchVar116,tbodys,ck,$irvar5,$irvar4,html,i,size,$irvar6,getMethod,ele,$irvar1,href,CatchVar106,$irvar2,response,e); [line 77]\n  APPLY_ABSTRACTION; [line 77]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_2" ;
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_4" [label="4:  Call ArrayList.<init>() \n   n$0=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 35]\n  n$1=_fun_ArrayList.<init>()(n$0:java.util.ArrayList*) [line 35]\n  *&result:java.util.ArrayList*=n$0 [line 35]\n  EXIT_SCOPE(n$0,n$1); [line 35]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_4" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_5" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_4" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_5" [label="5:  method_body \n   *&response:java.lang.Object*=\"\" [line 36]\n  NULLIFY(&response); [line 36]\n  EXIT_SCOPE(response); [line 36]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_5" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_6" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_5" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_6" [label="6:  Call HttpClient.<init>() \n   n$2=_fun___new(sizeof(t=org.apache.commons.httpclient.HttpClient):org.apache.commons.httpclient.HttpClient*) [line 38]\n  n$3=_fun_HttpClient.<init>()(n$2:org.apache.commons.httpclient.HttpClient*) [line 38]\n  *&client:org.apache.commons.httpclient.HttpClient*=n$2 [line 38]\n  EXIT_SCOPE(n$2,n$3); [line 38]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_6" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_7" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_6" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_7" [label="7:  Call GetMethod.<init>(String) \n   n$4=_fun___new(sizeof(t=org.apache.commons.httpclient.methods.GetMethod):org.apache.commons.httpclient.methods.GetMethod*) [line 39]\n  n$5=*&url:java.lang.String* [line 39]\n  n$6=_fun_GetMethod.<init>(String)(n$4:org.apache.commons.httpclient.methods.GetMethod*,n$5:java.lang.String*) [line 39]\n  *&getMethod:org.apache.commons.httpclient.methods.GetMethod*=n$4 [line 39]\n  NULLIFY(&url); [line 39]\n  EXIT_SCOPE(n$4,n$5,n$6,url); [line 39]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_7" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_8" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_7" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_8" [label="8:  method_body \n   *&ck:java.lang.Object*=\"tjpctrl=1439455956083; __utma=142000562.1509796625.1436709690.1438412213.1439453720.13; __utmz=142000562.1439453720.13.9.utmcsr=mail.qq.com|utmccn=(referral)|utmcmd=referral|utmcct=/cgi-bin/readtemplate; pgv_pvi=3811975168; 4Oaf_61d6_saltkey=nnmfbob3; 4Oaf_61d6_lastvisit=1437378911; 4Oaf_61d6_atarget=1; 4Oaf_61d6_visitedfid=27; 4Oaf_61d6_sid=Q89d9W; 4Oaf_61d6_lastact=1439454242%09home.php%09spacecp; 4Oaf_61d6_sendmail=1; __utmb=142000562.12.10.1439453720; __utmc=142000562; __utmt=1; 4Oaf_61d6_nofocus_member=1; 4Oaf_61d6_nofocus_forum=1; 4Oaf_61d6_ulastactivity=b1ccszmakCkkoWTaybWumhPQy0hx1PDIt6FDBQ5WElNhsEaEot6p; 4Oaf_61d6_auth=5808WxQ6wi8Gf9YPAp2asvku33LiM5xIWqdR67gpl8HOZTL87ISKHL5cTtUOFQR8V%2Be4wSyU5Taa4q9Va33Bq9v%2FlRM; 4Oaf_61d6_lastcheckfeed=175519%7C1439454242; 4Oaf_61d6_lip=118.187.68.34%2C1439453999; 4Oaf_61d6_nofavfid=1; 4Oaf_61d6_onlineusernum=258; 4Oaf_61d6_forum_lastvisit=D_27_1439454207; 4Oaf_61d6_smile=4D1; 4Oaf_61d6_viewid=tid_72476; 4Oaf_61d6_checkpm=1; 4Oaf_61d6_checkfollow=1\" [line 41]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_8" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_9" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_8" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_9" [label="9:  Call void HttpMethodBase.setRequestHeader(String,String) \n   n$7=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 44]\n  _=*n$7:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 44]\n  n$9=*&ck:java.lang.Object* [line 44]\n  n$10=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$7:org.apache.commons.httpclient.methods.GetMethod*,\"Cookie\":java.lang.Object*,n$9:java.lang.Object*) virtual [line 44]\n  NULLIFY(&ck); [line 44]\n  EXIT_SCOPE(_,n$7,n$9,n$10,ck); [line 44]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_9" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_10" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_9" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_10" [label="10:  Call void HttpMethodBase.setRequestHeader(String,String) \n   n$11=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 45]\n  _=*n$11:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 45]\n  n$13=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$11:org.apache.commons.httpclient.methods.GetMethod*,\"Host\":java.lang.Object*,\"www.1point3acres.com\":java.lang.Object*) virtual [line 45]\n  EXIT_SCOPE(_,n$11,n$13); [line 45]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_10" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_11" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_10" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_11" [label="11:  Call void HttpMethodBase.setRequestHeader(String,String) \n   n$14=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 46]\n  _=*n$14:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 46]\n  n$16=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$14:org.apache.commons.httpclient.methods.GetMethod*,\"User-Agent\":java.lang.Object*,\"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.111 Safari/537.36\":java.lang.Object*) virtual [line 46]\n  EXIT_SCOPE(_,n$14,n$16); [line 46]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_11" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_12" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_11" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_12" [label="12:  Call void HttpMethodBase.setRequestHeader(String,String) \n   n$17=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 47]\n  _=*n$17:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 47]\n  n$19=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$17:org.apache.commons.httpclient.methods.GetMethod*,\"Accept\":java.lang.Object*,\"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\":java.lang.Object*) virtual [line 47]\n  EXIT_SCOPE(_,n$17,n$19); [line 47]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_12" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_13" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_12" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_13" [label="13:  Call void HttpMethodBase.setRequestHeader(String,String) \n   n$20=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 48]\n  _=*n$20:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 48]\n  n$22=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$20:org.apache.commons.httpclient.methods.GetMethod*,\"Accept-Language\":java.lang.Object*,\"zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3\":java.lang.Object*) virtual [line 48]\n  EXIT_SCOPE(_,n$20,n$22); [line 48]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_13" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_14" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_13" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_14" [label="14:  Call void HttpMethodBase.setRequestHeader(String,String) \n   n$23=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 50]\n  _=*n$23:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 50]\n  n$25=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$23:org.apache.commons.httpclient.methods.GetMethod*,\"DNT\":java.lang.Object*,\"1\":java.lang.Object*) virtual [line 50]\n  EXIT_SCOPE(_,n$23,n$25); [line 50]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_14" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_15" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_14" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_15" [label="15:  Call void HttpMethodBase.setRequestHeader(String,String) \n   n$26=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 51]\n  _=*n$26:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 51]\n  n$28=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$26:org.apache.commons.httpclient.methods.GetMethod*,\"Referer\":java.lang.Object*,\"http://www.1point3acres.com/bbs/\":java.lang.Object*) virtual [line 51]\n  EXIT_SCOPE(_,n$26,n$28); [line 51]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_15" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_16" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_15" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_16" [label="16:  Call int HttpClient.executeMethod(HttpMethod) \n   n$29=*&client:org.apache.commons.httpclient.HttpClient* [line 54]\n  _=*n$29:org.apache.commons.httpclient.HttpClient*(root org.apache.commons.httpclient.HttpClient) [line 54]\n  n$31=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 54]\n  n$32=_fun_int HttpClient.executeMethod(HttpMethod)(n$29:org.apache.commons.httpclient.HttpClient*,n$31:org.apache.commons.httpclient.methods.GetMethod*) virtual [line 54]\n  *&$irvar0:int=n$32 [line 54]\n  NULLIFY(&client); [line 54]\n  NULLIFY(&$irvar0); [line 54]\n  EXIT_SCOPE(_,n$29,n$31,n$32,client,$irvar0); [line 54]\n  APPLY_ABSTRACTION; [line 54]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_16" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_21" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_16" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_49" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_17" [label="17:  method_body \n   n$33=*&CatchVar106:java.lang.Object* [line 55]\n  *&e:java.lang.Object*=n$33 [line 55]\n  NULLIFY(&CatchVar106); [line 55]\n  EXIT_SCOPE(n$33,CatchVar106); [line 55]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_17" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_18" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_17" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_18" [label="18:  Call void HttpException.printStackTrace() \n   n$34=*&e:java.lang.Object* [line 57]\n  _=*n$34:java.lang.Object*(root java.lang.Object) [line 57]\n  n$36=_fun_void HttpException.printStackTrace()(n$34:java.lang.Object*) virtual [line 57]\n  NULLIFY(&e); [line 57]\n  EXIT_SCOPE(_,n$34,n$36,e); [line 57]\n  APPLY_ABSTRACTION; [line 57]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_18" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_21" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_18" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_19" [label="19:  method_body \n   n$37=*&CatchVar116:java.lang.Object* [line 58]\n  *&e:java.lang.Object*=n$37 [line 58]\n  NULLIFY(&CatchVar116); [line 58]\n  EXIT_SCOPE(n$37,CatchVar116); [line 58]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_19" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_20" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_19" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_20" [label="20:  Call void Throwable.printStackTrace() \n   n$38=*&e:java.lang.Object* [line 60]\n  _=*n$38:java.lang.Object*(root java.lang.Object) [line 60]\n  n$40=_fun_void Throwable.printStackTrace()(n$38:java.lang.Object*) virtual [line 60]\n  NULLIFY(&e); [line 60]\n  EXIT_SCOPE(_,n$38,n$40,e); [line 60]\n  APPLY_ABSTRACTION; [line 60]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_20" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_21" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_20" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_21" [label="21:  Call String HttpMethodBase.getResponseBodyAsString() \n   n$41=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 63]\n  _=*n$41:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 63]\n  n$43=_fun_String HttpMethodBase.getResponseBodyAsString()(n$41:org.apache.commons.httpclient.methods.GetMethod*) virtual [line 63]\n  *&response:java.lang.String*=n$43 [line 63]\n  NULLIFY(&getMethod); [line 63]\n  EXIT_SCOPE(_,n$41,n$43,getMethod); [line 63]\n  APPLY_ABSTRACTION; [line 63]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_21" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_24" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_21" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_44" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_22" [label="22:  method_body \n   n$44=*&CatchVar132:java.lang.Object* [line 65]\n  *&e:java.lang.Object*=n$44 [line 65]\n  NULLIFY(&CatchVar132); [line 65]\n  EXIT_SCOPE(n$44,CatchVar132); [line 65]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_22" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_23" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_22" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_23" [label="23:  Call void Throwable.printStackTrace() \n   n$45=*&e:java.lang.Object* [line 67]\n  _=*n$45:java.lang.Object*(root java.lang.Object) [line 67]\n  n$47=_fun_void Throwable.printStackTrace()(n$45:java.lang.Object*) virtual [line 67]\n  NULLIFY(&e); [line 67]\n  EXIT_SCOPE(_,n$45,n$47,e); [line 67]\n  APPLY_ABSTRACTION; [line 67]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_23" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_24" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_23" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_24" [label="24:  Call Document Jsoup.parse(String) \n   n$48=*&response:java.lang.String* [line 69]\n  n$49=_fun_Document Jsoup.parse(String)(n$48:java.lang.String*) [line 69]\n  *&html:org.jsoup.nodes.Document*=n$49 [line 69]\n  NULLIFY(&response); [line 69]\n  EXIT_SCOPE(n$48,n$49,response); [line 69]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_24" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_25" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_24" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_25" [label="25:  Call Element Element.getElementById(String) \n   n$50=*&html:org.jsoup.nodes.Document* [line 70]\n  _=*n$50:org.jsoup.nodes.Document*(root org.jsoup.nodes.Document) [line 70]\n  n$52=_fun_Element Element.getElementById(String)(n$50:org.jsoup.nodes.Document*,\"threadlisttableid\":java.lang.Object*) virtual [line 70]\n  *&ele:org.jsoup.nodes.Element*=n$52 [line 70]\n  NULLIFY(&html); [line 70]\n  EXIT_SCOPE(_,n$50,n$52,html); [line 70]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_25" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_26" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_25" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_26" [label="26:  Call Elements Element.children() \n   n$53=*&ele:org.jsoup.nodes.Element* [line 71]\n  _=*n$53:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 71]\n  n$55=_fun_Elements Element.children()(n$53:org.jsoup.nodes.Element*) virtual [line 71]\n  *&tbodys:org.jsoup.select.Elements*=n$55 [line 71]\n  NULLIFY(&ele); [line 71]\n  EXIT_SCOPE(_,n$53,n$55,ele); [line 71]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_26" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_27" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_26" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_27" [label="27:  Call int Elements.size() \n   n$56=*&tbodys:org.jsoup.select.Elements* [line 72]\n  _=*n$56:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 72]\n  n$58=_fun_int Elements.size()(n$56:org.jsoup.select.Elements*) virtual [line 72]\n  *&size:int=n$58 [line 72]\n  EXIT_SCOPE(_,n$56,n$58); [line 72]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_27" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_28" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_27" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_28" [label="28:  method_body \n   *&i:int=1 [line 73]\n  APPLY_ABSTRACTION; [line 73]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_28" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_31" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_28" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_29" [label="29: Prune (true branch, if) \n   n$59=*&i:int [line 73]\n  n$60=*&size:int [line 73]\n  PRUNE(!(n$59 >= n$60), true); [line 73]\n  EXIT_SCOPE(n$59,n$60); [line 73]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_29" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_32" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_29" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_30" [label="30: Prune (false branch, if) \n   n$59=*&i:int [line 73]\n  n$60=*&size:int [line 73]\n  PRUNE((n$59 >= n$60), false); [line 73]\n  NULLIFY(&tbodys); [line 73]\n  NULLIFY(&i); [line 73]\n  NULLIFY(&size); [line 73]\n  EXIT_SCOPE(n$59,n$60,tbodys,i,size); [line 73]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_30" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_41" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_30" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_31" [label="31: + \n  " ]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_31" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_29" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_31" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_30" ;
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_32" [label="32:  Call Element Elements.get(int) \n   n$61=*&tbodys:org.jsoup.select.Elements* [line 74]\n  _=*n$61:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 74]\n  n$63=*&i:int [line 74]\n  n$64=_fun_Element Elements.get(int)(n$61:org.jsoup.select.Elements*,n$63:int) virtual [line 74]\n  *&$irvar1:org.jsoup.nodes.Element*=n$64 [line 74]\n  EXIT_SCOPE(_,n$61,n$63,n$64); [line 74]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_32" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_33" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_32" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_33" [label="33:  Call Elements Element.getElementsByClass(String) \n   n$65=*&$irvar1:org.jsoup.nodes.Element* [line 74]\n  _=*n$65:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 74]\n  n$67=_fun_Elements Element.getElementsByClass(String)(n$65:org.jsoup.nodes.Element*,\"icn\":java.lang.Object*) virtual [line 74]\n  *&$irvar2:org.jsoup.select.Elements*=n$67 [line 74]\n  NULLIFY(&$irvar1); [line 74]\n  EXIT_SCOPE(_,n$65,n$67,$irvar1); [line 74]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_33" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_34" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_33" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_34" [label="34:  Call Element Elements.get(int) \n   n$68=*&$irvar2:org.jsoup.select.Elements* [line 74]\n  _=*n$68:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 74]\n  n$70=_fun_Element Elements.get(int)(n$68:org.jsoup.select.Elements*,0:int) virtual [line 74]\n  *&$irvar3:org.jsoup.nodes.Element*=n$70 [line 74]\n  NULLIFY(&$irvar2); [line 74]\n  EXIT_SCOPE(_,n$68,n$70,$irvar2); [line 74]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_34" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_35" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_34" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_35" [label="35:  Call Elements Element.select(String) \n   n$71=*&$irvar3:org.jsoup.nodes.Element* [line 74]\n  _=*n$71:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 74]\n  n$73=_fun_Elements Element.select(String)(n$71:org.jsoup.nodes.Element*,\"a\":java.lang.Object*) virtual [line 74]\n  *&$irvar4:org.jsoup.select.Elements*=n$73 [line 74]\n  NULLIFY(&$irvar3); [line 74]\n  EXIT_SCOPE(_,n$71,n$73,$irvar3); [line 74]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_35" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_36" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_35" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_36" [label="36:  Call Element Elements.first() \n   n$74=*&$irvar4:org.jsoup.select.Elements* [line 74]\n  _=*n$74:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 74]\n  n$76=_fun_Element Elements.first()(n$74:org.jsoup.select.Elements*) virtual [line 74]\n  *&$irvar5:org.jsoup.nodes.Element*=n$76 [line 74]\n  NULLIFY(&$irvar4); [line 74]\n  EXIT_SCOPE(_,n$74,n$76,$irvar4); [line 74]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_36" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_37" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_36" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_37" [label="37:  Call String Node.attr(String) \n   n$77=*&$irvar5:org.jsoup.nodes.Element* [line 74]\n  _=*n$77:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 74]\n  n$79=_fun_String Node.attr(String)(n$77:org.jsoup.nodes.Element*,\"href\":java.lang.Object*) virtual [line 74]\n  *&$irvar6:java.lang.String*=n$79 [line 74]\n  NULLIFY(&$irvar5); [line 74]\n  EXIT_SCOPE(_,n$77,n$79,$irvar5); [line 74]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_37" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_38" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_37" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_38" [label="38:  Call String String.toString() \n   n$80=*&$irvar6:java.lang.String* [line 74]\n  _=*n$80:java.lang.String*(root java.lang.String) [line 74]\n  n$82=_fun_String String.toString()(n$80:java.lang.String*) virtual [line 74]\n  *&href:java.lang.String*=n$82 [line 74]\n  NULLIFY(&$irvar6); [line 74]\n  EXIT_SCOPE(_,n$80,n$82,$irvar6); [line 74]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_38" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_39" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_38" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_39" [label="39:  Call boolean ArrayList.add(Object) \n   n$83=*&result:java.util.ArrayList* [line 75]\n  _=*n$83:java.util.ArrayList*(root java.util.ArrayList) [line 75]\n  n$85=*&href:java.lang.String* [line 75]\n  n$86=_fun_boolean ArrayList.add(Object)(n$83:java.util.ArrayList*,n$85:java.lang.String*) interface virtual [line 75]\n  *&$irvar7:_Bool=n$86 [line 75]\n  NULLIFY(&$irvar7); [line 75]\n  NULLIFY(&href); [line 75]\n  EXIT_SCOPE(_,n$83,n$85,n$86,$irvar7,href); [line 75]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_39" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_40" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_39" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_40" [label="40:  method_body \n   n$87=*&i:int [line 73]\n  *&i:int=(n$87 + 1) [line 73]\n  EXIT_SCOPE(n$87); [line 73]\n  APPLY_ABSTRACTION; [line 73]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_40" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_31" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_40" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_41" [label="41:  method_body \n   n$88=*&result:java.util.ArrayList* [line 77]\n  *&return:java.util.List*=n$88 [line 77]\n  NULLIFY(&result); [line 77]\n  EXIT_SCOPE(n$88,result); [line 77]\n  APPLY_ABSTRACTION; [line 77]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_41" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_2" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_41" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_42" [label="42: Prune (true branch, switch) \n   n$91=_fun___instanceof(n$90:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 65]\n  PRUNE(n$91, true); [line 65]\n  *&CatchVar132:java.util.List*=n$90 [line 65]\n  EXIT_SCOPE(n$90,n$91); [line 65]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_42" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_22" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_42" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_43" [label="43: Prune (false branch, switch) \n   n$91=_fun___instanceof(n$90:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 65]\n  PRUNE(!n$91, false); [line 65]\n  *&return:java.util.List*=EXN n$90 [line 65]\n  NULLIFY(&result); [line 65]\n  NULLIFY(&response); [line 65]\n  EXIT_SCOPE(n$90,n$91,result,response); [line 65]\n  APPLY_ABSTRACTION; [line 65]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_43" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_43" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_44" [label="44:  exception handler \n   n$89=*&return:java.util.List* [line 65]\n  *&return:java.util.List*=null [line 65]\n  n$90=_fun___unwrap_exception(n$89:java.util.List*) [line 65]\n  EXIT_SCOPE(n$89); [line 65]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_44" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_42" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_44" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_43" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_44" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_45" [label="45: Prune (true branch, switch) \n   n$92=_fun___instanceof(n$90:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 58]\n  PRUNE(n$92, true); [line 58]\n  *&CatchVar116:java.util.List*=n$90 [line 58]\n  EXIT_SCOPE(n$90,n$92); [line 58]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_45" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_19" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_45" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_46" [label="46: Prune (false branch, switch) \n   n$92=_fun___instanceof(n$90:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 58]\n  PRUNE(!n$92, false); [line 58]\n  *&return:java.util.List*=EXN n$90 [line 58]\n  NULLIFY(&result); [line 58]\n  NULLIFY(&getMethod); [line 58]\n  EXIT_SCOPE(n$90,n$92,result,getMethod); [line 58]\n  APPLY_ABSTRACTION; [line 58]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_46" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_46" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_47" [label="47: Prune (true branch, switch) \n   n$93=_fun___instanceof(n$90:org.apache.commons.httpclient.HttpException*,sizeof(t=org.apache.commons.httpclient.HttpException):void) [line 55]\n  PRUNE(n$93, true); [line 55]\n  *&CatchVar106:java.util.List*=n$90 [line 55]\n  EXIT_SCOPE(n$90,n$93); [line 55]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_47" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_17" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_47" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_48" [label="48: Prune (false branch, switch) \n   n$93=_fun___instanceof(n$90:org.apache.commons.httpclient.HttpException*,sizeof(t=org.apache.commons.httpclient.HttpException):void) [line 55]\n  PRUNE(!n$93, false); [line 55]\n  EXIT_SCOPE(n$93); [line 55]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_48" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_45" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_48" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_46" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_48" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_49" [label="49:  exception handler \n   n$89=*&return:java.util.List* [line 55]\n  *&return:java.util.List*=null [line 55]\n  n$90=_fun___unwrap_exception(n$89:java.util.List*) [line 55]\n  EXIT_SCOPE(n$89); [line 55]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_49" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_47" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_49" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_48" ;
+	 "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_49" -> "com.dulishuo.util.CrawlerUtil.getUrl(java.lang.String):java.util.List.84f1ebec6654db2cd74d8492a8c9d0ec_3" [color="red" ];
+}

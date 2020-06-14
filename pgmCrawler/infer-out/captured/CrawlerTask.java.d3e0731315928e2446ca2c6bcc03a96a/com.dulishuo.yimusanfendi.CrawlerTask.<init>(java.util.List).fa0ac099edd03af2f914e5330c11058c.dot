@@ -1,0 +1,39 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_1" [label="1: Start CrawlerTask.<init>(List)\nFormals:  this:com.dulishuo.yimusanfendi.CrawlerTask* list:java.util.List*\nLocals:  $irvar0:void \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_1" -> "com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_4" ;
+"com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_2" [label="2: Exit CrawlerTask.<init>(List) \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_3" [label="3:  exceptions sink \n   NULLIFY(&$irvar0); [line 29]\n  EXIT_SCOPE($irvar0); [line 29]\n  APPLY_ABSTRACTION; [line 29]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_3" -> "com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_2" ;
+"com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_4" [label="4:  Call Object.<init>() \n   n$0=*&this:com.dulishuo.yimusanfendi.CrawlerTask* [line 26]\n  n$1=_fun_Object.<init>()(n$0:com.dulishuo.yimusanfendi.CrawlerTask*) [line 26]\n  EXIT_SCOPE(n$0,n$1); [line 26]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_4" -> "com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_5" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_4" -> "com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_3" [color="red" ];
+"com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_5" [label="5:  Call ArrayList.<init>() \n   n$2=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 25]\n  n$3=_fun_ArrayList.<init>()(n$2:java.util.ArrayList*) [line 25]\n  *&$irvar0:java.util.ArrayList*=n$2 [line 25]\n  EXIT_SCOPE(n$2,n$3); [line 25]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_5" -> "com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_6" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_5" -> "com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_3" [color="red" ];
+"com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_6" [label="6:  method_body \n   n$4=*&this:com.dulishuo.yimusanfendi.CrawlerTask* [line 25]\n  n$5=*&$irvar0:java.util.ArrayList* [line 25]\n  *n$4.list:com.dulishuo.yimusanfendi.CrawlerTask(root com.dulishuo.yimusanfendi.CrawlerTask)=n$5 [line 25]\n  NULLIFY(&$irvar0); [line 25]\n  EXIT_SCOPE(n$4,n$5,$irvar0); [line 25]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_6" -> "com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_7" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_6" -> "com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_3" [color="red" ];
+"com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_7" [label="7:  method_body \n   n$6=*&this:com.dulishuo.yimusanfendi.CrawlerTask* [line 28]\n  n$7=*&list:java.util.List* [line 28]\n  *n$6.list:com.dulishuo.yimusanfendi.CrawlerTask(root com.dulishuo.yimusanfendi.CrawlerTask)=n$7 [line 28]\n  NULLIFY(&list); [line 28]\n  NULLIFY(&this); [line 28]\n  EXIT_SCOPE(n$6,n$7,list,this); [line 28]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_7" -> "com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_8" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_7" -> "com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_3" [color="red" ];
+"com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_8" [label="8:  method_body \n   APPLY_ABSTRACTION; [line 29]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_8" -> "com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_2" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_8" -> "com.dulishuo.yimusanfendi.CrawlerTask.<init>(java.util.List).fa0ac099edd03af2f914e5330c11058c_3" [color="red" ];
+}

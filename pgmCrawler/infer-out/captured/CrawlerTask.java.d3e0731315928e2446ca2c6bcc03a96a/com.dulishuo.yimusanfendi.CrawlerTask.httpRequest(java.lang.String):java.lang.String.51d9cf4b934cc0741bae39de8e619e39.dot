@@ -1,0 +1,147 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_1" [label="1: Start String CrawlerTask.httpRequest(String)\nFormals:  url:java.lang.String*\nLocals:  CatchVar102:void CatchVar87:void CatchVar77:void $irvar0:void getMethod:org.apache.commons.httpclient.methods.GetMethod* client:org.apache.commons.httpclient.HttpClient* response:java.lang.String* e:org.apache.commons.httpclient.HttpException* \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_1" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_4" ;
+"com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_2" [label="2: Exit String CrawlerTask.httpRequest(String) \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_3" [label="3:  exceptions sink \n   NULLIFY(&client); [line 194]\n  NULLIFY(&CatchVar77); [line 194]\n  NULLIFY(&CatchVar87); [line 194]\n  NULLIFY(&getMethod); [line 194]\n  NULLIFY(&CatchVar102); [line 194]\n  NULLIFY(&response); [line 194]\n  NULLIFY(&e); [line 194]\n  EXIT_SCOPE(n$44,client,CatchVar77,CatchVar87,getMethod,CatchVar102,response,e); [line 194]\n  APPLY_ABSTRACTION; [line 194]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_3" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_2" ;
+"com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_4" [label="4:  method_body \n   *&response:java.lang.Object*=\"\" [line 161]\n  NULLIFY(&response); [line 161]\n  EXIT_SCOPE(response); [line 161]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_4" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_5" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_4" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_3" [color="red" ];
+"com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_5" [label="5:  Call HttpClient.<init>() \n   n$0=_fun___new(sizeof(t=org.apache.commons.httpclient.HttpClient):org.apache.commons.httpclient.HttpClient*) [line 163]\n  n$1=_fun_HttpClient.<init>()(n$0:org.apache.commons.httpclient.HttpClient*) [line 163]\n  *&client:org.apache.commons.httpclient.HttpClient*=n$0 [line 163]\n  EXIT_SCOPE(n$0,n$1); [line 163]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_5" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_6" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_5" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_3" [color="red" ];
+"com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_6" [label="6:  Call GetMethod.<init>(String) \n   n$2=_fun___new(sizeof(t=org.apache.commons.httpclient.methods.GetMethod):org.apache.commons.httpclient.methods.GetMethod*) [line 168]\n  n$3=*&url:java.lang.String* [line 168]\n  n$4=_fun_GetMethod.<init>(String)(n$2:org.apache.commons.httpclient.methods.GetMethod*,n$3:java.lang.String*) [line 168]\n  *&getMethod:org.apache.commons.httpclient.methods.GetMethod*=n$2 [line 168]\n  NULLIFY(&url); [line 168]\n  EXIT_SCOPE(n$2,n$3,n$4,url); [line 168]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_6" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_7" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_6" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_3" [color="red" ];
+"com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_7" [label="7:  Call void HttpMethodBase.setRequestHeader(String,String) \n   n$5=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 170]\n  _=*n$5:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 170]\n  n$7=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$5:org.apache.commons.httpclient.methods.GetMethod*,\"Host\":java.lang.Object*,\"www.1point3acres.com\":java.lang.Object*) virtual [line 170]\n  EXIT_SCOPE(_,n$5,n$7); [line 170]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_7" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_8" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_7" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_3" [color="red" ];
+"com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_8" [label="8:  Call void HttpMethodBase.setRequestHeader(String,String) \n   n$8=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 171]\n  _=*n$8:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 171]\n  n$10=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$8:org.apache.commons.httpclient.methods.GetMethod*,\"User-Agent\":java.lang.Object*,\"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.111 Safari/537.36\":java.lang.Object*) virtual [line 171]\n  EXIT_SCOPE(_,n$8,n$10); [line 171]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_8" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_9" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_8" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_3" [color="red" ];
+"com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_9" [label="9:  Call void HttpMethodBase.setRequestHeader(String,String) \n   n$11=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 172]\n  _=*n$11:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 172]\n  n$13=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$11:org.apache.commons.httpclient.methods.GetMethod*,\"Accept\":java.lang.Object*,\"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\":java.lang.Object*) virtual [line 172]\n  EXIT_SCOPE(_,n$11,n$13); [line 172]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_9" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_10" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_9" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_3" [color="red" ];
+"com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_10" [label="10:  Call void HttpMethodBase.setRequestHeader(String,String) \n   n$14=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 173]\n  _=*n$14:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 173]\n  n$16=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$14:org.apache.commons.httpclient.methods.GetMethod*,\"Accept-Language\":java.lang.Object*,\"zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3\":java.lang.Object*) virtual [line 173]\n  EXIT_SCOPE(_,n$14,n$16); [line 173]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_10" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_11" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_10" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_3" [color="red" ];
+"com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_11" [label="11:  Call void HttpMethodBase.setRequestHeader(String,String) \n   n$17=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 175]\n  _=*n$17:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 175]\n  n$19=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$17:org.apache.commons.httpclient.methods.GetMethod*,\"DNT\":java.lang.Object*,\"1\":java.lang.Object*) virtual [line 175]\n  EXIT_SCOPE(_,n$17,n$19); [line 175]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_11" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_12" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_11" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_3" [color="red" ];
+"com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_12" [label="12:  Call void HttpMethodBase.setRequestHeader(String,String) \n   n$20=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 176]\n  _=*n$20:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 176]\n  n$22=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$20:org.apache.commons.httpclient.methods.GetMethod*,\"Referer\":java.lang.Object*,\"http://www.1point3acres.com/bbs/\":java.lang.Object*) virtual [line 176]\n  EXIT_SCOPE(_,n$20,n$22); [line 176]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_12" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_13" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_12" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_3" [color="red" ];
+"com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_13" [label="13:  Call int HttpClient.executeMethod(HttpMethod) \n   n$23=*&client:org.apache.commons.httpclient.HttpClient* [line 179]\n  _=*n$23:org.apache.commons.httpclient.HttpClient*(root org.apache.commons.httpclient.HttpClient) [line 179]\n  n$25=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 179]\n  n$26=_fun_int HttpClient.executeMethod(HttpMethod)(n$23:org.apache.commons.httpclient.HttpClient*,n$25:org.apache.commons.httpclient.methods.GetMethod*) virtual [line 179]\n  *&$irvar0:int=n$26 [line 179]\n  NULLIFY(&client); [line 179]\n  NULLIFY(&$irvar0); [line 179]\n  EXIT_SCOPE(_,n$23,n$25,n$26,client,$irvar0); [line 179]\n  APPLY_ABSTRACTION; [line 179]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_13" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_18" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_13" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_29" [color="red" ];
+"com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_14" [label="14:  method_body \n   n$27=*&CatchVar77:java.lang.Object* [line 180]\n  *&e:java.lang.Object*=n$27 [line 180]\n  NULLIFY(&CatchVar77); [line 180]\n  EXIT_SCOPE(n$27,CatchVar77); [line 180]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_14" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_15" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_14" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_3" [color="red" ];
+"com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_15" [label="15:  Call void HttpException.printStackTrace() \n   n$28=*&e:java.lang.Object* [line 182]\n  _=*n$28:java.lang.Object*(root java.lang.Object) [line 182]\n  n$30=_fun_void HttpException.printStackTrace()(n$28:java.lang.Object*) virtual [line 182]\n  NULLIFY(&e); [line 182]\n  EXIT_SCOPE(_,n$28,n$30,e); [line 182]\n  APPLY_ABSTRACTION; [line 182]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_15" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_18" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_15" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_3" [color="red" ];
+"com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_16" [label="16:  method_body \n   n$31=*&CatchVar87:java.lang.Object* [line 183]\n  *&e:java.lang.Object*=n$31 [line 183]\n  NULLIFY(&CatchVar87); [line 183]\n  EXIT_SCOPE(n$31,CatchVar87); [line 183]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_16" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_17" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_16" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_3" [color="red" ];
+"com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_17" [label="17:  Call void Throwable.printStackTrace() \n   n$32=*&e:java.lang.Object* [line 185]\n  _=*n$32:java.lang.Object*(root java.lang.Object) [line 185]\n  n$34=_fun_void Throwable.printStackTrace()(n$32:java.lang.Object*) virtual [line 185]\n  NULLIFY(&e); [line 185]\n  EXIT_SCOPE(_,n$32,n$34,e); [line 185]\n  APPLY_ABSTRACTION; [line 185]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_17" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_18" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_17" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_3" [color="red" ];
+"com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_18" [label="18:  Call String HttpMethodBase.getResponseBodyAsString() \n   n$35=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 188]\n  _=*n$35:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 188]\n  n$37=_fun_String HttpMethodBase.getResponseBodyAsString()(n$35:org.apache.commons.httpclient.methods.GetMethod*) virtual [line 188]\n  *&response:java.lang.String*=n$37 [line 188]\n  NULLIFY(&getMethod); [line 188]\n  EXIT_SCOPE(_,n$35,n$37,getMethod); [line 188]\n  APPLY_ABSTRACTION; [line 188]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_18" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_21" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_18" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_24" [color="red" ];
+"com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_19" [label="19:  method_body \n   n$38=*&CatchVar102:java.lang.Object* [line 189]\n  *&e:java.lang.Object*=n$38 [line 189]\n  NULLIFY(&CatchVar102); [line 189]\n  EXIT_SCOPE(n$38,CatchVar102); [line 189]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_19" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_20" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_19" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_3" [color="red" ];
+"com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_20" [label="20:  Call void Throwable.printStackTrace() \n   n$39=*&e:java.lang.Object* [line 191]\n  _=*n$39:java.lang.Object*(root java.lang.Object) [line 191]\n  n$41=_fun_void Throwable.printStackTrace()(n$39:java.lang.Object*) virtual [line 191]\n  NULLIFY(&e); [line 191]\n  EXIT_SCOPE(_,n$39,n$41,e); [line 191]\n  APPLY_ABSTRACTION; [line 191]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_20" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_21" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_20" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_3" [color="red" ];
+"com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_21" [label="21:  method_body \n   n$42=*&response:java.lang.String* [line 194]\n  *&return:java.lang.String*=n$42 [line 194]\n  NULLIFY(&response); [line 194]\n  EXIT_SCOPE(n$42,response); [line 194]\n  APPLY_ABSTRACTION; [line 194]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_21" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_2" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_21" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_3" [color="red" ];
+"com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_22" [label="22: Prune (true branch, switch) \n   n$45=_fun___instanceof(n$44:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 189]\n  PRUNE(n$45, true); [line 189]\n  *&CatchVar102:java.lang.String*=n$44 [line 189]\n  EXIT_SCOPE(n$44,n$45); [line 189]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_22" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_19" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_22" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_3" [color="red" ];
+"com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_23" [label="23: Prune (false branch, switch) \n   n$45=_fun___instanceof(n$44:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 189]\n  PRUNE(!n$45, false); [line 189]\n  *&return:java.lang.String*=EXN n$44 [line 189]\n  NULLIFY(&response); [line 189]\n  EXIT_SCOPE(n$44,n$45,response); [line 189]\n  APPLY_ABSTRACTION; [line 189]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_23" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_3" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_23" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_3" [color="red" ];
+"com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_24" [label="24:  exception handler \n   n$43=*&return:java.lang.String* [line 189]\n  *&return:java.lang.String*=null [line 189]\n  n$44=_fun___unwrap_exception(n$43:java.lang.String*) [line 189]\n  EXIT_SCOPE(n$43); [line 189]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_24" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_22" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_24" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_23" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_24" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_3" [color="red" ];
+"com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_25" [label="25: Prune (true branch, switch) \n   n$46=_fun___instanceof(n$44:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 183]\n  PRUNE(n$46, true); [line 183]\n  *&CatchVar87:java.lang.String*=n$44 [line 183]\n  EXIT_SCOPE(n$44,n$46); [line 183]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_25" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_16" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_25" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_3" [color="red" ];
+"com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_26" [label="26: Prune (false branch, switch) \n   n$46=_fun___instanceof(n$44:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 183]\n  PRUNE(!n$46, false); [line 183]\n  *&return:java.lang.String*=EXN n$44 [line 183]\n  NULLIFY(&getMethod); [line 183]\n  EXIT_SCOPE(n$44,n$46,getMethod); [line 183]\n  APPLY_ABSTRACTION; [line 183]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_26" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_3" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_26" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_3" [color="red" ];
+"com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_27" [label="27: Prune (true branch, switch) \n   n$47=_fun___instanceof(n$44:org.apache.commons.httpclient.HttpException*,sizeof(t=org.apache.commons.httpclient.HttpException):void) [line 180]\n  PRUNE(n$47, true); [line 180]\n  *&CatchVar77:java.lang.String*=n$44 [line 180]\n  EXIT_SCOPE(n$44,n$47); [line 180]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_27" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_14" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_27" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_3" [color="red" ];
+"com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_28" [label="28: Prune (false branch, switch) \n   n$47=_fun___instanceof(n$44:org.apache.commons.httpclient.HttpException*,sizeof(t=org.apache.commons.httpclient.HttpException):void) [line 180]\n  PRUNE(!n$47, false); [line 180]\n  EXIT_SCOPE(n$47); [line 180]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_28" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_25" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_28" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_26" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_28" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_3" [color="red" ];
+"com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_29" [label="29:  exception handler \n   n$43=*&return:java.lang.String* [line 180]\n  *&return:java.lang.String*=null [line 180]\n  n$44=_fun___unwrap_exception(n$43:java.lang.String*) [line 180]\n  EXIT_SCOPE(n$43); [line 180]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_29" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_27" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_29" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_28" ;
+	 "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_29" -> "com.dulishuo.yimusanfendi.CrawlerTask.httpRequest(java.lang.String):java.lang.String.51d9cf4b934cc0741bae39de8e619e39_3" [color="red" ];
+}

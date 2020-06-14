@@ -1,0 +1,258 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp(java.lang.String):java.lang.String.5afd274137939728cd298d4092e5b9cb</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../GlobalSchoolRank.java.5329927b3a51a6441f88c5feb3a8ed6a.html#LINE74">String GlobalSchoolRank.getHttp(String)</a></h1></center>
+<a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:26 24 21 19 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:31 28 succs:2 exn:2 Instructions
+NULLIFY(&amp;CatchVar114); [line 112];
+NULLIFY(&amp;CatchVar127); [line 112];
+NULLIFY(&amp;CatchVar110); [line 112];
+NULLIFY(&amp;getMethod); [line 112];
+NULLIFY(&amp;httpClient); [line 112];
+NULLIFY(&amp;cookie); [line 112];
+NULLIFY(&amp;xx); [line 112];
+EXIT_SCOPE(n$51,CatchVar114,CatchVar127,CatchVar110,getMethod,httpClient,cookie,xx); [line 112];
+APPLY_ABSTRACTION; [line 112];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+*&amp;xx:java.lang.Object*="-1" [line 75];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$0=_fun___new(sizeof(t=org.apache.commons.httpclient.HttpClient):org.apache.commons.httpclient.HttpClient*) [line 76];
+n$1=_fun_HttpClient.&lt;init&gt;()(n$0:org.apache.commons.httpclient.HttpClient*) [line 76];
+*&amp;httpClient:org.apache.commons.httpclient.HttpClient*=n$0 [line 76];
+EXIT_SCOPE(n$0,n$1); [line 76];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$2=*&amp;httpClient:org.apache.commons.httpclient.HttpClient* [line 77];
+_=*n$2:org.apache.commons.httpclient.HttpClient*(root org.apache.commons.httpclient.HttpClient) [line 77];
+n$4=_fun_void HttpClient.setConnectionTimeout(int)(n$2:org.apache.commons.httpclient.HttpClient*,10000:int) virtual [line 77];
+EXIT_SCOPE(_,n$2,n$4); [line 77];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$5=*&amp;httpClient:org.apache.commons.httpclient.HttpClient* [line 78];
+_=*n$5:org.apache.commons.httpclient.HttpClient*(root org.apache.commons.httpclient.HttpClient) [line 78];
+n$7=_fun_void HttpClient.setTimeout(int)(n$5:org.apache.commons.httpclient.HttpClient*,10000:int) virtual [line 78];
+EXIT_SCOPE(_,n$5,n$7); [line 78];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+*&amp;cookie:java.lang.Object*="auth=\\\"926U70ZZZ30m64qMaJX1IJKCfvJmO4S01aWgzXW7nhmK98cAQx2jK7JlfmNUOGxQscpDsT71h9Y4QVtytPtl7cmQOJ9GoTZ9LlNFxv1-CXTcLicvZaj2COeYEcs_cRCBa8n3ILqfhcXV_wFnly7akKSCFbKzyw4_jVq51wl6sO4tKxwb-rz0eZHuZAhRkguBPkb1t6uxa6kNu5-1mAULLSWFOZ8xFjVqiqhqFXv0JRRJxLW4d9e-0FPj6llT3Hgj.eNqrVkrLLCouic9LzE1VslJQck7MrMxU0lFQyklEEvXJTMxLB4lmpgC5RgYWxoYG5kBuSX52ah5IgaVZYrJBsrFBUmpqikmyRapFcrKJsbmZsUGaUaJpmnmSUi0AirUeeQ\\\"; tk=96ac0c30beed4c8e8cc437630f2a5f7b; c=2085190804; compstat=compstu; usnQuantCast=D; __gads=ID=24381f81148ef0b6:T=1439363530:S=ALNI_MbygNq4VzFdG9nrMLE_yO1d_V3M8A; __qca=P0-376455809-1439363544561; _vis_opt_s=1%7C; _vis_opt_test_cookie=1; s_cc=true; s_sq=%5B%5BB%5D%5D; __ybotb=9597; __ybotu=id8fvkxmwqln2c3w6g; __ybotv=1439367772921; __ybots=id8iepkpqb11hvo56k.0.id8iepko78go619lul.1; OX_sd=1; __ybotc=http%3A//ads-adswest.yldbt.com/m/; _trp_hit_11882/41456_728x90=5; _trp_hit_11882/41456_300x250=5; __utma=1.69014033.1439363543.1439363543.1439367785.2; __utmb=1.1.10.1439367785; __utmz=1.1439363543.1.1.utmcsr=colleges.usnews.rankingsandreviews.com|utmccn=(referral)|utmcmd=referral|utmcct=/best-colleges; __utmt=1; ki_t=1439363545567%3B1439363545567%3B1439367788518%3B1%3B2; ki_r=; __ybota=; __ybote=; __ybotz=; OX_plg=swf|shk|pm; __utmc=1; usn_colleges_interstitial=2" [line 80];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$8=_fun___new(sizeof(t=org.apache.commons.httpclient.methods.GetMethod):org.apache.commons.httpclient.methods.GetMethod*) [line 81];
+n$9=*&amp;url:java.lang.String* [line 81];
+n$10=_fun_GetMethod.&lt;init&gt;(String)(n$8:org.apache.commons.httpclient.methods.GetMethod*,n$9:java.lang.String*) [line 81];
+*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod*=n$8 [line 81];
+NULLIFY(&amp;url); [line 81];
+EXIT_SCOPE(n$8,n$9,n$10,url); [line 81];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+n$11=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 83];
+_=*n$11:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 83];
+n$13=*&amp;cookie:java.lang.Object* [line 83];
+n$14=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$11:org.apache.commons.httpclient.methods.GetMethod*,"cookie":java.lang.Object*,n$13:java.lang.Object*) virtual [line 83];
+NULLIFY(&amp;cookie); [line 83];
+EXIT_SCOPE(_,n$11,n$13,n$14,cookie); [line 83];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+n$15=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 84];
+_=*n$15:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 84];
+n$17=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$15:org.apache.commons.httpclient.methods.GetMethod*,"Host":java.lang.Object*,"premium.usnews.com":java.lang.Object*) virtual [line 84];
+EXIT_SCOPE(_,n$15,n$17); [line 84];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$18=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 85];
+_=*n$18:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 85];
+n$20=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$18:org.apache.commons.httpclient.methods.GetMethod*,"User-Agent":java.lang.Object*,"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0":java.lang.Object*) virtual [line 85];
+EXIT_SCOPE(_,n$18,n$20); [line 85];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:3 Instructions
+n$21=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 86];
+_=*n$21:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 86];
+n$23=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$21:org.apache.commons.httpclient.methods.GetMethod*,"Accept":java.lang.Object*,"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0":java.lang.Object*) virtual [line 86];
+EXIT_SCOPE(_,n$21,n$23); [line 86];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:3 Instructions
+n$24=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 87];
+_=*n$24:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 87];
+n$26=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$24:org.apache.commons.httpclient.methods.GetMethod*,"Accept-Language":java.lang.Object*,"zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3":java.lang.Object*) virtual [line 87];
+EXIT_SCOPE(_,n$24,n$26); [line 87];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:3 Instructions
+n$27=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 89];
+_=*n$27:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 89];
+n$29=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$27:org.apache.commons.httpclient.methods.GetMethod*,"DNT":java.lang.Object*,"1":java.lang.Object*) virtual [line 89];
+EXIT_SCOPE(_,n$27,n$29); [line 89];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:3 Instructions
+n$30=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 90];
+_=*n$30:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 90];
+n$32=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$30:org.apache.commons.httpclient.methods.GetMethod*,"Connection":java.lang.Object*,"keep-alive":java.lang.Object*) virtual [line 90];
+EXIT_SCOPE(_,n$30,n$32); [line 90];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:22 exn:34 Instructions
+n$33=*&amp;httpClient:org.apache.commons.httpclient.HttpClient* [line 93];
+_=*n$33:org.apache.commons.httpclient.HttpClient*(root org.apache.commons.httpclient.HttpClient) [line 93];
+n$35=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 93];
+n$36=_fun_int HttpClient.executeMethod(HttpMethod)(n$33:org.apache.commons.httpclient.HttpClient*,n$35:org.apache.commons.httpclient.methods.GetMethod*) virtual [line 93];
+*&amp;$irvar0:int=n$36 [line 93];
+NULLIFY(&amp;$irvar0); [line 93];
+NULLIFY(&amp;httpClient); [line 93];
+EXIT_SCOPE(_,n$33,n$35,n$36,$irvar0,httpClient); [line 93];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:32 succs:19 exn:3 Instructions
+n$37=*&amp;CatchVar110:java.lang.Object* [line 94];
+*&amp;e1:java.lang.Object*=n$37 [line 94];
+NULLIFY(&amp;e1); [line 94];
+NULLIFY(&amp;CatchVar110); [line 94];
+EXIT_SCOPE(n$37,e1,CatchVar110); [line 94];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:2 exn:3 Instructions
+n$38=*&amp;xx:java.lang.Object* [line 96];
+*&amp;return:java.lang.String*=n$38 [line 96];
+NULLIFY(&amp;xx); [line 96];
+EXIT_SCOPE(n$38,xx); [line 96];
+APPLY_ABSTRACTION; [line 96];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:30 succs:21 exn:3 Instructions
+n$39=*&amp;CatchVar114:java.lang.Object* [line 97];
+*&amp;e1:java.lang.Object*=n$39 [line 97];
+NULLIFY(&amp;CatchVar114); [line 97];
+NULLIFY(&amp;e1); [line 97];
+EXIT_SCOPE(n$39,CatchVar114,e1); [line 97];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:2 exn:3 Instructions
+n$40=*&amp;xx:java.lang.Object* [line 99];
+*&amp;return:java.lang.String*=n$40 [line 99];
+NULLIFY(&amp;xx); [line 99];
+EXIT_SCOPE(n$40,xx); [line 99];
+APPLY_ABSTRACTION; [line 99];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:17 succs:25 exn:29 Instructions
+n$41=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 104];
+_=*n$41:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 104];
+n$43=_fun_String HttpMethodBase.getResponseBodyAsString()(n$41:org.apache.commons.httpclient.methods.GetMethod*) virtual [line 104];
+*&amp;xx:java.lang.String*=n$43 [line 104];
+EXIT_SCOPE(_,n$41,n$43); [line 104];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:27 succs:24 exn:3 Instructions
+n$44=*&amp;CatchVar127:java.lang.Object* [line 105];
+*&amp;e:java.lang.Object*=n$44 [line 105];
+NULLIFY(&amp;CatchVar127); [line 105];
+NULLIFY(&amp;e); [line 105];
+EXIT_SCOPE(n$44,CatchVar127,e); [line 105];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:2 exn:3 Instructions
+n$45=*&amp;xx:java.lang.String* [line 107];
+*&amp;return:java.lang.String*=n$45 [line 107];
+NULLIFY(&amp;xx); [line 107];
+EXIT_SCOPE(n$45,xx); [line 107];
+APPLY_ABSTRACTION; [line 107];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:22 succs:26 exn:3 Instructions
+n$46=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 110];
+_=*n$46:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 110];
+n$48=_fun_void HttpMethodBase.releaseConnection()(n$46:org.apache.commons.httpclient.methods.GetMethod*) virtual [line 110];
+NULLIFY(&amp;getMethod); [line 110];
+EXIT_SCOPE(_,n$46,n$48,getMethod); [line 110];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:25 succs:2 exn:3 Instructions
+n$49=*&amp;xx:java.lang.String* [line 112];
+*&amp;return:java.lang.String*=n$49 [line 112];
+NULLIFY(&amp;xx); [line 112];
+EXIT_SCOPE(n$49,xx); [line 112];
+APPLY_ABSTRACTION; [line 112];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node27.html"><span class='visited with_tooltip'>C_27<span class='tooltip'>node27 preds:29 succs:23 exn:3 Conditional exception handler
+n$52=_fun___instanceof(n$51:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 105];
+PRUNE(n$52, true); [line 105];
+*&amp;CatchVar127:java.lang.String*=n$51 [line 105];
+EXIT_SCOPE(n$51,n$52); [line 105];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node28.html"><span class='visited with_tooltip'>C_28<span class='tooltip'>node28 preds:29 succs:3 exn:3 Conditional exception handler
+n$52=_fun___instanceof(n$51:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 105];
+PRUNE(!n$52, false); [line 105];
+*&amp;return:java.lang.String*=EXN n$51 [line 105];
+NULLIFY(&amp;xx); [line 105];
+EXIT_SCOPE(n$51,n$52,xx); [line 105];
+APPLY_ABSTRACTION; [line 105];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds: succs:27 28 exn:3 Instructions
+n$50=*&amp;return:java.lang.String* [line 105];
+*&amp;return:java.lang.String*=null [line 105];
+n$51=_fun___unwrap_exception(n$50:java.lang.String*) [line 105];
+NULLIFY(&amp;getMethod); [line 105];
+EXIT_SCOPE(n$50,getMethod); [line 105];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node30.html"><span class='visited with_tooltip'>C_30<span class='tooltip'>node30 preds:33 succs:20 exn:3 Conditional exception handler
+n$53=_fun___instanceof(n$51:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 97];
+PRUNE(n$53, true); [line 97];
+*&amp;CatchVar114:java.lang.String*=n$51 [line 97];
+EXIT_SCOPE(n$51,n$53); [line 97];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node31.html"><span class='visited with_tooltip'>C_31<span class='tooltip'>node31 preds:33 succs:3 exn:3 Conditional exception handler
+n$53=_fun___instanceof(n$51:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 97];
+PRUNE(!n$53, false); [line 97];
+*&amp;return:java.lang.String*=EXN n$51 [line 97];
+NULLIFY(&amp;xx); [line 97];
+EXIT_SCOPE(n$51,n$53,xx); [line 97];
+APPLY_ABSTRACTION; [line 97];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node32.html"><span class='visited with_tooltip'>C_32<span class='tooltip'>node32 preds:34 succs:18 exn:3 Conditional exception handler
+n$54=_fun___instanceof(n$51:org.apache.commons.httpclient.HttpException*,sizeof(t=org.apache.commons.httpclient.HttpException):void) [line 94];
+PRUNE(n$54, true); [line 94];
+*&amp;CatchVar110:java.lang.String*=n$51 [line 94];
+EXIT_SCOPE(n$51,n$54); [line 94];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node33.html"><span class='visited with_tooltip'>C_33<span class='tooltip'>node33 preds:34 succs:30 31 exn:3 Conditional exception handler
+n$54=_fun___instanceof(n$51:org.apache.commons.httpclient.HttpException*,sizeof(t=org.apache.commons.httpclient.HttpException):void) [line 94];
+PRUNE(!n$54, false); [line 94];
+EXIT_SCOPE(n$54); [line 94];
+</span></span></a> <a href="./nodes/com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp%28java.lang.String%29%3Ajava.lang.String.5afd274137939728cd298d4092e5b9cb_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds: succs:32 33 exn:3 Instructions
+n$50=*&amp;return:java.lang.String* [line 94];
+*&amp;return:java.lang.String*=null [line 94];
+n$51=_fun___unwrap_exception(n$50:java.lang.String*) [line 94];
+NULLIFY(&amp;getMethod); [line 94];
+EXIT_SCOPE(n$50,getMethod); [line 94];
+</span></span></a><br />@
+
+<span class='color_black'>java.lang.String* String GlobalSchoolRank.getHttp(String)(java.lang.String* url)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { return -> (Footprint({ @val$0* }) ~> ?, *) }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= String GlobalSchoolRank.getHttp(String)
+; translation_unit= src/com/dulishuo/usnews/sixteen/GlobalSchoolRank.java
+; access= Public
+; exceptions= [java.io.IOException]
+; formals= [(url,java.lang.String*)]
+; is_defined= true
+; loc= src/com/dulishuo/usnews/sixteen/GlobalSchoolRank.java:74
+; locals= [{ name= CatchVar127; typ= void; modify_in_block= false }; 
+           { name= CatchVar114; typ= void; modify_in_block= false }; 
+           { name= CatchVar110; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= getMethod; typ= org.apache.commons.httpclient.methods.GetMethod*; modify_in_block= false }; 
+           { name= cookie; typ= java.lang.String*; modify_in_block= false }; 
+           { name= httpClient; typ= org.apache.commons.httpclient.HttpClient*; modify_in_block= false }; 
+           { name= xx; typ= java.lang.String*; modify_in_block= false }; 
+           { name= e; typ= java.io.IOException*; modify_in_block= false }; 
+           { name= e1; typ= org.apache.commons.httpclient.HttpException*; modify_in_block= false }]
+; ret_type= java.lang.String* 
+; proc_id= com.dulishuo.usnews.sixteen.GlobalSchoolRank.getHttp(java.lang.String):java.lang.String }</pre>
+</body>
+</html>

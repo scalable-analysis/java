@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.times.sixteen.GlobalSchRak.main(java.lang.String[]):void.0ce55ee0543696f42eb597f0808a959e_1" [label="1: Start void GlobalSchRak.main(String[])\nFormals:  args:java.lang.String*[_*_](*)\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.times.sixteen.GlobalSchRak.main(java.lang.String[]):void.0ce55ee0543696f42eb597f0808a959e_1" -> "com.dulishuo.times.sixteen.GlobalSchRak.main(java.lang.String[]):void.0ce55ee0543696f42eb597f0808a959e_4" ;
+"com.dulishuo.times.sixteen.GlobalSchRak.main(java.lang.String[]):void.0ce55ee0543696f42eb597f0808a959e_2" [label="2: Exit void GlobalSchRak.main(String[]) \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.times.sixteen.GlobalSchRak.main(java.lang.String[]):void.0ce55ee0543696f42eb597f0808a959e_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 15]\n " shape="box"]
+	
+
+	 "com.dulishuo.times.sixteen.GlobalSchRak.main(java.lang.String[]):void.0ce55ee0543696f42eb597f0808a959e_3" -> "com.dulishuo.times.sixteen.GlobalSchRak.main(java.lang.String[]):void.0ce55ee0543696f42eb597f0808a959e_2" ;
+"com.dulishuo.times.sixteen.GlobalSchRak.main(java.lang.String[]):void.0ce55ee0543696f42eb597f0808a959e_4" [label="4:  Call void GlobalSchRak.crawler() \n   n$0=_fun_void GlobalSchRak.crawler()() [line 14]\n  EXIT_SCOPE(n$0); [line 14]\n " shape="box"]
+	
+
+	 "com.dulishuo.times.sixteen.GlobalSchRak.main(java.lang.String[]):void.0ce55ee0543696f42eb597f0808a959e_4" -> "com.dulishuo.times.sixteen.GlobalSchRak.main(java.lang.String[]):void.0ce55ee0543696f42eb597f0808a959e_5" ;
+	 "com.dulishuo.times.sixteen.GlobalSchRak.main(java.lang.String[]):void.0ce55ee0543696f42eb597f0808a959e_4" -> "com.dulishuo.times.sixteen.GlobalSchRak.main(java.lang.String[]):void.0ce55ee0543696f42eb597f0808a959e_3" [color="red" ];
+"com.dulishuo.times.sixteen.GlobalSchRak.main(java.lang.String[]):void.0ce55ee0543696f42eb597f0808a959e_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 15]\n " shape="box"]
+	
+
+	 "com.dulishuo.times.sixteen.GlobalSchRak.main(java.lang.String[]):void.0ce55ee0543696f42eb597f0808a959e_5" -> "com.dulishuo.times.sixteen.GlobalSchRak.main(java.lang.String[]):void.0ce55ee0543696f42eb597f0808a959e_2" ;
+	 "com.dulishuo.times.sixteen.GlobalSchRak.main(java.lang.String[]):void.0ce55ee0543696f42eb597f0808a959e_5" -> "com.dulishuo.times.sixteen.GlobalSchRak.main(java.lang.String[]):void.0ce55ee0543696f42eb597f0808a959e_3" [color="red" ];
+}

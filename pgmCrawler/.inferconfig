@@ -1,0 +1,19 @@
+{
+  "quandary-sources": [
+    {
+      "procedure": "java.io.BufferedReader.readLine",
+      "kind": "UserControlledString"
+    }
+  ],
+  "quandary-sanitizers": [
+    {
+      "procedure": "org.jsoup.Jsoup.clean"
+    }
+  ],
+  "quandary-sinks": [
+    {
+      "procedure": "java.io.BufferedWriter.write",
+      "kind": "Other"
+    }
+  ]
+}

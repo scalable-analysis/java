@@ -1,0 +1,311 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.dulishuo.test.test07162.main(java.lang.String[]):void.52cf147d070ab7c2a7fad5b8da49be1c_node24</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../test07162.java.c2d0140fcb5e47d0b5f4deddf58a45ee.html#LINE33">24</a></h1></center>PROC: <a href="./../com.dulishuo.test.test07162.main%28java.lang.String%5B%5D%29%3Avoid.52cf147d070ab7c2a7fad5b8da49be1c.html">void test07162.main(String[])</a> LINE: <a href="./../../test07162.java.c2d0140fcb5e47d0b5f4deddf58a45ee.html#LINE33">33</a>
+<br>PREDS:
+<a href="./../nodes/com.dulishuo.test.test07162.main%28java.lang.String%5B%5D%29%3Avoid.52cf147d070ab7c2a7fad5b8da49be1c_node21.html"><span class='visited with_tooltip'>N_21<span class='tooltip'>node21 preds:23 succs:24 exn:3 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.dulishuo.test.test07162.main%28java.lang.String%5B%5D%29%3Avoid.52cf147d070ab7c2a7fad5b8da49be1c_node25.html"><span class='visited with_tooltip'>N_25<span class='tooltip'>node25 preds:24 succs:12 exn:3 </span></span></a><br>EXN:
+<a href="./../nodes/com.dulishuo.test.test07162.main%28java.lang.String%5B%5D%29%3Avoid.52cf147d070ab7c2a7fad5b8da49be1c_node3.html"><span class='visited with_tooltip'>N_3<span class='tooltip'>node3 preds: succs:2 exn:2 </span></span></a><br>
+<LISTING class='color_green'>n$39=*&amp;names:java.util.HashSet* [line 33];
+_=*n$39:java.util.HashSet*(root java.util.HashSet) [line 33];
+n$41=*&amp;id:java.lang.String* [line 33];
+n$42=_fun_boolean HashSet.add(Object)(n$39:java.util.HashSet*,n$41:java.lang.String*) interface virtual [line 33];
+*&amp;$irvar5:_Bool=n$42 [line 33];
+</LISTING>
+<hr width="100%">
+<a name="session56" href="./../nodes/com.dulishuo.test.test07162.main%28java.lang.String%5B%5D%29%3Avoid.52cf147d070ab7c2a7fad5b8da49be1c_node24.html#session56">node24#session56</a>(<a href="./../../test07162.java.c2d0140fcb5e47d0b5f4deddf58a45ee.html#LINE33">33</a>) [compute pre] liveness 24
+<LISTING class='color_black'>JOIN
+
+LEFT:   { succ, tmp, brSucc }
+RIGHT:  { }
+RESULT: = LEFT
+
+</LISTING>
+<hr width="100%">
+<a name="session57" href="./../nodes/com.dulishuo.test.test07162.main%28java.lang.String%5B%5D%29%3Avoid.52cf147d070ab7c2a7fad5b8da49be1c_node24.html#session57">node24#session57</a>(<a href="./../../test07162.java.c2d0140fcb5e47d0b5f4deddf58a45ee.html#LINE33">33</a>) [exec] liveness 24
+<LISTING class='color_black'>PRE STATE:
+{ succ, tmp, brSucc }
+
+INSTR=  *&amp;$irvar5:_Bool=n$42 [line 33]; 
+
+STATE:
+{ n$42, succ, tmp, brSucc }
+
+INSTR=  n$42=_fun_boolean HashSet.add(Object)(n$39:java.util.HashSet*,n$41:java.lang.String*) interface virtual [line 33]; 
+
+STATE:
+{ n$39, n$41, succ, tmp, brSucc }
+
+INSTR=  n$41=*&amp;id:java.lang.String* [line 33]; 
+
+STATE:
+{ n$39, succ, tmp, brSucc, id }
+
+INSTR=  _=*n$39:java.util.HashSet*(root java.util.HashSet) [line 33]; 
+
+STATE UNCHANGED
+
+INSTR=  n$39=*&amp;names:java.util.HashSet* [line 33]; 
+
+STATE:
+{ succ, tmp, brSucc, id, names }
+
+</LISTING>
+<hr width="100%">
+<a name="session124" href="./../nodes/com.dulishuo.test.test07162.main%28java.lang.String%5B%5D%29%3Avoid.52cf147d070ab7c2a7fad5b8da49be1c_node24.html#session124">node24#session124</a>(<a href="./../../test07162.java.c2d0140fcb5e47d0b5f4deddf58a45ee.html#LINE33">33</a>) [compute pre] liveness 24
+<LISTING class='color_black'>JOIN
+
+LEFT:   { succ, tmp, brSucc, lang.System, names }
+RIGHT:  { }
+RESULT: = LEFT
+
+</LISTING>
+<hr width="100%">
+<a name="session125" href="./../nodes/com.dulishuo.test.test07162.main%28java.lang.String%5B%5D%29%3Avoid.52cf147d070ab7c2a7fad5b8da49be1c_node24.html#session125">node24#session125</a>(<a href="./../../test07162.java.c2d0140fcb5e47d0b5f4deddf58a45ee.html#LINE33">33</a>) [exec] liveness 24
+<LISTING class='color_black'>PRE STATE:
+{ succ, tmp, brSucc, lang.System, names }
+
+INSTR=  *&amp;$irvar5:_Bool=n$42 [line 33]; 
+
+STATE:
+{ n$42, succ, tmp, brSucc, lang.System, names }
+
+INSTR=  n$42=_fun_boolean HashSet.add(Object)(n$39:java.util.HashSet*,n$41:java.lang.String*) interface virtual [line 33]; 
+
+STATE:
+{ n$39, n$41, succ, tmp, brSucc, lang.System, names }
+
+INSTR=  n$41=*&amp;id:java.lang.String* [line 33]; 
+
+STATE:
+{ n$39, succ, tmp, brSucc, lang.System, id, names }
+
+INSTR=  _=*n$39:java.util.HashSet*(root java.util.HashSet) [line 33]; 
+
+STATE UNCHANGED
+
+INSTR=  n$39=*&amp;names:java.util.HashSet* [line 33]; 
+
+STATE:
+{ succ, tmp, brSucc, lang.System, id, names }
+
+</LISTING>
+<hr width="100%">
+<a name="session186" href="./../nodes/com.dulishuo.test.test07162.main%28java.lang.String%5B%5D%29%3Avoid.52cf147d070ab7c2a7fad5b8da49be1c_node24.html#session186">node24#session186</a>(<a href="./../../test07162.java.c2d0140fcb5e47d0b5f4deddf58a45ee.html#LINE33">33</a>) [compute pre] liveness 24
+<LISTING class='color_black'>JOIN
+
+LEFT:   { succ, tmp, brSucc, lang.System, bw, names }
+RIGHT:  { }
+RESULT: = LEFT
+
+</LISTING>
+<hr width="100%">
+<a name="session187" href="./../nodes/com.dulishuo.test.test07162.main%28java.lang.String%5B%5D%29%3Avoid.52cf147d070ab7c2a7fad5b8da49be1c_node24.html#session187">node24#session187</a>(<a href="./../../test07162.java.c2d0140fcb5e47d0b5f4deddf58a45ee.html#LINE33">33</a>) [exec] liveness 24
+<LISTING class='color_black'>PRE STATE:
+{ succ, tmp, brSucc, lang.System, bw, names }
+
+INSTR=  *&amp;$irvar5:_Bool=n$42 [line 33]; 
+
+STATE:
+{ n$42, succ, tmp, brSucc, lang.System, bw, names }
+
+INSTR=  n$42=_fun_boolean HashSet.add(Object)(n$39:java.util.HashSet*,n$41:java.lang.String*) interface virtual [line 33]; 
+
+STATE:
+{ n$39, n$41, succ, tmp, brSucc, lang.System, bw, names }
+
+INSTR=  n$41=*&amp;id:java.lang.String* [line 33]; 
+
+STATE:
+{ n$39, succ, tmp, brSucc, lang.System, bw, id, names }
+
+INSTR=  _=*n$39:java.util.HashSet*(root java.util.HashSet) [line 33]; 
+
+STATE UNCHANGED
+
+INSTR=  n$39=*&amp;names:java.util.HashSet* [line 33]; 
+
+STATE:
+{ succ, tmp, brSucc, lang.System, bw, id, names }
+
+</LISTING>
+<hr width="100%">
+<a name="session267" href="./../nodes/com.dulishuo.test.test07162.main%28java.lang.String%5B%5D%29%3Avoid.52cf147d070ab7c2a7fad5b8da49be1c_node24.html#session267">node24#session267</a>(<a href="./../../test07162.java.c2d0140fcb5e47d0b5f4deddf58a45ee.html#LINE33">33</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session268" href="./../nodes/com.dulishuo.test.test07162.main%28java.lang.String%5B%5D%29%3Avoid.52cf147d070ab7c2a7fad5b8da49be1c_node24.html#session268">node24#session268</a>(<a href="./../../test07162.java.c2d0140fcb5e47d0b5f4deddf58a45ee.html#LINE33">33</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ succ, tmp, brSucc, bw, id, names },{ n$38, $irvar4 })
+
+INSTR=  n$39=*&amp;names:java.util.HashSet* [line 33]; 
+
+STATE:
+({ n$39, succ, tmp, brSucc, bw, id, names },{ n$38, $irvar4 })
+
+INSTR=  _=*n$39:java.util.HashSet*(root java.util.HashSet) [line 33]; 
+
+STATE:
+({ _, n$39, succ, tmp, brSucc, bw, id, names },{ n$38, $irvar4 })
+
+INSTR=  n$41=*&amp;id:java.lang.String* [line 33]; 
+
+STATE:
+({ _, n$39, n$41, succ, tmp, brSucc, bw, id, names },{ n$38, $irvar4 })
+
+INSTR=  n$42=_fun_boolean HashSet.add(Object)(n$39:java.util.HashSet*,n$41:java.lang.String*) interface virtual [line 33]; 
+
+STATE:
+({ _, n$39, n$41, n$42, succ, tmp, brSucc, bw, id, names },{ n$38, $irvar4 })
+
+INSTR=  *&amp;$irvar5:_Bool=n$42 [line 33]; 
+
+STATE:
+({ succ, tmp, brSucc, bw, names },{ _, n$39, n$41, n$42, $irvar5, id })
+
+</LISTING>
+<hr width="100%">
+<a name="session44" href="./../nodes/com.dulishuo.test.test07162.main%28java.lang.String%5B%5D%29%3Avoid.52cf147d070ab7c2a7fad5b8da49be1c_node24.html#session44">node24#session44</a>(<a href="./../../test07162.java.c2d0140fcb5e47d0b5f4deddf58a45ee.html#LINE33">33</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session45" href="./../nodes/com.dulishuo.test.test07162.main%28java.lang.String%5B%5D%29%3Avoid.52cf147d070ab7c2a7fad5b8da49be1c_node24.html#session45">node24#session45</a>(<a href="./../../test07162.java.c2d0140fcb5e47d0b5f4deddf58a45ee.html#LINE33">33</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$22 -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  n$26 -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  n$29 -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  succ -&gt; { },
+  tmp -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  brSucc -&gt; { },
+  json -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  lang.System -&gt; { out -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *) },
+  bw -&gt; { },
+  id -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  names -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *) }
+
+
+
+
+TAINTED_CALL1: (callee="boolean HashSet.add(Object)", caller="void test07162.main(String[])")
+INSTR=  n$42 := boolean HashSet.add(Object)({ names, id }) [line 33]; 
+
+STATE:
+{ n$22 -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  n$26 -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  n$29 -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  succ -&gt; { },
+  tmp -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  brSucc -&gt; { },
+  json -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  lang.System -&gt; { out -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *) },
+  bw -&gt; { },
+  id -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  names -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *) }
+
+
+INSTR=  NULLIFY(&amp;$irvar5); [line 33]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;id); [line 33]; 
+
+STATE UNCHANGED
+
+INSTR=  EXIT_SCOPE(n$42,id); [line 33]; 
+
+STATE:
+{ n$22 -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  n$26 -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  n$29 -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  succ -&gt; { },
+  tmp -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  brSucc -&gt; { },
+  json -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  lang.System -&gt; { out -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *) },
+  bw -&gt; { },
+  id -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  names -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *) }
+
+</LISTING>
+<hr width="100%">
+<a name="session76" href="./../nodes/com.dulishuo.test.test07162.main%28java.lang.String%5B%5D%29%3Avoid.52cf147d070ab7c2a7fad5b8da49be1c_node24.html#session76">node24#session76</a>(<a href="./../../test07162.java.c2d0140fcb5e47d0b5f4deddf58a45ee.html#LINE33">33</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session77" href="./../nodes/com.dulishuo.test.test07162.main%28java.lang.String%5B%5D%29%3Avoid.52cf147d070ab7c2a7fad5b8da49be1c_node24.html#session77">node24#session77</a>(<a href="./../../test07162.java.c2d0140fcb5e47d0b5f4deddf58a45ee.html#LINE33">33</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$22 -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  n$26 -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  n$29 -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  succ -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  tmp -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  brSucc -&gt; { },
+  json -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  lang.System -&gt; { out -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *) },
+  bw -&gt; { },
+  id -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  names -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *) }
+
+
+
+
+TAINTED_CALL1: (callee="boolean HashSet.add(Object)", caller="void test07162.main(String[])")
+INSTR=  n$42 := boolean HashSet.add(Object)({ names, id }) [line 33]; 
+
+STATE:
+{ n$22 -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  n$26 -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  n$29 -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  succ -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  tmp -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  brSucc -&gt; { },
+  json -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  lang.System -&gt; { out -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *) },
+  bw -&gt; { },
+  id -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  names -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *) }
+
+
+INSTR=  NULLIFY(&amp;$irvar5); [line 33]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;id); [line 33]; 
+
+STATE UNCHANGED
+
+INSTR=  EXIT_SCOPE(n$42,id); [line 33]; 
+
+STATE:
+{ n$22 -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  n$26 -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  n$29 -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  succ -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  tmp -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  brSucc -&gt; { },
+  json -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  lang.System -&gt; { out -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *) },
+  bw -&gt; { },
+  id -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *),
+  names -&gt; ({ UserControlledString(String BufferedReader.readLine() at line 28) } + Footprint({ }) ~&gt; ?, *) }
+
+</LISTING>

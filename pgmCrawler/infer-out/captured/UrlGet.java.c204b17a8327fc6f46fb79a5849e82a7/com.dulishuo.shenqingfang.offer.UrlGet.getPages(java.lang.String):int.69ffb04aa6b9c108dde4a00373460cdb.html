@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.dulishuo.shenqingfang.offer.UrlGet.getPages(java.lang.String):int.69ffb04aa6b9c108dde4a00373460cdb</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../UrlGet.java.c204b17a8327fc6f46fb79a5849e82a7.html#LINE319">int UrlGet.getPages(String)</a></h1></center>
+<a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.getPages%28java.lang.String%29%3Aint.69ffb04aa6b9c108dde4a00373460cdb_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.getPages%28java.lang.String%29%3Aint.69ffb04aa6b9c108dde4a00373460cdb_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:17 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.getPages%28java.lang.String%29%3Aint.69ffb04aa6b9c108dde4a00373460cdb_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;doc); [line 329];
+NULLIFY(&amp;$irvar3); [line 329];
+NULLIFY(&amp;$irvar5); [line 329];
+NULLIFY(&amp;$irvar4); [line 329];
+NULLIFY(&amp;$irvar6); [line 329];
+NULLIFY(&amp;$irvar0); [line 329];
+NULLIFY(&amp;ele); [line 329];
+NULLIFY(&amp;ires); [line 329];
+NULLIFY(&amp;$irvar2); [line 329];
+NULLIFY(&amp;response); [line 329];
+EXIT_SCOPE(doc,$irvar3,$irvar5,$irvar4,$irvar6,$irvar0,ele,ires,$irvar2,response); [line 329];
+APPLY_ABSTRACTION; [line 329];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.getPages%28java.lang.String%29%3Aint.69ffb04aa6b9c108dde4a00373460cdb_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+*&amp;ires:int=1 [line 321];
+NULLIFY(&amp;ires); [line 321];
+EXIT_SCOPE(ires); [line 321];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.getPages%28java.lang.String%29%3Aint.69ffb04aa6b9c108dde4a00373460cdb_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+*&amp;response:java.lang.Object*="" [line 322];
+NULLIFY(&amp;response); [line 322];
+EXIT_SCOPE(response); [line 322];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.getPages%28java.lang.String%29%3Aint.69ffb04aa6b9c108dde4a00373460cdb_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$0=*&amp;url:java.lang.String* [line 323];
+n$1=_fun_String CrawlerUtil.httpsRequest(String)(n$0:java.lang.String*) [line 323];
+*&amp;response:java.lang.String*=n$1 [line 323];
+NULLIFY(&amp;url); [line 323];
+EXIT_SCOPE(n$0,n$1,url); [line 323];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.getPages%28java.lang.String%29%3Aint.69ffb04aa6b9c108dde4a00373460cdb_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+n$2=*&amp;response:java.lang.String* [line 324];
+n$3=_fun_Document Jsoup.parse(String)(n$2:java.lang.String*) [line 324];
+*&amp;doc:org.jsoup.nodes.Document*=n$3 [line 324];
+NULLIFY(&amp;response); [line 324];
+EXIT_SCOPE(n$2,n$3,response); [line 324];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.getPages%28java.lang.String%29%3Aint.69ffb04aa6b9c108dde4a00373460cdb_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$4=*&amp;doc:org.jsoup.nodes.Document* [line 325];
+_=*n$4:org.jsoup.nodes.Document*(root org.jsoup.nodes.Document) [line 325];
+n$6=_fun_Element Element.getElementById(String)(n$4:org.jsoup.nodes.Document*,"main":java.lang.Object*) virtual [line 325];
+*&amp;ele:org.jsoup.nodes.Element*=n$6 [line 325];
+NULLIFY(&amp;doc); [line 325];
+EXIT_SCOPE(_,n$4,n$6,doc); [line 325];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.getPages%28java.lang.String%29%3Aint.69ffb04aa6b9c108dde4a00373460cdb_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$7=*&amp;ele:org.jsoup.nodes.Element* [line 326];
+_=*n$7:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 326];
+n$9=_fun_Elements Element.getElementsByTag(String)(n$7:org.jsoup.nodes.Element*,"p":java.lang.Object*) virtual [line 326];
+*&amp;$irvar0:org.jsoup.select.Elements*=n$9 [line 326];
+EXIT_SCOPE(_,n$7,n$9); [line 326];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.getPages%28java.lang.String%29%3Aint.69ffb04aa6b9c108dde4a00373460cdb_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+n$10=*&amp;$irvar0:org.jsoup.select.Elements* [line 326];
+_=*n$10:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 326];
+n$12=_fun_String Elements.text()(n$10:org.jsoup.select.Elements*) virtual [line 326];
+*&amp;$irvar1:java.lang.String*=n$12 [line 326];
+NULLIFY(&amp;$irvar0); [line 326];
+NULLIFY(&amp;$irvar1); [line 326];
+EXIT_SCOPE(_,n$10,n$12,$irvar0,$irvar1); [line 326];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.getPages%28java.lang.String%29%3Aint.69ffb04aa6b9c108dde4a00373460cdb_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+n$13=*&amp;ele:org.jsoup.nodes.Element* [line 327];
+_=*n$13:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 327];
+n$15=_fun_Elements Element.getElementsByTag(String)(n$13:org.jsoup.nodes.Element*,"p":java.lang.Object*) virtual [line 327];
+*&amp;$irvar2:org.jsoup.select.Elements*=n$15 [line 327];
+NULLIFY(&amp;ele); [line 327];
+EXIT_SCOPE(_,n$13,n$15,ele); [line 327];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.getPages%28java.lang.String%29%3Aint.69ffb04aa6b9c108dde4a00373460cdb_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$16=*&amp;$irvar2:org.jsoup.select.Elements* [line 327];
+_=*n$16:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 327];
+n$18=_fun_String Elements.text()(n$16:org.jsoup.select.Elements*) virtual [line 327];
+*&amp;$irvar3:java.lang.String*=n$18 [line 327];
+NULLIFY(&amp;$irvar2); [line 327];
+EXIT_SCOPE(_,n$16,n$18,$irvar2); [line 327];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.getPages%28java.lang.String%29%3Aint.69ffb04aa6b9c108dde4a00373460cdb_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:3 Instructions
+n$19=*&amp;$irvar3:java.lang.String* [line 327];
+_=*n$19:java.lang.String*(root java.lang.String) [line 327];
+n$21=_fun_String[] String.split(String)(n$19:java.lang.String*,"/":java.lang.Object*) virtual [line 327];
+*&amp;$irvar4:java.lang.String*[_*_](*)=n$21 [line 327];
+NULLIFY(&amp;$irvar3); [line 327];
+EXIT_SCOPE(_,n$19,n$21,$irvar3); [line 327];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.getPages%28java.lang.String%29%3Aint.69ffb04aa6b9c108dde4a00373460cdb_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:3 Instructions
+n$22=*&amp;$irvar4:java.lang.String*[_*_](*) [line 328];
+_=*n$22:java.lang.String*(root java.lang.String*[_*_]) [line 328];
+n$24=*n$22[1]:java.lang.String* [line 328];
+_=*n$24:java.lang.String*(root java.lang.String) [line 328];
+n$26=_fun_String String.replaceAll(String,String)(n$24:java.lang.String*,"\\\\D":java.lang.Object*,"":java.lang.Object*) virtual [line 328];
+*&amp;$irvar5:java.lang.String*=n$26 [line 328];
+NULLIFY(&amp;$irvar4); [line 328];
+EXIT_SCOPE(_,_,n$22,n$24,n$26,$irvar4); [line 328];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.getPages%28java.lang.String%29%3Aint.69ffb04aa6b9c108dde4a00373460cdb_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:3 Instructions
+n$27=*&amp;$irvar5:java.lang.String* [line 328];
+_=*n$27:java.lang.String*(root java.lang.String) [line 328];
+n$29=_fun_String String.toString()(n$27:java.lang.String*) virtual [line 328];
+*&amp;$irvar6:java.lang.String*=n$29 [line 328];
+NULLIFY(&amp;$irvar5); [line 328];
+EXIT_SCOPE(_,n$27,n$29,$irvar5); [line 328];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.getPages%28java.lang.String%29%3Aint.69ffb04aa6b9c108dde4a00373460cdb_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:3 Instructions
+n$30=*&amp;$irvar6:java.lang.String* [line 327];
+n$31=_fun_int Integer.parseInt(String)(n$30:java.lang.String*) [line 327];
+*&amp;ires:int=n$31 [line 327];
+NULLIFY(&amp;$irvar6); [line 327];
+EXIT_SCOPE(n$30,n$31,$irvar6); [line 327];
+</span></span></a> <a href="./nodes/com.dulishuo.shenqingfang.offer.UrlGet.getPages%28java.lang.String%29%3Aint.69ffb04aa6b9c108dde4a00373460cdb_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:2 exn:3 Instructions
+n$32=*&amp;ires:int [line 329];
+*&amp;return:int=n$32 [line 329];
+NULLIFY(&amp;ires); [line 329];
+EXIT_SCOPE(n$32,ires); [line 329];
+APPLY_ABSTRACTION; [line 329];
+</span></span></a><br />@
+
+<span class='color_black'>int int UrlGet.getPages(String)(java.lang.String* url)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { return -> { } }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= int UrlGet.getPages(String)
+; translation_unit= src/com/dulishuo/shenqingfang/offer/UrlGet.java
+; access= Private
+; formals= [(url,java.lang.String*)]
+; is_defined= true
+; loc= src/com/dulishuo/shenqingfang/offer/UrlGet.java:319
+; locals= [{ name= $irvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= ele; typ= org.jsoup.nodes.Element*; modify_in_block= false }; 
+           { name= doc; typ= org.jsoup.nodes.Document*; modify_in_block= false }; 
+           { name= response; typ= java.lang.String*; modify_in_block= false }; 
+           { name= ires; typ= int; modify_in_block= false }]
+; ret_type= int 
+; proc_id= com.dulishuo.shenqingfang.offer.UrlGet.getPages(java.lang.String):int }</pre>
+</body>
+</html>

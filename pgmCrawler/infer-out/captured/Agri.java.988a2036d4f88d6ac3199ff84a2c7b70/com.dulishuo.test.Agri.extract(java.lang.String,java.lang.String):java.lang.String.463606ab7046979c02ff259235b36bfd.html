@@ -1,0 +1,323 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.dulishuo.test.Agri.extract(java.lang.String,java.lang.String):java.lang.String.463606ab7046979c02ff259235b36bfd</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../Agri.java.988a2036d4f88d6ac3199ff84a2c7b70.html#LINE219">String Agri.extract(String,String)</a></h1></center>
+<a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:28 26 24 12 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:38 35 30 succs:2 exn:2 Instructions
+NULLIFY(&amp;content); [line 242];
+NULLIFY(&amp;res); [line 242];
+NULLIFY(&amp;CatchVar97); [line 242];
+NULLIFY(&amp;CatchVar102); [line 242];
+EXIT_SCOPE(n$53,content,res,CatchVar97,CatchVar102); [line 242];
+APPLY_ABSTRACTION; [line 242];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+*&amp;res:java.lang.Object*="0" [line 222];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:36 Instructions
+n$0=*&amp;url:java.lang.String* [line 224];
+n$1=_fun_String CrawlerUtil.httpRequest(String)(n$0:java.lang.String*) [line 224];
+*&amp;response:java.lang.String*=n$1 [line 224];
+NULLIFY(&amp;url); [line 224];
+EXIT_SCOPE(n$0,n$1,url); [line 224];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:36 Instructions
+n$2=*&amp;response:java.lang.String* [line 225];
+n$3=_fun_Document Jsoup.parse(String)(n$2:java.lang.String*) [line 225];
+*&amp;doc:org.jsoup.nodes.Document*=n$3 [line 225];
+NULLIFY(&amp;response); [line 225];
+EXIT_SCOPE(n$2,n$3,response); [line 225];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:36 Instructions
+n$4=*&amp;doc:org.jsoup.nodes.Document* [line 226];
+_=*n$4:org.jsoup.nodes.Document*(root org.jsoup.nodes.Document) [line 226];
+n$6=_fun_Element Element.getElementById(String)(n$4:org.jsoup.nodes.Document*,"ContentPlaceHolder1_lbldata":java.lang.Object*) virtual [line 226];
+*&amp;$irvar0:org.jsoup.nodes.Element*=n$6 [line 226];
+NULLIFY(&amp;doc); [line 226];
+EXIT_SCOPE(_,n$4,n$6,doc); [line 226];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:36 Instructions
+n$7=*&amp;$irvar0:org.jsoup.nodes.Element* [line 226];
+_=*n$7:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 226];
+n$9=_fun_String Element.text()(n$7:org.jsoup.nodes.Element*) virtual [line 226];
+*&amp;content:java.lang.String*=n$9 [line 226];
+NULLIFY(&amp;$irvar0); [line 226];
+EXIT_SCOPE(_,n$7,n$9,$irvar0); [line 226];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 11 exn:36 Instructions
+n$10=*&amp;content:java.lang.String* [line 227];
+_=*n$10:java.lang.String*(root java.lang.String) [line 227];
+n$12=_fun_boolean String.contains(CharSequence)(n$10:java.lang.String*,"\\230\\178\\161\\230\\156\\137\\230\\130\\168\\230\\159\\165\\232\\175\\162\\231\\154\\132\\230\\149\\176\\230\\141\\174":java.lang.Object*) virtual [line 227];
+*&amp;$irvar1:_Bool=n$12 [line 227];
+EXIT_SCOPE(_,n$10,n$12); [line 227];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node10.html"><span class='visited with_tooltip'>C_10<span class='tooltip'>node10 preds:9 succs:12 exn:36 Conditional method_body
+n$13=*&amp;$irvar1:_Bool [line 227];
+PRUNE(!(n$13 == 0), true); [line 227];
+NULLIFY(&amp;content); [line 227];
+NULLIFY(&amp;$irvar1); [line 227];
+EXIT_SCOPE(n$13,content,$irvar1); [line 227];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node11.html"><span class='visited with_tooltip'>C_11<span class='tooltip'>node11 preds:9 succs:13 exn:36 Conditional method_body
+n$13=*&amp;$irvar1:_Bool [line 227];
+PRUNE((n$13 == 0), false); [line 227];
+NULLIFY(&amp;$irvar1); [line 227];
+EXIT_SCOPE(n$13,$irvar1); [line 227];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:10 succs:2 exn:3 Instructions
+n$14=*&amp;res:java.lang.Object* [line 228];
+*&amp;return:java.lang.String*=n$14 [line 228];
+NULLIFY(&amp;res); [line 228];
+EXIT_SCOPE(n$14,res); [line 228];
+APPLY_ABSTRACTION; [line 228];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:11 succs:14 exn:33 Instructions
+n$15=*&amp;content:java.lang.String* [line 231];
+_=*n$15:java.lang.String*(root java.lang.String) [line 231];
+n$17=*&amp;furit_key:java.lang.String* [line 231];
+n$18=_fun_String[] String.split(String)(n$15:java.lang.String*,n$17:java.lang.String*) virtual [line 231];
+*&amp;$irvar2:java.lang.String*[_*_](*)=n$18 [line 231];
+NULLIFY(&amp;furit_key); [line 231];
+EXIT_SCOPE(_,n$15,n$17,n$18,furit_key); [line 231];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:33 Instructions
+n$19=*&amp;$irvar2:java.lang.String*[_*_](*) [line 231];
+_=*n$19:java.lang.String*(root java.lang.String*[_*_]) [line 231];
+n$21=*n$19[1]:java.lang.String* [line 231];
+_=*n$21:java.lang.String*(root java.lang.String) [line 231];
+n$23=_fun_String String.replaceAll(String,String)(n$21:java.lang.String*,"\\\\s+":java.lang.Object*,"":java.lang.Object*) virtual [line 231];
+*&amp;res:java.lang.String*=n$23 [line 231];
+NULLIFY(&amp;$irvar2); [line 231];
+EXIT_SCOPE(_,_,n$19,n$21,n$23,$irvar2); [line 231];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:33 Instructions
+n$24=*&amp;res:java.lang.String* [line 232];
+_=*n$24:java.lang.String*(root java.lang.String) [line 232];
+n$26=_fun_String String.substring(int,int)(n$24:java.lang.String*,0:int,1:int) virtual [line 232];
+*&amp;$irvar3:java.lang.String*=n$26 [line 232];
+EXIT_SCOPE(_,n$24,n$26); [line 232];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 18 exn:33 Instructions
+n$27=*&amp;$irvar3:java.lang.String* [line 232];
+_=*n$27:java.lang.String*(root java.lang.String) [line 232];
+n$29=_fun_boolean String.equals(Object)(n$27:java.lang.String*,".":java.lang.Object*) virtual [line 232];
+*&amp;$irvar4:_Bool=n$29 [line 232];
+NULLIFY(&amp;$irvar3); [line 232];
+EXIT_SCOPE(_,n$27,n$29,$irvar3); [line 232];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node17.html"><span class='visited with_tooltip'>C_17<span class='tooltip'>node17 preds:16 succs:19 exn:33 Conditional method_body
+n$30=*&amp;$irvar4:_Bool [line 232];
+PRUNE(!(n$30 == 0), true); [line 232];
+NULLIFY(&amp;$irvar4); [line 232];
+EXIT_SCOPE(n$30,$irvar4); [line 232];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node18.html"><span class='visited with_tooltip'>C_18<span class='tooltip'>node18 preds:16 succs:23 exn:33 Conditional method_body
+n$30=*&amp;$irvar4:_Bool [line 232];
+PRUNE((n$30 == 0), false); [line 232];
+NULLIFY(&amp;$irvar4); [line 232];
+EXIT_SCOPE(n$30,$irvar4); [line 232];
+APPLY_ABSTRACTION; [line 232];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:17 succs:20 exn:33 Instructions
+n$31=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 233];
+n$32=_fun_StringBuilder.&lt;init&gt;()(n$31:java.lang.StringBuilder*) [line 233];
+*&amp;$irvar5:java.lang.StringBuilder*=n$31 [line 233];
+EXIT_SCOPE(n$31,n$32); [line 233];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:33 Instructions
+n$33=*&amp;$irvar5:java.lang.StringBuilder* [line 233];
+_=*n$33:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 233];
+n$35=_fun_StringBuilder StringBuilder.append(String)(n$33:java.lang.StringBuilder*,"0":java.lang.Object*) virtual [line 233];
+*&amp;$irvar6:java.lang.StringBuilder*=n$35 [line 233];
+NULLIFY(&amp;$irvar5); [line 233];
+EXIT_SCOPE(_,n$33,n$35,$irvar5); [line 233];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 succs:22 exn:33 Instructions
+n$36=*&amp;$irvar6:java.lang.StringBuilder* [line 233];
+_=*n$36:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 233];
+n$38=*&amp;res:java.lang.String* [line 233];
+n$39=_fun_StringBuilder StringBuilder.append(String)(n$36:java.lang.StringBuilder*,n$38:java.lang.String*) virtual [line 233];
+*&amp;$irvar7:java.lang.StringBuilder*=n$39 [line 233];
+NULLIFY(&amp;$irvar6); [line 233];
+EXIT_SCOPE(_,n$36,n$38,n$39,$irvar6); [line 233];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:33 Instructions
+n$40=*&amp;$irvar7:java.lang.StringBuilder* [line 233];
+_=*n$40:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 233];
+n$42=_fun_String StringBuilder.toString()(n$40:java.lang.StringBuilder*) virtual [line 233];
+*&amp;res:java.lang.String*=n$42 [line 233];
+NULLIFY(&amp;$irvar7); [line 233];
+EXIT_SCOPE(_,n$40,n$42,$irvar7); [line 233];
+APPLY_ABSTRACTION; [line 233];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 18 succs:24 exn:33 Instructions
+n$43=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 234];
+_=*n$43:java.io.PrintStream*(root java.io.PrintStream) [line 234];
+n$45=*&amp;res:java.lang.String* [line 234];
+n$46=_fun_void PrintStream.println(String)(n$43:java.io.PrintStream*,n$45:java.lang.String*) virtual [line 234];
+EXIT_SCOPE(_,n$43,n$45,n$46); [line 234];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:2 exn:3 Instructions
+n$47=*&amp;res:java.lang.String* [line 235];
+*&amp;return:java.lang.String*=n$47 [line 235];
+NULLIFY(&amp;content); [line 235];
+NULLIFY(&amp;res); [line 235];
+EXIT_SCOPE(n$47,content,res); [line 235];
+APPLY_ABSTRACTION; [line 235];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:31 succs:26 exn:39 Instructions
+n$48=*&amp;CatchVar97:java.lang.Object* [line 236];
+*&amp;e:java.lang.Object*=n$48 [line 236];
+NULLIFY(&amp;CatchVar97); [line 236];
+NULLIFY(&amp;e); [line 236];
+EXIT_SCOPE(n$48,CatchVar97,e); [line 236];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:25 succs:2 exn:3 Instructions
+n$49=*&amp;content:java.lang.String* [line 237];
+*&amp;return:java.lang.String*=n$49 [line 237];
+NULLIFY(&amp;content); [line 237];
+NULLIFY(&amp;res); [line 237];
+EXIT_SCOPE(n$49,content,res); [line 237];
+APPLY_ABSTRACTION; [line 237];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:37 34 29 succs:28 exn:3 Instructions
+n$50=*&amp;CatchVar102:java.lang.Object* [line 241];
+*&amp;e:java.lang.Object*=n$50 [line 241];
+NULLIFY(&amp;CatchVar102); [line 241];
+NULLIFY(&amp;e); [line 241];
+EXIT_SCOPE(n$50,CatchVar102,e); [line 241];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:27 succs:2 exn:3 Instructions
+n$51=*&amp;res:java.lang.String* [line 242];
+*&amp;return:java.lang.String*=n$51 [line 242];
+NULLIFY(&amp;res); [line 242];
+EXIT_SCOPE(n$51,res); [line 242];
+APPLY_ABSTRACTION; [line 242];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node29.html"><span class='visited with_tooltip'>C_29<span class='tooltip'>node29 preds:32 succs:27 exn:3 Conditional exception handler
+n$54=_fun___instanceof(n$53:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 241];
+PRUNE(n$54, true); [line 241];
+*&amp;CatchVar102:java.lang.String*=n$53 [line 241];
+EXIT_SCOPE(n$53,n$54); [line 241];
+APPLY_ABSTRACTION; [line 241];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node30.html"><span class='visited with_tooltip'>C_30<span class='tooltip'>node30 preds:32 succs:3 exn:3 Conditional exception handler
+n$54=_fun___instanceof(n$53:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 241];
+PRUNE(!n$54, false); [line 241];
+*&amp;return:java.lang.String*=EXN n$53 [line 241];
+NULLIFY(&amp;res); [line 241];
+EXIT_SCOPE(n$53,n$54,res); [line 241];
+APPLY_ABSTRACTION; [line 241];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node31.html"><span class='visited with_tooltip'>C_31<span class='tooltip'>node31 preds:33 succs:25 exn:3 Conditional exception handler
+n$55=_fun___instanceof(n$53:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 236];
+PRUNE(n$55, true); [line 236];
+*&amp;CatchVar97:java.lang.String*=n$53 [line 236];
+EXIT_SCOPE(n$53,n$55); [line 236];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node32.html"><span class='visited with_tooltip'>C_32<span class='tooltip'>node32 preds:33 succs:29 30 exn:3 Conditional exception handler
+n$55=_fun___instanceof(n$53:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 236];
+PRUNE(!n$55, false); [line 236];
+NULLIFY(&amp;content); [line 236];
+EXIT_SCOPE(n$55,content); [line 236];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds: succs:31 32 exn:3 Instructions
+n$52=*&amp;return:java.lang.String* [line 236];
+*&amp;return:java.lang.String*=null [line 236];
+n$53=_fun___unwrap_exception(n$52:java.lang.String*) [line 236];
+NULLIFY(&amp;$irvar3); [line 236];
+NULLIFY(&amp;$irvar5); [line 236];
+NULLIFY(&amp;$irvar4); [line 236];
+NULLIFY(&amp;$irvar7); [line 236];
+NULLIFY(&amp;$irvar6); [line 236];
+NULLIFY(&amp;$irvar2); [line 236];
+EXIT_SCOPE(n$52,$irvar3,$irvar5,$irvar4,$irvar7,$irvar6,$irvar2); [line 236];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node34.html"><span class='visited with_tooltip'>C_34<span class='tooltip'>node34 preds:36 succs:27 exn:3 Conditional exception handler
+n$56=_fun___instanceof(n$53:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 241];
+PRUNE(n$56, true); [line 241];
+*&amp;CatchVar102:java.lang.String*=n$53 [line 241];
+EXIT_SCOPE(n$53,n$56); [line 241];
+APPLY_ABSTRACTION; [line 241];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node35.html"><span class='visited with_tooltip'>C_35<span class='tooltip'>node35 preds:36 succs:3 exn:3 Conditional exception handler
+n$56=_fun___instanceof(n$53:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 241];
+PRUNE(!n$56, false); [line 241];
+*&amp;return:java.lang.String*=EXN n$53 [line 241];
+NULLIFY(&amp;res); [line 241];
+EXIT_SCOPE(n$53,n$56,res); [line 241];
+APPLY_ABSTRACTION; [line 241];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node36.html"><span class='visited with_tooltip'>I_36<span class='tooltip'>node36 preds: succs:34 35 exn:3 Instructions
+n$52=*&amp;return:java.lang.String* [line 241];
+*&amp;return:java.lang.String*=null [line 241];
+n$53=_fun___unwrap_exception(n$52:java.lang.String*) [line 241];
+NULLIFY(&amp;doc); [line 241];
+NULLIFY(&amp;content); [line 241];
+NULLIFY(&amp;$irvar0); [line 241];
+NULLIFY(&amp;$irvar1); [line 241];
+NULLIFY(&amp;response); [line 241];
+EXIT_SCOPE(n$52,doc,content,$irvar0,$irvar1,response); [line 241];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node37.html"><span class='visited with_tooltip'>C_37<span class='tooltip'>node37 preds:39 succs:27 exn:3 Conditional exception handler
+n$57=_fun___instanceof(n$53:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 241];
+PRUNE(n$57, true); [line 241];
+*&amp;CatchVar102:java.lang.String*=n$53 [line 241];
+EXIT_SCOPE(n$53,n$57); [line 241];
+APPLY_ABSTRACTION; [line 241];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node38.html"><span class='visited with_tooltip'>C_38<span class='tooltip'>node38 preds:39 succs:3 exn:3 Conditional exception handler
+n$57=_fun___instanceof(n$53:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 241];
+PRUNE(!n$57, false); [line 241];
+*&amp;return:java.lang.String*=EXN n$53 [line 241];
+NULLIFY(&amp;res); [line 241];
+EXIT_SCOPE(n$53,n$57,res); [line 241];
+APPLY_ABSTRACTION; [line 241];
+</span></span></a> <a href="./nodes/com.dulishuo.test.Agri.extract%28java.lang.String%2Cjava.lang.String%29%3Ajava.lang.String.463606ab7046979c02ff259235b36bfd_node39.html"><span class='visited with_tooltip'>I_39<span class='tooltip'>node39 preds: succs:37 38 exn:3 Instructions
+n$52=*&amp;return:java.lang.String* [line 241];
+*&amp;return:java.lang.String*=null [line 241];
+n$53=_fun___unwrap_exception(n$52:java.lang.String*) [line 241];
+NULLIFY(&amp;content); [line 241];
+EXIT_SCOPE(n$52,content); [line 241];
+</span></span></a><br />@
+
+<span class='color_black'>java.lang.String* String Agri.extract(String,String)(java.lang.String* url, java.lang.String* furit_key)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { lang.System -> { out -> (Footprint({ @val$1*, @val$0* }) + Sanitizers({ StringConcatenation }) ~> ?, *) },
+            return -> (Footprint({ @val$1*, @val$0* }) + Sanitizers({ StringConcatenation }) ~> ?, *) }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= String Agri.extract(String,String)
+; translation_unit= src/com/dulishuo/test/Agri.java
+; access= Private
+; formals= [(url,java.lang.String*);  (furit_key,java.lang.String*)]
+; is_defined= true
+; loc= src/com/dulishuo/test/Agri.java:219
+; locals= [{ name= CatchVar102; typ= void; modify_in_block= false }; 
+           { name= CatchVar97; typ= void; modify_in_block= false }; 
+           { name= $irvar7; typ= void; modify_in_block= false }; 
+           { name= $irvar6; typ= void; modify_in_block= false }; 
+           { name= $irvar5; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= res; typ= java.lang.String*; modify_in_block= false }; 
+           { name= content; typ= java.lang.String*; modify_in_block= false }; 
+           { name= doc; typ= org.jsoup.nodes.Document*; modify_in_block= false }; 
+           { name= response; typ= java.lang.String*; modify_in_block= false }; 
+           { name= e; typ= java.lang.Exception*; modify_in_block= false }]
+; ret_type= java.lang.String* 
+; proc_id= com.dulishuo.test.Agri.extract(java.lang.String,java.lang.String):java.lang.String }</pre>
+</body>
+</html>

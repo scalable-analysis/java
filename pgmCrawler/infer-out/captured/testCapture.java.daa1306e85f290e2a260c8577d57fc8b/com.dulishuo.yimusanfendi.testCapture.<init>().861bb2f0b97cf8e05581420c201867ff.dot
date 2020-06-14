@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.yimusanfendi.testCapture.<init>().861bb2f0b97cf8e05581420c201867ff_1" [label="1: Start testCapture.<init>()\nFormals:  this:com.dulishuo.yimusanfendi.testCapture*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.yimusanfendi.testCapture.<init>().861bb2f0b97cf8e05581420c201867ff_1" -> "com.dulishuo.yimusanfendi.testCapture.<init>().861bb2f0b97cf8e05581420c201867ff_4" ;
+"com.dulishuo.yimusanfendi.testCapture.<init>().861bb2f0b97cf8e05581420c201867ff_2" [label="2: Exit testCapture.<init>() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.yimusanfendi.testCapture.<init>().861bb2f0b97cf8e05581420c201867ff_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 22]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.testCapture.<init>().861bb2f0b97cf8e05581420c201867ff_3" -> "com.dulishuo.yimusanfendi.testCapture.<init>().861bb2f0b97cf8e05581420c201867ff_2" ;
+"com.dulishuo.yimusanfendi.testCapture.<init>().861bb2f0b97cf8e05581420c201867ff_4" [label="4:  Call Object.<init>() \n   n$0=*&this:com.dulishuo.yimusanfendi.testCapture* [line 22]\n  n$1=_fun_Object.<init>()(n$0:com.dulishuo.yimusanfendi.testCapture*) [line 22]\n  NULLIFY(&this); [line 22]\n  EXIT_SCOPE(n$0,n$1,this); [line 22]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.testCapture.<init>().861bb2f0b97cf8e05581420c201867ff_4" -> "com.dulishuo.yimusanfendi.testCapture.<init>().861bb2f0b97cf8e05581420c201867ff_5" ;
+	 "com.dulishuo.yimusanfendi.testCapture.<init>().861bb2f0b97cf8e05581420c201867ff_4" -> "com.dulishuo.yimusanfendi.testCapture.<init>().861bb2f0b97cf8e05581420c201867ff_3" [color="red" ];
+"com.dulishuo.yimusanfendi.testCapture.<init>().861bb2f0b97cf8e05581420c201867ff_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 22]\n " shape="box"]
+	
+
+	 "com.dulishuo.yimusanfendi.testCapture.<init>().861bb2f0b97cf8e05581420c201867ff_5" -> "com.dulishuo.yimusanfendi.testCapture.<init>().861bb2f0b97cf8e05581420c201867ff_2" ;
+	 "com.dulishuo.yimusanfendi.testCapture.<init>().861bb2f0b97cf8e05581420c201867ff_5" -> "com.dulishuo.yimusanfendi.testCapture.<init>().861bb2f0b97cf8e05581420c201867ff_3" [color="red" ];
+}

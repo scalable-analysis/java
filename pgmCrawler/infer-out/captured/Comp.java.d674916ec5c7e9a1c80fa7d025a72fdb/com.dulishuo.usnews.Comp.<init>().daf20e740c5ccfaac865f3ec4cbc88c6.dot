@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.usnews.Comp.<init>().daf20e740c5ccfaac865f3ec4cbc88c6_1" [label="1: Start Comp.<init>()\nFormals:  this:com.dulishuo.usnews.Comp*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.usnews.Comp.<init>().daf20e740c5ccfaac865f3ec4cbc88c6_1" -> "com.dulishuo.usnews.Comp.<init>().daf20e740c5ccfaac865f3ec4cbc88c6_4" ;
+"com.dulishuo.usnews.Comp.<init>().daf20e740c5ccfaac865f3ec4cbc88c6_2" [label="2: Exit Comp.<init>() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.usnews.Comp.<init>().daf20e740c5ccfaac865f3ec4cbc88c6_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 7]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.Comp.<init>().daf20e740c5ccfaac865f3ec4cbc88c6_3" -> "com.dulishuo.usnews.Comp.<init>().daf20e740c5ccfaac865f3ec4cbc88c6_2" ;
+"com.dulishuo.usnews.Comp.<init>().daf20e740c5ccfaac865f3ec4cbc88c6_4" [label="4:  Call Object.<init>() \n   n$0=*&this:com.dulishuo.usnews.Comp* [line 7]\n  n$1=_fun_Object.<init>()(n$0:com.dulishuo.usnews.Comp*) [line 7]\n  NULLIFY(&this); [line 7]\n  EXIT_SCOPE(n$0,n$1,this); [line 7]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.Comp.<init>().daf20e740c5ccfaac865f3ec4cbc88c6_4" -> "com.dulishuo.usnews.Comp.<init>().daf20e740c5ccfaac865f3ec4cbc88c6_5" ;
+	 "com.dulishuo.usnews.Comp.<init>().daf20e740c5ccfaac865f3ec4cbc88c6_4" -> "com.dulishuo.usnews.Comp.<init>().daf20e740c5ccfaac865f3ec4cbc88c6_3" [color="red" ];
+"com.dulishuo.usnews.Comp.<init>().daf20e740c5ccfaac865f3ec4cbc88c6_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 7]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.Comp.<init>().daf20e740c5ccfaac865f3ec4cbc88c6_5" -> "com.dulishuo.usnews.Comp.<init>().daf20e740c5ccfaac865f3ec4cbc88c6_2" ;
+	 "com.dulishuo.usnews.Comp.<init>().daf20e740c5ccfaac865f3ec4cbc88c6_5" -> "com.dulishuo.usnews.Comp.<init>().daf20e740c5ccfaac865f3ec4cbc88c6_3" [color="red" ];
+}

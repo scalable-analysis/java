@@ -1,0 +1,562 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>GetUrl.java.a0c2917ec23ff687817200a1b6d646e7</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>File src/com/dulishuo/yimusanfendi/offer/GetUrl.java </h1></center>
+<table class="code">
+<tr><td class="num" id="LINE1">1</td><td class="line">package com.dulishuo.yimusanfendi.offer; </td></tr>
+<tr><td class="num" id="LINE2">2</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE3">3</td><td class="line">import java.io.BufferedWriter; </td></tr>
+<tr><td class="num" id="LINE4">4</td><td class="line">import java.io.IOException; </td></tr>
+<tr><td class="num" id="LINE5">5</td><td class="line">import java.io.UnsupportedEncodingException; </td></tr>
+<tr><td class="num" id="LINE6">6</td><td class="line">import java.net.URLEncoder; </td></tr>
+<tr><td class="num" id="LINE7">7</td><td class="line">import java.util.ArrayList; </td></tr>
+<tr><td class="num" id="LINE8">8</td><td class="line">import java.util.List; </td></tr>
+<tr><td class="num" id="LINE9">9</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE10">10</td><td class="line">import org.apache.commons.httpclient.HttpClient; </td></tr>
+<tr><td class="num" id="LINE11">11</td><td class="line">import org.apache.commons.httpclient.HttpException; </td></tr>
+<tr><td class="num" id="LINE12">12</td><td class="line">import org.apache.commons.httpclient.methods.GetMethod; </td></tr>
+<tr><td class="num" id="LINE13">13</td><td class="line">import org.jsoup.Jsoup; </td></tr>
+<tr><td class="num" id="LINE14">14</td><td class="line">import org.jsoup.nodes.Document; </td></tr>
+<tr><td class="num" id="LINE15">15</td><td class="line">import org.jsoup.nodes.Element; </td></tr>
+<tr><td class="num" id="LINE16">16</td><td class="line">import org.jsoup.select.Elements; </td></tr>
+<tr><td class="num" id="LINE17">17</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE18">18</td><td class="line">import com.dulishuo.util.FileUtil; </td></tr>
+<tr><td class="num" id="LINE19">19</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE20">20</td><td class="line">public class GetUrl { <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.<init>%28%29.7f10bbe06b0b541c1c860afeb7f238ac_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.<init>%28%29.7f10bbe06b0b541c1c860afeb7f238ac_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=*&amp;this:com.dulishuo.yimusanfendi.offer.GetUrl* [line 20];
+n$1=_fun_Object.&lt;init&gt;()(n$0:com.dulishuo.yimusanfendi.offer.GetUrl*) [line 20];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.<init>%28%29.7f10bbe06b0b541c1c860afeb7f238ac_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.<init>%28%29.7f10bbe06b0b541c1c860afeb7f238ac_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.<init>%28%29.7f10bbe06b0b541c1c860afeb7f238ac_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/com.dulishuo.yimusanfendi.offer.GetUrl.<init>%28%29.7f10bbe06b0b541c1c860afeb7f238ac.html">summary for GetUrl.&lt;init&gt;()</a></td></tr>
+<tr><td class="num" id="LINE21">21</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE22">22</td><td class="line">	public static void main(String[] args) throws UnsupportedEncodingException { <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.main%28java.lang.String%5B%5D%29%3Avoid.51a169530d08a0bc60e53e816400fe76_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/com.dulishuo.yimusanfendi.offer.GetUrl.main%28java.lang.String%5B%5D%29%3Avoid.51a169530d08a0bc60e53e816400fe76.html">summary for void GetUrl.main(String[])</a></td></tr>
+<tr><td class="num" id="LINE23">23</td><td class="line">		// TODO Auto-generated method stub </td></tr>
+<tr><td class="num" id="LINE24">24</td><td class="line">		getUrl(); <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.main%28java.lang.String%5B%5D%29%3Avoid.51a169530d08a0bc60e53e816400fe76_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun_void GetUrl.getUrl()() [line 24];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE25">25</td><td class="line">	} <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.main%28java.lang.String%5B%5D%29%3Avoid.51a169530d08a0bc60e53e816400fe76_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:2 exn:3 Instructions
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.main%28java.lang.String%5B%5D%29%3Avoid.51a169530d08a0bc60e53e816400fe76_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:5 3 succs: exn: Exit
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.main%28java.lang.String%5B%5D%29%3Avoid.51a169530d08a0bc60e53e816400fe76_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE26">26</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE27">27</td><td class="line">	private static void getUrl() throws UnsupportedEncodingException { <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae.html">summary for void GetUrl.getUrl()</a></td></tr>
+<tr><td class="num" id="LINE28">28</td><td class="line">		BufferedWriter bw = FileUtil.FileWriter(&quot;result/urls.txt&quot;); <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+n$0=_fun_BufferedWriter FileUtil.FileWriter(String)("result/urls.txt":java.lang.Object*) [line 28];
+*&amp;bw:java.io.BufferedWriter*=n$0 [line 28];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE29">29</td><td class="line">		// TODO Auto-generated method stub </td></tr>
+<tr><td class="num" id="LINE30">30</td><td class="line">		String basicUrl = &quot;http://www.1point3acres.com/bbs/forum.php?mod=forumdisplay&amp;fid=82&amp;sortid=164&amp;filter=sortid&amp;sortid=164&amp;page=&quot;; <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+*&amp;basicUrl:java.lang.Object*="http://www.1point3acres.com/bbs/forum.php?mod=forumdisplay&fid=82&sortid=164&filter=sortid&sortid=164&page=" [line 30];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE31">31</td><td class="line">		List&lt;String&gt; xx = new ArrayList&lt;String&gt;(); <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$1=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 31];
+n$2=_fun_ArrayList.&lt;init&gt;()(n$1:java.util.ArrayList*) [line 31];
+*&amp;xx:java.util.ArrayList*=n$1 [line 31];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE32">32</td><td class="line">		for(int i = 1 ; i &lt; 691 ; i++){ <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:10 exn:3 Instructions
+*&amp;i:int=1 [line 32];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node10.html"><span class='visited with_tooltip'>J_10<span class='tooltip'>node10 preds:57 7 succs:8 9 exn: Join
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node8.html"><span class='visited with_tooltip'>C_8<span class='tooltip'>node8 preds:10 succs:11 exn:3 Conditional method_body
+n$3=*&amp;i:int [line 32];
+PRUNE(!(n$3  &gt;=  691), true); [line 32];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node57.html"><span class='visited with_tooltip'>I_57<span class='tooltip'>node57 preds:32 succs:10 exn:3 Instructions
+n$124=*&amp;i:int [line 32];
+*&amp;i:int=(n$124 + 1) [line 32];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node9.html"><span class='visited with_tooltip'>C_9<span class='tooltip'>node9 preds:10 succs:58 exn:3 Conditional method_body
+n$3=*&amp;i:int [line 32];
+PRUNE((n$3  &gt;=  691), false); [line 32];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE33">33</td><td class="line">			System.out.println(&quot;process____&quot;+i); <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:8 succs:12 exn:3 Instructions
+n$4=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 33];
+*&amp;$irvar0:java.io.PrintStream*=n$4 [line 33];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$5=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 33];
+n$6=_fun_StringBuilder.&lt;init&gt;()(n$5:java.lang.StringBuilder*) [line 33];
+*&amp;$irvar1:java.lang.StringBuilder*=n$5 [line 33];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:3 Instructions
+n$7=*&amp;$irvar1:java.lang.StringBuilder* [line 33];
+_=*n$7:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 33];
+n$9=_fun_StringBuilder StringBuilder.append(String)(n$7:java.lang.StringBuilder*,"process____":java.lang.Object*) virtual [line 33];
+*&amp;$irvar2:java.lang.StringBuilder*=n$9 [line 33];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:3 Instructions
+n$10=*&amp;$irvar2:java.lang.StringBuilder* [line 33];
+_=*n$10:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 33];
+n$12=*&amp;i:int [line 33];
+n$13=_fun_StringBuilder StringBuilder.append(int)(n$10:java.lang.StringBuilder*,n$12:int) virtual [line 33];
+*&amp;$irvar3:java.lang.StringBuilder*=n$13 [line 33];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:16 exn:3 Instructions
+n$14=*&amp;$irvar3:java.lang.StringBuilder* [line 33];
+_=*n$14:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 33];
+n$16=_fun_String StringBuilder.toString()(n$14:java.lang.StringBuilder*) virtual [line 33];
+*&amp;$irvar4:java.lang.String*=n$16 [line 33];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:15 succs:17 exn:3 Instructions
+n$17=*&amp;$irvar0:java.io.PrintStream* [line 33];
+_=*n$17:java.io.PrintStream*(root java.io.PrintStream) [line 33];
+n$19=*&amp;$irvar4:java.lang.String* [line 33];
+n$20=_fun_void PrintStream.println(String)(n$17:java.io.PrintStream*,n$19:java.lang.String*) virtual [line 33];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE34">34</td><td class="line">			try { </td></tr>
+<tr><td class="num" id="LINE35">35</td><td class="line">				Thread.currentThread().sleep(50); <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:18 exn:68 Instructions
+n$21=_fun_Thread Thread.currentThread()() [line 35];
+*&amp;$irvar5:java.lang.Thread*=n$21 [line 35];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:17 succs:21 exn:68 Instructions
+n$22=_fun_void Thread.sleep(long)(50:long) [line 35];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE36">36</td><td class="line">			} catch (InterruptedException e1) { <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:66 succs:20 exn:3 Instructions
+n$23=*&amp;CatchVar64:java.lang.Object* [line 36];
+*&amp;e1:java.lang.Object*=n$23 [line 36];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node66.html"><span class='visited with_tooltip'>C_66<span class='tooltip'>node66 preds:68 succs:19 exn:3 Conditional exception handler
+n$139=_fun___instanceof(n$137:java.lang.InterruptedException*,sizeof(t=java.lang.InterruptedException):void) [line 36];
+PRUNE(n$139, true); [line 36];
+*&amp;CatchVar64:void=n$137 [line 36];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node67.html"><span class='visited with_tooltip'>C_67<span class='tooltip'>node67 preds:68 succs:3 exn:3 Conditional exception handler
+n$139=_fun___instanceof(n$137:java.lang.InterruptedException*,sizeof(t=java.lang.InterruptedException):void) [line 36];
+PRUNE(!n$139, false); [line 36];
+*&amp;return:void=EXN n$137 [line 36];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node68.html"><span class='visited with_tooltip'>I_68<span class='tooltip'>node68 preds: succs:66 67 exn:3 Instructions
+n$136=*&amp;return:void [line 36];
+*&amp;return:void=null [line 36];
+n$137=_fun___unwrap_exception(n$136:void) [line 36];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE37">37</td><td class="line">				// TODO Auto-generated catch block </td></tr>
+<tr><td class="num" id="LINE38">38</td><td class="line">				e1.printStackTrace(); <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 succs:21 exn:3 Instructions
+n$24=*&amp;e1:java.lang.Object* [line 38];
+_=*n$24:java.lang.Object*(root java.lang.Object) [line 38];
+n$26=_fun_void Throwable.printStackTrace()(n$24:java.lang.Object*) virtual [line 38];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE39">39</td><td class="line">			} </td></tr>
+<tr><td class="num" id="LINE40">40</td><td class="line">			String res = httpRequest(basicUrl+i); <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:20 18 succs:22 exn:3 Instructions
+n$27=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 40];
+n$28=_fun_StringBuilder.&lt;init&gt;()(n$27:java.lang.StringBuilder*) [line 40];
+*&amp;$irvar6:java.lang.StringBuilder*=n$27 [line 40];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:3 Instructions
+n$29=*&amp;$irvar6:java.lang.StringBuilder* [line 40];
+_=*n$29:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 40];
+n$31=*&amp;basicUrl:java.lang.Object* [line 40];
+n$32=_fun_StringBuilder StringBuilder.append(String)(n$29:java.lang.StringBuilder*,n$31:java.lang.Object*) virtual [line 40];
+*&amp;$irvar7:java.lang.StringBuilder*=n$32 [line 40];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 succs:24 exn:3 Instructions
+n$33=*&amp;$irvar7:java.lang.StringBuilder* [line 40];
+_=*n$33:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 40];
+n$35=*&amp;i:int [line 40];
+n$36=_fun_StringBuilder StringBuilder.append(int)(n$33:java.lang.StringBuilder*,n$35:int) virtual [line 40];
+*&amp;$irvar8:java.lang.StringBuilder*=n$36 [line 40];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:25 exn:3 Instructions
+n$37=*&amp;$irvar8:java.lang.StringBuilder* [line 40];
+_=*n$37:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 40];
+n$39=_fun_String StringBuilder.toString()(n$37:java.lang.StringBuilder*) virtual [line 40];
+*&amp;$irvar9:java.lang.String*=n$39 [line 40];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:24 succs:26 exn:3 Instructions
+n$40=*&amp;$irvar9:java.lang.String* [line 40];
+n$41=_fun_String GetUrl.httpRequest(String)(n$40:java.lang.String*) [line 40];
+*&amp;res:java.lang.String*=n$41 [line 40];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE41">41</td><td class="line">			Document html = Jsoup.parse(res); <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:25 succs:27 exn:3 Instructions
+n$42=*&amp;res:java.lang.String* [line 41];
+n$43=_fun_Document Jsoup.parse(String)(n$42:java.lang.String*) [line 41];
+*&amp;html:org.jsoup.nodes.Document*=n$43 [line 41];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE42">42</td><td class="line">			Element ele = html.getElementById(&quot;threadlisttableid&quot;); <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:26 succs:28 exn:3 Instructions
+n$44=*&amp;html:org.jsoup.nodes.Document* [line 42];
+_=*n$44:org.jsoup.nodes.Document*(root org.jsoup.nodes.Document) [line 42];
+n$46=_fun_Element Element.getElementById(String)(n$44:org.jsoup.nodes.Document*,"threadlisttableid":java.lang.Object*) virtual [line 42];
+*&amp;ele:org.jsoup.nodes.Element*=n$46 [line 42];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE43">43</td><td class="line">			Elements tbodys = ele.children(); <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:27 succs:29 exn:3 Instructions
+n$47=*&amp;ele:org.jsoup.nodes.Element* [line 43];
+_=*n$47:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 43];
+n$49=_fun_Elements Element.children()(n$47:org.jsoup.nodes.Element*) virtual [line 43];
+*&amp;tbodys:org.jsoup.select.Elements*=n$49 [line 43];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE44">44</td><td class="line">			int size = tbodys.size(); <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:28 succs:30 exn:3 Instructions
+n$50=*&amp;tbodys:org.jsoup.select.Elements* [line 44];
+_=*n$50:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 44];
+n$52=_fun_int Elements.size()(n$50:org.jsoup.select.Elements*) virtual [line 44];
+*&amp;size:int=n$52 [line 44];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE45">45</td><td class="line">			for(int j = 1 ; j &lt; size ; j++){ <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:29 succs:33 exn:3 Instructions
+*&amp;j:int=1 [line 45];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node33.html"><span class='visited with_tooltip'>J_33<span class='tooltip'>node33 preds:56 30 succs:31 32 exn: Join
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node31.html"><span class='visited with_tooltip'>C_31<span class='tooltip'>node31 preds:33 succs:34 exn:3 Conditional method_body
+n$53=*&amp;j:int [line 45];
+n$54=*&amp;size:int [line 45];
+PRUNE(!(n$53  &gt;=  n$54), true); [line 45];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node56.html"><span class='visited with_tooltip'>I_56<span class='tooltip'>node56 preds:55 54 succs:33 exn:3 Instructions
+n$123=*&amp;j:int [line 45];
+*&amp;j:int=(n$123 + 1) [line 45];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node32.html"><span class='visited with_tooltip'>C_32<span class='tooltip'>node32 preds:33 succs:57 exn:3 Conditional method_body
+n$53=*&amp;j:int [line 45];
+n$54=*&amp;size:int [line 45];
+PRUNE((n$53  &gt;=  n$54), false); [line 45];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE46">46</td><td class="line">				try{ </td></tr>
+<tr><td class="num" id="LINE47">47</td><td class="line">					String href = tbodys.get(j).getElementsByClass(&quot;icn&quot;).get(0).select(&quot;a&quot;).first().attr(&quot;href&quot;).toString(); <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node34.html"><span class='visited with_tooltip'>I_34<span class='tooltip'>node34 preds:31 succs:35 exn:65 Instructions
+n$55=*&amp;tbodys:org.jsoup.select.Elements* [line 47];
+_=*n$55:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 47];
+n$57=*&amp;j:int [line 47];
+n$58=_fun_Element Elements.get(int)(n$55:org.jsoup.select.Elements*,n$57:int) virtual [line 47];
+*&amp;$irvar10:org.jsoup.nodes.Element*=n$58 [line 47];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node35.html"><span class='visited with_tooltip'>I_35<span class='tooltip'>node35 preds:34 succs:36 exn:65 Instructions
+n$59=*&amp;$irvar10:org.jsoup.nodes.Element* [line 47];
+_=*n$59:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 47];
+n$61=_fun_Elements Element.getElementsByClass(String)(n$59:org.jsoup.nodes.Element*,"icn":java.lang.Object*) virtual [line 47];
+*&amp;$irvar11:org.jsoup.select.Elements*=n$61 [line 47];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node36.html"><span class='visited with_tooltip'>I_36<span class='tooltip'>node36 preds:35 succs:37 exn:65 Instructions
+n$62=*&amp;$irvar11:org.jsoup.select.Elements* [line 47];
+_=*n$62:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 47];
+n$64=_fun_Element Elements.get(int)(n$62:org.jsoup.select.Elements*,0:int) virtual [line 47];
+*&amp;$irvar12:org.jsoup.nodes.Element*=n$64 [line 47];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node37.html"><span class='visited with_tooltip'>I_37<span class='tooltip'>node37 preds:36 succs:38 exn:65 Instructions
+n$65=*&amp;$irvar12:org.jsoup.nodes.Element* [line 47];
+_=*n$65:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 47];
+n$67=_fun_Elements Element.select(String)(n$65:org.jsoup.nodes.Element*,"a":java.lang.Object*) virtual [line 47];
+*&amp;$irvar13:org.jsoup.select.Elements*=n$67 [line 47];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node38.html"><span class='visited with_tooltip'>I_38<span class='tooltip'>node38 preds:37 succs:39 exn:65 Instructions
+n$68=*&amp;$irvar13:org.jsoup.select.Elements* [line 47];
+_=*n$68:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 47];
+n$70=_fun_Element Elements.first()(n$68:org.jsoup.select.Elements*) virtual [line 47];
+*&amp;$irvar14:org.jsoup.nodes.Element*=n$70 [line 47];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node39.html"><span class='visited with_tooltip'>I_39<span class='tooltip'>node39 preds:38 succs:40 exn:65 Instructions
+n$71=*&amp;$irvar14:org.jsoup.nodes.Element* [line 47];
+_=*n$71:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 47];
+n$73=_fun_String Node.attr(String)(n$71:org.jsoup.nodes.Element*,"href":java.lang.Object*) virtual [line 47];
+*&amp;$irvar15:java.lang.String*=n$73 [line 47];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node40.html"><span class='visited with_tooltip'>I_40<span class='tooltip'>node40 preds:39 succs:41 exn:65 Instructions
+n$74=*&amp;$irvar15:java.lang.String* [line 47];
+_=*n$74:java.lang.String*(root java.lang.String) [line 47];
+n$76=_fun_String String.toString()(n$74:java.lang.String*) virtual [line 47];
+*&amp;href:java.lang.String*=n$76 [line 47];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE48">48</td><td class="line">					String mark = tbodys.get(j).getElementsByTag(&quot;th&quot;).get(0).getElementsByTag(&quot;span&quot;).get(0).text(); <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node41.html"><span class='visited with_tooltip'>I_41<span class='tooltip'>node41 preds:40 succs:42 exn:65 Instructions
+n$77=*&amp;tbodys:org.jsoup.select.Elements* [line 48];
+_=*n$77:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 48];
+n$79=*&amp;j:int [line 48];
+n$80=_fun_Element Elements.get(int)(n$77:org.jsoup.select.Elements*,n$79:int) virtual [line 48];
+*&amp;$irvar16:org.jsoup.nodes.Element*=n$80 [line 48];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node42.html"><span class='visited with_tooltip'>I_42<span class='tooltip'>node42 preds:41 succs:43 exn:65 Instructions
+n$81=*&amp;$irvar16:org.jsoup.nodes.Element* [line 48];
+_=*n$81:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 48];
+n$83=_fun_Elements Element.getElementsByTag(String)(n$81:org.jsoup.nodes.Element*,"th":java.lang.Object*) virtual [line 48];
+*&amp;$irvar17:org.jsoup.select.Elements*=n$83 [line 48];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node43.html"><span class='visited with_tooltip'>I_43<span class='tooltip'>node43 preds:42 succs:44 exn:65 Instructions
+n$84=*&amp;$irvar17:org.jsoup.select.Elements* [line 48];
+_=*n$84:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 48];
+n$86=_fun_Element Elements.get(int)(n$84:org.jsoup.select.Elements*,0:int) virtual [line 48];
+*&amp;$irvar18:org.jsoup.nodes.Element*=n$86 [line 48];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node44.html"><span class='visited with_tooltip'>I_44<span class='tooltip'>node44 preds:43 succs:45 exn:65 Instructions
+n$87=*&amp;$irvar18:org.jsoup.nodes.Element* [line 48];
+_=*n$87:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 48];
+n$89=_fun_Elements Element.getElementsByTag(String)(n$87:org.jsoup.nodes.Element*,"span":java.lang.Object*) virtual [line 48];
+*&amp;$irvar19:org.jsoup.select.Elements*=n$89 [line 48];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node45.html"><span class='visited with_tooltip'>I_45<span class='tooltip'>node45 preds:44 succs:46 exn:65 Instructions
+n$90=*&amp;$irvar19:org.jsoup.select.Elements* [line 48];
+_=*n$90:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 48];
+n$92=_fun_Element Elements.get(int)(n$90:org.jsoup.select.Elements*,0:int) virtual [line 48];
+*&amp;$irvar20:org.jsoup.nodes.Element*=n$92 [line 48];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node46.html"><span class='visited with_tooltip'>I_46<span class='tooltip'>node46 preds:45 succs:47 exn:65 Instructions
+n$93=*&amp;$irvar20:org.jsoup.nodes.Element* [line 48];
+_=*n$93:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 48];
+n$95=_fun_String Element.text()(n$93:org.jsoup.nodes.Element*) virtual [line 48];
+*&amp;mark:java.lang.String*=n$95 [line 48];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE49">49</td><td class="line">					bw.write(href+&quot;\t&quot;+mark); <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node47.html"><span class='visited with_tooltip'>I_47<span class='tooltip'>node47 preds:46 succs:48 exn:65 Instructions
+n$96=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 49];
+n$97=_fun_StringBuilder.&lt;init&gt;()(n$96:java.lang.StringBuilder*) [line 49];
+*&amp;$irvar21:java.lang.StringBuilder*=n$96 [line 49];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node48.html"><span class='visited with_tooltip'>I_48<span class='tooltip'>node48 preds:47 succs:49 exn:65 Instructions
+n$98=*&amp;$irvar21:java.lang.StringBuilder* [line 49];
+_=*n$98:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 49];
+n$100=*&amp;href:java.lang.String* [line 49];
+n$101=_fun_StringBuilder StringBuilder.append(String)(n$98:java.lang.StringBuilder*,n$100:java.lang.String*) virtual [line 49];
+*&amp;$irvar22:java.lang.StringBuilder*=n$101 [line 49];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node49.html"><span class='visited with_tooltip'>I_49<span class='tooltip'>node49 preds:48 succs:50 exn:65 Instructions
+n$102=*&amp;$irvar22:java.lang.StringBuilder* [line 49];
+_=*n$102:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 49];
+n$104=_fun_StringBuilder StringBuilder.append(String)(n$102:java.lang.StringBuilder*,"\\t":java.lang.Object*) virtual [line 49];
+*&amp;$irvar23:java.lang.StringBuilder*=n$104 [line 49];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node50.html"><span class='visited with_tooltip'>I_50<span class='tooltip'>node50 preds:49 succs:51 exn:65 Instructions
+n$105=*&amp;$irvar23:java.lang.StringBuilder* [line 49];
+_=*n$105:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 49];
+n$107=*&amp;mark:java.lang.String* [line 49];
+n$108=_fun_StringBuilder StringBuilder.append(String)(n$105:java.lang.StringBuilder*,n$107:java.lang.String*) virtual [line 49];
+*&amp;$irvar24:java.lang.StringBuilder*=n$108 [line 49];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node51.html"><span class='visited with_tooltip'>I_51<span class='tooltip'>node51 preds:50 succs:52 exn:65 Instructions
+n$109=*&amp;$irvar24:java.lang.StringBuilder* [line 49];
+_=*n$109:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 49];
+n$111=_fun_String StringBuilder.toString()(n$109:java.lang.StringBuilder*) virtual [line 49];
+*&amp;$irvar25:java.lang.String*=n$111 [line 49];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node52.html"><span class='visited with_tooltip'>I_52<span class='tooltip'>node52 preds:51 succs:53 exn:65 Instructions
+n$112=*&amp;bw:java.io.BufferedWriter* [line 49];
+_=*n$112:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 49];
+n$114=*&amp;$irvar25:java.lang.String* [line 49];
+n$115=_fun_void Writer.write(String)(n$112:java.io.BufferedWriter*,n$114:java.lang.String*) virtual [line 49];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE50">50</td><td class="line">					bw.newLine(); <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node53.html"><span class='visited with_tooltip'>I_53<span class='tooltip'>node53 preds:52 succs:54 exn:65 Instructions
+n$116=*&amp;bw:java.io.BufferedWriter* [line 50];
+_=*n$116:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 50];
+n$118=_fun_void BufferedWriter.newLine()(n$116:java.io.BufferedWriter*) virtual [line 50];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE51">51</td><td class="line">					bw.flush(); <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node54.html"><span class='visited with_tooltip'>I_54<span class='tooltip'>node54 preds:53 succs:56 exn:65 Instructions
+n$119=*&amp;bw:java.io.BufferedWriter* [line 51];
+_=*n$119:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 51];
+n$121=_fun_void BufferedWriter.flush()(n$119:java.io.BufferedWriter*) virtual [line 51];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE52">52</td><td class="line">				}catch(Exception e){ <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node55.html"><span class='visited with_tooltip'>I_55<span class='tooltip'>node55 preds:63 succs:56 exn:3 Instructions
+n$122=*&amp;CatchVar238:java.lang.Object* [line 52];
+*&amp;$bcvar10:java.lang.Object*=n$122 [line 52];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node63.html"><span class='visited with_tooltip'>C_63<span class='tooltip'>node63 preds:65 succs:55 exn:3 Conditional exception handler
+n$138=_fun___instanceof(n$137:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 52];
+PRUNE(n$138, true); [line 52];
+*&amp;CatchVar238:void=n$137 [line 52];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node64.html"><span class='visited with_tooltip'>C_64<span class='tooltip'>node64 preds:65 succs:3 exn:3 Conditional exception handler
+n$138=_fun___instanceof(n$137:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 52];
+PRUNE(!n$138, false); [line 52];
+*&amp;return:void=EXN n$137 [line 52];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node65.html"><span class='visited with_tooltip'>I_65<span class='tooltip'>node65 preds: succs:63 64 exn:3 Instructions
+n$136=*&amp;return:void [line 52];
+*&amp;return:void=null [line 52];
+n$137=_fun___unwrap_exception(n$136:void) [line 52];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE53">53</td><td class="line">					 </td></tr>
+<tr><td class="num" id="LINE54">54</td><td class="line">				} </td></tr>
+<tr><td class="num" id="LINE55">55</td><td class="line">				 </td></tr>
+<tr><td class="num" id="LINE56">56</td><td class="line">			} </td></tr>
+<tr><td class="num" id="LINE57">57</td><td class="line">		} </td></tr>
+<tr><td class="num" id="LINE58">58</td><td class="line">		try { </td></tr>
+<tr><td class="num" id="LINE59">59</td><td class="line">			bw.close(); <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node58.html"><span class='visited with_tooltip'>I_58<span class='tooltip'>node58 preds:9 succs:61 exn:71 Instructions
+n$125=*&amp;bw:java.io.BufferedWriter* [line 59];
+n$128=_fun___set_mem_attribute(n$125:java.io.BufferedWriter*) [line 59];
+_=*n$125:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 59];
+n$127=_fun_void BufferedWriter.close()(n$125:java.io.BufferedWriter*) virtual [line 59];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE60">60</td><td class="line">		} catch (IOException e) { <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node59.html"><span class='visited with_tooltip'>I_59<span class='tooltip'>node59 preds:69 succs:60 exn:3 Instructions
+n$129=*&amp;CatchVar259:java.lang.Object* [line 60];
+*&amp;e:java.lang.Object*=n$129 [line 60];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node69.html"><span class='visited with_tooltip'>C_69<span class='tooltip'>node69 preds:71 succs:59 exn:3 Conditional exception handler
+n$140=_fun___instanceof(n$137:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 60];
+PRUNE(n$140, true); [line 60];
+*&amp;CatchVar259:void=n$137 [line 60];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node70.html"><span class='visited with_tooltip'>C_70<span class='tooltip'>node70 preds:71 succs:3 exn:3 Conditional exception handler
+n$140=_fun___instanceof(n$137:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 60];
+PRUNE(!n$140, false); [line 60];
+*&amp;return:void=EXN n$137 [line 60];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node71.html"><span class='visited with_tooltip'>I_71<span class='tooltip'>node71 preds: succs:69 70 exn:3 Instructions
+n$136=*&amp;return:void [line 60];
+*&amp;return:void=null [line 60];
+n$137=_fun___unwrap_exception(n$136:void) [line 60];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE61">61</td><td class="line">			// TODO Auto-generated catch block </td></tr>
+<tr><td class="num" id="LINE62">62</td><td class="line">			e.printStackTrace(); <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node60.html"><span class='visited with_tooltip'>I_60<span class='tooltip'>node60 preds:59 succs:61 exn:3 Instructions
+n$130=*&amp;e:java.lang.Object* [line 62];
+_=*n$130:java.lang.Object*(root java.lang.Object) [line 62];
+n$132=_fun_void Throwable.printStackTrace()(n$130:java.lang.Object*) virtual [line 62];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE63">63</td><td class="line">		} </td></tr>
+<tr><td class="num" id="LINE64">64</td><td class="line">		System.out.println(&quot;_________exit&quot;); <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node61.html"><span class='visited with_tooltip'>I_61<span class='tooltip'>node61 preds:60 58 succs:62 exn:3 Instructions
+n$133=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 64];
+_=*n$133:java.io.PrintStream*(root java.io.PrintStream) [line 64];
+n$135=_fun_void PrintStream.println(String)(n$133:java.io.PrintStream*,"_________exit":java.lang.Object*) virtual [line 64];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE65">65</td><td class="line">		 </td></tr>
+<tr><td class="num" id="LINE66">66</td><td class="line">	} <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node62.html"><span class='visited with_tooltip'>I_62<span class='tooltip'>node62 preds:61 succs:2 exn:3 Instructions
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:62 3 succs: exn: Exit
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.getUrl%28%29%3Avoid.4a9947da09e1de0d7b6193575710cdae_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:70 67 64 succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE67">67</td><td class="line">	 </td></tr>
+<tr><td class="num" id="LINE68">68</td><td class="line">	 </td></tr>
+<tr><td class="num" id="LINE69">69</td><td class="line">	public static String httpRequest(String url){ <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1.html">summary for String GetUrl.httpRequest(String)</a></td></tr>
+<tr><td class="num" id="LINE70">70</td><td class="line">		String response = &quot;&quot;; <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+*&amp;response:java.lang.Object*="" [line 70];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE71">71</td><td class="line">		 </td></tr>
+<tr><td class="num" id="LINE72">72</td><td class="line">		HttpClient client = new HttpClient(); <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$0=_fun___new(sizeof(t=org.apache.commons.httpclient.HttpClient):org.apache.commons.httpclient.HttpClient*) [line 72];
+n$1=_fun_HttpClient.&lt;init&gt;()(n$0:org.apache.commons.httpclient.HttpClient*) [line 72];
+*&amp;client:org.apache.commons.httpclient.HttpClient*=n$0 [line 72];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE73">73</td><td class="line">		//设置代理服务器的ip地址和端口   </td></tr>
+<tr><td class="num" id="LINE74">74</td><td class="line">		//client.getHostConfiguration().setProxy(&quot;202.108.23.247&quot;, 80);   </td></tr>
+<tr><td class="num" id="LINE75">75</td><td class="line">		//使用抢先认证   </td></tr>
+<tr><td class="num" id="LINE76">76</td><td class="line">		//client.getParams().setAuthenticationPreemptive(true);  </td></tr>
+<tr><td class="num" id="LINE77">77</td><td class="line">		GetMethod getMethod = new GetMethod(url); <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$2=_fun___new(sizeof(t=org.apache.commons.httpclient.methods.GetMethod):org.apache.commons.httpclient.methods.GetMethod*) [line 77];
+n$3=*&amp;url:java.lang.String* [line 77];
+n$4=_fun_GetMethod.&lt;init&gt;(String)(n$2:org.apache.commons.httpclient.methods.GetMethod*,n$3:java.lang.String*) [line 77];
+*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod*=n$2 [line 77];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE78">78</td><td class="line">		//请求配置 </td></tr>
+<tr><td class="num" id="LINE79">79</td><td class="line">		String ck = &quot;tjpctrl=1439455956083; __utma=142000562.1509796625.1436709690.1438412213.1439453720.13; __utmz=142000562.1439453720.13.9.utmcsr=mail.qq.com|utmccn=(referral)|utmcmd=referral|utmcct=/cgi-bin/readtemplate; pgv_pvi=3811975168; 4Oaf_61d6_saltkey=nnmfbob3; 4Oaf_61d6_lastvisit=1437378911; 4Oaf_61d6_atarget=1; 4Oaf_61d6_visitedfid=27; 4Oaf_61d6_sid=Q89d9W; 4Oaf_61d6_lastact=1439454242&#37;09home.php&#37;09spacecp; 4Oaf_61d6_sendmail=1; __utmb=142000562.12.10.1439453720; __utmc=142000562; __utmt=1; 4Oaf_61d6_nofocus_member=1; 4Oaf_61d6_nofocus_forum=1; 4Oaf_61d6_ulastactivity=b1ccszmakCkkoWTaybWumhPQy0hx1PDIt6FDBQ5WElNhsEaEot6p; 4Oaf_61d6_auth=5808WxQ6wi8Gf9YPAp2asvku33LiM5xIWqdR67gpl8HOZTL87ISKHL5cTtUOFQR8V&#37;2Be4wSyU5Taa4q9Va33Bq9v&#37;2FlRM; 4Oaf_61d6_lastcheckfeed=175519&#37;7C1439454242; 4Oaf_61d6_lip=118.187.68.34&#37;2C1439453999; 4Oaf_61d6_nofavfid=1; 4Oaf_61d6_onlineusernum=258; 4Oaf_61d6_forum_lastvisit=D_27_1439454207; 4Oaf_61d6_smile=4D1; 4Oaf_61d6_viewid=tid_72476; 4Oaf_61d6_checkpm=1; 4Oaf_61d6_checkfollow=1&quot;; <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 Instructions
+*&amp;ck:java.lang.Object*="tjpctrl=1439455956083; __utma=142000562.1509796625.1436709690.1438412213.1439453720.13; __utmz=142000562.1439453720.13.9.utmcsr=mail.qq.com|utmccn=(referral)|utmcmd=referral|utmcct=/cgi-bin/readtemplate; pgv_pvi=3811975168; 4Oaf_61d6_saltkey=nnmfbob3; 4Oaf_61d6_lastvisit=1437378911; 4Oaf_61d6_atarget=1; 4Oaf_61d6_visitedfid=27; 4Oaf_61d6_sid=Q89d9W; 4Oaf_61d6_lastact=1439454242%09home.php%09spacecp; 4Oaf_61d6_sendmail=1; __utmb=142000562.12.10.1439453720; __utmc=142000562; __utmt=1; 4Oaf_61d6_nofocus_member=1; 4Oaf_61d6_nofocus_forum=1; 4Oaf_61d6_ulastactivity=b1ccszmakCkkoWTaybWumhPQy0hx1PDIt6FDBQ5WElNhsEaEot6p; 4Oaf_61d6_auth=5808WxQ6wi8Gf9YPAp2asvku33LiM5xIWqdR67gpl8HOZTL87ISKHL5cTtUOFQR8V%2Be4wSyU5Taa4q9Va33Bq9v%2FlRM; 4Oaf_61d6_lastcheckfeed=175519%7C1439454242; 4Oaf_61d6_lip=118.187.68.34%2C1439453999; 4Oaf_61d6_nofavfid=1; 4Oaf_61d6_onlineusernum=258; 4Oaf_61d6_forum_lastvisit=D_27_1439454207; 4Oaf_61d6_smile=4D1; 4Oaf_61d6_viewid=tid_72476; 4Oaf_61d6_checkpm=1; 4Oaf_61d6_checkfollow=1" [line 79];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE80">80</td><td class="line">         </td></tr>
+<tr><td class="num" id="LINE81">81</td><td class="line">        // 每次访问需授权的网址时需带上前面的 cookie 作为通行证   </td></tr>
+<tr><td class="num" id="LINE82">82</td><td class="line">		 getMethod.setRequestHeader(&quot;Cookie&quot;, ck); <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:7 succs:9 exn:3 Instructions
+n$5=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 82];
+_=*n$5:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 82];
+n$7=*&amp;ck:java.lang.Object* [line 82];
+n$8=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$5:org.apache.commons.httpclient.methods.GetMethod*,"Cookie":java.lang.Object*,n$7:java.lang.Object*) virtual [line 82];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE83">83</td><td class="line">		 getMethod.setRequestHeader(&quot;Host&quot;, &quot;www.1point3acres.com&quot;);   <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$9=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 83];
+_=*n$9:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 83];
+n$11=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$9:org.apache.commons.httpclient.methods.GetMethod*,"Host":java.lang.Object*,"www.1point3acres.com":java.lang.Object*) virtual [line 83];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE84">84</td><td class="line">		 getMethod.setRequestHeader(&quot;User-Agent&quot;, &quot;Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.111 Safari/537.36&quot;);     <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 succs:11 exn:3 Instructions
+n$12=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 84];
+_=*n$12:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 84];
+n$14=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$12:org.apache.commons.httpclient.methods.GetMethod*,"User-Agent":java.lang.Object*,"Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.111 Safari/537.36":java.lang.Object*) virtual [line 84];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE85">85</td><td class="line">		 getMethod.setRequestHeader(&quot;Accept&quot;, &quot;text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8&quot;);   <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+n$15=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 85];
+_=*n$15:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 85];
+n$17=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$15:org.apache.commons.httpclient.methods.GetMethod*,"Accept":java.lang.Object*,"text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8":java.lang.Object*) virtual [line 85];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE86">86</td><td class="line">		 getMethod.setRequestHeader(&quot;Accept-Language&quot;, &quot;zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3&quot;);   <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 succs:13 exn:3 Instructions
+n$18=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 86];
+_=*n$18:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 86];
+n$20=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$18:org.apache.commons.httpclient.methods.GetMethod*,"Accept-Language":java.lang.Object*,"zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3":java.lang.Object*) virtual [line 86];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE87">87</td><td class="line">		 //getMethod.setRequestHeader(&quot;Accept-Encoding&quot;, &quot;gzip, deflate&quot;);   </td></tr>
+<tr><td class="num" id="LINE88">88</td><td class="line">		 getMethod.setRequestHeader(&quot;DNT&quot;, &quot;1&quot;);   <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:3 Instructions
+n$21=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 88];
+_=*n$21:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 88];
+n$23=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$21:org.apache.commons.httpclient.methods.GetMethod*,"DNT":java.lang.Object*,"1":java.lang.Object*) virtual [line 88];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE89">89</td><td class="line">		 getMethod.setRequestHeader(&quot;Referer&quot;, &quot;http://www.1point3acres.com/bbs/&quot;);   <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:13 succs:15 exn:3 Instructions
+n$24=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 89];
+_=*n$24:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 89];
+n$26=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$24:org.apache.commons.httpclient.methods.GetMethod*,"Referer":java.lang.Object*,"http://www.1point3acres.com/bbs/":java.lang.Object*) virtual [line 89];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE90">90</td><td class="line">	    try { </td></tr>
+<tr><td class="num" id="LINE91">91</td><td class="line">			client.executeMethod(getMethod); <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:20 exn:28 Instructions
+n$27=*&amp;client:org.apache.commons.httpclient.HttpClient* [line 91];
+_=*n$27:org.apache.commons.httpclient.HttpClient*(root org.apache.commons.httpclient.HttpClient) [line 91];
+n$29=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 91];
+n$30=_fun_int HttpClient.executeMethod(HttpMethod)(n$27:org.apache.commons.httpclient.HttpClient*,n$29:org.apache.commons.httpclient.methods.GetMethod*) virtual [line 91];
+*&amp;$irvar0:int=n$30 [line 91];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE92">92</td><td class="line">		} catch (HttpException e) { <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node16.html"><span class='visited with_tooltip'>I_16<span class='tooltip'>node16 preds:26 succs:17 exn:3 Instructions
+n$31=*&amp;CatchVar89:java.lang.Object* [line 92];
+*&amp;e:java.lang.Object*=n$31 [line 92];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node26.html"><span class='visited with_tooltip'>C_26<span class='tooltip'>node26 preds:28 succs:16 exn:3 Conditional exception handler
+n$50=_fun___instanceof(n$48:org.apache.commons.httpclient.HttpException*,sizeof(t=org.apache.commons.httpclient.HttpException):void) [line 92];
+PRUNE(n$50, true); [line 92];
+*&amp;CatchVar89:java.lang.String*=n$48 [line 92];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node27.html"><span class='visited with_tooltip'>C_27<span class='tooltip'>node27 preds:28 succs:24 25 exn:3 Conditional exception handler
+n$50=_fun___instanceof(n$48:org.apache.commons.httpclient.HttpException*,sizeof(t=org.apache.commons.httpclient.HttpException):void) [line 92];
+PRUNE(!n$50, false); [line 92];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds: succs:26 27 exn:3 Instructions
+n$47=*&amp;return:java.lang.String* [line 92];
+*&amp;return:java.lang.String*=null [line 92];
+n$48=_fun___unwrap_exception(n$47:java.lang.String*) [line 92];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE93">93</td><td class="line">			// TODO Auto-generated catch block </td></tr>
+<tr><td class="num" id="LINE94">94</td><td class="line">			e.printStackTrace(); <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node17.html"><span class='visited with_tooltip'>I_17<span class='tooltip'>node17 preds:16 succs:20 exn:3 Instructions
+n$32=*&amp;e:java.lang.Object* [line 94];
+_=*n$32:java.lang.Object*(root java.lang.Object) [line 94];
+n$34=_fun_void HttpException.printStackTrace()(n$32:java.lang.Object*) virtual [line 94];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE95">95</td><td class="line">		} catch (IOException e) { <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node18.html"><span class='visited with_tooltip'>I_18<span class='tooltip'>node18 preds:24 succs:19 exn:3 Instructions
+n$35=*&amp;CatchVar99:java.lang.Object* [line 95];
+*&amp;e:java.lang.Object*=n$35 [line 95];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node24.html"><span class='visited with_tooltip'>C_24<span class='tooltip'>node24 preds:27 succs:18 exn:3 Conditional exception handler
+n$49=_fun___instanceof(n$48:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 95];
+PRUNE(n$49, true); [line 95];
+*&amp;CatchVar99:java.lang.String*=n$48 [line 95];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node25.html"><span class='visited with_tooltip'>C_25<span class='tooltip'>node25 preds:27 succs:3 exn:3 Conditional exception handler
+n$49=_fun___instanceof(n$48:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 95];
+PRUNE(!n$49, false); [line 95];
+*&amp;return:java.lang.String*=EXN n$48 [line 95];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE96">96</td><td class="line">			// TODO Auto-generated catch block </td></tr>
+<tr><td class="num" id="LINE97">97</td><td class="line">			e.printStackTrace(); <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:18 succs:20 exn:3 Instructions
+n$36=*&amp;e:java.lang.Object* [line 97];
+_=*n$36:java.lang.Object*(root java.lang.Object) [line 97];
+n$38=_fun_void Throwable.printStackTrace()(n$36:java.lang.Object*) virtual [line 97];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE98">98</td><td class="line">		} </td></tr>
+<tr><td class="num" id="LINE99">99</td><td class="line">	    try { </td></tr>
+<tr><td class="num" id="LINE100">100</td><td class="line">			response = getMethod.getResponseBodyAsString(); <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node20.html"><span class='visited with_tooltip'>I_20<span class='tooltip'>node20 preds:19 17 15 succs:23 exn:31 Instructions
+n$39=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 100];
+_=*n$39:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 100];
+n$41=_fun_String HttpMethodBase.getResponseBodyAsString()(n$39:org.apache.commons.httpclient.methods.GetMethod*) virtual [line 100];
+*&amp;response:java.lang.String*=n$41 [line 100];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE101">101</td><td class="line">		} catch (IOException e) { <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node21.html"><span class='visited with_tooltip'>I_21<span class='tooltip'>node21 preds:29 succs:22 exn:3 Instructions
+n$42=*&amp;CatchVar114:java.lang.Object* [line 101];
+*&amp;e:java.lang.Object*=n$42 [line 101];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node29.html"><span class='visited with_tooltip'>C_29<span class='tooltip'>node29 preds:31 succs:21 exn:3 Conditional exception handler
+n$51=_fun___instanceof(n$48:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 101];
+PRUNE(n$51, true); [line 101];
+*&amp;CatchVar114:java.lang.String*=n$48 [line 101];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node30.html"><span class='visited with_tooltip'>C_30<span class='tooltip'>node30 preds:31 succs:3 exn:3 Conditional exception handler
+n$51=_fun___instanceof(n$48:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 101];
+PRUNE(!n$51, false); [line 101];
+*&amp;return:java.lang.String*=EXN n$48 [line 101];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node31.html"><span class='visited with_tooltip'>I_31<span class='tooltip'>node31 preds: succs:29 30 exn:3 Instructions
+n$47=*&amp;return:java.lang.String* [line 101];
+*&amp;return:java.lang.String*=null [line 101];
+n$48=_fun___unwrap_exception(n$47:java.lang.String*) [line 101];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE102">102</td><td class="line">			// TODO Auto-generated catch block </td></tr>
+<tr><td class="num" id="LINE103">103</td><td class="line">			e.printStackTrace(); <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node22.html"><span class='visited with_tooltip'>I_22<span class='tooltip'>node22 preds:21 succs:23 exn:3 Instructions
+n$43=*&amp;e:java.lang.Object* [line 103];
+_=*n$43:java.lang.Object*(root java.lang.Object) [line 103];
+n$45=_fun_void Throwable.printStackTrace()(n$43:java.lang.Object*) virtual [line 103];
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE104">104</td><td class="line">		} </td></tr>
+<tr><td class="num" id="LINE105">105</td><td class="line">	     </td></tr>
+<tr><td class="num" id="LINE106">106</td><td class="line">	    return response; <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:22 20 succs:2 exn:3 Instructions
+n$46=*&amp;response:java.lang.String* [line 106];
+*&amp;return:java.lang.String*=n$46 [line 106];
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:23 3 succs: exn: Exit
+</span></span></a> <a href="./GetUrl.java.a0c2917ec23ff687817200a1b6d646e7/nodes/com.dulishuo.yimusanfendi.offer.GetUrl.httpRequest%28java.lang.String%29%3Ajava.lang.String.a927619dd402f4741ce8ace6cd17e4f1_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:30 25 succs:2 exn:2 Instructions
+</span></span></a></td></tr>
+<tr><td class="num" id="LINE107">107</td><td class="line">	} </td></tr>
+<tr><td class="num" id="LINE108">108</td><td class="line"> </td></tr>
+<tr><td class="num" id="LINE109">109</td><td class="line">} </td></tr>
+</table>
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+</body>
+</html>

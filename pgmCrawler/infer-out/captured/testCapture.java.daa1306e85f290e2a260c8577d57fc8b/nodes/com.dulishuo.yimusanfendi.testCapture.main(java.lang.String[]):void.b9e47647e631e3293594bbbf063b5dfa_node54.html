@@ -1,0 +1,683 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.dulishuo.yimusanfendi.testCapture.main(java.lang.String[]):void.b9e47647e631e3293594bbbf063b5dfa_node54</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../testCapture.java.daa1306e85f290e2a260c8577d57fc8b.html#LINE71">54</a></h1></center>PROC: <a href="./../com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa.html">void testCapture.main(String[])</a> LINE: <a href="./../../testCapture.java.daa1306e85f290e2a260c8577d57fc8b.html#LINE71">71</a>
+<br>PREDS:
+<a href="./../nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node53.html"><span class='visited with_tooltip'>N_53<span class='tooltip'>node53 preds:52 succs:54 exn:115 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node55.html"><span class='visited with_tooltip'>N_55<span class='tooltip'>node55 preds:54 succs:56 exn:115 </span></span></a><br>EXN:
+<a href="./../nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node115.html"><span class='visited with_tooltip'>N_115<span class='tooltip'>node115 preds: succs:113 114 exn:3 </span></span></a><br>
+<LISTING class='color_green'>n$122=*&amp;tmpcookies:java.lang.StringBuffer* [line 71];
+_=*n$122:java.lang.StringBuffer*(root java.lang.StringBuffer) [line 71];
+n$124=*&amp;$irvar15:java.lang.String* [line 71];
+n$125=_fun_StringBuffer StringBuffer.append(String)(n$122:java.lang.StringBuffer*,n$124:java.lang.String*) virtual [line 71];
+*&amp;$irvar16:java.lang.StringBuffer*=n$125 [line 71];
+</LISTING>
+<hr width="100%">
+<a name="session442" href="./../nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node54.html#session442">node54#session442</a>(<a href="./../../testCapture.java.daa1306e85f290e2a260c8577d57fc8b.html#LINE71">71</a>) [compute pre] liveness 54
+<LISTING class='color_black'>JOIN
+
+LEFT:   { $bcvar12, lang.System, c, return, $bcvar13 }
+RIGHT:  { return }
+RESULT: = LEFT
+
+</LISTING>
+<hr width="100%">
+<a name="session443" href="./../nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node54.html#session443">node54#session443</a>(<a href="./../../testCapture.java.daa1306e85f290e2a260c8577d57fc8b.html#LINE71">71</a>) [exec] liveness 54
+<LISTING class='color_black'>PRE STATE:
+{ $bcvar12, lang.System, c, return, $bcvar13 }
+
+INSTR=  *&amp;$irvar16:java.lang.StringBuffer*=n$125 [line 71]; 
+
+STATE:
+{ n$125, $bcvar12, lang.System, c, return, $bcvar13 }
+
+INSTR=  n$125=_fun_StringBuffer StringBuffer.append(String)(n$122:java.lang.StringBuffer*,n$124:java.lang.String*) virtual [line 71]; 
+
+STATE:
+{ n$122, n$124, $bcvar12, lang.System, c, return, $bcvar13 }
+
+INSTR=  n$124=*&amp;$irvar15:java.lang.String* [line 71]; 
+
+STATE:
+{ n$122, $bcvar12, lang.System, c, return, $bcvar13, $irvar15 }
+
+INSTR=  _=*n$122:java.lang.StringBuffer*(root java.lang.StringBuffer) [line 71]; 
+
+STATE UNCHANGED
+
+INSTR=  n$122=*&amp;tmpcookies:java.lang.StringBuffer* [line 71]; 
+
+STATE:
+{ $bcvar12, lang.System, c, return, tmpcookies, $bcvar13, $irvar15 }
+
+</LISTING>
+<hr width="100%">
+<a name="session554" href="./../nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node54.html#session554">node54#session554</a>(<a href="./../../testCapture.java.daa1306e85f290e2a260c8577d57fc8b.html#LINE71">71</a>) [compute pre] liveness 54
+<LISTING class='color_black'>JOIN
+
+LEFT:   { $bcvar12, lang.System, c, return, tmpcookies, $bcvar11, $bcvar13 }
+RIGHT:  { return }
+RESULT: = LEFT
+
+</LISTING>
+<hr width="100%">
+<a name="session555" href="./../nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node54.html#session555">node54#session555</a>(<a href="./../../testCapture.java.daa1306e85f290e2a260c8577d57fc8b.html#LINE71">71</a>) [exec] liveness 54
+<LISTING class='color_black'>PRE STATE:
+{ $bcvar12, lang.System, c, return, tmpcookies, $bcvar11, $bcvar13 }
+
+INSTR=  *&amp;$irvar16:java.lang.StringBuffer*=n$125 [line 71]; 
+
+STATE:
+{ n$125, $bcvar12, lang.System, c, return, tmpcookies, $bcvar11, $bcvar13 }
+
+INSTR=  n$125=_fun_StringBuffer StringBuffer.append(String)(n$122:java.lang.StringBuffer*,n$124:java.lang.String*) virtual [line 71]; 
+
+STATE:
+{ n$122,
+  n$124,
+  $bcvar12,
+  lang.System,
+  c,
+  return,
+  tmpcookies,
+  $bcvar11,
+  $bcvar13 }
+
+INSTR=  n$124=*&amp;$irvar15:java.lang.String* [line 71]; 
+
+STATE:
+{ n$122,
+  $bcvar12,
+  lang.System,
+  c,
+  return,
+  tmpcookies,
+  $bcvar11,
+  $bcvar13,
+  $irvar15 }
+
+INSTR=  _=*n$122:java.lang.StringBuffer*(root java.lang.StringBuffer) [line 71]; 
+
+STATE UNCHANGED
+
+INSTR=  n$122=*&amp;tmpcookies:java.lang.StringBuffer* [line 71]; 
+
+STATE:
+{ $bcvar12,
+  lang.System,
+  c,
+  return,
+  tmpcookies,
+  $bcvar11,
+  $bcvar13,
+  $irvar15 }
+
+</LISTING>
+<hr width="100%">
+<a name="session612" href="./../nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node54.html#session612">node54#session612</a>(<a href="./../../testCapture.java.daa1306e85f290e2a260c8577d57fc8b.html#LINE71">71</a>) [compute pre] liveness 54
+<LISTING class='color_black'>JOIN
+
+LEFT:   { $bcvar12,
+          lang.System,
+          c,
+          postMethod,
+          return,
+          tmpcookies,
+          $bcvar11,
+          $bcvar13 }
+RIGHT:  { return }
+RESULT: = LEFT
+
+</LISTING>
+<hr width="100%">
+<a name="session613" href="./../nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node54.html#session613">node54#session613</a>(<a href="./../../testCapture.java.daa1306e85f290e2a260c8577d57fc8b.html#LINE71">71</a>) [exec] liveness 54
+<LISTING class='color_black'>PRE STATE:
+{ $bcvar12,
+  lang.System,
+  c,
+  postMethod,
+  return,
+  tmpcookies,
+  $bcvar11,
+  $bcvar13 }
+
+INSTR=  *&amp;$irvar16:java.lang.StringBuffer*=n$125 [line 71]; 
+
+STATE:
+{ n$125,
+  $bcvar12,
+  lang.System,
+  c,
+  postMethod,
+  return,
+  tmpcookies,
+  $bcvar11,
+  $bcvar13 }
+
+INSTR=  n$125=_fun_StringBuffer StringBuffer.append(String)(n$122:java.lang.StringBuffer*,n$124:java.lang.String*) virtual [line 71]; 
+
+STATE:
+{ n$122,
+  n$124,
+  $bcvar12,
+  lang.System,
+  c,
+  postMethod,
+  return,
+  tmpcookies,
+  $bcvar11,
+  $bcvar13 }
+
+INSTR=  n$124=*&amp;$irvar15:java.lang.String* [line 71]; 
+
+STATE:
+{ n$122,
+  $bcvar12,
+  lang.System,
+  c,
+  postMethod,
+  return,
+  tmpcookies,
+  $bcvar11,
+  $bcvar13,
+  $irvar15 }
+
+INSTR=  _=*n$122:java.lang.StringBuffer*(root java.lang.StringBuffer) [line 71]; 
+
+STATE UNCHANGED
+
+INSTR=  n$122=*&amp;tmpcookies:java.lang.StringBuffer* [line 71]; 
+
+STATE:
+{ $bcvar12,
+  lang.System,
+  c,
+  postMethod,
+  return,
+  tmpcookies,
+  $bcvar11,
+  $bcvar13,
+  $irvar15 }
+
+</LISTING>
+<hr width="100%">
+<a name="session774" href="./../nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node54.html#session774">node54#session774</a>(<a href="./../../testCapture.java.daa1306e85f290e2a260c8577d57fc8b.html#LINE71">71</a>) [compute pre] liveness 54
+<LISTING class='color_black'>JOIN
+
+LEFT:   { $bcvar12,
+          lang.System,
+          c,
+          postMethod,
+          dataUrl,
+          return,
+          tmpcookies,
+          $bcvar11,
+          $bcvar13 }
+RIGHT:  { return }
+RESULT: = LEFT
+
+</LISTING>
+<hr width="100%">
+<a name="session775" href="./../nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node54.html#session775">node54#session775</a>(<a href="./../../testCapture.java.daa1306e85f290e2a260c8577d57fc8b.html#LINE71">71</a>) [exec] liveness 54
+<LISTING class='color_black'>PRE STATE:
+{ $bcvar12,
+  lang.System,
+  c,
+  postMethod,
+  dataUrl,
+  return,
+  tmpcookies,
+  $bcvar11,
+  $bcvar13 }
+
+INSTR=  *&amp;$irvar16:java.lang.StringBuffer*=n$125 [line 71]; 
+
+STATE:
+{ n$125,
+  $bcvar12,
+  lang.System,
+  c,
+  postMethod,
+  dataUrl,
+  return,
+  tmpcookies,
+  $bcvar11,
+  $bcvar13 }
+
+INSTR=  n$125=_fun_StringBuffer StringBuffer.append(String)(n$122:java.lang.StringBuffer*,n$124:java.lang.String*) virtual [line 71]; 
+
+STATE:
+{ n$122,
+  n$124,
+  $bcvar12,
+  lang.System,
+  c,
+  postMethod,
+  dataUrl,
+  return,
+  tmpcookies,
+  $bcvar11,
+  $bcvar13 }
+
+INSTR=  n$124=*&amp;$irvar15:java.lang.String* [line 71]; 
+
+STATE:
+{ n$122,
+  $bcvar12,
+  lang.System,
+  c,
+  postMethod,
+  dataUrl,
+  return,
+  tmpcookies,
+  $bcvar11,
+  $bcvar13,
+  $irvar15 }
+
+INSTR=  _=*n$122:java.lang.StringBuffer*(root java.lang.StringBuffer) [line 71]; 
+
+STATE UNCHANGED
+
+INSTR=  n$122=*&amp;tmpcookies:java.lang.StringBuffer* [line 71]; 
+
+STATE:
+{ $bcvar12,
+  lang.System,
+  c,
+  postMethod,
+  dataUrl,
+  return,
+  tmpcookies,
+  $bcvar11,
+  $bcvar13,
+  $irvar15 }
+
+</LISTING>
+<hr width="100%">
+<a name="session900" href="./../nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node54.html#session900">node54#session900</a>(<a href="./../../testCapture.java.daa1306e85f290e2a260c8577d57fc8b.html#LINE71">71</a>) [compute pre] liveness 54
+<LISTING class='color_black'>JOIN
+
+LEFT:   { $bcvar12,
+          lang.System,
+          c,
+          postMethod,
+          dataUrl,
+          return,
+          httpClient,
+          tmpcookies,
+          $bcvar11,
+          $bcvar13 }
+RIGHT:  { return }
+RESULT: = LEFT
+
+</LISTING>
+<hr width="100%">
+<a name="session901" href="./../nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node54.html#session901">node54#session901</a>(<a href="./../../testCapture.java.daa1306e85f290e2a260c8577d57fc8b.html#LINE71">71</a>) [exec] liveness 54
+<LISTING class='color_black'>PRE STATE:
+{ $bcvar12,
+  lang.System,
+  c,
+  postMethod,
+  dataUrl,
+  return,
+  httpClient,
+  tmpcookies,
+  $bcvar11,
+  $bcvar13 }
+
+INSTR=  *&amp;$irvar16:java.lang.StringBuffer*=n$125 [line 71]; 
+
+STATE:
+{ n$125,
+  $bcvar12,
+  lang.System,
+  c,
+  postMethod,
+  dataUrl,
+  return,
+  httpClient,
+  tmpcookies,
+  $bcvar11,
+  $bcvar13 }
+
+INSTR=  n$125=_fun_StringBuffer StringBuffer.append(String)(n$122:java.lang.StringBuffer*,n$124:java.lang.String*) virtual [line 71]; 
+
+STATE:
+{ n$122,
+  n$124,
+  $bcvar12,
+  lang.System,
+  c,
+  postMethod,
+  dataUrl,
+  return,
+  httpClient,
+  tmpcookies,
+  $bcvar11,
+  $bcvar13 }
+
+INSTR=  n$124=*&amp;$irvar15:java.lang.String* [line 71]; 
+
+STATE:
+{ n$122,
+  $bcvar12,
+  lang.System,
+  c,
+  postMethod,
+  dataUrl,
+  return,
+  httpClient,
+  tmpcookies,
+  $bcvar11,
+  $bcvar13,
+  $irvar15 }
+
+INSTR=  _=*n$122:java.lang.StringBuffer*(root java.lang.StringBuffer) [line 71]; 
+
+STATE UNCHANGED
+
+INSTR=  n$122=*&amp;tmpcookies:java.lang.StringBuffer* [line 71]; 
+
+STATE:
+{ $bcvar12,
+  lang.System,
+  c,
+  postMethod,
+  dataUrl,
+  return,
+  httpClient,
+  tmpcookies,
+  $bcvar11,
+  $bcvar13,
+  $irvar15 }
+
+</LISTING>
+<hr width="100%">
+<a name="session1230" href="./../nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node54.html#session1230">node54#session1230</a>(<a href="./../../testCapture.java.daa1306e85f290e2a260c8577d57fc8b.html#LINE71">71</a>) [compute pre] liveness 54
+<LISTING class='color_black'>JOIN
+
+LEFT:   { $bcvar12,
+          fw2,
+          lang.System,
+          c,
+          postMethod,
+          dataUrl,
+          return,
+          httpClient,
+          tmpcookies,
+          $bcvar11,
+          $bcvar13 }
+RIGHT:  { return }
+RESULT: = LEFT
+
+</LISTING>
+<hr width="100%">
+<a name="session1231" href="./../nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node54.html#session1231">node54#session1231</a>(<a href="./../../testCapture.java.daa1306e85f290e2a260c8577d57fc8b.html#LINE71">71</a>) [exec] liveness 54
+<LISTING class='color_black'>PRE STATE:
+{ $bcvar12,
+  fw2,
+  lang.System,
+  c,
+  postMethod,
+  dataUrl,
+  return,
+  httpClient,
+  tmpcookies,
+  $bcvar11,
+  $bcvar13 }
+
+INSTR=  *&amp;$irvar16:java.lang.StringBuffer*=n$125 [line 71]; 
+
+STATE:
+{ n$125,
+  $bcvar12,
+  fw2,
+  lang.System,
+  c,
+  postMethod,
+  dataUrl,
+  return,
+  httpClient,
+  tmpcookies,
+  $bcvar11,
+  $bcvar13 }
+
+INSTR=  n$125=_fun_StringBuffer StringBuffer.append(String)(n$122:java.lang.StringBuffer*,n$124:java.lang.String*) virtual [line 71]; 
+
+STATE:
+{ n$122,
+  n$124,
+  $bcvar12,
+  fw2,
+  lang.System,
+  c,
+  postMethod,
+  dataUrl,
+  return,
+  httpClient,
+  tmpcookies,
+  $bcvar11,
+  $bcvar13 }
+
+INSTR=  n$124=*&amp;$irvar15:java.lang.String* [line 71]; 
+
+STATE:
+{ n$122,
+  $bcvar12,
+  fw2,
+  lang.System,
+  c,
+  postMethod,
+  dataUrl,
+  return,
+  httpClient,
+  tmpcookies,
+  $bcvar11,
+  $bcvar13,
+  $irvar15 }
+
+INSTR=  _=*n$122:java.lang.StringBuffer*(root java.lang.StringBuffer) [line 71]; 
+
+STATE UNCHANGED
+
+INSTR=  n$122=*&amp;tmpcookies:java.lang.StringBuffer* [line 71]; 
+
+STATE:
+{ $bcvar12,
+  fw2,
+  lang.System,
+  c,
+  postMethod,
+  dataUrl,
+  return,
+  httpClient,
+  tmpcookies,
+  $bcvar11,
+  $bcvar13,
+  $irvar15 }
+
+</LISTING>
+<hr width="100%">
+<a name="session1361" href="./../nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node54.html#session1361">node54#session1361</a>(<a href="./../../testCapture.java.daa1306e85f290e2a260c8577d57fc8b.html#LINE71">71</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session1362" href="./../nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node54.html#session1362">node54#session1362</a>(<a href="./../../testCapture.java.daa1306e85f290e2a260c8577d57fc8b.html#LINE71">71</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ $bcvar12,
+   fw2,
+   c,
+   postMethod,
+   dataUrl,
+   httpClient,
+   tmpcookies,
+   $bcvar11,
+   $bcvar13,
+   $irvar15 },
+{ _, n$119, n$121, $irvar14 })
+
+INSTR=  n$122=*&amp;tmpcookies:java.lang.StringBuffer* [line 71]; 
+
+STATE:
+({ n$122,
+   $bcvar12,
+   fw2,
+   c,
+   postMethod,
+   dataUrl,
+   httpClient,
+   tmpcookies,
+   $bcvar11,
+   $bcvar13,
+   $irvar15 },
+{ _, n$119, n$121, $irvar14 })
+
+INSTR=  _=*n$122:java.lang.StringBuffer*(root java.lang.StringBuffer) [line 71]; 
+
+STATE:
+({ _,
+   n$122,
+   $bcvar12,
+   fw2,
+   c,
+   postMethod,
+   dataUrl,
+   httpClient,
+   tmpcookies,
+   $bcvar11,
+   $bcvar13,
+   $irvar15 },
+{ _, n$119, n$121, $irvar14 })
+
+INSTR=  n$124=*&amp;$irvar15:java.lang.String* [line 71]; 
+
+STATE:
+({ _,
+   n$122,
+   n$124,
+   $bcvar12,
+   fw2,
+   c,
+   postMethod,
+   dataUrl,
+   httpClient,
+   tmpcookies,
+   $bcvar11,
+   $bcvar13,
+   $irvar15 },
+{ _, n$119, n$121, $irvar14 })
+
+INSTR=  n$125=_fun_StringBuffer StringBuffer.append(String)(n$122:java.lang.StringBuffer*,n$124:java.lang.String*) virtual [line 71]; 
+
+STATE:
+({ _,
+   n$122,
+   n$124,
+   n$125,
+   $bcvar12,
+   fw2,
+   c,
+   postMethod,
+   dataUrl,
+   httpClient,
+   tmpcookies,
+   $bcvar11,
+   $bcvar13,
+   $irvar15 },
+{ _, n$119, n$121, $irvar14 })
+
+INSTR=  *&amp;$irvar16:java.lang.StringBuffer*=n$125 [line 71]; 
+
+STATE:
+({ $bcvar12,
+   fw2,
+   c,
+   postMethod,
+   dataUrl,
+   httpClient,
+   tmpcookies,
+   $bcvar11,
+   $bcvar13 },
+{ _, n$122, n$124, n$125, $irvar16, $irvar15 })
+
+</LISTING>
+<hr width="100%">
+<a name="session102" href="./../nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node54.html#session102">node54#session102</a>(<a href="./../../testCapture.java.daa1306e85f290e2a260c8577d57fc8b.html#LINE71">71</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session103" href="./../nodes/com.dulishuo.yimusanfendi.testCapture.main%28java.lang.String%5B%5D%29%3Avoid.b9e47647e631e3293594bbbf063b5dfa_node54.html#session103">node54#session103</a>(<a href="./../../testCapture.java.daa1306e85f290e2a260c8577d57fc8b.html#LINE71">71</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$18 -&gt; { [_] -&gt; { } },
+  n$115 -&gt; { },
+  n$118 -&gt; { },
+  loginUrl -&gt; { },
+  data -&gt; { [_] -&gt; { } },
+  charset -&gt; { },
+  fw1 -&gt; { },
+  fw2 -&gt; { },
+  c -&gt; { },
+  postMethod -&gt; { },
+  dataUrl -&gt; { },
+  httpClient -&gt; { },
+  tmpcookies -&gt; { },
+  $bcvar13 -&gt; { },
+  cookies -&gt; { } }
+
+
+
+
+INSTR=  n$125 := StringBuffer StringBuffer.append(String)({ tmpcookies,
+                                                            n$121 }) [line 71]; 
+
+STATE UNCHANGED
+
+
+INSTR=  NULLIFY(&amp;$irvar16); [line 71]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;$irvar15); [line 71]; 
+
+STATE UNCHANGED
+
+INSTR=  EXIT_SCOPE(n$125); [line 71]; 
+
+STATE:
+{ n$18 -&gt; { [_] -&gt; { } },
+  n$115 -&gt; { },
+  n$118 -&gt; { },
+  loginUrl -&gt; { },
+  data -&gt; { [_] -&gt; { } },
+  charset -&gt; { },
+  fw1 -&gt; { },
+  fw2 -&gt; { },
+  c -&gt; { },
+  postMethod -&gt; { },
+  dataUrl -&gt; { },
+  httpClient -&gt; { },
+  tmpcookies -&gt; { },
+  $bcvar13 -&gt; { },
+  cookies -&gt; { } }
+
+</LISTING>

@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.util.CrawlerUtil$2.<init>().e70e33de5e6001e5583bef40c5bb49b4_1" [label="1: Start CrawlerUtil$2.<init>()\nFormals:  this:com.dulishuo.util.CrawlerUtil$2*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.util.CrawlerUtil$2.<init>().e70e33de5e6001e5583bef40c5bb49b4_1" -> "com.dulishuo.util.CrawlerUtil$2.<init>().e70e33de5e6001e5583bef40c5bb49b4_4" ;
+"com.dulishuo.util.CrawlerUtil$2.<init>().e70e33de5e6001e5583bef40c5bb49b4_2" [label="2: Exit CrawlerUtil$2.<init>() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.util.CrawlerUtil$2.<init>().e70e33de5e6001e5583bef40c5bb49b4_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 166]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil$2.<init>().e70e33de5e6001e5583bef40c5bb49b4_3" -> "com.dulishuo.util.CrawlerUtil$2.<init>().e70e33de5e6001e5583bef40c5bb49b4_2" ;
+"com.dulishuo.util.CrawlerUtil$2.<init>().e70e33de5e6001e5583bef40c5bb49b4_4" [label="4:  Call Object.<init>() \n   n$0=*&this:com.dulishuo.util.CrawlerUtil$2* [line 166]\n  n$1=_fun_Object.<init>()(n$0:com.dulishuo.util.CrawlerUtil$2*) [line 166]\n  NULLIFY(&this); [line 166]\n  EXIT_SCOPE(n$0,n$1,this); [line 166]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil$2.<init>().e70e33de5e6001e5583bef40c5bb49b4_4" -> "com.dulishuo.util.CrawlerUtil$2.<init>().e70e33de5e6001e5583bef40c5bb49b4_5" ;
+	 "com.dulishuo.util.CrawlerUtil$2.<init>().e70e33de5e6001e5583bef40c5bb49b4_4" -> "com.dulishuo.util.CrawlerUtil$2.<init>().e70e33de5e6001e5583bef40c5bb49b4_3" [color="red" ];
+"com.dulishuo.util.CrawlerUtil$2.<init>().e70e33de5e6001e5583bef40c5bb49b4_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 166]\n " shape="box"]
+	
+
+	 "com.dulishuo.util.CrawlerUtil$2.<init>().e70e33de5e6001e5583bef40c5bb49b4_5" -> "com.dulishuo.util.CrawlerUtil$2.<init>().e70e33de5e6001e5583bef40c5bb49b4_2" ;
+	 "com.dulishuo.util.CrawlerUtil$2.<init>().e70e33de5e6001e5583bef40c5bb49b4_5" -> "com.dulishuo.util.CrawlerUtil$2.<init>().e70e33de5e6001e5583bef40c5bb49b4_3" [color="red" ];
+}

@@ -1,0 +1,144 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_1" [label="1: Start List UrlGet.parseHtml(String)\nFormals:  str:java.lang.String*\nLocals:  $irvar10:void $irvar9:void $irvar8:void $irvar7:void $irvar6:void $irvar5:void $irvar4:void $irvar3:void $irvar2:void $irvar1:void $irvar0:void start:int size:int sibling:org.jsoup.select.Elements* ele:org.jsoup.nodes.Element* html:org.jsoup.nodes.Document* result:java.util.List* i:int date:java.lang.String* each:org.jsoup.nodes.Element* \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_1" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_4" ;
+"com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_2" [label="2: Exit List UrlGet.parseHtml(String) \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_3" [label="3:  exceptions sink \n   NULLIFY(&result); [line 58]\n  NULLIFY(&start); [line 58]\n  NULLIFY(&$irvar3); [line 58]\n  NULLIFY(&$irvar9); [line 58]\n  NULLIFY(&$irvar5); [line 58]\n  NULLIFY(&$irvar4); [line 58]\n  NULLIFY(&$irvar7); [line 58]\n  NULLIFY(&html); [line 58]\n  NULLIFY(&i); [line 58]\n  NULLIFY(&size); [line 58]\n  NULLIFY(&$irvar6); [line 58]\n  NULLIFY(&each); [line 58]\n  NULLIFY(&$irvar0); [line 58]\n  NULLIFY(&ele); [line 58]\n  NULLIFY(&$irvar10); [line 58]\n  NULLIFY(&$irvar8); [line 58]\n  NULLIFY(&$irvar1); [line 58]\n  NULLIFY(&$irvar2); [line 58]\n  NULLIFY(&sibling); [line 58]\n  NULLIFY(&date); [line 58]\n  EXIT_SCOPE(result,start,$irvar3,$irvar9,$irvar5,$irvar4,$irvar7,html,i,size,$irvar6,each,$irvar0,ele,$irvar10,$irvar8,$irvar1,$irvar2,sibling,date); [line 58]\n  APPLY_ABSTRACTION; [line 58]\n " shape="box"]
+	
+
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_3" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_2" ;
+"com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_4" [label="4:  Call ArrayList.<init>() \n   n$0=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 38]\n  n$1=_fun_ArrayList.<init>()(n$0:java.util.ArrayList*) [line 38]\n  *&result:java.util.ArrayList*=n$0 [line 38]\n  EXIT_SCOPE(n$0,n$1); [line 38]\n " shape="box"]
+	
+
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_4" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_5" ;
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_4" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_3" [color="red" ];
+"com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_5" [label="5:  Call Document Jsoup.parse(String) \n   n$2=*&str:java.lang.String* [line 40]\n  n$3=_fun_Document Jsoup.parse(String)(n$2:java.lang.String*) [line 40]\n  *&html:org.jsoup.nodes.Document*=n$3 [line 40]\n  NULLIFY(&str); [line 40]\n  EXIT_SCOPE(n$2,n$3,str); [line 40]\n " shape="box"]
+	
+
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_5" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_6" ;
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_5" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_3" [color="red" ];
+"com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_6" [label="6:  Call Element Element.getElementById(String) \n   n$4=*&html:org.jsoup.nodes.Document* [line 41]\n  _=*n$4:org.jsoup.nodes.Document*(root org.jsoup.nodes.Document) [line 41]\n  n$6=_fun_Element Element.getElementById(String)(n$4:org.jsoup.nodes.Document*,\"threadlist\":java.lang.Object*) virtual [line 41]\n  *&ele:org.jsoup.nodes.Element*=n$6 [line 41]\n  NULLIFY(&html); [line 41]\n  EXIT_SCOPE(_,n$4,n$6,html); [line 41]\n " shape="box"]
+	
+
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_6" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_7" ;
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_6" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_3" [color="red" ];
+"com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_7" [label="7:  Call Element Element.getElementById(String) \n   n$7=*&ele:org.jsoup.nodes.Element* [line 42]\n  _=*n$7:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 42]\n  n$9=_fun_Element Element.getElementById(String)(n$7:org.jsoup.nodes.Element*,\"separatorline\":java.lang.Object*) virtual [line 42]\n  *&$irvar0:org.jsoup.nodes.Element*=n$9 [line 42]\n  EXIT_SCOPE(_,n$7,n$9); [line 42]\n " shape="box"]
+	
+
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_7" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_8" ;
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_7" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_3" [color="red" ];
+"com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_8" [label="8:  Call Elements Element.siblingElements() \n   n$10=*&$irvar0:org.jsoup.nodes.Element* [line 42]\n  _=*n$10:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 42]\n  n$12=_fun_Elements Element.siblingElements()(n$10:org.jsoup.nodes.Element*) virtual [line 42]\n  *&sibling:org.jsoup.select.Elements*=n$12 [line 42]\n  NULLIFY(&$irvar0); [line 42]\n  EXIT_SCOPE(_,n$10,n$12,$irvar0); [line 42]\n " shape="box"]
+	
+
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_8" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_9" ;
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_8" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_3" [color="red" ];
+"com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_9" [label="9:  Call int Elements.size() \n   n$13=*&sibling:org.jsoup.select.Elements* [line 43]\n  _=*n$13:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 43]\n  n$15=_fun_int Elements.size()(n$13:org.jsoup.select.Elements*) virtual [line 43]\n  *&size:int=n$15 [line 43]\n  EXIT_SCOPE(_,n$13,n$15); [line 43]\n " shape="box"]
+	
+
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_9" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_10" ;
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_9" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_3" [color="red" ];
+"com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_10" [label="10:  Call Element Element.getElementById(String) \n   n$16=*&ele:org.jsoup.nodes.Element* [line 44]\n  _=*n$16:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 44]\n  n$18=_fun_Element Element.getElementById(String)(n$16:org.jsoup.nodes.Element*,\"separatorline\":java.lang.Object*) virtual [line 44]\n  *&$irvar1:org.jsoup.nodes.Element*=n$18 [line 44]\n  NULLIFY(&ele); [line 44]\n  EXIT_SCOPE(_,n$16,n$18,ele); [line 44]\n " shape="box"]
+	
+
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_10" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_11" ;
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_10" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_3" [color="red" ];
+"com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_11" [label="11:  Call Integer Element.elementSiblingIndex() \n   n$19=*&$irvar1:org.jsoup.nodes.Element* [line 44]\n  _=*n$19:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 44]\n  n$21=_fun_Integer Element.elementSiblingIndex()(n$19:org.jsoup.nodes.Element*) virtual [line 44]\n  *&$irvar2:java.lang.Integer*=n$21 [line 44]\n  NULLIFY(&$irvar1); [line 44]\n  EXIT_SCOPE(_,n$19,n$21,$irvar1); [line 44]\n " shape="box"]
+	
+
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_11" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_12" ;
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_11" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_3" [color="red" ];
+"com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_12" [label="12:  Call int Integer.intValue() \n   n$22=*&$irvar2:java.lang.Integer* [line 44]\n  _=*n$22:java.lang.Integer*(root java.lang.Integer) [line 44]\n  n$24=_fun_int Integer.intValue()(n$22:java.lang.Integer*) virtual [line 44]\n  *&$irvar3:int=n$24 [line 44]\n  NULLIFY(&$irvar2); [line 44]\n  EXIT_SCOPE(_,n$22,n$24,$irvar2); [line 44]\n " shape="box"]
+	
+
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_12" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_13" ;
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_12" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_3" [color="red" ];
+"com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_13" [label="13:  method_body \n   n$25=*&$irvar3:int [line 44]\n  *&start:int=(n$25 + 1) [line 44]\n  NULLIFY(&$irvar3); [line 44]\n  EXIT_SCOPE(n$25,$irvar3); [line 44]\n " shape="box"]
+	
+
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_13" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_14" ;
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_13" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_3" [color="red" ];
+"com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_14" [label="14:  method_body \n   n$26=*&start:int [line 45]\n  *&i:int=n$26 [line 45]\n  NULLIFY(&start); [line 45]\n  EXIT_SCOPE(n$26,start); [line 45]\n  APPLY_ABSTRACTION; [line 45]\n " shape="box"]
+	
+
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_14" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_17" ;
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_14" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_3" [color="red" ];
+"com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_15" [label="15: Prune (true branch, if) \n   n$27=*&i:int [line 45]\n  n$28=*&size:int [line 45]\n  PRUNE(!(n$27 >= n$28), true); [line 45]\n  EXIT_SCOPE(n$27,n$28); [line 45]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_15" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_18" ;
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_15" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_3" [color="red" ];
+"com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_16" [label="16: Prune (false branch, if) \n   n$27=*&i:int [line 45]\n  n$28=*&size:int [line 45]\n  PRUNE((n$27 >= n$28), false); [line 45]\n  NULLIFY(&i); [line 45]\n  NULLIFY(&size); [line 45]\n  NULLIFY(&sibling); [line 45]\n  EXIT_SCOPE(n$27,n$28,i,size,sibling); [line 45]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_16" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_29" ;
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_16" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_3" [color="red" ];
+"com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_17" [label="17: + \n  " ]
+	
+
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_17" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_15" ;
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_17" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_16" ;
+"com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_18" [label="18:  Call Element Elements.get(int) \n   n$29=*&sibling:org.jsoup.select.Elements* [line 46]\n  _=*n$29:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 46]\n  n$31=*&i:int [line 46]\n  n$32=_fun_Element Elements.get(int)(n$29:org.jsoup.select.Elements*,n$31:int) virtual [line 46]\n  *&each:org.jsoup.nodes.Element*=n$32 [line 46]\n  EXIT_SCOPE(_,n$29,n$31,n$32); [line 46]\n " shape="box"]
+	
+
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_18" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_19" ;
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_18" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_3" [color="red" ];
+"com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_19" [label="19:  Call Elements Element.getElementsByClass(String) \n   n$33=*&each:org.jsoup.nodes.Element* [line 47]\n  _=*n$33:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 47]\n  n$35=_fun_Elements Element.getElementsByClass(String)(n$33:org.jsoup.nodes.Element*,\"by\":java.lang.Object*) virtual [line 47]\n  *&$irvar4:org.jsoup.select.Elements*=n$35 [line 47]\n  NULLIFY(&each); [line 47]\n  EXIT_SCOPE(_,n$33,n$35,each); [line 47]\n " shape="box"]
+	
+
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_19" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_20" ;
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_19" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_3" [color="red" ];
+"com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_20" [label="20:  Call Element Elements.get(int) \n   n$36=*&$irvar4:org.jsoup.select.Elements* [line 47]\n  _=*n$36:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 47]\n  n$38=_fun_Element Elements.get(int)(n$36:org.jsoup.select.Elements*,0:int) virtual [line 47]\n  *&$irvar5:org.jsoup.nodes.Element*=n$38 [line 47]\n  NULLIFY(&$irvar4); [line 47]\n  EXIT_SCOPE(_,n$36,n$38,$irvar4); [line 47]\n " shape="box"]
+	
+
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_20" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_21" ;
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_20" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_3" [color="red" ];
+"com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_21" [label="21:  Call Elements Element.getElementsByTag(String) \n   n$39=*&$irvar5:org.jsoup.nodes.Element* [line 47]\n  _=*n$39:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 47]\n  n$41=_fun_Elements Element.getElementsByTag(String)(n$39:org.jsoup.nodes.Element*,\"em\":java.lang.Object*) virtual [line 47]\n  *&$irvar6:org.jsoup.select.Elements*=n$41 [line 47]\n  NULLIFY(&$irvar5); [line 47]\n  EXIT_SCOPE(_,n$39,n$41,$irvar5); [line 47]\n " shape="box"]
+	
+
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_21" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_22" ;
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_21" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_3" [color="red" ];
+"com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_22" [label="22:  Call Element Elements.get(int) \n   n$42=*&$irvar6:org.jsoup.select.Elements* [line 47]\n  _=*n$42:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 47]\n  n$44=_fun_Element Elements.get(int)(n$42:org.jsoup.select.Elements*,0:int) virtual [line 47]\n  *&$irvar7:org.jsoup.nodes.Element*=n$44 [line 47]\n  NULLIFY(&$irvar6); [line 47]\n  EXIT_SCOPE(_,n$42,n$44,$irvar6); [line 47]\n " shape="box"]
+	
+
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_22" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_23" ;
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_22" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_3" [color="red" ];
+"com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_23" [label="23:  Call Elements Element.getElementsByTag(String) \n   n$45=*&$irvar7:org.jsoup.nodes.Element* [line 47]\n  _=*n$45:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 47]\n  n$47=_fun_Elements Element.getElementsByTag(String)(n$45:org.jsoup.nodes.Element*,\"span\":java.lang.Object*) virtual [line 47]\n  *&$irvar8:org.jsoup.select.Elements*=n$47 [line 47]\n  NULLIFY(&$irvar7); [line 47]\n  EXIT_SCOPE(_,n$45,n$47,$irvar7); [line 47]\n " shape="box"]
+	
+
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_23" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_24" ;
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_23" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_3" [color="red" ];
+"com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_24" [label="24:  Call Element Elements.get(int) \n   n$48=*&$irvar8:org.jsoup.select.Elements* [line 47]\n  _=*n$48:org.jsoup.select.Elements*(root org.jsoup.select.Elements) [line 47]\n  n$50=_fun_Element Elements.get(int)(n$48:org.jsoup.select.Elements*,0:int) virtual [line 47]\n  *&$irvar9:org.jsoup.nodes.Element*=n$50 [line 47]\n  NULLIFY(&$irvar8); [line 47]\n  EXIT_SCOPE(_,n$48,n$50,$irvar8); [line 47]\n " shape="box"]
+	
+
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_24" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_25" ;
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_24" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_3" [color="red" ];
+"com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_25" [label="25:  Call String Element.text() \n   n$51=*&$irvar9:org.jsoup.nodes.Element* [line 47]\n  _=*n$51:org.jsoup.nodes.Element*(root org.jsoup.nodes.Element) [line 47]\n  n$53=_fun_String Element.text()(n$51:org.jsoup.nodes.Element*) virtual [line 47]\n  *&$irvar10:java.lang.String*=n$53 [line 47]\n  NULLIFY(&$irvar9); [line 47]\n  EXIT_SCOPE(_,n$51,n$53,$irvar9); [line 47]\n " shape="box"]
+	
+
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_25" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_26" ;
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_25" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_3" [color="red" ];
+"com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_26" [label="26:  Call String String.replace(CharSequence,CharSequence) \n   n$54=*&$irvar10:java.lang.String* [line 47]\n  _=*n$54:java.lang.String*(root java.lang.String) [line 47]\n  n$56=_fun_String String.replace(CharSequence,CharSequence)(n$54:java.lang.String*,\"&nbsp;\":java.lang.Object*,\"\":java.lang.Object*) virtual [line 47]\n  *&date:java.lang.String*=n$56 [line 47]\n  NULLIFY(&$irvar10); [line 47]\n  EXIT_SCOPE(_,n$54,n$56,$irvar10); [line 47]\n " shape="box"]
+	
+
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_26" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_27" ;
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_26" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_3" [color="red" ];
+"com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_27" [label="27:  Call void PrintStream.println(String) \n   n$57=*&#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 48]\n  _=*n$57:java.io.PrintStream*(root java.io.PrintStream) [line 48]\n  n$59=*&date:java.lang.String* [line 48]\n  n$60=_fun_void PrintStream.println(String)(n$57:java.io.PrintStream*,n$59:java.lang.String*) virtual [line 48]\n  NULLIFY(&date); [line 48]\n  EXIT_SCOPE(_,n$57,n$59,n$60,date); [line 48]\n " shape="box"]
+	
+
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_27" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_28" ;
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_27" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_3" [color="red" ];
+"com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_28" [label="28:  method_body \n   n$61=*&i:int [line 45]\n  *&i:int=(n$61 + 1) [line 45]\n  EXIT_SCOPE(n$61); [line 45]\n  APPLY_ABSTRACTION; [line 45]\n " shape="box"]
+	
+
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_28" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_17" ;
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_28" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_3" [color="red" ];
+"com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_29" [label="29:  method_body \n   n$62=*&result:java.util.ArrayList* [line 58]\n  *&return:java.util.List*=n$62 [line 58]\n  NULLIFY(&result); [line 58]\n  EXIT_SCOPE(n$62,result); [line 58]\n  APPLY_ABSTRACTION; [line 58]\n " shape="box"]
+	
+
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_29" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_2" ;
+	 "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_29" -> "com.dulishuo.chasedream.UrlGet.parseHtml(java.lang.String):java.util.List.ac3ce8a1ae2d16037ac490c754efc729_3" [color="red" ];
+}

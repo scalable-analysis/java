@@ -1,0 +1,266 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_1" [label="1: Start void UrlGet.getOffer()\nFormals: \nLocals:  $irvar23:void $irvar22:void $irvar21:void $irvar20:void $irvar19:void $irvar18:void $irvar17:void $irvar16:void $irvar15:void $irvar14:void $irvar13:void CatchVar134:void $irvar12:void $irvar11:void $irvar10:void $irvar9:void CatchVar92:void $irvar8:void $irvar7:void $irvar6:void $irvar5:void $irvar4:void $irvar3:void $irvar2:void $irvar1:void $irvar0:void $bcvar4:void flag:int result:java.util.List* content:java.lang.String* list:java.util.List* json:net.sf.json.JSONObject* e:java.lang.InterruptedException* \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_1" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_4" ;
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_2" [label="2: Exit void UrlGet.getOffer() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [label="3:  exceptions sink \n   NULLIFY(&result); [line 171]\n  NULLIFY(&$irvar22); [line 171]\n  NULLIFY(&$irvar3); [line 171]\n  NULLIFY(&$irvar17); [line 171]\n  NULLIFY(&$bcvar4); [line 171]\n  NULLIFY(&CatchVar134); [line 171]\n  NULLIFY(&$irvar18); [line 171]\n  NULLIFY(&$irvar5); [line 171]\n  NULLIFY(&$irvar16); [line 171]\n  NULLIFY(&json); [line 171]\n  NULLIFY(&list); [line 171]\n  NULLIFY(&$irvar4); [line 171]\n  NULLIFY(&$irvar7); [line 171]\n  NULLIFY(&$irvar19); [line 171]\n  NULLIFY(&$irvar21); [line 171]\n  NULLIFY(&$irvar20); [line 171]\n  NULLIFY(&$irvar6); [line 171]\n  NULLIFY(&$irvar0); [line 171]\n  NULLIFY(&$irvar23); [line 171]\n  NULLIFY(&$irvar13); [line 171]\n  NULLIFY(&$irvar1); [line 171]\n  NULLIFY(&CatchVar92); [line 171]\n  NULLIFY(&$irvar2); [line 171]\n  NULLIFY(&$irvar15); [line 171]\n  NULLIFY(&flag); [line 171]\n  NULLIFY(&e); [line 171]\n  NULLIFY(&$irvar14); [line 171]\n  EXIT_SCOPE(n$96,result,$irvar22,$irvar3,$irvar17,$bcvar4,CatchVar134,$irvar18,$irvar5,$irvar16,json,list,$irvar4,$irvar7,$irvar19,$irvar21,$irvar20,$irvar6,$irvar0,$irvar23,$irvar13,$irvar1,CatchVar92,$irvar2,$irvar15,flag,e,$irvar14); [line 171]\n  APPLY_ABSTRACTION; [line 171]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_2" ;
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_4" [label="4:  Call List FileUtil.FileToJsonList(String,String) \n   n$0=_fun_List FileUtil.FileToJsonList(String,String)(\"C:/Users/\\\\229\\\\188\\\\186\\\\232\\\\131\\\\156/Desktop/dataCrawler/\\\\231\\\\148\\\\179\\\\232\\\\175\\\\183\\\\230\\\\150\\\\185/offer/url.json\":java.lang.Object*,\"utf-8\":java.lang.Object*) [line 145]\n  *&list:java.util.List*=n$0 [line 145]\n  EXIT_SCOPE(n$0); [line 145]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_4" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_5" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_4" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_5" [label="5:  method_body \n   *&content:java.lang.Object*=\"\" [line 147]\n  NULLIFY(&content); [line 147]\n  EXIT_SCOPE(content); [line 147]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_5" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_6" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_5" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_6" [label="6:  Call ArrayList.<init>() \n   n$1=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 148]\n  n$2=_fun_ArrayList.<init>()(n$1:java.util.ArrayList*) [line 148]\n  *&result:java.util.ArrayList*=n$1 [line 148]\n  EXIT_SCOPE(n$1,n$2); [line 148]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_6" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_7" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_6" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_7" [label="7:  method_body \n   *&flag:int=1 [line 149]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_7" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_8" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_7" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_8" [label="8:  Call Iterator List.iterator() \n   n$3=*&list:java.util.List* [line 150]\n  _=*n$3:java.util.List*(root java.util.List) [line 150]\n  n$5=_fun_Iterator List.iterator()(n$3:java.util.List*) interface virtual [line 150]\n  *&$bcvar4:java.util.Iterator*=n$5 [line 150]\n  NULLIFY(&list); [line 150]\n  EXIT_SCOPE(_,n$3,n$5,list); [line 150]\n  APPLY_ABSTRACTION; [line 150]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_8" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_9" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_8" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_9" [label="9:  Call boolean Iterator.hasNext() \n   n$6=*&$bcvar4:java.util.Iterator* [line 150]\n  _=*n$6:java.util.Iterator*(root java.util.Iterator) [line 150]\n  n$8=_fun_boolean Iterator.hasNext()(n$6:java.util.Iterator*) interface virtual [line 150]\n  *&$irvar0:_Bool=n$8 [line 150]\n  NULLIFY(&json); [line 150]\n  EXIT_SCOPE(_,n$6,n$8,json); [line 150]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_9" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_12" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_9" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_10" [label="10: Prune (true branch, if) \n   n$9=*&$irvar0:_Bool [line 150]\n  PRUNE(!(n$9 == 0), true); [line 150]\n  NULLIFY(&$irvar0); [line 150]\n  EXIT_SCOPE(n$9,$irvar0); [line 150]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_10" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_13" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_10" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_11" [label="11: Prune (false branch, if) \n   n$9=*&$irvar0:_Bool [line 150]\n  PRUNE((n$9 == 0), false); [line 150]\n  NULLIFY(&$bcvar4); [line 150]\n  NULLIFY(&$irvar0); [line 150]\n  NULLIFY(&flag); [line 150]\n  EXIT_SCOPE(n$9,$bcvar4,$irvar0,flag); [line 150]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_11" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_46" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_11" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_12" [label="12: + \n  " ]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_12" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_10" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_12" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_11" ;
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_13" [label="13:  Call Object Iterator.next() \n   n$10=*&$bcvar4:java.util.Iterator* [line 150]\n  _=*n$10:java.util.Iterator*(root java.util.Iterator) [line 150]\n  n$12=_fun_Object Iterator.next()(n$10:java.util.Iterator*) interface virtual [line 150]\n  *&$irvar1:java.lang.Object*=n$12 [line 150]\n  EXIT_SCOPE(_,n$10,n$12); [line 150]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_13" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_14" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_13" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_14" [label="14:  method_body \n   n$13=*&$irvar1:java.lang.Object* [line 150]\n  n$14=_fun___cast(n$13:java.lang.Object*,sizeof(t=net.sf.json.JSONObject;sub_t=( sub )(cast)):void) [line 150]\n  *&json:net.sf.json.JSONObject*=n$14 [line 150]\n  NULLIFY(&$irvar1); [line 150]\n  EXIT_SCOPE(n$13,n$14,$irvar1); [line 150]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_14" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_15" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_14" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_15" [label="15:  method_body \n   n$15=*&#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 151]\n  *&$irvar2:java.io.PrintStream*=n$15 [line 151]\n  EXIT_SCOPE(n$15); [line 151]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_15" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_16" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_15" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_16" [label="16:  Call StringBuilder.<init>() \n   n$16=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 151]\n  n$17=_fun_StringBuilder.<init>()(n$16:java.lang.StringBuilder*) [line 151]\n  *&$irvar3:java.lang.StringBuilder*=n$16 [line 151]\n  EXIT_SCOPE(n$16,n$17); [line 151]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_16" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_17" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_16" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_17" [label="17:  Call StringBuilder StringBuilder.append(String) \n   n$18=*&$irvar3:java.lang.StringBuilder* [line 151]\n  _=*n$18:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 151]\n  n$20=_fun_StringBuilder StringBuilder.append(String)(n$18:java.lang.StringBuilder*,\"process : \":java.lang.Object*) virtual [line 151]\n  *&$irvar4:java.lang.StringBuilder*=n$20 [line 151]\n  NULLIFY(&$irvar3); [line 151]\n  EXIT_SCOPE(_,n$18,n$20,$irvar3); [line 151]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_17" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_18" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_17" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_18" [label="18:  method_body \n   n$21=*&flag:int [line 151]\n  *&$irvar5:int=n$21 [line 151]\n  EXIT_SCOPE(n$21); [line 151]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_18" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_19" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_18" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_19" [label="19:  method_body \n   n$22=*&flag:int [line 151]\n  *&flag:int=(n$22 + 1) [line 151]\n  EXIT_SCOPE(n$22); [line 151]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_19" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_20" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_19" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_20" [label="20:  Call StringBuilder StringBuilder.append(int) \n   n$23=*&$irvar4:java.lang.StringBuilder* [line 151]\n  _=*n$23:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 151]\n  n$25=*&$irvar5:int [line 151]\n  n$26=_fun_StringBuilder StringBuilder.append(int)(n$23:java.lang.StringBuilder*,n$25:int) virtual [line 151]\n  *&$irvar6:java.lang.StringBuilder*=n$26 [line 151]\n  NULLIFY(&$irvar5); [line 151]\n  NULLIFY(&$irvar4); [line 151]\n  EXIT_SCOPE(_,n$23,n$25,n$26,$irvar5,$irvar4); [line 151]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_20" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_21" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_20" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_21" [label="21:  Call String StringBuilder.toString() \n   n$27=*&$irvar6:java.lang.StringBuilder* [line 151]\n  _=*n$27:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 151]\n  n$29=_fun_String StringBuilder.toString()(n$27:java.lang.StringBuilder*) virtual [line 151]\n  *&$irvar7:java.lang.String*=n$29 [line 151]\n  NULLIFY(&$irvar6); [line 151]\n  EXIT_SCOPE(_,n$27,n$29,$irvar6); [line 151]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_21" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_22" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_21" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_22" [label="22:  Call void PrintStream.println(String) \n   n$30=*&$irvar2:java.io.PrintStream* [line 151]\n  _=*n$30:java.io.PrintStream*(root java.io.PrintStream) [line 151]\n  n$32=*&$irvar7:java.lang.String* [line 151]\n  n$33=_fun_void PrintStream.println(String)(n$30:java.io.PrintStream*,n$32:java.lang.String*) virtual [line 151]\n  NULLIFY(&$irvar7); [line 151]\n  NULLIFY(&$irvar2); [line 151]\n  EXIT_SCOPE(_,n$30,n$32,n$33,$irvar7,$irvar2); [line 151]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_22" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_23" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_22" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_23" [label="23:  Call Thread Thread.currentThread() \n   n$34=_fun_Thread Thread.currentThread()() [line 153]\n  *&$irvar8:java.lang.Thread*=n$34 [line 153]\n  NULLIFY(&$irvar8); [line 153]\n  EXIT_SCOPE(n$34,$irvar8); [line 153]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_23" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_24" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_23" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_53" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_24" [label="24:  Call void Thread.sleep(long) \n   n$35=_fun_void Thread.sleep(long)(100:long) [line 153]\n  EXIT_SCOPE(n$35); [line 153]\n  APPLY_ABSTRACTION; [line 153]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_24" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_27" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_24" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_53" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_25" [label="25:  method_body \n   n$36=*&CatchVar92:java.lang.Object* [line 154]\n  *&e:java.lang.Object*=n$36 [line 154]\n  NULLIFY(&CatchVar92); [line 154]\n  EXIT_SCOPE(n$36,CatchVar92); [line 154]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_25" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_26" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_25" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_26" [label="26:  Call void Throwable.printStackTrace() \n   n$37=*&e:java.lang.Object* [line 156]\n  _=*n$37:java.lang.Object*(root java.lang.Object) [line 156]\n  n$39=_fun_void Throwable.printStackTrace()(n$37:java.lang.Object*) virtual [line 156]\n  NULLIFY(&e); [line 156]\n  EXIT_SCOPE(_,n$37,n$39,e); [line 156]\n  APPLY_ABSTRACTION; [line 156]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_26" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_27" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_26" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_27" [label="27:  Call String JSONObject.getString(String) \n   n$40=*&json:net.sf.json.JSONObject* [line 159]\n  _=*n$40:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 159]\n  n$42=_fun_String JSONObject.getString(String)(n$40:net.sf.json.JSONObject*,\"href\":java.lang.Object*) virtual [line 159]\n  *&$irvar9:java.lang.String*=n$42 [line 159]\n  EXIT_SCOPE(_,n$40,n$42); [line 159]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_27" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_28" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_27" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_50" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_28" [label="28:  Call String UrlGet.getContent(String) \n   n$43=*&$irvar9:java.lang.String* [line 159]\n  n$44=_fun_String UrlGet.getContent(String)(n$43:java.lang.String*) [line 159]\n  *&content:java.lang.String*=n$44 [line 159]\n  NULLIFY(&$irvar9); [line 159]\n  EXIT_SCOPE(n$43,n$44,$irvar9); [line 159]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_28" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_29" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_28" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_50" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_29" [label="29:  Call Object JSONObject.put(Object,Object) \n   n$45=*&json:net.sf.json.JSONObject* [line 160]\n  _=*n$45:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 160]\n  n$47=*&content:java.lang.String* [line 160]\n  n$48=_fun_Object JSONObject.put(Object,Object)(n$45:net.sf.json.JSONObject*,\"content\":java.lang.Object*,n$47:java.lang.String*) virtual [line 160]\n  *&$irvar10:java.lang.Object*=n$48 [line 160]\n  NULLIFY(&content); [line 160]\n  NULLIFY(&$irvar10); [line 160]\n  EXIT_SCOPE(_,n$45,n$47,n$48,content,$irvar10); [line 160]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_29" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_30" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_29" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_50" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_30" [label="30:  Call String JSONObject.toString() \n   n$49=*&json:net.sf.json.JSONObject* [line 161]\n  _=*n$49:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 161]\n  n$51=_fun_String JSONObject.toString()(n$49:net.sf.json.JSONObject*) virtual [line 161]\n  *&$irvar11:java.lang.String*=n$51 [line 161]\n  EXIT_SCOPE(_,n$49,n$51); [line 161]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_30" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_31" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_30" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_50" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_31" [label="31:  Call boolean ArrayList.add(Object) \n   n$52=*&result:java.util.ArrayList* [line 161]\n  _=*n$52:java.util.ArrayList*(root java.util.ArrayList) [line 161]\n  n$54=*&$irvar11:java.lang.String* [line 161]\n  n$55=_fun_boolean ArrayList.add(Object)(n$52:java.util.ArrayList*,n$54:java.lang.String*) interface virtual [line 161]\n  *&$irvar12:_Bool=n$55 [line 161]\n  NULLIFY(&$irvar12); [line 161]\n  NULLIFY(&$irvar11); [line 161]\n  EXIT_SCOPE(_,n$52,n$54,n$55,$irvar12,$irvar11); [line 161]\n  APPLY_ABSTRACTION; [line 161]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_31" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_9" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_31" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_50" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_32" [label="32:  method_body \n   n$56=*&CatchVar134:java.lang.Object* [line 162]\n  *&e:java.lang.Object*=n$56 [line 162]\n  NULLIFY(&CatchVar134); [line 162]\n  EXIT_SCOPE(n$56,CatchVar134); [line 162]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_32" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_33" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_32" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_33" [label="33:  method_body \n   n$57=*&#GB<>$com.dulishuo.shenqingfang.offer.UrlGet.log:org.apache.log4j.Logger*(root com.dulishuo.shenqingfang.offer.UrlGet) [line 163]\n  *&$irvar13:org.apache.log4j.Logger*=n$57 [line 163]\n  EXIT_SCOPE(n$57); [line 163]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_33" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_34" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_33" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_34" [label="34:  Call StringBuilder.<init>() \n   n$58=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 163]\n  n$59=_fun_StringBuilder.<init>()(n$58:java.lang.StringBuilder*) [line 163]\n  *&$irvar14:java.lang.StringBuilder*=n$58 [line 163]\n  EXIT_SCOPE(n$58,n$59); [line 163]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_34" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_35" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_34" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_35" [label="35:  Call StringBuilder StringBuilder.append(String) \n   n$60=*&$irvar14:java.lang.StringBuilder* [line 163]\n  _=*n$60:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 163]\n  n$62=_fun_StringBuilder StringBuilder.append(String)(n$60:java.lang.StringBuilder*,\"error - class:\":java.lang.Object*) virtual [line 163]\n  *&$irvar15:java.lang.StringBuilder*=n$62 [line 163]\n  NULLIFY(&$irvar14); [line 163]\n  EXIT_SCOPE(_,n$60,n$62,$irvar14); [line 163]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_35" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_36" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_35" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_36" [label="36:  Call String Class.getName() \n   n$63=_fun_String Class.getName()(com.dulishuo.shenqingfang.offer.UrlGet:java.lang.Object*) virtual [line 163]\n  *&$irvar16:java.lang.String*=n$63 [line 163]\n  EXIT_SCOPE(n$63); [line 163]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_36" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_37" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_36" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_37" [label="37:  Call StringBuilder StringBuilder.append(String) \n   n$64=*&$irvar15:java.lang.StringBuilder* [line 163]\n  _=*n$64:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 163]\n  n$66=*&$irvar16:java.lang.String* [line 163]\n  n$67=_fun_StringBuilder StringBuilder.append(String)(n$64:java.lang.StringBuilder*,n$66:java.lang.String*) virtual [line 163]\n  *&$irvar17:java.lang.StringBuilder*=n$67 [line 163]\n  NULLIFY(&$irvar16); [line 163]\n  NULLIFY(&$irvar15); [line 163]\n  EXIT_SCOPE(_,n$64,n$66,n$67,$irvar16,$irvar15); [line 163]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_37" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_38" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_37" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_38" [label="38:  Call StringBuilder StringBuilder.append(String) \n   n$68=*&$irvar17:java.lang.StringBuilder* [line 163]\n  _=*n$68:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 163]\n  n$70=_fun_StringBuilder StringBuilder.append(String)(n$68:java.lang.StringBuilder*,\" method- getOffer():\":java.lang.Object*) virtual [line 163]\n  *&$irvar18:java.lang.StringBuilder*=n$70 [line 163]\n  NULLIFY(&$irvar17); [line 163]\n  EXIT_SCOPE(_,n$68,n$70,$irvar17); [line 163]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_38" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_39" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_38" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_39" [label="39:  Call String JSONObject.getString(String) \n   n$71=*&json:net.sf.json.JSONObject* [line 164]\n  _=*n$71:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 164]\n  n$73=_fun_String JSONObject.getString(String)(n$71:net.sf.json.JSONObject*,\"href\":java.lang.Object*) virtual [line 164]\n  *&$irvar19:java.lang.String*=n$73 [line 164]\n  NULLIFY(&json); [line 164]\n  EXIT_SCOPE(_,n$71,n$73,json); [line 164]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_39" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_40" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_39" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_40" [label="40:  Call StringBuilder StringBuilder.append(String) \n   n$74=*&$irvar18:java.lang.StringBuilder* [line 164]\n  _=*n$74:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 164]\n  n$76=*&$irvar19:java.lang.String* [line 164]\n  n$77=_fun_StringBuilder StringBuilder.append(String)(n$74:java.lang.StringBuilder*,n$76:java.lang.String*) virtual [line 164]\n  *&$irvar20:java.lang.StringBuilder*=n$77 [line 164]\n  NULLIFY(&$irvar18); [line 164]\n  NULLIFY(&$irvar19); [line 164]\n  EXIT_SCOPE(_,n$74,n$76,n$77,$irvar18,$irvar19); [line 164]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_40" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_41" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_40" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_41" [label="41:  Call String StringBuilder.toString() \n   n$78=*&$irvar20:java.lang.StringBuilder* [line 164]\n  _=*n$78:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 164]\n  n$80=_fun_String StringBuilder.toString()(n$78:java.lang.StringBuilder*) virtual [line 164]\n  *&$irvar21:java.lang.String*=n$80 [line 164]\n  NULLIFY(&$irvar20); [line 164]\n  EXIT_SCOPE(_,n$78,n$80,$irvar20); [line 164]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_41" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_42" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_41" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_42" [label="42:  Call void Category.error(Object) \n   n$81=*&$irvar13:org.apache.log4j.Logger* [line 163]\n  _=*n$81:org.apache.log4j.Logger*(root org.apache.log4j.Logger) [line 163]\n  n$83=*&$irvar21:java.lang.String* [line 163]\n  n$84=_fun_void Category.error(Object)(n$81:org.apache.log4j.Logger*,n$83:java.lang.String*) virtual [line 163]\n  NULLIFY(&$irvar21); [line 163]\n  NULLIFY(&$irvar13); [line 163]\n  EXIT_SCOPE(_,n$81,n$83,n$84,$irvar21,$irvar13); [line 163]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_42" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_43" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_42" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_43" [label="43:  method_body \n   n$85=*&#GB<>$com.dulishuo.shenqingfang.offer.UrlGet.log:org.apache.log4j.Logger*(root com.dulishuo.shenqingfang.offer.UrlGet) [line 165]\n  *&$irvar23:org.apache.log4j.Logger*=n$85 [line 165]\n  EXIT_SCOPE(n$85); [line 165]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_43" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_44" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_43" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_44" [label="44:  Call String Throwable.toString() \n   n$86=*&e:java.lang.Object* [line 165]\n  _=*n$86:java.lang.Object*(root java.lang.Object) [line 165]\n  n$88=_fun_String Throwable.toString()(n$86:java.lang.Object*) virtual [line 165]\n  *&$irvar22:java.lang.String*=n$88 [line 165]\n  NULLIFY(&e); [line 165]\n  EXIT_SCOPE(_,n$86,n$88,e); [line 165]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_44" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_45" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_44" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_45" [label="45:  Call void Category.error(Object) \n   n$89=*&$irvar23:org.apache.log4j.Logger* [line 165]\n  _=*n$89:org.apache.log4j.Logger*(root org.apache.log4j.Logger) [line 165]\n  n$91=*&$irvar22:java.lang.String* [line 165]\n  n$92=_fun_void Category.error(Object)(n$89:org.apache.log4j.Logger*,n$91:java.lang.String*) virtual [line 165]\n  NULLIFY(&$irvar22); [line 165]\n  NULLIFY(&$irvar23); [line 165]\n  EXIT_SCOPE(_,n$89,n$91,n$92,$irvar22,$irvar23); [line 165]\n  APPLY_ABSTRACTION; [line 165]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_45" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_9" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_45" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_46" [label="46:  Call void FileUtil.ListToFile(List,String) \n   n$93=*&result:java.util.ArrayList* [line 169]\n  n$94=_fun_void FileUtil.ListToFile(List,String)(n$93:java.util.ArrayList*,\"C:/Users/\\\\229\\\\188\\\\186\\\\232\\\\131\\\\156/Desktop/dataCrawler/\\\\231\\\\148\\\\179\\\\232\\\\175\\\\183\\\\230\\\\150\\\\185/offer/ori_content.json\":java.lang.Object*) [line 169]\n  NULLIFY(&result); [line 169]\n  EXIT_SCOPE(n$93,n$94,result); [line 169]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_46" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_47" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_46" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_47" [label="47:  method_body \n   APPLY_ABSTRACTION; [line 171]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_47" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_2" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_47" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_48" [label="48: Prune (true branch, switch) \n   n$97=_fun___instanceof(n$96:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 162]\n  PRUNE(n$97, true); [line 162]\n  *&CatchVar134:void=n$96 [line 162]\n  EXIT_SCOPE(n$96,n$97); [line 162]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_48" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_32" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_48" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_49" [label="49: Prune (false branch, switch) \n   n$97=_fun___instanceof(n$96:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 162]\n  PRUNE(!n$97, false); [line 162]\n  *&return:void=EXN n$96 [line 162]\n  NULLIFY(&result); [line 162]\n  NULLIFY(&$bcvar4); [line 162]\n  NULLIFY(&json); [line 162]\n  NULLIFY(&flag); [line 162]\n  EXIT_SCOPE(n$96,n$97,result,$bcvar4,json,flag); [line 162]\n  APPLY_ABSTRACTION; [line 162]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_49" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_49" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_50" [label="50:  exception handler \n   n$95=*&return:void [line 162]\n  *&return:void=null [line 162]\n  n$96=_fun___unwrap_exception(n$95:void) [line 162]\n  NULLIFY(&$irvar9); [line 162]\n  NULLIFY(&content); [line 162]\n  NULLIFY(&$irvar11); [line 162]\n  EXIT_SCOPE(n$95,$irvar9,content,$irvar11); [line 162]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_50" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_48" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_50" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_49" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_50" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_51" [label="51: Prune (true branch, switch) \n   n$98=_fun___instanceof(n$96:java.lang.InterruptedException*,sizeof(t=java.lang.InterruptedException):void) [line 154]\n  PRUNE(n$98, true); [line 154]\n  *&CatchVar92:void=n$96 [line 154]\n  EXIT_SCOPE(n$96,n$98); [line 154]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_51" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_25" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_51" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_52" [label="52: Prune (false branch, switch) \n   n$98=_fun___instanceof(n$96:java.lang.InterruptedException*,sizeof(t=java.lang.InterruptedException):void) [line 154]\n  PRUNE(!n$98, false); [line 154]\n  *&return:void=EXN n$96 [line 154]\n  NULLIFY(&result); [line 154]\n  NULLIFY(&$bcvar4); [line 154]\n  NULLIFY(&json); [line 154]\n  NULLIFY(&flag); [line 154]\n  EXIT_SCOPE(n$96,n$98,result,$bcvar4,json,flag); [line 154]\n  APPLY_ABSTRACTION; [line 154]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_52" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_52" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+"com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_53" [label="53:  exception handler \n   n$95=*&return:void [line 154]\n  *&return:void=null [line 154]\n  n$96=_fun___unwrap_exception(n$95:void) [line 154]\n  EXIT_SCOPE(n$95); [line 154]\n " shape="box"]
+	
+
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_53" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_51" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_53" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_52" ;
+	 "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_53" -> "com.dulishuo.shenqingfang.offer.UrlGet.getOffer():void.1b450d37883a9ac9b9ad3fd40643fa55_3" [color="red" ];
+}

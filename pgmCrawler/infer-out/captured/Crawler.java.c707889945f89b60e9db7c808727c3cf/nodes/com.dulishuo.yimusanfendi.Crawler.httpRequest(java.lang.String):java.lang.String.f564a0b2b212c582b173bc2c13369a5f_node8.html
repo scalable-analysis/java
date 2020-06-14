@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.dulishuo.yimusanfendi.Crawler.httpRequest(java.lang.String):java.lang.String.f564a0b2b212c582b173bc2c13369a5f_node8</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../Crawler.java.c707889945f89b60e9db7c808727c3cf.html#LINE371">8</a></h1></center>PROC: <a href="./../com.dulishuo.yimusanfendi.Crawler.httpRequest%28java.lang.String%29%3Ajava.lang.String.f564a0b2b212c582b173bc2c13369a5f.html">String Crawler.httpRequest(String)</a> LINE: <a href="./../../Crawler.java.c707889945f89b60e9db7c808727c3cf.html#LINE371">371</a>
+<br>PREDS:
+<a href="./../nodes/com.dulishuo.yimusanfendi.Crawler.httpRequest%28java.lang.String%29%3Ajava.lang.String.f564a0b2b212c582b173bc2c13369a5f_node7.html"><span class='visited with_tooltip'>N_7<span class='tooltip'>node7 preds:6 succs:8 exn:3 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.dulishuo.yimusanfendi.Crawler.httpRequest%28java.lang.String%29%3Ajava.lang.String.f564a0b2b212c582b173bc2c13369a5f_node9.html"><span class='visited with_tooltip'>N_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 </span></span></a><br>EXN:
+<a href="./../nodes/com.dulishuo.yimusanfendi.Crawler.httpRequest%28java.lang.String%29%3Ajava.lang.String.f564a0b2b212c582b173bc2c13369a5f_node3.html"><span class='visited with_tooltip'>N_3<span class='tooltip'>node3 preds:30 25 succs:2 exn:2 </span></span></a><br>
+<LISTING class='color_green'>n$5=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 371];
+_=*n$5:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 371];
+n$7=*&amp;ck:java.lang.Object* [line 371];
+n$8=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$5:org.apache.commons.httpclient.methods.GetMethod*,"Cookie":java.lang.Object*,n$7:java.lang.Object*) virtual [line 371];
+</LISTING>
+<hr width="100%">
+<a name="session50" href="./../nodes/com.dulishuo.yimusanfendi.Crawler.httpRequest%28java.lang.String%29%3Ajava.lang.String.f564a0b2b212c582b173bc2c13369a5f_node8.html#session50">node8#session50</a>(<a href="./../../Crawler.java.c707889945f89b60e9db7c808727c3cf.html#LINE371">371</a>) [compute pre] liveness 8
+<LISTING class='color_black'>JOIN
+
+LEFT:   { client, getMethod, return }
+RIGHT:  { }
+RESULT: = LEFT
+
+</LISTING>
+<hr width="100%">
+<a name="session51" href="./../nodes/com.dulishuo.yimusanfendi.Crawler.httpRequest%28java.lang.String%29%3Ajava.lang.String.f564a0b2b212c582b173bc2c13369a5f_node8.html#session51">node8#session51</a>(<a href="./../../Crawler.java.c707889945f89b60e9db7c808727c3cf.html#LINE371">371</a>) [exec] liveness 8
+<LISTING class='color_black'>PRE STATE:
+{ client, getMethod, return }
+
+INSTR=  n$8=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$5:org.apache.commons.httpclient.methods.GetMethod*,&quot;Cookie&quot;:java.lang.Object*,n$7:java.lang.Object*) virtual [line 371]; 
+
+STATE:
+{ n$5, n$7, client, getMethod, return }
+
+INSTR=  n$7=*&amp;ck:java.lang.Object* [line 371]; 
+
+STATE:
+{ n$5, client, ck, getMethod, return }
+
+INSTR=  _=*n$5:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 371]; 
+
+STATE UNCHANGED
+
+INSTR=  n$5=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 371]; 
+
+STATE:
+{ client, ck, getMethod, return }
+
+</LISTING>
+<hr width="100%">
+<a name="session71" href="./../nodes/com.dulishuo.yimusanfendi.Crawler.httpRequest%28java.lang.String%29%3Ajava.lang.String.f564a0b2b212c582b173bc2c13369a5f_node8.html#session71">node8#session71</a>(<a href="./../../Crawler.java.c707889945f89b60e9db7c808727c3cf.html#LINE371">371</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session72" href="./../nodes/com.dulishuo.yimusanfendi.Crawler.httpRequest%28java.lang.String%29%3Ajava.lang.String.f564a0b2b212c582b173bc2c13369a5f_node8.html#session72">node8#session72</a>(<a href="./../../Crawler.java.c707889945f89b60e9db7c808727c3cf.html#LINE371">371</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ client, ck, getMethod },{ })
+
+INSTR=  n$5=*&amp;getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 371]; 
+
+STATE:
+({ n$5, client, ck, getMethod },{ })
+
+INSTR=  _=*n$5:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 371]; 
+
+STATE:
+({ _, n$5, client, ck, getMethod },{ })
+
+INSTR=  n$7=*&amp;ck:java.lang.Object* [line 371]; 
+
+STATE:
+({ _, n$5, n$7, client, ck, getMethod },{ })
+
+INSTR=  n$8=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$5:org.apache.commons.httpclient.methods.GetMethod*,&quot;Cookie&quot;:java.lang.Object*,n$7:java.lang.Object*) virtual [line 371]; 
+
+STATE:
+({ client, getMethod },{ _, n$5, n$7, n$8, ck })
+
+</LISTING>
+<hr width="100%">
+<a name="session10" href="./../nodes/com.dulishuo.yimusanfendi.Crawler.httpRequest%28java.lang.String%29%3Ajava.lang.String.f564a0b2b212c582b173bc2c13369a5f_node8.html#session10">node8#session10</a>(<a href="./../../Crawler.java.c707889945f89b60e9db7c808727c3cf.html#LINE371">371</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session11" href="./../nodes/com.dulishuo.yimusanfendi.Crawler.httpRequest%28java.lang.String%29%3Ajava.lang.String.f564a0b2b212c582b173bc2c13369a5f_node8.html#session11">node8#session11</a>(<a href="./../../Crawler.java.c707889945f89b60e9db7c808727c3cf.html#LINE371">371</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$2 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  client -&gt; { },
+  ck -&gt; { },
+  getMethod -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  response -&gt; { } }
+
+
+
+
+TAINTED_CALL1: (callee="void HttpMethodBase.setRequestHeader(String,String)", caller="String Crawler.httpRequest(String)")
+INSTR=  n$8 := void HttpMethodBase.setRequestHeader(String,String)({ getMethod,
+                                                                    &quot;Cookie&quot;,
+                                                                    ck }) [line 371]; 
+
+STATE:
+{ n$2 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  client -&gt; { },
+  ck -&gt; { },
+  getMethod -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  response -&gt; { } }
+
+INSTR=  NULLIFY(&amp;ck); [line 371]; 
+
+STATE UNCHANGED
+
+INSTR=  EXIT_SCOPE(n$8,ck); [line 371]; 
+
+STATE:
+{ n$2 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  client -&gt; { },
+  ck -&gt; { },
+  getMethod -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  response -&gt; { } }
+
+</LISTING>

@@ -1,0 +1,24 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.school.Chi.<init>().6e8e78a142cbfecfd197d6ea07ba5494_1" [label="1: Start Chi.<init>()\nFormals:  this:com.dulishuo.school.Chi*\nLocals:  \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.school.Chi.<init>().6e8e78a142cbfecfd197d6ea07ba5494_1" -> "com.dulishuo.school.Chi.<init>().6e8e78a142cbfecfd197d6ea07ba5494_4" ;
+"com.dulishuo.school.Chi.<init>().6e8e78a142cbfecfd197d6ea07ba5494_2" [label="2: Exit Chi.<init>() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.school.Chi.<init>().6e8e78a142cbfecfd197d6ea07ba5494_3" [label="3:  exceptions sink \n   APPLY_ABSTRACTION; [line 18]\n " shape="box"]
+	
+
+	 "com.dulishuo.school.Chi.<init>().6e8e78a142cbfecfd197d6ea07ba5494_3" -> "com.dulishuo.school.Chi.<init>().6e8e78a142cbfecfd197d6ea07ba5494_2" ;
+"com.dulishuo.school.Chi.<init>().6e8e78a142cbfecfd197d6ea07ba5494_4" [label="4:  Call Object.<init>() \n   n$0=*&this:com.dulishuo.school.Chi* [line 18]\n  n$1=_fun_Object.<init>()(n$0:com.dulishuo.school.Chi*) [line 18]\n  NULLIFY(&this); [line 18]\n  EXIT_SCOPE(n$0,n$1,this); [line 18]\n " shape="box"]
+	
+
+	 "com.dulishuo.school.Chi.<init>().6e8e78a142cbfecfd197d6ea07ba5494_4" -> "com.dulishuo.school.Chi.<init>().6e8e78a142cbfecfd197d6ea07ba5494_5" ;
+	 "com.dulishuo.school.Chi.<init>().6e8e78a142cbfecfd197d6ea07ba5494_4" -> "com.dulishuo.school.Chi.<init>().6e8e78a142cbfecfd197d6ea07ba5494_3" [color="red" ];
+"com.dulishuo.school.Chi.<init>().6e8e78a142cbfecfd197d6ea07ba5494_5" [label="5:  method_body \n   APPLY_ABSTRACTION; [line 18]\n " shape="box"]
+	
+
+	 "com.dulishuo.school.Chi.<init>().6e8e78a142cbfecfd197d6ea07ba5494_5" -> "com.dulishuo.school.Chi.<init>().6e8e78a142cbfecfd197d6ea07ba5494_2" ;
+	 "com.dulishuo.school.Chi.<init>().6e8e78a142cbfecfd197d6ea07ba5494_5" -> "com.dulishuo.school.Chi.<init>().6e8e78a142cbfecfd197d6ea07ba5494_3" [color="red" ];
+}

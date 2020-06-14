@@ -1,0 +1,139 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.dulishuo.util.FileUtil.FileWriter(java.lang.String):java.io.BufferedWriter.79f0dfedf9711676e7306205e1d44818</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../FileUtil.java.18c0448e1fc721c51e2e69255eafad67.html#LINE52">BufferedWriter FileUtil.FileWriter(String)</a></h1></center>
+<a href="./nodes/com.dulishuo.util.FileUtil.FileWriter%28java.lang.String%29%3Ajava.io.BufferedWriter.79f0dfedf9711676e7306205e1d44818_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileWriter%28java.lang.String%29%3Ajava.io.BufferedWriter.79f0dfedf9711676e7306205e1d44818_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:10 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileWriter%28java.lang.String%29%3Ajava.io.BufferedWriter.79f0dfedf9711676e7306205e1d44818_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:12 succs:2 exn:2 Instructions
+NULLIFY(&amp;CatchVar28); [line 61];
+NULLIFY(&amp;writer); [line 61];
+NULLIFY(&amp;e); [line 61];
+EXIT_SCOPE(n$17,CatchVar28,writer,e); [line 61];
+APPLY_ABSTRACTION; [line 61];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileWriter%28java.lang.String%29%3Ajava.io.BufferedWriter.79f0dfedf9711676e7306205e1d44818_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+*&amp;writer:java.lang.Object*=null [line 53];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileWriter%28java.lang.String%29%3Ajava.io.BufferedWriter.79f0dfedf9711676e7306205e1d44818_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:13 Instructions
+n$0=_fun___new(sizeof(t=java.io.FileOutputStream):java.io.FileOutputStream*) [line 55];
+n$1=*&amp;path:java.lang.String* [line 55];
+n$2=_fun_FileOutputStream.&lt;init&gt;(String)(n$0:java.io.FileOutputStream*,n$1:java.lang.String*) [line 55];
+*&amp;$irvar0:java.io.FileOutputStream*=n$0 [line 55];
+NULLIFY(&amp;path); [line 55];
+EXIT_SCOPE(n$0,n$1,n$2,path); [line 55];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileWriter%28java.lang.String%29%3Ajava.io.BufferedWriter.79f0dfedf9711676e7306205e1d44818_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:13 Instructions
+n$3=_fun___new(sizeof(t=java.io.OutputStreamWriter):java.io.OutputStreamWriter*) [line 55];
+n$4=*&amp;$irvar0:java.io.FileOutputStream* [line 55];
+n$5=_fun_OutputStreamWriter.&lt;init&gt;(OutputStream)(n$3:java.io.OutputStreamWriter*,n$4:java.io.FileOutputStream*) [line 55];
+n$6=_fun___set_file_attribute(n$3:java.io.OutputStreamWriter*) [line 55];
+*&amp;$irvar1:java.io.OutputStreamWriter*=n$3 [line 55];
+NULLIFY(&amp;$irvar0); [line 55];
+EXIT_SCOPE(n$3,n$4,n$5,n$6,$irvar0); [line 55];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileWriter%28java.lang.String%29%3Ajava.io.BufferedWriter.79f0dfedf9711676e7306205e1d44818_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:10 exn:13 Instructions
+n$7=_fun___new(sizeof(t=java.io.BufferedWriter):java.io.BufferedWriter*) [line 55];
+n$8=*&amp;$irvar1:java.io.OutputStreamWriter* [line 55];
+n$9=_fun_BufferedWriter.&lt;init&gt;(Writer)(n$7:java.io.BufferedWriter*,n$8:java.io.OutputStreamWriter*) [line 55];
+n$10=_fun___set_file_attribute(n$7:java.io.BufferedWriter*) [line 55];
+*&amp;writer:java.io.BufferedWriter*=n$7 [line 55];
+NULLIFY(&amp;$irvar1); [line 55];
+EXIT_SCOPE(n$7,n$8,n$9,n$10,$irvar1); [line 55];
+APPLY_ABSTRACTION; [line 55];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileWriter%28java.lang.String%29%3Ajava.io.BufferedWriter.79f0dfedf9711676e7306205e1d44818_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:11 succs:9 exn:3 Instructions
+n$11=*&amp;CatchVar28:java.lang.Object* [line 56];
+*&amp;e:java.lang.Object*=n$11 [line 56];
+NULLIFY(&amp;CatchVar28); [line 56];
+EXIT_SCOPE(n$11,CatchVar28); [line 56];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileWriter%28java.lang.String%29%3Ajava.io.BufferedWriter.79f0dfedf9711676e7306205e1d44818_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:10 exn:3 Instructions
+n$12=*&amp;e:java.lang.Object* [line 58];
+_=*n$12:java.lang.Object*(root java.lang.Object) [line 58];
+n$14=_fun_void Throwable.printStackTrace()(n$12:java.lang.Object*) virtual [line 58];
+NULLIFY(&amp;e); [line 58];
+EXIT_SCOPE(_,n$12,n$14,e); [line 58];
+APPLY_ABSTRACTION; [line 58];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileWriter%28java.lang.String%29%3Ajava.io.BufferedWriter.79f0dfedf9711676e7306205e1d44818_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:9 7 succs:2 exn:3 Instructions
+n$15=*&amp;writer:java.io.BufferedWriter* [line 61];
+*&amp;return:java.io.BufferedWriter*=n$15 [line 61];
+NULLIFY(&amp;writer); [line 61];
+EXIT_SCOPE(n$15,writer); [line 61];
+APPLY_ABSTRACTION; [line 61];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileWriter%28java.lang.String%29%3Ajava.io.BufferedWriter.79f0dfedf9711676e7306205e1d44818_node11.html"><span class='visited with_tooltip'>C_11<span class='tooltip'>node11 preds:13 succs:8 exn:3 Conditional exception handler
+n$18=_fun___instanceof(n$17:java.io.FileNotFoundException*,sizeof(t=java.io.FileNotFoundException):void) [line 56];
+PRUNE(n$18, true); [line 56];
+*&amp;CatchVar28:java.io.BufferedWriter*=n$17 [line 56];
+EXIT_SCOPE(n$17,n$18); [line 56];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileWriter%28java.lang.String%29%3Ajava.io.BufferedWriter.79f0dfedf9711676e7306205e1d44818_node12.html"><span class='visited with_tooltip'>C_12<span class='tooltip'>node12 preds:13 succs:3 exn:3 Conditional exception handler
+n$18=_fun___instanceof(n$17:java.io.FileNotFoundException*,sizeof(t=java.io.FileNotFoundException):void) [line 56];
+PRUNE(!n$18, false); [line 56];
+*&amp;return:java.io.BufferedWriter*=EXN n$17 [line 56];
+NULLIFY(&amp;writer); [line 56];
+EXIT_SCOPE(n$17,n$18,writer); [line 56];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileWriter%28java.lang.String%29%3Ajava.io.BufferedWriter.79f0dfedf9711676e7306205e1d44818_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds: succs:11 12 exn:3 Instructions
+n$16=*&amp;return:java.io.BufferedWriter* [line 56];
+*&amp;return:java.io.BufferedWriter*=null [line 56];
+n$17=_fun___unwrap_exception(n$16:java.io.BufferedWriter*) [line 56];
+NULLIFY(&amp;$irvar0); [line 56];
+NULLIFY(&amp;$irvar1); [line 56];
+EXIT_SCOPE(n$16,$irvar0,$irvar1); [line 56];
+</span></span></a><br />@
+
+<span class='color_black'>java.io.BufferedWriter* BufferedWriter FileUtil.FileWriter(String)(java.lang.String* path)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { return -> (Footprint({ @val$0* }) ~> ?, *) }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= BufferedWriter FileUtil.FileWriter(String)
+; translation_unit= src/com/dulishuo/util/FileUtil.java
+; access= Public
+; formals= [(path,java.lang.String*)]
+; is_defined= true
+; loc= src/com/dulishuo/util/FileUtil.java:52
+; locals= [{ name= CatchVar28; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= writer; typ= java.io.BufferedWriter*; modify_in_block= false }; 
+           { name= e; typ= java.io.FileNotFoundException*; modify_in_block= false }]
+; ret_type= java.io.BufferedWriter* 
+; proc_id= com.dulishuo.util.FileUtil.FileWriter(java.lang.String):java.io.BufferedWriter }</pre>
+</body>
+</html>

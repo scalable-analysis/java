@@ -1,0 +1,120 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_1" [label="1: Start String UrlGetGrab.getHttp(String)\nFormals:  url:java.lang.String*\nLocals:  CatchVar107:void $irvar0:void httpClient:org.apache.commons.httpclient.HttpClient* xx:java.lang.String* e:java.lang.Exception* getMethod:org.apache.commons.httpclient.methods.GetMethod* tt:java.lang.String* \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_1" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_4" ;
+"com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_2" [label="2: Exit String UrlGetGrab.getHttp(String) \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_3" [label="3:  exceptions sink \n   NULLIFY(&CatchVar107); [line 93]\n  NULLIFY(&httpClient); [line 93]\n  NULLIFY(&xx); [line 93]\n  NULLIFY(&e); [line 93]\n  EXIT_SCOPE(n$44,CatchVar107,httpClient,xx,e); [line 93]\n  APPLY_ABSTRACTION; [line 93]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_3" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_2" ;
+"com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_4" [label="4:  method_body \n   *&xx:java.lang.Object*=\"-1\" [line 68]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_4" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_5" ;
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_4" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_3" [color="red" ];
+"com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_5" [label="5:  Call HttpClient.<init>() \n   n$0=_fun___new(sizeof(t=org.apache.commons.httpclient.HttpClient):org.apache.commons.httpclient.HttpClient*) [line 69]\n  n$1=_fun_HttpClient.<init>()(n$0:org.apache.commons.httpclient.HttpClient*) [line 69]\n  *&httpClient:org.apache.commons.httpclient.HttpClient*=n$0 [line 69]\n  EXIT_SCOPE(n$0,n$1); [line 69]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_5" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_6" ;
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_5" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_3" [color="red" ];
+"com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_6" [label="6:  method_body \n   *&tt:java.lang.Object*=\"auth=\\\\\\\"926U70ZZZ30m64qMaJX1IJKCfvJmO4S01aWgzXW7nhmK98cAQx2jK7JlfmNUOGxQscpDsT71h9Y4QVtytPtl7cmQOJ9GoTZ9LlNFxv1-CXTcLicvZaj2COeYEcs_cRCBa8n3ILqfhcXV_wFnly7akKSCFbKzyw4_jVq51wl6sO4tKxwb-rz0eZHuZAhRkguBPkb1t6uxa6kNu5-1mAULLSWFOZ8xFjVqiqhqFXv0JRRJxLW4d9e-0FPj6llT3Hgj.eNqrVkrLLCouic9LzE1VslJQck7MrMxU0lFQyklEEvXJTMxLB4lmpgC5RgYWxoYG5kBuSX52ah5IgaVZYrJBsrFBUmpqikmyRapFcrKJsbmZsUGaUaJpmnmSUi0AirUeeQ\\\\\\\"; tk=96ac0c30beed4c8e8cc437630f2a5f7b; c=2085190804; compstat=compstu; usnQuantCast=D; __gads=ID=24381f81148ef0b6:T=1439363530:S=ALNI_MbygNq4VzFdG9nrMLE_yO1d_V3M8A; __qca=P0-376455809-1439363544561; _vis_opt_s=1%7C; _vis_opt_test_cookie=1; s_cc=true; s_sq=%5B%5BB%5D%5D; __ybotb=9597; __ybotu=id8fvkxmwqln2c3w6g; __ybotv=1439367772921; __ybots=id8iepkpqb11hvo56k.0.id8iepko78go619lul.1; OX_sd=1; __ybotc=http%3A//ads-adswest.yldbt.com/m/; _trp_hit_11882/41456_728x90=5; _trp_hit_11882/41456_300x250=5; __utma=1.69014033.1439363543.1439363543.1439367785.2; __utmb=1.1.10.1439367785; __utmz=1.1439363543.1.1.utmcsr=colleges.usnews.rankingsandreviews.com|utmccn=(referral)|utmcmd=referral|utmcct=/best-colleges; __utmt=1; ki_t=1439363545567%3B1439363545567%3B1439367788518%3B1%3B2; ki_r=; __ybota=; __ybote=; __ybotz=; OX_plg=swf|shk|pm; __utmc=1; usn_colleges_interstitial=2\" [line 71]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_6" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_7" ;
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_6" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_24" [color="red" ];
+"com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_7" [label="7:  Call GetMethod.<init>(String) \n   n$2=_fun___new(sizeof(t=org.apache.commons.httpclient.methods.GetMethod):org.apache.commons.httpclient.methods.GetMethod*) [line 72]\n  n$3=*&url:java.lang.String* [line 72]\n  n$4=_fun_GetMethod.<init>(String)(n$2:org.apache.commons.httpclient.methods.GetMethod*,n$3:java.lang.String*) [line 72]\n  *&getMethod:org.apache.commons.httpclient.methods.GetMethod*=n$2 [line 72]\n  NULLIFY(&url); [line 72]\n  EXIT_SCOPE(n$2,n$3,n$4,url); [line 72]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_7" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_8" ;
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_7" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_24" [color="red" ];
+"com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_8" [label="8:  Call void HttpMethodBase.setRequestHeader(String,String) \n   n$5=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 74]\n  _=*n$5:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 74]\n  n$7=*&tt:java.lang.Object* [line 74]\n  n$8=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$5:org.apache.commons.httpclient.methods.GetMethod*,\"cookie\":java.lang.Object*,n$7:java.lang.Object*) virtual [line 74]\n  NULLIFY(&tt); [line 74]\n  EXIT_SCOPE(_,n$5,n$7,n$8,tt); [line 74]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_8" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_9" ;
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_8" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_24" [color="red" ];
+"com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_9" [label="9:  Call void HttpMethodBase.setRequestHeader(String,String) \n   n$9=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 75]\n  _=*n$9:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 75]\n  n$11=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$9:org.apache.commons.httpclient.methods.GetMethod*,\"Host\":java.lang.Object*,\"premium.usnews.com\":java.lang.Object*) virtual [line 75]\n  EXIT_SCOPE(_,n$9,n$11); [line 75]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_9" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_10" ;
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_9" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_24" [color="red" ];
+"com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_10" [label="10:  Call void HttpMethodBase.setRequestHeader(String,String) \n   n$12=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 76]\n  _=*n$12:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 76]\n  n$14=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$12:org.apache.commons.httpclient.methods.GetMethod*,\"User-Agent\":java.lang.Object*,\"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0\":java.lang.Object*) virtual [line 76]\n  EXIT_SCOPE(_,n$12,n$14); [line 76]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_10" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_11" ;
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_10" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_24" [color="red" ];
+"com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_11" [label="11:  Call void HttpMethodBase.setRequestHeader(String,String) \n   n$15=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 77]\n  _=*n$15:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 77]\n  n$17=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$15:org.apache.commons.httpclient.methods.GetMethod*,\"Accept\":java.lang.Object*,\"Mozilla/5.0 (Windows NT 6.3; WOW64; rv:39.0) Gecko/20100101 Firefox/39.0\":java.lang.Object*) virtual [line 77]\n  EXIT_SCOPE(_,n$15,n$17); [line 77]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_11" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_12" ;
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_11" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_24" [color="red" ];
+"com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_12" [label="12:  Call void HttpMethodBase.setRequestHeader(String,String) \n   n$18=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 78]\n  _=*n$18:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 78]\n  n$20=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$18:org.apache.commons.httpclient.methods.GetMethod*,\"Accept-Language\":java.lang.Object*,\"zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3\":java.lang.Object*) virtual [line 78]\n  EXIT_SCOPE(_,n$18,n$20); [line 78]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_12" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_13" ;
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_12" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_24" [color="red" ];
+"com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_13" [label="13:  Call void HttpMethodBase.setRequestHeader(String,String) \n   n$21=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 80]\n  _=*n$21:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 80]\n  n$23=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$21:org.apache.commons.httpclient.methods.GetMethod*,\"DNT\":java.lang.Object*,\"1\":java.lang.Object*) virtual [line 80]\n  EXIT_SCOPE(_,n$21,n$23); [line 80]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_13" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_14" ;
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_13" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_24" [color="red" ];
+"com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_14" [label="14:  Call void HttpMethodBase.setRequestHeader(String,String) \n   n$24=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 81]\n  _=*n$24:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 81]\n  n$26=_fun_void HttpMethodBase.setRequestHeader(String,String)(n$24:org.apache.commons.httpclient.methods.GetMethod*,\"Connection\":java.lang.Object*,\"keep-alive\":java.lang.Object*) virtual [line 81]\n  EXIT_SCOPE(_,n$24,n$26); [line 81]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_14" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_15" ;
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_14" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_24" [color="red" ];
+"com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_15" [label="15:  Call int HttpClient.executeMethod(HttpMethod) \n   n$27=*&httpClient:org.apache.commons.httpclient.HttpClient* [line 83]\n  _=*n$27:org.apache.commons.httpclient.HttpClient*(root org.apache.commons.httpclient.HttpClient) [line 83]\n  n$29=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 83]\n  n$30=_fun_int HttpClient.executeMethod(HttpMethod)(n$27:org.apache.commons.httpclient.HttpClient*,n$29:org.apache.commons.httpclient.methods.GetMethod*) virtual [line 83]\n  *&$irvar0:int=n$30 [line 83]\n  NULLIFY(&$irvar0); [line 83]\n  NULLIFY(&httpClient); [line 83]\n  EXIT_SCOPE(_,n$27,n$29,n$30,$irvar0,httpClient); [line 83]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_15" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_16" ;
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_15" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_24" [color="red" ];
+"com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_16" [label="16:  Call String HttpMethodBase.getResponseBodyAsString() \n   n$31=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 84]\n  _=*n$31:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 84]\n  n$33=_fun_String HttpMethodBase.getResponseBodyAsString()(n$31:org.apache.commons.httpclient.methods.GetMethod*) virtual [line 84]\n  *&xx:java.lang.String*=n$33 [line 84]\n  EXIT_SCOPE(_,n$31,n$33); [line 84]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_16" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_17" ;
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_16" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_24" [color="red" ];
+"com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_17" [label="17:  Call void HttpMethodBase.releaseConnection() \n   n$34=*&getMethod:org.apache.commons.httpclient.methods.GetMethod* [line 86]\n  _=*n$34:org.apache.commons.httpclient.methods.GetMethod*(root org.apache.commons.httpclient.methods.GetMethod) [line 86]\n  n$36=_fun_void HttpMethodBase.releaseConnection()(n$34:org.apache.commons.httpclient.methods.GetMethod*) virtual [line 86]\n  NULLIFY(&getMethod); [line 86]\n  EXIT_SCOPE(_,n$34,n$36,getMethod); [line 86]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_17" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_21" ;
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_17" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_24" [color="red" ];
+"com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_18" [label="18:  method_body \n   n$37=*&CatchVar107:java.lang.Object* [line 87]\n  *&e:java.lang.Object*=n$37 [line 87]\n  NULLIFY(&CatchVar107); [line 87]\n  EXIT_SCOPE(n$37,CatchVar107); [line 87]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_18" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_19" ;
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_18" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_3" [color="red" ];
+"com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_19" [label="19:  Call void Throwable.printStackTrace() \n   n$38=*&e:java.lang.Object* [line 88]\n  _=*n$38:java.lang.Object*(root java.lang.Object) [line 88]\n  n$40=_fun_void Throwable.printStackTrace()(n$38:java.lang.Object*) virtual [line 88]\n  NULLIFY(&e); [line 88]\n  EXIT_SCOPE(_,n$38,n$40,e); [line 88]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_19" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_20" ;
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_19" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_3" [color="red" ];
+"com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_20" [label="20:  method_body \n   n$41=*&xx:java.lang.String* [line 89]\n  *&return:java.lang.String*=n$41 [line 89]\n  NULLIFY(&xx); [line 89]\n  EXIT_SCOPE(n$41,xx); [line 89]\n  APPLY_ABSTRACTION; [line 89]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_20" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_2" ;
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_20" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_3" [color="red" ];
+"com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_21" [label="21:  method_body \n   n$42=*&xx:java.lang.String* [line 93]\n  *&return:java.lang.String*=n$42 [line 93]\n  NULLIFY(&xx); [line 93]\n  EXIT_SCOPE(n$42,xx); [line 93]\n  APPLY_ABSTRACTION; [line 93]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_21" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_2" ;
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_21" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_3" [color="red" ];
+"com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_22" [label="22: Prune (true branch, switch) \n   n$45=_fun___instanceof(n$44:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 87]\n  PRUNE(n$45, true); [line 87]\n  *&CatchVar107:java.lang.String*=n$44 [line 87]\n  EXIT_SCOPE(n$44,n$45); [line 87]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_22" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_18" ;
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_22" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_3" [color="red" ];
+"com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_23" [label="23: Prune (false branch, switch) \n   n$45=_fun___instanceof(n$44:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 87]\n  PRUNE(!n$45, false); [line 87]\n  *&return:java.lang.String*=EXN n$44 [line 87]\n  NULLIFY(&xx); [line 87]\n  EXIT_SCOPE(n$44,n$45,xx); [line 87]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_23" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_3" ;
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_23" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_3" [color="red" ];
+"com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_24" [label="24:  exception handler \n   n$43=*&return:java.lang.String* [line 87]\n  *&return:java.lang.String*=null [line 87]\n  n$44=_fun___unwrap_exception(n$43:java.lang.String*) [line 87]\n  NULLIFY(&tt); [line 87]\n  NULLIFY(&getMethod); [line 87]\n  NULLIFY(&httpClient); [line 87]\n  EXIT_SCOPE(n$43,tt,getMethod,httpClient); [line 87]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_24" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_22" ;
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_24" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_23" ;
+	 "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_24" -> "com.dulishuo.usnews.UrlGetGrab.getHttp(java.lang.String):java.lang.String.936d6122d47b7777aff4d7548daa05a4_3" [color="red" ];
+}

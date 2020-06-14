@@ -1,0 +1,313 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.dulishuo.util.FileUtil.FileToJsonList(java.lang.String,java.lang.String):java.util.List.15ed2d29a48925ff5f9450cc09102778</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../FileUtil.java.18c0448e1fc721c51e2e69255eafad67.html#LINE126">List FileUtil.FileToJsonList(String,String)</a></h1></center>
+<a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:30 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds:40 35 32 succs:2 exn:2 Instructions
+NULLIFY(&amp;CatchVar29); [line 158];
+NULLIFY(&amp;CatchVar37); [line 158];
+NULLIFY(&amp;CatchVar110); [line 158];
+NULLIFY(&amp;list); [line 158];
+NULLIFY(&amp;reader); [line 158];
+NULLIFY(&amp;CatchVar96); [line 158];
+NULLIFY(&amp;e); [line 158];
+EXIT_SCOPE(n$48,CatchVar29,CatchVar37,CatchVar110,list,reader,CatchVar96,e); [line 158];
+APPLY_ABSTRACTION; [line 158];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+*&amp;reader:java.lang.Object*=null [line 127];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:38 Instructions
+n$0=_fun___new(sizeof(t=java.io.FileInputStream):java.io.FileInputStream*) [line 129];
+n$1=*&amp;path:java.lang.String* [line 129];
+n$2=_fun_FileInputStream.&lt;init&gt;(String)(n$0:java.io.FileInputStream*,n$1:java.lang.String*) [line 129];
+*&amp;$irvar0:java.io.FileInputStream*=n$0 [line 129];
+NULLIFY(&amp;path); [line 129];
+EXIT_SCOPE(n$0,n$1,n$2,path); [line 129];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:38 Instructions
+n$3=_fun___new(sizeof(t=java.io.InputStreamReader):java.io.InputStreamReader*) [line 129];
+n$4=*&amp;$irvar0:java.io.FileInputStream* [line 129];
+n$5=*&amp;charset:java.lang.String* [line 129];
+n$6=_fun_InputStreamReader.&lt;init&gt;(InputStream,String)(n$3:java.io.InputStreamReader*,n$4:java.io.FileInputStream*,n$5:java.lang.String*) [line 129];
+*&amp;$irvar1:java.io.InputStreamReader*=n$3 [line 129];
+NULLIFY(&amp;charset); [line 129];
+NULLIFY(&amp;$irvar0); [line 129];
+EXIT_SCOPE(n$3,n$4,n$5,n$6,charset,$irvar0); [line 129];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:12 exn:38 Instructions
+n$7=_fun___new(sizeof(t=java.io.BufferedReader):java.io.BufferedReader*) [line 129];
+n$8=*&amp;$irvar1:java.io.InputStreamReader* [line 129];
+n$9=_fun_BufferedReader.&lt;init&gt;(Reader)(n$7:java.io.BufferedReader*,n$8:java.io.InputStreamReader*) [line 129];
+*&amp;reader:java.io.BufferedReader*=n$7 [line 129];
+NULLIFY(&amp;$irvar1); [line 129];
+EXIT_SCOPE(n$7,n$8,n$9,$irvar1); [line 129];
+APPLY_ABSTRACTION; [line 129];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node8.html"><span class='visited with_tooltip'>I_8<span class='tooltip'>node8 preds:36 succs:9 exn:3 Instructions
+n$10=*&amp;CatchVar29:java.lang.Object* [line 130];
+*&amp;e:java.lang.Object*=n$10 [line 130];
+NULLIFY(&amp;CatchVar29); [line 130];
+EXIT_SCOPE(n$10,CatchVar29); [line 130];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node9.html"><span class='visited with_tooltip'>I_9<span class='tooltip'>node9 preds:8 succs:12 exn:3 Instructions
+n$11=*&amp;e:java.lang.Object* [line 132];
+_=*n$11:java.lang.Object*(root java.lang.Object) [line 132];
+n$13=_fun_void Throwable.printStackTrace()(n$11:java.lang.Object*) virtual [line 132];
+NULLIFY(&amp;e); [line 132];
+EXIT_SCOPE(_,n$11,n$13,e); [line 132];
+APPLY_ABSTRACTION; [line 132];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node10.html"><span class='visited with_tooltip'>I_10<span class='tooltip'>node10 preds:34 succs:11 exn:3 Instructions
+n$14=*&amp;CatchVar37:java.lang.Object* [line 133];
+*&amp;e:java.lang.Object*=n$14 [line 133];
+NULLIFY(&amp;CatchVar37); [line 133];
+EXIT_SCOPE(n$14,CatchVar37); [line 133];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node11.html"><span class='visited with_tooltip'>I_11<span class='tooltip'>node11 preds:10 succs:12 exn:3 Instructions
+n$15=*&amp;e:java.lang.Object* [line 135];
+_=*n$15:java.lang.Object*(root java.lang.Object) [line 135];
+n$17=_fun_void Throwable.printStackTrace()(n$15:java.lang.Object*) virtual [line 135];
+NULLIFY(&amp;e); [line 135];
+EXIT_SCOPE(_,n$15,n$17,e); [line 135];
+APPLY_ABSTRACTION; [line 135];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node12.html"><span class='visited with_tooltip'>I_12<span class='tooltip'>node12 preds:11 9 7 succs:13 exn:3 Instructions
+n$18=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 137];
+n$19=_fun_ArrayList.&lt;init&gt;()(n$18:java.util.ArrayList*) [line 137];
+*&amp;list:java.util.ArrayList*=n$18 [line 137];
+EXIT_SCOPE(n$18,n$19); [line 137];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node13.html"><span class='visited with_tooltip'>I_13<span class='tooltip'>node13 preds:12 succs:14 exn:3 Instructions
+*&amp;each_line:java.lang.Object*="" [line 138];
+NULLIFY(&amp;each_line); [line 138];
+EXIT_SCOPE(each_line); [line 138];
+APPLY_ABSTRACTION; [line 138];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node14.html"><span class='visited with_tooltip'>I_14<span class='tooltip'>node14 preds:24 21 13 succs:15 exn:33 Instructions
+n$20=*&amp;reader:java.io.BufferedReader* [line 141];
+_=*n$20:java.io.BufferedReader*(root java.io.BufferedReader) [line 141];
+n$22=_fun_String BufferedReader.readLine()(n$20:java.io.BufferedReader*) virtual [line 141];
+*&amp;$irvar2:java.lang.String*=n$22 [line 141];
+EXIT_SCOPE(_,n$20,n$22); [line 141];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node15.html"><span class='visited with_tooltip'>I_15<span class='tooltip'>node15 preds:14 succs:18 exn:33 Instructions
+n$23=*&amp;$irvar2:java.lang.String* [line 141];
+*&amp;each_line:java.lang.String*=n$23 [line 141];
+EXIT_SCOPE(n$23); [line 141];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node16.html"><span class='visited with_tooltip'>C_16<span class='tooltip'>node16 preds:18 succs:19 exn:33 Conditional method_body
+n$24=*&amp;$irvar2:java.lang.String* [line 141];
+PRUNE(!(n$24 == null), true); [line 141];
+NULLIFY(&amp;$irvar2); [line 141];
+EXIT_SCOPE(n$24,$irvar2); [line 141];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node17.html"><span class='visited with_tooltip'>C_17<span class='tooltip'>node17 preds:18 succs:27 exn:33 Conditional method_body
+n$24=*&amp;$irvar2:java.lang.String* [line 141];
+PRUNE((n$24 == null), false); [line 141];
+NULLIFY(&amp;each_line); [line 141];
+NULLIFY(&amp;$irvar2); [line 141];
+EXIT_SCOPE(n$24,each_line,$irvar2); [line 141];
+APPLY_ABSTRACTION; [line 141];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node18.html"><span class='visited with_tooltip'>J_18<span class='tooltip'>node18 preds:15 succs:16 17 exn: Join
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node19.html"><span class='visited with_tooltip'>I_19<span class='tooltip'>node19 preds:16 succs:22 exn:33 Instructions
+n$25=*&amp;each_line:java.lang.String* [line 142];
+_=*n$25:java.lang.String*(root java.lang.String) [line 142];
+n$27=_fun_boolean String.equals(Object)(n$25:java.lang.String*,"":java.lang.Object*) virtual [line 142];
+*&amp;$irvar3:_Bool=n$27 [line 142];
+EXIT_SCOPE(_,n$25,n$27); [line 142];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node20.html"><span class='visited with_tooltip'>C_20<span class='tooltip'>node20 preds:22 succs:23 exn:33 Conditional method_body
+n$28=*&amp;$irvar3:_Bool [line 142];
+PRUNE(!(n$28 != 0), true); [line 142];
+NULLIFY(&amp;$irvar3); [line 142];
+EXIT_SCOPE(n$28,$irvar3); [line 142];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node21.html"><span class='visited with_tooltip'>C_21<span class='tooltip'>node21 preds:22 succs:14 exn:33 Conditional method_body
+n$28=*&amp;$irvar3:_Bool [line 142];
+PRUNE((n$28 != 0), false); [line 142];
+NULLIFY(&amp;each_line); [line 142];
+NULLIFY(&amp;$irvar3); [line 142];
+EXIT_SCOPE(n$28,each_line,$irvar3); [line 142];
+APPLY_ABSTRACTION; [line 142];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node22.html"><span class='visited with_tooltip'>J_22<span class='tooltip'>node22 preds:19 succs:20 21 exn: Join
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node23.html"><span class='visited with_tooltip'>I_23<span class='tooltip'>node23 preds:20 succs:24 exn:33 Instructions
+n$29=*&amp;each_line:java.lang.String* [line 143];
+n$30=_fun_JSONObject JSONObject.fromObject(Object)(n$29:java.lang.String*) [line 143];
+*&amp;json:net.sf.json.JSONObject*=n$30 [line 143];
+NULLIFY(&amp;each_line); [line 143];
+EXIT_SCOPE(n$29,n$30,each_line); [line 143];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node24.html"><span class='visited with_tooltip'>I_24<span class='tooltip'>node24 preds:23 succs:14 exn:33 Instructions
+n$31=*&amp;list:java.util.ArrayList* [line 144];
+_=*n$31:java.util.ArrayList*(root java.util.ArrayList) [line 144];
+n$33=*&amp;json:net.sf.json.JSONObject* [line 144];
+n$34=_fun_boolean ArrayList.add(Object)(n$31:java.util.ArrayList*,n$33:net.sf.json.JSONObject*) interface virtual [line 144];
+*&amp;$irvar4:_Bool=n$34 [line 144];
+NULLIFY(&amp;json); [line 144];
+NULLIFY(&amp;$irvar4); [line 144];
+EXIT_SCOPE(_,n$31,n$33,n$34,json,$irvar4); [line 144];
+APPLY_ABSTRACTION; [line 144];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node25.html"><span class='visited with_tooltip'>I_25<span class='tooltip'>node25 preds:31 succs:26 exn:3 Instructions
+n$35=*&amp;CatchVar96:java.lang.Object* [line 147];
+*&amp;e:java.lang.Object*=n$35 [line 147];
+NULLIFY(&amp;CatchVar96); [line 147];
+EXIT_SCOPE(n$35,CatchVar96); [line 147];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node26.html"><span class='visited with_tooltip'>I_26<span class='tooltip'>node26 preds:25 succs:27 exn:3 Instructions
+n$36=*&amp;e:java.lang.Object* [line 149];
+_=*n$36:java.lang.Object*(root java.lang.Object) [line 149];
+n$38=_fun_void Throwable.printStackTrace()(n$36:java.lang.Object*) virtual [line 149];
+NULLIFY(&amp;e); [line 149];
+EXIT_SCOPE(_,n$36,n$38,e); [line 149];
+APPLY_ABSTRACTION; [line 149];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node27.html"><span class='visited with_tooltip'>I_27<span class='tooltip'>node27 preds:26 17 succs:30 exn:41 Instructions
+n$39=*&amp;reader:java.io.BufferedReader* [line 152];
+_=*n$39:java.io.BufferedReader*(root java.io.BufferedReader) [line 152];
+n$41=_fun_void BufferedReader.close()(n$39:java.io.BufferedReader*) virtual [line 152];
+NULLIFY(&amp;reader); [line 152];
+EXIT_SCOPE(_,n$39,n$41,reader); [line 152];
+APPLY_ABSTRACTION; [line 152];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node28.html"><span class='visited with_tooltip'>I_28<span class='tooltip'>node28 preds:39 succs:29 exn:3 Instructions
+n$42=*&amp;CatchVar110:java.lang.Object* [line 153];
+*&amp;e:java.lang.Object*=n$42 [line 153];
+NULLIFY(&amp;CatchVar110); [line 153];
+EXIT_SCOPE(n$42,CatchVar110); [line 153];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node29.html"><span class='visited with_tooltip'>I_29<span class='tooltip'>node29 preds:28 succs:30 exn:3 Instructions
+n$43=*&amp;e:java.lang.Object* [line 155];
+_=*n$43:java.lang.Object*(root java.lang.Object) [line 155];
+n$45=_fun_void Throwable.printStackTrace()(n$43:java.lang.Object*) virtual [line 155];
+NULLIFY(&amp;e); [line 155];
+EXIT_SCOPE(_,n$43,n$45,e); [line 155];
+APPLY_ABSTRACTION; [line 155];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node30.html"><span class='visited with_tooltip'>I_30<span class='tooltip'>node30 preds:29 27 succs:2 exn:3 Instructions
+n$46=*&amp;list:java.util.ArrayList* [line 158];
+*&amp;return:java.util.List*=n$46 [line 158];
+NULLIFY(&amp;list); [line 158];
+EXIT_SCOPE(n$46,list); [line 158];
+APPLY_ABSTRACTION; [line 158];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node31.html"><span class='visited with_tooltip'>C_31<span class='tooltip'>node31 preds:33 succs:25 exn:3 Conditional exception handler
+n$49=_fun___instanceof(n$48:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 147];
+PRUNE(n$49, true); [line 147];
+*&amp;CatchVar96:java.util.List*=n$48 [line 147];
+EXIT_SCOPE(n$48,n$49); [line 147];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node32.html"><span class='visited with_tooltip'>C_32<span class='tooltip'>node32 preds:33 succs:3 exn:3 Conditional exception handler
+n$49=_fun___instanceof(n$48:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 147];
+PRUNE(!n$49, false); [line 147];
+*&amp;return:java.util.List*=EXN n$48 [line 147];
+NULLIFY(&amp;list); [line 147];
+NULLIFY(&amp;reader); [line 147];
+EXIT_SCOPE(n$48,n$49,list,reader); [line 147];
+APPLY_ABSTRACTION; [line 147];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node33.html"><span class='visited with_tooltip'>I_33<span class='tooltip'>node33 preds: succs:31 32 exn:3 Instructions
+n$47=*&amp;return:java.util.List* [line 147];
+*&amp;return:java.util.List*=null [line 147];
+n$48=_fun___unwrap_exception(n$47:java.util.List*) [line 147];
+NULLIFY(&amp;each_line); [line 147];
+NULLIFY(&amp;$irvar3); [line 147];
+NULLIFY(&amp;json); [line 147];
+NULLIFY(&amp;$irvar2); [line 147];
+EXIT_SCOPE(n$47,each_line,$irvar3,json,$irvar2); [line 147];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node34.html"><span class='visited with_tooltip'>C_34<span class='tooltip'>node34 preds:37 succs:10 exn:3 Conditional exception handler
+n$50=_fun___instanceof(n$48:java.io.UnsupportedEncodingException*,sizeof(t=java.io.UnsupportedEncodingException):void) [line 133];
+PRUNE(n$50, true); [line 133];
+*&amp;CatchVar37:java.util.List*=n$48 [line 133];
+EXIT_SCOPE(n$48,n$50); [line 133];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node35.html"><span class='visited with_tooltip'>C_35<span class='tooltip'>node35 preds:37 succs:3 exn:3 Conditional exception handler
+n$50=_fun___instanceof(n$48:java.io.UnsupportedEncodingException*,sizeof(t=java.io.UnsupportedEncodingException):void) [line 133];
+PRUNE(!n$50, false); [line 133];
+*&amp;return:java.util.List*=EXN n$48 [line 133];
+NULLIFY(&amp;reader); [line 133];
+EXIT_SCOPE(n$48,n$50,reader); [line 133];
+APPLY_ABSTRACTION; [line 133];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node36.html"><span class='visited with_tooltip'>C_36<span class='tooltip'>node36 preds:38 succs:8 exn:3 Conditional exception handler
+n$51=_fun___instanceof(n$48:java.io.FileNotFoundException*,sizeof(t=java.io.FileNotFoundException):void) [line 130];
+PRUNE(n$51, true); [line 130];
+*&amp;CatchVar29:java.util.List*=n$48 [line 130];
+EXIT_SCOPE(n$48,n$51); [line 130];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node37.html"><span class='visited with_tooltip'>C_37<span class='tooltip'>node37 preds:38 succs:34 35 exn:3 Conditional exception handler
+n$51=_fun___instanceof(n$48:java.io.FileNotFoundException*,sizeof(t=java.io.FileNotFoundException):void) [line 130];
+PRUNE(!n$51, false); [line 130];
+EXIT_SCOPE(n$51); [line 130];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node38.html"><span class='visited with_tooltip'>I_38<span class='tooltip'>node38 preds: succs:36 37 exn:3 Instructions
+n$47=*&amp;return:java.util.List* [line 130];
+*&amp;return:java.util.List*=null [line 130];
+n$48=_fun___unwrap_exception(n$47:java.util.List*) [line 130];
+NULLIFY(&amp;$irvar0); [line 130];
+NULLIFY(&amp;$irvar1); [line 130];
+EXIT_SCOPE(n$47,$irvar0,$irvar1); [line 130];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node39.html"><span class='visited with_tooltip'>C_39<span class='tooltip'>node39 preds:41 succs:28 exn:3 Conditional exception handler
+n$52=_fun___instanceof(n$48:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 153];
+PRUNE(n$52, true); [line 153];
+*&amp;CatchVar110:java.util.List*=n$48 [line 153];
+EXIT_SCOPE(n$48,n$52); [line 153];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node40.html"><span class='visited with_tooltip'>C_40<span class='tooltip'>node40 preds:41 succs:3 exn:3 Conditional exception handler
+n$52=_fun___instanceof(n$48:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 153];
+PRUNE(!n$52, false); [line 153];
+*&amp;return:java.util.List*=EXN n$48 [line 153];
+NULLIFY(&amp;list); [line 153];
+EXIT_SCOPE(n$48,n$52,list); [line 153];
+APPLY_ABSTRACTION; [line 153];
+</span></span></a> <a href="./nodes/com.dulishuo.util.FileUtil.FileToJsonList%28java.lang.String%2Cjava.lang.String%29%3Ajava.util.List.15ed2d29a48925ff5f9450cc09102778_node41.html"><span class='visited with_tooltip'>I_41<span class='tooltip'>node41 preds: succs:39 40 exn:3 Instructions
+n$47=*&amp;return:java.util.List* [line 153];
+*&amp;return:java.util.List*=null [line 153];
+n$48=_fun___unwrap_exception(n$47:java.util.List*) [line 153];
+EXIT_SCOPE(n$47); [line 153];
+</span></span></a><br />@
+
+<span class='color_black'>java.util.List* List FileUtil.FileToJsonList(String,String)(java.lang.String* path, java.lang.String* charset)
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { return -> ({ UserControlledString(String BufferedReader.readLine() at line 141) } + Footprint({ @val$1*,
+                                                                    @val$0* }) ~> ?, *) }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= List FileUtil.FileToJsonList(String,String)
+; translation_unit= src/com/dulishuo/util/FileUtil.java
+; access= Public
+; formals= [(path,java.lang.String*);  (charset,java.lang.String*)]
+; is_defined= true
+; loc= src/com/dulishuo/util/FileUtil.java:126
+; locals= [{ name= CatchVar110; typ= void; modify_in_block= false }; 
+           { name= CatchVar96; typ= void; modify_in_block= false }; 
+           { name= $irvar4; typ= void; modify_in_block= false }; 
+           { name= $irvar3; typ= void; modify_in_block= false }; 
+           { name= $irvar2; typ= void; modify_in_block= false }; 
+           { name= CatchVar37; typ= void; modify_in_block= false }; 
+           { name= CatchVar29; typ= void; modify_in_block= false }; 
+           { name= $irvar1; typ= void; modify_in_block= false }; 
+           { name= $irvar0; typ= void; modify_in_block= false }; 
+           { name= each_line; typ= java.lang.String*; modify_in_block= false }; 
+           { name= list; typ= java.util.List*; modify_in_block= false }; 
+           { name= reader; typ= java.io.BufferedReader*; modify_in_block= false }; 
+           { name= json; typ= net.sf.json.JSONObject*; modify_in_block= false }; 
+           { name= e; typ= java.io.FileNotFoundException*; modify_in_block= false }]
+; ret_type= java.util.List* 
+; proc_id= com.dulishuo.util.FileUtil.FileToJsonList(java.lang.String,java.lang.String):java.util.List }</pre>
+</body>
+</html>

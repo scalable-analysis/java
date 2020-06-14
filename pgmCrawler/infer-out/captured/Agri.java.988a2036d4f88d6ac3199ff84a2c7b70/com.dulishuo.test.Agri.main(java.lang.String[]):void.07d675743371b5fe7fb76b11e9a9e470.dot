@@ -1,0 +1,104 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_1" [label="1: Start void Agri.main(String[])\nFormals:  args:java.lang.String*[_*_](*)\nLocals:  $irvar11:void $irvar10:void $irvar9:void $irvar8:void $irvar7:void $irvar6:void $irvar5:void $irvar4:void $irvar3:void $irvar2:void $irvar1:void $irvar0:void end:long start:long \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_1" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_4" ;
+"com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_2" [label="2: Exit void Agri.main(String[]) \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_3" [label="3:  exceptions sink \n   NULLIFY(&start); [line 32]\n  NULLIFY(&$irvar3); [line 32]\n  NULLIFY(&$irvar9); [line 32]\n  NULLIFY(&$irvar5); [line 32]\n  NULLIFY(&$irvar4); [line 32]\n  NULLIFY(&$irvar7); [line 32]\n  NULLIFY(&$irvar6); [line 32]\n  NULLIFY(&$irvar0); [line 32]\n  NULLIFY(&$irvar11); [line 32]\n  NULLIFY(&$irvar10); [line 32]\n  NULLIFY(&$irvar8); [line 32]\n  NULLIFY(&$irvar1); [line 32]\n  NULLIFY(&$irvar2); [line 32]\n  NULLIFY(&end); [line 32]\n  EXIT_SCOPE(start,$irvar3,$irvar9,$irvar5,$irvar4,$irvar7,$irvar6,$irvar0,$irvar11,$irvar10,$irvar8,$irvar1,$irvar2,end); [line 32]\n  APPLY_ABSTRACTION; [line 32]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_3" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_2" ;
+"com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_4" [label="4:  method_body \n   n$0=*&#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 25]\n  *&$irvar0:java.io.PrintStream*=n$0 [line 25]\n  EXIT_SCOPE(n$0); [line 25]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_4" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_5" ;
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_4" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_3" [color="red" ];
+"com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_5" [label="5:  Call StringBuilder.<init>() \n   n$1=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 25]\n  n$2=_fun_StringBuilder.<init>()(n$1:java.lang.StringBuilder*) [line 25]\n  *&$irvar1:java.lang.StringBuilder*=n$1 [line 25]\n  EXIT_SCOPE(n$1,n$2); [line 25]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_5" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_6" ;
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_5" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_3" [color="red" ];
+"com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_6" [label="6:  Call String Class.getName() \n   n$3=_fun_String Class.getName()(com.dulishuo.test.test0716:java.lang.Object*) virtual [line 25]\n  *&$irvar2:java.lang.String*=n$3 [line 25]\n  EXIT_SCOPE(n$3); [line 25]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_6" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_7" ;
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_6" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_3" [color="red" ];
+"com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_7" [label="7:  Call StringBuilder StringBuilder.append(String) \n   n$4=*&$irvar1:java.lang.StringBuilder* [line 25]\n  _=*n$4:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 25]\n  n$6=*&$irvar2:java.lang.String* [line 25]\n  n$7=_fun_StringBuilder StringBuilder.append(String)(n$4:java.lang.StringBuilder*,n$6:java.lang.String*) virtual [line 25]\n  *&$irvar3:java.lang.StringBuilder*=n$7 [line 25]\n  NULLIFY(&$irvar1); [line 25]\n  NULLIFY(&$irvar2); [line 25]\n  EXIT_SCOPE(_,n$4,n$6,n$7,$irvar1,$irvar2); [line 25]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_7" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_8" ;
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_7" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_3" [color="red" ];
+"com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_8" [label="8:  Call StringBuilder StringBuilder.append(String) \n   n$8=*&$irvar3:java.lang.StringBuilder* [line 25]\n  _=*n$8:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 25]\n  n$10=_fun_StringBuilder StringBuilder.append(String)(n$8:java.lang.StringBuilder*,\" Start . . . \":java.lang.Object*) virtual [line 25]\n  *&$irvar4:java.lang.StringBuilder*=n$10 [line 25]\n  NULLIFY(&$irvar3); [line 25]\n  EXIT_SCOPE(_,n$8,n$10,$irvar3); [line 25]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_8" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_9" ;
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_8" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_3" [color="red" ];
+"com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_9" [label="9:  Call String StringBuilder.toString() \n   n$11=*&$irvar4:java.lang.StringBuilder* [line 25]\n  _=*n$11:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 25]\n  n$13=_fun_String StringBuilder.toString()(n$11:java.lang.StringBuilder*) virtual [line 25]\n  *&$irvar5:java.lang.String*=n$13 [line 25]\n  NULLIFY(&$irvar4); [line 25]\n  EXIT_SCOPE(_,n$11,n$13,$irvar4); [line 25]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_9" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_10" ;
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_9" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_3" [color="red" ];
+"com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_10" [label="10:  Call void PrintStream.println(String) \n   n$14=*&$irvar0:java.io.PrintStream* [line 25]\n  _=*n$14:java.io.PrintStream*(root java.io.PrintStream) [line 25]\n  n$16=*&$irvar5:java.lang.String* [line 25]\n  n$17=_fun_void PrintStream.println(String)(n$14:java.io.PrintStream*,n$16:java.lang.String*) virtual [line 25]\n  NULLIFY(&$irvar5); [line 25]\n  NULLIFY(&$irvar0); [line 25]\n  EXIT_SCOPE(_,n$14,n$16,n$17,$irvar5,$irvar0); [line 25]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_10" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_11" ;
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_10" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_3" [color="red" ];
+"com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_11" [label="11:  Call long System.currentTimeMillis() \n   n$18=_fun_long System.currentTimeMillis()() [line 26]\n  *&start:long=n$18 [line 26]\n  EXIT_SCOPE(n$18); [line 26]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_11" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_12" ;
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_11" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_3" [color="red" ];
+"com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_12" [label="12:  Call void Agri.test() \n   n$19=_fun_void Agri.test()() [line 28]\n  EXIT_SCOPE(n$19); [line 28]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_12" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_13" ;
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_12" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_3" [color="red" ];
+"com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_13" [label="13:  Call long System.currentTimeMillis() \n   n$20=_fun_long System.currentTimeMillis()() [line 30]\n  *&end:long=n$20 [line 30]\n  EXIT_SCOPE(n$20); [line 30]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_13" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_14" ;
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_13" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_3" [color="red" ];
+"com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_14" [label="14:  method_body \n   n$21=*&#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 31]\n  *&$irvar6:java.io.PrintStream*=n$21 [line 31]\n  EXIT_SCOPE(n$21); [line 31]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_14" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_15" ;
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_14" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_3" [color="red" ];
+"com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_15" [label="15:  Call StringBuilder.<init>() \n   n$22=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 31]\n  n$23=_fun_StringBuilder.<init>()(n$22:java.lang.StringBuilder*) [line 31]\n  *&$irvar7:java.lang.StringBuilder*=n$22 [line 31]\n  EXIT_SCOPE(n$22,n$23); [line 31]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_15" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_16" ;
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_15" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_3" [color="red" ];
+"com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_16" [label="16:  Call StringBuilder StringBuilder.append(String) \n   n$24=*&$irvar7:java.lang.StringBuilder* [line 31]\n  _=*n$24:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 31]\n  n$26=_fun_StringBuilder StringBuilder.append(String)(n$24:java.lang.StringBuilder*,\"End . . . use time : \":java.lang.Object*) virtual [line 31]\n  *&$irvar8:java.lang.StringBuilder*=n$26 [line 31]\n  NULLIFY(&$irvar7); [line 31]\n  EXIT_SCOPE(_,n$24,n$26,$irvar7); [line 31]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_16" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_17" ;
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_16" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_3" [color="red" ];
+"com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_17" [label="17:  Call StringBuilder StringBuilder.append(long) \n   n$27=*&$irvar8:java.lang.StringBuilder* [line 31]\n  _=*n$27:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 31]\n  n$29=*&end:long [line 31]\n  n$30=*&start:long [line 31]\n  n$31=_fun_StringBuilder StringBuilder.append(long)(n$27:java.lang.StringBuilder*,(n$29 - n$30):long) virtual [line 31]\n  *&$irvar9:java.lang.StringBuilder*=n$31 [line 31]\n  NULLIFY(&start); [line 31]\n  NULLIFY(&$irvar8); [line 31]\n  NULLIFY(&end); [line 31]\n  EXIT_SCOPE(_,n$27,n$29,n$30,n$31,start,$irvar8,end); [line 31]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_17" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_18" ;
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_17" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_3" [color="red" ];
+"com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_18" [label="18:  Call StringBuilder StringBuilder.append(String) \n   n$32=*&$irvar9:java.lang.StringBuilder* [line 31]\n  _=*n$32:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 31]\n  n$34=_fun_StringBuilder StringBuilder.append(String)(n$32:java.lang.StringBuilder*,\" ms . \":java.lang.Object*) virtual [line 31]\n  *&$irvar10:java.lang.StringBuilder*=n$34 [line 31]\n  NULLIFY(&$irvar9); [line 31]\n  EXIT_SCOPE(_,n$32,n$34,$irvar9); [line 31]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_18" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_19" ;
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_18" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_3" [color="red" ];
+"com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_19" [label="19:  Call String StringBuilder.toString() \n   n$35=*&$irvar10:java.lang.StringBuilder* [line 31]\n  _=*n$35:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 31]\n  n$37=_fun_String StringBuilder.toString()(n$35:java.lang.StringBuilder*) virtual [line 31]\n  *&$irvar11:java.lang.String*=n$37 [line 31]\n  NULLIFY(&$irvar10); [line 31]\n  EXIT_SCOPE(_,n$35,n$37,$irvar10); [line 31]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_19" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_20" ;
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_19" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_3" [color="red" ];
+"com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_20" [label="20:  Call void PrintStream.println(String) \n   n$38=*&$irvar6:java.io.PrintStream* [line 31]\n  _=*n$38:java.io.PrintStream*(root java.io.PrintStream) [line 31]\n  n$40=*&$irvar11:java.lang.String* [line 31]\n  n$41=_fun_void PrintStream.println(String)(n$38:java.io.PrintStream*,n$40:java.lang.String*) virtual [line 31]\n  NULLIFY(&$irvar6); [line 31]\n  NULLIFY(&$irvar11); [line 31]\n  EXIT_SCOPE(_,n$38,n$40,n$41,$irvar6,$irvar11); [line 31]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_20" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_21" ;
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_20" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_3" [color="red" ];
+"com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_21" [label="21:  method_body \n   APPLY_ABSTRACTION; [line 32]\n " shape="box"]
+	
+
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_21" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_2" ;
+	 "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_21" -> "com.dulishuo.test.Agri.main(java.lang.String[]):void.07d675743371b5fe7fb76b11e9a9e470_3" [color="red" ];
+}

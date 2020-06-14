@@ -1,0 +1,1207 @@
+[22056][environment] CWD = /home/js/dev/repo/ridill/java/pgmCrawler
+[22056][environment] Read configuration in /home/js/dev/repo/ridill/java/pgmCrawler/.inferconfig
+[22056][environment] Project root = /home/js/dev/repo/ridill/java/pgmCrawler
+[22056][environment] INFER_ARGS =   @/tmp/args.tmp.da41a3  ++Contents of '/tmp/args.tmp.da41a3':
+[22056][environment]                                         run --quandary-only -g
+[22056][environment]                                       
+[22056][environment] 
+[22056][environment] command line arguments:   infer run --quandary-only -g -- ant compile
+[22056][environment] Available memory at startup: 4776 MB
+[22056][environment] Active checkers: quandary (C/C++/ObjC, Java)
+[22056][   progress] Logs in /home/js/dev/repo/ridill/java/pgmCrawler/infer-out/logs
+[22056][   progress] Execution ID 8177410035444446173
+[22056][environment] Scheduler: file
+[22056][environment] Cores used: 4
+[22056][environment] Infer version v0.17.0-b7f0886eb
+[22056][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[22056][environment] Driver mode:
+[22056][environment] Ant driver mode:
+[22056][environment] prog = 'ant'
+[22056][environment] args =   compile
+[22056][   progress] Capturing in ant mode...
+[22056][environment] openjdk version "1.8.0_232"
+OpenJDK Runtime Environment (build 1.8.0_232-8u232-b09-1~deb9u1-b09)
+OpenJDK 64-Bit Server VM (build 25.232-b09, mixed mode)
+ javac 1.8.0_232
+ Apache Ant(TM) version 1.10.5 compiled on August 27 2018
+
+[22056][environment] 
+[22056][      debug] ant   compile
+[22056][      debug] Apache Ant(TM) version 1.10.5 compiled on August 27 2018
+Trying the default build file: build.xml
+Buildfile: /home/js/dev/repo/ridill/java/pgmCrawler/build.xml
+Detected Java version: 1.8 in: /usr/lib/jvm/java-8-openjdk-amd64/jre
+Detected OS: Linux
+parsing buildfile /home/js/dev/repo/ridill/java/pgmCrawler/build.xml with URI = file:/home/js/dev/repo/ridill/java/pgmCrawler/build.xml
+Project base dir set to: /home/js/dev/repo/ridill/java/pgmCrawler
+parsing buildfile jar:file:/usr/share/ant/lib/ant.jar!/org/apache/tools/ant/antlib.xml with URI = jar:file:/usr/share/ant/lib/ant.jar!/org/apache/tools/ant/antlib.xml from a zip file
+Build sequence for target(s) `compile' is [clearBuild, init, compileonly, compile]
+Complete build sequence is [clearBuild, init, compileonly, compile, copy-dependencies, jar, ]
+
+clearBuild:
+
+init:
+    [mkdir] Created dir: /home/js/dev/repo/ridill/java/pgmCrawler/build
+
+compileonly:
+    [javac] /home/js/dev/repo/ridill/java/pgmCrawler/build.xml:19: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] com/dulishuo/chasedream/MasterPostCrawler.java added as com/dulishuo/chasedream/MasterPostCrawler.class doesn't exist.
+    [javac] com/dulishuo/chasedream/PostCrawler.java added as com/dulishuo/chasedream/PostCrawler.class doesn't exist.
+    [javac] com/dulishuo/chasedream/UrlGet.java added as com/dulishuo/chasedream/UrlGet.class doesn't exist.
+    [javac] com/dulishuo/crawler/pgmCrawler.java added as com/dulishuo/crawler/pgmCrawler.class doesn't exist.
+    [javac] com/dulishuo/indexedu/PostGet.java added as com/dulishuo/indexedu/PostGet.class doesn't exist.
+    [javac] com/dulishuo/indexedu/TagEarse.java added as com/dulishuo/indexedu/TagEarse.class doesn't exist.
+    [javac] com/dulishuo/indexedu/Test.java added as com/dulishuo/indexedu/Test.class doesn't exist.
+    [javac] com/dulishuo/indexedu/UrlGet.java added as com/dulishuo/indexedu/UrlGet.class doesn't exist.
+    [javac] com/dulishuo/jituo/Test.java added as com/dulishuo/jituo/Test.class doesn't exist.
+    [javac] com/dulishuo/jituo/offer/Crawler.java added as com/dulishuo/jituo/offer/Crawler.class doesn't exist.
+    [javac] com/dulishuo/qianmu/Util.java added as com/dulishuo/qianmu/Util.class doesn't exist.
+    [javac] com/dulishuo/qianmu/city/Crawler.java added as com/dulishuo/qianmu/city/Crawler.class doesn't exist.
+    [javac] com/dulishuo/qianmu/salary/Crawler.java added as com/dulishuo/qianmu/salary/Crawler.class doesn't exist.
+    [javac] com/dulishuo/school/Chi.java added as com/dulishuo/school/Chi.class doesn't exist.
+    [javac] com/dulishuo/shenqingfang/PgmRankGet.java added as com/dulishuo/shenqingfang/PgmRankGet.class doesn't exist.
+    [javac] com/dulishuo/shenqingfang/offer/UrlGet.java added as com/dulishuo/shenqingfang/offer/UrlGet.class doesn't exist.
+    [javac] com/dulishuo/shenqingfang/pgmGet.java added as com/dulishuo/shenqingfang/pgmGet.class doesn't exist.
+    [javac] com/dulishuo/shenqingfang/professor/getProfessors.java added as com/dulishuo/shenqingfang/professor/getProfessors.class doesn't exist.
+    [javac] com/dulishuo/shunshun/UrlGet.java added as com/dulishuo/shunshun/UrlGet.class doesn't exist.
+    [javac] com/dulishuo/test/Agri.java added as com/dulishuo/test/Agri.class doesn't exist.
+    [javac] com/dulishuo/test/JsoupNotTest.java added as com/dulishuo/test/JsoupNotTest.class doesn't exist.
+    [javac] com/dulishuo/test/Translate0718.java added as com/dulishuo/test/Translate0718.class doesn't exist.
+    [javac] com/dulishuo/test/test0716.java added as com/dulishuo/test/test0716.class doesn't exist.
+    [javac] com/dulishuo/test/test07161.java added as com/dulishuo/test/test07161.class doesn't exist.
+    [javac] com/dulishuo/test/test07162.java added as com/dulishuo/test/test07162.class doesn't exist.
+    [javac] com/dulishuo/test/test0717.java added as com/dulishuo/test/test0717.class doesn't exist.
+    [javac] com/dulishuo/test/test0728.java added as com/dulishuo/test/test0728.class doesn't exist.
+    [javac] com/dulishuo/test/test0731.java added as com/dulishuo/test/test0731.class doesn't exist.
+    [javac] com/dulishuo/test/test0810.java added as com/dulishuo/test/test0810.class doesn't exist.
+    [javac] com/dulishuo/test/test7024.java added as com/dulishuo/test/test7024.class doesn't exist.
+    [javac] com/dulishuo/test/testGetFields.java added as com/dulishuo/test/testGetFields.class doesn't exist.
+    [javac] com/dulishuo/times/GetSchoolRank.java added as com/dulishuo/times/GetSchoolRank.class doesn't exist.
+    [javac] com/dulishuo/times/sixteen/GlobalSchRak.java added as com/dulishuo/times/sixteen/GlobalSchRak.class doesn't exist.
+    [javac] com/dulishuo/usnews/AcceptEmployedRateGet.java added as com/dulishuo/usnews/AcceptEmployedRateGet.class doesn't exist.
+    [javac] com/dulishuo/usnews/Comp.java added as com/dulishuo/usnews/Comp.class doesn't exist.
+    [javac] com/dulishuo/usnews/InfoGet.java added as com/dulishuo/usnews/InfoGet.class doesn't exist.
+    [javac] com/dulishuo/usnews/InstituteNewField.java added as com/dulishuo/usnews/InstituteNewField.class doesn't exist.
+    [javac] com/dulishuo/usnews/RequireGet.java added as com/dulishuo/usnews/RequireGet.class doesn't exist.
+    [javac] com/dulishuo/usnews/SchoolMatch.java added as com/dulishuo/usnews/SchoolMatch.class doesn't exist.
+    [javac] com/dulishuo/usnews/SixFacultyRanking.java added as com/dulishuo/usnews/SixFacultyRanking.class doesn't exist.
+    [javac] com/dulishuo/usnews/UrlGet.java added as com/dulishuo/usnews/UrlGet.class doesn't exist.
+    [javac] com/dulishuo/usnews/UrlGetGrab.java added as com/dulishuo/usnews/UrlGetGrab.class doesn't exist.
+    [javac] com/dulishuo/usnews/sixteen/GlobalSchoolRank.java added as com/dulishuo/usnews/sixteen/GlobalSchoolRank.class doesn't exist.
+    [javac] com/dulishuo/util/CrawlerUtil.java added as com/dulishuo/util/CrawlerUtil.class doesn't exist.
+    [javac] com/dulishuo/util/FileUtil.java added as com/dulishuo/util/FileUtil.class doesn't exist.
+    [javac] com/dulishuo/yimusanfendi/Crawler.java added as com/dulishuo/yimusanfendi/Crawler.class doesn't exist.
+    [javac] com/dulishuo/yimusanfendi/CrawlerTask.java added as com/dulishuo/yimusanfendi/CrawlerTask.class doesn't exist.
+    [javac] com/dulishuo/yimusanfendi/TagEarse.java added as com/dulishuo/yimusanfendi/TagEarse.class doesn't exist.
+    [javac] com/dulishuo/yimusanfendi/UrlCrawler.java added as com/dulishuo/yimusanfendi/UrlCrawler.class doesn't exist.
+    [javac] com/dulishuo/yimusanfendi/luanmaProcess.java added as com/dulishuo/yimusanfendi/luanmaProcess.class doesn't exist.
+    [javac] com/dulishuo/yimusanfendi/offer/GetUrl.java added as com/dulishuo/yimusanfendi/offer/GetUrl.class doesn't exist.
+    [javac] com/dulishuo/yimusanfendi/offer/getContent.java added as com/dulishuo/yimusanfendi/offer/getContent.class doesn't exist.
+    [javac] com/dulishuo/yimusanfendi/offer/offerProcess.java added as com/dulishuo/yimusanfendi/offer/offerProcess.class doesn't exist.
+    [javac] com/dulishuo/yimusanfendi/testCapture.java added as com/dulishuo/yimusanfendi/testCapture.class doesn't exist.
+    [javac] com/dulishuo/zhongyingwang/RankEngSchool.java added as com/dulishuo/zhongyingwang/RankEngSchool.class doesn't exist.
+    [javac] com/dulishuo/zhongyingwang/Test.java added as com/dulishuo/zhongyingwang/Test.class doesn't exist.
+    [javac] com/dulishuo/zhongyingwang/ZywCrawler.java added as com/dulishuo/zhongyingwang/ZywCrawler.class doesn't exist.
+    [javac] com/dulishuo/zhongyingwang/pgmProcess.java added as com/dulishuo/zhongyingwang/pgmProcess.class doesn't exist.
+    [javac] com/dulishuo/zhongyingwang/shlIntroduce.java added as com/dulishuo/zhongyingwang/shlIntroduce.class doesn't exist.
+    [javac] /home/js/dev/repo/ridill/java/pgmCrawler/src/log4j.properties skipped - don't know how to handle it
+    [javac] Compiling 59 source files to /home/js/dev/repo/ridill/java/pgmCrawler/build
+    [javac] Using modern compiler
+    [javac] Compilation arguments:
+    [javac] '-d'
+    [javac] '/home/js/dev/repo/ridill/java/pgmCrawler/build'
+    [javac] '-classpath'
+    [javac] '/home/js/dev/repo/ridill/java/pgmCrawler/build:/home/js/dev/repo/ridill/java/pgmCrawler/lib/IKAnalyzer2012FF_u1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/SocialtouchNLP.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/avro-1.5.4.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/c3p0-0.9.1.2.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-beanutils-core-1.8.0.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-codec-1.6.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-collections-3.2.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-configuration-1.6.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-httpclient-3.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-lang-2.5.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-logging-1.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-pool-1.6.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-pool2-2.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/conversion.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/curator-client-2.4.0.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/curator-framework-2.4.0.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/curator-recipes-2.6.1-SNAPSHOT.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/dom4j-1.6.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/druid-0.2.12.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/ezmorph-1.0.6.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/fluent-hc-4.2.5.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/graphclient.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/guava-11.0.2.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/h2-1.3.170.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/hadoop-auth-2.0.0-cdh4.0.0.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/hadoop-common-2.0.0-cdh4.0.0.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/hadoop-hdfs-2.0.0-cdh4.0.0.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/hbase-0.92.1-cdh4.0.0-security.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/htmlparser-1.6p.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/httpclient-4.2.5.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/httpclient-cache-4.2.5.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/httpcore-4.2.4.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/httpmime-4.2.5.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/jackson-all-1.8.5.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/jackson-annotations-2.1.4.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/jackson-core-2.1.4.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/jackson-databind-2.1.4.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/json-lib-2.4-jdk15-sources.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/json-lib-2.4-jdk15.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/jsoup-1.7.2.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/junit-4.8.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/kafka-0.7.2.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/kafka-perf-0.7.2.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/libthrift.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/log4j-1.2.16.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/mail.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/mmseg4j-core-1.8.5-with-dic.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/myfastjson.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/myjedis.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/mysinaapi.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/mysql-connector-java-5.1.17.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/netty-3.9.4.Final.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/poi-3.9-20121203.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/protobuf-java-2.4.0a.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/rabbitmq-client.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/scala-compiler.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/scala-library.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/slf4j-api-1.5.8.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/slf4j-log4j12-1.5.8.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/snappy-java-1.0.4.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/zkclient-0.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/zookeeper-3.4.3-cdh4.0.0.jar:/usr/share/ant/lib/ant-launcher.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-jsch.jar:/usr/share/ant/lib/ant-javamail.jar:/usr/share/ant/lib/ant-contrib.jar:/usr/share/ant/lib/ant-apache-resolver.jar:/usr/share/ant/lib/ant-commons-net.jar:/usr/share/ant/lib/ant-apache-xalan2.jar:/usr/share/ant/lib/ant-jdepend.jar:/usr/share/ant/lib/ant-apache-log4j.jar:/usr/share/ant/lib/jsch.jar:/usr/share/ant/lib/ant-commons-logging.jar:/usr/share/ant/lib/ant-junit4.jar:/usr/share/ant/lib/ant-apache-bcel.jar:/usr/share/ant/lib/ant-apache-bsf.jar:/usr/share/ant/lib/ant-xz.jar:/usr/share/ant/lib/bcel.jar:/usr/share/ant/lib/ant-testutil.jar:/usr/share/ant/lib/ant-apache-oro.jar:/usr/share/ant/lib/ant-apache-regexp.jar:/usr/share/ant/lib/ant-swing.jar:/usr/share/ant/lib/ant-antlr.jar:/usr/share/ant/lib/ant-jmf.jar:/usr/lib/jvm/java-8-openjdk-amd64/lib/tools.jar'
+    [javac] '-sourcepath'
+    [javac] '/home/js/dev/repo/ridill/java/pgmCrawler/src'
+    [javac] '-target'
+    [javac] '1.6'
+    [javac] '-encoding'
+    [javac] 'utf-8'
+    [javac] '-g'
+    [javac] '-source'
+    [javac] '1.6'
+    [javac] 
+    [javac] The ' characters around the executable and arguments are
+    [javac] not part of the command.
+    [javac] Files to be compiled:
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/chasedream/MasterPostCrawler.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/chasedream/PostCrawler.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/chasedream/UrlGet.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/crawler/pgmCrawler.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/indexedu/PostGet.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/indexedu/TagEarse.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/indexedu/Test.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/indexedu/UrlGet.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/jituo/Test.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/jituo/offer/Crawler.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/qianmu/Util.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/qianmu/city/Crawler.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/qianmu/salary/Crawler.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/school/Chi.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/shenqingfang/PgmRankGet.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/shenqingfang/offer/UrlGet.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/shenqingfang/pgmGet.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/shenqingfang/professor/getProfessors.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/shunshun/UrlGet.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/Agri.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/JsoupNotTest.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/Translate0718.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test0716.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test07161.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test07162.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test0717.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test0728.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test0731.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test0810.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test7024.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/testGetFields.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/times/GetSchoolRank.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/times/sixteen/GlobalSchRak.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/AcceptEmployedRateGet.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/Comp.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/InfoGet.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/InstituteNewField.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/RequireGet.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/SchoolMatch.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/SixFacultyRanking.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/UrlGet.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/UrlGetGrab.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/sixteen/GlobalSchoolRank.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/util/CrawlerUtil.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/util/FileUtil.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/Crawler.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/CrawlerTask.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/TagEarse.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/UrlCrawler.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/luanmaProcess.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/offer/GetUrl.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/offer/getContent.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/offer/offerProcess.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/testCapture.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/zhongyingwang/RankEngSchool.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/zhongyingwang/Test.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/zhongyingwang/ZywCrawler.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/zhongyingwang/pgmProcess.java
+    [javac]     /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/zhongyingwang/shlIntroduce.java
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 1 warning
+
+compile:
+     [copy] log4j.properties added as log4j.properties doesn't exist.
+     [copy] No sources found.
+     [copy] Copying 1 file to /home/js/dev/repo/ridill/java/pgmCrawler/build
+     [copy] Copying /home/js/dev/repo/ridill/java/pgmCrawler/src/log4j.properties to /home/js/dev/repo/ridill/java/pgmCrawler/build/log4j.properties
+      [jar] com/dulishuo/chasedream/MasterPostCrawler.class added as com/dulishuo/chasedream/MasterPostCrawler.class is outdated.
+      [jar] com/dulishuo/chasedream/PostCrawler.class added as com/dulishuo/chasedream/PostCrawler.class is outdated.
+      [jar] com/dulishuo/chasedream/UrlGet.class added as com/dulishuo/chasedream/UrlGet.class is outdated.
+      [jar] com/dulishuo/crawler/pgmCrawler.class added as com/dulishuo/crawler/pgmCrawler.class is outdated.
+      [jar] com/dulishuo/indexedu/PostGet.class added as com/dulishuo/indexedu/PostGet.class is outdated.
+      [jar] com/dulishuo/indexedu/TagEarse.class added as com/dulishuo/indexedu/TagEarse.class is outdated.
+      [jar] com/dulishuo/indexedu/Test.class added as com/dulishuo/indexedu/Test.class is outdated.
+      [jar] com/dulishuo/indexedu/UrlGet.class added as com/dulishuo/indexedu/UrlGet.class is outdated.
+      [jar] com/dulishuo/jituo/Test.class added as com/dulishuo/jituo/Test.class is outdated.
+      [jar] com/dulishuo/jituo/offer/Crawler.class added as com/dulishuo/jituo/offer/Crawler.class is outdated.
+      [jar] com/dulishuo/qianmu/Util.class added as com/dulishuo/qianmu/Util.class is outdated.
+      [jar] com/dulishuo/qianmu/city/Crawler.class added as com/dulishuo/qianmu/city/Crawler.class is outdated.
+      [jar] com/dulishuo/qianmu/salary/Crawler.class added as com/dulishuo/qianmu/salary/Crawler.class is outdated.
+      [jar] com/dulishuo/school/Chi.class added as com/dulishuo/school/Chi.class is outdated.
+      [jar] com/dulishuo/shenqingfang/PgmRankGet.class added as com/dulishuo/shenqingfang/PgmRankGet.class is outdated.
+      [jar] com/dulishuo/shenqingfang/offer/UrlGet.class added as com/dulishuo/shenqingfang/offer/UrlGet.class is outdated.
+      [jar] com/dulishuo/shenqingfang/pgmGet.class added as com/dulishuo/shenqingfang/pgmGet.class is outdated.
+      [jar] com/dulishuo/shenqingfang/professor/getProfessors.class added as com/dulishuo/shenqingfang/professor/getProfessors.class is outdated.
+      [jar] com/dulishuo/shunshun/UrlGet.class added as com/dulishuo/shunshun/UrlGet.class is outdated.
+      [jar] com/dulishuo/test/Agri.class added as com/dulishuo/test/Agri.class is outdated.
+      [jar] com/dulishuo/test/JsoupNotTest.class added as com/dulishuo/test/JsoupNotTest.class is outdated.
+      [jar] com/dulishuo/test/Translate0718.class added as com/dulishuo/test/Translate0718.class is outdated.
+      [jar] com/dulishuo/test/test0716.class added as com/dulishuo/test/test0716.class is outdated.
+      [jar] com/dulishuo/test/test07161.class added as com/dulishuo/test/test07161.class is outdated.
+      [jar] com/dulishuo/test/test07162.class added as com/dulishuo/test/test07162.class is outdated.
+      [jar] com/dulishuo/test/test0717.class added as com/dulishuo/test/test0717.class is outdated.
+      [jar] com/dulishuo/test/test0728$1.class added as com/dulishuo/test/test0728$1.class is outdated.
+      [jar] com/dulishuo/test/test0728$2.class added as com/dulishuo/test/test0728$2.class is outdated.
+      [jar] com/dulishuo/test/test0728.class added as com/dulishuo/test/test0728.class is outdated.
+      [jar] com/dulishuo/test/test0731.class added as com/dulishuo/test/test0731.class is outdated.
+      [jar] com/dulishuo/test/test0810.class added as com/dulishuo/test/test0810.class is outdated.
+      [jar] com/dulishuo/test/test7024.class added as com/dulishuo/test/test7024.class is outdated.
+      [jar] com/dulishuo/test/testGetFields.class added as com/dulishuo/test/testGetFields.class is outdated.
+      [jar] com/dulishuo/times/GetSchoolRank.class added as com/dulishuo/times/GetSchoolRank.class is outdated.
+      [jar] com/dulishuo/times/sixteen/GlobalSchRak.class added as com/dulishuo/times/sixteen/GlobalSchRak.class is outdated.
+      [jar] com/dulishuo/usnews/AcceptEmployedRateGet.class added as com/dulishuo/usnews/AcceptEmployedRateGet.class is outdated.
+      [jar] com/dulishuo/usnews/Comp.class added as com/dulishuo/usnews/Comp.class is outdated.
+      [jar] com/dulishuo/usnews/InfoGet.class added as com/dulishuo/usnews/InfoGet.class is outdated.
+      [jar] com/dulishuo/usnews/InstituteNewField.class added as com/dulishuo/usnews/InstituteNewField.class is outdated.
+      [jar] com/dulishuo/usnews/RequireGet.class added as com/dulishuo/usnews/RequireGet.class is outdated.
+      [jar] com/dulishuo/usnews/SchoolMatch.class added as com/dulishuo/usnews/SchoolMatch.class is outdated.
+      [jar] com/dulishuo/usnews/SixFacultyRanking.class added as com/dulishuo/usnews/SixFacultyRanking.class is outdated.
+      [jar] com/dulishuo/usnews/UrlGet.class added as com/dulishuo/usnews/UrlGet.class is outdated.
+      [jar] com/dulishuo/usnews/UrlGetGrab.class added as com/dulishuo/usnews/UrlGetGrab.class is outdated.
+      [jar] com/dulishuo/usnews/sixteen/GlobalSchoolRank.class added as com/dulishuo/usnews/sixteen/GlobalSchoolRank.class is outdated.
+      [jar] com/dulishuo/util/CrawlerUtil$1.class added as com/dulishuo/util/CrawlerUtil$1.class is outdated.
+      [jar] com/dulishuo/util/CrawlerUtil$2.class added as com/dulishuo/util/CrawlerUtil$2.class is outdated.
+      [jar] com/dulishuo/util/CrawlerUtil.class added as com/dulishuo/util/CrawlerUtil.class is outdated.
+      [jar] com/dulishuo/util/FileUtil.class added as com/dulishuo/util/FileUtil.class is outdated.
+      [jar] com/dulishuo/yimusanfendi/Crawler.class added as com/dulishuo/yimusanfendi/Crawler.class is outdated.
+      [jar] com/dulishuo/yimusanfendi/CrawlerTask.class added as com/dulishuo/yimusanfendi/CrawlerTask.class is outdated.
+      [jar] com/dulishuo/yimusanfendi/TagEarse.class added as com/dulishuo/yimusanfendi/TagEarse.class is outdated.
+      [jar] com/dulishuo/yimusanfendi/UrlCrawler.class added as com/dulishuo/yimusanfendi/UrlCrawler.class is outdated.
+      [jar] com/dulishuo/yimusanfendi/luanmaProcess.class added as com/dulishuo/yimusanfendi/luanmaProcess.class is outdated.
+      [jar] com/dulishuo/yimusanfendi/offer/GetUrl.class added as com/dulishuo/yimusanfendi/offer/GetUrl.class is outdated.
+      [jar] com/dulishuo/yimusanfendi/offer/getContent.class added as com/dulishuo/yimusanfendi/offer/getContent.class is outdated.
+      [jar] com/dulishuo/yimusanfendi/offer/offerProcess.class added as com/dulishuo/yimusanfendi/offer/offerProcess.class is outdated.
+      [jar] com/dulishuo/yimusanfendi/testCapture.class added as com/dulishuo/yimusanfendi/testCapture.class is outdated.
+      [jar] com/dulishuo/zhongyingwang/RankEngSchool.class added as com/dulishuo/zhongyingwang/RankEngSchool.class is outdated.
+      [jar] com/dulishuo/zhongyingwang/Test.class added as com/dulishuo/zhongyingwang/Test.class is outdated.
+      [jar] com/dulishuo/zhongyingwang/ZywCrawler.class added as com/dulishuo/zhongyingwang/ZywCrawler.class is outdated.
+      [jar] com/dulishuo/zhongyingwang/pgmProcess.class added as com/dulishuo/zhongyingwang/pgmProcess.class is outdated.
+      [jar] com/dulishuo/zhongyingwang/shlIntroduce.class added as com/dulishuo/zhongyingwang/shlIntroduce.class is outdated.
+      [jar] log4j.properties added as log4j.properties is outdated.
+      [jar] com omitted as /home/js/dev/repo/ridill/java/pgmCrawler/pgmCrawler.jar:com/ is up to date.
+      [jar] com/dulishuo omitted as /home/js/dev/repo/ridill/java/pgmCrawler/pgmCrawler.jar:com/dulishuo/ is up to date.
+      [jar] com/dulishuo/chasedream omitted as /home/js/dev/repo/ridill/java/pgmCrawler/pgmCrawler.jar:com/dulishuo/chasedream/ is up to date.
+      [jar] com/dulishuo/crawler omitted as /home/js/dev/repo/ridill/java/pgmCrawler/pgmCrawler.jar:com/dulishuo/crawler/ is up to date.
+      [jar] com/dulishuo/indexedu omitted as /home/js/dev/repo/ridill/java/pgmCrawler/pgmCrawler.jar:com/dulishuo/indexedu/ is up to date.
+      [jar] com/dulishuo/jituo omitted as /home/js/dev/repo/ridill/java/pgmCrawler/pgmCrawler.jar:com/dulishuo/jituo/ is up to date.
+      [jar] com/dulishuo/jituo/offer omitted as /home/js/dev/repo/ridill/java/pgmCrawler/pgmCrawler.jar:com/dulishuo/jituo/offer/ is up to date.
+      [jar] com/dulishuo/qianmu omitted as /home/js/dev/repo/ridill/java/pgmCrawler/pgmCrawler.jar:com/dulishuo/qianmu/ is up to date.
+      [jar] com/dulishuo/qianmu/city omitted as /home/js/dev/repo/ridill/java/pgmCrawler/pgmCrawler.jar:com/dulishuo/qianmu/city/ is up to date.
+      [jar] com/dulishuo/qianmu/salary omitted as /home/js/dev/repo/ridill/java/pgmCrawler/pgmCrawler.jar:com/dulishuo/qianmu/salary/ is up to date.
+      [jar] com/dulishuo/school omitted as /home/js/dev/repo/ridill/java/pgmCrawler/pgmCrawler.jar:com/dulishuo/school/ is up to date.
+      [jar] com/dulishuo/shenqingfang omitted as /home/js/dev/repo/ridill/java/pgmCrawler/pgmCrawler.jar:com/dulishuo/shenqingfang/ is up to date.
+      [jar] com/dulishuo/shenqingfang/offer omitted as /home/js/dev/repo/ridill/java/pgmCrawler/pgmCrawler.jar:com/dulishuo/shenqingfang/offer/ is up to date.
+      [jar] com/dulishuo/shenqingfang/professor omitted as /home/js/dev/repo/ridill/java/pgmCrawler/pgmCrawler.jar:com/dulishuo/shenqingfang/professor/ is up to date.
+      [jar] com/dulishuo/shunshun omitted as /home/js/dev/repo/ridill/java/pgmCrawler/pgmCrawler.jar:com/dulishuo/shunshun/ is up to date.
+      [jar] com/dulishuo/test omitted as /home/js/dev/repo/ridill/java/pgmCrawler/pgmCrawler.jar:com/dulishuo/test/ is up to date.
+      [jar] com/dulishuo/times omitted as /home/js/dev/repo/ridill/java/pgmCrawler/pgmCrawler.jar:com/dulishuo/times/ is up to date.
+      [jar] com/dulishuo/times/sixteen omitted as /home/js/dev/repo/ridill/java/pgmCrawler/pgmCrawler.jar:com/dulishuo/times/sixteen/ is up to date.
+      [jar] com/dulishuo/usnews omitted as /home/js/dev/repo/ridill/java/pgmCrawler/pgmCrawler.jar:com/dulishuo/usnews/ is up to date.
+      [jar] com/dulishuo/usnews/sixteen omitted as /home/js/dev/repo/ridill/java/pgmCrawler/pgmCrawler.jar:com/dulishuo/usnews/sixteen/ is up to date.
+      [jar] com/dulishuo/util omitted as /home/js/dev/repo/ridill/java/pgmCrawler/pgmCrawler.jar:com/dulishuo/util/ is up to date.
+      [jar] com/dulishuo/yimusanfendi omitted as /home/js/dev/repo/ridill/java/pgmCrawler/pgmCrawler.jar:com/dulishuo/yimusanfendi/ is up to date.
+      [jar] com/dulishuo/yimusanfendi/offer omitted as /home/js/dev/repo/ridill/java/pgmCrawler/pgmCrawler.jar:com/dulishuo/yimusanfendi/offer/ is up to date.
+      [jar] com/dulishuo/zhongyingwang omitted as /home/js/dev/repo/ridill/java/pgmCrawler/pgmCrawler.jar:com/dulishuo/zhongyingwang/ is up to date.
+      [jar] Building jar: /home/js/dev/repo/ridill/java/pgmCrawler/pgmCrawler.jar
+      [jar] adding directory META-INF/
+      [jar] adding entry META-INF/MANIFEST.MF
+      [jar] adding directory com/
+      [jar] adding directory com/dulishuo/
+      [jar] adding directory com/dulishuo/chasedream/
+      [jar] adding directory com/dulishuo/crawler/
+      [jar] adding directory com/dulishuo/indexedu/
+      [jar] adding directory com/dulishuo/jituo/
+      [jar] adding directory com/dulishuo/jituo/offer/
+      [jar] adding directory com/dulishuo/qianmu/
+      [jar] adding directory com/dulishuo/qianmu/city/
+      [jar] adding directory com/dulishuo/qianmu/salary/
+      [jar] adding directory com/dulishuo/school/
+      [jar] adding directory com/dulishuo/shenqingfang/
+      [jar] adding directory com/dulishuo/shenqingfang/offer/
+      [jar] adding directory com/dulishuo/shenqingfang/professor/
+      [jar] adding directory com/dulishuo/shunshun/
+      [jar] adding directory com/dulishuo/test/
+      [jar] adding directory com/dulishuo/times/
+      [jar] adding directory com/dulishuo/times/sixteen/
+      [jar] adding directory com/dulishuo/usnews/
+      [jar] adding directory com/dulishuo/usnews/sixteen/
+      [jar] adding directory com/dulishuo/util/
+      [jar] adding directory com/dulishuo/yimusanfendi/
+      [jar] adding directory com/dulishuo/yimusanfendi/offer/
+      [jar] adding directory com/dulishuo/zhongyingwang/
+      [jar] adding entry com/dulishuo/chasedream/MasterPostCrawler.class
+      [jar] adding entry com/dulishuo/chasedream/PostCrawler.class
+      [jar] adding entry com/dulishuo/chasedream/UrlGet.class
+      [jar] adding entry com/dulishuo/crawler/pgmCrawler.class
+      [jar] adding entry com/dulishuo/indexedu/PostGet.class
+      [jar] adding entry com/dulishuo/indexedu/TagEarse.class
+      [jar] adding entry com/dulishuo/indexedu/Test.class
+      [jar] adding entry com/dulishuo/indexedu/UrlGet.class
+      [jar] adding entry com/dulishuo/jituo/Test.class
+      [jar] adding entry com/dulishuo/jituo/offer/Crawler.class
+      [jar] adding entry com/dulishuo/qianmu/Util.class
+      [jar] adding entry com/dulishuo/qianmu/city/Crawler.class
+      [jar] adding entry com/dulishuo/qianmu/salary/Crawler.class
+      [jar] adding entry com/dulishuo/school/Chi.class
+      [jar] adding entry com/dulishuo/shenqingfang/PgmRankGet.class
+      [jar] adding entry com/dulishuo/shenqingfang/offer/UrlGet.class
+      [jar] adding entry com/dulishuo/shenqingfang/pgmGet.class
+      [jar] adding entry com/dulishuo/shenqingfang/professor/getProfessors.class
+      [jar] adding entry com/dulishuo/shunshun/UrlGet.class
+      [jar] adding entry com/dulishuo/test/Agri.class
+      [jar] adding entry com/dulishuo/test/JsoupNotTest.class
+      [jar] adding entry com/dulishuo/test/Translate0718.class
+      [jar] adding entry com/dulishuo/test/test0716.class
+      [jar] adding entry com/dulishuo/test/test07161.class
+      [jar] adding entry com/dulishuo/test/test07162.class
+      [jar] adding entry com/dulishuo/test/test0717.class
+      [jar] adding entry com/dulishuo/test/test0728$1.class
+      [jar] adding entry com/dulishuo/test/test0728$2.class
+      [jar] adding entry com/dulishuo/test/test0728.class
+      [jar] adding entry com/dulishuo/test/test0731.class
+      [jar] adding entry com/dulishuo/test/test0810.class
+      [jar] adding entry com/dulishuo/test/test7024.class
+      [jar] adding entry com/dulishuo/test/testGetFields.class
+      [jar] adding entry com/dulishuo/times/GetSchoolRank.class
+      [jar] adding entry com/dulishuo/times/sixteen/GlobalSchRak.class
+      [jar] adding entry com/dulishuo/usnews/AcceptEmployedRateGet.class
+      [jar] adding entry com/dulishuo/usnews/Comp.class
+      [jar] adding entry com/dulishuo/usnews/InfoGet.class
+      [jar] adding entry com/dulishuo/usnews/InstituteNewField.class
+      [jar] adding entry com/dulishuo/usnews/RequireGet.class
+      [jar] adding entry com/dulishuo/usnews/SchoolMatch.class
+      [jar] adding entry com/dulishuo/usnews/SixFacultyRanking.class
+      [jar] adding entry com/dulishuo/usnews/UrlGet.class
+      [jar] adding entry com/dulishuo/usnews/UrlGetGrab.class
+      [jar] adding entry com/dulishuo/usnews/sixteen/GlobalSchoolRank.class
+      [jar] adding entry com/dulishuo/util/CrawlerUtil$1.class
+      [jar] adding entry com/dulishuo/util/CrawlerUtil$2.class
+      [jar] adding entry com/dulishuo/util/CrawlerUtil.class
+      [jar] adding entry com/dulishuo/util/FileUtil.class
+      [jar] adding entry com/dulishuo/yimusanfendi/Crawler.class
+      [jar] adding entry com/dulishuo/yimusanfendi/CrawlerTask.class
+      [jar] adding entry com/dulishuo/yimusanfendi/TagEarse.class
+      [jar] adding entry com/dulishuo/yimusanfendi/UrlCrawler.class
+      [jar] adding entry com/dulishuo/yimusanfendi/luanmaProcess.class
+      [jar] adding entry com/dulishuo/yimusanfendi/offer/GetUrl.class
+      [jar] adding entry com/dulishuo/yimusanfendi/offer/getContent.class
+      [jar] adding entry com/dulishuo/yimusanfendi/offer/offerProcess.class
+      [jar] adding entry com/dulishuo/yimusanfendi/testCapture.class
+      [jar] adding entry com/dulishuo/zhongyingwang/RankEngSchool.class
+      [jar] adding entry com/dulishuo/zhongyingwang/Test.class
+      [jar] adding entry com/dulishuo/zhongyingwang/ZywCrawler.class
+      [jar] adding entry com/dulishuo/zhongyingwang/pgmProcess.class
+      [jar] adding entry com/dulishuo/zhongyingwang/shlIntroduce.class
+      [jar] adding entry log4j.properties
+      [jar] No Implementation-Title set.No Implementation-Version set.No Implementation-Vendor set.
+      [jar] Location: /home/js/dev/repo/ridill/java/pgmCrawler/build.xml:36: 
+
+BUILD SUCCESSFUL
+Total time: 1 second
+/home/js/dev/repo/infer/infer/bin/infer capture --continue -- javac -d /home/js/dev/repo/ridill/java/pgmCrawler/build -classpath /home/js/dev/repo/ridill/java/pgmCrawler/build:/home/js/dev/repo/ridill/java/pgmCrawler/lib/IKAnalyzer2012FF_u1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/SocialtouchNLP.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/avro-1.5.4.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/c3p0-0.9.1.2.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-beanutils-core-1.8.0.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-codec-1.6.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-collections-3.2.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-configuration-1.6.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-httpclient-3.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-lang-2.5.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-logging-1.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-pool-1.6.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-pool2-2.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/conversion.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/curator-client-2.4.0.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/curator-framework-2.4.0.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/curator-recipes-2.6.1-SNAPSHOT.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/dom4j-1.6.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/druid-0.2.12.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/ezmorph-1.0.6.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/fluent-hc-4.2.5.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/graphclient.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/guava-11.0.2.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/h2-1.3.170.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/hadoop-auth-2.0.0-cdh4.0.0.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/hadoop-common-2.0.0-cdh4.0.0.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/hadoop-hdfs-2.0.0-cdh4.0.0.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/hbase-0.92.1-cdh4.0.0-security.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/htmlparser-1.6p.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/httpclient-4.2.5.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/httpclient-cache-4.2.5.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/httpcore-4.2.4.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/httpmime-4.2.5.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/jackson-all-1.8.5.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/jackson-annotations-2.1.4.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/jackson-core-2.1.4.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/jackson-databind-2.1.4.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/json-lib-2.4-jdk15-sources.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/json-lib-2.4-jdk15.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/jsoup-1.7.2.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/junit-4.8.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/kafka-0.7.2.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/kafka-perf-0.7.2.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/libthrift.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/log4j-1.2.16.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/mail.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/mmseg4j-core-1.8.5-with-dic.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/myfastjson.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/myjedis.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/mysinaapi.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/mysql-connector-java-5.1.17.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/netty-3.9.4.Final.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/poi-3.9-20121203.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/protobuf-java-2.4.0a.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/rabbitmq-client.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/scala-compiler.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/scala-library.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/slf4j-api-1.5.8.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/slf4j-log4j12-1.5.8.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/snappy-java-1.0.4.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/zkclient-0.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/zookeeper-3.4.3-cdh4.0.0.jar:/usr/share/ant/lib/ant-launcher.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-jsch.jar:/usr/share/ant/lib/ant-javamail.jar:/usr/share/ant/lib/ant-contrib.jar:/usr/share/ant/lib/ant-apache-resolver.jar:/usr/share/ant/lib/ant-commons-net.jar:/usr/share/ant/lib/ant-apache-xalan2.jar:/usr/share/ant/lib/ant-jdepend.jar:/usr/share/ant/lib/ant-apache-log4j.jar:/usr/share/ant/lib/jsch.jar:/usr/share/ant/lib/ant-commons-logging.jar:/usr/share/ant/lib/ant-junit4.jar:/usr/share/ant/lib/ant-apache-bcel.jar:/usr/share/ant/lib/ant-apache-bsf.jar:/usr/share/ant/lib/ant-xz.jar:/usr/share/ant/lib/bcel.jar:/usr/share/ant/lib/ant-testutil.jar:/usr/share/ant/lib/ant-apache-oro.jar:/usr/share/ant/lib/ant-apache-regexp.jar:/usr/share/ant/lib/ant-swing.jar:/usr/share/ant/lib/ant-antlr.jar:/usr/share/ant/lib/ant-jmf.jar:/usr/lib/jvm/java-8-openjdk-amd64/lib/tools.jar -sourcepath /home/js/dev/repo/ridill/java/pgmCrawler/src -target 1.6 -encoding utf-8 -g -source 1.6 /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/chasedream/MasterPostCrawler.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/chasedream/PostCrawler.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/chasedream/UrlGet.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/crawler/pgmCrawler.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/indexedu/PostGet.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/indexedu/TagEarse.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/indexedu/Test.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/indexedu/UrlGet.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/jituo/Test.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/jituo/offer/Crawler.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/qianmu/Util.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/qianmu/city/Crawler.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/qianmu/salary/Crawler.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/school/Chi.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/shenqingfang/PgmRankGet.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/shenqingfang/offer/UrlGet.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/shenqingfang/pgmGet.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/shenqingfang/professor/getProfessors.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/shunshun/UrlGet.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/Agri.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/JsoupNotTest.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/Translate0718.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test0716.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test07161.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test07162.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test0717.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test0728.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test0731.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test0810.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test7024.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/testGetFields.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/times/GetSchoolRank.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/times/sixteen/GlobalSchRak.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/AcceptEmployedRateGet.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/Comp.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/InfoGet.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/InstituteNewField.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/RequireGet.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/SchoolMatch.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/SixFacultyRanking.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/UrlGet.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/UrlGetGrab.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/sixteen/GlobalSchoolRank.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/util/CrawlerUtil.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/util/FileUtil.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/Crawler.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/CrawlerTask.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/TagEarse.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/UrlCrawler.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/luanmaProcess.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/offer/GetUrl.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/offer/getContent.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/offer/offerProcess.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/testCapture.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/zhongyingwang/RankEngSchool.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/zhongyingwang/Test.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/zhongyingwang/ZywCrawler.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/zhongyingwang/pgmProcess.java /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/zhongyingwang/shlIntroduce.java
+
+[22170][environment] CWD = /home/js/dev/repo/ridill/java/pgmCrawler
+[22170][environment] Read configuration in /home/js/dev/repo/ridill/java/pgmCrawler/.inferconfig
+[22170][environment] Project root = /home/js/dev/repo/ridill/java/pgmCrawler
+[22170][environment] INFER_ARGS =   @/tmp/args.tmp.84046a  ++Contents of '/tmp/args.tmp.84046a':
+[22170][environment]                                         @/tmp/args.tmp.da41a3 capture
+[22170][environment]                                         --continue
+[22170][environment]                                         ++Contents of '/tmp/args.tmp.da41a3':
+[22170][environment]                                           run --quandary-only -g
+[22170][environment]                                         
+[22170][environment]                                       
+[22170][environment] 
+[22170][environment] command line arguments:   /home/js/dev/repo/infer/infer/bin/infer capture
+[22170][environment]                           --continue -- javac -d
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/build
+[22170][environment]                           -classpath
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/build:/home/js/dev/repo/ridill/java/pgmCrawler/lib/IKAnalyzer2012FF_u1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/SocialtouchNLP.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/avro-1.5.4.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/c3p0-0.9.1.2.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-beanutils-core-1.8.0.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-codec-1.6.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-collections-3.2.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-configuration-1.6.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-httpclient-3.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-lang-2.5.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-logging-1.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-pool-1.6.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-pool2-2.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/conversion.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/curator-client-2.4.0.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/curator-framework-2.4.0.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/curator-recipes-2.6.1-SNAPSHOT.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/dom4j-1.6.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/druid-0.2.12.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/ezmorph-1.0.6.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/fluent-hc-4.2.5.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/graphclient.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/guava-11.0.2.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/h2-1.3.170.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/hadoop-auth-2.0.0-cdh4.0.0.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/hadoop-common-2.0.0-cdh4.0.0.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/hadoop-hdfs-2.0.0-cdh4.0.0.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/hbase-0.92.1-cdh4.0.0-security.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/htmlparser-1.6p.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/httpclient-4.2.5.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/httpclient-cache-4.2.5.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/httpcore-4.2.4.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/httpmime-4.2.5.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/jackson-all-1.8.5.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/jackson-annotations-2.1.4.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/jackson-core-2.1.4.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/jackson-databind-2.1.4.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/json-lib-2.4-jdk15-sources.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/json-lib-2.4-jdk15.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/jsoup-1.7.2.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/junit-4.8.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/kafka-0.7.2.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/kafka-perf-0.7.2.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/libthrift.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/log4j-1.2.16.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/mail.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/mmseg4j-core-1.8.5-with-dic.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/myfastjson.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/myjedis.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/mysinaapi.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/mysql-connector-java-5.1.17.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/netty-3.9.4.Final.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/poi-3.9-20121203.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/protobuf-java-2.4.0a.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/rabbitmq-client.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/scala-compiler.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/scala-library.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/slf4j-api-1.5.8.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/slf4j-log4j12-1.5.8.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/snappy-java-1.0.4.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/zkclient-0.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/zookeeper-3.4.3-cdh4.0.0.jar:/usr/share/ant/lib/ant-launcher.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-jsch.jar:/usr/share/ant/lib/ant-javamail.jar:/usr/share/ant/lib/ant-contrib.jar:/usr/share/ant/lib/ant-apache-resolver.jar:/usr/share/ant/lib/ant-commons-net.jar:/usr/share/ant/lib/ant-apache-xalan2.jar:/usr/share/ant/lib/ant-jdepend.jar:/usr/share/ant/lib/ant-apache-log4j.jar:/usr/share/ant/lib/jsch.jar:/usr/share/ant/lib/ant-commons-logging.jar:/usr/share/ant/lib/ant-junit4.jar:/usr/share/ant/lib/ant-apache-bcel.jar:/usr/share/ant/lib/ant-apache-bsf.jar:/usr/share/ant/lib/ant-xz.jar:/usr/share/ant/lib/bcel.jar:/usr/share/ant/lib/ant-testutil.jar:/usr/share/ant/lib/ant-apache-oro.jar:/usr/share/ant/lib/ant-apache-regexp.jar:/usr/share/ant/lib/ant-swing.jar:/usr/share/ant/lib/ant-antlr.jar:/usr/share/ant/lib/ant-jmf.jar:/usr/lib/jvm/java-8-openjdk-amd64/lib/tools.jar
+[22170][environment]                           -sourcepath
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src
+[22170][environment]                           -target 1.6 -encoding utf-8 -g -source 1.6
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/chasedream/MasterPostCrawler.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/chasedream/PostCrawler.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/chasedream/UrlGet.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/crawler/pgmCrawler.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/indexedu/PostGet.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/indexedu/TagEarse.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/indexedu/Test.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/indexedu/UrlGet.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/jituo/Test.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/jituo/offer/Crawler.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/qianmu/Util.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/qianmu/city/Crawler.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/qianmu/salary/Crawler.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/school/Chi.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/shenqingfang/PgmRankGet.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/shenqingfang/offer/UrlGet.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/shenqingfang/pgmGet.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/shenqingfang/professor/getProfessors.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/shunshun/UrlGet.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/Agri.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/JsoupNotTest.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/Translate0718.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test0716.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test07161.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test07162.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test0717.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test0728.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test0731.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test0810.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test7024.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/testGetFields.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/times/GetSchoolRank.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/times/sixteen/GlobalSchRak.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/AcceptEmployedRateGet.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/Comp.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/InfoGet.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/InstituteNewField.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/RequireGet.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/SchoolMatch.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/SixFacultyRanking.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/UrlGet.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/UrlGetGrab.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/sixteen/GlobalSchoolRank.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/util/CrawlerUtil.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/util/FileUtil.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/Crawler.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/CrawlerTask.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/TagEarse.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/UrlCrawler.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/luanmaProcess.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/offer/GetUrl.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/offer/getContent.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/offer/offerProcess.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/testCapture.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/zhongyingwang/RankEngSchool.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/zhongyingwang/Test.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/zhongyingwang/ZywCrawler.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/zhongyingwang/pgmProcess.java
+[22170][environment]                           /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/zhongyingwang/shlIntroduce.java
+[22170][environment] Available memory at startup: 4734 MB
+[22170][environment] Active checkers: quandary (C/C++/ObjC, Java)
+[22170][environment] Scheduler: file
+[22170][environment] Cores used: 4
+[22170][environment] Driver mode:
+[22170][environment] Javac driver mode:
+[22170][environment] prog = 'javac'
+[22170][environment] args =   -d /home/js/dev/repo/ridill/java/pgmCrawler/build -classpath
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/build:/home/js/dev/repo/ridill/java/pgmCrawler/lib/IKAnalyzer2012FF_u1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/SocialtouchNLP.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/avro-1.5.4.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/c3p0-0.9.1.2.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-beanutils-core-1.8.0.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-codec-1.6.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-collections-3.2.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-configuration-1.6.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-httpclient-3.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-lang-2.5.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-logging-1.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-pool-1.6.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/commons-pool2-2.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/conversion.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/curator-client-2.4.0.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/curator-framework-2.4.0.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/curator-recipes-2.6.1-SNAPSHOT.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/dom4j-1.6.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/druid-0.2.12.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/ezmorph-1.0.6.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/fluent-hc-4.2.5.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/graphclient.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/guava-11.0.2.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/h2-1.3.170.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/hadoop-auth-2.0.0-cdh4.0.0.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/hadoop-common-2.0.0-cdh4.0.0.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/hadoop-hdfs-2.0.0-cdh4.0.0.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/hbase-0.92.1-cdh4.0.0-security.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/htmlparser-1.6p.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/httpclient-4.2.5.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/httpclient-cache-4.2.5.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/httpcore-4.2.4.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/httpmime-4.2.5.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/jackson-all-1.8.5.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/jackson-annotations-2.1.4.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/jackson-core-2.1.4.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/jackson-databind-2.1.4.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/json-lib-2.4-jdk15-sources.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/json-lib-2.4-jdk15.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/jsoup-1.7.2.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/junit-4.8.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/kafka-0.7.2.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/kafka-perf-0.7.2.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/libthrift.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/log4j-1.2.16.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/mail.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/mmseg4j-core-1.8.5-with-dic.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/myfastjson.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/myjedis.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/mysinaapi.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/mysql-connector-java-5.1.17.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/netty-3.9.4.Final.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/poi-3.9-20121203.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/protobuf-java-2.4.0a.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/rabbitmq-client.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/scala-compiler.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/scala-library.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/slf4j-api-1.5.8.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/slf4j-log4j12-1.5.8.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/snappy-java-1.0.4.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/zkclient-0.1.jar:/home/js/dev/repo/ridill/java/pgmCrawler/lib/zookeeper-3.4.3-cdh4.0.0.jar:/usr/share/ant/lib/ant-launcher.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-jsch.jar:/usr/share/ant/lib/ant-javamail.jar:/usr/share/ant/lib/ant-contrib.jar:/usr/share/ant/lib/ant-apache-resolver.jar:/usr/share/ant/lib/ant-commons-net.jar:/usr/share/ant/lib/ant-apache-xalan2.jar:/usr/share/ant/lib/ant-jdepend.jar:/usr/share/ant/lib/ant-apache-log4j.jar:/usr/share/ant/lib/jsch.jar:/usr/share/ant/lib/ant-commons-logging.jar:/usr/share/ant/lib/ant-junit4.jar:/usr/share/ant/lib/ant-apache-bcel.jar:/usr/share/ant/lib/ant-apache-bsf.jar:/usr/share/ant/lib/ant-xz.jar:/usr/share/ant/lib/bcel.jar:/usr/share/ant/lib/ant-testutil.jar:/usr/share/ant/lib/ant-apache-oro.jar:/usr/share/ant/lib/ant-apache-regexp.jar:/usr/share/ant/lib/ant-swing.jar:/usr/share/ant/lib/ant-antlr.jar:/usr/share/ant/lib/ant-jmf.jar:/usr/lib/jvm/java-8-openjdk-amd64/lib/tools.jar
+[22170][environment]          -sourcepath /home/js/dev/repo/ridill/java/pgmCrawler/src -target 1.6
+[22170][environment]          -encoding utf-8 -g -source 1.6
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/chasedream/MasterPostCrawler.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/chasedream/PostCrawler.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/chasedream/UrlGet.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/crawler/pgmCrawler.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/indexedu/PostGet.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/indexedu/TagEarse.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/indexedu/Test.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/indexedu/UrlGet.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/jituo/Test.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/jituo/offer/Crawler.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/qianmu/Util.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/qianmu/city/Crawler.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/qianmu/salary/Crawler.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/school/Chi.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/shenqingfang/PgmRankGet.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/shenqingfang/offer/UrlGet.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/shenqingfang/pgmGet.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/shenqingfang/professor/getProfessors.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/shunshun/UrlGet.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/Agri.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/JsoupNotTest.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/Translate0718.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test0716.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test07161.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test07162.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test0717.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test0728.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test0731.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test0810.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/test7024.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/test/testGetFields.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/times/GetSchoolRank.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/times/sixteen/GlobalSchRak.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/AcceptEmployedRateGet.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/Comp.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/InfoGet.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/InstituteNewField.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/RequireGet.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/SchoolMatch.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/SixFacultyRanking.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/UrlGet.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/UrlGetGrab.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/usnews/sixteen/GlobalSchoolRank.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/util/CrawlerUtil.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/util/FileUtil.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/Crawler.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/CrawlerTask.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/TagEarse.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/UrlCrawler.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/luanmaProcess.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/offer/GetUrl.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/offer/getContent.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/offer/offerProcess.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/yimusanfendi/testCapture.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/zhongyingwang/RankEngSchool.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/zhongyingwang/Test.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/zhongyingwang/ZywCrawler.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/zhongyingwang/pgmProcess.java
+[22170][environment]          /home/js/dev/repo/ridill/java/pgmCrawler/src/com/dulishuo/zhongyingwang/shlIntroduce.java
+[22170][      debug] Current working directory: '/home/js/dev/repo/ridill/java/pgmCrawler'
+[22170][      debug] Trying to execute: javac '-J-Duser.language=en' '@/home/js/dev/repo/ridill/java/pgmCrawler/infer-out/tmp/javac_args.tmp.9a3db8' 2>'/home/js/dev/repo/ridill/java/pgmCrawler/infer-out/tmp/javac.tmp.e12f7a.out'
+[22170][      debug] *** Success. Logs:
+[22170][      debug] Path /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar not foundPath /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar not foundPath /usr/lib/jvm/java-8-openjdk-amd64/jre/classes not foundPath /home/js/dev/repo/ridill/java/pgmCrawler/lib/libs/jopt-simple-3.2.jar not foundPath /home/js/dev/repo/ridill/java/pgmCrawler/lib/libs/zookeeper-3.3.4.jar not foundPath /home/js/dev/repo/ridill/java/pgmCrawler/lib/libs/scala-library.jar not foundPath /home/js/dev/repo/ridill/java/pgmCrawler/lib/libs/zkclient-0.1.jar not foundPath /home/js/dev/repo/ridill/java/pgmCrawler/lib/libs/log4j-1.2.15.jar not foundPath /home/js/dev/repo/ridill/java/pgmCrawler/lib/libs/snappy-java-1.0.4.1.jar not foundTranslating 49 source files (63 classes)
+[22170][      debug] loading program ... done
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/usnews/AcceptEmployedRateGet.java (AcceptEmployedRateGet.java)
+[22170][      debug] 	classname: com.dulishuo.usnews.AcceptEmployedRateGet
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/test/Agri.java (Agri.java)
+[22170][      debug] 	classname: com.dulishuo.test.Agri
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/school/Chi.java (Chi.java)
+[22170][      debug] 	classname: com.dulishuo.school.Chi
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/usnews/Comp.java (Comp.java)
+[22170][      debug] 	classname: com.dulishuo.usnews.Comp
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/yimusanfendi/Crawler.java (Crawler.java)
+[22170][      debug] 	classname: com.dulishuo.yimusanfendi.Crawler
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/qianmu/salary/Crawler.java (Crawler.java)
+[22170][      debug] 	classname: com.dulishuo.qianmu.salary.Crawler
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/qianmu/city/Crawler.java (Crawler.java)
+[22170][      debug] 	classname: com.dulishuo.qianmu.city.Crawler
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/jituo/offer/Crawler.java (Crawler.java)
+[22170][      debug] 	classname: com.dulishuo.jituo.offer.Crawler
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/yimusanfendi/CrawlerTask.java (CrawlerTask.java)
+[22170][      debug] 	classname: com.dulishuo.yimusanfendi.CrawlerTask
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/util/CrawlerUtil.java (CrawlerUtil.java)
+[22170][      debug] 	classname: com.dulishuo.util.CrawlerUtil$2
+[22170][      debug] 	classname: com.dulishuo.util.CrawlerUtil
+[22170][      debug] 	classname: com.dulishuo.util.CrawlerUtil$1
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/util/FileUtil.java (FileUtil.java)
+[22170][      debug] 	classname: com.dulishuo.util.FileUtil
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/times/GetSchoolRank.java (GetSchoolRank.java)
+[22170][      debug] 	classname: com.dulishuo.times.GetSchoolRank
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/yimusanfendi/offer/GetUrl.java (GetUrl.java)
+[22170][      debug] 	classname: com.dulishuo.yimusanfendi.offer.GetUrl
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/times/sixteen/GlobalSchRak.java (GlobalSchRak.java)
+[22170][      debug] 	classname: com.dulishuo.times.sixteen.GlobalSchRak
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/usnews/sixteen/GlobalSchoolRank.java (GlobalSchoolRank.java)
+[22170][      debug] 	classname: com.dulishuo.usnews.sixteen.GlobalSchoolRank
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/usnews/InfoGet.java (InfoGet.java)
+[22170][      debug] 	classname: com.dulishuo.usnews.InfoGet
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/usnews/InstituteNewField.java (InstituteNewField.java)
+[22170][      debug] 	classname: com.dulishuo.usnews.InstituteNewField
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/test/JsoupNotTest.java (JsoupNotTest.java)
+[22170][      debug] 	classname: com.dulishuo.test.JsoupNotTest
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/chasedream/MasterPostCrawler.java (MasterPostCrawler.java)
+[22170][      debug] 	classname: com.dulishuo.chasedream.MasterPostCrawler
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/shenqingfang/PgmRankGet.java (PgmRankGet.java)
+[22170][      debug] 	classname: com.dulishuo.shenqingfang.PgmRankGet
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/chasedream/PostCrawler.java (PostCrawler.java)
+[22170][      debug] 	classname: com.dulishuo.chasedream.PostCrawler
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/indexedu/PostGet.java (PostGet.java)
+[22170][      debug] 	classname: com.dulishuo.indexedu.PostGet
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/zhongyingwang/RankEngSchool.java (RankEngSchool.java)
+[22170][      debug] 	classname: com.dulishuo.zhongyingwang.RankEngSchool
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/usnews/RequireGet.java (RequireGet.java)
+[22170][      debug] 	classname: com.dulishuo.usnews.RequireGet
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/usnews/SchoolMatch.java (SchoolMatch.java)
+[22170][      debug] 	classname: com.dulishuo.usnews.SchoolMatch
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/usnews/SixFacultyRanking.java (SixFacultyRanking.java)
+[22170][      debug] 	classname: com.dulishuo.usnews.SixFacultyRanking
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/yimusanfendi/TagEarse.java (TagEarse.java)
+[22170][      debug] 	classname: com.dulishuo.yimusanfendi.TagEarse
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/indexedu/TagEarse.java (TagEarse.java)
+[22170][      debug] 	classname: com.dulishuo.indexedu.TagEarse
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/zhongyingwang/Test.java (Test.java)
+[22170][      debug] 	classname: com.dulishuo.zhongyingwang.Test
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/jituo/Test.java (Test.java)
+[22170][      debug] 	classname: com.dulishuo.jituo.Test
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/indexedu/Test.java (Test.java)
+[22170][      debug] 	classname: com.dulishuo.indexedu.Test
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/test/Translate0718.java (Translate0718.java)
+[22170][      debug] 	classname: com.dulishuo.test.Translate0718
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/yimusanfendi/UrlCrawler.java (UrlCrawler.java)
+[22170][      debug] 	classname: com.dulishuo.yimusanfendi.UrlCrawler
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/usnews/UrlGet.java (UrlGet.java)
+[22170][      debug] 	classname: com.dulishuo.usnews.UrlGet
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/shunshun/UrlGet.java (UrlGet.java)
+[22170][      debug] 	classname: com.dulishuo.shunshun.UrlGet
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/shenqingfang/offer/UrlGet.java (UrlGet.java)
+[22170][      debug] 	classname: com.dulishuo.shenqingfang.offer.UrlGet
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/indexedu/UrlGet.java (UrlGet.java)
+[22170][      debug] 	classname: com.dulishuo.indexedu.UrlGet
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/chasedream/UrlGet.java (UrlGet.java)
+[22170][      debug] 	classname: com.dulishuo.chasedream.UrlGet
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/usnews/UrlGetGrab.java (UrlGetGrab.java)
+[22170][      debug] 	classname: com.dulishuo.usnews.UrlGetGrab
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/qianmu/Util.java (Util.java)
+[22170][      debug] 	classname: com.dulishuo.qianmu.Util
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/zhongyingwang/ZywCrawler.java (ZywCrawler.java)
+[22170][      debug] 	classname: com.dulishuo.zhongyingwang.ZywCrawler
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/yimusanfendi/offer/getContent.java (getContent.java)
+[22170][      debug] 	classname: com.dulishuo.yimusanfendi.offer.getContent
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/shenqingfang/professor/getProfessors.java (getProfessors.java)
+[22170][      debug] 	classname: com.dulishuo.shenqingfang.professor.getProfessors
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/yimusanfendi/luanmaProcess.java (luanmaProcess.java)
+[22170][      debug] 	classname: com.dulishuo.yimusanfendi.luanmaProcess
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/yimusanfendi/offer/offerProcess.java (offerProcess.java)
+[22170][      debug] 	classname: com.dulishuo.yimusanfendi.offer.offerProcess
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/crawler/pgmCrawler.java (pgmCrawler.java)
+[22170][      debug] 	classname: com.dulishuo.crawler.pgmCrawler
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/shenqingfang/pgmGet.java (pgmGet.java)
+[22170][      debug] 	classname: com.dulishuo.shenqingfang.pgmGet
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/zhongyingwang/pgmProcess.java (pgmProcess.java)
+[22170][      debug] 	classname: com.dulishuo.zhongyingwang.pgmProcess
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/zhongyingwang/shlIntroduce.java (shlIntroduce.java)
+[22170][      debug] 	classname: com.dulishuo.zhongyingwang.shlIntroduce
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/test/test0716.java (test0716.java)
+[22170][      debug] 	classname: com.dulishuo.test.test0716
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/test/test07161.java (test07161.java)
+[22170][      debug] 	classname: com.dulishuo.test.test07161
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/test/test07162.java (test07162.java)
+[22170][      debug] 	classname: com.dulishuo.test.test07162
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/test/test0717.java (test0717.java)
+[22170][      debug] 	classname: com.dulishuo.test.test0717
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/test/test0728.java (test0728.java)
+[22170][      debug] 	classname: com.dulishuo.test.test0728
+[22170][      debug] 	classname: com.dulishuo.test.test0728$1
+[22170][      debug] 	classname: com.dulishuo.test.test0728$2
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/test/test0731.java (test0731.java)
+[22170][      debug] 	classname: com.dulishuo.test.test0731
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/test/test0810.java (test0810.java)
+[22170][      debug] 	classname: com.dulishuo.test.test0810
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/test/test7024.java (test7024.java)
+[22170][      debug] 	classname: com.dulishuo.test.test7024
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/yimusanfendi/testCapture.java (testCapture.java)
+[22170][      debug] 	classname: com.dulishuo.yimusanfendi.testCapture
+[22170][      debug] 
+[22170][      debug] filename: src/com/dulishuo/test/testGetFields.java (testGetFields.java)
+[22170][      debug] 	classname: com.dulishuo.test.testGetFields
+[22170][      debug] writing new global tenv
+[22170][      debug] Tenv.store: global tenv has size 4254792 bytes.
+[22170][      debug] Tenv.store: canonicalized tenv has size 1416752 bytes.
+[22170][      debug] done capturing all files
+[22056][   progress] Found 59 source files to analyze in /home/js/dev/repo/ridill/java/pgmCrawler/infer-out
+[22056][environment] Parallel jobs: 4
+[22197][   progress] src/com/dulishuo/crawler/pgmCrawler.java starting
+[22198][   progress] src/com/dulishuo/indexedu/Test.java starting
+[22200][   progress] src/com/dulishuo/qianmu/Util.java starting
+[22201][   progress] src/com/dulishuo/shenqingfang/professor/getProfessors.java starting
+[22201][      debug] Elapsed analysis time: void getProfessors.main(String[]): 7.192ms
+[22201][      debug] Elapsed analysis time: getProfessors.<init>(): 6.765ms
+[22201][      debug] 
+[22201][   progress] src/com/dulishuo/shenqingfang/professor/getProfessors.java DONE
+[22201][   progress] src/com/dulishuo/school/Chi.java starting
+[22198][      debug] Elapsed analysis time: BufferedWriter FileUtil.FileWriter(String): 47.339ms
+[22198][      debug] Elapsed analysis time: void Test.main(String[]): 88.164ms
+[22198][      debug] Elapsed analysis time: Test.<init>(): 2.925ms
+[22198][      debug] 
+[22198][   progress] src/com/dulishuo/indexedu/Test.java DONE
+[22198][   progress] src/com/dulishuo/indexedu/TagEarse.java starting
+[22200][      debug] Elapsed analysis time: Util.<init>(): 15.799ms
+[22200][      debug] Elapsed analysis time: String Util.httpRequest(String): 127ms
+[22200][      debug] Elapsed analysis time: String Util.crawler(String): 163ms
+[22200][      debug] 
+[22200][   progress] src/com/dulishuo/qianmu/Util.java DONE
+[22200][   progress] src/com/dulishuo/test/test07161.java starting
+[22201][      debug] Elapsed analysis time: String CrawlerUtil.httpRequest(String): 44.187ms
+[22201][      debug] Elapsed analysis time: void Chi.test(): 170ms
+[22201][      debug] Elapsed analysis time: void Chi.main(String[]): 196ms
+[22201][      debug] Elapsed analysis time: Chi.<init>(): 3.119ms
+[22201][      debug] 
+[22201][   progress] src/com/dulishuo/school/Chi.java DONE
+[22201][   progress] src/com/dulishuo/usnews/SixFacultyRanking.java starting
+[22198][      debug] Elapsed analysis time: List FileUtil.FileToList(String): 60.516ms
+[22198][      debug] Elapsed analysis time: void TagEarse.main(String[]): 300ms
+[22198][      debug] Elapsed analysis time: void TagEarse.<clinit>(): 2.605ms
+[22198][      debug] Elapsed analysis time: TagEarse.<init>(): 3.921ms
+[22198][      debug] 
+[22198][   progress] src/com/dulishuo/indexedu/TagEarse.java DONE
+[22198][   progress] src/com/dulishuo/yimusanfendi/CrawlerTask.java starting
+[22200][      debug] Elapsed analysis time: void test07161.main(String[]): 231ms
+[22200][      debug] Elapsed analysis time: test07161.<init>(): 2.3ms
+[22200][      debug] 
+[22200][   progress] src/com/dulishuo/test/test07161.java DONE
+[22200][   progress] src/com/dulishuo/times/GetSchoolRank.java starting
+[22200][      debug] Elapsed analysis time: void GetSchoolRank.crawler(): 3.23ms
+[22200][      debug] Elapsed analysis time: GetSchoolRank.<init>(): 2.457ms
+[22200][      debug] Elapsed analysis time: void GetSchoolRank.main(String[]): 2.751ms
+[22200][      debug] 
+[22200][   progress] src/com/dulishuo/times/GetSchoolRank.java DONE
+[22200][   progress] src/com/dulishuo/times/sixteen/GlobalSchRak.java starting
+[22200][      debug] Elapsed analysis time: String CrawlerUtil.httpsRequest(String): 111ms
+[22200][      debug] Elapsed analysis time: void GlobalSchRak.crawler(): 125ms
+[22200][      debug] Elapsed analysis time: void GlobalSchRak.main(String[]): 3.546ms
+[22200][      debug] Elapsed analysis time: GlobalSchRak.<init>(): 2.326ms
+[22200][      debug] 
+[22200][   progress] src/com/dulishuo/times/sixteen/GlobalSchRak.java DONE
+[22200][   progress] src/com/dulishuo/yimusanfendi/offer/GetUrl.java starting
+[22201][      debug] Elapsed analysis time: JSONObject SixFacultyRanking.process(JSONArray,String): 84.177ms
+[22201][      debug] Elapsed analysis time: void SixFacultyRanking.<clinit>(): 2.152ms
+[22201][      debug] Elapsed analysis time: SixFacultyRanking.<init>(): 2.977ms
+[22201][      debug] Elapsed analysis time: List FileUtil.FileToJsonList(String,String): 110ms
+[22201][      debug] Elapsed analysis time: void FileUtil.ListToFile(List,String): 64.573ms
+[22201][      debug] Elapsed analysis time: void SixFacultyRanking.main(String[]): 463ms
+[22201][      debug] 
+[22201][   progress] src/com/dulishuo/usnews/SixFacultyRanking.java DONE
+[22201][   progress] src/com/dulishuo/shenqingfang/pgmGet.java starting
+[22200][      debug] Elapsed analysis time: String GetUrl.httpRequest(String): 47.19ms
+[22200][      debug] Elapsed analysis time: GetUrl.<init>(): 3.513ms
+[22200][      debug] Elapsed analysis time: void GetUrl.getUrl(): 227ms
+[22200][      debug] Elapsed analysis time: void GetUrl.main(String[]): 2.688ms
+[22200][      debug] 
+[22200][   progress] src/com/dulishuo/yimusanfendi/offer/GetUrl.java DONE
+[22200][   progress] src/com/dulishuo/zhongyingwang/Test.java starting
+[22200][      debug] Elapsed analysis time: void Test.main(String[]): 510ms
+[22200][      debug] Elapsed analysis time: Test.<init>(): 2.739ms
+[22200][      debug] 
+[22200][   progress] src/com/dulishuo/zhongyingwang/Test.java DONE
+[22200][   progress] src/com/dulishuo/indexedu/PostGet.java starting
+[22198][      debug] Elapsed analysis time: String CrawlerTask.httpRequest(String): 63.811ms
+[22198][      debug] Elapsed analysis time: String CrawlerTask.getContent(String): 106ms
+[22198][      debug] Elapsed analysis time: List CrawlerTask.parseHtml(String): 285ms
+[22198][      debug] Elapsed analysis time: String CrawlerTask.getPost(String): 1.507s
+[22198][      debug] Elapsed analysis time: List CrawlerTask.call(): 1.556s
+[22198][      debug] Elapsed analysis time: Object CrawlerTask.call(): 3.841ms
+[22198][      debug] Elapsed analysis time: CrawlerTask.<init>(List): 6.477ms
+[22198][      debug] Elapsed analysis time: void CrawlerTask.<clinit>(): 4.001ms
+[22198][      debug] 
+[22198][   progress] src/com/dulishuo/yimusanfendi/CrawlerTask.java DONE
+[22198][   progress] src/com/dulishuo/test/test0810.java starting
+[22201][      debug] Elapsed analysis time: void pgmGet.test(): 359ms
+[22201][      debug] Elapsed analysis time: void pgmGet.main(String[]): 389ms
+[22201][      debug] Elapsed analysis time: List pgmGet.process1(String,String): 226ms
+[22201][      debug] Elapsed analysis time: void pgmGet.getPgmUrl(): 950ms
+[22201][      debug] Elapsed analysis time: void pgmGet.<clinit>(): 3.486ms
+[22201][      debug] Elapsed analysis time: pgmGet.<init>(): 2.421ms
+[22201][      debug] 
+[22201][   progress] src/com/dulishuo/shenqingfang/pgmGet.java DONE
+[22201][   progress] src/com/dulishuo/usnews/Comp.java starting
+[22201][      debug] Elapsed analysis time: void Comp.main(String[]): 50.471ms
+[22201][      debug] Elapsed analysis time: Comp.<init>(): 2.776ms
+[22201][      debug] 
+[22201][   progress] src/com/dulishuo/usnews/Comp.java DONE
+[22201][   progress] src/com/dulishuo/chasedream/MasterPostCrawler.java starting
+[22198][      debug] Elapsed analysis time: test0810.<init>(): 7.712ms
+[22198][      debug] Elapsed analysis time: String test0810.filter(String): 2.645ms
+[22198][      debug] Elapsed analysis time: List FileUtil.FileToListJson(String,int): 342ms
+[22198][      debug] Elapsed analysis time: void test0810.main(String[]): 594ms
+[22198][      debug] Elapsed analysis time: void test0810.<clinit>(): 2.49ms
+[22198][      debug] 
+[22198][   progress] src/com/dulishuo/test/test0810.java DONE
+[22198][   progress] src/com/dulishuo/test/test0728.java starting
+[22200][      debug] Elapsed analysis time: long PostGet.getDate(String,int): 44.575ms
+[22200][      debug] Elapsed analysis time: String PostGet.tt(String): 142ms
+[22200][      debug] Elapsed analysis time: String PostGet.getResult(String,int): 1.059s
+[22200][      debug] Elapsed analysis time: void PostGet.main(String[]): 1.333s
+[22200][      debug] Elapsed analysis time: PostGet.<init>(): 2.503ms
+[22200][      debug] Elapsed analysis time: void PostGet.<clinit>(): 4.791ms
+[22200][      debug] Elapsed analysis time: String PostGet.getText(Element): 2.769ms
+[22200][      debug] 
+[22200][   progress] src/com/dulishuo/indexedu/PostGet.java DONE
+[22200][   progress] src/com/dulishuo/zhongyingwang/RankEngSchool.java starting
+[22198][      debug] Elapsed analysis time: test0728.<init>(): 7.436ms
+[22198][      debug] Elapsed analysis time: String test0728.getMethod(String): 98.378ms
+[22198][      debug] Elapsed analysis time: X509Certificate[] test0728$2.getAcceptedIssuers(): 3.569ms
+[22198][      debug] Elapsed analysis time: void test0728.main(String[]): 5.612ms
+[22198][      debug] Elapsed analysis time: void test0728$2.checkServerTrusted(X509Certificate[],String): 5.839ms
+[22198][      debug] Elapsed analysis time: test0728$1.<init>(): 2.526ms
+[22198][      debug] Elapsed analysis time: test0728$2.<init>(): 2.57ms
+[22198][      debug] Elapsed analysis time: void test0728.<clinit>(): 18.472ms
+[22198][      debug] Elapsed analysis time: boolean test0728$1.verify(String,SSLSession): 3.421ms
+[22198][      debug] Elapsed analysis time: void test0728$2.checkClientTrusted(X509Certificate[],String): 4.889ms
+[22198][      debug] 
+[22198][   progress] src/com/dulishuo/test/test0728.java DONE
+[22198][   progress] src/com/dulishuo/chasedream/UrlGet.java starting
+[22197][      debug] Elapsed analysis time: pgmCrawler.<init>(): 40.537ms
+[22197][      debug] Elapsed analysis time: void pgmCrawler.<clinit>(): 5.048ms
+[22197][      debug] Elapsed analysis time: void pgmCrawler.main(String[]): 2.794s
+[22197][      debug] 
+[22197][   progress] src/com/dulishuo/crawler/pgmCrawler.java DONE
+[22197][   progress] src/com/dulishuo/yimusanfendi/UrlCrawler.java starting
+[22200][      debug] Elapsed analysis time: void RankEngSchool.main(String[]): 148ms
+[22200][      debug] Elapsed analysis time: RankEngSchool.<init>(): 2.307ms
+[22200][      debug] 
+[22200][   progress] src/com/dulishuo/zhongyingwang/RankEngSchool.java DONE
+[22200][   progress] src/com/dulishuo/jituo/Test.java starting
+[22200][      debug] Elapsed analysis time: Test.<init>(): 3.675ms
+[22200][      debug] Elapsed analysis time: void Test.test(): 4.714ms
+[22200][      debug] Elapsed analysis time: void Test.main(String[]): 15.641ms
+[22200][      debug] 
+[22200][   progress] src/com/dulishuo/jituo/Test.java DONE
+[22200][   progress] src/com/dulishuo/qianmu/salary/Crawler.java starting
+[22198][      debug] Elapsed analysis time: UrlGet.<init>(): 6.982ms
+[22198][      debug] Elapsed analysis time: List UrlGet.parseHtml(String): 83.032ms
+[22198][      debug] Elapsed analysis time: void UrlGet.main(String[]): 162ms
+[22198][      debug] 
+[22198][   progress] src/com/dulishuo/chasedream/UrlGet.java DONE
+[22198][   progress] src/com/dulishuo/usnews/AcceptEmployedRateGet.java starting
+[22197][      debug] Elapsed analysis time: String UrlCrawler.httpRequest(String): 35.705ms
+[22197][      debug] Elapsed analysis time: List UrlCrawler.getUrl(String): 140ms
+[22197][      debug] Elapsed analysis time: void UrlCrawler.main(String[]): 94.226ms
+[22197][      debug] Elapsed analysis time: UrlCrawler.<init>(): 7.641ms
+[22197][      debug] 
+[22197][   progress] src/com/dulishuo/yimusanfendi/UrlCrawler.java DONE
+[22197][   progress] src/com/dulishuo/test/test07162.java starting
+[22197][      debug] Elapsed analysis time: void test07162.main(String[]): 121ms
+[22197][      debug] Elapsed analysis time: test07162.<init>(): 2.422ms
+[22197][      debug] 
+[22197][   progress] src/com/dulishuo/test/test07162.java DONE
+[22197][   progress] src/com/dulishuo/jituo/offer/Crawler.java starting
+[22197][      debug] Elapsed analysis time: void Crawler.test(): 88.242ms
+[22197][      debug] Elapsed analysis time: void Crawler.main(String[]): 102ms
+[22197][      debug] Elapsed analysis time: Crawler.<init>(): 2.455ms
+[22197][      debug] 
+[22197][   progress] src/com/dulishuo/jituo/offer/Crawler.java DONE
+[22197][   progress] src/com/dulishuo/usnews/InstituteNewField.java starting
+[22197][      debug] Elapsed analysis time: void InstituteNewField.<clinit>(): 5.578ms
+[22197][      debug] Elapsed analysis time: void InstituteNewField.main(String[]): 259ms
+[22197][      debug] Elapsed analysis time: InstituteNewField.<init>(): 2.685ms
+[22197][      debug] 
+[22197][   progress] src/com/dulishuo/usnews/InstituteNewField.java DONE
+[22197][   progress] src/com/dulishuo/zhongyingwang/shlIntroduce.java starting
+[22198][      debug] Elapsed analysis time: void AcceptEmployedRateGet.<clinit>(): 13.902ms
+[22198][      debug] Elapsed analysis time: Set AcceptEmployedRateGet.extractWord(String): 28.219ms
+[22198][      debug] Elapsed analysis time: String AcceptEmployedRateGet.process(String): 117ms
+[22198][      debug] Elapsed analysis time: AcceptEmployedRateGet.<init>(): 2.617ms
+[22198][      debug] Elapsed analysis time: void AcceptEmployedRateGet.main(String[]): 1.377s
+[22198][      debug] 
+[22198][   progress] src/com/dulishuo/usnews/AcceptEmployedRateGet.java DONE
+[22198][   progress] src/com/dulishuo/usnews/RequireGet.java starting
+[22198][      debug] Elapsed analysis time: String RequireGet.getHttp(String): 41.93ms
+[22198][      debug] Elapsed analysis time: String RequireGet.process(String,String,String): 229ms
+[22198][      debug] Elapsed analysis time: BufferedWriter FileUtil.FileWriter(String,boolean): 12.161ms
+[22198][      debug] Elapsed analysis time: void RequireGet.main(String[]): 281ms
+[22198][      debug] Elapsed analysis time: RequireGet.<init>(): 2.701ms
+[22198][      debug] 
+[22198][   progress] src/com/dulishuo/usnews/RequireGet.java DONE
+[22198][   progress] src/com/dulishuo/test/Agri.java starting
+[22200][      debug] Elapsed analysis time: void Crawler.<clinit>(): 21.181ms
+[22200][      debug] Elapsed analysis time: void Crawler.crawler(): 833ms
+[22200][      debug] Elapsed analysis time: void FileUtil.ListToFile(List,String,boolean): 89.418ms
+[22200][      debug] Elapsed analysis time: void Crawler.extra(): 1.716s
+[22200][      debug] Elapsed analysis time: void Crawler.main(String[]): 2.198ms
+[22200][      debug] Elapsed analysis time: Crawler.<init>(): 2.345ms
+[22200][      debug] 
+[22200][   progress] src/com/dulishuo/qianmu/salary/Crawler.java DONE
+[22200][   progress] src/com/dulishuo/zhongyingwang/ZywCrawler.java starting
+[22197][      debug] Elapsed analysis time: String shlIntroduce.process(String): 25.088ms
+[22197][      debug] Elapsed analysis time: void shlIntroduce.main(String[]): 1.935s
+[22197][      debug] Elapsed analysis time: shlIntroduce.<init>(): 2.581ms
+[22197][      debug] Elapsed analysis time: void shlIntroduce.<clinit>(): 2.593ms
+[22197][      debug] 
+[22197][   progress] src/com/dulishuo/zhongyingwang/shlIntroduce.java DONE
+[22197][   progress] src/com/dulishuo/util/CrawlerUtil.java starting
+[22197][      debug] Elapsed analysis time: void CrawlerUtil$2.checkServerTrusted(X509Certificate[],String): 17.687ms
+[22197][      debug] Elapsed analysis time: CrawlerUtil.<init>(): 2.617ms
+[22197][      debug] Elapsed analysis time: void CrawlerUtil$2.checkClientTrusted(X509Certificate[],String): 6.073ms
+[22197][      debug] Elapsed analysis time: boolean CrawlerUtil$1.verify(String,SSLSession): 3.765ms
+[22197][      debug] Elapsed analysis time: String CrawlerUtil.earse(String): 21.879ms
+[22197][      debug] Elapsed analysis time: CrawlerUtil$1.<init>(): 2.486ms
+[22197][      debug] Elapsed analysis time: CrawlerUtil$2.<init>(): 8.94ms
+[22197][      debug] Elapsed analysis time: void CrawlerUtil.<clinit>(): 48.807ms
+[22197][      debug] Elapsed analysis time: X509Certificate[] CrawlerUtil$2.getAcceptedIssuers(): 2.082ms
+[22197][      debug] Elapsed analysis time: List CrawlerUtil.getUrl(String): 144ms
+[22197][      debug] Elapsed analysis time: String CrawlerUtil.getSchool(String): 125ms
+[22197][      debug] 
+[22197][   progress] src/com/dulishuo/util/CrawlerUtil.java DONE
+[22197][   progress] src/com/dulishuo/util/FileUtil.java starting
+[22197][      debug] Elapsed analysis time: List FileUtil.FileToList(String,String): 105ms
+[22197][      debug] Elapsed analysis time: BufferedReader FileUtil.FileReader(String): 13.979ms
+[22197][      debug] Elapsed analysis time: String FileUtil.earse(String): 27.804ms
+[22197][      debug] Elapsed analysis time: FileUtil.<init>(): 2.543ms
+[22197][      debug] 
+[22197][   progress] src/com/dulishuo/util/FileUtil.java DONE
+[22197][   progress] src/com/dulishuo/usnews/sixteen/GlobalSchoolRank.java starting
+[22197][      debug] Elapsed analysis time: String GlobalSchoolRank.getHttp(String): 54.74ms
+[22197][      debug] Elapsed analysis time: List GlobalSchoolRank.parseHtml(String): 190ms
+[22197][      debug] Elapsed analysis time: GlobalSchoolRank.<init>(): 2.676ms
+[22197][      debug] Elapsed analysis time: void GlobalSchoolRank.crawler(): 112ms
+[22197][      debug] Elapsed analysis time: void GlobalSchoolRank.main(String[]): 116ms
+[22197][      debug] Elapsed analysis time: void GlobalSchoolRank.<clinit>(): 3.221ms
+[22197][      debug] 
+[22197][   progress] src/com/dulishuo/usnews/sixteen/GlobalSchoolRank.java DONE
+[22197][   progress] src/com/dulishuo/test/test7024.java starting
+[22197][      debug] Elapsed analysis time: void test7024.main(String[]): 7.757ms
+[22197][      debug] Elapsed analysis time: test7024.<init>(): 2.502ms
+[22197][      debug] 
+[22197][   progress] src/com/dulishuo/test/test7024.java DONE
+[22197][   progress] src/com/dulishuo/yimusanfendi/luanmaProcess.java starting
+[22197][      debug] Elapsed analysis time: void luanmaProcess.main(String[]): 2.248ms
+[22197][      debug] Elapsed analysis time: luanmaProcess.<init>(): 2.55ms
+[22197][      debug] 
+[22197][   progress] src/com/dulishuo/yimusanfendi/luanmaProcess.java DONE
+[22197][   progress] src/com/dulishuo/test/JsoupNotTest.java starting
+[22200][      debug] Elapsed analysis time: String ZywCrawler.process(String): 88.218ms
+[22200][      debug] Elapsed analysis time: JSONObject ZywCrawler.domParse(String): 899ms
+[22200][      debug] Elapsed analysis time: void ZywCrawler.main(String[]): 1.039s
+[22200][      debug] Elapsed analysis time: void ZywCrawler.<clinit>(): 2.693ms
+[22200][      debug] Elapsed analysis time: ZywCrawler.<init>(): 3.386ms
+[22200][      debug] 
+[22200][   progress] src/com/dulishuo/zhongyingwang/ZywCrawler.java DONE
+[22200][   progress] src/com/dulishuo/usnews/InfoGet.java starting
+[22198][      debug] Elapsed analysis time: Agri.<init>(): 20.099ms
+[22198][      debug] Elapsed analysis time: String Agri.extract(String,String): 69.153ms
+[22198][      debug] Elapsed analysis time: void Agri.test(): 1.641s
+[22198][      debug] Elapsed analysis time: void Agri.main(String[]): 24.339ms
+[22198][      debug] 
+[22198][   progress] src/com/dulishuo/test/Agri.java DONE
+[22198][   progress] src/com/dulishuo/usnews/SchoolMatch.java starting
+[22197][      debug] Elapsed analysis time: JsoupNotTest.<init>(): 14.169ms
+[22197][      debug] Elapsed analysis time: void JsoupNotTest.main(String[]): 322ms
+[22197][      debug] 
+[22197][   progress] src/com/dulishuo/test/JsoupNotTest.java DONE
+[22197][   progress] src/com/dulishuo/usnews/UrlGetGrab.java starting
+[22197][      debug] Elapsed analysis time: UrlGetGrab.<init>(): 7.047ms
+[22197][      debug] Elapsed analysis time: String UrlGetGrab.getHttp(String): 45.46ms
+[22197][      debug] Elapsed analysis time: String UrlGetGrab.process(String): 77.25ms
+[22197][      debug] Elapsed analysis time: void UrlGetGrab.<clinit>(): 2.359ms
+[22197][      debug] Elapsed analysis time: void UrlGetGrab.main(String[]): 98.322ms
+[22197][      debug] 
+[22197][   progress] src/com/dulishuo/usnews/UrlGetGrab.java DONE
+[22197][   progress] src/com/dulishuo/yimusanfendi/offer/offerProcess.java starting
+[22198][      debug] Elapsed analysis time: SchoolMatch.<init>(): 9.223ms
+[22198][      debug] Elapsed analysis time: boolean SchoolMatch.isSetEqual(Set,Set): 55.201ms
+[22198][      debug] Elapsed analysis time: void SchoolMatch.<clinit>(): 34.118ms
+[22198][      debug] Elapsed analysis time: Set SchoolMatch.extractWord(String): 37.992ms
+[22198][      debug] Elapsed analysis time: void SchoolMatch.main(String[]): 459ms
+[22198][      debug] 
+[22198][   progress] src/com/dulishuo/usnews/SchoolMatch.java DONE
+[22198][   progress] src/com/dulishuo/yimusanfendi/offer/getContent.java starting
+[22198][      debug] Elapsed analysis time: String getContent.httpRequest(String): 40.469ms
+[22198][      debug] Elapsed analysis time: void getContent.main(String[]): 851ms
+[22198][      debug] Elapsed analysis time: getContent.<init>(): 2.343ms
+[22198][      debug] Elapsed analysis time: String getContent.getContent(String): 116ms
+[22198][      debug] 
+[22198][   progress] src/com/dulishuo/yimusanfendi/offer/getContent.java DONE
+[22198][   progress] src/com/dulishuo/test/testGetFields.java starting
+[22200][      debug] Elapsed analysis time: InfoGet.<init>(): 19.214ms
+[22200][      debug] Elapsed analysis time: String InfoGet.getHttp(String): 74.992ms
+[22200][      debug] Elapsed analysis time: String InfoGet.getInfo(String): 1.408s
+[22200][      debug] Elapsed analysis time: void InfoGet.main(String[]): 250ms
+[22200][      debug] Elapsed analysis time: void InfoGet.<clinit>(): 5.49ms
+[22200][      debug] Elapsed analysis time: boolean InfoGet.isWant(String): 2.547ms
+[22200][      debug] 
+[22200][   progress] src/com/dulishuo/usnews/InfoGet.java DONE
+[22200][   progress] src/com/dulishuo/shenqingfang/PgmRankGet.java starting
+[22198][      debug] Elapsed analysis time: JSONObject testGetFields.reaserch(JSONObject): 38.944ms
+[22198][      debug] Elapsed analysis time: JSONObject testGetFields.contact(JSONObject): 44.628ms
+[22198][      debug] Elapsed analysis time: JSONArray testGetFields.qdm(String): 576ms
+[22198][      debug] Elapsed analysis time: JSONObject testGetFields.description(JSONObject): 30.812ms
+[22198][      debug] Elapsed analysis time: JSONObject testGetFields.fee(JSONObject): 22.034ms
+[22198][      debug] Elapsed analysis time: JSONObject testGetFields.numStudent(JSONObject): 20.207ms
+[22198][      debug] Elapsed analysis time: testGetFields.<init>(): 2.694ms
+[22198][      debug] Elapsed analysis time: void testGetFields.<clinit>(): 22.624ms
+[22198][      debug] Elapsed analysis time: void testGetFields.main(String[]): 819ms
+[22198][      debug] 
+[22198][   progress] src/com/dulishuo/test/testGetFields.java DONE
+[22198][   progress] src/com/dulishuo/yimusanfendi/testCapture.java starting
+[22200][      debug] Elapsed analysis time: String PgmRankGet.getHttp(String): 212ms
+[22200][      debug] Elapsed analysis time: void PgmRankGet.test(): 1.13s
+[22200][      debug] Elapsed analysis time: void PgmRankGet.process(): 411ms
+[22200][      debug] Elapsed analysis time: void PgmRankGet.<clinit>(): 4.198ms
+[22200][      debug] Elapsed analysis time: PgmRankGet.<init>(): 2.834ms
+[22200][      debug] Elapsed analysis time: void PgmRankGet.main(String[]): 13.507ms
+[22200][      debug] 
+[22200][   progress] src/com/dulishuo/shenqingfang/PgmRankGet.java DONE
+[22200][   progress] src/com/dulishuo/shenqingfang/offer/UrlGet.java starting
+[22201][      debug] Elapsed analysis time: String MasterPostCrawler.getPost(String,int): 867ms
+[22201][      debug] Elapsed analysis time: void MasterPostCrawler.main(String[]): 8.218s
+[22201][      debug] Elapsed analysis time: MasterPostCrawler.<init>(): 2.879ms
+[22201][      debug] 
+[22201][   progress] src/com/dulishuo/chasedream/MasterPostCrawler.java DONE
+[22201][   progress] src/com/dulishuo/chasedream/PostCrawler.java starting
+[22198][      debug] Elapsed analysis time: void testCapture.main(String[]): 527ms
+[22198][      debug] Elapsed analysis time: testCapture.<init>(): 3.803ms
+[22198][      debug] 
+[22198][   progress] src/com/dulishuo/yimusanfendi/testCapture.java DONE
+[22198][   progress] src/com/dulishuo/test/Translate0718.java starting
+[22198][      debug] Elapsed analysis time: Translate0718.<init>(): 8.433ms
+[22198][      debug] Elapsed analysis time: String Translate0718.process(String): 83.055ms
+[22198][      debug] Elapsed analysis time: void Translate0718.main(String[]): 162ms
+[22198][      debug] Elapsed analysis time: void Translate0718.<clinit>(): 3.253ms
+[22198][      debug] 
+[22198][   progress] src/com/dulishuo/test/Translate0718.java DONE
+[22198][   progress] src/com/dulishuo/indexedu/UrlGet.java starting
+[22198][      debug] Elapsed analysis time: void UrlGet.<clinit>(): 6.878ms
+[22198][      debug] Elapsed analysis time: List UrlGet.parseHtml(String): 70.158ms
+[22198][      debug] Elapsed analysis time: void UrlGet.main(String[]): 253ms
+[22198][      debug] Elapsed analysis time: UrlGet.<init>(): 3.271ms
+[22198][      debug] 
+[22198][   progress] src/com/dulishuo/indexedu/UrlGet.java DONE
+[22198][   progress] src/com/dulishuo/qianmu/city/Crawler.java starting
+[22200][      debug] Elapsed analysis time: void UrlGet.<clinit>(): 559ms
+[22200][      debug] Elapsed analysis time: boolean UrlGet.isLanguage(String): 33.104ms
+[22200][      debug] Elapsed analysis time: void UrlGet.test(): 104ms
+[22200][      debug] Elapsed analysis time: String UrlGet.getContent(String): 16.664ms
+[22200][      debug] Elapsed analysis time: int UrlGet.getPages(String): 31.693ms
+[22200][      debug] Elapsed analysis time: List UrlGet.parse(String,String): 438ms
+[22200][      debug] Elapsed analysis time: List UrlGet.get(String,String): 613ms
+[22200][      debug] Elapsed analysis time: void UrlGet.process(): 144ms
+[22200][      debug] Elapsed analysis time: void UrlGet.main(String[]): 159ms
+[22200][      debug] Elapsed analysis time: UrlGet.<init>(): 2.289ms
+[22200][      debug] Elapsed analysis time: void UrlGet.getOffer(): 196ms
+[22200][      debug] Elapsed analysis time: void UrlGet.getUrl(): 227ms
+[22200][      debug] 
+[22200][   progress] src/com/dulishuo/shenqingfang/offer/UrlGet.java DONE
+[22200][   progress] src/com/dulishuo/shunshun/UrlGet.java starting
+[22200][      debug] Elapsed analysis time: UrlGet.<init>(): 7.989ms
+[22200][      debug] Elapsed analysis time: void UrlGet.main(String[]): 3.619ms
+[22200][      debug] 
+[22200][   progress] src/com/dulishuo/shunshun/UrlGet.java DONE
+[22200][   progress] src/com/dulishuo/yimusanfendi/Crawler.java starting
+[22198][      debug] Elapsed analysis time: void Crawler.process_british(String): 407ms
+[22198][      debug] Elapsed analysis time: void Crawler.process_usa(String): 858ms
+[22198][      debug] Elapsed analysis time: void Crawler.usa(): 865ms
+[22198][      debug] Elapsed analysis time: void Crawler.british(): 11.808ms
+[22198][      debug] Elapsed analysis time: void Crawler.main(String[]): 15.065ms
+[22198][      debug] Elapsed analysis time: Crawler.<init>(): 3.523ms
+[22198][      debug] 
+[22198][   progress] src/com/dulishuo/qianmu/city/Crawler.java DONE
+[22198][   progress] src/com/dulishuo/test/test0717.java starting
+[22201][      debug] Elapsed analysis time: String PostCrawler.getPost(String,int): 1.118s
+[22201][      debug] Elapsed analysis time: PostCrawler.<init>(): 2.771ms
+[22201][      debug] Elapsed analysis time: void PostCrawler.main(String[]): 2.318s
+[22201][      debug] 
+[22201][   progress] src/com/dulishuo/chasedream/PostCrawler.java DONE
+[22201][   progress] src/com/dulishuo/test/test0731.java starting
+[22201][      debug] Elapsed analysis time: void test0731.main(String[]): 7.726ms
+[22201][      debug] Elapsed analysis time: test0731.<init>(): 2.575ms
+[22201][      debug] 
+[22201][   progress] src/com/dulishuo/test/test0731.java DONE
+[22201][   progress] src/com/dulishuo/usnews/UrlGet.java starting
+[22197][      debug] Elapsed analysis time: int offerProcess.getDep(String): 143ms
+[22197][      debug] Elapsed analysis time: int offerProcess.getResult(String): 32.613ms
+[22197][      debug] Elapsed analysis time: void offerProcess.getDepartment(): 891ms
+[22197][      debug] Elapsed analysis time: String offerProcess.getGre(String): 8.843ms
+[22197][      debug] Elapsed analysis time: String offerProcess.getToefl(String): 10.344ms
+[22197][      debug] Elapsed analysis time: void offerProcess.greToefl(): 270ms
+[22197][      debug] Elapsed analysis time: String offerProcess.gpa(String): 192ms
+[22197][      debug] Elapsed analysis time: offerProcess.<init>(): 2.767ms
+[22197][      debug] Elapsed analysis time: void offerProcess.getIns(): 4.908ms
+[22197][      debug] Elapsed analysis time: void offerProcess.rank(): 621ms
+[22197][      debug] Elapsed analysis time: int offerProcess.getIns(String): 124ms
+[22197][      debug] Elapsed analysis time: void offerProcess.toJson(): 3.2s
+[22197][      debug] Elapsed analysis time: void offerProcess.getSchIdFail(): 488ms
+[22197][      debug] Elapsed analysis time: void offerProcess.getSchId(): 356ms
+[22197][      debug] Elapsed analysis time: void offerProcess.test(): 63.01ms
+[22197][      debug] Elapsed analysis time: void offerProcess.hebing(): 160ms
+[22197][      debug] Elapsed analysis time: void offerProcess.fieldOth(): 415ms
+[22197][      debug] Elapsed analysis time: void offerProcess.main(String[]): 421ms
+[22197][      debug] Elapsed analysis time: void offerProcess.<clinit>(): 14.856ms
+[22197][      debug] Elapsed analysis time: void offerProcess.guilei(): 118ms
+[22197][      debug] 
+[22197][   progress] src/com/dulishuo/yimusanfendi/offer/offerProcess.java DONE
+[22197][   progress] src/com/dulishuo/yimusanfendi/TagEarse.java starting
+[22198][      debug] Elapsed analysis time: String test0717.process(String): 34.665ms
+[22198][      debug] Elapsed analysis time: void test0717.main(String[]): 2.76s
+[22198][      debug] Elapsed analysis time: test0717.<init>(): 2.768ms
+[22198][      debug] 
+[22198][   progress] src/com/dulishuo/test/test0717.java DONE
+[22198][   progress] src/com/dulishuo/test/test0716.java starting
+[22198][      debug] Elapsed analysis time: void test0716.<clinit>(): 10.212ms
+[22198][      debug] Elapsed analysis time: test0716.<init>(): 2.828ms
+[22198][      debug] Elapsed analysis time: void test0716.test(): 25.585ms
+[22198][      debug] Elapsed analysis time: void test0716.main(String[]): 53.209ms
+[22198][      debug] 
+[22198][   progress] src/com/dulishuo/test/test0716.java DONE
+[22198][   progress] src/com/dulishuo/zhongyingwang/pgmProcess.java starting
+[22201][      debug] Elapsed analysis time: String UrlGet.getHttp(String): 58.718ms
+[22201][      debug] Elapsed analysis time: List UrlGet.getUrl(String,int): 1.249s
+[22201][      debug] Elapsed analysis time: void UrlGet.main(String[]): 1.325s
+[22201][      debug] Elapsed analysis time: UrlGet.<init>(): 4.672ms
+[22201][      debug] Elapsed analysis time: void UrlGet.<clinit>(): 2.816ms
+[22201][      debug] 
+[22201][   progress] src/com/dulishuo/usnews/UrlGet.java DONE
+[22198][      debug] Elapsed analysis time: JSONObject pgmProcess.process(String): 350ms
+[22198][      debug] Elapsed analysis time: String pgmProcess.address(String): 74.403ms
+[22198][      debug] Elapsed analysis time: void pgmProcess.main(String[]): 304ms
+[22198][      debug] Elapsed analysis time: pgmProcess.<init>(): 2.602ms
+[22198][      debug] Elapsed analysis time: void pgmProcess.<clinit>(): 2.423ms
+[22198][      debug] 
+[22198][   progress] src/com/dulishuo/zhongyingwang/pgmProcess.java DONE
+[22197][      debug] Elapsed analysis time: String TagEarse.tt(String): 172ms
+[22197][      debug] Elapsed analysis time: long TagEarse.getDate(String,int): 22.671ms
+[22197][      debug] Elapsed analysis time: void TagEarse.main(String[]): 3.075s
+[22197][      debug] Elapsed analysis time: TagEarse.<init>(): 1.51ms
+[22197][      debug] Elapsed analysis time: void TagEarse.<clinit>(): 1.494ms
+[22197][      debug] 
+[22197][   progress] src/com/dulishuo/yimusanfendi/TagEarse.java DONE
+[22200][      debug] Elapsed analysis time: String Crawler.httpRequest(String): 102ms
+[22200][      debug] Elapsed analysis time: void Crawler.<clinit>(): 3.775ms
+[22200][      debug] Elapsed analysis time: String Crawler.getContent(String): 59.619ms
+[22200][      debug] Elapsed analysis time: String Crawler.getAuthor_say(Element): 62.464ms
+[22200][      debug] Elapsed analysis time: String Crawler.earse(String): 77.287ms
+[22200][      debug] Elapsed analysis time: Crawler.<init>(): 8.214ms
+[22200][      debug] Elapsed analysis time: String Crawler.tt(String): 156ms
+[22200][      debug] Elapsed analysis time: String Crawler.getPost(String,int): 1.706s
+[22200][      debug] Elapsed analysis time: void Crawler.main(String[]): 3.662s
+[22200][      debug] 
+[22200][   progress] src/com/dulishuo/yimusanfendi/Crawler.java DONE
+[22056][      debug] Analysis phase finished in 17.704s
+[22056][      debug] Collected stats:
+[22056][      debug] Backend stats:
+[22056][      debug]   summary_file_try_load= 20989
+[22056][      debug]   summary_read_from_disk= 33
+[22056][      debug]   summary_cache_hits= 185032 (94%)
+[22056][      debug]   summary_cache_misses= 10511
+[22056][      debug]   summary_has_model_queries= 0
+[22056][      debug]   ondemand_procs_analyzed= 278
+[22056][      debug]   ondemand_local_cache_hits= 11511 (93%)
+[22056][      debug]   ondemand_local_cache_misses= 862
+[22056][      debug]   proc_locker_lock_time_user= 0.00000000
+[22056][      debug]   proc_locker_lock_time_sys= 0.00000000
+[22056][      debug]   proc_locker_lock_time_wall= 0.00000000
+[22056][      debug]   proc_locker_unlock_time_user= 0.00000000
+[22056][      debug]   proc_locker_unlock_time_sys= 0.00000000
+[22056][      debug]   proc_locker_unlock_time_wall= 0.00000000
+[22056][      debug]   restart_scheduler_useful_time_user= 0.00000000
+[22056][      debug]   restart_scheduler_useful_time_sys= 0.00000000
+[22056][      debug]   restart_scheduler_useful_time_wall= 0.00000000
+[22056][      debug]   restart_scheduler_total_time_user= 0.00000000
+[22056][      debug]   restart_scheduler_total_time_sys= 0.00000000
+[22056][      debug]   restart_scheduler_total_time_wall= 0.00000000
+[22056][      debug]   scheduler_process_analysis_time_user= 0.12658100
+[22056][      debug]   scheduler_process_analysis_time_sys= 0.03015000
+[22056][      debug]   scheduler_process_analysis_time_wall= 17.70352905
+[22056][      debug]   
+[22056][      debug] 

@@ -1,0 +1,192 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_1" [label="1: Start boolean SchoolMatch.isSetEqual(Set,Set)\nFormals:  set1:java.util.Set* set2:java.util.Set*\nLocals:  $irvar6:void $irvar5:void $irvar4:void $irvar3:void $irvar2:void $irvar1:void $irvar0:void isFullEqual:_Bool ite2:java.util.Iterator* ite1:java.util.Iterator* \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_1" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_4" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_1" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_5" ;
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_2" [label="2: Exit boolean SchoolMatch.isSetEqual(Set,Set) \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [label="3:  exceptions sink \n   NULLIFY(&ite2); [line 112]\n  NULLIFY(&isFullEqual); [line 112]\n  NULLIFY(&$irvar3); [line 112]\n  NULLIFY(&$irvar5); [line 112]\n  NULLIFY(&$irvar4); [line 112]\n  NULLIFY(&$irvar6); [line 112]\n  NULLIFY(&$irvar0); [line 112]\n  NULLIFY(&$irvar1); [line 112]\n  NULLIFY(&$irvar2); [line 112]\n  EXIT_SCOPE(ite2,isFullEqual,$irvar3,$irvar5,$irvar4,$irvar6,$irvar0,$irvar1,$irvar2); [line 112]\n  APPLY_ABSTRACTION; [line 112]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_2" ;
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_4" [label="4: Prune (true branch, if) \n   n$0=*&set1:java.util.Set* [line 92]\n  PRUNE(!(n$0 != null), true); [line 92]\n  EXIT_SCOPE(n$0); [line 92]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_4" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_6" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_4" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_7" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_4" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_5" [label="5: Prune (false branch, if) \n   n$0=*&set1:java.util.Set* [line 92]\n  PRUNE((n$0 != null), false); [line 92]\n  EXIT_SCOPE(n$0); [line 92]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_5" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_9" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_5" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_10" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_5" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_6" [label="6: Prune (true branch, if) \n   n$1=*&set2:java.util.Set* [line 92]\n  PRUNE(!(n$1 != null), true); [line 92]\n  NULLIFY(&set2); [line 92]\n  EXIT_SCOPE(n$1,set2); [line 92]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_6" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_8" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_6" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_7" [label="7: Prune (false branch, if) \n   n$1=*&set2:java.util.Set* [line 92]\n  PRUNE((n$1 != null), false); [line 92]\n  EXIT_SCOPE(n$1); [line 92]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_7" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_9" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_7" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_10" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_7" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_8" [label="8:  method_body \n   *&return:_Bool=1 [line 93]\n  APPLY_ABSTRACTION; [line 93]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_8" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_2" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_8" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_9" [label="9: Prune (true branch, if) \n   n$2=*&set1:java.util.Set* [line 96]\n  PRUNE(!(n$2 == null), true); [line 96]\n  EXIT_SCOPE(n$2); [line 96]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_9" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_11" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_9" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_12" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_9" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_10" [label="10: Prune (false branch, if) \n   n$2=*&set1:java.util.Set* [line 96]\n  PRUNE((n$2 == null), false); [line 96]\n  NULLIFY(&set1); [line 96]\n  EXIT_SCOPE(n$2,set1); [line 96]\n  APPLY_ABSTRACTION; [line 96]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_10" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_23" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_10" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_11" [label="11: Prune (true branch, if) \n   n$3=*&set2:java.util.Set* [line 96]\n  PRUNE(!(n$3 == null), true); [line 96]\n  EXIT_SCOPE(n$3); [line 96]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_11" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_13" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_11" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_12" [label="12: Prune (false branch, if) \n   n$3=*&set2:java.util.Set* [line 96]\n  PRUNE((n$3 == null), false); [line 96]\n  NULLIFY(&set2); [line 96]\n  EXIT_SCOPE(n$3,set2); [line 96]\n  APPLY_ABSTRACTION; [line 96]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_12" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_23" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_12" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_13" [label="13:  Call int Set.size() \n   n$4=*&set1:java.util.Set* [line 96]\n  _=*n$4:java.util.Set*(root java.util.Set) [line 96]\n  n$6=_fun_int Set.size()(n$4:java.util.Set*) interface virtual [line 96]\n  *&$irvar0:int=n$6 [line 96]\n  EXIT_SCOPE(_,n$4,n$6); [line 96]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_13" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_14" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_13" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_14" [label="14:  Call int Set.size() \n   n$7=*&set2:java.util.Set* [line 96]\n  _=*n$7:java.util.Set*(root java.util.Set) [line 96]\n  n$9=_fun_int Set.size()(n$7:java.util.Set*) interface virtual [line 96]\n  *&$irvar1:int=n$9 [line 96]\n  EXIT_SCOPE(_,n$7,n$9); [line 96]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_14" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_15" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_14" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_16" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_14" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_15" [label="15: Prune (true branch, if) \n   n$10=*&$irvar0:int [line 96]\n  n$11=*&$irvar1:int [line 96]\n  PRUNE(!(n$10 != n$11), true); [line 96]\n  NULLIFY(&$irvar0); [line 96]\n  NULLIFY(&$irvar1); [line 96]\n  EXIT_SCOPE(n$10,n$11,$irvar0,$irvar1); [line 96]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_15" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_17" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_15" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_16" [label="16: Prune (false branch, if) \n   n$10=*&$irvar0:int [line 96]\n  n$11=*&$irvar1:int [line 96]\n  PRUNE((n$10 != n$11), false); [line 96]\n  NULLIFY(&$irvar0); [line 96]\n  NULLIFY(&$irvar1); [line 96]\n  EXIT_SCOPE(n$10,n$11,$irvar0,$irvar1); [line 96]\n  APPLY_ABSTRACTION; [line 96]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_16" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_23" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_16" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_17" [label="17:  Call int Set.size() \n   n$12=*&set1:java.util.Set* [line 97]\n  _=*n$12:java.util.Set*(root java.util.Set) [line 97]\n  n$14=_fun_int Set.size()(n$12:java.util.Set*) interface virtual [line 97]\n  *&$irvar2:int=n$14 [line 97]\n  EXIT_SCOPE(_,n$12,n$14); [line 97]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_17" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_18" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_17" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_19" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_17" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_18" [label="18: Prune (true branch, if) \n   n$15=*&$irvar2:int [line 97]\n  PRUNE(!(n$15 == 0), true); [line 97]\n  NULLIFY(&$irvar2); [line 97]\n  EXIT_SCOPE(n$15,$irvar2); [line 97]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_18" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_20" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_18" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_19" [label="19: Prune (false branch, if) \n   n$15=*&$irvar2:int [line 97]\n  PRUNE((n$15 == 0), false); [line 97]\n  NULLIFY(&$irvar2); [line 97]\n  EXIT_SCOPE(n$15,$irvar2); [line 97]\n  APPLY_ABSTRACTION; [line 97]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_19" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_23" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_19" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_20" [label="20:  Call int Set.size() \n   n$16=*&set2:java.util.Set* [line 97]\n  _=*n$16:java.util.Set*(root java.util.Set) [line 97]\n  n$18=_fun_int Set.size()(n$16:java.util.Set*) interface virtual [line 97]\n  *&$irvar3:int=n$18 [line 97]\n  EXIT_SCOPE(_,n$16,n$18); [line 97]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_20" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_21" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_20" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_22" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_20" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_21" [label="21: Prune (true branch, if) \n   n$19=*&$irvar3:int [line 97]\n  PRUNE(!(n$19 != 0), true); [line 97]\n  NULLIFY(&$irvar3); [line 97]\n  EXIT_SCOPE(n$19,$irvar3); [line 97]\n  APPLY_ABSTRACTION; [line 97]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_21" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_23" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_21" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_22" [label="22: Prune (false branch, if) \n   n$19=*&$irvar3:int [line 97]\n  PRUNE((n$19 != 0), false); [line 97]\n  NULLIFY(&$irvar3); [line 97]\n  EXIT_SCOPE(n$19,$irvar3); [line 97]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_22" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_24" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_22" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_23" [label="23:  method_body \n   *&return:_Bool=0 [line 98]\n  APPLY_ABSTRACTION; [line 98]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_23" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_2" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_23" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_24" [label="24:  Call Iterator Set.iterator() \n   n$20=*&set1:java.util.Set* [line 101]\n  _=*n$20:java.util.Set*(root java.util.Set) [line 101]\n  n$22=_fun_Iterator Set.iterator()(n$20:java.util.Set*) interface virtual [line 101]\n  *&ite1:java.util.Iterator*=n$22 [line 101]\n  NULLIFY(&ite1); [line 101]\n  EXIT_SCOPE(_,n$20,n$22,ite1); [line 101]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_24" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_25" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_24" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_25" [label="25:  Call Iterator Set.iterator() \n   n$23=*&set2:java.util.Set* [line 102]\n  _=*n$23:java.util.Set*(root java.util.Set) [line 102]\n  n$25=_fun_Iterator Set.iterator()(n$23:java.util.Set*) interface virtual [line 102]\n  *&ite2:java.util.Iterator*=n$25 [line 102]\n  NULLIFY(&set2); [line 102]\n  EXIT_SCOPE(_,n$23,n$25,set2); [line 102]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_25" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_26" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_25" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_26" [label="26:  method_body \n   *&isFullEqual:int=1 [line 104]\n  APPLY_ABSTRACTION; [line 104]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_26" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_27" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_26" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_27" [label="27:  Call boolean Iterator.hasNext() \n   n$26=*&ite2:java.util.Iterator* [line 106]\n  _=*n$26:java.util.Iterator*(root java.util.Iterator) [line 106]\n  n$28=_fun_boolean Iterator.hasNext()(n$26:java.util.Iterator*) interface virtual [line 106]\n  *&$irvar4:_Bool=n$28 [line 106]\n  EXIT_SCOPE(_,n$26,n$28); [line 106]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_27" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_30" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_27" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_28" [label="28: Prune (true branch, if) \n   n$29=*&$irvar4:_Bool [line 106]\n  PRUNE(!(n$29 == 0), true); [line 106]\n  NULLIFY(&$irvar4); [line 106]\n  EXIT_SCOPE(n$29,$irvar4); [line 106]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_28" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_31" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_28" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_29" [label="29: Prune (false branch, if) \n   n$29=*&$irvar4:_Bool [line 106]\n  PRUNE((n$29 == 0), false); [line 106]\n  NULLIFY(&ite2); [line 106]\n  NULLIFY(&$irvar4); [line 106]\n  EXIT_SCOPE(n$29,ite2,$irvar4); [line 106]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_29" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_37" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_29" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_30" [label="30: + \n  " ]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_30" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_28" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_30" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_29" ;
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_31" [label="31:  Call Object Iterator.next() \n   n$30=*&ite2:java.util.Iterator* [line 107]\n  _=*n$30:java.util.Iterator*(root java.util.Iterator) [line 107]\n  n$32=_fun_Object Iterator.next()(n$30:java.util.Iterator*) interface virtual [line 107]\n  *&$irvar5:java.lang.Object*=n$32 [line 107]\n  EXIT_SCOPE(_,n$30,n$32); [line 107]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_31" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_32" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_31" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_32" [label="32:  Call boolean Set.contains(Object) \n   n$33=*&set1:java.util.Set* [line 107]\n  _=*n$33:java.util.Set*(root java.util.Set) [line 107]\n  n$35=*&$irvar5:java.lang.Object* [line 107]\n  n$36=_fun_boolean Set.contains(Object)(n$33:java.util.Set*,n$35:java.lang.Object*) interface virtual [line 107]\n  *&$irvar6:_Bool=n$36 [line 107]\n  NULLIFY(&$irvar5); [line 107]\n  EXIT_SCOPE(_,n$33,n$35,n$36,$irvar5); [line 107]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_32" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_35" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_32" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_33" [label="33: Prune (true branch, if) \n   n$37=*&$irvar6:_Bool [line 107]\n  PRUNE(!(n$37 != 0), true); [line 107]\n  NULLIFY(&isFullEqual); [line 107]\n  NULLIFY(&$irvar6); [line 107]\n  EXIT_SCOPE(n$37,isFullEqual,$irvar6); [line 107]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_33" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_36" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_33" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_34" [label="34: Prune (false branch, if) \n   n$37=*&$irvar6:_Bool [line 107]\n  PRUNE((n$37 != 0), false); [line 107]\n  NULLIFY(&$irvar6); [line 107]\n  EXIT_SCOPE(n$37,$irvar6); [line 107]\n  APPLY_ABSTRACTION; [line 107]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_34" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_27" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_34" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_35" [label="35: + \n  " ]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_35" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_33" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_35" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_34" ;
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_36" [label="36:  method_body \n   *&isFullEqual:int=0 [line 108]\n  APPLY_ABSTRACTION; [line 108]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_36" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_27" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_36" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+"com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_37" [label="37:  method_body \n   n$38=*&isFullEqual:int [line 112]\n  *&return:_Bool=n$38 [line 112]\n  NULLIFY(&isFullEqual); [line 112]\n  EXIT_SCOPE(n$38,isFullEqual); [line 112]\n  APPLY_ABSTRACTION; [line 112]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_37" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_2" ;
+	 "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_37" -> "com.dulishuo.usnews.SchoolMatch.isSetEqual(java.util.Set,java.util.Set):boolean.38d1c516e53b8f07a23672147658dd3c_3" [color="red" ];
+}

@@ -1,0 +1,2648 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.dulishuo.usnews.SchoolMatch.extractWord(java.lang.String):java.util.Set.6d7619a7f7ea19b8712c9bb780854242_node3</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../SchoolMatch.java.97f0ba4b6c7cd6a23391fca749c09e37.html#LINE88">3</a></h1></center>PROC: <a href="./../com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242.html">Set SchoolMatch.extractWord(String)</a> LINE: <a href="./../../SchoolMatch.java.97f0ba4b6c7cd6a23391fca749c09e37.html#LINE88">88</a>
+<br>PREDS:
+<br>SUCCS:
+<a href="./../nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node2.html"><span class='visited with_tooltip'>N_2<span class='tooltip'>node2 preds:21 3 succs: exn: </span></span></a><br>EXN:
+<a href="./../nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node2.html"><span class='visited with_tooltip'>N_2<span class='tooltip'>node2 preds:21 3 succs: exn: </span></span></a><br>
+<LISTING class='color_green'></LISTING>
+<hr width="100%">
+<a name="session2" href="./../nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node3.html#session2">node3#session2</a>(<a href="./../../SchoolMatch.java.97f0ba4b6c7cd6a23391fca749c09e37.html#LINE88">88</a>) [compute pre] liveness 3
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session3" href="./../nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node3.html#session3">node3#session3</a>(<a href="./../../SchoolMatch.java.97f0ba4b6c7cd6a23391fca749c09e37.html#LINE88">88</a>) [exec] liveness 3
+<LISTING class='color_black'>PRE STATE:
+{ }
+
+INSTR=  SKIP; 
+
+STATE UNCHANGED
+
+</LISTING>
+<hr width="100%">
+<a name="session141" href="./../nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node3.html#session141">node3#session141</a>(<a href="./../../SchoolMatch.java.97f0ba4b6c7cd6a23391fca749c09e37.html#LINE88">88</a>) [compute pre] nullify
+<LISTING class='color_black'>JOIN
+
+LEFT:   ({ rst },{ n$0, n$1 })
+RIGHT:  ({ reg, rst },{ })
+RESULT: ({ reg, rst },
+{ n$0, n$1 })
+
+JOIN
+
+LEFT:   ({ reg, rst },{ n$0, n$1 })
+RIGHT:  ({ ptn, rst },{ n$2, n$3, reg })
+RESULT: ({ ptn, reg, rst },
+{ n$0, n$1, n$2, n$3, reg })
+
+JOIN
+
+LEFT:   ({ ptn, reg, rst },
+{ n$0, n$1, n$2, n$3, reg })
+RIGHT:  ({ ptn, rst, $irvar0 },
+{ _, n$4, n$6, src })
+RESULT: ({ ptn, reg, rst, $irvar0 },
+{ _, n$0, n$1, n$2, n$3, n$4, n$6, reg, src })
+
+JOIN
+
+LEFT:   ({ ptn, reg, rst, $irvar0 },
+{ _, n$0, n$1, n$2, n$3, n$4, n$6, reg, src })
+RIGHT:  ({ rst, matcher },
+{ _, n$7, n$9, n$10, ptn, $irvar0 })
+RESULT: ({ ptn, reg, rst, matcher, $irvar0 },
+{ _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  ptn,
+  reg,
+  src,
+  $irvar0 })
+
+JOIN
+
+LEFT:   ({ ptn, reg, rst, matcher, $irvar0 },
+{ _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  ptn,
+  reg,
+  src,
+  $irvar0 })
+RIGHT:  ({ rst, matcher, $irvar1 },
+{ _, n$11, n$13 })
+RESULT: ({ ptn, reg, rst, matcher, $irvar0, $irvar1 },
+{ _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  ptn,
+  reg,
+  src,
+  $irvar0 })
+
+JOIN
+
+LEFT:   ({ ptn, reg, rst, matcher, $irvar0, $irvar1 },
+{ _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  ptn,
+  reg,
+  src,
+  $irvar0 })
+RIGHT:  ({ rst, matcher },
+{ n$14, $irvar1 })
+RESULT: ({ ptn, reg, rst, matcher, $irvar0, $irvar1 },
+{ _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  ptn,
+  reg,
+  src,
+  $irvar0,
+  $irvar1 })
+
+JOIN
+
+LEFT:   ({ ptn, reg, rst, matcher, $irvar0, $irvar1 },
+{ _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  ptn,
+  reg,
+  src,
+  $irvar0,
+  $irvar1 })
+RIGHT:  ({ rst },
+{ n$14, matcher, $irvar1 })
+RESULT: ({ ptn, reg, rst, matcher, $irvar0, $irvar1 },
+{ _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  ptn,
+  reg,
+  src,
+  matcher,
+  $irvar0,
+  $irvar1 })
+
+JOIN
+
+LEFT:   ({ ptn, reg, rst, matcher, $irvar0, $irvar1 },
+{ _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  ptn,
+  reg,
+  src,
+  matcher,
+  $irvar0,
+  $irvar1 })
+RIGHT:  ({ $irvar3, rst, matcher },
+{ n$15 })
+RESULT: ({ $irvar3, ptn, reg, rst, matcher, $irvar0, $irvar1 },
+{ _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  ptn,
+  reg,
+  src,
+  matcher,
+  $irvar0,
+  $irvar1 })
+
+JOIN
+
+LEFT:   ({ $irvar3, ptn, reg, rst, matcher, $irvar0, $irvar1 },
+{ _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  ptn,
+  reg,
+  src,
+  matcher,
+  $irvar0,
+  $irvar1 })
+RIGHT:  ({ $irvar3, rst, matcher, $irvar2 },
+{ _, n$16, n$18 })
+RESULT: ({ $irvar3, ptn, reg, rst, matcher, $irvar0, $irvar1, $irvar2 },
+{ _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  n$16,
+  n$18,
+  ptn,
+  reg,
+  src,
+  matcher,
+  $irvar0,
+  $irvar1 })
+
+JOIN
+
+LEFT:   ({ $irvar3, ptn, reg, rst, matcher, $irvar0, $irvar1, $irvar2 },
+{ _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  n$16,
+  n$18,
+  ptn,
+  reg,
+  src,
+  matcher,
+  $irvar0,
+  $irvar1 })
+RIGHT:  ({ $irvar4, rst, matcher },
+{ _, n$19, n$21, n$22, $irvar3, $irvar2 })
+RESULT: ({ $irvar3,
+           ptn,
+           reg,
+           $irvar4,
+           rst,
+           matcher,
+           $irvar0,
+           $irvar1,
+           $irvar2 },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  $irvar3,
+  ptn,
+  reg,
+  src,
+  matcher,
+  $irvar0,
+  $irvar1,
+  $irvar2 })
+
+JOIN
+
+LEFT:   ({ $irvar3,
+           ptn,
+           reg,
+           $irvar4,
+           rst,
+           matcher,
+           $irvar0,
+           $irvar1,
+           $irvar2 },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  $irvar3,
+  ptn,
+  reg,
+  src,
+  matcher,
+  $irvar0,
+  $irvar1,
+  $irvar2 })
+RIGHT:  ({ rst, matcher },
+{ n$23, $irvar4 })
+RESULT: ({ $irvar3,
+           ptn,
+           reg,
+           $irvar4,
+           rst,
+           matcher,
+           $irvar0,
+           $irvar1,
+           $irvar2 },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  n$23,
+  $irvar3,
+  ptn,
+  reg,
+  src,
+  $irvar4,
+  matcher,
+  $irvar0,
+  $irvar1,
+  $irvar2 })
+
+JOIN
+
+LEFT:   ({ $irvar3,
+           ptn,
+           reg,
+           $irvar4,
+           rst,
+           matcher,
+           $irvar0,
+           $irvar1,
+           $irvar2 },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  n$23,
+  $irvar3,
+  ptn,
+  reg,
+  src,
+  $irvar4,
+  matcher,
+  $irvar0,
+  $irvar1,
+  $irvar2 })
+RIGHT:  ({ rst, matcher },
+{ n$23, $irvar4 })
+RESULT: ({ $irvar3,
+           ptn,
+           reg,
+           $irvar4,
+           rst,
+           matcher,
+           $irvar0,
+           $irvar1,
+           $irvar2 },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  n$23,
+  $irvar3,
+  ptn,
+  reg,
+  src,
+  $irvar4,
+  matcher,
+  $irvar0,
+  $irvar1,
+  $irvar2 })
+
+JOIN
+
+LEFT:   ({ $irvar3,
+           ptn,
+           reg,
+           $irvar4,
+           rst,
+           matcher,
+           $irvar0,
+           $irvar1,
+           $irvar2 },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  n$23,
+  $irvar3,
+  ptn,
+  reg,
+  src,
+  $irvar4,
+  matcher,
+  $irvar0,
+  $irvar1,
+  $irvar2 })
+RIGHT:  ({ $irvar5, rst, matcher },
+{ _, n$24, n$26 })
+RESULT: ({ $irvar3,
+           ptn,
+           $irvar5,
+           reg,
+           $irvar4,
+           rst,
+           matcher,
+           $irvar0,
+           $irvar1,
+           $irvar2 },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  n$23,
+  n$24,
+  n$26,
+  $irvar3,
+  ptn,
+  reg,
+  src,
+  $irvar4,
+  matcher,
+  $irvar0,
+  $irvar1,
+  $irvar2 })
+
+JOIN
+
+LEFT:   ({ $irvar3,
+           ptn,
+           $irvar5,
+           reg,
+           $irvar4,
+           rst,
+           matcher,
+           $irvar0,
+           $irvar1,
+           $irvar2 },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  n$23,
+  n$24,
+  n$26,
+  $irvar3,
+  ptn,
+  reg,
+  src,
+  $irvar4,
+  matcher,
+  $irvar0,
+  $irvar1,
+  $irvar2 })
+RIGHT:  ({ rst, matcher },
+{ _, n$27, n$29, n$30, $irvar5, $irvar6 })
+RESULT: ({ $irvar3,
+           ptn,
+           $irvar5,
+           reg,
+           $irvar4,
+           rst,
+           matcher,
+           $irvar0,
+           $irvar1,
+           $irvar2 },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  n$23,
+  n$24,
+  n$26,
+  n$27,
+  n$29,
+  n$30,
+  $irvar3,
+  ptn,
+  $irvar5,
+  reg,
+  src,
+  $irvar4,
+  $irvar6,
+  matcher,
+  $irvar0,
+  $irvar1,
+  $irvar2 })
+
+JOIN
+
+LEFT:   ({ $irvar3,
+           ptn,
+           $irvar5,
+           reg,
+           $irvar4,
+           rst,
+           matcher,
+           $irvar0,
+           $irvar1,
+           $irvar2 },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  n$23,
+  n$24,
+  n$26,
+  n$27,
+  n$29,
+  n$30,
+  $irvar3,
+  ptn,
+  $irvar5,
+  reg,
+  src,
+  $irvar4,
+  $irvar6,
+  matcher,
+  $irvar0,
+  $irvar1,
+  $irvar2 })
+RIGHT:  ({ },
+{ n$31, rst, return })
+RESULT: ({ $irvar3,
+           ptn,
+           $irvar5,
+           reg,
+           $irvar4,
+           rst,
+           matcher,
+           $irvar0,
+           $irvar1,
+           $irvar2 },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  n$23,
+  n$24,
+  n$26,
+  n$27,
+  n$29,
+  n$30,
+  n$31,
+  $irvar3,
+  ptn,
+  $irvar5,
+  reg,
+  src,
+  $irvar4,
+  rst,
+  $irvar6,
+  matcher,
+  $irvar0,
+  return,
+  $irvar1,
+  $irvar2 })
+
+</LISTING>
+<hr width="100%">
+<a name="session142" href="./../nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node3.html#session142">node3#session142</a>(<a href="./../../SchoolMatch.java.97f0ba4b6c7cd6a23391fca749c09e37.html#LINE88">88</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ $irvar3,
+   ptn,
+   $irvar5,
+   reg,
+   $irvar4,
+   rst,
+   matcher,
+   $irvar0,
+   $irvar1,
+   $irvar2 },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  n$23,
+  n$24,
+  n$26,
+  n$27,
+  n$29,
+  n$30,
+  n$31,
+  $irvar3,
+  ptn,
+  $irvar5,
+  reg,
+  src,
+  $irvar4,
+  rst,
+  $irvar6,
+  matcher,
+  $irvar0,
+  return,
+  $irvar1,
+  $irvar2 })
+
+INSTR=  SKIP; 
+
+STATE:
+({ },
+{ $irvar3,
+  ptn,
+  $irvar5,
+  reg,
+  $irvar4,
+  rst,
+  matcher,
+  $irvar0,
+  $irvar1,
+  $irvar2 })
+
+</LISTING>
+<hr width="100%">
+<a name="session149" href="./../nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node3.html#session149">node3#session149</a>(<a href="./../../SchoolMatch.java.97f0ba4b6c7cd6a23391fca749c09e37.html#LINE88">88</a>) [compute pre] nullify
+<LISTING class='color_black'>JOIN
+
+LEFT:   ({ rst },{ n$0, n$1 })
+RIGHT:  ({ reg, rst },{ })
+RESULT: ({ reg, rst },
+{ n$0, n$1 })
+
+JOIN
+
+LEFT:   ({ reg, rst },{ n$0, n$1 })
+RIGHT:  ({ ptn, rst },{ n$2, n$3, reg })
+RESULT: ({ ptn, reg, rst },
+{ n$0, n$1, n$2, n$3, reg })
+
+JOIN
+
+LEFT:   ({ ptn, reg, rst },
+{ n$0, n$1, n$2, n$3, reg })
+RIGHT:  ({ ptn, rst, $irvar0 },
+{ _, n$4, n$6, src })
+RESULT: ({ ptn, reg, rst, $irvar0 },
+{ _, n$0, n$1, n$2, n$3, n$4, n$6, reg, src })
+
+JOIN
+
+LEFT:   ({ ptn, reg, rst, $irvar0 },
+{ _, n$0, n$1, n$2, n$3, n$4, n$6, reg, src })
+RIGHT:  ({ rst, matcher },
+{ _, n$7, n$9, n$10, ptn, $irvar0 })
+RESULT: ({ ptn, reg, rst, matcher, $irvar0 },
+{ _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  ptn,
+  reg,
+  src,
+  $irvar0 })
+
+JOIN
+
+LEFT:   ({ ptn, reg, rst, matcher, $irvar0 },
+{ _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  ptn,
+  reg,
+  src,
+  $irvar0 })
+RIGHT:  ({ rst, matcher, $irvar1 },
+{ _, n$11, n$13 })
+RESULT: ({ ptn, reg, rst, matcher, $irvar0, $irvar1 },
+{ _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  ptn,
+  reg,
+  src,
+  $irvar0 })
+
+JOIN
+
+LEFT:   ({ ptn, reg, rst, matcher, $irvar0, $irvar1 },
+{ _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  ptn,
+  reg,
+  src,
+  $irvar0 })
+RIGHT:  ({ rst, matcher },
+{ n$14, $irvar1 })
+RESULT: ({ ptn, reg, rst, matcher, $irvar0, $irvar1 },
+{ _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  ptn,
+  reg,
+  src,
+  $irvar0,
+  $irvar1 })
+
+JOIN
+
+LEFT:   ({ ptn, reg, rst, matcher, $irvar0, $irvar1 },
+{ _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  ptn,
+  reg,
+  src,
+  $irvar0,
+  $irvar1 })
+RIGHT:  ({ rst },
+{ n$14, matcher, $irvar1 })
+RESULT: ({ ptn, reg, rst, matcher, $irvar0, $irvar1 },
+{ _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  ptn,
+  reg,
+  src,
+  matcher,
+  $irvar0,
+  $irvar1 })
+
+JOIN
+
+LEFT:   ({ ptn, reg, rst, matcher, $irvar0, $irvar1 },
+{ _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  ptn,
+  reg,
+  src,
+  matcher,
+  $irvar0,
+  $irvar1 })
+RIGHT:  ({ $irvar3, rst, matcher },
+{ n$15 })
+RESULT: ({ $irvar3, ptn, reg, rst, matcher, $irvar0, $irvar1 },
+{ _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  ptn,
+  reg,
+  src,
+  matcher,
+  $irvar0,
+  $irvar1 })
+
+JOIN
+
+LEFT:   ({ $irvar3, ptn, reg, rst, matcher, $irvar0, $irvar1 },
+{ _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  ptn,
+  reg,
+  src,
+  matcher,
+  $irvar0,
+  $irvar1 })
+RIGHT:  ({ $irvar3, rst, matcher, $irvar2 },
+{ _, n$16, n$18 })
+RESULT: ({ $irvar3, ptn, reg, rst, matcher, $irvar0, $irvar1, $irvar2 },
+{ _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  n$16,
+  n$18,
+  ptn,
+  reg,
+  src,
+  matcher,
+  $irvar0,
+  $irvar1 })
+
+JOIN
+
+LEFT:   ({ $irvar3, ptn, reg, rst, matcher, $irvar0, $irvar1, $irvar2 },
+{ _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  n$16,
+  n$18,
+  ptn,
+  reg,
+  src,
+  matcher,
+  $irvar0,
+  $irvar1 })
+RIGHT:  ({ $irvar4, rst, matcher },
+{ _, n$19, n$21, n$22, $irvar3, $irvar2 })
+RESULT: ({ $irvar3,
+           ptn,
+           reg,
+           $irvar4,
+           rst,
+           matcher,
+           $irvar0,
+           $irvar1,
+           $irvar2 },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  $irvar3,
+  ptn,
+  reg,
+  src,
+  matcher,
+  $irvar0,
+  $irvar1,
+  $irvar2 })
+
+JOIN
+
+LEFT:   ({ $irvar3,
+           ptn,
+           reg,
+           $irvar4,
+           rst,
+           matcher,
+           $irvar0,
+           $irvar1,
+           $irvar2 },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  $irvar3,
+  ptn,
+  reg,
+  src,
+  matcher,
+  $irvar0,
+  $irvar1,
+  $irvar2 })
+RIGHT:  ({ rst, matcher },
+{ n$23, $irvar4 })
+RESULT: ({ $irvar3,
+           ptn,
+           reg,
+           $irvar4,
+           rst,
+           matcher,
+           $irvar0,
+           $irvar1,
+           $irvar2 },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  n$23,
+  $irvar3,
+  ptn,
+  reg,
+  src,
+  $irvar4,
+  matcher,
+  $irvar0,
+  $irvar1,
+  $irvar2 })
+
+JOIN
+
+LEFT:   ({ $irvar3,
+           ptn,
+           reg,
+           $irvar4,
+           rst,
+           matcher,
+           $irvar0,
+           $irvar1,
+           $irvar2 },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  n$23,
+  $irvar3,
+  ptn,
+  reg,
+  src,
+  $irvar4,
+  matcher,
+  $irvar0,
+  $irvar1,
+  $irvar2 })
+RIGHT:  ({ rst, matcher },
+{ n$23, $irvar4 })
+RESULT: ({ $irvar3,
+           ptn,
+           reg,
+           $irvar4,
+           rst,
+           matcher,
+           $irvar0,
+           $irvar1,
+           $irvar2 },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  n$23,
+  $irvar3,
+  ptn,
+  reg,
+  src,
+  $irvar4,
+  matcher,
+  $irvar0,
+  $irvar1,
+  $irvar2 })
+
+JOIN
+
+LEFT:   ({ $irvar3,
+           ptn,
+           reg,
+           $irvar4,
+           rst,
+           matcher,
+           $irvar0,
+           $irvar1,
+           $irvar2 },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  n$23,
+  $irvar3,
+  ptn,
+  reg,
+  src,
+  $irvar4,
+  matcher,
+  $irvar0,
+  $irvar1,
+  $irvar2 })
+RIGHT:  ({ $irvar5, rst, matcher },
+{ _, n$24, n$26 })
+RESULT: ({ $irvar3,
+           ptn,
+           $irvar5,
+           reg,
+           $irvar4,
+           rst,
+           matcher,
+           $irvar0,
+           $irvar1,
+           $irvar2 },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  n$23,
+  n$24,
+  n$26,
+  $irvar3,
+  ptn,
+  reg,
+  src,
+  $irvar4,
+  matcher,
+  $irvar0,
+  $irvar1,
+  $irvar2 })
+
+JOIN
+
+LEFT:   ({ $irvar3,
+           ptn,
+           $irvar5,
+           reg,
+           $irvar4,
+           rst,
+           matcher,
+           $irvar0,
+           $irvar1,
+           $irvar2 },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  n$23,
+  n$24,
+  n$26,
+  $irvar3,
+  ptn,
+  reg,
+  src,
+  $irvar4,
+  matcher,
+  $irvar0,
+  $irvar1,
+  $irvar2 })
+RIGHT:  ({ rst, matcher },
+{ _, n$27, n$29, n$30, $irvar5, $irvar6 })
+RESULT: ({ $irvar3,
+           ptn,
+           $irvar5,
+           reg,
+           $irvar4,
+           rst,
+           matcher,
+           $irvar0,
+           $irvar1,
+           $irvar2 },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  n$23,
+  n$24,
+  n$26,
+  n$27,
+  n$29,
+  n$30,
+  $irvar3,
+  ptn,
+  $irvar5,
+  reg,
+  src,
+  $irvar4,
+  $irvar6,
+  matcher,
+  $irvar0,
+  $irvar1,
+  $irvar2 })
+
+JOIN
+
+LEFT:   ({ $irvar3,
+           ptn,
+           $irvar5,
+           reg,
+           $irvar4,
+           rst,
+           matcher,
+           $irvar0,
+           $irvar1,
+           $irvar2 },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  n$23,
+  n$24,
+  n$26,
+  n$27,
+  n$29,
+  n$30,
+  $irvar3,
+  ptn,
+  $irvar5,
+  reg,
+  src,
+  $irvar4,
+  $irvar6,
+  matcher,
+  $irvar0,
+  $irvar1,
+  $irvar2 })
+RIGHT:  ({ },
+{ n$31, rst, return })
+RESULT: ({ $irvar3,
+           ptn,
+           $irvar5,
+           reg,
+           $irvar4,
+           rst,
+           matcher,
+           $irvar0,
+           $irvar1,
+           $irvar2 },
+{ _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  _,
+  n$0,
+  n$1,
+  n$2,
+  n$3,
+  n$4,
+  n$6,
+  n$7,
+  n$9,
+  n$10,
+  n$11,
+  n$13,
+  n$14,
+  n$15,
+  n$16,
+  n$18,
+  n$19,
+  n$21,
+  n$22,
+  n$23,
+  n$24,
+  n$26,
+  n$27,
+  n$29,
+  n$30,
+  n$31,
+  $irvar3,
+  ptn,
+  $irvar5,
+  reg,
+  src,
+  $irvar4,
+  rst,
+  $irvar6,
+  matcher,
+  $irvar0,
+  return,
+  $irvar1,
+  $irvar2 })
+
+</LISTING>
+<hr width="100%">
+<a name="session150" href="./../nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node3.html#session150">node3#session150</a>(<a href="./../../SchoolMatch.java.97f0ba4b6c7cd6a23391fca749c09e37.html#LINE88">88</a>) [exec] nullify
+<LISTING class='color_black'>Fixpoint reached.
+
+</LISTING>
+<hr width="100%">
+<a name="session40" href="./../nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node3.html#session40">node3#session40</a>(<a href="./../../SchoolMatch.java.97f0ba4b6c7cd6a23391fca749c09e37.html#LINE88">88</a>) [compute pre] quandary(java)
+<LISTING class='color_black'>JOIN
+
+LEFT:   { rst -&gt; { } }
+RIGHT:  { reg -&gt; { }, rst -&gt; { } }
+RESULT: { reg -&gt; { }, rst -&gt; { } }
+
+JOIN
+
+LEFT:   { reg -&gt; { }, rst -&gt; { } }
+RIGHT:  { ptn -&gt; { }, reg -&gt; { }, rst -&gt; { } }
+RESULT: { ptn -&gt; { }, reg -&gt; { }, rst -&gt; { } }
+
+JOIN
+
+LEFT:   { ptn -&gt; { }, reg -&gt; { }, rst -&gt; { } }
+RIGHT:  { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; { },
+          reg -&gt; { },
+          rst -&gt; { } }
+RESULT: { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; { },
+          reg -&gt; { },
+          rst -&gt; { } }
+
+JOIN
+
+LEFT:   { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; { },
+          reg -&gt; { },
+          rst -&gt; { } }
+RIGHT:  { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RESULT: { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+
+JOIN
+
+LEFT:   { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RIGHT:  { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RESULT: { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+
+JOIN
+
+LEFT:   { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RIGHT:  { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RESULT: { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+
+JOIN
+
+LEFT:   { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RIGHT:  { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RESULT: { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+
+JOIN
+
+LEFT:   { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RIGHT:  { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RESULT: { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+
+JOIN
+
+LEFT:   { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RIGHT:  { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RESULT: { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+
+JOIN
+
+LEFT:   { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RIGHT:  { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RESULT: { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+
+JOIN
+
+LEFT:   { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RIGHT:  { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RESULT: { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+
+JOIN
+
+LEFT:   { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RIGHT:  { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RESULT: { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+
+JOIN
+
+LEFT:   { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RIGHT:  { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RESULT: { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+
+JOIN
+
+LEFT:   { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RIGHT:  { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RESULT: { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+
+JOIN
+
+LEFT:   { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RIGHT:  { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          return -&gt; { } }
+RESULT: { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          return -&gt; { } }
+
+</LISTING>
+<hr width="100%">
+<a name="session41" href="./../nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node3.html#session41">node3#session41</a>(<a href="./../../SchoolMatch.java.97f0ba4b6c7cd6a23391fca749c09e37.html#LINE88">88</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  reg -&gt; { },
+  usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+  rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  return -&gt; { } }
+
+INSTR=  NULLIFY(&amp;$irvar3); [line 88]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;ptn); [line 88]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;$irvar5); [line 88]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;reg); [line 88]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;$irvar4); [line 88]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;rst); [line 88]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;matcher); [line 88]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;$irvar0); [line 88]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;$irvar1); [line 88]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;$irvar2); [line 88]; 
+
+STATE UNCHANGED
+
+INSTR=  EXIT_SCOPE(ptn,n$26,reg,n$22,rst,matcher,n$6,n$13,n$18); [line 88]; 
+
+STATE:
+{ n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  reg -&gt; { },
+  usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+  rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  return -&gt; { } }
+
+INSTR=  APPLY_ABSTRACTION; [line 88]; 
+
+STATE UNCHANGED
+
+</LISTING>
+<hr width="100%">
+<a name="session74" href="./../nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node3.html#session74">node3#session74</a>(<a href="./../../SchoolMatch.java.97f0ba4b6c7cd6a23391fca749c09e37.html#LINE88">88</a>) [compute pre] quandary(java)
+<LISTING class='color_black'>JOIN
+
+LEFT:   { rst -&gt; { } }
+RIGHT:  { reg -&gt; { }, rst -&gt; { } }
+RESULT: { reg -&gt; { }, rst -&gt; { } }
+
+JOIN
+
+LEFT:   { reg -&gt; { }, rst -&gt; { } }
+RIGHT:  { ptn -&gt; { }, reg -&gt; { }, rst -&gt; { } }
+RESULT: { ptn -&gt; { }, reg -&gt; { }, rst -&gt; { } }
+
+JOIN
+
+LEFT:   { ptn -&gt; { }, reg -&gt; { }, rst -&gt; { } }
+RIGHT:  { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; { },
+          reg -&gt; { },
+          rst -&gt; { } }
+RESULT: { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; { },
+          reg -&gt; { },
+          rst -&gt; { } }
+
+JOIN
+
+LEFT:   { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; { },
+          reg -&gt; { },
+          rst -&gt; { } }
+RIGHT:  { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RESULT: { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+
+JOIN
+
+LEFT:   { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          rst -&gt; { },
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RIGHT:  { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RESULT: { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+
+JOIN
+
+LEFT:   { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RIGHT:  { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RESULT: { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+
+JOIN
+
+LEFT:   { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RIGHT:  { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RESULT: { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+
+JOIN
+
+LEFT:   { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RIGHT:  { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RESULT: { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+
+JOIN
+
+LEFT:   { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RIGHT:  { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RESULT: { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+
+JOIN
+
+LEFT:   { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RIGHT:  { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RESULT: { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+
+JOIN
+
+LEFT:   { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RIGHT:  { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RESULT: { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+
+JOIN
+
+LEFT:   { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RIGHT:  { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RESULT: { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+
+JOIN
+
+LEFT:   { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RIGHT:  { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RESULT: { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+
+JOIN
+
+LEFT:   { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RIGHT:  { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RESULT: { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+
+JOIN
+
+LEFT:   { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RIGHT:  { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          return -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+RESULT: { n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          reg -&gt; { },
+          usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+          rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+          return -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+
+</LISTING>
+<hr width="100%">
+<a name="session75" href="./../nodes/com.dulishuo.usnews.SchoolMatch.extractWord%28java.lang.String%29%3Ajava.util.Set.6d7619a7f7ea19b8712c9bb780854242_node3.html#session75">node3#session75</a>(<a href="./../../SchoolMatch.java.97f0ba4b6c7cd6a23391fca749c09e37.html#LINE88">88</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  reg -&gt; { },
+  usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+  rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  return -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+
+INSTR=  NULLIFY(&amp;$irvar3); [line 88]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;ptn); [line 88]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;$irvar5); [line 88]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;reg); [line 88]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;$irvar4); [line 88]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;rst); [line 88]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;matcher); [line 88]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;$irvar0); [line 88]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;$irvar1); [line 88]; 
+
+STATE UNCHANGED
+
+INSTR=  NULLIFY(&amp;$irvar2); [line 88]; 
+
+STATE UNCHANGED
+
+INSTR=  EXIT_SCOPE(ptn,n$26,reg,n$22,rst,matcher,n$6,n$13,n$18); [line 88]; 
+
+STATE:
+{ n$6 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  n$18 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  n$26 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  ptn -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  reg -&gt; { },
+  usnews.SchoolMatch -&gt; { setStop -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) },
+  rst -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  matcher -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  return -&gt; (Footprint({ @val$0* }) ~&gt; ?, *) }
+
+INSTR=  APPLY_ABSTRACTION; [line 88]; 
+
+STATE UNCHANGED
+
+</LISTING>

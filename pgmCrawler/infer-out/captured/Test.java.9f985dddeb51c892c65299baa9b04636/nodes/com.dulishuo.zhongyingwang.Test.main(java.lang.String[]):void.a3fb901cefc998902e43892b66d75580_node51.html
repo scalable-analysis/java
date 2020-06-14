@@ -1,0 +1,827 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.dulishuo.zhongyingwang.Test.main(java.lang.String[]):void.a3fb901cefc998902e43892b66d75580_node51</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../Test.java.9f985dddeb51c892c65299baa9b04636.html#LINE35">51</a></h1></center>PROC: <a href="./../com.dulishuo.zhongyingwang.Test.main%28java.lang.String%5B%5D%29%3Avoid.a3fb901cefc998902e43892b66d75580.html">void Test.main(String[])</a> LINE: <a href="./../../Test.java.9f985dddeb51c892c65299baa9b04636.html#LINE35">35</a>
+<br>PREDS:
+<a href="./../nodes/com.dulishuo.zhongyingwang.Test.main%28java.lang.String%5B%5D%29%3Avoid.a3fb901cefc998902e43892b66d75580_node49.html"><span class='visited with_tooltip'>N_49<span class='tooltip'>node49 preds:48 succs:51 exn:3 </span></span></a> <a href="./../nodes/com.dulishuo.zhongyingwang.Test.main%28java.lang.String%5B%5D%29%3Avoid.a3fb901cefc998902e43892b66d75580_node50.html"><span class='visited with_tooltip'>N_50<span class='tooltip'>node50 preds:46 succs:51 exn:3 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.dulishuo.zhongyingwang.Test.main%28java.lang.String%5B%5D%29%3Avoid.a3fb901cefc998902e43892b66d75580_node54.html"><span class='visited with_tooltip'>N_54<span class='tooltip'>node54 preds:51 succs:52 53 exn: </span></span></a><br>EXN:
+<a href="./../nodes/com.dulishuo.zhongyingwang.Test.main%28java.lang.String%5B%5D%29%3Avoid.a3fb901cefc998902e43892b66d75580_node3.html"><span class='visited with_tooltip'>N_3<span class='tooltip'>node3 preds: succs:2 exn:2 </span></span></a><br>
+<LISTING class='color_green'>n$83=*&amp;jo:net.sf.json.JSONObject* [line 35];
+_=*n$83:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 35];
+n$85=_fun_boolean JSONObject.containsKey(Object)(n$83:net.sf.json.JSONObject*,"experience_requirements":java.lang.Object*) virtual [line 35];
+*&amp;$irvar18:_Bool=n$85 [line 35];
+</LISTING>
+<hr width="100%">
+<a name="session138" href="./../nodes/com.dulishuo.zhongyingwang.Test.main%28java.lang.String%5B%5D%29%3Avoid.a3fb901cefc998902e43892b66d75580_node51.html#session138">node51#session138</a>(<a href="./../../Test.java.9f985dddeb51c892c65299baa9b04636.html#LINE35">35</a>) [compute pre] liveness 51
+<LISTING class='color_black'>JOIN
+
+LEFT:   { $bcvar7, $irvar18, json, jo }
+RIGHT:  { }
+RESULT: = LEFT
+
+</LISTING>
+<hr width="100%">
+<a name="session139" href="./../nodes/com.dulishuo.zhongyingwang.Test.main%28java.lang.String%5B%5D%29%3Avoid.a3fb901cefc998902e43892b66d75580_node51.html#session139">node51#session139</a>(<a href="./../../Test.java.9f985dddeb51c892c65299baa9b04636.html#LINE35">35</a>) [exec] liveness 51
+<LISTING class='color_black'>PRE STATE:
+{ $bcvar7, $irvar18, json, jo }
+
+INSTR=  *&amp;$irvar18:_Bool=n$85 [line 35]; 
+
+STATE:
+{ n$85, $bcvar7, json, jo }
+
+INSTR=  n$85=_fun_boolean JSONObject.containsKey(Object)(n$83:net.sf.json.JSONObject*,&quot;experience_requirements&quot;:java.lang.Object*) virtual [line 35]; 
+
+STATE:
+{ n$83, $bcvar7, json, jo }
+
+INSTR=  _=*n$83:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 35]; 
+
+STATE UNCHANGED
+
+INSTR=  n$83=*&amp;jo:net.sf.json.JSONObject* [line 35]; 
+
+STATE:
+{ $bcvar7, json, jo }
+
+</LISTING>
+<hr width="100%">
+<a name="session256" href="./../nodes/com.dulishuo.zhongyingwang.Test.main%28java.lang.String%5B%5D%29%3Avoid.a3fb901cefc998902e43892b66d75580_node51.html#session256">node51#session256</a>(<a href="./../../Test.java.9f985dddeb51c892c65299baa9b04636.html#LINE35">35</a>) [compute pre] liveness 51
+<LISTING class='color_black'>JOIN
+
+LEFT:   { $bcvar4, $bcvar7, $irvar18, json, list, jo, id }
+RIGHT:  { }
+RESULT: = LEFT
+
+</LISTING>
+<hr width="100%">
+<a name="session257" href="./../nodes/com.dulishuo.zhongyingwang.Test.main%28java.lang.String%5B%5D%29%3Avoid.a3fb901cefc998902e43892b66d75580_node51.html#session257">node51#session257</a>(<a href="./../../Test.java.9f985dddeb51c892c65299baa9b04636.html#LINE35">35</a>) [exec] liveness 51
+<LISTING class='color_black'>PRE STATE:
+{ $bcvar4, $bcvar7, $irvar18, json, list, jo, id }
+
+INSTR=  *&amp;$irvar18:_Bool=n$85 [line 35]; 
+
+STATE:
+{ n$85, $bcvar4, $bcvar7, json, list, jo, id }
+
+INSTR=  n$85=_fun_boolean JSONObject.containsKey(Object)(n$83:net.sf.json.JSONObject*,&quot;experience_requirements&quot;:java.lang.Object*) virtual [line 35]; 
+
+STATE:
+{ n$83, $bcvar4, $bcvar7, json, list, jo, id }
+
+INSTR=  _=*n$83:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 35]; 
+
+STATE UNCHANGED
+
+INSTR=  n$83=*&amp;jo:net.sf.json.JSONObject* [line 35]; 
+
+STATE:
+{ $bcvar4, $bcvar7, json, list, jo, id }
+
+</LISTING>
+<hr width="100%">
+<a name="session384" href="./../nodes/com.dulishuo.zhongyingwang.Test.main%28java.lang.String%5B%5D%29%3Avoid.a3fb901cefc998902e43892b66d75580_node51.html#session384">node51#session384</a>(<a href="./../../Test.java.9f985dddeb51c892c65299baa9b04636.html#LINE35">35</a>) [compute pre] liveness 51
+<LISTING class='color_black'>JOIN
+
+LEFT:   { $bcvar4, $bcvar7, $irvar18, json, list, lang.System, ins, jo, id }
+RIGHT:  { }
+RESULT: = LEFT
+
+</LISTING>
+<hr width="100%">
+<a name="session385" href="./../nodes/com.dulishuo.zhongyingwang.Test.main%28java.lang.String%5B%5D%29%3Avoid.a3fb901cefc998902e43892b66d75580_node51.html#session385">node51#session385</a>(<a href="./../../Test.java.9f985dddeb51c892c65299baa9b04636.html#LINE35">35</a>) [exec] liveness 51
+<LISTING class='color_black'>PRE STATE:
+{ $bcvar4, $bcvar7, $irvar18, json, list, lang.System, ins, jo, id }
+
+INSTR=  *&amp;$irvar18:_Bool=n$85 [line 35]; 
+
+STATE:
+{ n$85, $bcvar4, $bcvar7, json, list, lang.System, ins, jo, id }
+
+INSTR=  n$85=_fun_boolean JSONObject.containsKey(Object)(n$83:net.sf.json.JSONObject*,&quot;experience_requirements&quot;:java.lang.Object*) virtual [line 35]; 
+
+STATE:
+{ n$83, $bcvar4, $bcvar7, json, list, lang.System, ins, jo, id }
+
+INSTR=  _=*n$83:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 35]; 
+
+STATE UNCHANGED
+
+INSTR=  n$83=*&amp;jo:net.sf.json.JSONObject* [line 35]; 
+
+STATE:
+{ $bcvar4, $bcvar7, json, list, lang.System, ins, jo, id }
+
+</LISTING>
+<hr width="100%">
+<a name="session559" href="./../nodes/com.dulishuo.zhongyingwang.Test.main%28java.lang.String%5B%5D%29%3Avoid.a3fb901cefc998902e43892b66d75580_node51.html#session559">node51#session559</a>(<a href="./../../Test.java.9f985dddeb51c892c65299baa9b04636.html#LINE35">35</a>) [compute pre] nullify
+<LISTING class='color_black'>JOIN
+
+LEFT:   ({ $bcvar4, $bcvar7, json, list, ins, jo, id },
+{ _, n$80, n$82, $irvar17 })
+RIGHT:  ({ $bcvar4, $bcvar7, json, list, ins, jo, id },
+{ _, n$76, n$78, n$79, $irvar16, $irvar15 })
+RESULT: ({ $bcvar4, $bcvar7, json, list, ins, jo, id },
+{ _, _, n$76, n$78, n$79, n$80, n$82, $irvar17, $irvar16, $irvar15 })
+
+</LISTING>
+<hr width="100%">
+<a name="session560" href="./../nodes/com.dulishuo.zhongyingwang.Test.main%28java.lang.String%5B%5D%29%3Avoid.a3fb901cefc998902e43892b66d75580_node51.html#session560">node51#session560</a>(<a href="./../../Test.java.9f985dddeb51c892c65299baa9b04636.html#LINE35">35</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ $bcvar4, $bcvar7, json, list, ins, jo, id },
+{ _, _, n$76, n$78, n$79, n$80, n$82, $irvar17, $irvar16, $irvar15 })
+
+INSTR=  n$83=*&amp;jo:net.sf.json.JSONObject* [line 35]; 
+
+STATE:
+({ n$83, $bcvar4, $bcvar7, json, list, ins, jo, id },
+{ _, _, n$76, n$78, n$79, n$80, n$82, $irvar17, $irvar16, $irvar15 })
+
+INSTR=  _=*n$83:net.sf.json.JSONObject*(root net.sf.json.JSONObject) [line 35]; 
+
+STATE:
+({ _, n$83, $bcvar4, $bcvar7, json, list, ins, jo, id },
+{ _, _, n$76, n$78, n$79, n$80, n$82, $irvar17, $irvar16, $irvar15 })
+
+INSTR=  n$85=_fun_boolean JSONObject.containsKey(Object)(n$83:net.sf.json.JSONObject*,&quot;experience_requirements&quot;:java.lang.Object*) virtual [line 35]; 
+
+STATE:
+({ _, n$83, n$85, $bcvar4, $bcvar7, json, list, ins, jo, id },
+{ _, _, n$76, n$78, n$79, n$80, n$82, $irvar17, $irvar16, $irvar15 })
+
+INSTR=  *&amp;$irvar18:_Bool=n$85 [line 35]; 
+
+STATE:
+({ $bcvar4, $bcvar7, $irvar18, json, list, ins, jo, id },{ _, n$83, n$85 })
+
+</LISTING>
+<hr width="100%">
+<a name="session104" href="./../nodes/com.dulishuo.zhongyingwang.Test.main%28java.lang.String%5B%5D%29%3Avoid.a3fb901cefc998902e43892b66d75580_node51.html#session104">node51#session104</a>(<a href="./../../Test.java.9f985dddeb51c892c65299baa9b04636.html#LINE35">35</a>) [compute pre] quandary(java)
+<LISTING class='color_black'>JOIN
+
+LEFT:   { n$0 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$1 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$6 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$13 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$18 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$21 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$28 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$33 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$41 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$44 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$47 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$54 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$61 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$65 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$68 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$82 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          ins22 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          json -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          idd -&gt; { },
+          list -&gt; { },
+          ins -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          jo -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          id -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *) }
+RIGHT:  { n$0 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$1 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$6 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$13 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$18 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$21 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$28 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$33 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$41 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$44 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$47 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$54 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$61 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$65 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$68 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$75 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$79 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          ins22 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          json -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          idd -&gt; { },
+          list -&gt; { },
+          ins -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          jo -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          id -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *) }
+RESULT: { n$0 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$1 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$6 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$13 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$18 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$21 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$28 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$33 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$41 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$44 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$47 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$54 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$61 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$65 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$68 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$75 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$79 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$82 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          ins22 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          json -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          idd -&gt; { },
+          list -&gt; { },
+          ins -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          jo -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          id -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *) }
+
+</LISTING>
+<hr width="100%">
+<a name="session105" href="./../nodes/com.dulishuo.zhongyingwang.Test.main%28java.lang.String%5B%5D%29%3Avoid.a3fb901cefc998902e43892b66d75580_node51.html#session105">node51#session105</a>(<a href="./../../Test.java.9f985dddeb51c892c65299baa9b04636.html#LINE35">35</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$0 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$1 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$6 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$13 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$18 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$21 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$28 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$33 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$41 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$44 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$47 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$54 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$61 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$65 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$68 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$75 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$79 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$82 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  ins22 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  json -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  idd -&gt; { },
+  list -&gt; { },
+  ins -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  jo -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  id -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *) }
+
+
+
+TAINTED_CALL1: (callee="boolean JSONObject.containsKey(Object)", caller="void Test.main(String[])")
+INSTR=  n$85 := boolean JSONObject.containsKey(Object)({ jo,
+                                                         &quot;experience_requirements&quot; }) [line 35]; 
+
+STATE:
+{ n$0 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$1 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$6 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$13 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$18 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$21 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$28 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$33 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$41 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$44 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$47 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$54 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$61 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$65 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$68 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$75 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$79 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$82 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  ins22 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  json -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  idd -&gt; { },
+  list -&gt; { },
+  ins -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  jo -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  id -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *) }
+
+
+
+</LISTING>
+<hr width="100%">
+<a name="session224" href="./../nodes/com.dulishuo.zhongyingwang.Test.main%28java.lang.String%5B%5D%29%3Avoid.a3fb901cefc998902e43892b66d75580_node51.html#session224">node51#session224</a>(<a href="./../../Test.java.9f985dddeb51c892c65299baa9b04636.html#LINE35">35</a>) [compute pre] quandary(java)
+<LISTING class='color_black'>JOIN
+
+LEFT:   { n$0 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$1 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$6 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$13 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$18 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$21 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$28 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$33 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$41 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$44 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$47 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$54 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$61 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$65 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$68 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$75 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$79 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$82 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$89 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$93 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$96 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$103 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$107 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                      UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$110 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                      UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$113 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          ins22 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          json -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          idd -&gt; { },
+          list -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          ins -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          jo -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          id -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *) }
+RIGHT:  { n$0 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$1 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$6 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$13 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$18 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$21 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$28 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$33 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$41 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$44 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$47 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$54 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$61 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$65 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$68 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$75 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$79 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$82 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$89 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$93 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$96 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$103 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$107 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                      UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$110 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                      UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$113 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          ins22 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          json -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          idd -&gt; { },
+          list -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          ins -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          jo -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          id -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *) }
+RESULT: { n$0 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$1 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$6 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$13 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$18 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$21 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$28 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$33 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$41 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$44 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$47 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$54 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$61 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$65 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$68 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$75 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$79 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$82 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$89 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$93 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$96 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$103 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$107 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                      UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$110 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                      UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$113 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          ins22 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          json -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          idd -&gt; { },
+          list -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          ins -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          jo -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          id -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *) }
+
+</LISTING>
+<hr width="100%">
+<a name="session225" href="./../nodes/com.dulishuo.zhongyingwang.Test.main%28java.lang.String%5B%5D%29%3Avoid.a3fb901cefc998902e43892b66d75580_node51.html#session225">node51#session225</a>(<a href="./../../Test.java.9f985dddeb51c892c65299baa9b04636.html#LINE35">35</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$0 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$1 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$6 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$13 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$18 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$21 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$28 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$33 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$41 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$44 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$47 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$54 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$61 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$65 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$68 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$75 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$79 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$82 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$89 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$93 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$96 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$103 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$107 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+              UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$110 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+              UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$113 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  ins22 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  json -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  idd -&gt; { },
+  list -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  ins -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  jo -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  id -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *) }
+
+
+
+TAINTED_CALL1: (callee="boolean JSONObject.containsKey(Object)", caller="void Test.main(String[])")
+INSTR=  n$85 := boolean JSONObject.containsKey(Object)({ jo,
+                                                         &quot;experience_requirements&quot; }) [line 35]; 
+
+STATE:
+{ n$0 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$1 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$6 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$13 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$18 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$21 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$28 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$33 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$41 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$44 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$47 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$54 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$61 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$65 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$68 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$75 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$79 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$82 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$89 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$93 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$96 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$103 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$107 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+              UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$110 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+              UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$113 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  ins22 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  json -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  idd -&gt; { },
+  list -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  ins -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  jo -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  id -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *) }
+
+
+
+</LISTING>
+<hr width="100%">
+<a name="session350" href="./../nodes/com.dulishuo.zhongyingwang.Test.main%28java.lang.String%5B%5D%29%3Avoid.a3fb901cefc998902e43892b66d75580_node51.html#session350">node51#session350</a>(<a href="./../../Test.java.9f985dddeb51c892c65299baa9b04636.html#LINE35">35</a>) [compute pre] quandary(java)
+<LISTING class='color_black'>JOIN
+
+LEFT:   { n$0 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$1 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$6 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$13 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$18 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$21 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$28 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$33 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$41 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$44 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$47 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$54 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$61 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$65 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$68 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$75 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$79 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$82 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$89 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$93 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$96 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$103 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$107 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                      UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$110 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                      UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$113 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                      UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          ins22 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          json -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          idd -&gt; { },
+          list -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          ins -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          jo -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          id -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *) }
+RIGHT:  { n$0 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$1 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$6 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$13 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$18 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$21 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$28 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$33 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$41 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$44 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$47 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$54 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$61 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$65 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$68 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$75 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$79 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$82 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$89 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$93 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$96 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$103 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$107 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                      UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$110 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                      UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$113 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                      UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          ins22 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          json -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          idd -&gt; { },
+          list -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          ins -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          jo -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          id -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *) }
+RESULT: { n$0 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$1 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$6 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$13 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$18 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$21 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$28 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$33 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$41 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$44 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$47 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$54 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$61 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$65 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$68 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$75 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$79 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$82 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$89 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$93 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$96 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$103 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          n$107 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                      UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$110 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                      UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          n$113 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                      UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          ins22 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          json -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          idd -&gt; { },
+          list -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+                     UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+          ins -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          jo -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+          id -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *) }
+
+</LISTING>
+<hr width="100%">
+<a name="session351" href="./../nodes/com.dulishuo.zhongyingwang.Test.main%28java.lang.String%5B%5D%29%3Avoid.a3fb901cefc998902e43892b66d75580_node51.html#session351">node51#session351</a>(<a href="./../../Test.java.9f985dddeb51c892c65299baa9b04636.html#LINE35">35</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$0 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$1 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$6 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$13 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$18 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$21 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$28 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$33 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$41 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$44 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$47 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$54 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$61 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$65 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$68 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$75 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$79 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$82 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$89 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$93 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$96 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$103 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$107 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+              UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$110 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+              UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$113 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+              UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  ins22 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  json -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  idd -&gt; { },
+  list -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  ins -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  jo -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  id -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *) }
+
+
+
+TAINTED_CALL1: (callee="boolean JSONObject.containsKey(Object)", caller="void Test.main(String[])")
+INSTR=  n$85 := boolean JSONObject.containsKey(Object)({ jo,
+                                                         &quot;experience_requirements&quot; }) [line 35]; 
+
+STATE:
+{ n$0 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$1 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$6 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$13 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$18 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$21 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$28 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$33 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$41 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$44 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$47 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$54 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$61 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$65 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$68 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$75 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$79 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$82 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$89 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$93 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$96 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$103 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  n$107 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+              UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$110 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+              UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  n$113 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+              UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  ins22 -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  json -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  idd -&gt; { },
+  list -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13),
+             UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *),
+  ins -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  jo -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 13) } + Footprint({ }) ~&gt; ?, *),
+  id -&gt; ({ UserControlledString(List FileUtil.FileToJsonList(String,String) at line 14) } + Footprint({ }) ~&gt; ?, *) }
+
+
+
+</LISTING>

@@ -1,0 +1,211 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_1" [label="1: Start void GlobalSchoolRank.crawler()\nFormals: \nLocals:  CatchVar119:void $irvar12:void $irvar11:void $irvar10:void $irvar9:void $irvar8:void CatchVar65:void $irvar7:void $irvar6:void $irvar5:void $irvar4:void $irvar3:void $irvar2:void $irvar1:void $irvar0:void res:java.util.List* basicUrl:java.lang.String* i:int url:java.lang.String* e:java.lang.Exception* list:java.util.List* e1:java.lang.InterruptedException* \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_1" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_4" ;
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_2" [label="2: Exit void GlobalSchoolRank.crawler() \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [label="3:  exceptions sink \n   NULLIFY(&CatchVar119); [line 51]\n  NULLIFY(&e1); [line 51]\n  NULLIFY(&$irvar3); [line 51]\n  NULLIFY(&$irvar9); [line 51]\n  NULLIFY(&url); [line 51]\n  NULLIFY(&CatchVar65); [line 51]\n  NULLIFY(&$irvar5); [line 51]\n  NULLIFY(&$irvar4); [line 51]\n  NULLIFY(&res); [line 51]\n  NULLIFY(&i); [line 51]\n  NULLIFY(&$irvar6); [line 51]\n  NULLIFY(&$irvar0); [line 51]\n  NULLIFY(&$irvar10); [line 51]\n  NULLIFY(&$irvar8); [line 51]\n  NULLIFY(&$irvar1); [line 51]\n  NULLIFY(&basicUrl); [line 51]\n  NULLIFY(&$irvar2); [line 51]\n  NULLIFY(&e); [line 51]\n  EXIT_SCOPE(n$63,CatchVar119,e1,$irvar3,$irvar9,url,CatchVar65,$irvar5,$irvar4,res,i,$irvar6,$irvar0,$irvar10,$irvar8,$irvar1,basicUrl,$irvar2,e); [line 51]\n  APPLY_ABSTRACTION; [line 51]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_2" ;
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_4" [label="4:  method_body \n   *&basicUrl:java.lang.Object*=\"http://www.usnews.com/education/best-global-universities/rankings?page=\" [line 28]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_4" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_5" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_4" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_5" [label="5:  Call ArrayList.<init>() \n   n$0=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 29]\n  n$1=_fun_ArrayList.<init>()(n$0:java.util.ArrayList*) [line 29]\n  *&res:java.util.ArrayList*=n$0 [line 29]\n  EXIT_SCOPE(n$0,n$1); [line 29]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_5" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_6" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_5" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_6" [label="6:  method_body \n   *&i:int=1 [line 30]\n  APPLY_ABSTRACTION; [line 30]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_6" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_9" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_6" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_7" [label="7: Prune (true branch, if) \n   n$2=*&i:int [line 30]\n  PRUNE(!(n$2 >= 76), true); [line 30]\n  EXIT_SCOPE(n$2); [line 30]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_7" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_10" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_7" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_8" [label="8: Prune (false branch, if) \n   n$2=*&i:int [line 30]\n  PRUNE((n$2 >= 76), false); [line 30]\n  NULLIFY(&i); [line 30]\n  NULLIFY(&basicUrl); [line 30]\n  EXIT_SCOPE(n$2,i,basicUrl); [line 30]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_8" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_34" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_8" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_9" [label="9: + \n  " ]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_9" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_7" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_9" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_8" ;
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_10" [label="10:  method_body \n   n$3=*&#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 31]\n  *&$irvar0:java.io.PrintStream*=n$3 [line 31]\n  EXIT_SCOPE(n$3); [line 31]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_10" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_11" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_10" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_11" [label="11:  Call StringBuilder.<init>() \n   n$4=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 31]\n  n$5=_fun_StringBuilder.<init>()(n$4:java.lang.StringBuilder*) [line 31]\n  *&$irvar1:java.lang.StringBuilder*=n$4 [line 31]\n  EXIT_SCOPE(n$4,n$5); [line 31]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_11" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_12" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_11" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_12" [label="12:  Call StringBuilder StringBuilder.append(String) \n   n$6=*&$irvar1:java.lang.StringBuilder* [line 31]\n  _=*n$6:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 31]\n  n$8=_fun_StringBuilder StringBuilder.append(String)(n$6:java.lang.StringBuilder*,\"process____\":java.lang.Object*) virtual [line 31]\n  *&$irvar2:java.lang.StringBuilder*=n$8 [line 31]\n  NULLIFY(&$irvar1); [line 31]\n  EXIT_SCOPE(_,n$6,n$8,$irvar1); [line 31]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_12" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_13" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_12" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_13" [label="13:  method_body \n   n$9=*&#GB<>$com.dulishuo.usnews.sixteen.GlobalSchoolRank.count:int(root com.dulishuo.usnews.sixteen.GlobalSchoolRank) [line 31]\n  *&$irvar4:int=(n$9 + 1) [line 31]\n  EXIT_SCOPE(n$9); [line 31]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_13" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_14" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_13" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_14" [label="14:  method_body \n   n$10=*&#GB<>$com.dulishuo.usnews.sixteen.GlobalSchoolRank.count:int(root com.dulishuo.usnews.sixteen.GlobalSchoolRank) [line 31]\n  *&$irvar3:int=n$10 [line 31]\n  EXIT_SCOPE(n$10); [line 31]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_14" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_15" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_14" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_15" [label="15:  method_body \n   n$11=*&$irvar4:int [line 31]\n  *&#GB<>$com.dulishuo.usnews.sixteen.GlobalSchoolRank.count:com.dulishuo.usnews.sixteen.GlobalSchoolRank(root com.dulishuo.usnews.sixteen.GlobalSchoolRank)=n$11 [line 31]\n  NULLIFY(&$irvar4); [line 31]\n  EXIT_SCOPE(n$11,$irvar4); [line 31]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_15" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_16" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_15" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_16" [label="16:  Call StringBuilder StringBuilder.append(int) \n   n$12=*&$irvar2:java.lang.StringBuilder* [line 31]\n  _=*n$12:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 31]\n  n$14=*&$irvar3:int [line 31]\n  n$15=_fun_StringBuilder StringBuilder.append(int)(n$12:java.lang.StringBuilder*,n$14:int) virtual [line 31]\n  *&$irvar5:java.lang.StringBuilder*=n$15 [line 31]\n  NULLIFY(&$irvar3); [line 31]\n  NULLIFY(&$irvar2); [line 31]\n  EXIT_SCOPE(_,n$12,n$14,n$15,$irvar3,$irvar2); [line 31]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_16" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_17" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_16" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_17" [label="17:  Call String StringBuilder.toString() \n   n$16=*&$irvar5:java.lang.StringBuilder* [line 31]\n  _=*n$16:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 31]\n  n$18=_fun_String StringBuilder.toString()(n$16:java.lang.StringBuilder*) virtual [line 31]\n  *&$irvar6:java.lang.String*=n$18 [line 31]\n  NULLIFY(&$irvar5); [line 31]\n  EXIT_SCOPE(_,n$16,n$18,$irvar5); [line 31]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_17" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_18" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_17" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_18" [label="18:  Call void PrintStream.println(String) \n   n$19=*&$irvar0:java.io.PrintStream* [line 31]\n  _=*n$19:java.io.PrintStream*(root java.io.PrintStream) [line 31]\n  n$21=*&$irvar6:java.lang.String* [line 31]\n  n$22=_fun_void PrintStream.println(String)(n$19:java.io.PrintStream*,n$21:java.lang.String*) virtual [line 31]\n  NULLIFY(&$irvar6); [line 31]\n  NULLIFY(&$irvar0); [line 31]\n  EXIT_SCOPE(_,n$19,n$21,n$22,$irvar6,$irvar0); [line 31]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_18" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_19" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_18" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_19" [label="19:  Call Thread Thread.currentThread() \n   n$23=_fun_Thread Thread.currentThread()() [line 33]\n  *&$irvar7:java.lang.Thread*=n$23 [line 33]\n  NULLIFY(&$irvar7); [line 33]\n  EXIT_SCOPE(n$23,$irvar7); [line 33]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_19" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_20" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_19" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_42" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_20" [label="20:  Call void Thread.sleep(long) \n   n$24=_fun_void Thread.sleep(long)(100:long) [line 33]\n  EXIT_SCOPE(n$24); [line 33]\n  APPLY_ABSTRACTION; [line 33]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_20" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_23" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_20" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_42" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_21" [label="21:  method_body \n   n$25=*&CatchVar65:java.lang.Object* [line 34]\n  *&e1:java.lang.Object*=n$25 [line 34]\n  NULLIFY(&CatchVar65); [line 34]\n  EXIT_SCOPE(n$25,CatchVar65); [line 34]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_21" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_22" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_21" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_22" [label="22:  Call void Throwable.printStackTrace() \n   n$26=*&e1:java.lang.Object* [line 36]\n  _=*n$26:java.lang.Object*(root java.lang.Object) [line 36]\n  n$28=_fun_void Throwable.printStackTrace()(n$26:java.lang.Object*) virtual [line 36]\n  NULLIFY(&e1); [line 36]\n  EXIT_SCOPE(_,n$26,n$28,e1); [line 36]\n  APPLY_ABSTRACTION; [line 36]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_22" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_23" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_22" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_23" [label="23:  Call StringBuilder.<init>() \n   n$29=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 38]\n  n$30=_fun_StringBuilder.<init>()(n$29:java.lang.StringBuilder*) [line 38]\n  *&$irvar8:java.lang.StringBuilder*=n$29 [line 38]\n  EXIT_SCOPE(n$29,n$30); [line 38]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_23" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_24" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_23" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_24" [label="24:  Call StringBuilder StringBuilder.append(String) \n   n$31=*&$irvar8:java.lang.StringBuilder* [line 38]\n  _=*n$31:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 38]\n  n$33=*&basicUrl:java.lang.Object* [line 38]\n  n$34=_fun_StringBuilder StringBuilder.append(String)(n$31:java.lang.StringBuilder*,n$33:java.lang.Object*) virtual [line 38]\n  *&$irvar9:java.lang.StringBuilder*=n$34 [line 38]\n  NULLIFY(&$irvar8); [line 38]\n  EXIT_SCOPE(_,n$31,n$33,n$34,$irvar8); [line 38]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_24" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_25" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_24" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_25" [label="25:  Call StringBuilder StringBuilder.append(int) \n   n$35=*&$irvar9:java.lang.StringBuilder* [line 38]\n  _=*n$35:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 38]\n  n$37=*&i:int [line 38]\n  n$38=_fun_StringBuilder StringBuilder.append(int)(n$35:java.lang.StringBuilder*,n$37:int) virtual [line 38]\n  *&$irvar10:java.lang.StringBuilder*=n$38 [line 38]\n  NULLIFY(&$irvar9); [line 38]\n  EXIT_SCOPE(_,n$35,n$37,n$38,$irvar9); [line 38]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_25" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_26" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_25" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_26" [label="26:  Call String StringBuilder.toString() \n   n$39=*&$irvar10:java.lang.StringBuilder* [line 38]\n  _=*n$39:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 38]\n  n$41=_fun_String StringBuilder.toString()(n$39:java.lang.StringBuilder*) virtual [line 38]\n  *&url:java.lang.String*=n$41 [line 38]\n  NULLIFY(&$irvar10); [line 38]\n  EXIT_SCOPE(_,n$39,n$41,$irvar10); [line 38]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_26" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_27" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_26" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_27" [label="27:  Call ArrayList.<init>() \n   n$42=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 40]\n  n$43=_fun_ArrayList.<init>()(n$42:java.util.ArrayList*) [line 40]\n  *&list:java.util.ArrayList*=n$42 [line 40]\n  NULLIFY(&list); [line 40]\n  EXIT_SCOPE(n$42,n$43,list); [line 40]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_27" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_28" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_27" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_39" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_28" [label="28:  Call String GlobalSchoolRank.getHttp(String) \n   n$44=*&url:java.lang.String* [line 41]\n  n$45=_fun_String GlobalSchoolRank.getHttp(String)(n$44:java.lang.String*) [line 41]\n  *&$irvar11:java.lang.String*=n$45 [line 41]\n  NULLIFY(&url); [line 41]\n  EXIT_SCOPE(n$44,n$45,url); [line 41]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_28" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_29" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_28" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_39" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_29" [label="29:  Call List GlobalSchoolRank.parseHtml(String) \n   n$46=*&$irvar11:java.lang.String* [line 41]\n  n$47=_fun_List GlobalSchoolRank.parseHtml(String)(n$46:java.lang.String*) [line 41]\n  *&list:java.util.List*=n$47 [line 41]\n  NULLIFY(&$irvar11); [line 41]\n  EXIT_SCOPE(n$46,n$47,$irvar11); [line 41]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_29" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_30" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_29" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_39" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_30" [label="30:  Call boolean ArrayList.addAll(Collection) \n   n$48=*&res:java.util.ArrayList* [line 42]\n  _=*n$48:java.util.ArrayList*(root java.util.ArrayList) [line 42]\n  n$50=*&list:java.util.List* [line 42]\n  n$51=_fun_boolean ArrayList.addAll(Collection)(n$48:java.util.ArrayList*,n$50:java.util.List*) interface virtual [line 42]\n  *&$irvar12:_Bool=n$51 [line 42]\n  NULLIFY(&list); [line 42]\n  NULLIFY(&$irvar12); [line 42]\n  EXIT_SCOPE(_,n$48,n$50,n$51,list,$irvar12); [line 42]\n  APPLY_ABSTRACTION; [line 42]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_30" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_33" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_30" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_39" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_31" [label="31:  method_body \n   n$52=*&CatchVar119:java.lang.Object* [line 43]\n  *&e:java.lang.Object*=n$52 [line 43]\n  NULLIFY(&CatchVar119); [line 43]\n  EXIT_SCOPE(n$52,CatchVar119); [line 43]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_31" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_32" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_31" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_32" [label="32:  Call void Throwable.printStackTrace() \n   n$53=*&e:java.lang.Object* [line 45]\n  _=*n$53:java.lang.Object*(root java.lang.Object) [line 45]\n  n$55=_fun_void Throwable.printStackTrace()(n$53:java.lang.Object*) virtual [line 45]\n  NULLIFY(&e); [line 45]\n  EXIT_SCOPE(_,n$53,n$55,e); [line 45]\n  APPLY_ABSTRACTION; [line 45]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_32" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_33" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_32" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_33" [label="33:  method_body \n   n$56=*&i:int [line 30]\n  *&i:int=(n$56 + 1) [line 30]\n  EXIT_SCOPE(n$56); [line 30]\n  APPLY_ABSTRACTION; [line 30]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_33" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_9" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_33" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_34" [label="34:  Call void FileUtil.ListToFile(List,String) \n   n$57=*&res:java.util.ArrayList* [line 49]\n  n$58=_fun_void FileUtil.ListToFile(List,String)(n$57:java.util.ArrayList*,\"C:/Users/\\\\229\\\\188\\\\186\\\\232\\\\131\\\\156/Desktop/dataCrawler/usnews/2016/\\\\229\\\\133\\\\168\\\\231\\\\144\\\\131\\\\233\\\\171\\\\152\\\\230\\\\160\\\\161\\\\231\\\\187\\\\188\\\\229\\\\144\\\\136\\\\230\\\\142\\\\146\\\\229\\\\144\\\\141/uni1008.json\":java.lang.Object*) [line 49]\n  NULLIFY(&res); [line 49]\n  EXIT_SCOPE(n$57,n$58,res); [line 49]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_34" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_35" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_34" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_35" [label="35:  Call void PrintStream.println(String) \n   n$59=*&#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 50]\n  _=*n$59:java.io.PrintStream*(root java.io.PrintStream) [line 50]\n  n$61=_fun_void PrintStream.println(String)(n$59:java.io.PrintStream*,\"________________---Exit-------\":java.lang.Object*) virtual [line 50]\n  EXIT_SCOPE(_,n$59,n$61); [line 50]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_35" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_36" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_35" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_36" [label="36:  method_body \n   APPLY_ABSTRACTION; [line 51]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_36" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_2" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_36" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_37" [label="37: Prune (true branch, switch) \n   n$64=_fun___instanceof(n$63:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 43]\n  PRUNE(n$64, true); [line 43]\n  *&CatchVar119:void=n$63 [line 43]\n  EXIT_SCOPE(n$63,n$64); [line 43]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_37" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_31" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_37" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_38" [label="38: Prune (false branch, switch) \n   n$64=_fun___instanceof(n$63:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 43]\n  PRUNE(!n$64, false); [line 43]\n  *&return:void=EXN n$63 [line 43]\n  NULLIFY(&res); [line 43]\n  NULLIFY(&i); [line 43]\n  NULLIFY(&basicUrl); [line 43]\n  EXIT_SCOPE(n$63,n$64,res,i,basicUrl); [line 43]\n  APPLY_ABSTRACTION; [line 43]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_38" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_38" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_39" [label="39:  exception handler \n   n$62=*&return:void [line 43]\n  *&return:void=null [line 43]\n  n$63=_fun___unwrap_exception(n$62:void) [line 43]\n  NULLIFY(&url); [line 43]\n  NULLIFY(&list); [line 43]\n  NULLIFY(&$irvar11); [line 43]\n  EXIT_SCOPE(n$62,url,list,$irvar11); [line 43]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_39" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_37" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_39" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_38" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_39" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_40" [label="40: Prune (true branch, switch) \n   n$65=_fun___instanceof(n$63:java.lang.InterruptedException*,sizeof(t=java.lang.InterruptedException):void) [line 34]\n  PRUNE(n$65, true); [line 34]\n  *&CatchVar65:void=n$63 [line 34]\n  EXIT_SCOPE(n$63,n$65); [line 34]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_40" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_21" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_40" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_41" [label="41: Prune (false branch, switch) \n   n$65=_fun___instanceof(n$63:java.lang.InterruptedException*,sizeof(t=java.lang.InterruptedException):void) [line 34]\n  PRUNE(!n$65, false); [line 34]\n  *&return:void=EXN n$63 [line 34]\n  NULLIFY(&res); [line 34]\n  NULLIFY(&i); [line 34]\n  NULLIFY(&basicUrl); [line 34]\n  EXIT_SCOPE(n$63,n$65,res,i,basicUrl); [line 34]\n  APPLY_ABSTRACTION; [line 34]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_41" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_41" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+"com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_42" [label="42:  exception handler \n   n$62=*&return:void [line 34]\n  *&return:void=null [line 34]\n  n$63=_fun___unwrap_exception(n$62:void) [line 34]\n  EXIT_SCOPE(n$62); [line 34]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_42" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_40" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_42" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_41" ;
+	 "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_42" -> "com.dulishuo.usnews.sixteen.GlobalSchoolRank.crawler():void.e46c6825299ea0db14af280c0e9a93e3_3" [color="red" ];
+}

@@ -1,0 +1,301 @@
+/* @generated */
+digraph cfg {
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_1" [label="1: Start void InfoGet.main(String[])\nFormals:  args:java.lang.String*[_*_](*)\nLocals:  CatchVar231:void $irvar20:void $irvar19:void CatchVar195:void $irvar18:void $irvar17:void $irvar16:void $irvar15:void $irvar14:void $irvar13:void $irvar12:void $irvar11:void $irvar10:void $irvar9:void $irvar8:void $irvar7:void $irvar6:void $irvar5:void $irvar4:void $irvar3:void $irvar2:void $irvar1:void $irvar0:void $bcvar5:void fail:java.util.List* bw:java.io.BufferedWriter* rak:java.util.List* url:java.util.List* i:int result:java.lang.String* e:java.lang.Exception* yy:java.lang.String* \n  " color=yellow style=filled]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_1" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_4" ;
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_2" [label="2: Exit void InfoGet.main(String[]) \n  " color=yellow style=filled]
+	
+
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [label="3:  exceptions sink \n   NULLIFY(&result); [line 66]\n  NULLIFY(&$irvar3); [line 66]\n  NULLIFY(&url); [line 66]\n  NULLIFY(&fail); [line 66]\n  NULLIFY(&$irvar5); [line 66]\n  NULLIFY(&$irvar16); [line 66]\n  NULLIFY(&$irvar4); [line 66]\n  NULLIFY(&$irvar7); [line 66]\n  NULLIFY(&$irvar12); [line 66]\n  NULLIFY(&$bcvar5); [line 66]\n  NULLIFY(&i); [line 66]\n  NULLIFY(&CatchVar231); [line 66]\n  NULLIFY(&CatchVar195); [line 66]\n  NULLIFY(&$irvar19); [line 66]\n  NULLIFY(&$irvar6); [line 66]\n  NULLIFY(&$irvar0); [line 66]\n  NULLIFY(&$irvar13); [line 66]\n  NULLIFY(&$irvar11); [line 66]\n  NULLIFY(&$irvar10); [line 66]\n  NULLIFY(&$irvar8); [line 66]\n  NULLIFY(&$irvar1); [line 66]\n  NULLIFY(&rak); [line 66]\n  NULLIFY(&yy); [line 66]\n  NULLIFY(&bw); [line 66]\n  NULLIFY(&$irvar2); [line 66]\n  NULLIFY(&$irvar15); [line 66]\n  NULLIFY(&e); [line 66]\n  NULLIFY(&$irvar14); [line 66]\n  EXIT_SCOPE(n$114,result,$irvar3,url,fail,$irvar5,$irvar16,$irvar4,$irvar7,$irvar12,$bcvar5,i,CatchVar231,CatchVar195,$irvar19,$irvar6,$irvar0,$irvar13,$irvar11,$irvar10,$irvar8,$irvar1,rak,yy,bw,$irvar2,$irvar15,e,$irvar14); [line 66]\n  APPLY_ABSTRACTION; [line 66]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_2" ;
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_4" [label="4:  Call List FileUtil.FileToList(String) \n   n$0=_fun_List FileUtil.FileToList(String)(\"C:/Users/\\\\229\\\\188\\\\186\\\\232\\\\131\\\\156/Desktop/dataCrawler/usnews/schoolurl22.txt\":java.lang.Object*) [line 30]\n  *&url:java.util.List*=n$0 [line 30]\n  EXIT_SCOPE(n$0); [line 30]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_4" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_5" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_4" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_5" [label="5:  Call List FileUtil.FileToList(String) \n   n$1=_fun_List FileUtil.FileToList(String)(\"C:/Users/\\\\229\\\\188\\\\186\\\\232\\\\131\\\\156/Desktop/dataCrawler/usnews/rank.txt\":java.lang.Object*) [line 31]\n  *&rak:java.util.List*=n$1 [line 31]\n  EXIT_SCOPE(n$1); [line 31]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_5" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_6" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_5" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_6" [label="6:  Call BufferedWriter FileUtil.FileWriter(String,boolean) \n   n$2=_fun_BufferedWriter FileUtil.FileWriter(String,boolean)(\"C:/Users/\\\\229\\\\188\\\\186\\\\232\\\\131\\\\156/Desktop/dataCrawler/usnews/result.json\":java.lang.Object*,1:int) [line 32]\n  *&bw:java.io.BufferedWriter*=n$2 [line 32]\n  EXIT_SCOPE(n$2); [line 32]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_6" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_7" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_6" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_7" [label="7:  Call ArrayList.<init>() \n   n$3=_fun___new(sizeof(t=java.util.ArrayList):java.util.ArrayList*) [line 33]\n  n$4=_fun_ArrayList.<init>()(n$3:java.util.ArrayList*) [line 33]\n  *&fail:java.util.ArrayList*=n$3 [line 33]\n  EXIT_SCOPE(n$3,n$4); [line 33]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_7" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_8" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_7" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_8" [label="8:  Call Iterator List.iterator() \n   n$5=*&rak:java.util.List* [line 35]\n  _=*n$5:java.util.List*(root java.util.List) [line 35]\n  n$7=_fun_Iterator List.iterator()(n$5:java.util.List*) interface virtual [line 35]\n  *&$bcvar5:java.util.Iterator*=n$7 [line 35]\n  NULLIFY(&rak); [line 35]\n  EXIT_SCOPE(_,n$5,n$7,rak); [line 35]\n  APPLY_ABSTRACTION; [line 35]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_8" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_9" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_8" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_9" [label="9:  Call boolean Iterator.hasNext() \n   n$8=*&$bcvar5:java.util.Iterator* [line 35]\n  _=*n$8:java.util.Iterator*(root java.util.Iterator) [line 35]\n  n$10=_fun_boolean Iterator.hasNext()(n$8:java.util.Iterator*) interface virtual [line 35]\n  *&$irvar0:_Bool=n$10 [line 35]\n  EXIT_SCOPE(_,n$8,n$10); [line 35]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_9" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_12" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_9" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_10" [label="10: Prune (true branch, if) \n   n$11=*&$irvar0:_Bool [line 35]\n  PRUNE(!(n$11 == 0), true); [line 35]\n  NULLIFY(&$irvar0); [line 35]\n  EXIT_SCOPE(n$11,$irvar0); [line 35]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_10" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_13" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_10" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_11" [label="11: Prune (false branch, if) \n   n$11=*&$irvar0:_Bool [line 35]\n  PRUNE((n$11 == 0), false); [line 35]\n  NULLIFY(&$bcvar5); [line 35]\n  NULLIFY(&$irvar0); [line 35]\n  EXIT_SCOPE(n$11,$bcvar5,$irvar0); [line 35]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_11" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_23" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_11" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_12" [label="12: + \n  " ]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_12" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_10" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_12" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_11" ;
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_13" [label="13:  Call Object Iterator.next() \n   n$12=*&$bcvar5:java.util.Iterator* [line 35]\n  _=*n$12:java.util.Iterator*(root java.util.Iterator) [line 35]\n  n$14=_fun_Object Iterator.next()(n$12:java.util.Iterator*) interface virtual [line 35]\n  *&$irvar1:java.lang.Object*=n$14 [line 35]\n  EXIT_SCOPE(_,n$12,n$14); [line 35]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_13" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_14" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_13" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_14" [label="14:  method_body \n   n$15=*&$irvar1:java.lang.Object* [line 35]\n  n$16=_fun___cast(n$15:java.lang.Object*,sizeof(t=java.lang.String;sub_t=( sub )(cast)):void) [line 35]\n  *&yy:java.lang.String*=n$16 [line 35]\n  NULLIFY(&$irvar1); [line 35]\n  EXIT_SCOPE(n$15,n$16,$irvar1); [line 35]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_14" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_15" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_14" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_15" [label="15:  method_body \n   n$17=*&#GB<>$com.dulishuo.usnews.InfoGet.mapR:java.util.Map*(root com.dulishuo.usnews.InfoGet) [line 36]\n  *&$irvar3:java.util.Map*=n$17 [line 36]\n  EXIT_SCOPE(n$17); [line 36]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_15" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_16" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_15" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_16" [label="16:  Call String[] String.split(String) \n   n$18=*&yy:java.lang.String* [line 36]\n  _=*n$18:java.lang.String*(root java.lang.String) [line 36]\n  n$20=_fun_String[] String.split(String)(n$18:java.lang.String*,\"____\":java.lang.Object*) virtual [line 36]\n  *&$irvar2:java.lang.String*[_*_](*)=n$20 [line 36]\n  EXIT_SCOPE(_,n$18,n$20); [line 36]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_16" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_17" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_16" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_17" [label="17:  method_body \n   n$21=*&$irvar2:java.lang.String*[_*_](*) [line 36]\n  _=*n$21:java.lang.String*(root java.lang.String*[_*_]) [line 36]\n  n$23=*n$21[1]:java.lang.String* [line 36]\n  *&$irvar5:java.lang.String*=n$23 [line 36]\n  NULLIFY(&$irvar2); [line 36]\n  EXIT_SCOPE(_,n$21,n$23,$irvar2); [line 36]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_17" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_18" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_17" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_18" [label="18:  Call String[] String.split(String) \n   n$24=*&yy:java.lang.String* [line 36]\n  _=*n$24:java.lang.String*(root java.lang.String) [line 36]\n  n$26=_fun_String[] String.split(String)(n$24:java.lang.String*,\"____\":java.lang.Object*) virtual [line 36]\n  *&$irvar4:java.lang.String*[_*_](*)=n$26 [line 36]\n  NULLIFY(&yy); [line 36]\n  EXIT_SCOPE(_,n$24,n$26,yy); [line 36]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_18" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_19" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_18" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_19" [label="19:  method_body \n   n$27=*&$irvar4:java.lang.String*[_*_](*) [line 36]\n  _=*n$27:java.lang.String*(root java.lang.String*[_*_]) [line 36]\n  n$29=*n$27[0]:java.lang.String* [line 36]\n  *&$irvar6:java.lang.String*=n$29 [line 36]\n  NULLIFY(&$irvar4); [line 36]\n  EXIT_SCOPE(_,n$27,n$29,$irvar4); [line 36]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_19" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_20" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_19" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_20" [label="20:  Call int Integer.parseInt(String) \n   n$30=*&$irvar6:java.lang.String* [line 36]\n  n$31=_fun_int Integer.parseInt(String)(n$30:java.lang.String*) [line 36]\n  *&$irvar7:int=n$31 [line 36]\n  NULLIFY(&$irvar6); [line 36]\n  EXIT_SCOPE(n$30,n$31,$irvar6); [line 36]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_20" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_21" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_20" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_21" [label="21:  Call Integer Integer.valueOf(int) \n   n$32=*&$irvar7:int [line 36]\n  n$33=_fun_Integer Integer.valueOf(int)(n$32:int) [line 36]\n  *&$irvar8:java.lang.Integer*=n$33 [line 36]\n  NULLIFY(&$irvar7); [line 36]\n  EXIT_SCOPE(n$32,n$33,$irvar7); [line 36]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_21" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_22" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_21" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_22" [label="22:  Call Object Map.put(Object,Object) \n   n$34=*&$irvar3:java.util.Map* [line 36]\n  _=*n$34:java.util.Map*(root java.util.Map) [line 36]\n  n$36=*&$irvar5:java.lang.String* [line 36]\n  n$37=*&$irvar8:java.lang.Integer* [line 36]\n  n$38=_fun_Object Map.put(Object,Object)(n$34:java.util.Map*,n$36:java.lang.String*,n$37:java.lang.Integer*) interface virtual [line 36]\n  *&$irvar9:java.lang.Object*=n$38 [line 36]\n  NULLIFY(&$irvar3); [line 36]\n  NULLIFY(&$irvar9); [line 36]\n  NULLIFY(&$irvar5); [line 36]\n  NULLIFY(&$irvar8); [line 36]\n  EXIT_SCOPE(_,n$34,n$36,n$37,n$38,$irvar3,$irvar9,$irvar5,$irvar8); [line 36]\n  APPLY_ABSTRACTION; [line 36]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_22" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_9" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_22" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_23" [label="23:  method_body \n   *&i:int=128 [line 39]\n  APPLY_ABSTRACTION; [line 39]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_23" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_24" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_23" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_24" [label="24:  Call int List.size() \n   n$39=*&url:java.util.List* [line 39]\n  _=*n$39:java.util.List*(root java.util.List) [line 39]\n  n$41=_fun_int List.size()(n$39:java.util.List*) interface virtual [line 39]\n  *&$irvar10:int=n$41 [line 39]\n  EXIT_SCOPE(_,n$39,n$41); [line 39]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_24" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_27" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_24" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_25" [label="25: Prune (true branch, if) \n   n$42=*&i:int [line 39]\n  n$43=*&$irvar10:int [line 39]\n  PRUNE(!(n$42 >= n$43), true); [line 39]\n  NULLIFY(&$irvar10); [line 39]\n  EXIT_SCOPE(n$42,n$43,$irvar10); [line 39]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_25" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_28" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_25" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_26" [label="26: Prune (false branch, if) \n   n$42=*&i:int [line 39]\n  n$43=*&$irvar10:int [line 39]\n  PRUNE((n$42 >= n$43), false); [line 39]\n  NULLIFY(&url); [line 39]\n  NULLIFY(&i); [line 39]\n  NULLIFY(&$irvar10); [line 39]\n  EXIT_SCOPE(n$42,n$43,url,i,$irvar10); [line 39]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_26" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_49" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_26" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_27" [label="27: + \n  " ]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_27" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_25" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_27" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_26" ;
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_28" [label="28:  method_body \n   n$44=*&#GB<>$com.dulishuo.usnews.InfoGet.log:org.apache.log4j.Logger*(root com.dulishuo.usnews.InfoGet) [line 40]\n  *&$irvar11:org.apache.log4j.Logger*=n$44 [line 40]\n  EXIT_SCOPE(n$44); [line 40]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_28" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_29" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_28" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_29" [label="29:  Call StringBuilder.<init>() \n   n$45=_fun___new(sizeof(t=java.lang.StringBuilder):java.lang.StringBuilder*) [line 40]\n  n$46=_fun_StringBuilder.<init>()(n$45:java.lang.StringBuilder*) [line 40]\n  *&$irvar12:java.lang.StringBuilder*=n$45 [line 40]\n  EXIT_SCOPE(n$45,n$46); [line 40]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_29" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_30" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_29" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_30" [label="30:  Call StringBuilder StringBuilder.append(String) \n   n$47=*&$irvar12:java.lang.StringBuilder* [line 40]\n  _=*n$47:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 40]\n  n$49=_fun_StringBuilder StringBuilder.append(String)(n$47:java.lang.StringBuilder*,\"process___\":java.lang.Object*) virtual [line 40]\n  *&$irvar13:java.lang.StringBuilder*=n$49 [line 40]\n  NULLIFY(&$irvar12); [line 40]\n  EXIT_SCOPE(_,n$47,n$49,$irvar12); [line 40]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_30" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_31" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_30" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_31" [label="31:  Call StringBuilder StringBuilder.append(int) \n   n$50=*&$irvar13:java.lang.StringBuilder* [line 40]\n  _=*n$50:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 40]\n  n$52=*&i:int [line 40]\n  n$53=_fun_StringBuilder StringBuilder.append(int)(n$50:java.lang.StringBuilder*,n$52:int) virtual [line 40]\n  *&$irvar14:java.lang.StringBuilder*=n$53 [line 40]\n  NULLIFY(&$irvar13); [line 40]\n  EXIT_SCOPE(_,n$50,n$52,n$53,$irvar13); [line 40]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_31" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_32" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_31" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_32" [label="32:  Call String StringBuilder.toString() \n   n$54=*&$irvar14:java.lang.StringBuilder* [line 40]\n  _=*n$54:java.lang.StringBuilder*(root java.lang.StringBuilder) [line 40]\n  n$56=_fun_String StringBuilder.toString()(n$54:java.lang.StringBuilder*) virtual [line 40]\n  *&$irvar15:java.lang.String*=n$56 [line 40]\n  NULLIFY(&$irvar14); [line 40]\n  EXIT_SCOPE(_,n$54,n$56,$irvar14); [line 40]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_32" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_33" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_32" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_33" [label="33:  Call void Category.info(Object) \n   n$57=*&$irvar11:org.apache.log4j.Logger* [line 40]\n  _=*n$57:org.apache.log4j.Logger*(root org.apache.log4j.Logger) [line 40]\n  n$59=*&$irvar15:java.lang.String* [line 40]\n  n$60=_fun_void Category.info(Object)(n$57:org.apache.log4j.Logger*,n$59:java.lang.String*) virtual [line 40]\n  NULLIFY(&$irvar11); [line 40]\n  NULLIFY(&$irvar15); [line 40]\n  EXIT_SCOPE(_,n$57,n$59,n$60,$irvar11,$irvar15); [line 40]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_33" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_34" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_33" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_34" [label="34:  Call Object List.get(int) \n   n$61=*&url:java.util.List* [line 41]\n  _=*n$61:java.util.List*(root java.util.List) [line 41]\n  n$63=*&i:int [line 41]\n  n$64=_fun_Object List.get(int)(n$61:java.util.List*,n$63:int) interface virtual [line 41]\n  *&$irvar16:java.lang.Object*=n$64 [line 41]\n  EXIT_SCOPE(_,n$61,n$63,n$64); [line 41]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_34" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_35" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_34" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_35" [label="35:  Call String InfoGet.getInfo(String) \n   n$65=*&$irvar16:java.lang.Object* [line 41]\n  n$66=_fun___cast(n$65:java.lang.Object*,sizeof(t=java.lang.String;sub_t=( sub )(cast)):void) [line 41]\n  n$67=_fun_String InfoGet.getInfo(String)(n$66:java.lang.String*) [line 41]\n  *&result:java.lang.String*=n$67 [line 41]\n  NULLIFY(&$irvar16); [line 41]\n  EXIT_SCOPE(n$65,n$66,n$67,$irvar16); [line 41]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_35" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_38" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_35" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_36" [label="36: Prune (true branch, if) \n   n$68=*&result:java.lang.String* [line 43]\n  PRUNE(!(n$68 == \"-1\"), true); [line 43]\n  EXIT_SCOPE(n$68); [line 43]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_36" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_39" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_36" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_57" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_37" [label="37: Prune (false branch, if) \n   n$68=*&result:java.lang.String* [line 43]\n  PRUNE((n$68 == \"-1\"), false); [line 43]\n  NULLIFY(&result); [line 43]\n  EXIT_SCOPE(n$68,result); [line 43]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_37" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_42" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_37" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_57" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_38" [label="38: + \n  " ]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_38" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_36" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_38" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_37" ;
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_39" [label="39:  Call void Writer.write(String) \n   n$69=*&bw:java.io.BufferedWriter* [line 44]\n  _=*n$69:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 44]\n  n$71=*&result:java.lang.String* [line 44]\n  n$72=_fun_void Writer.write(String)(n$69:java.io.BufferedWriter*,n$71:java.lang.String*) virtual [line 44]\n  NULLIFY(&result); [line 44]\n  EXIT_SCOPE(_,n$69,n$71,n$72,result); [line 44]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_39" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_40" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_39" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_57" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_40" [label="40:  Call void BufferedWriter.newLine() \n   n$73=*&bw:java.io.BufferedWriter* [line 45]\n  _=*n$73:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 45]\n  n$75=_fun_void BufferedWriter.newLine()(n$73:java.io.BufferedWriter*) virtual [line 45]\n  EXIT_SCOPE(_,n$73,n$75); [line 45]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_40" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_41" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_40" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_57" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_41" [label="41:  Call void BufferedWriter.flush() \n   n$76=*&bw:java.io.BufferedWriter* [line 46]\n  _=*n$76:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 46]\n  n$78=_fun_void BufferedWriter.flush()(n$76:java.io.BufferedWriter*) virtual [line 46]\n  EXIT_SCOPE(_,n$76,n$78); [line 46]\n  APPLY_ABSTRACTION; [line 46]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_41" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_48" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_41" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_57" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_42" [label="42:  Call Object List.get(int) \n   n$79=*&url:java.util.List* [line 49]\n  _=*n$79:java.util.List*(root java.util.List) [line 49]\n  n$81=*&i:int [line 49]\n  n$82=_fun_Object List.get(int)(n$79:java.util.List*,n$81:int) interface virtual [line 49]\n  *&$irvar17:java.lang.Object*=n$82 [line 49]\n  EXIT_SCOPE(_,n$79,n$81,n$82); [line 49]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_42" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_43" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_42" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_57" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_43" [label="43:  Call boolean ArrayList.add(Object) \n   n$83=*&fail:java.util.ArrayList* [line 49]\n  _=*n$83:java.util.ArrayList*(root java.util.ArrayList) [line 49]\n  n$85=*&$irvar17:java.lang.Object* [line 49]\n  n$86=_fun_boolean ArrayList.add(Object)(n$83:java.util.ArrayList*,n$85:java.lang.Object*) interface virtual [line 49]\n  *&$irvar18:_Bool=n$86 [line 49]\n  NULLIFY(&$irvar17); [line 49]\n  NULLIFY(&$irvar18); [line 49]\n  EXIT_SCOPE(_,n$83,n$85,n$86,$irvar17,$irvar18); [line 49]\n  APPLY_ABSTRACTION; [line 49]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_43" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_48" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_43" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_57" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_44" [label="44:  method_body \n   n$87=*&CatchVar195:java.lang.Object* [line 51]\n  *&e:java.lang.Object*=n$87 [line 51]\n  NULLIFY(&CatchVar195); [line 51]\n  EXIT_SCOPE(n$87,CatchVar195); [line 51]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_44" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_45" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_44" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_45" [label="45:  Call void Throwable.printStackTrace() \n   n$88=*&e:java.lang.Object* [line 53]\n  _=*n$88:java.lang.Object*(root java.lang.Object) [line 53]\n  n$90=_fun_void Throwable.printStackTrace()(n$88:java.lang.Object*) virtual [line 53]\n  NULLIFY(&e); [line 53]\n  EXIT_SCOPE(_,n$88,n$90,e); [line 53]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_45" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_46" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_45" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_46" [label="46:  Call Object List.get(int) \n   n$91=*&url:java.util.List* [line 54]\n  _=*n$91:java.util.List*(root java.util.List) [line 54]\n  n$93=*&i:int [line 54]\n  n$94=_fun_Object List.get(int)(n$91:java.util.List*,n$93:int) interface virtual [line 54]\n  *&$irvar19:java.lang.Object*=n$94 [line 54]\n  EXIT_SCOPE(_,n$91,n$93,n$94); [line 54]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_46" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_47" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_46" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_47" [label="47:  Call boolean ArrayList.add(Object) \n   n$95=*&fail:java.util.ArrayList* [line 54]\n  _=*n$95:java.util.ArrayList*(root java.util.ArrayList) [line 54]\n  n$97=*&$irvar19:java.lang.Object* [line 54]\n  n$98=_fun_boolean ArrayList.add(Object)(n$95:java.util.ArrayList*,n$97:java.lang.Object*) interface virtual [line 54]\n  *&$irvar20:_Bool=n$98 [line 54]\n  NULLIFY(&$irvar19); [line 54]\n  NULLIFY(&$irvar20); [line 54]\n  EXIT_SCOPE(_,n$95,n$97,n$98,$irvar19,$irvar20); [line 54]\n  APPLY_ABSTRACTION; [line 54]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_47" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_48" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_47" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_48" [label="48:  method_body \n   n$99=*&i:int [line 39]\n  *&i:int=(n$99 + 1) [line 39]\n  EXIT_SCOPE(n$99); [line 39]\n  APPLY_ABSTRACTION; [line 39]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_48" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_24" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_48" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_49" [label="49:  Call void BufferedWriter.close() \n   n$100=*&bw:java.io.BufferedWriter* [line 59]\n  n$103=_fun___set_mem_attribute(n$100:java.io.BufferedWriter*) [line 59]\n  _=*n$100:java.io.BufferedWriter*(root java.io.BufferedWriter) [line 59]\n  n$102=_fun_void BufferedWriter.close()(n$100:java.io.BufferedWriter*) virtual [line 59]\n  NULLIFY(&bw); [line 59]\n  EXIT_SCOPE(_,n$100,n$102,n$103,bw); [line 59]\n  APPLY_ABSTRACTION; [line 59]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_49" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_52" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_49" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_60" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_50" [label="50:  method_body \n   n$104=*&CatchVar231:java.lang.Object* [line 60]\n  *&e:java.lang.Object*=n$104 [line 60]\n  NULLIFY(&CatchVar231); [line 60]\n  EXIT_SCOPE(n$104,CatchVar231); [line 60]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_50" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_51" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_50" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_51" [label="51:  Call void Throwable.printStackTrace() \n   n$105=*&e:java.lang.Object* [line 62]\n  _=*n$105:java.lang.Object*(root java.lang.Object) [line 62]\n  n$107=_fun_void Throwable.printStackTrace()(n$105:java.lang.Object*) virtual [line 62]\n  NULLIFY(&e); [line 62]\n  EXIT_SCOPE(_,n$105,n$107,e); [line 62]\n  APPLY_ABSTRACTION; [line 62]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_51" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_52" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_51" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_52" [label="52:  Call void FileUtil.ListToFile(List,String) \n   n$108=*&fail:java.util.ArrayList* [line 64]\n  n$109=_fun_void FileUtil.ListToFile(List,String)(n$108:java.util.ArrayList*,\"C:/Users/\\\\229\\\\188\\\\186\\\\232\\\\131\\\\156/Desktop/dataCrawler/usnews/fail1.txt\":java.lang.Object*) [line 64]\n  NULLIFY(&fail); [line 64]\n  EXIT_SCOPE(n$108,n$109,fail); [line 64]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_52" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_53" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_52" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_53" [label="53:  Call void Category.info(Object) \n   n$110=*&#GB<>$com.dulishuo.usnews.InfoGet.log:org.apache.log4j.Logger*(root com.dulishuo.usnews.InfoGet) [line 65]\n  _=*n$110:org.apache.log4j.Logger*(root org.apache.log4j.Logger) [line 65]\n  n$112=_fun_void Category.info(Object)(n$110:org.apache.log4j.Logger*,\"___end____\":java.lang.Object*) virtual [line 65]\n  EXIT_SCOPE(_,n$110,n$112); [line 65]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_53" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_54" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_53" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_54" [label="54:  method_body \n   APPLY_ABSTRACTION; [line 66]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_54" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_2" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_54" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_55" [label="55: Prune (true branch, switch) \n   n$115=_fun___instanceof(n$114:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 51]\n  PRUNE(n$115, true); [line 51]\n  *&CatchVar195:void=n$114 [line 51]\n  EXIT_SCOPE(n$114,n$115); [line 51]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_55" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_44" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_55" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_56" [label="56: Prune (false branch, switch) \n   n$115=_fun___instanceof(n$114:java.lang.Exception*,sizeof(t=java.lang.Exception):void) [line 51]\n  PRUNE(!n$115, false); [line 51]\n  *&return:void=EXN n$114 [line 51]\n  NULLIFY(&url); [line 51]\n  NULLIFY(&fail); [line 51]\n  NULLIFY(&i); [line 51]\n  NULLIFY(&bw); [line 51]\n  EXIT_SCOPE(n$114,n$115,url,fail,i,bw); [line 51]\n  APPLY_ABSTRACTION; [line 51]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_56" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_56" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_57" [label="57:  exception handler \n   n$113=*&return:void [line 51]\n  *&return:void=null [line 51]\n  n$114=_fun___unwrap_exception(n$113:void) [line 51]\n  NULLIFY(&result); [line 51]\n  NULLIFY(&$irvar17); [line 51]\n  EXIT_SCOPE(n$113,result,$irvar17); [line 51]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_57" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_55" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_57" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_56" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_57" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_58" [label="58: Prune (true branch, switch) \n   n$116=_fun___instanceof(n$114:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 60]\n  PRUNE(n$116, true); [line 60]\n  *&CatchVar231:void=n$114 [line 60]\n  EXIT_SCOPE(n$114,n$116); [line 60]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_58" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_50" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_58" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_59" [label="59: Prune (false branch, switch) \n   n$116=_fun___instanceof(n$114:java.io.IOException*,sizeof(t=java.io.IOException):void) [line 60]\n  PRUNE(!n$116, false); [line 60]\n  *&return:void=EXN n$114 [line 60]\n  NULLIFY(&fail); [line 60]\n  EXIT_SCOPE(n$114,n$116,fail); [line 60]\n  APPLY_ABSTRACTION; [line 60]\n " shape="invhouse"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_59" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_59" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+"com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_60" [label="60:  exception handler \n   n$113=*&return:void [line 60]\n  *&return:void=null [line 60]\n  n$114=_fun___unwrap_exception(n$113:void) [line 60]\n  EXIT_SCOPE(n$113); [line 60]\n " shape="box"]
+	
+
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_60" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_58" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_60" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_59" ;
+	 "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_60" -> "com.dulishuo.usnews.InfoGet.main(java.lang.String[]):void.f66419ce820e7be26bf35f59d9862d07_3" [color="red" ];
+}

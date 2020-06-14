@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.dulishuo.jituo.Test.test():void.d7ba9ff51137f1219a212a43744ff2ee</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Procedure <a href="./../Test.java.1607ef06a64de0ae0f18c6d24d8028db.html#LINE21">void Test.test()</a></h1></center>
+<a href="./nodes/com.dulishuo.jituo.Test.test%28%29%3Avoid.d7ba9ff51137f1219a212a43744ff2ee_node1.html"><span class='visited with_tooltip'>S_1<span class='tooltip'>node1 preds: succs:4 exn:2 Start
+</span></span></a> <a href="./nodes/com.dulishuo.jituo.Test.test%28%29%3Avoid.d7ba9ff51137f1219a212a43744ff2ee_node2.html"><span class='visited with_tooltip'>E_2<span class='tooltip'>node2 preds:7 3 succs: exn: Exit
+</span></span></a> <a href="./nodes/com.dulishuo.jituo.Test.test%28%29%3Avoid.d7ba9ff51137f1219a212a43744ff2ee_node3.html"><span class='visited with_tooltip'>I_3<span class='tooltip'>node3 preds: succs:2 exn:2 Instructions
+NULLIFY(&amp;url); [line 31];
+NULLIFY(&amp;res); [line 31];
+EXIT_SCOPE(url,res); [line 31];
+APPLY_ABSTRACTION; [line 31];
+</span></span></a> <a href="./nodes/com.dulishuo.jituo.Test.test%28%29%3Avoid.d7ba9ff51137f1219a212a43744ff2ee_node4.html"><span class='visited with_tooltip'>I_4<span class='tooltip'>node4 preds:1 succs:5 exn:3 Instructions
+*&amp;url:java.lang.Object*="http://www.gter.net/offer/index/ajax?page=1&page_num=24&kw=" [line 23];
+</span></span></a> <a href="./nodes/com.dulishuo.jituo.Test.test%28%29%3Avoid.d7ba9ff51137f1219a212a43744ff2ee_node5.html"><span class='visited with_tooltip'>I_5<span class='tooltip'>node5 preds:4 succs:6 exn:3 Instructions
+n$0=*&amp;url:java.lang.Object* [line 25];
+n$1=_fun_String CrawlerUtil.httpRequest(String)(n$0:java.lang.Object*) [line 25];
+*&amp;res:java.lang.String*=n$1 [line 25];
+NULLIFY(&amp;url); [line 25];
+EXIT_SCOPE(n$0,n$1,url); [line 25];
+</span></span></a> <a href="./nodes/com.dulishuo.jituo.Test.test%28%29%3Avoid.d7ba9ff51137f1219a212a43744ff2ee_node6.html"><span class='visited with_tooltip'>I_6<span class='tooltip'>node6 preds:5 succs:7 exn:3 Instructions
+n$2=*&amp;#GB<>$java.lang.System.out:java.io.PrintStream*(root java.lang.System) [line 28];
+_=*n$2:java.io.PrintStream*(root java.io.PrintStream) [line 28];
+n$4=*&amp;res:java.lang.String* [line 28];
+n$5=_fun_void PrintStream.println(String)(n$2:java.io.PrintStream*,n$4:java.lang.String*) virtual [line 28];
+NULLIFY(&amp;res); [line 28];
+EXIT_SCOPE(_,n$2,n$4,n$5,res); [line 28];
+</span></span></a> <a href="./nodes/com.dulishuo.jituo.Test.test%28%29%3Avoid.d7ba9ff51137f1219a212a43744ff2ee_node7.html"><span class='visited with_tooltip'>I_7<span class='tooltip'>node7 preds:6 succs:2 exn:3 Instructions
+APPLY_ABSTRACTION; [line 31];
+</span></span></a><br />@
+
+<span class='color_black'>void void Test.test()()
+Analyzed
+</span><br />FAILURE:NONE SYMOPS:0
+<br />
+
+<hr width="100%">
+ADVICE DURING FOOTPRINT
+
+<hr width="100%">
+ERROR DURING FOOTPRINT
+
+<hr width="100%">
+INFO DURING FOOTPRINT
+
+<hr width="100%">
+LIKE DURING FOOTPRINT
+
+<hr width="100%">
+WARNING DURING FOOTPRINT
+
+<hr width="100%">
+<LISTING>
+Quandary: { }
+</LISTING>
+<hr />
+<pre>
+{ proc_name= void Test.test()
+; translation_unit= src/com/dulishuo/jituo/Test.java
+; access= Private
+; formals= []
+; is_defined= true
+; loc= src/com/dulishuo/jituo/Test.java:21
+; locals= [{ name= res; typ= java.lang.String*; modify_in_block= false }; 
+           { name= url; typ= java.lang.String*; modify_in_block= false }]
+; ret_type= void 
+; proc_id= com.dulishuo.jituo.Test.test():void }</pre>
+</body>
+</html>

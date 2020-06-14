@@ -1,0 +1,218 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>com.dulishuo.test.test0728.getMethod(java.lang.String):java.lang.String.6665ad1d408170587491cd8f13291395_node18</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+body { background-color:#fff; color:#000; font-family:Helvetica, sans-serif; font-size:10pt }
+h1 { font-size:14pt }
+.code { border-collapse:collapse; width:100%; font-family: "Andale Mono", monospace; font-size:10pt; line-height: 1.2em }
+.color_black { color: black }
+.color_blue { color: blue }
+.color_green { color: green }
+.color_orange { color: orange }
+.color_red { color: red }
+.line { border-left: 3px solid #ccc; padding-left: 1ex; white-space: pre; }
+.msg { background-color:#fff8b4; color:#000; float:left; font-family:Helvetica, sans-serif; font-size: smaller; font-weight: bold; margin-bottom:10px; margin-top:10px; max-width:60em; padding:0.5em 1ex 0.5em 1ex; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; white-space: pre-wrap; word-wrap: break-word; }
+.num { background-color:#eee; color:#444; font-size: smaller; padding-right:2ex; text-align:right; width:2.5em; }
+.dangling { background-color:white; color: gray; }
+.visited { background-color:LemonChiffon; color: darkmagenta; }
+.tooltip { display: none; background-color:#FFF0F0; border: 2px solid #F00; font-weight: normal; left:10em; padding: 2px; position: absolute; top: -1em; -webkit-border-radius:5px; -webkit-box-shadow:1px 1px 7px #000; z-index: 1}
+.with_tooltip { position: relative; }
+.with_tooltip:hover .tooltip, .visited:hover .tooltip { display: block; }
+</style>
+</head>
+<body>
+<center><h1>Cfg Node <a href="./../../test0728.java.e130047c6117cabae5425c5f557946e7.html#LINE92">18</a></h1></center>PROC: <a href="./../com.dulishuo.test.test0728.getMethod%28java.lang.String%29%3Ajava.lang.String.6665ad1d408170587491cd8f13291395.html">String test0728.getMethod(String)</a> LINE: <a href="./../../test0728.java.e130047c6117cabae5425c5f557946e7.html#LINE92">92</a>
+<br>PREDS:
+<a href="./../nodes/com.dulishuo.test.test0728.getMethod%28java.lang.String%29%3Ajava.lang.String.6665ad1d408170587491cd8f13291395_node17.html"><span class='visited with_tooltip'>N_17<span class='tooltip'>node17 preds:16 succs:18 exn:38 </span></span></a><br>SUCCS:
+<a href="./../nodes/com.dulishuo.test.test0728.getMethod%28java.lang.String%29%3Ajava.lang.String.6665ad1d408170587491cd8f13291395_node19.html"><span class='visited with_tooltip'>N_19<span class='tooltip'>node19 preds:18 succs:20 exn:38 </span></span></a><br>EXN:
+<a href="./../nodes/com.dulishuo.test.test0728.getMethod%28java.lang.String%29%3Ajava.lang.String.6665ad1d408170587491cd8f13291395_node38.html"><span class='visited with_tooltip'>N_38<span class='tooltip'>node38 preds: succs:36 37 exn:3 </span></span></a><br>
+<LISTING class='color_green'>n$32=*&amp;connection:javax.net.ssl.HttpsURLConnection* [line 92];
+_=*n$32:javax.net.ssl.HttpsURLConnection*(root javax.net.ssl.HttpsURLConnection) [line 92];
+n$34=_fun_InputStream URLConnection.getInputStream()(n$32:javax.net.ssl.HttpsURLConnection*) virtual [line 92];
+*&amp;reader:java.io.InputStream*=n$34 [line 92];
+</LISTING>
+<hr width="100%">
+<a name="session34" href="./../nodes/com.dulishuo.test.test0728.getMethod%28java.lang.String%29%3Ajava.lang.String.6665ad1d408170587491cd8f13291395_node18.html#session34">node18#session34</a>(<a href="./../../test0728.java.e130047c6117cabae5425c5f557946e7.html#LINE92">92</a>) [compute pre] liveness 18
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session35" href="./../nodes/com.dulishuo.test.test0728.getMethod%28java.lang.String%29%3Ajava.lang.String.6665ad1d408170587491cd8f13291395_node18.html#session35">node18#session35</a>(<a href="./../../test0728.java.e130047c6117cabae5425c5f557946e7.html#LINE92">92</a>) [exec] liveness 18
+<LISTING class='color_black'>PRE STATE:
+{ connection, reader, buffer }
+
+INSTR=  *&amp;reader:java.io.InputStream*=n$34 [line 92]; 
+
+STATE:
+{ n$34, connection, buffer }
+
+INSTR=  n$34=_fun_InputStream URLConnection.getInputStream()(n$32:javax.net.ssl.HttpsURLConnection*) virtual [line 92]; 
+
+STATE:
+{ n$32, connection, buffer }
+
+INSTR=  _=*n$32:javax.net.ssl.HttpsURLConnection*(root javax.net.ssl.HttpsURLConnection) [line 92]; 
+
+STATE UNCHANGED
+
+INSTR=  n$32=*&amp;connection:javax.net.ssl.HttpsURLConnection* [line 92]; 
+
+STATE:
+{ connection, buffer }
+
+</LISTING>
+<hr width="100%">
+<a name="session150" href="./../nodes/com.dulishuo.test.test0728.getMethod%28java.lang.String%29%3Ajava.lang.String.6665ad1d408170587491cd8f13291395_node18.html#session150">node18#session150</a>(<a href="./../../test0728.java.e130047c6117cabae5425c5f557946e7.html#LINE92">92</a>) [compute pre] liveness 18
+<LISTING class='color_black'>JOIN
+
+LEFT:   { connection, reader, buffer }
+RIGHT:  { CatchVar148, return, buffer }
+RESULT: { CatchVar148, connection, return, reader, buffer }
+
+</LISTING>
+<hr width="100%">
+<a name="session151" href="./../nodes/com.dulishuo.test.test0728.getMethod%28java.lang.String%29%3Ajava.lang.String.6665ad1d408170587491cd8f13291395_node18.html#session151">node18#session151</a>(<a href="./../../test0728.java.e130047c6117cabae5425c5f557946e7.html#LINE92">92</a>) [exec] liveness 18
+<LISTING class='color_black'>PRE STATE:
+{ CatchVar148, connection, return, reader, buffer }
+
+INSTR=  *&amp;reader:java.io.InputStream*=n$34 [line 92]; 
+
+STATE:
+{ n$34, CatchVar148, connection, return, buffer }
+
+INSTR=  n$34=_fun_InputStream URLConnection.getInputStream()(n$32:javax.net.ssl.HttpsURLConnection*) virtual [line 92]; 
+
+STATE:
+{ n$32, CatchVar148, connection, return, buffer }
+
+INSTR=  _=*n$32:javax.net.ssl.HttpsURLConnection*(root javax.net.ssl.HttpsURLConnection) [line 92]; 
+
+STATE UNCHANGED
+
+INSTR=  n$32=*&amp;connection:javax.net.ssl.HttpsURLConnection* [line 92]; 
+
+STATE:
+{ CatchVar148, connection, return, buffer }
+
+</LISTING>
+<hr width="100%">
+<a name="session156" href="./../nodes/com.dulishuo.test.test0728.getMethod%28java.lang.String%29%3Ajava.lang.String.6665ad1d408170587491cd8f13291395_node18.html#session156">node18#session156</a>(<a href="./../../test0728.java.e130047c6117cabae5425c5f557946e7.html#LINE92">92</a>) [compute pre] liveness 18
+<LISTING class='color_black'>JOIN
+
+LEFT:   { CatchVar148, connection, return, reader, buffer }
+RIGHT:  { CatchVar148, return, buffer }
+RESULT: { CatchVar148, connection, return, reader, buffer }
+
+</LISTING>
+<hr width="100%">
+<a name="session157" href="./../nodes/com.dulishuo.test.test0728.getMethod%28java.lang.String%29%3Ajava.lang.String.6665ad1d408170587491cd8f13291395_node18.html#session157">node18#session157</a>(<a href="./../../test0728.java.e130047c6117cabae5425c5f557946e7.html#LINE92">92</a>) [exec] liveness 18
+<LISTING class='color_black'>Fixpoint reached.
+
+</LISTING>
+<hr width="100%">
+<a name="session228" href="./../nodes/com.dulishuo.test.test0728.getMethod%28java.lang.String%29%3Ajava.lang.String.6665ad1d408170587491cd8f13291395_node18.html#session228">node18#session228</a>(<a href="./../../test0728.java.e130047c6117cabae5425c5f557946e7.html#LINE92">92</a>) [compute pre] liveness 18
+<LISTING class='color_black'>JOIN
+
+LEFT:   { CatchVar148, connection, return, reader, buffer }
+RIGHT:  { CatchVar148, return, buffer }
+RESULT: { CatchVar148, connection, return, reader, buffer }
+
+</LISTING>
+<hr width="100%">
+<a name="session229" href="./../nodes/com.dulishuo.test.test0728.getMethod%28java.lang.String%29%3Ajava.lang.String.6665ad1d408170587491cd8f13291395_node18.html#session229">node18#session229</a>(<a href="./../../test0728.java.e130047c6117cabae5425c5f557946e7.html#LINE92">92</a>) [exec] liveness 18
+<LISTING class='color_black'>Fixpoint reached.
+
+</LISTING>
+<hr width="100%">
+<a name="session289" href="./../nodes/com.dulishuo.test.test0728.getMethod%28java.lang.String%29%3Ajava.lang.String.6665ad1d408170587491cd8f13291395_node18.html#session289">node18#session289</a>(<a href="./../../test0728.java.e130047c6117cabae5425c5f557946e7.html#LINE92">92</a>) [compute pre] nullify
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session290" href="./../nodes/com.dulishuo.test.test0728.getMethod%28java.lang.String%29%3Ajava.lang.String.6665ad1d408170587491cd8f13291395_node18.html#session290">node18#session290</a>(<a href="./../../test0728.java.e130047c6117cabae5425c5f557946e7.html#LINE92">92</a>) [exec] nullify
+<LISTING class='color_black'>PRE STATE:
+({ connection, buffer },{ _, n$28, n$30, n$31, ssf })
+
+INSTR=  n$32=*&amp;connection:javax.net.ssl.HttpsURLConnection* [line 92]; 
+
+STATE:
+({ n$32, connection, buffer },{ _, n$28, n$30, n$31, ssf })
+
+INSTR=  _=*n$32:javax.net.ssl.HttpsURLConnection*(root javax.net.ssl.HttpsURLConnection) [line 92]; 
+
+STATE:
+({ _, n$32, connection, buffer },{ _, n$28, n$30, n$31, ssf })
+
+INSTR=  n$34=_fun_InputStream URLConnection.getInputStream()(n$32:javax.net.ssl.HttpsURLConnection*) virtual [line 92]; 
+
+STATE:
+({ _, n$32, n$34, connection, buffer },{ _, n$28, n$30, n$31, ssf })
+
+INSTR=  *&amp;reader:java.io.InputStream*=n$34 [line 92]; 
+
+STATE:
+({ connection, reader, buffer },{ _, n$32, n$34 })
+
+</LISTING>
+<hr width="100%">
+<a name="session30" href="./../nodes/com.dulishuo.test.test0728.getMethod%28java.lang.String%29%3Ajava.lang.String.6665ad1d408170587491cd8f13291395_node18.html#session30">node18#session30</a>(<a href="./../../test0728.java.e130047c6117cabae5425c5f557946e7.html#LINE92">92</a>) [compute pre] quandary(java)
+<LISTING class='color_black'></LISTING>
+<hr width="100%">
+<a name="session31" href="./../nodes/com.dulishuo.test.test0728.getMethod%28java.lang.String%29%3Ajava.lang.String.6665ad1d408170587491cd8f13291395_node18.html#session31">node18#session31</a>(<a href="./../../test0728.java.e130047c6117cabae5425c5f557946e7.html#LINE92">92</a>) [exec] quandary(java)
+<LISTING class='color_black'>PRE STATE:
+{ n$2 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  n$13 -&gt; { [_] -&gt; Footprint({ test.test0728.ignoreCertificationTrustManger }) ~&gt; ? },
+  tm -&gt; { [_] -&gt; Footprint({ test.test0728.ignoreCertificationTrustManger }) ~&gt; ? },
+  url -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  ssf -&gt; { },
+  connection -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  sslContext -&gt; { },
+  buffer -&gt; { } }
+
+
+
+TAINTED_CALL1: (callee="InputStream URLConnection.getInputStream()", caller="String test0728.getMethod(String)")
+INSTR=  n$34 := InputStream URLConnection.getInputStream()({ connection }) [line 92]; 
+
+STATE:
+{ n$2 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  n$13 -&gt; { [_] -&gt; Footprint({ test.test0728.ignoreCertificationTrustManger }) ~&gt; ? },
+  n$34 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  tm -&gt; { [_] -&gt; Footprint({ test.test0728.ignoreCertificationTrustManger }) ~&gt; ? },
+  url -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  ssf -&gt; { },
+  connection -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  sslContext -&gt; { },
+  buffer -&gt; { } }
+
+INSTR=  reader := n$34 [line 92]; 
+
+STATE:
+{ n$2 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  n$13 -&gt; { [_] -&gt; Footprint({ test.test0728.ignoreCertificationTrustManger }) ~&gt; ? },
+  n$34 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  tm -&gt; { [_] -&gt; Footprint({ test.test0728.ignoreCertificationTrustManger }) ~&gt; ? },
+  url -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  ssf -&gt; { },
+  connection -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  sslContext -&gt; { },
+  reader -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  buffer -&gt; { } }
+
+INSTR=  EXIT_SCOPE(n$34); [line 92]; 
+
+STATE:
+{ n$2 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  n$10 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  n$13 -&gt; { [_] -&gt; Footprint({ test.test0728.ignoreCertificationTrustManger }) ~&gt; ? },
+  n$34 -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  tm -&gt; { [_] -&gt; Footprint({ test.test0728.ignoreCertificationTrustManger }) ~&gt; ? },
+  url -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  ssf -&gt; { },
+  connection -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  sslContext -&gt; { },
+  reader -&gt; (Footprint({ @val$0* }) ~&gt; ?, *),
+  buffer -&gt; { } }
+
+</LISTING>
